@@ -7,7 +7,7 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg 
 
 Au temps ou le téléphone portable était un objet de luxe et de démesure, la seule façon d'envoyer un message pendant un cours de philosophie, était d'utiliser un petit bout de papier que l'on faisait passer d'élève à élève. Il fallait écrire en petit pour maximiser la quantité d'information transmis lors d'un envoi. De plus, pour éviter toute interception du message par le professeur certains avaient recours à des cryptages plus ou moins efficaces. A cette époque, ou je programmais sur calculette [Ti-82](https://fr.wikipedia.org/wiki/TI-82) pendant mes cours de philo, où j'aurai aimé connaître l'algorithme de la transformation de **Burrows-Wheeler**. J'aurai pu économiser encre et papier en compressant l'information de mes messages, mais surtout je me serais éclaté à coder un encodeur/décodeur de petits mots sur ma calculette.   
-L'algorithme de  **Burrows-Wheeler** est utilisé dans 2 cas particuliers. La compression que nous allons aborder dans cette article, mais aussi l'indexation utilisée dans la recherche de motif textuel. Ce dernier point fera l'objet d'un prochain article. 
+En effet, cette algorithme est utilisé dans 2 cas particuliers. La compression que nous allons aborder dans cette article, mais aussi l'indexation utilisée dans la recherche de motif textuel. Ce dernier point fera l'objet d'un prochain article. 
 
 
 #Compression du texte   
@@ -34,7 +34,7 @@ Puis, nous allons créer la matrice suivante en décalant chaque ligne d'une let
     <img src="../images/post10/matrix.png">
 </p>
 
-Une fois la matrice construite, nous ordonnons les lignes dans l'ordre lexicographique. Les lignes commençant par un "**A**" sont en haut, et ainsi de suite. La matrice ci-dessous est alors obtenu. La transformation de **Burrows-Wheeler** correspond à la dernière colonne. C'est aussi simple que ça!
+Une fois la matrice construite, nous ordonnons les lignes dans l'ordre lexicographique. Les lignes commençant par un "**A**" sont en haut, et ainsi de suite. Nous obtenous alors la matrice ci-dessous. La transformation de **Burrows-Wheeler** correspond à la dernière colonne. C'est aussi simple que ça.
 
 
 <p align="center">
@@ -42,12 +42,12 @@ Une fois la matrice construite, nous ordonnons les lignes dans l'ordre lexicogra
 </p>
 
 La transformation du mot "*banane*", donne "*ebn$naa*". Et comme vous pouvez le constater, certaines lettres identiques sont réunies.  
-C'est pas très impressionnant avec le mot *banane*. Mais avec le mot *anticonstitutionnellement*, on obtient : *t$inlmtttleenooeaicnnnusit*. Et cette fois, on observe des répétitions de plus de 2 lettres, qui nous permet de compresser le mot de cette façon : 
+Bon, c'est pas très impressionnant avec le mot *banane*. Mais avec le mot *anticonstitutionnellement*, on obtient : *t$inlmtttleenooeaicnnnusit*. Et cette fois, on observe des répétitions de plus de 2 lettres, qui nous permet de compresser le mot de cette façon : 
 
     t$inlm3tl2en2oeaic3nusit    #24 lettres
     anticonstitutio2ne2lement   #25 lettres 
 
-Toujours pas impressionné ? Bon, essayons cette fois avec un extrait de [l'origine des espèces](https://fr.wikipedia.org/wiki/De_l'origine_des_esp%C3%A8ces) : 
+Toujours pas impressionné ? Essayons cette fois avec un extrait de [l'origine des espèces](https://fr.wikipedia.org/wiki/De_l'origine_des_esp%C3%A8ces) : 
 
 #### Texte original ( 1102 lettres )
 
@@ -68,7 +68,7 @@ Par exemple, le mot *banane$* , possède les suffixes suivant avec leurs rangs c
     <img src="../images/post10/sa.png">
 </p>
 
-Si nous ordonnons cette liste de suffixe dans l'ordre lexicographique, et que nous la comparons avec la matrice précédente, vous pouvez trouver une relation en faisant marcher un peu vos méninges.
+Si nous ordonnons cette liste de suffixe dans l'ordre lexicographique, et que nous la comparons avec la matrice précédente, vous pouvez trouver une relation en faisant marcher vos méninges.
 
 <p align="center">
     <img src="../images/post10/sa2.png">
@@ -154,7 +154,7 @@ Et voici le code qui parlera plus à certain :
 
 
 # Conclusion
-La transformation de Burrow-Wheeler, est utilisé en compression des données, notamment dans l'algorithme de compression [Bzip2](https://fr.wikipedia.org/wiki/Bzip2). Mais une autre utilisation en bioinformatique, est la recherche de plusieurs chaînes de caractères dans une plus grande, et ceci de façon optimale. L'algorithme [Bowtie2](https://en.wikipedia.org/wiki/Bowtie_%28sequence_analysis%29) par exemple, permet de retrouver des séquences dans le génome humain. Nous verrons cette partie dans un prochain article ! 
+La transformation de Burrow-Wheeler, est utilisé en compression des données, notamment dans l'algorithme de compression [Bzip2](https://fr.wikipedia.org/wiki/Bzip2). Mais une autre utilisation en bioinformatique, est la recherche de plusieurs chaînes de caractères dans une plus grande, à l'aide d'un index appelé [FM-Index](https://en.wikipedia.org/wiki/FM-index). L'algorithme [Bowtie2](https://en.wikipedia.org/wiki/Bowtie_%28sequence_analysis%29) et [BWA](http://bio-bwa.sourceforge.net/) sont deux exemples d'utilisation de cette index. Ils permettent de retrouver rapidement, des séquences dans le génome humain. Nous verrons cette partie dans un prochain article ! 
 
 
 ## Référence 
