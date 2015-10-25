@@ -6,7 +6,7 @@ Category: python
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg 
 
-Au temps ou le téléphone portable était un objet de luxe et de démesure, la seul façon d'envoyer un message pendant un cours de philosophie, était d'utiliser un petit bout de papier que l'on faisait passer d'élève à élève. Il fallait écrire en petit pour maximiser la quantité d'information transmis lors d'un envoie. De plus, pour éviter toutes interceptions du message par le professeur certain avait recourt à des cryptages plus ou moins efficace. A cette époque, ou je programmais sur calculette [Ti-82](https://fr.wikipedia.org/wiki/TI-82) pendant mes cours de philo, j'aurais aimé connaître l'algorithme de la transformation de **Burrows-Wheeler**. J'aurais pu économiser encre et papier en compressant l'information de mes messages, mais surtout je me serais éclaté à coder un encodeur/décodeur de petits mots sur ma calculette.   
+Au temps ou le téléphone portable était un objet de luxe et de démesure, la seule façon d'envoyer un message pendant un cours de philosophie, était d'utiliser un petit bout de papier que l'on faisait passer d'élève à élève. Il fallait écrire en petit pour maximiser la quantité d'information transmis lors d'un envoi. De plus, pour éviter toute interception du message par le professeur certains avaient recours à des cryptages plus ou moins efficaces. A cette époque, ou je programmais sur calculette [Ti-82](https://fr.wikipedia.org/wiki/TI-82) pendant mes cours de philo, où j'aurai aimé connaître l'algorithme de la transformation de **Burrows-Wheeler**. J'aurai pu économiser encre et papier en compressant l'information de mes messages, mais surtout je me serais éclaté à coder un encodeur/décodeur de petits mots sur ma calculette.   
 L'algorithme de  **Burrows-Wheeler** est utilisé dans 2 cas particuliers. La compression que nous allons aborder dans cette article, mais aussi l'indexation utilisée dans la recherche de motif textuel. Ce dernier point fera l'objet d'un prochain article. 
 
 
@@ -28,7 +28,7 @@ Pas très efficace n'est ce pas ? En effet, remplacer 2 lettres par 1 chiffre + 
 #Transformation de Burrows-Wheeler 
 Dans ce qui suit, nous allons faire la transformation de **Burrows-Wheeler** en utilisant le mot "*banane*".   
 Tout d'abord, rajoutons le caractère "**$**" à la fin du mot: *banane$*. Lorsque l'on range des lettres dans l'ordre lexicographique, le "**$**" se situe avant la lettre "**A**", de la même façon que le "**B**" se trouve avant le "**C**". Ce caractère nous servira de repère par la suite.    
-Puis, nous allons créer la matrice suivante en décalant chaque ligne d'une lettre, en faisant une sorte de rotation (Figure ci dessous). La matrice obtenu est de taille L x L ou L est la longueur du mot. 
+Puis, nous allons créer la matrice suivante en décalant chaque ligne d'une lettre, en faisant une sorte de rotation (Figure ci dessous). La matrice obtenue est de taille L x L ou L est la longueur du mot. 
 
 <p align="center">
     <img src="../images/post10/matrix.png">
@@ -59,7 +59,7 @@ Toujours pas impressionné ? Bon, essayons cette fois avec un extrait de [l'orig
 
 #Suffixe Array 
 Si vous avez compris comment réaliser une **Burrow-Wheeler**, attendez avant de vous jeter sur l’implémentation du code et la création d'une matrice...   
-Avez vous penser à la mémoire? Un texte de 100 000 mot, nécessite de construire une matrice de L x L, soit 100 000 * 100 000 = 10^10 bytes ! Ça fait beaucoup pour pas grand chose.  
+Avez-vous pensé à la mémoire? Un texte de 100 000 mot, nécessite de construire une matrice de L x L, soit 100 000 * 100 000 = 10^10 bytes ! Ça fait beaucoup pour pas grand chose.  
 Heureusement une autre méthode basée sur les **suffix array** permet d'économiser votre temps et votre mémoire pour réaliser cette transformation.    
 La **suffix array**, d'un mot, est l'ensemble des suffixes de ce mot.  
 Par exemple, le mot *banane$* , possède les suffixes suivant avec leurs rangs correspondants :   
@@ -82,7 +82,7 @@ Parfois un algorithme vaut mieux qu'une explication :
     
     :::python
     def suffixArray(s):
-    ''' creation du suffixe array avec leurs rangs ordonnée ''' 
+    ''' creation du suffixe array avec leurs rangs ordonnés ''' 
     satups = sorted([(s[i:], i) for i in range(0, len(s)+1)])
     return map(lambda x: x[1], satups)
 
@@ -107,7 +107,7 @@ Tout d'abord, nous allons créer la première ( LC: Left Column ) et la dernièr
 </p>
 
 Je ne vais pas vous le détailler ici, mais sachez que le rang des lettres dans la colonne de gauche correspond au même dans la colonne de droite. C'est à dire que le premier "**A**" de la colonne de gauche correspond au premier "**A**" de la colonne de droite. De même le deuxième "**N**" de la colonne de gauche est le même que le deuxième "**N**" de la colonne de droite.  
-D'autre part, en se rappelant comment est construit la matrice, chaque lettre de la colonne de droite précède, dans le mot original, la lettre de la colonne de gauche.  
+D'autre part, en se rappelant comment est construite la matrice, chaque lettre de la colonne de droite précède, dans le mot original, la lettre de la colonne de gauche.  
 Sachant tout cela, on va pouvoir récrire le mot original en l'écrivant de droite à gauche. 
 
 <p align="center">
@@ -115,7 +115,7 @@ Sachant tout cela, on va pouvoir récrire le mot original en l'écrivant de droi
 </p>
 
 On part de la première ligne, et on lit toujours dans la colonne de droite. La première lettre correspond a "**E1**", c'est la dernière lettre du mot *banane*. On recherche ce même "**E1**" dans la colonne de gauche. La lettre qui précède ce E est le "**N2**". C'est l'avant dernière lettre du mot banane. On recherche de la même façon ce "**N2**" dans la colonne de gauche. La lettre qui le précède est "**A2**", c'est l'avant avant dernière lettre du mot banane etc....  
-En continuant ce processus, l'intégralité du mot qui a servit d'entré à la transformation de Burrow-wheeler est retrouvé.   
+En continuant ce processus, l'intégralité du mot qui a servi d'entrée à la transformation de Burrow-wheeler est retrouvé.   
 Et voici le code qui parlera plus à certain : 
 
     :::python
@@ -154,7 +154,7 @@ Et voici le code qui parlera plus à certain :
 
 
 # Conclusion
-La transformation de Burrow-Wheeler, est utilisé en compression des données, notamment dans l'algorithme de compression [Bzip2](https://fr.wikipedia.org/wiki/Bzip2). Mais une autre utilisation en bioinformatique, est la recherche de plusieurs chaînes de caractère dans une plus grande, et ceci de façon optimal. L'algorithme [Bowtie2](https://en.wikipedia.org/wiki/Bowtie_%28sequence_analysis%29) par exemple, permet de retrouver des séquences dans le génome humain. Nous verrons cette partie dans un prochain article ! 
+La transformation de Burrow-Wheeler, est utilisé en compression des données, notamment dans l'algorithme de compression [Bzip2](https://fr.wikipedia.org/wiki/Bzip2). Mais une autre utilisation en bioinformatique, est la recherche de plusieurs chaînes de caractères dans une plus grande, et ceci de façon optimale. L'algorithme [Bowtie2](https://en.wikipedia.org/wiki/Bowtie_%28sequence_analysis%29) par exemple, permet de retrouver des séquences dans le génome humain. Nous verrons cette partie dans un prochain article ! 
 
 
 ## Référence 
