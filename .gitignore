@@ -1,5 +1,6 @@
+# Custom 
 output/
-*.pid 
+*.pid
 Makefile
 cache/
 # Byte-compiled / optimized / DLL files
