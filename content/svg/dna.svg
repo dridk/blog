@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="dna.svg"
+   inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+   inkscape:export-xdpi="94"
+   inkscape:export-ydpi="94">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path3944"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path3932"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="179.24709"
+     inkscape:cy="626.99205"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-global="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-grids="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="1916"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3009" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Calque"
+     style="display:inline">
+    <rect
+       y="139.1843"
+       x="264.90585"
+       height="376.7869"
+       width="157.58379"
+       id="rect5004"
+       style="opacity:0.12043798;fill:#ce5c00;fill-opacity:1;stroke:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       style="opacity:0.12043798;fill:#5c3566;fill-opacity:1;stroke:none;display:inline"
+       id="rect5002"
+       width="157.58379"
+       height="376.7869"
+       x="427.04868"
+       y="139.1843"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+  </g>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       sodipodi:type="arc"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:1.67857146;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3007"
+       sodipodi:cx="49.642857"
+       sodipodi:cy="528.43359"
+       sodipodi:rx="16.785715"
+       sodipodi:ry="16.785715"
+       d="m 66.428572,528.43359 a 16.785715,16.785715 0 1 1 -33.571431,0 16.785715,16.785715 0 1 1 33.571431,0 z"
+       transform="matrix(0.42058366,0,0,0.42058366,270.43964,22.530384)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 294.10631,251.26899 11.36341,26.44714"
+       id="path3023"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path3007"
+       inkscape:connection-start-point="d4"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       transform="matrix(0.11054453,0.04834833,-0.04834833,0.11054453,320.845,249.45543)"
+       inkscape:transform-center-y="-2.0001563"
+       inkscape:transform-center-x="0.043480501"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:randomized="0"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.1519173"
+       sodipodi:arg1="0.52359878"
+       sodipodi:r2="143.35352"
+       sodipodi:r1="177.19469"
+       sodipodi:cy="247.36218"
+       sodipodi:cx="145.71429"
+       sodipodi:sides="5"
+       id="path3005"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="star"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 296.10716,239.59333 16.39085,-17.75676"
+       id="path3027"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path3007"
+       inkscape:connection-start-point="d4"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       sodipodi:type="star"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2985"
+       sodipodi:sides="5"
+       sodipodi:cx="145.71429"
+       sodipodi:cy="247.36218"
+       sodipodi:r1="177.19469"
+       sodipodi:r2="143.35352"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.1519173"
+       inkscape:flatsided="true"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:randomized="0"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:transform-center-x="0.043482072"
+       inkscape:transform-center-y="-2.0001522"
+       transform="matrix(0.11054453,0.04834833,-0.04834833,0.11054453,320.37884,171.9987)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       style="fill:#4e9a06;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3797"
+       width="24.280401"
+       height="24.74106"
+       x="364.83908"
+       y="186.86685"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="370.33557"
+       y="205.95204"
+       id="text3799"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan3801"
+         x="370.33557"
+         y="205.95204"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial">A</tspan></text>
+    <g
+       id="g3807"
+       transform="matrix(0.70366719,0,0,0.70366719,150.27695,-86.12103)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         y="391.78555"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect3803"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect3805"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="410.66278" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path3835"
+       d="m 296.10716,318.75268 16.39085,-17.75676"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       transform="matrix(0.42058366,0,0,0.42058366,270.43964,101.33315)"
+       d="m 66.428572,528.43359 a 16.785715,16.785715 0 1 1 -33.571431,0 16.785715,16.785715 0 1 1 33.571431,0 z"
+       sodipodi:ry="16.785715"
+       sodipodi:rx="16.785715"
+       sodipodi:cy="528.43359"
+       sodipodi:cx="49.642857"
+       id="path3837"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:1.67857146;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path3839"
+       d="m 294.10631,330.07175 11.36342,26.44715"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       sodipodi:type="star"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3841"
+       sodipodi:sides="5"
+       sodipodi:cx="145.71429"
+       sodipodi:cy="247.36218"
+       sodipodi:r1="177.19469"
+       sodipodi:r2="143.35352"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.1519173"
+       inkscape:flatsided="true"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:randomized="0"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:transform-center-x="0.043480501"
+       inkscape:transform-center-y="-2.0001555"
+       transform="matrix(0.11054453,0.04834833,-0.04834833,0.11054453,320.845,328.2582)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 344.33013,199.80307 20.48602,-0.1891"
+       id="path3843"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       y="264.065"
+       x="364.83908"
+       height="24.74106"
+       width="24.280401"
+       id="rect3845"
+       style="fill:#cc0000;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3847"
+       y="283.15021"
+       x="370.33557"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial"
+         y="283.15021"
+         x="370.33557"
+         id="tspan3849"
+         sodipodi:role="line">T</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path3857"
+       d="m 344.33013,277.00126 20.48602,-0.1891"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3859"
+       width="24.280401"
+       height="24.74106"
+       x="364.83908"
+       y="343.22433"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="370.33557"
+       y="362.30957"
+       id="text3861"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan3863"
+         x="370.33557"
+         y="362.30957"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial">C</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 344.33013,356.16061 20.48602,-0.1891"
+       id="path3871"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 296.10716,397.17419 16.39085,-17.75675"
+       id="path3873"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:1.67857146;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3875"
+       sodipodi:cx="49.642857"
+       sodipodi:cy="528.43359"
+       sodipodi:rx="16.785715"
+       sodipodi:ry="16.785715"
+       d="m 66.428572,528.43359 a 16.785715,16.785715 0 1 1 -33.571431,0 16.785715,16.785715 0 1 1 33.571431,0 z"
+       transform="matrix(0.42058366,0,0,0.42058366,270.43964,179.75467)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 294.10631,408.49326 11.36342,26.44716"
+       id="path3877"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       transform="matrix(0.11054453,0.04834833,-0.04834833,0.11054453,320.845,406.67972)"
+       inkscape:transform-center-y="-2.0001496"
+       inkscape:transform-center-x="0.043480501"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:randomized="0"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.1519173"
+       sodipodi:arg1="0.52359878"
+       sodipodi:r2="143.35352"
+       sodipodi:r1="177.19469"
+       sodipodi:cy="247.36218"
+       sodipodi:cx="145.71429"
+       sodipodi:sides="5"
+       id="path3879"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="star"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       y="421.64587"
+       x="364.83908"
+       height="24.74106"
+       width="24.280401"
+       id="rect3881"
+       style="fill:#2e3436;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3883"
+       y="440.73111"
+       x="368.97174"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial"
+         y="440.73111"
+         x="368.97174"
+         id="tspan3885"
+         sodipodi:role="line">G</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path3893"
+       d="m 344.33013,434.58213 20.48602,-0.1891"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.16750431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="380.79956"
+       y="153.8425"
+       id="text3907"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan3909"
+         x="380.79956"
+         y="153.8425"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;font-family:Arial;-inkscape-font-specification:Arial">Base</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.63646442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 393.15087,157.08004 -12.2156,23.62753"
+       id="path3911"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4545"
+       y="152.93327"
+       x="324.26498"
+       style="font-size:14.16750431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;font-family:Arial;-inkscape-font-specification:Arial"
+         y="152.93327"
+         x="324.26498"
+         id="tspan4547"
+         sodipodi:role="line">Sucre</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.63646442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 320.68289,240.81298 -18.74549,1.03625"
+       id="path4549"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.09085083px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="326.38928"
+       y="238.43234"
+       id="text4551"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4553"
+         x="326.38928"
+         y="238.43234"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;font-family:Arial;-inkscape-font-specification:Arial">Liaison</tspan><tspan
+         sodipodi:role="line"
+         x="326.38928"
+         y="249.79591"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;font-family:Arial;-inkscape-font-specification:Arial"
+         id="tspan5051"> phosphodiester</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4557"
+       d="m 293.30265,173.55528 11.36342,26.44715"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="345.11426"
+       y="207.25336"
+       id="text4559"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4561"
+         x="345.11426"
+         y="207.25336">1'</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4563"
+       y="230.40303"
+       x="334.33521"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         y="230.40303"
+         x="334.33521"
+         id="tspan4565"
+         sodipodi:role="line">2'</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4571"
+       y="204.42007"
+       x="297.33722"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         y="204.42007"
+         x="297.33722"
+         id="tspan4573"
+         sodipodi:role="line">4'</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4575"
+       y="230.85764"
+       x="311.74454"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         y="230.85764"
+         x="311.74454"
+         id="tspan4577"
+         sodipodi:role="line">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.80148315px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="270.18158"
+       y="172.86299"
+       id="text4579"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4581"
+         x="270.18158"
+         y="172.86299">5'</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4583"
+       y="444.13733"
+       x="346.33414"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         y="444.13733"
+         x="346.33414"
+         id="tspan4585"
+         sodipodi:role="line">1'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="335.55508"
+       y="467.28702"
+       id="text4587"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4589"
+         x="335.55508"
+         y="467.28702">2'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="298.5571"
+       y="441.30405"
+       id="text4591"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4593"
+         x="298.5571"
+         y="441.30405">4'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.9442749px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="277.75354"
+       y="499.94308"
+       id="text4595"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4597"
+         x="277.75354"
+         y="499.94308">3'</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4599"
+       y="414.02701"
+       x="286.39609"
+       style="font-size:6.43833303px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         y="414.02701"
+         x="286.39609"
+         id="tspan4601"
+         sodipodi:role="line">5'</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4605"
+       d="m 334.00166,157.08004 -12.2156,23.62753"
+       style="fill:none;stroke:#000000;stroke-width:0.63646442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.82418346px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="136.66798"
+       y="165.06137"
+       id="text4607"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4609"
+         x="136.66798"
+         y="165.06137"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;font-family:Arial;-inkscape-font-specification:Arial">Extremité 5' libre</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4613"
+       y="492.02597"
+       x="135.46144"
+       style="font-size:14.35255909px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;font-family:Arial;-inkscape-font-specification:Arial"
+         y="492.02597"
+         x="135.46144"
+         id="tspan4615"
+         sodipodi:role="line">Extremité 3' libre</tspan></text>
+    <path
+       transform="matrix(-0.42058366,0,0,-0.42058366,565.26204,609.08086)"
+       d="m 66.428572,528.43359 a 16.785715,16.785715 0 1 1 -33.571431,0 16.785715,16.785715 0 1 1 33.571431,0 z"
+       sodipodi:ry="16.785715"
+       sodipodi:rx="16.785715"
+       sodipodi:cy="528.43359"
+       sodipodi:cx="49.642857"
+       id="path4688"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:1.67857146;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4690"
+       d="M 541.59537,380.34227 530.23195,353.89512"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       sodipodi:type="star"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4692"
+       sodipodi:sides="5"
+       sodipodi:cx="145.71429"
+       sodipodi:cy="247.36218"
+       sodipodi:r1="177.19469"
+       sodipodi:r2="143.35352"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.1519173"
+       inkscape:flatsided="true"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:randomized="0"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:transform-center-x="-0.043481849"
+       inkscape:transform-center-y="2.0001573"
+       transform="matrix(-0.11054453,-0.04834833,0.04834833,-0.11054453,514.85668,382.15582)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4694"
+       d="m 539.59453,392.01792 -16.39086,17.75676"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       transform="matrix(-0.11054453,-0.04834833,0.04834833,-0.11054453,515.32284,459.61255)"
+       inkscape:transform-center-y="2.0001531"
+       inkscape:transform-center-x="-0.04348342"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:randomized="0"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.1519173"
+       sodipodi:arg1="0.52359878"
+       sodipodi:r2="143.35352"
+       sodipodi:r1="177.19469"
+       sodipodi:cy="247.36218"
+       sodipodi:cx="145.71429"
+       sodipodi:sides="5"
+       id="path4696"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="star"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       y="-444.74438"
+       x="-470.86258"
+       height="24.74106"
+       width="24.280401"
+       id="rect4698"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4700"
+       y="-425.65921"
+       x="-465.36609"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="scale(-1,-1)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial"
+         y="-425.65921"
+         x="-465.36609"
+         id="tspan4702"
+         sodipodi:role="line">C</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 539.59452,312.85858 -16.39085,17.75675"
+       id="path4710"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:1.67857146;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4712"
+       sodipodi:cx="49.642857"
+       sodipodi:cy="528.43359"
+       sodipodi:rx="16.785715"
+       sodipodi:ry="16.785715"
+       d="m 66.428572,528.43359 a 16.785715,16.785715 0 1 1 -33.571431,0 16.785715,16.785715 0 1 1 33.571431,0 z"
+       transform="matrix(-0.42058366,0,0,-0.42058366,565.26204,530.2781)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 541.59537,301.5395 530.23195,275.09235"
+       id="path4714"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       transform="matrix(-0.11054453,-0.04834833,0.04834833,-0.11054453,514.85668,303.35305)"
+       inkscape:transform-center-y="2.0001565"
+       inkscape:transform-center-x="-0.043481849"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:randomized="0"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.1519173"
+       sodipodi:arg1="0.52359878"
+       sodipodi:r2="143.35352"
+       sodipodi:r1="177.19469"
+       sodipodi:cy="247.36218"
+       sodipodi:cx="145.71429"
+       sodipodi:sides="5"
+       id="path4716"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="star"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4718"
+       d="m 491.37155,431.80818 -20.48602,0.1891"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       style="fill:#2e3436;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4720"
+       width="24.280401"
+       height="24.74106"
+       x="-470.86258"
+       y="-367.54623"
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="-465.36609"
+       y="-348.46103"
+       id="text4722"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="scale(-1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4724"
+         x="-465.36609"
+         y="-348.46103"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial">G</tspan></text>
+    <g
+       id="g4726"
+       transform="matrix(-0.70366719,0,0,-0.70366719,685.42473,639.39755)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         y="391.78552"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4728"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect4730"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="410.66281" />
+      <rect
+         y="401.22418"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4732"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 491.37155,354.60999 -20.48602,0.1891"
+       id="path4734"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       y="-288.3869"
+       x="-470.86258"
+       height="24.74106"
+       width="24.280401"
+       id="rect4736"
+       style="fill:#4e9a06;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4738"
+       y="-269.30167"
+       x="-465.36609"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="scale(-1,-1)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial"
+         y="-269.30167"
+         x="-465.36609"
+         id="tspan4740"
+         sodipodi:role="line">A</tspan></text>
+    <g
+       transform="matrix(-0.70366719,0,0,-0.70366719,685.42473,560.2382)"
+       id="g4742"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect4744"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="391.78555" />
+      <rect
+         y="410.66278"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4746"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4748"
+       d="m 491.37155,275.45064 -20.48602,0.1891"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4750"
+       d="m 539.59452,234.43706 -16.39085,17.75676"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       transform="matrix(-0.42058366,0,0,-0.42058366,565.26204,451.85659)"
+       d="m 66.428572,528.43359 a 16.785715,16.785715 0 1 1 -33.571431,0 16.785715,16.785715 0 1 1 33.571431,0 z"
+       sodipodi:ry="16.785715"
+       sodipodi:rx="16.785715"
+       sodipodi:cy="528.43359"
+       sodipodi:cx="49.642857"
+       id="path4752"
+       style="fill:#204a87;fill-opacity:1;stroke:#000000;stroke-width:1.67857146;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4754"
+       d="M 541.59537,223.11799 530.23195,196.67083"
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       sodipodi:type="star"
+       style="fill:#888a85;fill-opacity:1;stroke:#000000;stroke-width:5.85122156;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4756"
+       sodipodi:sides="5"
+       sodipodi:cx="145.71429"
+       sodipodi:cy="247.36218"
+       sodipodi:r1="177.19469"
+       sodipodi:r2="143.35352"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.1519173"
+       inkscape:flatsided="true"
+       inkscape:rounded="-3.469447e-18"
+       inkscape:randomized="0"
+       d="M 299.16939,335.95953 108.87345,420.68474 -30.509702,265.88407 73.642723,85.486781 277.39561,128.79579 z"
+       inkscape:transform-center-x="-0.043481849"
+       inkscape:transform-center-y="2.0001606"
+       transform="matrix(-0.11054453,-0.04834833,0.04834833,-0.11054453,514.85668,224.93154)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <rect
+       style="fill:#cc0000;fill-opacity:1;stroke:#000000;stroke-width:0.80860859;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4758"
+       width="24.280401"
+       height="24.74106"
+       x="-470.86258"
+       y="-209.96539"
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.23526001px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="-464.80115"
+       y="-190.88016"
+       id="text4760"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="scale(-1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4762"
+         x="-464.80115"
+         y="-190.88016"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial">T</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 491.37155,197.02913 -20.48602,0.1891"
+       id="path4764"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.41195953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 542.39903,458.05597 531.03561,431.60882"
+       id="path4782"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <g
+       id="g4826"
+       transform="matrix(-0.70366719,0,0,-0.70366719,685.42473,481.88063)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         y="391.78552"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4828"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect4830"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="410.66281" />
+    </g>
+    <g
+       transform="matrix(0.70366719,0,0,0.70366719,150.27695,-7.6995214)"
+       id="g4834"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect4836"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="391.78555" />
+      <rect
+         y="410.66278"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4838"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g4840"
+       transform="matrix(0.70366719,0,0,0.70366719,149.91649,71.293627)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         y="391.78552"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4842"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect4844"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="410.66281" />
+      <rect
+         y="401.22418"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect4846"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4854"
+       y="-477.55014"
+       x="-568.88934"
+       style="font-size:35.80148315px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="scale(-1,-1)"><tspan
+         y="-477.55014"
+         x="-568.88934"
+         id="tspan4856"
+         sodipodi:role="line">5'</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4858"
+       y="-142.39824"
+       x="-574.1012"
+       style="font-size:44.9442749px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a40000;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="scale(-1,-1)"><tspan
+         y="-142.39824"
+         x="-574.1012"
+         id="tspan4860"
+         sodipodi:role="line">3'</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#5c3566;fill-opacity:1;stroke:none"
+       id="path4862"
+       sodipodi:cx="361.88715"
+       sodipodi:cy="171.82483"
+       sodipodi:rx="1.0732871"
+       sodipodi:ry="1.0732871"
+       d="m 362.96043,171.82483 a 1.0732871,1.0732871 0 1 1 -2.14657,0 1.0732871,1.0732871 0 1 1 2.14657,0 z"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"
+       transform="matrix(0.63646444,0,0,0.63646444,157.93407,81.752991)" />
+    <path
+       d="m 362.96043,171.82483 a 1.0732871,1.0732871 0 1 1 -2.14657,0 1.0732871,1.0732871 0 1 1 2.14657,0 z"
+       sodipodi:ry="1.0732871"
+       sodipodi:rx="1.0732871"
+       sodipodi:cy="171.82483"
+       sodipodi:cx="361.88715"
+       id="path4868"
+       style="fill:#5c3566;fill-opacity:1;stroke:none"
+       sodipodi:type="arc"
+       transform="matrix(0.63646444,0,0,0.63646444,157.93407,94.936898)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974" />
+    <text
+       xml:space="preserve"
+       style="font-size:25.45857811000000126px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="280.41287"
+       y="74.590431"
+       id="text4984"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4986"
+         x="280.41287"
+         y="74.590431"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;font-size:18px;fill:#888a85;fill-opacity:1">brin d'ADN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:153.71711730999999190px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       x="98.559883"
+       y="-290.5528"
+       id="text4988"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         sodipodi:role="line"
+         id="tspan4990"
+         x="98.559883"
+         y="-290.5528">{</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4992"
+       y="588.02222"
+       x="444.69897"
+       style="font-size:25.45857811px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+         y="588.02222"
+         x="444.69897"
+         id="tspan4994"
+         sodipodi:role="line">brin d'ADN </tspan><tspan
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#888a85;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+         y="610.52222"
+         x="444.69897"
+         sodipodi:role="line"
+         id="tspan5000">complémentaire</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text4996"
+       y="556.6875"
+       x="-558.91272"
+       style="font-size:153.71711731px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#888a85;fill-opacity:1;stroke:none;font-family:Atlantic Cruise;-inkscape-font-specification:Atlantic Cruise"
+       xml:space="preserve"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974"><tspan
+         y="556.6875"
+         x="-558.91272"
+         id="tspan4998"
+         sodipodi:role="line">{</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5061"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Atlantic Cruise;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Atlantic Cruise;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion5063"><rect
+           id="rect5065"
+           width="700.03571"
+           height="714.17786"
+           x="38.385796"
+           y="6.8542981" /></flowRegion><flowPara
+         id="flowPara5067"></flowPara></flowRoot>    <g
+       inkscape:export-ydpi="94.254974"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       transform="matrix(-0.70366719,0,0,-0.70366719,685.42473,717.43184)"
+       id="g5101">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect5103"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="391.78552" />
+      <rect
+         y="410.66281"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect5105"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect5107"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="401.22418" />
+    </g>
+    <g
+       id="g5117"
+       transform="matrix(-0.70366719,0,0,-0.70366719,643.5034,717.43184)"
+       inkscape:export-filename="/media/sacha/Linux_data/dev/dridk-me/content/images/post8/dna.png"
+       inkscape:export-xdpi="94.254974"
+       inkscape:export-ydpi="94.254974">
+      <rect
+         y="391.78552"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect5119"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect5121"
+         width="20.897532"
+         height="4.6088209"
+         x="339.97946"
+         y="410.66281" />
+      <rect
+         y="401.22418"
+         x="339.97946"
+         height="4.6088209"
+         width="20.897532"
+         id="rect5123"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+  </g>
+</svg>
