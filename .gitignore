@@ -1,7 +1,7 @@
-output
+output/
 *.pid 
 Makefile
-cache
+cache/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
