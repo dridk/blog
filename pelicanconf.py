@@ -19,7 +19,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['sitemap','pelican-plugins']
-PLUGINS = ['gravatar']
+PLUGINS = ['gravatar','render_math']
 
 # PURE THEME CONFIG
 THEME = "pelican-themes/pure-single"
