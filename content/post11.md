@@ -106,5 +106,7 @@ Enfin, pour les bioinformaticiens, je vous invite à lire cette article : [Effic
 * [Youtube Bloom Filter (anglais)](https://www.youtube.com/watch?v=bEmBh1HtYrw)
 * [bioinfo-fr](http://bioinfo-fr.net/filtre-de-bloom)
 * [Create a simple bloom filter](http://www.maxburstein.com/blog/creating-a-simple-bloom-filter/)
+* [Efficient counting of k-mers in DNA sequences using a bloom filter](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-333).
+
 
 
