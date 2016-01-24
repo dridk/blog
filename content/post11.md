@@ -67,7 +67,7 @@ Si vous avez compris jusque là, vous devriez comprendre comment tester la prés
 </p>
 
 # Estimation des faux positifs
-Avec cet algorithme, il n'y a jamais de faux négatifs, mais des faux positifs. C'est-à-dire le fait de répondre qu'un élément est présent alors que non.   
+Avec cette algorithme, il n'y a jamais de faux négatifs, mais des faux positifs. C'est-à-dire le fait de répondre qu'un élément est présent alors que non.   
 Pour compenser ce problème, nous pouvons créer le filtre de façon à minimiser le nombre de faux positifs via les 3 paramètres suivants : 
 
 * **n** = La taille du vecteur booléen (10)
@@ -75,7 +75,7 @@ Pour compenser ce problème, nous pouvons créer le filtre de façon à minimise
 * **k** = Le nombre de fonction de hachage (3)
 
 Considérons une position **j** dans notre vecteur. La probabilité qu'une fonction de hachage fasse passer la valeur de **j** de 0 à 1 est de $\frac{1}{n}$. L'inverse, c'est-à-dire la probabilité que la valeur de **j** ne change pas, est donc de $1-\frac{1}{n}$.    
-Après avoir rempli le vecteur booléen, avec **m** éléments et **k** fonctions de hachage, la probabilité de ne pas changer **j** est donc de $(1-\frac{1}{n})^{km}$.   
+Après avoir rempli le vecteur booléen, avec **m** élément et **k** fonction de hachage, la probabilité de ne pas changer **j** est donc de $(1-\frac{1}{n})^{km}$.   
 Cette équation peut se réduire en considérant l'égalité approximative suivante:    
 
 $(1-\frac{1}{n})^n\approx \frac{1}{e} = e^{-1}$
@@ -90,7 +90,7 @@ $P_{faux-positif} = ( 1 - e^{\frac{-km}{n}})^k$
 
 
 # Application
-Sachant que nous avons une liste de **m** éléments, quelles sont les valeurs de **k** et **n** que nous pouvons choisir pour atteindre une probabilité **p** de faux positifs ? En faisant un peu d'algèbre, la meilleure valeur de **k** est : k = $ln(2)\frac{n}{m}$   
+Sachant que nous avons une liste de **m** élément, quelles sont les valeurs de **k** et **n** que nous pouvons choisir pour atteindre une probabilité **p** de faux positifs ? En faisant un peu d'algèbre, la meilleure valeur de **k** est : k = $ln(2)\frac{n}{m}$   
 Et le rapport suivant doit être satisfait: $\frac{n}{m} = 0.7ln(\frac{1}{p})$. 
 
 Par exemple, pour atteindre une probabilité $p<\frac{1}{1000}$, il suffit de choisir $\frac{n}{m} > 0.7ln(1000) \approx 7$.  Avec **m** = 1000 éléments on choisira donc **n** = 7000 et **k** = 5.   
@@ -106,6 +106,5 @@ Enfin, pour les bioinformaticiens, je vous invite à lire cette article : [Effic
 * [Youtube Bloom Filter (anglais)](https://www.youtube.com/watch?v=bEmBh1HtYrw)
 * [bioinfo-fr](http://bioinfo-fr.net/filtre-de-bloom)
 * [Create a simple bloom filter](http://www.maxburstein.com/blog/creating-a-simple-bloom-filter/)
-* [Efficient counting of k-mers in DNA sequences using a bloom filter](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-333)
 
 
