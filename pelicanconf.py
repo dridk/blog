@@ -18,8 +18,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-PLUGIN_PATHS = ['sitemap','pelican-plugins']
-PLUGINS = ['gravatar','render_math']
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['gravatar','sitemap']
+
+# #PLUGIN MATH 
+# MATH_JAX = {'auto_insert':False, 'responsive':False}
 
 # PURE THEME CONFIG
 THEME = "pelican-themes/pure-single"
