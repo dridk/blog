@@ -21,6 +21,7 @@ A partir de là, il suffit pour un message donnée, de remplacer chaque lettre p
 Je vous ai fait un script JS pour que vous pussiez tester directement en ligne ! 
 
 ## ASCII genomic convertor 
+
 <form>
  <textarea id="area" rows="4" cols="50">CATACGACCCTTCGATCGTTCTCCCTAGCGAGCGCCCCTTCGCACGCCCCTTCTCACGCCCTATCCTTCTGCCGCCCTCCCTGACCTTCGCGCGACCGGCCTCACCTTCGTACGCCCCTTCTCACGTTCTCCCTAGCCTTCGCACGCCCCTTCGTCCGTTCGTGCCTTCGATCGTTCGCCCTCCCTAG
 </textarea> <br/>
