@@ -98,5 +98,5 @@ Bon, j'ai un peu déliré dans ce poste. Mais pourtant, derrière cette histoire
 * [Cas9 as a versatile tool for engineering biology](http://www.nature.com/nmeth/journal/v10/n10/full/nmeth.2649.html)
 * [Chine scientists genetically modify human embryos](http://www.nature.com/news/chinese-scientists-genetically-modify-human-embryos-1.17378)
 
-## Correction 
+## Remerciement 
 Merci à @Piplopp pour les corrections 
