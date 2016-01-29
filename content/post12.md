@@ -18,15 +18,15 @@ L'ADN est un support d'information numérique, au même titre qu'un disque dur o
 Pour écrire un message on peut utiliser la [table ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#Table_des_128_caract.C3.A8res_ASCII). Celle-ci attribue à chaque lettre un nombre qui peut s'écrire en décimal, binaire, hexadécimal ... et en génomique, c'est-à-dire en base 4.   
 J'ai utilisé la librarie [python-baseconv](https://pypi.python.org/pypi/python-baseconv/1.1.3) pour faire les conversions entre les différents systèmes de numération. Par exemple, la lettre Z s'écrit 90 en décimal, 5A en hexadécimal, 1011010 en binaire et enfin CCGG en génomique.
 A partir de là, il suffit pour un message donné, de remplacer chaque lettre par sa représentation génomique et obtenir la séquence de nucléotide que nous allons intégrer dans votre génome!   
-Je vous ai fait un script JS pour que vous pussiez tester directement en ligne ! Attention, n'utilisez que des lettres de l'alphabet ! Pas de nombre ni de caractère spéciaux! 
+Je vous ai fait un script JS pour que vous pussiez tester directement en ligne ! Cliquer sur *Décoder* pour convertir la séquence en texte. Vous pouvez aussi encoder du texte en séquence en cliquant sur *Encoder*.  Attention, n'utilisez que des lettres de l'alphabet ! Pas de nombre ni de caractère spéciaux! 
 
 ## ASCII genomic convertor
 
 <form>
- <textarea id="area" rows="4" cols="50">CATACGACCCTTCGATCGTTCTCCCTAGCGAGCGCCCCTTCGCACGCCCCTTCTCACGCCCTATCCTTCTGCCGCCCTCCCTGACCTTCGCGCGACCGGCCTCACCTTCGTACGCCCCTTCTCACGTTCTCCCTAGCCTTCGCACGCCCCTTCGTCCGTTCGTGCCTTCGATCGTTCGCCCTCCCTAG
+ <textarea id="area" rows="4" cols="50">CAGGCGCCCCTTCTATCTCCCGGCCTATCCTTCTCACGTTCGTGCCTTCGACCGTGCGATTGGGCTCACTAGCGCCCCTTCGCCCTCACCTTCGGGCGCCCCTTCGTGCGACCGGCCCTTCTAGCGGCCGCCCGTGCCTTTGAACCTTCTCACGCCCCTTCGCACGGCCTAGCGCCCCTTCGCACGCCCCTTCTAACGTACTCCCTAT
 </textarea> <br/>
-<input type="button" value="convert" onClick="start_encode()">
-<input type="button" value="decode" onClick="start_decode()">
+<input type="button" value="encoder" onClick="start_encode()">
+<input type="button" value="decoder" onClick="start_decode()">
 <script>
 
 function start_encode()
