@@ -68,7 +68,7 @@ Voici le profil d'un individu que j'ai retrouvé sur google! Je vous laisse le s
 * Question : Peut ont se servir de l'empreinte génétique pour faire un teste de paternité ? 
 
 #Conclusion 
-C'est au États-Unis en 1994 que la première banque de données d'empreinte génétique à été crée sous l'égide du FBI sous le label [CODIS](https://fr.wikipedia.org/wiki/Combined_DNA_index_system). En France, suite à l'affaire du tueur parisien [Guy Goerges](https://fr.wikipedia.org/wiki/Guy_Georges), la loi du 17 juin 1998 acte la création du fichier national ([FNAEG](https://fr.wikipedia.org/wiki/Fichier_national_automatis%C3%A9_des_empreintes_g%C3%A9n%C3%A9tiques)). Il concerne aujourd'hui 2 655 381 personnes fichés.  
+C'est au États-Unis en 1994 que la première banque de données d'empreinte génétique à été crée sous l'égide du FBI sous le label [CODIS](https://fr.wikipedia.org/wiki/Combined_DNA_index_system). En France, suite à l'affaire du tueur parisien [Guy Goerges](https://fr.wikipedia.org/wiki/Guy_Georges), la loi du 17 juin 1998 acte la création du fichier national ([FNAEG](https://fr.wikipedia.org/wiki/Fichier_national_automatis%C3%A9_des_empreintes_g%C3%A9n%C3%A9tiques)). Il concerne aujourd'hui 2 655 381 personnes fichées.  
 
 
 ## Référence 
