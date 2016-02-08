@@ -28,7 +28,7 @@ La variation du nombre de répétition varie fortement dans la population. Par e
     <img src="../images/post13/satellite_poly.png">
 </p>
 
-L'identification de plusieurs régions répétées au sein du génome, permettra d'associer à un individu une unique combinaison. Une palette de 13 locis contenant des régions répétées est aujourd'hui utilisée dans la police scientifique pour identifier n'importe quel individus. Le caryotype ci-dessous montre la position de ces STRs ainsi que leurs noms.   
+L'identification de plusieurs régions répétées au sein du génome, permettra d'associer à un individu une unique combinaison. Une palette de 13 locis contenant des régions répétées est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individus. Le caryotype ci-dessous montre la position de ces STRs et leurs noms.   
 
 <p align="center">
     <img src="../images/post13/codis.jpg">
@@ -43,7 +43,7 @@ Pour créer une empreinte génétique, il suffit tout simplement de mesurer la t
 </p>
 
 Suite à la PCR, on obtient des [amplicons](https://fr.wikipedia.org/wiki/Amplicon) dont la taille est proportionnelle à celle du STR. Une [analyse en fragment](https://cmgg.be/fr/content/analyse-de-fragments) est ensuite réalisée à l'aide d'un séquenceur capillaire. En deux mots, Les amplicons migrent dans un capillaire plus ou moins vite et leurs temps de passage est mesurer lors de la détection du fluorochrome par un laser. Les résultats sont représentés par des pics de fluorescence dont la position sur l'axe des abscisses correspondent à la taille du STR.   
-Prenons par exemple, un individu homozygote pour le locus [vWA](http://www.sciencedirect.com/science/article/pii/S0531513103017746). Cette individu possède le même nombre de répétition TCTG sur le chromosome maternel et paternel au niveau de ce locus. Son génotype pourrait s'écrire : (TCTG)<sub>4</sub> / (TCTG)<sub>4</sub>. La PCR amplifiera des amplicons faisant tous la même taille, et un seul pic sera détecté sur l'analyse en fragment.   
+Prenons par exemple, un individu homozygote pour le locus [vWA](http://www.sciencedirect.com/science/article/pii/S0531513103017746). Cette individu possède 4 répétitions TCTG sur le chromosome maternel et paternel sur ce locus. Son génotype pourrait s'écrire : (TCTG)<sub>4</sub> / (TCTG)<sub>4</sub>. La PCR amplifiera des amplicons faisant tous la même taille, et un seul pic sera détecté sur l'analyse en fragment.   
 
  <p align="center">
     <img src="../images/post13/homozygote.png">
@@ -62,6 +62,8 @@ Voici le profil d'un individu que j'ai retrouvé sur google! Je vous laisse le s
     <img src="../images/post13/fingerprint.jpg">
 </p>
 
+Question : Que signifie le pic bleu avec l'unique valeur 24 ? 
+Question : S'agit il d'un homme une d'une femme ? 
 Question : Si vous aviez le profil du père , pourriez vous utiliser l'empreinte génétique comme test de paternité ? 
 
 #Conclusion 
