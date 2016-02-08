@@ -11,7 +11,7 @@ Envie d'identifier le criminel qui vous a voler votre bic 4 couleurs pendant vot
 Alors on se met tout de suite la [musique des experts Manathan](https://www.youtube.com/watch?v=gY5rztWa1TM) et on commence ! 
 
 
-# Les séquences répétés
+# Les séquences répétées
 10% du génome humain est constitué de séquence d'ADN répété en tandem. Il s'agit de séquences plus ou moins longues, appelé **noyau**, **motif** ou encore **unité de répétition** (ex: GAAA) qui se répète successivement un certain nombre de fois( ex: GAAAGAAAGAAAGAAAGAAA). 
 
 <p align="center">
