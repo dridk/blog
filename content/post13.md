@@ -62,9 +62,10 @@ Voici le profil d'un individu que j'ai retrouvé sur google! Je vous laisse le s
     <img src="../images/post13/fingerprint.jpg">
 </p>
 
-Question : Que signifie le pic bleu avec l'unique valeur 24 ? 
-Question : S'agit il d'un homme une d'une femme ? 
-Question : Si vous aviez le profil du père , pourriez vous utiliser l'empreinte génétique comme test de paternité ? 
+* Question : Que signifie le pic bleu avec l'unique valeur 24 ? 
+* Question : S'agit il d'un homme une d'une femme ? 
+* Question : Proposer une empreinte génétique pour le mère.
+* Question : Peut ont se servir de l'empreinte génétique pour faire un teste de paternité ? 
 
 #Conclusion 
 C'est au États-Unis en 1994 que la première banque de données d'empreinte génétique à été crée sous l'égide du FBI sous le label [CODIS](https://fr.wikipedia.org/wiki/Combined_DNA_index_system). En France, suite à l'affaire du tueur parisien [Guy Goerges](https://fr.wikipedia.org/wiki/Guy_Georges), la loi du 17 juin 1998 acte la création du fichier national ([FNAEG](https://fr.wikipedia.org/wiki/Fichier_national_automatis%C3%A9_des_empreintes_g%C3%A9n%C3%A9tiques)). Il concerne aujourd'hui 2 655 381 personnes fichés.  
