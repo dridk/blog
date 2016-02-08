@@ -1,7 +1,7 @@
 Title: Les empreintes génétiques
 Slug: empreinte_genetique 
 Date: 2016-02-07 13:20:34
-Tags: génétique,fun
+Tags: génétique
 Category: python
 Author: Sacha Schutz
 Status: Draft
