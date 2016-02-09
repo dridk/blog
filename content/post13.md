@@ -18,7 +18,7 @@ On se met tout de suite la [musique des experts Manhatthan](https://www.youtube.
     <img src="../images/post13/satellite.png">
 </p>
 
-Ces séquences répétées sont présentes partout dans le génome, principalement dans les [télomères](https://fr.wikipedia.org/wiki/T%C3%A9lom%C3%A8re) et les [centromères](https://fr.wikipedia.org/wiki/Centrom%C3%A8re). Parfois, ces séquences sont à proximité de gènes codants, et une modification du nombre de répétitions peut alors entraîner des répercutions cliniques. L'exemple type est la [maladie de Huntington](https://fr.wikipedia.org/wiki/Maladie_de_Huntington). Cette atteinte neurodégénérative héréditaire est caractérisée par une expansion de triplets CAG supérieure à 30 dans le gène HTT de l'[huntingtine](https://fr.wikipedia.org/wiki/Huntingtine).  su
+Ces séquences répétées sont présentes partout dans le génome, principalement dans les [télomères](https://fr.wikipedia.org/wiki/T%C3%A9lom%C3%A8re) et les [centromères](https://fr.wikipedia.org/wiki/Centrom%C3%A8re). Parfois, ces séquences sont à proximité de gènes codants et une modification du nombre de répétitions peut alors entraîner des répercussions cliniques. L'exemple type est la [maladie de Huntington](https://fr.wikipedia.org/wiki/Maladie_de_Huntington). Cette atteinte neurodégénérative héréditaire est caractérisée par une expansion de triplets CAG supérieure à 30 dans le gène HTT de l'[huntingtine](https://fr.wikipedia.org/wiki/Huntingtine).  
 On distingue 2 types de séquences répétées en fonction de la taille du motif. Les [minisatellites](https://fr.wikipedia.org/wiki/Minisatellite) ou VNTR (*Variable Number Tandem Repeat*) contiennent un motif de 9 à 80 bases et les [microsatellites](https://fr.wikipedia.org/wiki/Microsatellite_%28biologie%29) ou STR (*Short Tandem Repeat*) un motif de 2 à 5 bases. Ce sont ces dernières qui sont utilisées pour l'identification des personnes par empreinte génétique.
 
 # Le polymorphisme  
@@ -65,7 +65,7 @@ Voici le profil d'un individu que j'ai trouvé sur Google ! Je vous laisse le so
 * Question : Que signifie le pic bleu avec l'unique valeur 24 ? 
 * Question : S'agit-il d'un homme ou d'une femme ? 
 * Question : Que pourriez-vous proposer comme empreinte génétique pour la mère ?
-* Question : Peut-on se servir de l'empreinte génétique pour faire un teste de paternité ? 
+* Question : Peut-on se servir de l'empreinte génétique pour faire un test de paternité ? 
 
 #Conclusion 
 C'est aux États-Unis en 1994 que la première banque de données d'empreintes génétiques a été créée sous l'égide du FBI, sous le label [CODIS](https://fr.wikipedia.org/wiki/Combined_DNA_index_system). En France, suite à l'affaire du tueur parisien [Guy Georges](https://fr.wikipedia.org/wiki/Guy_Georges), la loi du 17 juin 1998 acte la création du fichier national ([FNAEG](https://fr.wikipedia.org/wiki/Fichier_national_automatis%C3%A9_des_empreintes_g%C3%A9n%C3%A9tiques)). Il concerne aujourd'hui 2 655 381 personnes fichées.  
