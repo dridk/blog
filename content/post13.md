@@ -26,13 +26,13 @@ On distingue 2 types de séquences répétées en fonction de la taille du motif
 # Le polymorphisme  
 
 La variation du nombre de répétitions varie fortement dans la population. Par exemple, pour une position génomique donnée, un individu (bleu) pourrait avoir sur son chromosome paternel la répétition (CG)<sub>6</sub> et sur son chromosome maternel la répétition (CG)<sub>8</sub>. Un autre individu (rouge) pourrait porter sur ses chromosomes les allèles (CG)<sub>6</sub> et (CG)<sub>9</sub>.
->>>>>>> e9e144ff567e5935036b37e74e9c9d38d873e45a
+
 <p align="center">
     <img src="../images/post13/satellite_poly.png">
 </p>
 
 
-L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une unique combinaison. Une palette de 13 loci contenant des régions répétées est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. L'idiogramme ci-dessous montre la position de ces STR ainsi que leurs noms.   
+L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une unique combinaison. Une palette de 13 loci contenant des régions répétées est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
 
 <p align="center">
     <img src="../images/post13/codis.jpg">
@@ -48,7 +48,6 @@ Pour créer une empreinte génétique, il suffit tout simplement de mesurer la t
 
 À la fin de la PCR, on obtient des [amplicons](https://fr.wikipedia.org/wiki/Amplicon) dont la taille est proportionnelle à celle du STR. Une [analyse de fragments](https://cmgg.be/fr/content/analyse-de-fragments) est ensuite réalisée à l'aide d'un séquenceur capillaire. En d'autres termes, les amplicons migrent dans un capillaire plus ou moins vite et leur temps de passage est mesuré lors de la détection du fluorochrome par un laser. Les résultats sont représentés par des pics de fluorescence dont la position sur l'axe des abscisses correspond à la taille du STR.   
 Prenons par exemple un individu homozygote pour le locus [vWA](http://www.sciencedirect.com/science/article/pii/S0531513103017746). À ce locus, cet individu possède 4 répétitions TCTG à la fois sur le chromosome maternel et sur le chromosome paternel. Son génotype pourrait s'écrire : (TCTG)<sub>4</sub> / (TCTG)<sub>4</sub>. Dans ce cas, la PCR amplifie des amplicons faisant tous la même taille et un seul pic est détecté avec l'analyse de fragments.   
->>>>>>> e9e144ff567e5935036b37e74e9c9d38d873e45a
 
  <p align="center">
     <img src="../images/post13/homozygote.png">
@@ -74,7 +73,7 @@ Voici le profil d'un individu que j'ai trouvé sur Google ! Je vous laisse le so
 * Question : Peut-on se servir de l'empreinte génétique pour faire un test de paternité ? 
 
 #Conclusion 
-C'est aux États-Unis en 1994 que la première banque de données d'empreintes génétiques a été créée sous l'égide du FBI, sous le label [CODIS](https://fr.wikipedia.org/wiki/Combined_DNA_index_system). En France, suite à l'affaire du tueur parisien [Guy Georges](https://fr.wikipedia.org/wiki/Guy_Georges), la loi du 17 juin 1998 acte la création du fichier national ([FNAEG](https://fr.wikipedia.org/wiki/Fichier_national_automatis%C3%A9_des_empreintes_g%C3%A9n%C3%A9tiques)). Il concerne aujourd'hui 2 655 381 personnes fichées.  
+C'est aux États-Unis en 1994 que la première banque de données d'empreintes génétiques a été créée sous l'égide du FBI, sous le label [CODIS](https://fr.wikipedia.org/wiki/Combined_DNA_index_system). En France, suite à l'affaire du tueur parisien [Guy Georges](https://fr.wikipedia.org/wiki/Guy_Georges), la loi du 17 juin 1998 acte la création du fichier national ([FNAEG](https://fr.wikipedia.org/wiki/Fichier_national_automatis%C3%A9_des_empreintes_g%C3%A9n%C3%A9tiques)). Il recense aujourd'hui 2 655 381 personnes fichées.  
 
 
 ## Références 
@@ -86,7 +85,7 @@ C'est aux États-Unis en 1994 que la première banque de données d'empreintes g
 * [Pour mieux comprendre l'analyse de fragments](https://www.youtube.com/watch?v=43-OQTLtrwQ)
 
 ## Remerciement 
-@Piplopp 
-Oodnadatta 
+* @Piplopp 
+* @Oodnadatta 
 
 
