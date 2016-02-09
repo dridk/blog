@@ -68,7 +68,7 @@ Voici le profil d'un individu que j'ai trouvé sur Google !
 
 On retrouve nos 13 locus ainsi que 2 locus sur les chromosomes sexuels XY, qui nous informe sur le sexe. Sur la première ligne en bleu, on peut observer 3 locus (TPOX, FGA et vWA). L'individu est hétérozygote pour le premier locus avec 2 allèles présentant 14 et 15 répétition respectivement.  Puis un deuxième locus également hétérozygote (18/20) et enfin un troisième locus, cette fois homozygote avec 24 répétitions.
 Vous pouvez refaire la même chose pour les autres locus et avoir le profil complet de cette empreinte génétique.          
-Notons également, que chaque allèle observé provient d'un des parents. Par exemple pour le premier locus (14/15), l'allèle 14 peux provenir de la mère et l'allèle 15 du père. En recherchant les empreintes génétiques chez les parents, nous pourrions confirmer le lien de filiation. 
+Notons également, que chaque allèle observé provient d'un des parents. Par exemple pour le premier locus (14/15), l'allèle 14 peut provenir de la mère et l'allèle 15 du père. En recherchant les empreintes génétiques chez les parents, nous pourrions confirmer le lien de filiation. 
 
 
 
