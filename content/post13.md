@@ -7,19 +7,19 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/fingerprint_banner.jpeg
 
 
-Envie d'identifier le criminel qui vous a volé votre bic 4 couleurs pendant votre absence au boulot ? Dans ce cas, cet article est fait pour vous ! Dans ce billet nous allons voir comment, à l'aide des séquences répétées dans le génome humain, il est possible d'identifier une personne en lui attribuant un « code-barres génétique ».    
+Envie d'identifier le criminel qui vous a volé au boulot votre bic 4 couleurs en votre absence ? Dans ce cas, cet article est fait pour vous ! Dans ce billet nous allons voir comment, à l'aide des séquences répétées dans le génome humain, il est possible d'identifier une personne en lui attribuant un « code-barres génétique ».    
 On se met tout de suite la [musique des experts Manhatthan](https://www.youtube.com/watch?v=gY5rztWa1TM) et on commence ! 
 
 
 # Les séquences répétées
-10 % du génome humain est constitué de séquences d'ADN répétées en tandem. Il s'agit de séquences plus ou moins longues, appelées « **noyaux** », « **motifs** » ou encore « **unités de répétition** » (ex : GAAA), qui se répètent successivement un certain nombre de fois (ex : GAAAGAAAGAAAGAAAGAAA). 
+10 % du génome humain est constitué de séquences d'ADN répétées en tandem. Il s'agit de séquences plus ou moins longues, appelées « **noyaux** », « **motifs** » ou encore « **unités de répétition** » (ex : GAAA), et se répètent successivement un certain nombre de fois (ex : GAAAGAAAGAAAGAAAGAAA). 
 
 <p align="center">
     <img src="../images/post13/satellite.png">
 </p>
 
 
-Ces séquences répétées sont présentes partout dans le génome, principalement dans les [télomères](https://fr.wikipedia.org/wiki/T%C3%A9lom%C3%A8re) et les [centromères](https://fr.wikipedia.org/wiki/Centrom%C3%A8re). Parfois, ces séquences sont à proximité de gènes codants et une modification du nombre de répétitions peut alors entraîner des répercussions cliniques. L'exemple type est la [maladie de Huntington](https://fr.wikipedia.org/wiki/Maladie_de_Huntington). Cette atteinte neurodégénérative héréditaire est caractérisée par une expansion de triplets CAG supérieure à 30 dans le gène HTT de l'[huntingtine](https://fr.wikipedia.org/wiki/Huntingtine).  
+Ces séquences répétées sont présentes partout dans le génome, principalement dans les [télomères](https://fr.wikipedia.org/wiki/T%C3%A9lom%C3%A8re) et les [centromères](https://fr.wikipedia.org/wiki/Centrom%C3%A8re). Parfois, ces séquences se trouvent à proximité de gènes codants et une modification du nombre de répétitions peut alors entraîner des répercussions cliniques. L'exemple type est la [maladie de Huntington](https://fr.wikipedia.org/wiki/Maladie_de_Huntington). Cette atteinte neurodégénérative héréditaire est caractérisée par une expansion de triplets CAG supérieure à 30 dans le gène HTT de l'[huntingtine](https://fr.wikipedia.org/wiki/Huntingtine).  
 On distingue 2 types de séquences répétées en fonction de la taille du motif. Les [minisatellites](https://fr.wikipedia.org/wiki/Minisatellite) ou VNTR (*Variable Number Tandem Repeat*) contiennent un motif de 9 à 80 bases et les [microsatellites](https://fr.wikipedia.org/wiki/Microsatellite_%28biologie%29) ou STR (*Short Tandem Repeat*) un motif de 2 à 5 bases. Ce sont ces dernières qui sont utilisées pour l'identification des personnes par empreinte génétique.
 
 # Le polymorphisme  
@@ -31,14 +31,14 @@ La variation du nombre de répétitions varie fortement dans la population. Par 
 </p>
 
 
-L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une unique combinaison. Une palette de 13 loci + 2 loci sur les chromosomes sexuelles est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
+L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une combinaison unique. Une palette de 13 loci + 2 loci sur les chromosomes sexuels est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
 
 <p align="center">
     <img src="../images/post13/codis.jpg">
 </p>
 
 # Identification des STR 
-Pour créer une empreinte génétique, il suffit tout simplement de mesurer la taille de ces 13 régions répétées en les amplifiant par PCR. Pour cela, pour chaque STR, on utilise un couple d'amorces flanquant le STR en question. Une des deux amorces est couplée à un fluorochrome qui permet ensuite l'identification de la séquence par [électrophorèse capillaire](https://fr.wikipedia.org/wiki/%C3%89lectrophor%C3%A8se_capillaire). Les séquences des amorces sont disponibles [ici](http://www.cstl.nist.gov/biotech/strbase/multiplx.htm).
+Pour créer une empreinte génétique, il suffit tout simplement de mesurer la taille de ces 13 régions répétées en les amplifiant par [PCR](https://fr.wikipedia.org/wiki/PCR). Pour cela, pour chaque STR, on utilise un couple d'amorces flanquant le STR en question. Une des deux amorces est couplée à un fluorochrome qui permet ensuite l'identification de la séquence par [électrophorèse capillaire](https://fr.wikipedia.org/wiki/%C3%89lectrophor%C3%A8se_capillaire). Les séquences des amorces sont disponibles [ici](http://www.cstl.nist.gov/biotech/strbase/multiplx.htm).
 
 <p align="center">
     <img src="../images/post13/PCR_multiplexe.png">
@@ -46,7 +46,7 @@ Pour créer une empreinte génétique, il suffit tout simplement de mesurer la t
 
 
 À la fin de la PCR, on obtient des [amplicons](https://fr.wikipedia.org/wiki/Amplicon) dont la taille est proportionnelle à celle du STR. Une [analyse de fragments](https://cmgg.be/fr/content/analyse-de-fragments) est ensuite réalisée à l'aide d'un séquenceur capillaire. En d'autres termes, les amplicons migrent dans un capillaire plus ou moins vite et leur temps de passage est mesuré lors de la détection du fluorochrome par un laser. Les résultats sont représentés par des pics de fluorescence dont la position sur l'axe des abscisses correspond à la taille du STR.   
-Prenons par exemple un individu homozygote pour le locus [vWA](http://www.sciencedirect.com/science/article/pii/S0531513103017746). À ce locus, cet individu possède 4 répétitions TCTG à la fois sur le chromosome maternel et sur le chromosome paternel. Son génotype pourrait s'écrire : (TCTG)<sub>4</sub> / (TCTG)<sub>4</sub>. Dans ce cas, la PCR amplifie des amplicons faisant tous la même taille et un seul pic est détecté avec l'analyse de fragments.   
+Prenons par exemple un individu homozygote pour le locus [vWA](http://www.sciencedirect.com/science/article/pii/S0531513103017746). À ce locus, cet individu possède 4 répétitions TCTG à la fois sur le chromosome maternel et sur le chromosome paternel. Son génotype pourrait s'écrire : (TCTG)<sub>4</sub> / (TCTG)<sub>4</sub>. Dans ce cas, la PCR amplifie des amplicons tous de la même taille et un seul pic est détecté avec l'analyse de fragments.   
 
  <p align="center">
     <img src="../images/post13/homozygote.png">
