@@ -60,13 +60,15 @@ En revanche, si le patient est hétérozygote avec le génotype suivant : (TCTG)
 
 
 Pour créer une empreinte génétique, il suffit de refaire la même chose pour les 13 loci. On fait une [PCR multiplexe](http://www.ozyme.fr/documentation/techozyme/techozyme20-pcr-multiplexe.asp) en mélangeant tous les couples d'amorces et en discriminant chaque locus à l'aide de 4 fluorochromes différents ainsi que par des tailles de STR différentes. En traçant l'ensemble des pics, on obtient l'empreinte génétique. La probabilité que deux individus (non jumeaux) aient le même profil est extrêmement faible, de l'ordre de  10<sup>-10</sup>.    
-Voici le profil d'un individu que j'ai trouvé sur Google ! Je vous laisse le soin de l'interpréter ! 
+Voici le profil d'un individu que j'ai trouvé sur Google !
 
  <p align="center">
     <img src="../images/post13/fingerprint.jpg">
 </p>
 
-* Question : Que signifie le pic bleu avec l'unique valeur 24 ? 
+On retrouve nos 13 locus ainsi que les chromosomes sexuels XY. Sur la première ligne en bleu, on peut observer 3 locus (TPOX, FGA et vWA). L'individu est hétérozygote pour le premier locus avec 2 allèles présentant 14 et 15 répétition respectivement.  Puis un deuxième locus également hétérozygote (18/20) et enfin un troisième locus, cette fois homozygote avec 24 répétitions.
+Vous pouvez refaire la même chose pour les autres locus et avoir le profil complet de cette empreinte génétique. 
+
 * Question : S'agit-il d'un homme ou d'une femme ? 
 * Question : Que pourriez-vous proposer comme empreinte génétique pour la mère ?
 * Question : Peut-on se servir de l'empreinte génétique pour faire un test de paternité ? 
