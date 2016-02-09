@@ -31,7 +31,7 @@ La variation du nombre de répétitions varie fortement dans la population. Par 
 </p>
 
 
-L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une unique combinaison. Une palette de 13 loci contenant des régions répétées est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
+L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une unique combinaison. Une palette de 13 loci + 2 loci sur les chromosomes sexuelles est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
 
 <p align="center">
     <img src="../images/post13/codis.jpg">
