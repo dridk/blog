@@ -4,7 +4,6 @@ Date: 2016-02-07 13:20:34
 Tags: génétique
 Category: python
 Author: Sacha Schutz
-Status: Draft
 SIDEBARIMAGE:../images/common/fingerprint_banner.jpeg
 
 
