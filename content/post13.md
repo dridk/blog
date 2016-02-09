@@ -2,7 +2,7 @@ Title: Les empreintes génétiques
 Slug: empreinte_genetique 
 Date: 2016-02-07 13:20:34
 Tags: génétique
-Category: python
+Category: génétique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/fingerprint_banner.jpeg
 
