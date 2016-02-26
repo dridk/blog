@@ -7,20 +7,21 @@ Status:draft
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/immuno_banner.jpg
 
-Si vous lisez mon blog, vous avez sûrement constaté ma tendance à faire des homologies entre l'informatique et la génétique, notamment entre séquence d'ADN et séquence binaire. Dans ce post, nous allons voir une nouvelle homologie tout aussi surprenante : **La reconnaissance du soi**.   
-D'un point de vue informatique, Il s'agit de vérifier si un fichier est bien le votre et qu'il n'a pas été modifié par un virus.   
-Coté biologique, c'est la même chose. Il s'agit de vérifier si votre cellule est saine et qu'elle n'a pas été infectée par un virus !  
-Dans les deux cas nous allons utiliser des "**signatures**" et toutes anomalies dans celles-ci révélera l'imposture.   
+Si vous lisez mon blog, vous avez sûrement constaté ma tendance à tracer des parallèles entre l'informatique et la génétique, notamment entre séquence d'ADN et séquence binaire. Dans cet article, nous allons à nouveau faire un parallèle qui peut paraître tout aussi surprenant : **La reconnaissance du soi**.   
+Du point de vue de l'informatique, il s'agit de vérifier si un fichier est bien le votre et qu'il n'a pas été modifié par un virus.   
+Du point de vue de la biologie, on rencontre le même problème: vérifier qu'une cellule est saine et qu'elle n'a pas été infectée par un virus !  
+Dans les deux cas nous allons utiliser des "**signatures**" et toute anomalie dans celles-ci révélera l'imposture.   
 
 ## Signature d'un fichier
 La *signature* ou *empreinte* d'un fichier est une séquence de caractères associée de façon unique à un fichier. Par exemple l'empreinte du fichier **superMario.exe** peut avoir comme empreinte *f6c51c6bb1ce72508313dad3dc3c6776*. Toutes modifications, même minime du fichier entraînera une modification de l'empreinte.   
 Pour réaliser cette prouesse, on utilise des [fonctions de hachages](https://fr.wikipedia.org/wiki/Fonction_de_hachage). Les algorithmes [MD5](https://fr.wikipedia.org/wiki/MD5) et [SHA-1](https://fr.wikipedia.org/wiki/SHA-1) sont certainement les plus connus.    
 Depuis un terminal [Unix](https://fr.wikipedia.org/wiki/Unix), Vous pouvez récupérer l'empreinte de n'importe quel fichier en tapant : 
 
-    md5sum leVraiSuperMario.exe   
-    ## Retourne 50e6b5cd621b4f9de2cc78669cd0c350
 
-L'empreinte obtenue est une séquence de 128 bits soit 32 caractères en hexadécimale. La probabilité que deux fichiers aient la même empreinte est très faible. Mais elle existe, c'est une "*collision*".    
+    md5sum mon_authentique_photo.png   
+    ## Retourne: 50e6b5cd621b4f9de2cc78669cd0c350
+
+L'empreinte obtenue est une séquence de 128 bits soit une chaîne hexadécimale de 32 caractères. La probabilité que deux fichiers aient la même empreinte est très faible. Mais elle existe, c'est une "*collision*".    
 Lorsque vous allez distribuer votre fichier, vous pouvez fournir son empreinte depuis votre page web, pour que les utilisateurs puissent en vérifier  l'authenticité. Par exemple, jeter un œil sur la [page de téléchargement de kubuntu](http://cdimage.ubuntu.com/kubuntu/releases/wily/release/), vous pouvez récupérer les empreintes des images ISO depuis le fichier [MD5SUMS](http://cdimage.ubuntu.com/kubuntu/releases/wily/release/MD5SUMS). 
 Les antivirus utilisent également cet outil. Ils peuvent par exemple calculer l'empreinte de l'ensemble de vos fichiers. Si un virus contamine l'un des fichiers, l'empreinte est modifiée et ce cher [Avast](https://fr.wikipedia.org/wiki/Avast!) va se mettre à nous crier dessus !
 
