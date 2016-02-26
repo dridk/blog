@@ -15,7 +15,10 @@
    id="svg11178"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="hla.svg">
+   sodipodi:docname="hla.svg"
+   inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+   inkscape:export-xdpi="23.086058"
+   inkscape:export-ydpi="23.086058">
   <defs
      id="defs11180">
     <marker
@@ -263,16 +266,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="-194.50802"
-     inkscape:cy="706.97644"
+     inkscape:cx="-216.93638"
+     inkscape:cy="743.63991"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1026"
-     inkscape:window-x="1676"
-     inkscape:window-y="-4"
-     inkscape:window-maximized="1"
+     inkscape:window-width="779"
+     inkscape:window-height="402"
+     inkscape:window-x="545"
+     inkscape:window-y="312"
+     inkscape:window-maximized="0"
      inkscape:snap-global="false"
      inkscape:snap-bbox="true">
     <inkscape:grid
@@ -1353,11 +1356,14 @@
        d="m -190.99366,364.62366 c -43.87232,0.0241 -84.4191,2.96262 -108.125,38.77331 l 216.624998,0 C -107.90817,374.63321 -140.49271,364.73504 -190.99366,364.62366 z"
        id="circle14667"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-ydpi="175.88536" />
     <g
-       inkscape:export-ydpi="171.98801"
-       inkscape:export-xdpi="171.98801"
-       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/cell_hla.png"
+       inkscape:export-ydpi="175.88536"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
        transform="matrix(0.5135307,-0.85807122,0.85807122,0.5135307,-879.50028,321.06993)"
        id="g14671">
       <g
@@ -1545,19 +1551,28 @@
        sodipodi:rx="47.199379"
        sodipodi:ry="47.199379"
        d="m 108.89445,417.91061 a 47.199379,47.199379 0 1 1 -94.398761,0 47.199379,47.199379 0 1 1 94.398761,0 z"
-       transform="translate(-256,-157)" />
+       transform="translate(-256,-157)"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-ydpi="175.88536" />
     <path
        style="fill:#a40000;fill-opacity:1;stroke:none"
        d="m -179.56494,338.68479 3.5,-3.5 -13.125,-13.125 0,-23.8125 -4.96875,0 0,23.125 -13.8125,13.8125 3.5,3.5 12.46875,-12.46875 12.4375,12.46875 z"
        id="rect14726"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-ydpi="175.88536" />
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="-192.60742"
        y="258.86218"
        id="text14733"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-ydpi="175.88536"><tspan
          sodipodi:role="line"
          id="tspan14735"
          x="-190.69727"
@@ -1574,12 +1589,30 @@
        y="391.09116"
        x="-193.66809"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       xml:space="preserve"><tspan
+       xml:space="preserve"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-ydpi="175.88536"><tspan
          style="text-align:center;text-anchor:middle;fill:#ffffff"
          y="391.09116"
          x="-191.75793"
          sodipodi:role="line"
          id="tspan14941">cellule </tspan></text>
+    <text
+       inkscape:export-ydpi="175.88536"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       sodipodi:linespacing="125%"
+       id="text14945"
+       y="286.82486"
+       x="-88.722649"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="text-align:center;text-anchor:middle;fill:#000000"
+         id="tspan14949"
+         y="286.82486"
+         x="-88.722649"
+         sodipodi:role="line">Recepteur TCR</tspan></text>
   </g>
   <g
      inkscape:label="Calque 1"
@@ -5556,13 +5589,13 @@ D46W95mtaU1rWlOaFkbovQf6/wHWCs57/iK7nQAAAABJRU5ErkJggg==
          sodipodi:role="line">Cellule</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.27707529px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
-       d="m 338.61649,528.0169 -34.20048,31.28732"
+       d="m -137.86879,292.90389 -34.20048,31.28732"
        id="path13517"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/cell_hla.png"
-       inkscape:export-xdpi="68.398705"
-       inkscape:export-ydpi="68.398705" />
+       inkscape:export-filename="/home/bioinfo/Dev/blog/content/images/post14/lymphoT.png"
+       inkscape:export-xdpi="175.88536"
+       inkscape:export-ydpi="175.88536" />
     <g
        id="g13886"
        transform="matrix(0.46353532,0,0,0.46353532,138.77998,-66.23469)"

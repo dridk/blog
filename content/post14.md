@@ -13,7 +13,7 @@ Coté biologique, c'est la même chose. Il s'agit de vérifier si votre cellule 
 Dans les deux cas nous allons utiliser des "**signatures**" et toutes anomalies dans celles-ci révélera l'imposture.   
 
 ## Signature d'un fichier
-La *signature* ou *empreinte* d'un fichier est une séquence de caractères associée de façon unique à un fichier. Par exemple l'empreinte du fichier **mon_authentique_photo.png** peut avoir comme empreinte *f6c51c6bb1ce72508313dad3dc3c6776*. Toutes modifications, même minime du fichier entraînera une modification de l'empreinte.   
+La *signature* ou *empreinte* d'un fichier est une séquence de caractères associée de façon unique à un fichier. Par exemple l'empreinte du fichier **superMario.exe** peut avoir comme empreinte *f6c51c6bb1ce72508313dad3dc3c6776*. Toutes modifications, même minime du fichier entraînera une modification de l'empreinte.   
 Pour réaliser cette prouesse, on utilise des [fonctions de hachages](https://fr.wikipedia.org/wiki/Fonction_de_hachage). Les algorithmes [MD5](https://fr.wikipedia.org/wiki/MD5) et [SHA-1](https://fr.wikipedia.org/wiki/SHA-1) sont certainement les plus connus.    
 Depuis un terminal [Unix](https://fr.wikipedia.org/wiki/Unix), Vous pouvez récupérer l'empreinte de n'importe quel fichier en tapant : 
 
