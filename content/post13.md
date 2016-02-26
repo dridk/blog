@@ -31,7 +31,7 @@ La variation du nombre de répétitions varie fortement dans la population. Par 
 </p>
 
 
-L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une combinaison unique. Une palette de 13 loci + 2 loci sur les chromosomes sexuels est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
+L'identification de plusieurs régions répétées au sein du génome permet d'associer à un individu une combinaison unique. Une palette de 13 loci + 2 loci (oui, un locus... des loci) sur les chromosomes sexuels est aujourd'hui utilisée par la police scientifique pour identifier n'importe quel individu. Le caryotype ci-dessous montre la position et le nom de ces STR sur les chromosomes.
 
 <p align="center">
     <img src="../images/post13/codis.jpg">
@@ -66,8 +66,8 @@ Voici le profil d'un individu que j'ai trouvé sur Google !
     <img src="../images/post13/fingerprint.jpg">
 </p>
 
-On retrouve nos 13 locus ainsi que 2 locus sur les chromosomes sexuels XY, qui nous informe sur le sexe. Sur la première ligne en bleu, on peut observer 3 locus (TPOX, FGA et vWA). L'individu est hétérozygote pour le premier locus avec 2 allèles présentant 14 et 15 répétition respectivement.  Puis un deuxième locus également hétérozygote (18/20) et enfin un troisième locus, cette fois homozygote avec 24 répétitions.
-Vous pouvez refaire la même chose pour les autres locus et avoir le profil complet de cette empreinte génétique.          
+On retrouve nos 13 loci ainsi que 2 loci sur les chromosomes sexuels XY, qui nous informent sur le sexe. Sur la première ligne en bleu, on peut observer 3 loci (TPOX, FGA et vWA). L'individu est hétérozygote pour le premier locus avec 2 allèles présentant 14 et 15 répétitions respectivement ; puis un deuxième locus également hétérozygote (18/20) et enfin un troisième locus, cette fois homozygote avec 24 répétitions.
+Vous pouvez refaire la même chose pour les autres loci et avoir le profil complet de cette empreinte génétique.          
 Notons également, que chaque allèle observé provient d'un des parents. Par exemple pour le premier locus (14/15), l'allèle 14 peut provenir de la mère et l'allèle 15 du père. En recherchant les empreintes génétiques chez les parents, nous pourrions confirmer le lien de filiation. 
 
 
