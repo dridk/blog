@@ -69,7 +69,7 @@ La variation allélique des gènes du CMH permette à une population de lutter c
 
 ## Conclusion 
 J'espère que vous avez saisi quelque chose, même partiellement en lisant ce post. L'immunologie est une discipline assez complexe, et il m'est difficile de tout résumer en quelque ligne.   
-Retenez que chaque cellule dispose d'une empreinte composé de peptide et de molécule HLA. Toutes modifications soi du peptide ( virus ) soit du HLA ( greffe) est reconnu comme étranger et entraîne l'activation du système immunitaire.   
+Retenez que chaque cellule dispose d'une empreinte composé de peptide et de molécule HLA. Toutes modifications soit du peptide ( virus ) soit du HLA ( greffe) est reconnu comme étranger et entraîne l'activation du système immunitaire.   
 
 ## Références 
 * [Le complexe majeur d'histocompatibilité](http://www.assim.refer.org/raisil/raisil/L02_files/page82-4.-complexe-majeur-d0027histocompatibilite.pdf)
