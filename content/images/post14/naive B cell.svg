@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <title>naive B cell</title>
+ <g>
+  <title>Layer 1</title>
+  <circle fill="url(#svg_2)" stroke="#000000" stroke-width="2" cx="357" cy="262" r="199.621094" id="svg_1"/>
+  <circle fill="url(#svg_10)" stroke="#000000" stroke-width="0" cx="377.999994" cy="285.999999" r="166.410156" id="svg_3"/>
+  <g transform="rotate(-9.37838 248.5 67.3555)" id="svg_54">
+   <line id="svg_34" y2="53" x2="236" y1="74" x1="244" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_37" y2="64" x2="261" y1="71" x1="243" stroke-width="6" stroke="#000000" fill="none"/>
+   <line transform="rotate(-2.48955 254.5 55.5)" id="svg_39" y2="47" x2="251.5" y1="64" x1="257.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line transform="rotate(1.24536 254.5 78.5001)" id="svg_41" y2="87.5" x2="258" y1="69.5" x1="251" stroke-width="6" stroke="#000000" fill="none"/>
+  </g>
+  <g transform="rotate(35.4555 409 46.5)" id="svg_55">
+   <line id="svg_56" y2="32.144531" x2="396.5" y1="53.144531" x1="404.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_57" y2="43.144531" x2="421.5" y1="50.144531" x1="403.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_58" transform="rotate(-2.48955 415 34.6445)" y2="26.144531" x2="412" y1="43.144531" x1="418" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_59" transform="rotate(1.24536 415 57.6449)" y2="66.644531" x2="418.5" y1="48.644531" x1="411.5" stroke-width="6" stroke="#000000" fill="none"/>
+  </g>
+  <g transform="rotate(67.7965 522 112)" id="svg_60">
+   <line id="svg_61" y2="97.644531" x2="509.5" y1="118.644531" x1="517.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_62" y2="108.644531" x2="534.5" y1="115.644531" x1="516.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_63" transform="rotate(-2.48955 528 100.145)" y2="91.644531" x2="525" y1="108.644531" x1="531" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_64" transform="rotate(1.24536 528 123.145)" y2="132.144531" x2="531.5" y1="114.144531" x1="524.5" stroke-width="6" stroke="#000000" fill="none"/>
+  </g>
+  <g transform="rotate(-70.1448 135 260)" id="svg_65">
+   <line id="svg_66" y2="245.644531" x2="122.5" y1="266.644531" x1="130.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_67" y2="256.644531" x2="147.5" y1="263.644531" x1="129.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_68" transform="rotate(-2.48955 141 248.145)" y2="239.644531" x2="138" y1="256.644531" x1="144" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_69" transform="rotate(1.24536 141 271.145)" y2="280.144531" x2="144.5" y1="262.144531" x1="137.5" stroke-width="6" stroke="#000000" fill="none"/>
+  </g>
+  <g transform="rotate(-103.36 168 380)" id="svg_70">
+   <line id="svg_71" y2="365.644531" x2="155.5" y1="386.644531" x1="163.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_72" y2="376.644531" x2="180.5" y1="383.644531" x1="162.5" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_73" transform="rotate(-2.48955 174 368.145)" y2="359.644531" x2="171" y1="376.644531" x1="177" stroke-width="6" stroke="#000000" fill="none"/>
+   <line id="svg_74" transform="rotate(1.24536 174 391.145)" y2="400.144531" x2="177.5" y1="382.144531" x1="170.5" stroke-width="6" stroke="#000000" fill="none"/>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="Arial" font-size="64" id="svg_75" y="300" x="380" stroke-width="0" stroke="#000000" fill="#ffffff">T</text>
+  <g id="svg_4" transform="rotate(-30.3398 173.102 138.471)">
+   <line y2="124.115234" x2="160.599609" y1="145.115234" x1="168.599609" stroke-width="6" stroke="#000000" fill="none" id="svg_5"/>
+   <line y2="135.115234" x2="185.599609" y1="142.115234" x1="167.599609" stroke-width="6" stroke="#000000" fill="none" id="svg_6"/>
+   <line transform="rotate(-2.48955 179.1 126.615)" y2="118.115234" x2="176.099609" y1="135.115234" x1="182.099609" stroke-width="6" stroke="#000000" fill="none" id="svg_7"/>
+   <line transform="rotate(1.24536 179.1 149.615)" y2="158.615234" x2="182.599609" y1="140.615234" x1="175.599609" stroke-width="6" stroke="#000000" fill="none" id="svg_8"/>
+  </g>
+ </g>
+ <defs>
+  <linearGradient id="svg_2" x1="0" y1="0" x2="1" y2="1">
+   <stop offset="0" stop-color="#aaaaff"/>
+   <stop offset="1" stop-color="#aa56ff"/>
+  </linearGradient>
+  <radialGradient id="svg_10" cx="0.5" cy="0.5" r="0.5">
+   <stop offset="0" stop-color="#280151"/>
+   <stop offset="1" stop-color="#46028e"/>
+  </radialGradient>
+  <radialGradient id="svg_13" cx="0.5" cy="0.5" r="0.5">
+   <stop offset="0" stop-color="#00007f"/>
+   <stop offset="1" stop-color="#007fff"/>
+  </radialGradient>
+ </defs>
+</svg>
