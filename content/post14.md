@@ -3,7 +3,6 @@ Slug: reconnaissance_soi
 Date: 2016-02-25 16:45:18
 Tags: génétique, immunologie
 Category: génétique
-Status:draft
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/immuno_banner.jpg
 
@@ -23,7 +22,7 @@ Depuis un terminal [Unix](https://fr.wikipedia.org/wiki/Unix), vous pouvez récu
 
 L'empreinte obtenue est une séquence de 128 bits soit une chaîne hexadécimale de 32 caractères. La probabilité que deux fichiers aient la même empreinte est extrèmement faible mais une telle éventualité est possible, on parle alors de "*collision*".    
 Lorsque vous distribuez un fichier, l'empreinte peut être données depuis votre page web, ce qui permettra aux utilisateurs d'en vérifier l'authenticité. Par exemple, à partir de la [page de téléchargement de kubuntu](http://cdimage.ubuntu.com/kubuntu/releases/wily/release/), il est possible de récupérer les empreintes des images ISO à partir du fichier [MD5SUMS](http://cdimage.ubuntu.com/kubuntu/releases/wily/release/MD5SUMS). 
-Les antivirus utilisent également cet outil. Ils peuvent calculer l'empreinte de l'ensemble de vos fichiers et si un virus contamine l'un d'eux, l'empreinte est modifiée et l'indispensable [Avast](https://fr.wikipedia.org/wiki/Avast!) va sonner l'alarme !
+Les antivirus utilisent également cet outil. Ils peuvent calculer l'empreinte de l'ensemble de vos fichiers et si un virus contamine l'un d'eux, l'empreinte est modifiée et notre cher [Avast](https://fr.wikipedia.org/wiki/Avast!) va sonner l'alarme !
 
 
 ## Signature d'une cellule 
@@ -62,7 +61,7 @@ Telle une armée de soldats possédant chacun une arme différente, chaque indiv
 </p>
 
 ### Greffe et rejet 
-La variation allélique des gènes du CMH permet à une population de lutter contre un virus. En revanche, cela pose problème lors des greffes d'organes. Nous l'avons vu plus haut, les lymphocytes T reconnaissent aussi bien le peptide que la molécule du CMH. Un organe d'un donneur, ne possède pas les mêmes molécules HLA que le receveur. Cette greffe sera donc reconnue comme étrangère par les lymphocytes T du receveur. Pour y remédier, on peut utiliser des immunosuppresseurs qui musèlent le système immunitaire. Mais c'est surtout la recherche d'une [compatibilité HLA](http://biblio.hmr.qc.ca/ciup/Publications_pdf/T/typage_hla_onc011.pdf) qui est systématiquement recherchée lors d'une greffe. Plus les allèles sont proches et moins le rejet sera sévère. On cherche donc à typer le profil HLA du donneur et du greffé. Onfait appel à une nomenclature internationale définie sur [hla.alleles.org](http://hla.alleles.org/) et qui donne un identifiant pour chaque gène HLA. La figure suivante identifie un allèle pour le gène HLA-A. 
+La variation allélique des gènes du CMH permet à une population de lutter contre un virus. En revanche, cela pose problème lors des greffes d'organes. Nous l'avons vu plus haut, les lymphocytes T reconnaissent aussi bien le peptide que la molécule du CMH. Un organe d'un donneur, ne possède pas les mêmes molécules HLA que le receveur. Cette greffe sera donc reconnue comme étrangère par les lymphocytes T du receveur. Pour y remédier, on peut utiliser des immunosuppresseurs qui musèlent le système immunitaire. Mais c'est surtout la recherche d'une [compatibilité HLA](http://biblio.hmr.qc.ca/ciup/Publications_pdf/T/typage_hla_onc011.pdf) qui est systématiquement recherchée lors d'une greffe. Plus les allèles sont proches et moins le rejet sera sévère. On cherche donc à typer le profil HLA du donneur et du greffé. On fait appel à une nomenclature internationale définie sur [hla.alleles.org](http://hla.alleles.org/) et qui donne un identifiant pour chaque gène HLA. La figure suivante identifie un allèle pour le gène HLA-A. 
 
 <p align="center">
     <img src="../images/post14/nomenclature.png">
