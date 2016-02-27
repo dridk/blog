@@ -42,7 +42,7 @@ DISQUS_ON_PAGES = True
 SOCIAL = (
     ('github', '/archives.html'),
     ('twitter-square', 'https://twitter.com/dridk'),
-    ('rss-square', 'https://github.com/dridk.atom')
+    ('rss-square', 'http://dridk.me/feeds/all.atom.xml')
    )
 
 DEFAULT_PAGINATION = 10
