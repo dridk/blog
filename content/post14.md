@@ -69,7 +69,7 @@ La variation allélique des gènes du CMH permet à une population de lutter con
 
 ## Conclusion 
 J'espère que vous avez un peu compris, même partiellement en lisant cet article. L'immunologie est une discipline assez complexe, et il m'est difficile de tout résumer en quelques lignes.   
-Retenez que chaque cellule dispose d'une empreinte composée de peptides et de molécules HLA. Toute modification soit du peptide ( virus ), soit du HLA ( greffe) est reconnu comme étrangère et entraîne l'activation du système immunitaire.   
+Retenez que chaque cellule dispose d'une empreinte composée de peptides et de molécules HLA. Toute modification soit du peptide ( virus ), soit du HLA ( greffe) est reconnu comme étrangère et entraîne l'activation du système immunitaire. L'homologie avec les systèmes de sécurités informatiques est flagrante, et je pense que ingénieurs ont tout à gagner à s'inspirer des millions d'évolution du meilleur système de défense de la planète!  
 
 ## Références 
 * [Le complexe majeur d'histocompatibilité](http://www.assim.refer.org/raisil/raisil/L02_files/page82-4.-complexe-majeur-d0027histocompatibilite.pdf)
