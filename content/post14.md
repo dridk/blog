@@ -12,7 +12,7 @@ Du point de vue de la biologie, on rencontre le même problème: vérifier qu'un
 Dans les deux cas nous allons utiliser des "**signatures**" et toute anomalie dans celles-ci révélera l'imposture.   
 
 ## Signature d'un fichier
-La *signature* ou *empreinte* d'un fichier est une séquence de caractères associée de façon unique à un fichier. Par exemple, le fichier **superMario.exe** peut avoir comme empreinte *f6c51c6bb1ce72508313dad3dc3c6776*. Toute modification du fichier entraînera une modification de l'empreinte.   
+La *signature* ou *empreinte* d'un fichier est une séquence de caractères associée de façon unique à un fichier. Par exemple, le fichier **superMario.exe** peut avoir comme empreinte *f6c51c6bb1ce72508313dad3dc3c6776*. Toute modification du fichier, même minime, entraînera une modification de l'empreinte.   
 Cette prouesse est réalisée à l'aide des [fonctions de hachages](https://fr.wikipedia.org/wiki/Fonction_de_hachage). Les algorithmes [MD5](https://fr.wikipedia.org/wiki/MD5) et [SHA-1](https://fr.wikipedia.org/wiki/SHA-1) sont les plus connus.    
 Depuis un terminal [Unix](https://fr.wikipedia.org/wiki/Unix), vous pouvez récupérer l'empreinte de n'importe quel fichier en tapant : 
 
