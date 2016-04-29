@@ -9,19 +9,19 @@ Status:Draft
 
 « *Quel est l’animal le plus meurtrier au monde ?* » On entend souvent cette question, et une fois passés les requins blancs, serpents et autres méduse-boîtes vient toujours un petit malin pour répondre « *Le moustique !* ».
 Bon ok il n’a pas tort le petit malin. Mais pour être plus précis le moustique n’est qu’un taxi pour le vrai tueur numéro 1 sur cette planète. On l’appelle **Malaria**, le « mauvais air » ou **Plasmodium** mais il est plus connu sous le nom de **Paludisme** et cause 500 000 morts par an dans le monde.
-Et parler de ce tueur en série c’est l’occasion de parler un peu d’immunité, d’évolution, mais avant tout c’est l’occasion de parler de parasite !
+Et parler de ce tueur en série c’est l’occasion de parler un peu d’immunité, d’évolution, mais avant tout c’est l’occasion de parler des parasites !
 
 ##Parasitisme
 Avant d’aller plus loin une petite définition s’impose : qu’est-ce qu’un [parasite](https://fr.wikipedia.org/wiki/Parasite) ? Les dictionnaires vous diront que c’est un organisme qui vit aux dépens d’un autre organisme appelé hôte.
 Un peu comme ce colocataire qui profite du toit, du micro-onde et de la connexion wifi mais qui ne paie jamais le loyer.
-On l’oppose souvent à la [symbiose](https://fr.wikipedia.org/wiki/Symbiose), où les deux êtres vivants ont besoin l’un de l’autre. En effet dans le cas du parasitisme, l’hôte pourrait vivre sans le parasite. Et souvent il pourrait vivre mieux sans, car le parasite se nourrit aux dépens de son hôte. Plus de fromage rapé dans le frigo ? C’est le parasite.
-Mais il est important de préciser que ce n’est qu’un mode de vie parmi d’autre. Un moyen pour un organisme de trouver l’énergie suffisante pour se reproduire. Nous, humains, avons trouvé une autre méthode commune à de nombreux autres animaux sur cette planète : la prédation. Le prédateur va chasser et, s’il est chanceux, tuer sa proie. La relation entre les deux est courte et sanglante, l’un imposant une pression de sélection sur l’autre. Les proies plus adaptées à échapper à leur prédateur vont survivre, se reproduire, et transmettre ce caractère à leur descendance.
+On l’oppose souvent à la [symbiose](https://fr.wikipedia.org/wiki/Symbiose), où les deux êtres vivants ont besoin l’un de l’autre. En effet le parasite va utiliser à son profit les ressources de son hôte, sans lui être indispensable. Et parfois en lui étant  Plus de fromage rapé dans le frigo ? C’est le parasite.
+Il est important de préciser que ce n’est qu’un mode de vie parmi d’autre. Un moyen pour un organisme de trouver l’énergie suffisante pour se reproduire. Nous, humains, avons trouvé une autre méthode commune à de nombreux autres animaux sur cette planète : la prédation. Le prédateur va chasser et tuer sa proie. La relation entre le prédateur et la proie est courte et sanglante, l’un imposant une pression de sélection sur l’autre. Les proies plus adaptées à échapper à leur prédateur vont survivre, se reproduire, et transmettre ce caractère à leur descendance.
 
 <p align="center">
     <img src="../images/post15/predationproie.png">
 </p>
 
-Dans le cas du parasitisme la relation est tout autre. Notre parasite vit au contact de son hôte, parfois pendant une courte période de sa vie, mais parfois pendant des années comme le ver solitaire [Taenia](https://fr.wikipedia.org/wiki/Taenia_saginata). Les deux organismes se côtoient de manière très étroite, et le système immunitaire de l’hôte joue un peu le rôle du prédateur qui cherche à éliminer le parasite. Et comme la gazelle qui a évolué pour fuir plus rapidement les lions, les parasites évoluent également pour échapper à notre système immunitaire… Et pour cela ils redoublent d’ingéniosité !
+Dans le cas du parasitisme, si le bilan est le même, un transfert d'énergie entre deux organismes, la relation est tout autre. Notre parasite vit au contact de son hôte, parfois pendant une courte période de sa vie, mais parfois pendant des années comme le ver solitaire [Ténia](https://fr.wikipedia.org/wiki/Taenia_saginata). Les deux organismes se côtoient de manière très étroite, et le système immunitaire de l’hôte joue un peu le rôle du prédateur qui cherche à éliminer le parasite. Et comme la gazelle qui a évolué pour fuir plus rapidement les lions, les parasites évoluent également pour échapper à notre système immunitaire… Et pour cela ils redoublent d’ingéniosité !
 
 ## Le globule rouge : une planque idéale
 Dans un [article précédent](reconnaissance_soi.html) de ce blog, vous avez pu apprendre que nos cellules ont un mécanisme efficace pour se protéger d’un organisme qui voudrait vivre à l’intérieur, comme un virus, il s’agit des [molécules de CMH](https://fr.wikipedia.org/wiki/CMH). Or toutes les cellules n’en possèdent pas ! 
