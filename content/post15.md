@@ -8,26 +8,27 @@ SIDEBARIMAGE:../images/common/plasmodium.jpg
 Status:Draft
 
 « *Quel est l’animal le plus meurtrier au monde ?* » On entend souvent cette question, et une fois passés les requins blancs, serpents et autres méduse-boîtes vient toujours un petit malin pour répondre « *Le moustique !* ».
-Bon ok il n’a pas tort le petit malin. Mais pour être plus précis le moustique n’est qu’un taxi pour le vrai tueur numéro 1 sur cette planète. On l’appelle **Malaria**, le « mauvais air » ou **Plasmodium** mais il est plus connu sous le nom de **Paludisme** et cause 500 000 morts par an dans le monde.
-Et parler de ce tueur en série c’est l’occasion de parler un peu d’immunité, d’évolution, mais avant tout c’est l’occasion de parler des parasites !
+Bon ok il n’a pas tort le petit malin. Mais pour être plus précis le moustique n’est qu’un taxi pour le vrai tueur numéro 1 sur cette planète. On l’appelle **Malaria**, le « mauvais air » mais la maladie est plus connu sous le nom de **Paludisme** et cause 500 000 morts par an dans le monde (http://www.who.int/mediacentre/factsheets/fs094/fr/). Le parasite en cause est appelé <i>Plasmodium</i>, c'est un nom de genre qui regroupe plusieurs espèces (P. falciparum, P. malariae, P. vivax, etc).
+Parler de ce tueur en série c’est l’occasion de parler un peu d’immunité, d’évolution, mais avant tout c’est l’occasion de parler des parasites !
 
 ##Parasitisme
 Avant d’aller plus loin une petite définition s’impose : qu’est-ce qu’un [parasite](https://fr.wikipedia.org/wiki/Parasite) ? Les dictionnaires vous diront que c’est un organisme qui vit aux dépens d’un autre organisme appelé hôte.
 Un peu comme ce colocataire qui profite du toit, du micro-onde et de la connexion wifi mais qui ne paie jamais le loyer.
-On l’oppose souvent à la [symbiose](https://fr.wikipedia.org/wiki/Symbiose), où les deux êtres vivants ont besoin l’un de l’autre. En effet le parasite va utiliser à son profit les ressources de son hôte, sans lui être indispensable. Et parfois en lui étant  Plus de fromage rapé dans le frigo ? C’est le parasite.
-Il est important de préciser que ce n’est qu’un mode de vie parmi d’autre. Un moyen pour un organisme de trouver l’énergie suffisante pour se reproduire. Nous, humains, avons trouvé une autre méthode commune à de nombreux autres animaux sur cette planète : la prédation. Le prédateur va chasser et tuer sa proie. La relation entre le prédateur et la proie est courte et sanglante, l’un imposant une pression de sélection sur l’autre. Les proies plus adaptées à échapper à leur prédateur vont survivre, se reproduire, et transmettre ce caractère à leur descendance.
+On l’oppose souvent à la [symbiose](https://fr.wikipedia.org/wiki/Symbiose), où les deux êtres vivants ont besoin l’un de l’autre. En effet le parasite va utiliser à son profit les ressources de son hôte, sans lui être indispensable. 
+Plus de fromage rapé dans le frigo ? C’est le parasite.
+Il est important de préciser que ce n’est qu’un mode de vie parmi d’autre. Un moyen pour un organisme de trouver l’énergie suffisante pour se reproduire. Nous, humains, avons trouvé une autre méthode commune à de nombreux autres animaux sur cette planète : la prédation. Le prédateur va chasser et tuer sa proie. La relation entre le prédateur et la proie est courte et sanglante, l’un imposant une pression de sélection sur l’autre. Les proies plus adaptées à échapper à leur prédateur vont survivre, se reproduire, et transmettre ce caractère à leur descendance perpétuant leurs gènes. Tandis que l'information génétique des proies tuées est perdu.
 
 <p align="center">
     <img src="../images/post15/predationproie.png">
 </p>
 
-Dans le cas du parasitisme, si le bilan est le même, un transfert d'énergie entre deux organismes, la relation est tout autre. Notre parasite vit au contact de son hôte, parfois pendant une courte période de sa vie, mais parfois pendant des années comme le ver solitaire [Ténia](https://fr.wikipedia.org/wiki/Taenia_saginata). Les deux organismes se côtoient de manière très étroite, et le système immunitaire de l’hôte joue un peu le rôle du prédateur qui cherche à éliminer le parasite. Et comme la gazelle qui a évolué pour fuir plus rapidement les lions, les parasites évoluent également pour échapper à notre système immunitaire… Et pour cela ils redoublent d’ingéniosité !
+Dans le cas du parasitisme si le bilan est le même, un transfert d'énergie entre deux organismes, la relation différente. Notre parasite vit au contact de son hôte, parfois pendant une courte période de sa vie, mais parfois pendant des années comme le ver solitaire [Ténia](https://fr.wikipedia.org/wiki/Taenia_saginata). Les deux organismes se côtoient de manière très étroite, et le système immunitaire de l’hôte joue un peu le rôle du prédateur qui cherche à éliminer le parasite. Et comme la gazelle qui a évolué pour fuir plus rapidement les lions, les parasites évoluent également pour échapper à notre système immunitaire… Et pour cela ils redoublent d’ingéniosité !
 
 ## Le globule rouge : une planque idéale
 Dans un [article précédent](reconnaissance_soi.html) de ce blog, vous avez pu apprendre que nos cellules ont un mécanisme efficace pour se protéger d’un organisme qui voudrait vivre à l’intérieur, comme un virus, il s’agit des [molécules de CMH](https://fr.wikipedia.org/wiki/CMH). Or toutes les cellules n’en possèdent pas ! 
 Par exemple les [globules rouges](https://fr.wikipedia.org/wiki/%C3%89rythrocyte) qui transportent l’oxygène dans le sang via l’[hémoglobine](https://fr.wikipedia.org/wiki/H%C3%A9moglobine) sont totalement dépourvu de ce système de défense. 
 Ce n’est pas un problème contre les [virus](https://fr.wikipedia.org/wiki/Virus) car les globules rouges sont des cellules sans noyau, relativement simples. Or le virus, très simple également, aime les cellules qui lui fourniront tous les outils pour sa réplication. Bref, pour envahir le globule rouge il faut venir avec son propre matériel et ça n’intéresse pas le virus partisan du moindre effort.
-Pourtant c’est la cachette qu’a choisi le paludisme ! Il n’a pas choisi la facilité, mais une fois à l’intérieur il passe totalement incognito.
+Pourtant c’est la cachette qu’a choisi le paludisme ! Il n’a pas choisi la facilité, mais une fois à l’intérieur il passe totalement incognito... ou presque.
 
 <p align="center">
     <img src="../images/post15/blood.jpg">
@@ -60,12 +61,13 @@ La course à l'adaptation
 
 Le paludisme n'est pas le seul à s'adapater à son hôte. L'hôte également cherche à se protéger du parasite. Ou plutôt dans le cas des parasites mortels comme le paludisme, l'hôte résistant au parasite peut être sélectionné. 
 
-Un des exemples les plus frappants concerne la drépanocytose. Cette maladie génétique touche l'hémoglobine que contient le globule rouge. Elle entraîne un moins bon transport de l'oxygène et une forme plus rigide "en faucille" du globule rouge, mais être porteur d'un seul gène muté sur les deux permet de vivre normalement. Il a été montré qu'être porteur de la drépanocytose 
-protégeait du paludisme ! Et il est possible que cette maladie génétique ait pu être sélectionnée dans les régions où le paludisme est très présent.
+Un des exemples les plus frappants concerne la drépanocytose. Cette maladie génétique touche l'hémoglobine que contient le globule rouge. l'hémoglobine mutée (HbS) transporte moins efficacement l'oxygène et entraîne une forme plus rigide "en faucille" du globule rouge. Mais être porteur d'un seul allèle muté sur les deux permet de vivre normalement. Il a été montré qu'être porteur de la drépanocytose protégeait de l'infection par le paludisme ! (http://www.ncbi.nlm.nih.gov/pubmed/21529713) Et on observe effectivement que cette maladie génétique et le paludisme sont présents dans les mêmes régions d'Afrique (cartes de gauche et du milieu). Les humains porteurs de la maladie génétique ont donc pu être sélectionnés, car moins sujets à des formes mortelles de paludisme.
 
-Un autre exemple concerne les groupes sanguins. Nos groupes sanguins sont des antigènes (faits de protéines, glucides et lipides) à la surface de nos globules rouges. Le groupe A, B, O est le plus connu. Mais il en existe d'autres et un des groupes sanguins mineurs, le groupe Duffy, est nécessaire à l'entrée de l'espèce Plasmodium vivax dans le globule rouge... Et on observe que cette espèce est absente de toute l'Afrique de l'ouest où la grande majorité de la population est Duffy Négative !
+Un autre exemple concerne les groupes sanguins. Nos groupes sanguins sont des antigènes (faits de protéines, glucides et lipides) à la surface de nos globules rouges. Le groupe A, B, O est le plus connu. Mais il en existe d'autres et un des groupes sanguins mineurs, le groupe Duffy, est nécessaire à l'entrée de l'espèce Plasmodium vivax dans le globule rouge... Et on observe que cette espèce est absente de toute l'Afrique de l'ouest où la grande majorité de la population est Duffy Négative ! (http://www.ncbi.nlm.nih.gov/pubmed/17607593) Malheureusement, Plasmodium vivax a été remplacée dans ces régions par d'autres espèces de Plasmodium qui n'ont pas besoin de Duffy pour rentrer dans nos globules rouges (cartes du milieu et de droite).
 
-A quoi servent ces groupes sanguins d'ailleurs ?... Voilà une réponse qui sera donnée dans un prochain article de Sacha Schutz sur ce blog !
+[insert cartes d'Afrique]
+
+A quoi servent ces groupes sanguins d'ailleurs ?... Voilà une question qui sera traitée dans un prochain article de Sacha Schutz sur ce blog !
 
 ## Conclusion
 Les parasites sont des organismes complexes qui ont su s’adapter à de nombreux organismes. Les stratégies d’échappement sont multiples. Nous avons parlé de la variabilité antigénique, mais d’autres parasites excellent dans l’art du camouflage ou du leurre. Ces systèmes de survie ne doivent pas être confondues par une intention ou une intelligence du parasite. Il s’agit plutôt d’un équilibre qui a été obtenu sur du long terme. Un parasite qui côtoie un hôte depuis suffisamment de générations (on parle ici de millions d’année de co-évolution entre l’hôte et son parasite) peut devenir totalement anodin pour l’organisme qu’il occupe. On peut ainsi imaginer que certaines symbioses ne sont que des parasitismes qui se sont adaptés à la perfection. Le couple paludisme-homme a donc encore du chemin à faire…
@@ -76,3 +78,6 @@ Moralité : si votre coloc pour échapper à votre colère immune décide de vou
 * [Diagnostic microscopique du paludisme](http://www.cdc.gov/dpdx/resources/pdf/benchAids/malaria/Congo_Bench_Aid_vF.pdf)
 * [A family affair; var genes, PfEMP1 binding, and malaria disease](http://biologie.univ-mrs.fr/upload/p87/kraemer_2006.pdf)
 * [Memobio](http://www.memobio.fr/html/para/pa_pa_cy.html)
+* [Cell. 2011 Apr 29;145(3):398-409. doi: 10.1016/j.cell.2011.03.049. Sickle hemoglobin confers tolerance to Plasmodium infection. Ferreira A1, Marguti I, Bechmann I, Jeney V, Chora A, Palha NR, Rebelo S, Henri A, Beuzard Y, Soares MP.](http://www.ncbi.nlm.nih.gov/pubmed/21529713)
+* [Hematology. 2006 Oct;11(5):389-98. Duffy blood group and malaria. Langhi DM Jr1, Bordin JO](http://www.ncbi.nlm.nih.gov/pubmed/17607593)
+* Parasitoses et mycoses des régions tempérées et tropicales, Auteur : Association Française des Enseignants de Parasitologie médicales ANOFEL, Editeur : ELSEVIER / MASSON paru le : 09/2014 (3ème édition)
