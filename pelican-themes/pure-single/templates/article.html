@@ -31,7 +31,12 @@
                             // under {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                             {% endfor %}
+
                         </p>
+                        <p class="post-meta">
+                        // Par {{ article.author }}
+                        </p>
+
                 </header>
             </section>
             {{ article.content }}
