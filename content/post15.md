@@ -5,7 +5,6 @@ Tags: parasitologie,paludisme
 Category: parasitologie
 Author: Thibaud Guillaud-Saumur
 SIDEBARIMAGE:../images/common/plasmodium_banner.jpg
-Status:Draft
 
 « *Quel est l’animal le plus meurtrier au monde ?* » On entend souvent cette question, et une fois passés les requins blancs, serpents et autres méduse-boîtes vient toujours un petit malin pour répondre « *Le moustique !* ».
 Bon ok il n’a pas tort le petit malin. Mais pour être plus précis le moustique n’est qu’un taxi pour le vrai tueur numéro 1 sur cette planète. On l’appelle **Malaria**, le « mauvais air » mais la maladie est plus connu sous le nom de **Paludisme** et cause [500 000 morts par an dans le monde](http://www.who.int/mediacentre/factsheets/fs094/fr/). Le parasite en cause est appelé *Plasmodium*, c'est un nom de genre qui regroupe plusieurs espèces (P. falciparum, P. malariae, P. vivax, etc).
