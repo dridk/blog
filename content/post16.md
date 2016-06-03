@@ -4,7 +4,6 @@ Date: 2016-04-29 12:55:48
 Tags: génétique, bash , bedtools
 Category: génétique
 Author: Sacha Schutz
-Status: draft
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 Ça faisait longtemps que j'avais envie de faire une description numérique du génome. Vous savez ces chiffres repères qui nous permettent de faire des comparaisons et de répondre à des questions du genre : "*Est-ce que cette montagne est grande ?*" Si vous n'avez pas de référence, comme la taille du mont blanc, ça va être difficile de vous faire une idée...     
