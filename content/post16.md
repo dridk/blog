@@ -15,7 +15,7 @@ Tout d'abord si vous n'avez pas le génome de référence, télécharger le depu
 
     $ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.2bit
 
-Ce fichier est compressé. En faite chaque base est codé sur 2 octets au lieu de 8. On peut le convertir en fichier texte standard avec la commande **twoBitToFa** disponible également sur ucsc. 
+Ce fichier est compressé. En faite chaque base est codé sur 2 bit au lieu de 8. On peut le convertir en fichier texte standard avec la commande **twoBitToFa** disponible également sur ucsc. 
 
     $ wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/twoBitToFa
     $ chmod +x twoBitToFa 
