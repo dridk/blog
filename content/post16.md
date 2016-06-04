@@ -166,7 +166,7 @@ Puis on fait l'intersection :
 On trouve alors **1'192'314** de variants en commun entre Venter et Watson! 
 
 #Conclusion 
-Nous allons nous arrêter là pour le moment, sinon on ne finira jamais ! Pour cette fois retenez ceci : Votre ADN est composé de **3 millards** de bases. **1%** constitue le génome codant pour **25 000** gènes. Et **1 million** de variants vous distinguent d'un autre individu.    
+Nous allons nous arrêter là pour le moment, sinon on ne finira jamais ! Pour cette fois retenez ceci : Votre ADN est composé de **3 millards** de paires bases. **1%** constitue le génome codant pour **25 000** gènes. Et **1 million** de variants vous distinguent d'un autre individu.    
 Dans le prochain article, nous allons poser d'autres questions beaucoup plus précises. Où se trouve les variations ? Qu'y a-t-il dans les 60% de l'ADN ? Quel sont les mutations les plus fréquente ? Et poser vos questions dans les commentaires, j'essaierai d'y répondre!    
 
 
