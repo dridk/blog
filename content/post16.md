@@ -6,15 +6,15 @@ Category: génétique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
-Ça faisait longtemps que j'avais envie de faire une description numérique du génome. Vous savez ces chiffres repères qui nous permettent de faire des comparaisons et de répondre à des questions du genre : "*Est-ce que cette montagne est grande ?*" Si vous n'avez pas de référence, comme la taille du mont blanc, ça va être difficile de vous faire une idée...     
-Nous allons faire pareil sur le génome humain ! Et pour être sur qu'une organisation maçonnique n'a pas volontairement mis des faux chiffres sur  internet, nous allons tout calculer par nous-même ! Ça sera l'occasion de faire un peu de [bash](https://fr.wikipedia.org/wiki/Bourne-Again_shell) et d'apprendre quelques commandes ! 
+Ça faisait longtemps que j'avais envie de faire une description numérique du génome. Vous savez ces chiffres repères qui nous permettent de faire des comparaisons et de répondre à des questions du genre : "*Est-ce que cette montagne est grande ?*" Si vous n'avez pas de référence, comme la taille du Mont Blanc, ça va être difficile de vous faire une idée...     
+Nous allons faire pareil sur le génome humain ! Et pour être sûr qu'une organisation maçonnique n'a pas volontairement mis des faux chiffres sur  internet, nous allons tout calculer par nous-même ! Ça sera l'occasion de faire un peu de [bash](https://fr.wikipedia.org/wiki/Bourne-Again_shell) et d'apprendre quelques commandes ! 
 
 ## Télécharger le génome humain  
-Tout d'abord si vous n'avez pas le génome de référence, télécharger le depuis le [goldenpath d'ucsc](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/). C'est le fichier  *hg19.2bit* qui fait 778M.
+Tout d'abord si vous n'avez pas le génome de référence, télécharger le depuis le [goldenpath d'UCSC](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/). C'est le fichier  *hg19.2bit* qui fait 778M.
 
     $ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.2bit
 
-Ce fichier est compressé. En fait chaque base est codée sur 2 bit au lieu de 8. On peut le convertir en fichier texte standard avec la commande **twoBitToFa** disponible également sur ucsc. 
+Ce fichier est compressé. En fait chaque base est codée sur 2 bits au lieu de 8. On peut le convertir en fichier texte standard avec la commande **twoBitToFa** disponible également sur UCSC. 
 
     $ wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/twoBitToFa
     $ chmod +x twoBitToFa 
@@ -25,7 +25,7 @@ Tapez cette commande pour voir tous les noms des chromosomes du fichier *hg19.fa
 
     $ cat hg19.fa|grep ">chr"
   
-Nous allons plutôt créer un fichier avec uniquement les chromosomes nucléaires de 1 à 22 et les deux chromosomes sexuels X et Y. Il y a un outil **faSomeRecords** sur ucsc qui fait très bien le travail. Il prend en argument notre génome *hg19.fa* et un fichier avec la liste des chromosomes souhaités. 
+Nous allons plutôt créer un fichier avec uniquement les chromosomes nucléaires de 1 à 22 et les deux chromosomes sexuels X et Y. Il y a un outil **faSomeRecords** sur UCSC qui fait très bien le travail. Il prend en argument notre génome *hg19.fa* et un fichier avec la liste des chromosomes souhaités. 
 
     $ wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/faSomeRecords
     $ chmod +x faSomeRecords
@@ -46,7 +46,7 @@ Il suffit de compter le nombre de bases! On supprime tous les retours à la lign
 **3'095'677'412** c'est le nombre de nucléotides qu'il y a dans le fichier du génome humain. Retenez donc que le génome est constitué d'environ 3 milliards de paires de base. 
 
 ## Pourcentage en GC du génome humain ? 
-Pour ça, je vous propose d'utiliser un de mes outils préférés : [bedtools](http://bedtools.readthedocs.io/en/latest/) ! Le couteau suisse du bioinformaticien. Il est en principe dans les dépôts d'ubuntu mais je vous conseille la dernière version depuis le site officiel :  
+Pour ça, je vous propose d'utiliser un de mes outils préférés : [bedtools](http://bedtools.readthedocs.io/en/latest/) ! Le couteau suisse du bioinformaticien. Il est en principe dans les dépôts d'Ubuntu mais je vous conseille la dernière version depuis le site officiel :  
 
     $ wget https://github.com/arq5x/bedtools2/releases/download/v2.25.0/bedtools-2.25.0.tar.gz
     $ tar -zxvf bedtools-2.25.0.tar.gz
@@ -55,7 +55,7 @@ Pour ça, je vous propose d'utiliser un de mes outils préférés : [bedtools](h
     $ sudo make install 
 
 Pour connaître le pourcentage en base A,C,G,T on utilise **bedtools nuc**. Cette commande permet de compter les pourcentages en base A,C,G,T dans un fichier fasta à partir des régions chromosomiques définies dans un fichier bed. On va calculer ces pourcentages pour chaque chromosome.   
-Pour aller plus vite, on peut télécharger le fichier *hg19.chrom.sizes*. Celui-ci contient sur chaque ligne, le nom du chromosome et sa taille en base. On va s'en servir pour créer le fichier nécessaire à bedtools. 
+Pour aller plus vite, on peut télécharger le fichier *hg19.chrom.sizes*. Celui-ci contient sur chaque ligne, le nom du chromosome et sa taille en bases. On va s'en servir pour créer le fichier nécessaire à bedtools. 
 
     $ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.chrom.sizes
     $ cat hg19.chrom.sizes|grep -we "chr[0-9XY]*"|awk 'BEGIN{OFS="\t"}{print $1,0,$2}' > hg19_clean.sizes.bed 
@@ -79,11 +79,11 @@ Dans le fichier *hg19.stat* précédemment généré, on observe aussi le nombre
 - 585012752 bases C soit 18.8% 
 - 585358256 bases G soit 18.9% 
 
-Olaa.. Attendez c'est quoi ce truc ?  Il y a quasiment autant de base A que de T, et autant de base C que de G. Détrompez-vous, si vous pensez que c'est [la loi de Chargaff](https://fr.wikipedia.org/wiki/R%C3%A8gles_de_Chargaff) expliquant la complémentarité des brins. Car cette répartition est sur un seul brin d'ADN ! Pas de double brin dans l'histoire ! C'est comme si dans un livre de 3 milliards de lettre, il y avait autant de "s" que de "a".     
+Olaa.. Attendez c'est quoi ce truc ?  Il y a quasiment autant de base A que de T, et autant de base C que de G. Détrompez-vous, si vous pensez que c'est [la loi de Chargaff](https://fr.wikipedia.org/wiki/R%C3%A8gles_de_Chargaff) expliquant la complémentarité des brins, car cette répartition est sur un seul brin d'ADN ! Pas de double brin dans l'histoire ! C'est comme si dans un livre de 3 milliards de lettre, il y avait autant de "s" que de "a".     
 Bien sûr j'ai recherché, j'ai demandé, j'ai eu toutes les réponses inimaginables. En fait c'est ce qu'on appelle la seconde loi de Chargaff, beaucoup moins connu! Et je vous assure, je n'ai pas encore trouvé d'explication, si ce n'est [celle-ci](http://www.basic.northwestern.edu/g-buehler/genomes/g_chargaff.htm)
 
 ## Combien de gènes dans le génome humain  ?
-Dans le génome il y a des gènes constitués d'intron et d'exon. Et chaque gène définit plusieurs transcrits.   
+Dans le génome il y a des gènes constitués d'intron et d'exon. Et chaque gène défini plusieurs transcrits.   
 On peut télécharger [refseq](https://en.wikipedia.org/wiki/RefSeq), une base de donnée contenant tous les gènes officiels ! Dans le fichier, ces colonnes vont nous intéresser par la suite. 
 
 * colonne 3 : le chromosome 
@@ -138,7 +138,7 @@ Il reste tout de même plus de 60% d'inconnu ! Dans un prochain article, on s'y 
 
 
 ### Combien de mutations me distinguent du génome de référence ? 
-On ne va pas prendre mon génome... Mais celui de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) co-découvreur de l'ADN avec [Francis Crick](https://fr.wikipedia.org/wiki/Francis_Crick) et [Rosalind Franklin](https://fr.wikipedia.org/wiki/Rosalind_Franklin). Son génome a été séquencé et distribué librement. Nous allons télécharger un fichier contenant uniquement les différences entre le génome de Watson et le génome de référence. C'est à dire un fichier contenant sur chaque ligne, la position et la base alternative.
+On ne va pas prendre mon génome... Mais celui de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) co-découvreur de l'ADN avec [Francis Crick](https://fr.wikipedia.org/wiki/Francis_Crick) et [Rosalind Franklin](https://fr.wikipedia.org/wiki/Rosalind_Franklin). Son génome a été séquencé et distribué librement. Nous allons télécharger un fichier contenant uniquement les différences entre le génome de Watson et le génome de référence. C'est-à-dire un fichier contenant sur chaque ligne, la position et la base alternative.
 
     $ wget http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/pgWatson.txt.gz
 
@@ -146,15 +146,15 @@ En comptant le nombre de ligne :
 
     $ cat pgWatson.txt.gz | wc -l 
 
-On obtient **2059384** variants. Environs **2 millions** de bases distinguent James Watson du génome de référence. En  pourcentage, ça nous fait : **0.06 %**
+On obtient **2059384** variants. Environs **2 millions** de bases distinguent James Watson du génome de référence. En pourcentage, ça nous fait : **0.06 %**
 
 ### Combien de mutations je partage avec un autre individu ? 
-On va regarder les variants que partage [Craig Venter](https://fr.wikipedia.org/wiki/Craig_Venter) et James Watson. 
+On va regarder les variants que partagent [Craig Venter](https://fr.wikipedia.org/wiki/Craig_Venter) et James Watson. 
 Même chose que précédemment, on récupère les données de Venter. 
 
     $ wget http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/pgVenter.txt.gz
 
-Puis on transforme le fichier de Watson et Craig en fichier bed. 
+Ensuite on transforme le fichier de Watson et Craig en fichier bed. 
 
     $ zcat pgVenter.txt.gz |cut -f2,3,4|sort > venter.bed
     $ zcat pgWatson.txt.gz |cut -f2,3,4|sort > watson.bed
@@ -167,7 +167,7 @@ On trouve alors **1'192'314** de variants en commun entre Venter et Watson!
 
 #Conclusion 
 Nous allons nous arrêter là pour le moment, sinon on ne finira jamais ! Pour cette fois retenez ceci : Votre ADN est composé de **3 millards** de paires bases. **1%** constitue le génome codant pour **25 000** gènes. Et **1 million** de variants vous distinguent d'un autre individu.    
-Dans le prochain article, nous allons poser d'autres questions beaucoup plus précises. Où se trouve les variations ? Qu'y a-t-il dans les 60% de l'ADN ? Quel sont les mutations les plus fréquente ? Et poser vos questions dans les commentaires, j'essaierai d'y répondre!    
+Dans le prochain article, nous allons poser d'autres questions beaucoup plus précises. Où se trouvent les variations ? Qu'y a-t-il dans les 60% de l'ADN ? Quelles sont les mutations les plus fréquentes ? Posez vos questions dans les commentaires, j'essaierai d'y répondre!    
 
 
 ## Remerciement 
