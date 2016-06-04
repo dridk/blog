@@ -43,7 +43,7 @@ Il suffit de compter le nombre de bases! On supprime tous les retours à la lign
     $ cat hg19_clean.fa|grep -v "chr." | tr --delete "\n" | wc -c
     $ 3095677412
 
-**3'095'677'412** c'est le nombre de nucléotides qu'il y a dans le génome humain nucléaire selon l'assemblage hg19 ! Bref, gravez-vous ce premier chiffre en tête : **3 millards** de base dans le génome humain !
+**3'095'677'412** c'est le nombre de nucléotides qu'il y a dans le fichier du génome humain. Retenez donc que le génome est constitué d'environ 3 milliards de paires de base. 
 
 ## Pourcentage en GC du génome humain ? 
 Pour ça, je vous propose d'utiliser un de mes outils préférés : [bedtools](http://bedtools.readthedocs.io/en/latest/) ! Le couteau suisse du bioinformaticien. Il est en principe dans les dépôts d'ubuntu mais je vous conseille la dernière version depuis le site officiel :  
@@ -170,4 +170,6 @@ Nous allons nous arrêter là pour le moment, sinon on ne finira jamais ! Pour c
 Dans le prochain article, nous allons poser d'autres questions beaucoup plus précises. Où se trouve les variations ? Qu'y a-t-il dans les 60% de l'ADN ? Quel sont les mutations les plus fréquente ? Et poser vos questions dans les commentaires, j'essaierai d'y répondre!    
 
 
+## Remerciement 
+[@ZaZo0o](https://www.twitter.com/ZaZo0o) 
 
