@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'sacha schutz'
-SITENAME = 'Sacha schutz'
+SITENAME = 'Labsquare'
 # SITEURL = 'http://dridk.me'
 AUTHOR_EMAIL ='sacha@labsquare.org'
 PATH = 'content'
@@ -34,7 +34,7 @@ TAGLINE="bioinformatique génétique médecine"
 MENUITEMS = (('Archive', 'archives.html'),
          ('A propos', 'pages/contact-Fr.html'),
          ('Applications', 'pages/application-Fr.html'),
-         ('Café des sciences', '//www.cafe-sciences.org')
+         ('Café des sciences', 'http://www.cafe-sciences.org')
 
          )
 GOOGLE_ANALYTICS="UA-44929010-2"
