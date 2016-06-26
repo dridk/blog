@@ -2,7 +2,7 @@ Title: L'Open data en deux mots
 Slug: open-data-en-deux-mots
 Date: 2014-04-27 00:06:39
 Tags: opendata,api,json
-Category: database
+Category: informatique
 Author: Sacha Schutz
 
 <!-- <p class="img-header">

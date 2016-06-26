@@ -2,7 +2,7 @@ Title: Un message immortel ...
 Slug: message_immortel
 Date: 2016-01-25 17:00:00
 Tags: génétique,fun
-Category: python
+Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/backfutur_banner.jpg
 

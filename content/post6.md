@@ -2,7 +2,7 @@ Title: Mémo sur les expressions régulières
 Slug: expression-reguliere
 Date: 2014-07-29 19:13:15
 Tags: regexp
-Category: divers
+Category: informatique
 Author: Sacha Schutz
 
 <!-- <p align="center">

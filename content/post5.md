@@ -2,7 +2,7 @@ Title: Pygal, pour faire des graphiques en vectoriel !
 Slug: pygal
 Date: 2014-06-23 18:25:30
 Tags: chart,plot,graph,svg
-Category: python
+Category: informatique
 Author: Sacha Schutz
 
 <!-- <p class="img-header">

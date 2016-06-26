@@ -1,7 +1,7 @@
 Title: Premier Blog avec Pelican
 Date: 2014-04-12 10:20
 Tags: pelican, blog, python
-Category: python
+Category: informatique
 Slug: first-post
 Author: Sacha Schutz
 

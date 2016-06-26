@@ -2,7 +2,7 @@ Title: La transformation de Burrows-Wheeler
 Slug: bwt
 Date: 2015-10-24 15:37:04
 Tags: python,algorithmes
-Category: python
+Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg 
 

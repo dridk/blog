@@ -2,7 +2,7 @@ Title: Le paludisme
 Slug: paludisme
 Date: 2016-04-29 12:55:48
 Tags: parasitologie,paludisme
-Category: parasitologie
+Category: biologie
 Author: Thibaud Guillaud-Saumur
 SIDEBARIMAGE:../images/common/plasmodium_banner.jpg
 

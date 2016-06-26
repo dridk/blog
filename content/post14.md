@@ -2,7 +2,7 @@ Title: La reconnaissance du soi
 Slug: reconnaissance_soi
 Date: 2016-02-27 10:57:22
 Tags: génétique, immunologie
-Category: génétique
+Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/immuno_banner.jpg
 

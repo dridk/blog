@@ -2,7 +2,7 @@ Title: Le filtre de bloom
 Slug: bloom-filter
 Date: 2016-01-16 17:00:00
 Tags: python,algorithmes
-Category: python
+Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg 
 

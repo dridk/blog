@@ -2,7 +2,7 @@ Title: MongoDB, la base de donnée pour dire adieu à Sql.
 Slug: MongoDB
 Date: 2014-06-14 16:51:24
 Tags: SGBD,sql,database
-Category: database
+Category: informatique
 Author: Sacha Schutz
 <!-- 
 <p class="img-header">

@@ -2,7 +2,7 @@ Title: Naviguer dans le Génome humain
 Slug: naviguer-dans-votre-adn
 Date: 2015-04-06 16:25:55
 Tags: bioinformatique, biologie
-Category: biologie, bioinformatique
+Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/post8/cover.jpg
 

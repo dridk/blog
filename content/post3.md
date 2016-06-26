@@ -2,7 +2,7 @@ Title: Module requests : Jouons avec Http et python
 Slug:python-requests 
 Date: 2014-06-11 23:42:22
 Tags: requests, http, get, post
-Category:python 
+Category:informatique 
 Author: Sacha Schutz
 
 <!-- <p class="img-header">

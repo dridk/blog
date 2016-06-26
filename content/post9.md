@@ -2,7 +2,7 @@ Title: Renommer ses fichiers avec MMV
 Slug: mmv
 Date: 2015-07-23 22:55:29
 Tags: linux
-Category: linux
+Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg
 

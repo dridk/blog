@@ -2,7 +2,7 @@ Title: Le génome en chiffre - part 1
 Slug: genome_chiffre_1
 Date: 2016-04-29 12:55:48
 Tags: génétique, bash , bedtools
-Category: génétique
+Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
