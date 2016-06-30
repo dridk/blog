@@ -65,6 +65,7 @@ C'est un peu le couteau suisse du bioinformaticien. Si vous ne l'avez toujours p
     $ tar -zxvf bedtools-2.25.0.tar.gz
     $ cd bedtools2
     $ make
+    $ sudo make install
 
 
 ## Bash pour Nidja 
@@ -91,7 +92,7 @@ On fusionne ref_bases.txt et alt_bases.txt dans un fichier à deux colonnes. Les
 ### Notation consensus 
 Toutes les substitions sont écris en respectant la notation consensus. 
 
-    cat substitution.txt |sed -e 's/AG/TC/' -e 's/GA/CT/' -e 's/AC/TG/' -e 's/GT/CA/' -e 's/GC/CG/' -e 's/AT/TA/'|sort |uniq -c > consensus.txt
+    cat substitution.txt |sed -e 's/AG/TC/' -e 's/GA/CT/' -e 's/AC/TG/' -e 's/GT/CA/' -e 's/GC/CG/' -e 's/AT/TA/' > consensus.txt
 
 
 ### Compatage des substitutions 
