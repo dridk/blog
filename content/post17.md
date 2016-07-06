@@ -121,7 +121,7 @@ Il reste plus qu'a faire un jolie graphique avec ça!
     <img src="../images/post17/chart.jpg">
 </p>
 
-Ce graphique represente les différente substitutions retrouvé chez James Watson par rapport au génome de référence. Et comme vous pouvez le constater, cela ne colle absolument pas avec notre hypothèse des mutations aléatoire. Les 2 transitions possible represente 2/3 des substitution, la ou les 4 transversions ne represente qu' 1 quart. 
+Ce graphique represente les différente substitutions retrouvé chez James Watson par rapport au génome de référence. Et comme vous pouvez le constater, cela ne colle absolument pas avec notre hypothèse des mutations aléatoire. Les 2 transitions possible represente 2/3 des substitution, la ou les 4 transversions ne represente qu' 1 tiers . 
 
 ## Explication 
 Evolution, origine des mutations , selection ... 
