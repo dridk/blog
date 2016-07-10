@@ -307,3 +307,27 @@ pre {
         background-position: 0;
     }
 }
+
+
+/* FIGURE  */ 
+
+.figure 
+{
+    width: 100%;
+    text-align: center;
+}
+
+.figure img{
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 4px;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+}
+
+.figure div.legend {
+    padding: 4px;
+    font-size: 80%;
+    color: #aaa;
+    font-style: italic;
+
+}
