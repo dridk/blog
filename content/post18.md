@@ -4,7 +4,6 @@ Date: 2016-07-12 18:59:16
 Category: biologie
 Tags: bioinformatique, génétique
 Author: Sacha Schutz
-Status: Draft
 SIDEBARIMAGE:../images/common/caryotype.jpeg
 
 La trisomie 21 est un syndrome polymalformatif avec un retard mental, lié dans la majorité des cas à la présence d'un chromosome 21 surnuméraire. On a tous en mémoire l'image de l'acteur [Pascal Duquenne](https://fr.wikipedia.org/wiki/Pascal_Duquenne) atteint de ce syndrome et lauréat du prix d'interprétation au festival de Cannes pour le film le *[Huitème jour](https://fr.wikipedia.org/wiki/Le_Huiti%C3%A8me_Jour_(film,_1996))*.     
