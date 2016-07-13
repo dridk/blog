@@ -18,12 +18,12 @@ En France, le [dépistage de la trisomie 21](http://www.has-sante.fr/portail/jcm
 
 Malheureusement ces gestes invasifs ne sont pas anodins. On estime entre [0.5% et 1%](http://www.agence-biomedecine.fr/annexes/bilan2013/donnees/diag-prenat/01-diag_prenat/synthese.htm) le risque de fausse couche lié à l'amniocentèse.  
 Cela peut sembler faible, mais le dépistage actuel souffre d'une très mauvaise spécificité. C'est à dire que beaucoup de femmes répondent positif au dépistage alors que leur fœtus est indemne. Par conséquence beaucoup trop d'amniocentèses sont réalisées inutilement avec le risque de fausse couche qui en découle.    
-Mais depuis l’avènement récent du séquençage haut débit, un nouveau test de dépistage beaucoup plus puissant en terme de sensibilité et de spécificité voit le jour. Il s'agit du DPNI pour Dépistage Prénatal Non Invasif. (Vous lirez souvent *diagnostic* , mais il s'agit pour l'heure de dépistage). Ce nouveau test consiste à quantifier sur une simple prise de sang un excès d'ADN fœtal circulant. 
+Mais depuis l’avènement récent du séquençage haut débit, un nouveau test de dépistage beaucoup plus puissant en terme de sensibilité et de spécificité voit le jour. Il s'agit du DPNI pour Dépistage Prénatal Non Invasif. (Vous lirez souvent *diagnostic* , mais il s'agit pour l'heure de dépistage). Ce nouveau test consiste à quantifier sur une simple prise de sang un excès d'ADN fœtal circulant provenant du chromosome 21. 
 
-## L'ADN fœtal
+## L'ADN fœtal circulant
 Il y a des fragments d'ADN double brin qui circulent librement dans votre sang. En général ce sont les vôtres sauf si vous faites des expériences tordues dans votre laboratoire ou ... si vous êtes enceinte. En effet chez les femmes enceintes environ 10% de ces fragments proviennent du fœtus. Plus précisément ces fragments proviennent de la lyse des cellules trophoblastiques, un composant du placenta ayant la même origine embryologique que le fœtus.   
-L'idée derrière le DPNI c'est quantifier l’excès d'ADN provenant du chromosome 21 à l'aide des nouvelles technologies de séquençage haut débit.    
-La figure ci-dessous illustre la quantification d'ADN circulant chez une mère sans et avec fœtus trisomique. En mesurant une différence significative, il est possible de conclure à un excès de matériel nucléaire provenant du chromosome 21.
+L'idée derrière le DPNI c'est quantifier un excès de l'ADN circulant provenant du chromosome 21 à l'aide des nouvelles technologies de séquençage haut débit.  
+La figure ci-dessous illustre la quantification d'ADN circulant chez une mère sans et avec fœtus trisomique. En mesurant une différence significative, il est possible de conclure à un excès de d'ADN circulant provenant du chromosome 21.
 
 <div class="figure">
     <img src="../images/post18/chromosomes.png" />
@@ -57,7 +57,7 @@ Tout d'abord, le génome est segmenté en régions de 10 kilobases appelé *bin*
 A partir des mesures chez les témoins sains, les bins du chromosome 21 sont associés aux autres bins du génome lorsqu'ils contiennent plus ou moins le même nombre de reads. La figure suivante est une représentation de ces associations.  
 <div class="figure">
     <img src="../images/post18/wisecondor.png" />
-    <div class="legend">En ordonnée le Z-score, en absisse les chromosomes. Sur ce graphique, la patiente présente un excès significatif en read s'alignant sur le chromosome 21</div>
+    <div class="legend">Chaque chromosome est représenté avec leurs bins sur la circonférence du disque. Tous les bins du chromosome 21 sont associés aux bins des autres chromosomes. Ces relations sont utilisées comme référence témoins au sein du même échantillon. </div>
 </div>
 
 Ce logiciel permet donc de mesurer l'excès de reads mappant le chromosome 21 en le comparant aux autres chromosomes. Cette technique à l'avantage de se passer des biais de mesure, car le séquençage de la référence et du patient sont réalisés en même temps. 
@@ -66,7 +66,7 @@ Ce logiciel permet donc de mesurer l'excès de reads mappant le chromosome 21 en
 En Novembre 2015, la Haute autorité de santé [a évalué positivement ce nouveau test de dépistage](http://www.has-sante.fr/portail/jcms/c_2573090/fr/trisomie-21-de-nouveaux-tests-appellent-la-revision-des-modalites-de-depistage-actuelles). La sensibilité et la spécificité avoisine les 100%. 
 Le risque de faux négatif est lié à l'absence d'ADN fœtal si le prélèvement est réalisé trop tôt. Un risque de faux positif est également possible dans les cas de [mosaïcisme fœtal](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)).   
 Aujourd'hui toutes les femmes enceintes, quel que soit leur âge, sont informées de la possibilité de recourir à ce test.    
-La stratégie actuelle est de proposer le dépistage standard. Si celui ci revient positif, au lieu de proposer directement un geste invasif, le DPNI est proposé. Si celui ci revient positif alors le geste invasif et le diagnostic cytogénétique est réalisé.
+La stratégie actuelle est de proposer le dépistage standard. Si celui ci revient positif, au lieu de proposer directement un geste invasif, le DPNI est proposé. Si celui ci est à son tour positif, alors le geste invasif et le diagnostic cytogénétique est réalisé.
 A l'heure actuelle les laboratoire [Cerba](http://www.lab-cerba.com/) et [Biomnis](http://www.dpni-biomnis.com/) proposent le DPNI. Mais depuis janvier 2016 certains centres hospitaliers proposent ce test qui n'est malheureusement pas encore remboursé et avoisine les 800€.  
 
 ## Référence
@@ -77,5 +77,5 @@ A l'heure actuelle les laboratoire [Cerba](http://www.lab-cerba.com/) et [Biomni
 * [Wisecondor](http://www.ncbi.nlm.nih.gov/pubmed/24170809)
 
 ## Remerciement 
-
+[@Thibaud_GS ](https://twitter.com/Thibaud_GS)
 
