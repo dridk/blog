@@ -22,7 +22,7 @@ Mais depuis l’avènement récent du séquençage haut débit, un nouveau test 
 ## L'ADN fœtal circulant
 Il y a des fragments d'ADN double brin qui circulent librement dans votre sang. En général ce sont les vôtres sauf si vous faites des expériences tordues dans votre laboratoire ou ... si vous êtes enceinte. En effet chez les femmes enceintes environ 10% de ces fragments proviennent du fœtus. Plus précisément ces fragments proviennent de la lyse des cellules trophoblastiques, un composant du placenta ayant la même origine embryologique que le fœtus.   
 L'idée derrière le DPNI c'est de quantifier l' excès d'ADN circulant provenant du chromosome 21 à l'aide des nouvelles technologies de séquençage haut débit.  
-La figure ci-dessous illustre la quantification d'ADN circulant chez une mère sans et avec fœtus trisomique. En mesurant une différence significative, il est possible de conclure à un excès de d'ADN circulant provenant du chromosome 21.
+La figure ci-dessous illustre la quantification d'ADN circulant chez une mère sans et avec fœtus trisomique. En mesurant une différence significative entre une patient et des témoins sains, il est possible de conclure à un excès de d'ADN circulant provenant du chromosome 21.
 
 <div class="figure">
     <img src="../images/post18/chromosomes.png" />
