@@ -41,7 +41,7 @@ DISQUS_SITENAME = "dridkme"
 DISQUS_ON_PAGES = True
 # Social widget
 SOCIAL = (
-    ('github', '/archives.html'),
+    ('github', 'http://github.com/dridk'),
     ('twitter-square', 'https://twitter.com/dridk'),
     ('rss-square', 'http://dridk.me/feeds/all.atom.xml')
    )
