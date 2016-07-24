@@ -138,7 +138,7 @@ Il reste tout de même plus de 60% d'inconnu ! Dans un prochain article, on s'y 
 
 
 ### Combien de mutations me distinguent du génome de référence ? 
-On ne va pas prendre mon génome... Mais celui de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) co-découvreur de l'ADN avec [Francis Crick](https://fr.wikipedia.org/wiki/Francis_Crick) et [Rosalind Franklin](https://fr.wikipedia.org/wiki/Rosalind_Franklin). Son génome a été séquencé et distribué librement. Nous allons télécharger un fichier contenant uniquement les différences entre le génome de Watson et le génome de référence. C'est-à-dire un fichier contenant sur chaque ligne, la position et la base alternative.
+On ne va pas prendre mon génome... Mais celui de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) co-découvreur de la structure de l'ADN avec [Francis Crick](https://fr.wikipedia.org/wiki/Francis_Crick) et [Rosalind Franklin](https://fr.wikipedia.org/wiki/Rosalind_Franklin). Son génome a été séquencé et distribué librement. Nous allons télécharger un fichier contenant uniquement les différences entre le génome de Watson et le génome de référence. C'est-à-dire un fichier contenant sur chaque ligne, la position et la base alternative.
 
     $ wget http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/pgWatson.txt.gz
 
