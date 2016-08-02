@@ -30,7 +30,7 @@ Le schéma suivant représente les différentes étapes du pipeline.
 </div>
 
 ## Résultats
-Si tout se passe bien vous devez obtenir 2 images : *correlation.png* et *ideogram.png* que vous pouvez voir ci-dessous . 
+Si tout se passe bien vous devez obtenir 2 images : *correlation.png* , *both.png* et *ideogram.png*  que vous pouvez voir ci-dessous . 
 
 <div class="figure">
     <img src="../images/post19/correlation.png" />
@@ -40,17 +40,25 @@ Si tout se passe bien vous devez obtenir 2 images : *correlation.png* et *ideogr
 Sur le graphique *correlation.png* est représenté le nombre de snp par bin entre Watson et Venter en utilisant des bins d' 1 millions de paire de bases.  
 La corrélation est net. Les régions riches en snp chez Watson le sont aussi chez Venter. 
 
+<div class="figure">
+    <img src="../images/post19/both.png" />
+    <div class="legend">Densité en variant par bin pour Watson (orange) et Venter (bleue)</div>
+</div>
+
+Le graphique *both.png* montre la densité des variants par bin pour Watson (orange) et Venter (bleue). 
+Les courbes sont très similaire. 
 
 <div class="figure">
     <img src="../images/post19/ideogram.png" />
-    <div class="legend">Différence des snps par bin entre Watson et Venter sur tous le génome. Il s'agit d'un z-score</div>
+    <div class="legend">Différence des snps par bin entre Watson et Venter sur tous le génome.</div>
 </div>
 
 Le graphique *ideogram.png* montre les différences du nombre de snp par bin entre Watson et Venter sur tous le génome. La différence est normalisé et il s'agit ici d'un z-score. En zoomant, vous pouvez voir que les différences sont rarement significative en restant inférieur à 2. Par contre certaines régions, notamment sur le bras long du chromosome X (avant dernier), montre de grandes différences. 
 
 
 ## Conclusion 
-Les régions riches en mutation chez Watson le sont aussi chez Venter en utilisant des bins d'1 million. Ceci peut s'expliquer par le contenu de la séquence. Peut être que certaines régions sont plus susceptible à muter à cause de leurs teneurs en non-codant, en zones répétées ou en autres choses. Il faudrait que je regarde si il y a une corrélation avec la teneur en exon, en GC... Et aussi regarder sur 1000 génomes.   
-Quand à la distribution sur le génome, je pense que c'est difficile de conclure sur ce graphique. On voit bien que le nombre de snp est semblable sur tous le génome sauf dans des zones précises. Il faudra faire d'autres mesures en changeant les paramètres et utiliser une autre échelle !
+Les régions riches en mutation chez Watson le sont aussi chez Venter en utilisant des bins d'1 million. Ceci peut s'expliquer par le contenu de la séquence. Peut être que certaines régions sont plus susceptible à muter à cause de leurs teneurs en non-codant, en zones répétées ou en autres choses. Il faudrait que je regarde si il y a une corrélation avec la teneur en exon, en GC...    
+Quand à la distribution sur le génome, elle fluctue de la même façon chez Watson et Venter. On retrouve cependant quelques différences dans des zones précises. Peut être des CNV...   
+Bref, prochaine objectif, comparer ces courbes avec des données d'annotation style 1000génomes et SNP ! 
 
 
