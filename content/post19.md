@@ -46,7 +46,7 @@ La corrélation est net. Les régions riches en snp chez Watson le sont aussi ch
 </div>
 
 Le graphique *both.png* montre la densité des variants par bin pour Watson (orange) et Venter (bleue). 
-Les courbes sont très similaire. 
+Les tendances générales des courbes semblent similaire.  
 
 <div class="figure">
     <img src="../images/post19/ideogram.png" />
