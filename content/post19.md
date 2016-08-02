@@ -50,7 +50,7 @@ Le graphique *ideogram.png* montre les différences du nombre de snp par bin ent
 
 
 ## Conclusion 
-Les régions riches en mutation chez Watson le sont aussi chez Venter. Ceci peut s'expliquer par le contenu de la séquence. Peut être que certaines régions sont plus susceptible à muter à cause de leurs teneurs en non-codant, en zones répétées ou en autres choses. Il faudrait que je regarde si il y a une corrélation avec la teneur en exon, en GC... Et aussi regarder sur 1000 génomes.   
+Les régions riches en mutation chez Watson le sont aussi chez Venter en utilisant des bins d'1 million. Ceci peut s'expliquer par le contenu de la séquence. Peut être que certaines régions sont plus susceptible à muter à cause de leurs teneurs en non-codant, en zones répétées ou en autres choses. Il faudrait que je regarde si il y a une corrélation avec la teneur en exon, en GC... Et aussi regarder sur 1000 génomes.   
 Quand à la distribution sur le génome, je pense que c'est difficile de conclure sur ce graphique. On voit bien que le nombre de snp est semblable sur tous le génome sauf dans des zones précises. Il faudra faire d'autres mesures en changeant les paramètres et utiliser une autre échelle !
 
 
