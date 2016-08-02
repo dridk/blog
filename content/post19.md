@@ -46,11 +46,11 @@ La corrélation est net. Les régions riches en snp chez Watson le sont aussi ch
     <div class="legend">Différence des snps par bin entre Watson et Venter sur tous le génome. Il s'agit d'un z-score</div>
 </div>
 
-Le graphique *ideogram.png* montre les différences du nombre de snp par bin entre Watson et Venter sur tous le génome. La différence est normalisé et il s'agit ici d'un z-score. En zoomant, vous pouvez voir que les différences sont rarement significative en restant inférieur à 2. Par contre certain région, notamment sur le bras long du chromosome X (avant dernier), montre de grande différence. 
+Le graphique *ideogram.png* montre les différences du nombre de snp par bin entre Watson et Venter sur tous le génome. La différence est normalisé et il s'agit ici d'un z-score. En zoomant, vous pouvez voir que les différences sont rarement significative en restant inférieur à 2. Par contre certaines régions, notamment sur le bras long du chromosome X (avant dernier), montre de grandes différences. 
 
 
 ## Conclusion 
-Les régions riches en mutation chez Watson le sont aussi chez Venter. Ceci peut s'expliquer par le contenu de la séquence. Peut être que certaines régions sont plus susceptible à muter à cause de leurs teneurs en non-codant ou en autres choses. Il faudrait que je regarde si il y a une corrélation avec la teneur en exon, en GC... Et aussi regarder sur 1000 génomes.   
-Quand à la distribution sur le génome, je pense que c'est difficile de conclure sur ce graphique. On voit bien que le nombre de snp est semblable sur tous le génome sauf des zones précise. Il faudra faire d'autre mesure en changeant les paramètres et à une autre échelle !
+Les régions riches en mutation chez Watson le sont aussi chez Venter. Ceci peut s'expliquer par le contenu de la séquence. Peut être que certaines régions sont plus susceptible à muter à cause de leurs teneurs en non-codant, en zones répétées ou en autres choses. Il faudrait que je regarde si il y a une corrélation avec la teneur en exon, en GC... Et aussi regarder sur 1000 génomes.   
+Quand à la distribution sur le génome, je pense que c'est difficile de conclure sur ce graphique. On voit bien que le nombre de snp est semblable sur tous le génome sauf dans des zones précises. Il faudra faire d'autres mesures en changeant les paramètres et utiliser une autre échelle !
 
 
