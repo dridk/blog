@@ -1,4 +1,4 @@
-Title: Densité des variants entre J.Watson et C.Venter
+Title: Répartition des variants entre J.Watson et C.Venter
 Slug: localisation_snp
 Date: 2016-08-02 21:42:51
 Category: informatique
