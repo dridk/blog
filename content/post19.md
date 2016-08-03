@@ -7,7 +7,7 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 Nous avions vu dans un [précédent post](http://dridk.me/genome_chiffre_1.html) que le génome de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) comptait un peu plus de 2 millions de variants par rapport au génome de référence. Et qu'environ la moitié de ces variants étaient partagés avec [Craig Venter](https://fr.wikipedia.org/wiki/Craig_Venter).   
-Aujourd'hui, j'ai cherché à savoir si la densité des mutations à travers leurs génomes étaient semblables. Pour cela, j'ai fragmenté le génome en intervals réguliers que j'appelle *bins*. Et pour chaque *bin*, j'ai compté le nombre de variants chez Watson puis chez Venter qui tombaient dedans. J'ai alors calculé la différence entre Watson et Venter pour chaque *bin* à l'aide d'un z-score.  
+Aujourd'hui, j'ai cherché à savoir si la densité des mutations à travers leurs génomes étaient semblables. Pour cela, j'ai fragmenté le génome en intervalles réguliers que j'appelle *bins*. Et pour chaque *bin*, j'ai compté le nombre de variants chez Watson puis chez Venter qui tombaient dedans. J'ai alors calculé la différence entre Watson et Venter pour chaque *bin* à l'aide d'un z-score.  
 Et voila les résultats! 
 
 ## Pipeline 
@@ -37,7 +37,7 @@ Si tout se passe bien vous devriez obtenir 3 images : *correlation.png* , *both.
     <div class="legend">corrélation du nombre de SNP par bin entre Watson et Venter avec des bins de 1 Mpb </div>
 </div>
 
-Sur le graphique *correlation.png* est représenté le nombre de SNP par *bin* entre Watson et Venter en utilisant des *bins* d' 1 millions de paires de bases.  
+Sur le graphique *correlation.png* est représenté le nombre de SNP par *bin* entre Watson et Venter en utilisant des *bins* d' 1 million de paires de bases.  
 La corrélation est nette. Les régions riches en SNP chez Watson le sont également chez Venter. 
 
 <div class="figure">
