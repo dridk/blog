@@ -7,8 +7,8 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 Nous avions vu dans un [précédent post](http://dridk.me/genome_chiffre_1.html) que le génome de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) comptait un peu plus de 2 millions de variants par rapport au génome de référence; et qu'environ la moitié de ces variants étaient partagés avec [Craig Venter](https://fr.wikipedia.org/wiki/Craig_Venter).  
-Aujourd'hui, j'ai cherché à savoir si la densité des mutations à travers leurs génomes étaient semblables. Pour cela, j'ai fragmenté le génome en intervalles réguliers que j'appelle *bins*. J'ai ensuite compté pour chaque *bin* le nombre de variants chez Watson puis chez Venter . J'ai alors calculé la différence entre Watson et Venter pour chaque *bin* à l'aide d'un z-score.  
-Et voila les résultats!
+Aujourd'hui, j'ai cherché à savoir si les densités des mutations à travers leurs génomes étaient semblables. Pour cela, j'ai fragmenté le génome en intervalles réguliers que j'appelle *bins*. J'ai ensuite compté pour chaque *bin* le nombre de variants chez Watson puis chez Venter. J'ai alors calculé la différence entre Watson et Venter pour chaque *bin* à l'aide d'un z-score.  
+Et voilà les résultats!
 
 ## Pipeline 
 J'ai tout codé dans un pipeline disponible sur [github](https://github.com/dridk/snp_location).  
@@ -45,10 +45,10 @@ La corrélation est nette. Les régions riches en SNP chez Watson le sont égale
 
 <div class="figure">
     <img src="../images/post19/both.png" />
-    <div class="legend">Densité en variants par bin pour Watson (orange) et Venter (bleue)</div>
+    <div class="legend">Densités en variants par bin pour Watson (orange) et Venter (bleue)</div>
 </div>
 
-Le graphique *both.png* montre la densité des variants par *bin* pour Watson (orange) et Venter (bleu).
+Le graphique *both.png* montre les densités des variants par *bin* pour Watson (orange) et Venter (bleu).
 Les tendances générales des courbes semblent similaires.  
 
 <div class="figure">
@@ -60,8 +60,8 @@ Le graphique *ideogram.png* montre les différences du nombre de SNP par *bin* e
 
 
 ## Conclusion
-Les régions riches en mutations chez Watson le sont aussi chez Venter en utilisant des *bins* d'1 Mpb. Ceci peut s'expliquer par le contenu de la séquence. Il est possible que certaines régions soient plus susceptibles de muter à cause de leurs teneurs en non-codants, en zones répétées ou en autres choses. Il faudrait d'ailleurs que je regarde si il y a une corrélation avec la teneur en exons, en GC...  
-La distribution dans le génome, fluctue quant-à elle de la même façon chez Watson et Venter. On retrouve cependant quelques différences dans des zones précises. Peut être des CNV...   
+Les régions riches en mutations chez Watson le sont aussi chez Venter en utilisant des *bins* d'1 Mpb. Ceci peut s'expliquer par le contenu de la séquence. Il est possible que certaines régions soient plus susceptibles de muter à cause de leurs teneurs en non-codants, en zones répétées ou en autres choses. Il faudrait d'ailleurs que je regarde s'il y a une corrélation avec la teneur en exons, en GC...  
+La distribution dans le génome, fluctue quant à elle de la même façon chez Watson et Venter. On retrouve cependant quelques différences dans des zones précises. Peut-être des CNV...   
 Bref, prochain objectif, comparer ces courbes avec des données d'annotations style 1000 génomes et SNP !
 
 
