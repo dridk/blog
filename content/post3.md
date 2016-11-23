@@ -59,7 +59,7 @@ Pour lire la réponse on a déjà vu *r.text* plus haut. Pour le reste, c'est to
 Pour envoyer des données, toujours aussi simple. Par exemple pour l'envoi des données d'un formulaire : 
 
     data = {"first_name":"Richard", "second_name":"Stallman"}
-    r = request.post("http://linuxfr.org", data = data)
+    r = requests.post("http://linuxfr.org", data = data)
 
 Pour envoyer une image par multipart, encore plus facile : 
 
