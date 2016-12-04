@@ -36,9 +36,7 @@ MENUITEMS = (('Archive', 'archives.html'),
          ('Applications', 'pages/application-Fr.html')
 
          )
-GOOGLE_ANALYTICS="UA-44929010-2"
-DISQUS_SITENAME = "dridkme"
-DISQUS_ON_PAGES = True
+
 # Social widget
 SOCIAL = (
     ('github', 'http://github.com/dridk'),

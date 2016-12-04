@@ -8,84 +8,136 @@ SIDEBARIMAGE:../images/common/metagenomics.jpg
 Status: draft
 
 # Introduction
-Le microbiote et la métagénomique son les deux mots tendances de ces dernières années dans les laboratoires de microbiologies. Derrière eux se cacherait les réponses à différentes maladies comme les maladies auto-immune ou encore l'autisme et la schizophrénie.    
-Commençons donc par définir ces deux termes à l'aide de wikipedia.     
-Le **microbiote** est l'ensemble des micro-organismes ( bactéries, virus, champignons, levure) vivant dans un environnement spécifique appelé **microbiome**. L'exemple typique est le microbiote intestinale. Votre intestin est composé de millions d'espèces bactériennes différentes formant une communauté écologique en symbiose avec votre organisme. Ce microbiome est une partie intégrante de votre organisme nécessaire à son fonctionnement. Il joue par exemple un rôle de barrière vis à vis d'autre agent microbien pathogène. La destruction du microbiote intestinale par des antibiotiques,par exemple, est responsable des infections intestinales à Clostridium difficile.      
-La **métagénomique** est la méthode d'étude du microbiote. C'est une technique de séquençage et d'analyse de l'ADN contenu dans un milieu. A l'instar de la génomique qui séquence le génome d'une espèce, la métagénomique séquence les génomes de plusieurs individus d'espèces différente dans un milieu donnée. Une analyse typique de métagénomique vous donnera la composition d'un microbiome. C'est à dire quels espèces sont présentes, leurs abondances et leurs diversités.    
-C'est en partie grâce à l’evolution majeur des technologie de séquençage haut débit et à la bioinformatique, que la métagénomique est aujourd'hui d'actualité.    
-Dans la suite de l'article, je parlerai uniquement de la métagénomique bactérienne, plus particulièrement la métagénomique ciblé sur l'ARN 16s. Mais gardez bien en tête que la métagénomique virale et mycotique, bien que plus rare, existent aussi. 
+Le [microbiote](https://fr.wikipedia.org/wiki/Microbiote) et la [métagénomique](https://fr.wikipedia.org/wiki/M%C3%A9tag%C3%A9nomique) sont les deux mots tendances de ces dernières années dans les laboratoires de microbiologies. Derrière eux se cacherait les réponses à de nombreuses maladies maladies comme le [diabète](https://fr.wikipedia.org/wiki/Diab%C3%A8te), la [maladie de Crohn](https://fr.wikipedia.org/wiki/Maladie_de_Crohn) et même l'[autisme](https://fr.wikipedia.org/wiki/Autisme) ou la [schizophrénie](https://fr.wikipedia.org/wiki/Schizophr%C3%A9nie).       
+Commençons donc par définir ces deux termes: 
+Le **microbiote** est l'ensemble des micro-organismes ( bactéries, virus, champignons, levure) vivants dans un environnement spécifique appelé **[microbiome](https://fr.wikipedia.org/wiki/Microbiome)**. L'exemple typique est le microbiote intestinal. Votre intestin est composé de millions d'espèces bactériennes différentes formant une communauté écologique en symbiose avec votre organisme nécessaire à son bon fonctionnement. Il joue par exemple un rôle de barrière vis-à-vis d'autres agents microbiens pathogènes. La destruction du microbiote intestinal par des antibiotiques est par exemple responsable des infections intestinales à [Clostridium difficile](https://fr.wikipedia.org/wiki/Clostridium_difficile).    
+Pour vous prouvez l'importante du microbiome, retenez que le génome humain est composé d'environ 23 000 gènes. Le nombre de gène retrouvé dans l'ensemble des micro-organismes du microbiome intestinale se compte en millions.        
+La **métagénomique** est la méthode d'étude du microbiote. C'est une technique de [séquençage](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age) et d'analyse de l'ADN contenu dans un milieu. A l'instar de la [génomique](https://fr.wikipedia.org/wiki/G%C3%A9nomique) qui consiste à séquencer un unique génome, la métagénomique séquence les génomes de plusieurs individus d'espèces différente dans un milieu donnée. Une analyse typique de métagénomique vous donnera la composition d'un microbiome. C'est à dire quels espèces sont présentes, leurs abondances et leurs diversités.    
+C'est en partie grâce à l’évolution majeur des technologies de séquençage haut débit et à la bioinformatique, que la métagénomique est aujourd'hui d'actualité.    
+Dans la suite de cette article, je parlerai uniquement de la métagénomique bactérienne, plus particulièrement la métagénomique ciblé sur l'[ARN 16S](https://fr.wikipedia.org/wiki/ARN_ribosomique_16S). Mais gardez bien en tête que la métagénomique virale et mycotique, bien que plus rare, existent aussi. 
 
 # Stratégie en métagénomique 
 Il existe deux grandes stratégies de séquençage en métagénomique. La stratégie globale et la stratégie ciblé.  
-- **La métagénomique globale** consiste à fragmenter tous les ADNs présent dans un échantillons en court fragments de 100 à 300 paires de bases et les séquencer à l'aide d'un séquenceur haut débit. D'ou le nom de *Shotgun sequencing*. Les séquences obtenues sont ré-assembler bioinformatiquement afin de reconstruire les génomes bactériens d'origine.   
-- **La métagénomique ciblé** n'est pas de la métagénomique à proprement parlé, mais de la métagénétique. En effet cette stratégie consiste à séquencer un unique gène au lieu d'un génome complet. Mais vu que le terme *métagénomique* est plus souvent employé pour décrire cette stratégie, je garde ce mot. Ce gène doit être commun à plusieurs espèces tout en présentant des régions suffisamment variable afin de discriminer une espèce. En bactériologie, le gène utilisé est celui de l'ARN 16S. Un gène présent uniquement chez les bactéries.    
+- **La métagénomique globale** consiste à fragmenter **tous** les ADNs présent dans un échantillons en courts fragments et les séquencer à l'aide d'un [séquenceur haut débit](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l'ADN). D’où le nom de *[Shotgun sequencing](https://en.wikipedia.org/wiki/Shotgun_sequencing)*. Les séquences (ou *reads*) obtenues sont ré-assembler bioinformatiquement afin de reconstruire les génomes bactériens d'origine.   
+
+<div class="figure">
+    <img src="../images/post20/shotgun_sequencing.png" /> 
+    <div class="legend">Stratégie globale. L'ensemble des ARNs présents dans un échantillon de microbiote sont séquencés</div>
+</div>
+
+- **La métagénomique ciblé** n'est pas de la métagénomique à proprement parlé, mais de la métagénétique. En effet cette stratégie consiste à séquencer un unique gène au lieu d'un génome complet. Mais vu que le terme *métagénomique* est employé partout pour décrire cette stratégie, je continuerai ainsi. Ce gène doit être commun à plusieurs espèces tout en présentant des régions suffisamment variable afin de discriminer une espèce. En bactériologie, le gène utilisé est celui de l'ARN 16S. Un gène présent uniquement chez les bactéries.    
+
+<div class="figure">
+    <img src="../images/post20/target_sequencing.png" /> 
+    <div class="legend">Stratégie ciblé. Seul les ADNs du gène cible sont séquencés. En bactériologie, le gène cible est l'ARN 16S </div>
+</div>
+
 Chaque stratégie a son avantage. La métagénomique globale est plus précise dans le sens ou elle séquence l'ensemble du génome d'une bactérie alors que la seconde ne s’intéresse qu'à un seul gène. De plus, la première stratégie permet de décrire le fonctionnement globale du microbiote en séquençant l'ensemble des gènes présents.   
-La stratégie ciblé est quand à elle plus sélective. En effet l'ARN 16s est présent uniquement chez les bactéries qui seul seront séquencé. La stratégie globale séquence tous les ADN présent dans le milieu sans discernement, que ce soit bactérien, virale ou encore humain.  
+La stratégie ciblé est quand à elle plus sélective. En effet le gène de l'ARN 16S est présent uniquement chez les bactéries qui seul seront séquencé. La stratégie globale séquence tous les ADN présent dans le milieu sans discernement, que ce soit bactérien, virale ou encore humain.  
 Enfin les algorithmes de traitements des données issue d'un séquençage ciblé, sont beaucoup plus simple que les assemblages de génomes nécessaire dans le séquençage globale. Pour comprendre cette complexité, essayer de mélanger toutes les pièces de 200 puzzles différents et tenter de retrouver les modèles originaux. C'est la problématique de la métagénomique globale.   
-On ne s’intéressera ici qu'à la stratégie 16s, utilisé en bactériologie. C'est un bon point de départ pour commencer!
+On ne s’intéressera ici qu'à la stratégie 16S, utilisé en bactériologie. C'est un bon point de départ pour commencer!
 
 
-##Séquençage de l' ARN 16S 
+##L' ARN 16S 
 
-Vous connaissez les ribosomes? Ces petits organelles formé de deux sous-unité permettant la traduction de l'ARN en protéine. Et bien chez la bactérie et uniquement chez elle, la petit sous unité est formé de l'ARN 16s.   
-Il s'agit d'un ARN non codant composé d'environ 1500 nucléotides possédant des 
-régions constante et variable. Il suffit d'aligner la séquence d'ARN 16s de différentes espèces bactérienne pour s'en rendre compte. En effet, comme vous pouvez le voir dans la figure suivante, certaine région sont identique ( constante ) entre les bactéries alors que d'autre région sont variable. 
+Vous connaissez les [ribosomes](https://fr.wikipedia.org/wiki/Ribosome)? Ces petits organelles dans la cellule formés de deux sous-unité permettant la traduction de l'ARN en protéine. Et bien chez la bactérie et uniquement chez elle, la petit sous unité est formé de l'ARN 16S.   
+Il s'agit d'un [ARN non codant](https://fr.wikipedia.org/wiki/ARN_non_codant) composé d'environ 1500 nucléotides possédant des 
+régions constante et variable. Il suffit d'aligner la séquence d'ARN 16S de différentes espèces bactériennes pour s'en rendre compte. En effet, comme vous pouvez le voir sur  la deuxième figure ci-dessous, certaine région sont identique ( constante ) entre les bactéries alors que d'autre région sont variable. 
+
+<div class="figure">
+    <a href="../images/post20/ARN16s.jpg"><img src="../images/post20/ARN16s_thumb.jpg" /> </a>
+    <div class="legend">Structure secondaire de l'ARN 16S avec ces différentes boucles. En dessous figure les différentes amorces utilisables en métagénomique ciblé</div>
+</div>
 
 <div class="figure">
     <img src="../images/post20/alignment.png" /> 
-    <div class="legend">Graph du pipeline snakemake</div>
+    <div class="legend">Similarité des séquences d'ARN 16S entre plusieurs bactérie. Ce graphique montre les régions constantes et variables</div>
 </div>
 
-La figure suivante montre l'ARN 16s avec ses boucles et ces 9 régions variables. Ces régions n'ont pas de rôle fonctionnel important et peuvent divergé au cours de l'evolution sous l'effet des mutations neutres.  
-Il s'agit d'un outil ideal pour discriminer les taxons bactériens au sein du microbiome. A chaque taxon correspondra une séquence particulière au niveaux de ces régions variable. Il s'agit de la signature du taxons. 
-Les régions constantes vont permettre quand à elle de construire des amorces de PCR afin de sélectionner les ARN 16s de toutes les bactéries.     
-Le séquençage haut débit ne permet pas de séquencer de longue séquence. Dans la plus part des cas, on ne séquence qu'une partie de l'ARN 16s en essayant de recouvrir des régions variables. Le couple d'amorce V3-V5, que vous pouvez voir sur la figure 3, permet d'amplifier puis de séquencer une région de 500 nucléotides à l'aide de la technologie illumina MISeq. 
+
+
+Les régions variables n'ont pas de rôle fonctionnel important et peuvent divergé au cours de l’évolution sous l'effet des [mutations neutres](https://fr.wikipedia.org/wiki/%C3%89volution_des_taux_de_mutation).  
+Ces régions variables vont nous permettre de discriminer les [taxons](https://fr.wikipedia.org/wiki/Taxon) bactériens au sein du microbiome. A chaque taxon correspondra une séquence particulière au niveaux de ces régions variables. Il s'agit de la signature du taxons. 
+Les régions constantes vont permettre quand à elle de capturer l'ensemble des ARN 16S. En effet ces régions étant identique chez toutes les bactéries, il est possible de  construire des [amorces](https://fr.wikipedia.org/wiki/Amorce_(g%C3%A9n%C3%A9tique)) comme en [PCR](https://fr.wikipedia.org/wiki/PCR) afin d'amplifier toutes les séquences cibles.   
+Le séquençage haut débit ne permet pas de séquencer de longue séquence. Dans la plus part des cas, on ne séquence qu'une partie de l'ARN 16S en essayant de recouvrir des régions variables. Le couple d'amorce V3-V5, que vous pouvez voir sur la figure 3, permet par exemple d'amplifier puis de séquencer une région de 500 nucléotides avec un séquenceur [Illumina MiSeq](http://www.illumina.com/systems/miseq.html).
 
 ## Assignent taxonomique 
-Une fois le séquençage réalisé, c'est au tour des bioinformaticiens de prendre le relais. Un fichier contenant l'ensemble des reads(sequences) et obtenus après séquençage. Après plusieurs étapes de filtrage et de nettoyage de ces données, il faut assigner à chaque séquences le nom de la bactérie. Pour cela, deux stratégies existent.   
-- La stratégie "close-reference" consiste à comparer chaque séquence aux séquences présente dans une base de donnée avec un seuil en général de 97% de similarité. Greengene, Silva et RDP sont les bases de données d'ARN 16s les plus connus. Cette stratégie à le mérite d'être rapide. Mais son principal problème et d'ignorer les séquences absentes des bases de donnée. Pour palier à ce problème, la deuxième stratégie peut être utilisé.   
-- La stratégie appelé"de novo", n'utilise pas de base donnée mais consiste à comparer les séquences entre elle et les regrouper par similarité. Les "clusters" ainsi formé élisent une séquence consensus qui peut à son tour être annoté par une base de donnée ou rester comme tel définissant alors une espèce inconnu.   
-Une fois l’assignation taxonomique réalisé, il suffit de compter le nombre d'espèces présent pour chaque échantillon et de construire la table des OTUs.
+Une fois le séquençage réalisé, c'est au tour des bioinformaticiens de prendre le relais. Un fichier contenant l'ensemble des reads (séquences) et obtenus après séquençage. Après plusieurs étapes de filtrage et de nettoyage de ces données, il faut assigner à chaque séquences le nom de la bactérie. Pour cela, deux stratégies existent.   
+- La stratégie *[close-reference](http://qiime.org/tutorials/otu_picking.html#closed-reference-otu-picking)* consiste à comparer chaque séquence aux séquences présente dans une base de donnée avec un seuil en général de 97% de similarité. [Greengene](http://greengenes.lbl.gov/cgi-bin/nph-index.cgi), [Silva](https://www.arb-silva.de/) et [RDP](https://rdp.cme.msu.edu/) sont les bases de données d'ARN 16S les plus connues. Cette stratégie à le mérite d'être rapide. Mais son principal problème et d'ignorer les séquences absentes des bases de donnée. Pour palier à ce problème, la deuxième stratégie peut être utilisé.   
 
-## La table des OTUs 
-Le point de départ de toute analyse en métagénomique est la table des OTU. (Operationnal taxonomic unit). La notion d'espèce chez les bactéries n'existe pas, et on parle plutôt d'OTU pour définir un ensemble de bactéries similaire à plus de 97%.   
-Il s'agit d'un tableau à deux entrées contenant l'abondance (Le nombre de séquence) par OTU et par échantillons. Dans le schéma suivant, 3 échantillons provenant de 3 patients ont été analysé permettant de construire la table des OTU. 
-Cette table contient des valeurs absolus. Il faut les normaliser en pourcentage afin de rendre comparable les échantillons entre eux. D'autres méthodes de normalisation existe, mais ne sont pas detaillé ici.  
 
 <div class="figure">
-    <img src="../images/post20/otu_table.png" /> 
-    <div class="legend">Strategie close reference et de novo</div>
+    <img src="../images/post20/close_reference.png" /> 
+    <div class="legend">Stratégie 1. Chaque séquence est rechercher dans une base de donnée et assigné à son taxon</div>
 </div>
 
+- La stratégie appelé *[de novo](http://qiime.org/tutorials/otu_picking.html#open-reference-otu-picking)*, n'utilise pas de base donnée mais consiste à comparer les séquences entre elle et les regrouper par similarité. Les [clusters](https://fr.wikipedia.org/wiki/Partitionnement_de_donn%C3%A9es) ainsi formé élisent une [séquence consensus](https://fr.wikipedia.org/wiki/S%C3%A9quence_consensus) qui peut à son tour être annoté par une base de donnée ou rester comme tel définissant alors une espèce inconnu.   
+
+<div class="figure">
+    <img src="../images/post20/de_novo.png" /> 
+    <div class="legend">Stratégie 2. Les séquences sont comparé être elle pour former des groupes similaires ou cluster</div>
+</div>
+
+Une fois l’assignation taxonomique réalisée, il suffit de compter le nombre d'espèces présent pour chaque échantillon et de construire la table des [OTUs](https://fr.wikipedia.org/wiki/OTU).
+
+## La table des OTUs 
+Le point de départ de toutes analyses en métagénomique commence par la construction de la table des OTUs (Operationnal taxonomic unit). La notion d'espèce est difficile avec les bactéries, on parle plutôt d'OTU pour définir un ensemble de bactéries similaire à plus de 97%.   
+La table des OTUs est un tableau à doubles entrées contenant le nombre de séquence par OTU et par échantillons. On parle d'*abondance*. Ces abondances absolues sont normalisées afin de rendre les échantillons comparable. Plusieurs méthode de normalisation existe, mais la plus courante et d'utiliser les pourcentages. Sur la figure ci-dessous L'echantillons 1 et 3 ont tous les deux une abondances absolues de 3 en bactéries rouges. En pourcentage, leurs abondances relatives changent en 42.8% et 75%. 
+
+<div class="figure">
+    <img src="../images/post20/otu_table2.png" /> 
+    <div class="legend">Strategie close reference et de novo</div>
+</div>
 
 ## Analyse des données 
 
 ### Diversité Alpha
-L'alpha diversité est un indicateur de la diversité d'un unique échantillon. Le nombre d'espèce contenu dans un échantillon est par un exemple un indicateur d'alpha diversité. Mais d'autre indicateurs existent. 
+La[diversité alpha](https://fr.wikipedia.org/wiki/Richesse_sp%C3%A9cifique) est un indicateur de la diversité d'un unique échantillon. Le nombre d'espèce contenu dans un échantillon est par un exemple un indicateur d'alpha diversité. Mais d'[autre indicateurs existent](http://drive5.com/usearch/manual/alpha_diversity.html). 
 En effet, gardez à l'esprit que ce qui est séquencé n'est qu'un échantillon plus ou moins représentative de la réalité. 
 Les bactéries abondantes d'un milieu seront certainement séquencé, mais les bactéries de faibles abondances le seront très peu voir pas du-tout. 
-L'indicateur Chao1 estime ce nombre d'espèces non séquencé à partir de celles observées en comptant le nombre de singletons et de doubletons. (Une espèces observé 1 seul fois est un singleton, 2 fois est un doubletons).
-D'autre indice existe comme l'indice de Shannon, de Simpson ou encore celui de Fisher.    
-Le graphique ci-dessous est un exemple de diversité alpha montrant des différences de microbiotes intestinale en fonction du régime alimentaire.  
+L'indicateur *Chao1* estime ce nombre d'espèces non séquencé à partir de celles observées en comptant le nombre de singletons et de doubletons. (Une espèces observé 1 seul fois est un singleton, 2 fois est un doubletons).
+D'autre indice existe comme l'[indice de Shannon](https://en.wikipedia.org/wiki/Diversity_index), de [Simpson](http://www.countrysideinfo.co.uk/simpsons.htm) ou encore celui de [Fisher](http://groundvegetationdb-web.com/ground_veg/home/diversity_index).    
+Le graphique ci-dessous est un exemple de diversité alpha montrant les différences de microbiote intestinal en fonction du régime alimentaire.  
 
 <div class="figure">
     <img src="../images/post20/alpha_diversity.jpg" /> 
-    <div class="legend">Diversité alpha du microbiote intestinale en fonction du régime alimentaire</div>
+    <div class="legend">Diversité alpha du microbiote intestinal en fonction du régime alimentaire. <br/><i> <a href="https://peerj.com/articles/659/">Source </a></i></div>
 </div>
 
 
 ### Diversité Beta
-La beta diversité consiste à mesurer la diversité des espèces avec différents échantillons. On procède le plus souvent à l'analyse multivarié de la matrice des OTUs en ayant recourt aux méthodes d'ordinations comme l'analyse en composante principale. Pour faire simple, si nous avions 2 échantillons et 40 espèces dans notre matrice des OTUs, la représentation sur un graphique serait facile en utilisant 2 axes ( 1 par échantillons) et 40 points (les espèces) répartis sur les axes selon leurs abondances. On pourrait alors retrouver des groupes de points distincts. 
+La [diversité bêta](https://fr.wikipedia.org/wiki/Diversit%C3%A9_b%C3%AAta) consiste à mesurer la diversité des espèces entre les échantillons. On procède le plus souvent à l'[analyse multivarié](https://fr.wikipedia.org/wiki/Statistique_multivari%C3%A9e) de la matrice des OTUs en ayant recourt aux méthodes d'[ordinations](https://en.wikipedia.org/wiki/Ordinate) comme l'[analyse en composante principale](https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales). Pour faire simple, si nous avions 2 échantillons et 40 espèces dans notre matrice des OTUs, la représentation sur un graphique serait facile en utilisant 2 axes ( 1 par échantillons) et 40 points (les espèces) répartis sur les axes selon leurs abondances. On pourrait alors retrouver des groupes de points distincts. 
+
+<div class="figure">
+    <img src="../images/post20/2dplot.png" /> 
+    <div class="legend">Chaque point représente une espèces repartis sur les deux échantillons en fonction de leurs abondances. Certaines espèces semble associées entre elles. </div>
+</div>
 
 Mais le plus souvent, il y a plusieurs échantillons dans la table des OTU ce qui nécessite un nombre d'axe impossible à représenter graphiquement. Les méthodes d'ordination répondent à ce problème en projetant la variabilité de tous ces axes sur 2 axes pouvant être visualisé. 
-L'Analyse en composante principale est un exemple d'ordination. Il en existe d'autre, et la plus couramment utilisé en métagenomique, jumelle de l'ACP, et l'analyse en coordonnée principale ( PCoA) que je ne détaillerai pas.    
-Une fois la représentation réalisé, on cherche alors des groupes de points et la variable explicative que l'on visualise à l'aide d'une couleur. Sur le schéma ci dessous, l'analyse de plusieurs échantillons provenant de différent site anatomique, revèle des compositions propre à chaque site.
+L'Analyse en composante principale (ACP) est un exemple d'ordination. Il en existe d'autre, et la plus couramment utilisé en métagénomique, jumelle de l'ACP, et [l'analyse en coordonnée principale](https://en.wikipedia.org/wiki/Multidimensional_scaling#Types) ( PCoA) que je ne détaillerai pas.    
+Une fois la représentation réalisé, on cherche alors des groupes de points et la variable explicative que l'on visualise à l'aide d'une couleur. Sur le figure ci-dessous, l'analyse de plusieurs échantillons provenant de différent site anatomique, révèle les compositions propre à chaque site.
 
 <div class="figure">
     <img src="../images/post20/beta_diversity.png" /> 
-    <div class="legend">Analyse en composante principale de différent échantillons microbien provenant de différents sites anatomiques</div>
+    <div class="legend">Analyse en composante principale de différent échantillons microbien provenant de différents sites anatomiques. <br/><i><a href="http://www.nature.com/nature/journal/v486/n7402/full/nature11234.html"> Source </a> </i></div>
 </div>
 
 # Conclusion 
-La métagénomique est un sujet complexe en plein essor qui necessite une connaissance précise des différentes techniques pour éviter toutes ecceuils. En effet de nombreux biais peuvent intervenir à toutes les étapes que ce soit coté biologie que bioinformatique. D'ailleurs, l'assignation taxonomique que je décris dans cette article est une méthode peu recommandé par les statisticien. La methode dite de "Minimum Entropy Decomposition" est préférable en s'abstenant d'utiliser le seuil théorique des 97%. 
+La métagénomique est un sujet complexe en plein essor qui nécessite une connaissance précise des différentes techniques pour éviter toutes écueil. En effet de nombreux biais peuvent intervenir à toutes les étapes que ce soit coté biologie que bioinformatique. D'ailleurs, l'assignation taxonomique que je décris dans cette article reste simple et naïve. D'autre méthode plus complexe mais valable statistiquement sont préférable. Par exemple a méthode dite de ["Minimum Entropy Decomposition"](http://www.nature.com/ismej/journal/v9/n4/full/ismej2014195a.html) permet de classer les OTU en s'abstenant du seuil théorique des 97%.    
+Enfin, si vous voulez approfondir la métagénomique, je vous invite très fortement à regarder [les vidéos de Dan Knights](https://www.youtube.com/watch?v=htbeJhtFAXw&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc) ( un dieu en métagénomique) disponible sur youtube! 
+
+
+## Référence
+* [Cours en vidéo de Dan Knights](https://www.youtube.com/watch?v=htbeJhtFAXw&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc)
+* [Génomique et métagénomique bactérienne: applications cliniques et importance médicale](https://www.revmed.ch/RMS/2014/RMS-N-450/Genomique-et-metagenomique-bacteriennes-applications-cliniques-et-importance-medicale)
+* [Enterotype of the human gut microbiome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3728647/)
+* [Structure, function and diversity of the healthy human microbiome](http://www.nature.com/nature/journal/v486/n7402/full/nature11234.html)
+* [Outil : QIIME](http://qiime.org/)
+* [Outil : Vsearch ](https://github.com/torognes/vsearch)
+* [Outil :Philoseq](https://joey711.github.io/phyloseq/)
+
+## Remerciement 
+[@Thibaud_GS ](https://twitter.com/Thibaud_GS)
+
+
 
