@@ -131,7 +131,7 @@ La métagénomique est un sujet complexe en plein essor qui nécessite une conna
 Enfin, si vous voulez approfondir la métagénomique, je vous invite très fortement à regarder [les vidéos de Dan Knights](https://www.youtube.com/watch?v=htbeJhtFAXw&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc) (un dieu en métagénomique) disponible sur youtube! 
 
 
-## Référence
+## Références
 * [Cours en vidéo de Dan Knights](https://www.youtube.com/watch?v=htbeJhtFAXw&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc)
 * [Génomique et métagénomique bactérienne: applications cliniques et importance médicale](https://www.revmed.ch/RMS/2014/RMS-N-450/Genomique-et-metagenomique-bacteriennes-applications-cliniques-et-importance-medicale)
 * [Enterotype of the human gut microbiome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3728647/)
@@ -140,7 +140,7 @@ Enfin, si vous voulez approfondir la métagénomique, je vous invite très forte
 * [Outil : Vsearch ](https://github.com/torognes/vsearch)
 * [Outil :Philoseq](https://joey711.github.io/phyloseq/)
 
-## Remerciement 
+## Remerciements 
 [@Thibaud_GS ](https://twitter.com/Thibaud_GS)
 
 
