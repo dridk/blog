@@ -13,7 +13,7 @@ Commençons donc par définir ces deux termes:
 - Le **microbiote** est l'ensemble des micro-organismes (bactéries, virus, champignons, levures) vivants dans un environnement spécifique appelé **[microbiome](https://fr.wikipedia.org/wiki/Microbiome)**. L'exemple typique est le microbiote intestinal. Votre intestin est composé de millions d'espèces bactériennes différentes formant une communauté écologique en symbiose avec votre organisme et nécessaire à son bon fonctionnement. Il joue entre autre un rôle de barrière vis-à-vis d'autres agents microbiens pathogènes. La destruction du microbiote intestinal par des antibiotiques est par exemple responsable des infections intestinales par *[Clostridium difficile](https://fr.wikipedia.org/wiki/Clostridium_difficile)*.    
 Pour vous prouver l'importante du microbiome, retenez que le génome humain est composé d'environ 23 000 gènes. Le nombre de gènes retrouvés dans l'ensemble des micro-organismes du microbiome intestinal se compte en millions.        
 - La **métagénomique** est la méthode d'étude du microbiote. C'est une technique de [séquençage](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age) et d'analyse de l'ADN contenu dans un milieu. A l'inverse de la [génomique](https://fr.wikipedia.org/wiki/G%C3%A9nomique) qui consiste à séquencer un unique génome, la métagénomique séquence les génomes de plusieurs individus d'espèces différentes dans un milieu donné. Une analyse typique de métagénomique vous donnera la composition d'un microbiome. C'est à dire quelles espèces sont présentes, leurs abondances et leurs diversités.    
-C'est en partie grâce à l’évolution majeure des technologies de séquençage haut débit et à la bioinformatique, que la métagénomique est aujourd'hui d'actualité.    
+C'est en partie grâce à l’évolution majeure des technologies de séquençage haut débit et à la bioinformatique, que la métagénomique est aujourd'hui à notre portée.    
 Dans la suite de cet article, nous verrons uniquement la métagénomique bactérienne, plus particulièrement la métagénomique ciblé sur l'[ARN 16S](https://fr.wikipedia.org/wiki/ARN_ribosomique_16S). Mais gardez bien en tête que les métagénomiques virales et mycotiques, bien que plus rares, existent aussi. 
 
 # Stratégie en métagénomique 
@@ -26,7 +26,7 @@ Il existe deux grandes stratégies de séquençage en métagénomique : la strat
     <div class="legend">Stratégie globale : L'ensemble des ADNs présents dans un échantillon de microbiote sont séquencés.</div>
 </div>
 
-- **La métagénomique ciblée** n'est pas de la métagénomique à proprement parler, mais de la *métagénétique*. Cette stratégie consiste à séquencer un unique gène au lieu d'un génome complet. Cependant le terme de *métagénomique* étant plus régulièrement employé pour décrire cette stratégie, je continuerai ainsi. Ce gène doit être commun à plusieurs espèces tout en présentant des régions suffisamment variables afin de discriminer une espèce. En bactériologie, le gène utilisé est celui de l'ARN 16S. Un gène présent uniquement chez les bactéries.    
+- **La métagénomique ciblée** n'est pas de la métagénomique à proprement parler, mais de la *métagénétique*. Cette stratégie consiste à séquencer un unique gène au lieu d'un génome complet. Cependant le terme de *métagénomique* étant plus régulièrement employé pour décrire cette stratégie, je continuerai ainsi. Ce gène doit être commun à plusieurs espèces tout en présentant des régions suffisamment variables afin de discriminer une espèce. En bactériologie, le gène utilisé est celui de l'ARN 16S. Il s'agit d'un gène présent uniquement chez les bactéries.    
 
 <div class="figure">
     <img src="../images/post20/target_sequencing.png" /> 
@@ -34,14 +34,14 @@ Il existe deux grandes stratégies de séquençage en métagénomique : la strat
 </div>
 
 Chaque stratégie a son avantage. La métagénomique globale est plus précise dans le sens où elle séquence l'ensemble du génome d'une bactérie alors que la seconde ne s’intéresse qu'à un seul gène. Cette première stratégie permet par exemple de décrire le fonctionnement global du microbiote en séquençant l'ensemble des gènes présents.   
-La stratégie ciblée est quant à elle plus sélective. En effet, le gène de l'ARN 16S est présent uniquement chez les bactéries qui seules seront séquencées. La stratégie globale va séquencer tous les ADN présents dans le milieu sans discernement, que ce soit bactérien, viral ou encore humain.  
-Enfin, les algorithmes de traitements des données issues d'un séquençage ciblé, sont beaucoup plus simples que les assemblages de génomes nécessaires dans le séquençage global. Pour comprendre cette complexité, essayez de mélanger toutes les pièces de 200 puzzles différents et tentez de retrouver les modèles originaux. C'est la problématique de la métagénomique globale.   
-On ne s’intéressera ici qu'à la stratégie 16S, utilisée en bactériologie. C'est un bon point de départ pour commencer!
+La stratégie ciblée est quant à elle plus sélective. En effet, le gène de l'ARN 16S est présent uniquement chez les bactéries qui seules seront séquencées. La stratégie globale va séquencer tous les ADN présents dans le milieu sans discernement, qu'ils soient bactériens, viraux ou encore humains.
+Enfin, les algorithmes de traitements des données issues d'un séquençage ciblé sont beaucoup plus simples que les assemblages de génomes nécessaires dans le séquençage global. Pour comprendre cette complexité, essayez de mélanger toutes les pièces de 200 puzzles différents et tentez de retrouver les modèles originaux. C'est la problématique de la métagénomique globale.   
+On ne s’intéressera ici qu'à la stratégie 16S, utilisée en bactériologie. C'est un bon point de départ pour commencer !
 
 
 ##L' ARN 16S 
 
-Vous connaissez les [ribosomes](https://fr.wikipedia.org/wiki/Ribosome)? Ces petits organelles dans la cellule formés de deux sous-unités permettant la traduction de l'ARN en protéine. Et bien chez la bactérie, et uniquement chez elle, la petite sous unité est formée de l'ARN 16S. 
+Vous connaissez les [ribosomes](https://fr.wikipedia.org/wiki/Ribosome) ? Ces petits organelles dans la cellule formés de deux sous-unités permettant la traduction de l'ARN en protéine. Et bien chez la bactérie, et uniquement chez elle, la petite sous unité est formée de l'ARN 16S. 
 
 <div class="figure">
     <a href="../images/post20/ARN16s.jpg"><img src="../images/post20/ARN16s_thumb.jpg" /> </a>
@@ -61,7 +61,7 @@ Il s'agit d'un [ARN non codant](https://fr.wikipedia.org/wiki/ARN_non_codant) co
 Les régions variables n'ont pas de rôle fonctionnel important et peuvent diverger au cours de l’évolution sous l'effet des [mutations neutres](https://fr.wikipedia.org/wiki/%C3%89volution_des_taux_de_mutation).  
 C'est ce qui va nous permettre de discriminer les [taxons](https://fr.wikipedia.org/wiki/Taxon) bactériens au sein du microbiome. A chaque taxon correspondra une séquence particulière au niveau des régions variables. Il s'agit de la signature du taxon. 
 Les régions constantes vont permettre quant à elles de capturer l'ensemble des ARN 16S. Ces régions étant identiques chez toutes les bactéries, il est possible de construire des [amorces](https://fr.wikipedia.org/wiki/Amorce_(g%C3%A9n%C3%A9tique)) comme pour une [PCR](https://fr.wikipedia.org/wiki/PCR) afin de sélectionner la région d’intérêt.    
-En réalité, seule une partie de l'ARN 16S est séquencée car les séquenceurs haut débit ne peuvent peuvent pas séquencer d'un coup les 1500 nucléotides de l'ARN 16S (enfin..sauf le [Pacbio](http://www.pacb.com/)). Le couple d'amorce V3-V5, que vous pouvez voir sur la figure 3, permet par exemple de séquencer une région de 500 nucléotides contenant 3 régions variables. 
+En réalité, seule une partie de l'ARN 16S est séquencée car les séquenceurs haut débit ne peuvent pas séquencer d'un coup les 1500 nucléotides de l'ARN 16S (enfin... sauf le [Pacbio](http://www.pacb.com/)). Le couple d'amorce V3-V5, que vous pouvez voir sur la figure 3, permet par exemple de séquencer une région de 500 nucléotides contenant 3 régions variables. 
 
 ## Assignent taxonomique 
 Une fois le séquençage réalisé, c'est au tour des bioinformaticiens de prendre le relais. Un fichier contenant l'ensemble des reads (séquences) est obtenu après séquençage. Après plusieurs étapes de filtrage et de nettoyage de ces données, il faut assigner à chaque séquence le nom de la bactérie. Pour cela, deux stratégies existent.
@@ -84,8 +84,8 @@ Une fois le séquençage réalisé, c'est au tour des bioinformaticiens de prend
 Une fois l’assignation taxonomique réalisée, il suffit de compter le nombre d'espèces présentes dans chaque échantillon et de construire la table des [OTUs](https://fr.wikipedia.org/wiki/OTU).
 
 ## La table des OTUs 
-Le point de départ de toutes analyses en métagénomique est la construction de la table des OTUs (Operationnal taxonomic unit). La notion d'espèce est difficile avec les bactéries, on parle plutôt d'OTU pour définir un ensemble de bactéries similaires à plus de 97%.   
-La table des OTUs est un tableau à double entrées contenant le nombre de séquences par OTU et par échantillon. On parle d'*abondance*. Ces abondances absolues sont normalisées afin de rendre les échantillons comparables. Plusieurs méthodes de normalisation existent, mais la plus courante est d'utiliser les pourcentages. Sur la figure ci-dessous les échantillons 1 et 3 ont tous les deux une abondance absolue de 3 en bactéries rouges. En pourcentage, leurs abondances relatives deviennent 42.8% et 75% respectivement. 
+Le point de départ de toutes analyses en métagénomique est la construction de la table des OTUs (operationnal taxonomic unit). La notion d'espèce est difficile avec les bactéries, on parle plutôt d'OTU pour définir un ensemble de bactéries similaires à plus de 97 %.   
+La table des OTUs est un tableau à double entrées contenant le nombre de séquences par OTU et par échantillon. On parle d'*abondance*. Ces abondances absolues sont normalisées afin de rendre les échantillons comparables. Plusieurs méthodes de normalisation existent, mais la plus courante est d'utiliser les pourcentages. Sur la figure ci-dessous, les échantillons 1 et 3 ont tous les deux une abondance absolue de 3 en bactéries rouges. En pourcentage, leurs abondances relatives deviennent 42,8 % et 75 % respectivement. 
 
 <div class="figure">
     <img src="../images/post20/otu_table2.png" /> 
