@@ -1,4 +1,4 @@
-Title: Introduction à la metagénomique
+Title: Introduction à la métagénomique
 Slug: metagenomique
 Date: 2016-09-20 18:51:48
 Category: biologie
@@ -14,7 +14,7 @@ Commençons donc par définir ces deux termes:
 Pour vous prouver l'importante du microbiome, retenez que le génome humain est composé d'environ 23 000 gènes. Le nombre de gènes retrouvés dans l'ensemble des micro-organismes du microbiome intestinal se compte en millions.        
 - La **métagénomique** est la méthode d'étude du microbiote. C'est une technique de [séquençage](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age) et d'analyse de l'ADN contenu dans un milieu. A l'inverse de la [génomique](https://fr.wikipedia.org/wiki/G%C3%A9nomique) qui consiste à séquencer un unique génome, la métagénomique séquence les génomes de plusieurs individus d'espèces différentes dans un milieu donné. Une analyse typique de métagénomique vous donnera la composition d'un microbiome. C'est à dire quelles espèces sont présentes, leurs abondances et leurs diversités.    
 C'est en partie grâce à l’évolution majeure des technologies de séquençage haut débit et à la bioinformatique, que la métagénomique est aujourd'hui d'actualité.    
-Dans la suite de cet article, je parlerai uniquement de la métagénomique bactérienne, plus particulièrement la métagénomique ciblé sur l'[ARN 16S](https://fr.wikipedia.org/wiki/ARN_ribosomique_16S). Gardez bien en tête que les métagénomiques virales et mycotiques, bien que plus rares, existent aussi. 
+Dans la suite de cet article, nous verrons uniquement la métagénomique bactérienne, plus particulièrement la métagénomique ciblé sur l'[ARN 16S](https://fr.wikipedia.org/wiki/ARN_ribosomique_16S). Mais gardez bien en tête que les métagénomiques virales et mycotiques, bien que plus rares, existent aussi. 
 
 # Stratégie en métagénomique 
 Il existe deux grandes stratégies de séquençage en métagénomique : la stratégie globale et la stratégie ciblée.  
@@ -140,7 +140,9 @@ Enfin, si vous voulez approfondir la métagénomique, je vous invite très forte
 * [Outil :Philoseq](https://joey711.github.io/phyloseq/)
 
 ## Remerciements 
-[@Thibaud_GS ](https://twitter.com/Thibaud_GS)
+[@Thibaud_GS ](https://twitter.com/Thibaud_GS)    
+[@Piplopp  ](https://github.com/Piplopp)    
+[@pausrrls ](https://github.com/pausrrls)    
 
 
 
