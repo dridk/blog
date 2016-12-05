@@ -23,7 +23,7 @@ Il existe deux grandes stratégies de séquençage en métagénomique : la strat
 
 <div class="figure">
     <img src="../images/post20/shotgun_sequencing.png" /> 
-    <div class="legend">Stratégie globale : L'ensemble des ARNs présents dans un échantillon de microbiote sont séquencés.</div>
+    <div class="legend">Stratégie globale : L'ensemble des ADNs présents dans un échantillon de microbiote sont séquencés.</div>
 </div>
 
 - **La métagénomique ciblée** n'est pas de la métagénomique à proprement parler, mais de la *métagénétique*. Cette stratégie consiste à séquencer un unique gène au lieu d'un génome complet. Cependant le terme de *métagénomique* étant plus régulièrement employé pour décrire cette stratégie, je continuerai ainsi. Ce gène doit être commun à plusieurs espèces tout en présentant des régions suffisamment variables afin de discriminer une espèce. En bactériologie, le gène utilisé est celui de l'ARN 16S. Un gène présent uniquement chez les bactéries.    
