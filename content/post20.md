@@ -126,8 +126,8 @@ Une fois la représentation réalisée, on cherche alors des groupes de points e
 </div>
 
 # Conclusion 
-La métagénomique est un sujet complexe en plein essor qui nécessite une connaissance précise des différentes techniques pour éviter tout écueil. De nombreux biais peuvent intervenir à toutes les étapes, tant du coté biologie que bioinformatique. D'ailleurs, l'assignation taxonomique que je décris dans cet article reste simple et naïve. D'autres méthodes plus complexe mais valable statistiquement sont préférables. Par exemple la méthode dite de ["Minimum Entropy Decomposition"](http://www.nature.com/ismej/journal/v9/n4/full/ismej2014195a.html) permet de classer les OTU en s'abstenant du seuil théorique des 97%.    
-Enfin, si vous voulez approfondir la métagénomique, je vous invite très fortement à regarder [les vidéos de Dan Knights](https://www.youtube.com/watch?v=htbeJhtFAXw&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc) (un dieu en métagénomique) disponibles sur youtube! 
+La métagénomique est un sujet complexe en plein essor qui nécessite une connaissance précise des différentes techniques pour éviter tout écueil. De nombreux biais peuvent intervenir à toutes les étapes, tant du coté biologique que bioinformatique. D'ailleurs, l'assignation taxonomique que je décris dans cet article reste simple et naïve. D'autres méthodes plus complexes mais valables statistiquement sont préférables. Par exemple la méthode dite de « [Minimum Entropy Decomposition](http://www.nature.com/ismej/journal/v9/n4/full/ismej2014195a.html) » permet de classer les OTU en s'abstenant du seuil théorique des 97 %.    
+Enfin, si vous voulez approfondir la métagénomique, je vous invite très fortement à regarder [les vidéos de Dan Knights](https://www.youtube.com/watch?v=htbeJhtFAXw&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc) (un dieu en métagénomique) disponibles sur YouTube! 
 
 
 ## Références
