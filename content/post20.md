@@ -33,7 +33,7 @@ Il existe deux grandes stratégies de séquençage en métagénomique : la strat
     <div class="legend">Stratégie ciblé : Seuls les ADNs du gène cible sont séquencés. En bactériologie, le gène cible est l'ARN 16S. </div>
 </div>
 
-Chaque stratégie a son avantage. La métagénomique globale est plus précise dans le sens où elle séquence l'ensemble du génome d'une bactérie alors que la seconde ne s’intéresse qu'à un seul gène. De plus, la première stratégie permet de décrire le fonctionnement global du microbiote en séquençant l'ensemble des gènes présents.   
+Chaque stratégie a son avantage. La métagénomique globale est plus précise dans le sens où elle séquence l'ensemble du génome d'une bactérie alors que la seconde ne s’intéresse qu'à un seul gène. Cette première stratégie permet par exemple de décrire le fonctionnement global du microbiote en séquençant l'ensemble des gènes présents.   
 La stratégie ciblée est quant à elle plus sélective. En effet, le gène de l'ARN 16S est présent uniquement chez les bactéries qui seules seront séquencées. La stratégie globale va séquencer tous les ADN présents dans le milieu sans discernement, que ce soit bactérien, viral ou encore humain.  
 Enfin, les algorithmes de traitements des données issues d'un séquençage ciblé, sont beaucoup plus simples que les assemblages de génomes nécessaires dans le séquençage global. Pour comprendre cette complexité, essayez de mélanger toutes les pièces de 200 puzzles différents et tentez de retrouver les modèles originaux. C'est la problématique de la métagénomique globale.   
 On ne s’intéressera ici qu'à la stratégie 16S, utilisée en bactériologie. C'est un bon point de départ pour commencer!
