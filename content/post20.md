@@ -89,18 +89,49 @@ La table des OTUs est un tableau à double entrées contenant le nombre de séqu
 
 <div class="figure">
     <img src="../images/post20/otu_table2.png" /> 
-    <div class="legend">Stratégies "close reference" et "de novo".</div>
+    <div class="legend">Tables des OTUs obtenues à partir de plusieurs échantillons</div>
 </div>
 
 ## Analyse des données 
 
 ### Diversité Alpha
-La [diversité alpha](https://fr.wikipedia.org/wiki/Richesse_sp%C3%A9cifique) est un indicateur de diversité dans un échantillon unique. Le nombre d'espèce dans un échantillon est par un exemple un indicateur de diversité alpha, mais d'[autres indicateurs existent](http://drive5.com/usearch/manual/alpha_diversity.html). 
-Gardez à l'esprit que ce qui est séquencé n'est qu'un échantillon plus ou moins représentatif de la réalité. 
-Les bactéries abondantes d'un milieu seront certainement séquencées, mais les bactéries de faibles abondances le seront très peu voire pas du tout. 
-L'indicateur *Chao1* estime le nombre d'espèces non-séquencées à partir de celles observées en comptant le nombre de singletons et de doubletons. (Une espèce observée 1 seule fois est un singleton, 2 fois est un doubleton).
-D'autres indices existent comme l'[indice de Shannon](https://en.wikipedia.org/wiki/Diversity_index), de [Simpson](http://www.countrysideinfo.co.uk/simpsons.htm) ou encore celui de [Fisher](http://groundvegetationdb-web.com/ground_veg/home/diversity_index).    
-Le graphique ci-dessous est un exemple de diversité alpha montrant les différences de microbiote intestinal en fonction du régime alimentaire.  
+La [diversité alpha](https://fr.wikipedia.org/wiki/Richesse_sp%C3%A9cifique) est une mesure indiquant la diversité d'un échantillon unique.
+Le nombre d'espèce est par exemple un indicateur d'alpha diversité.
+
+<div class="figure">
+    <img src="../images/post20/alpha1.png" /> 
+    <div class="legend">B est plus diversifié que A car il contient deux fois plus d'espèces</div>
+</div>
+
+ Mais comme vous pouvez le voir dans la figure ci-dessous, Le nombre d'espèce n'est pas toujours adapté. C'est pour cette raison que d'autres indicateurs existent.
+
+<div class="figure">
+    <img src="../images/post20/alpha2.png" /> 
+    <div class="legend">B contient plus d'espèce mais semble moins diversifié</div>
+</div>
+
+L'indice de Shannon ou entropie de Shannon est un exemple d'alpha diversité répondant à ce problème.  Cette indice reflète aussi bien le nombre d'espèce que leurs abondances. Sa formule est la suivante : 
+
+<div class="figure">
+    <img src="../images/post20/shannon.svg" /> 
+    <div class="legend">Indice de Shannon. Pour chaque espèce faire la somme des fréquences multiplié par le log des fréquences </div>
+</div>
+
+La figure A précédente contient 13 espèces, dont 4 vertes, 5 rouges et 4 bleues. La diversité de shannon pour A est donc : 
+
+<div class="figure">
+    <img src="../images/post20/eq1.gif" /> 
+</div>
+
+En faisant de même pour B, on retrouve alors une diversité plus faible de 0.72.
+
+<div class="figure">
+    <img src="../images/post20/alpha3.png" /> 
+    <div class="legend">L'entropie de A est supérieur à celle de B</div>
+</div>
+
+Les autres indicateurs répondent chacun à des problèmes différents. L'indice [Chao1](http://www.evolution.unibas.ch/walser/bacteria_community_analysis/2015-02-10_MBM_tutorial_combined.pdf) estime le nombre d'espèce réel dans l'environnement à partir du nombre d'espèce dans l'échantillon. Il y a aussi l'indice de [Simpson](http://www.countrysideinfo.co.uk/simpsons.htm), de [Fisher](http://groundvegetationdb-web.com/ground_veg/home/diversity_index) et l'[indice ACE](http://www.evolution.unibas.ch/walser/bacteria_community_analysis/2015-02-10_MBM_tutorial_combined.pdf). Faite un tour sur [ce site](http://www.evolution.unibas.ch/walser/bacteria_community_analysis/2015-02-10_MBM_tutorial_combined.pdf) pour avoir plus des informations plus détaillées.      
+Le graphique ci-dessous montre les différences de diversité alpha du microbiote intestinal en fonction du régime alimentaire.  
 
 <div class="figure">
     <img src="../images/post20/alpha_diversity.jpg" /> 
@@ -142,7 +173,8 @@ Enfin, si vous voulez approfondir la métagénomique, je vous invite très forte
 ## Remerciements 
 [@Thibaud_GS ](https://twitter.com/Thibaud_GS)    
 [@Piplopp  ](https://github.com/Piplopp)    
-[@pausrrls ](https://github.com/pausrrls)    
+[@pausrrls ](https://github.com/pausrrls)   
+[@Oodnadatta](https://github.com/Oodnadatta)   
 
 
 
