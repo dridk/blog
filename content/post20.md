@@ -1,13 +1,11 @@
 Title: Introduction à la métagénomique
 Slug: metagenomique
-Date: 2016-09-20 18:51:48
+Date: 2016-12-06 22:00:00
 Category: biologie
 Tags: bioinformatique, génétique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/metagenomics.jpg
-Status: draft
 
-# Introduction
 Le [microbiote](https://fr.wikipedia.org/wiki/Microbiote) et la [métagénomique](https://fr.wikipedia.org/wiki/M%C3%A9tag%C3%A9nomique) sont les deux mots tendances de ces dernières années dans les laboratoires de microbiologies. Derrière eux se cacherait les réponses à de nombreuses maladies maladies comme le [diabète](https://fr.wikipedia.org/wiki/Diab%C3%A8te), la [maladie de Crohn](https://fr.wikipedia.org/wiki/Maladie_de_Crohn) et même l'[autisme](https://fr.wikipedia.org/wiki/Autisme) ou la [schizophrénie](https://fr.wikipedia.org/wiki/Schizophr%C3%A9nie).       
 Commençons donc par définir ces deux termes:    
 - Le **microbiote** est l'ensemble des micro-organismes (bactéries, virus, champignons, levures) vivants dans un environnement spécifique appelé **[microbiome](https://fr.wikipedia.org/wiki/Microbiome)**. L'exemple typique est le microbiote intestinal. Votre intestin est composé de millions d'espèces bactériennes différentes formant une communauté écologique en symbiose avec votre organisme et nécessaire à son bon fonctionnement. Il joue entre autre un rôle de barrière vis-à-vis d'autres agents microbiens pathogènes. La destruction du microbiote intestinal par des antibiotiques est par exemple responsable des infections intestinales par *[Clostridium difficile](https://fr.wikipedia.org/wiki/Clostridium_difficile)*.    
