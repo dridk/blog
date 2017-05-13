@@ -4,6 +4,8 @@ Date: 2017-05-13 15:07:59
 Tags: génétique
 Category: biologie
 Author: Sacha Schutz
+SIDEBARIMAGE:../images/common/neuro_banner.jpg
+
 
 [Un grand nombre de maladies génétiques](https://fr.wikipedia.org/wiki/Liste_des_maladies_g%C3%A9n%C3%A9tiques_%C3%A0_g%C3%A8ne_non_identifi%C3%A9) sont causées par des [mutations ponctuelles](https://fr.wikipedia.org/wiki/Mutation_ponctuelle), c'est-à-dire à l'échelle du nucléotide. Les mécanismes sous-jacents que vous devez certainement connaître sont la substitution, la délétion ou l'insertion de nucléotides dans la séquence d'un gène.
 Les mutations dynamiques sont peut-être moins connues. Elles sont pourtant responsables de plusieurs maladies génétiques héréditaires. Notamment une [maladie neurodégénérative](https://fr.wikipedia.org/wiki/Maladie_neurod%C3%A9g%C3%A9n%C3%A9rative) incurable appelée la maladie de Huntigton.
