@@ -36,7 +36,7 @@ De la même façon que la détection des [empreintes génétiques](empreinte_gen
 
 <div class="figure">
     <img src="../images/post21/patient.jpeg" /> 
-    <div class="legend">Analyse en fragment chez un sujet sain (a) et un patient atteint de la maladie de Huntigton (b). Le gène du patient (a) présente un allèle à 17 répétitions et un autre à 18 répétitions. Le patient (b) présente un allèle avec une répétion dee 40. 
+    <div class="legend">Analyse en fragment chez un sujet sain (a) et un patient atteint de la maladie de Huntigton (b). Le gène du patient (a) présente un allèle à 17 répétitions et un autre à 18 répétitions. Le patient (b) présente un allèle avec une répétition de 40. 
      </div>
 </div>   
 
