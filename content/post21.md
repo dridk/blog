@@ -18,8 +18,8 @@ La maladie survient généralement entre 40 et 50 ans, mais comme nous allons le
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8lItaU0ftK8" frameborder="0" allowfullscreen></iframe>
 
 # Mutation dynamique 
-Le mécanisme mutationnel de la maladie de Huntigton est lié à l'expansion d'un motif de nucléotides (CAG) dans la partie codante de l'exon 1 du  gène. Nous avons déjà discuté de ces répétitions dans l'article sur [les empreintes génétiques]( empreinte_genetique.html). Le triplet CAG code pour l'acide aminé [glutamine](https://fr.wikipedia.org/wiki/Glutamine). Son expansion se traduit donc par une augmentation d'homopolymère de glutamine dans la protéine qui lui confère un pouvoir toxique pour le cerveau. Plus précisément l'atteinte se situe au niveau des neurones [GABAergiques](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_GABAA) du [striatum](https://fr.wikipedia.org/wiki/Striatum). 
-Chez les sujets sains, la taille de la répétition varie entre 6 à 35. Entre 41 et 180 elle est pathologique. La zone intermédiaire entre 35 et 41 défini une zone floue, parfois symptomatique, parfois asymptomatique, qu'on appelle zone de pénétrance réduite. 
+Le mécanisme mutationnel de la maladie de Huntigton est lié à l'expansion d'un motif de nucléotides (CAG) dans la partie codante de l'exon 1 du  gène. Nous avons déjà discuté de ces répétitions dans l'article sur [les empreintes génétiques]( empreinte_genetique.html). Le triplet CAG code pour l'acide aminé [glutamine](https://fr.wikipedia.org/wiki/Glutamine). Son expansion se traduit donc par une augmentation d'homopolymère de glutamine dans la protéine qui lui confère un pouvoir toxique dans le cerveau. Plus précisément l'atteinte se situe au niveau des neurones [GABAergiques](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_GABAA) du [striatum](https://fr.wikipedia.org/wiki/Striatum). 
+Chez les sujets sains, la taille de la répétition varie entre 6 à 35. Entre 41 et 180 elle est pathologique. La zone intermédiaire entre 35 et 41 définie une zone floue, parfois symptomatique, parfois asymptomatique, qu'on appelle zone de pénétrance réduite. 
 
 <div class="figure">
     <img src="../images/post21/cag.png" /> 
@@ -28,10 +28,11 @@ Chez les sujets sains, la taille de la répétition varie entre 6 à 35. Entre 4
 
 
 # Phénomène d'anticipation 
-[Plusieurs études](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048807/) ont montré que la longueur de la répétition est corrélé à l'âge où débute la maladie. Les formes juvéniles peuvent apparaître avant 20 ans. Par ailleurs, dans une lignée familiale, les symptômes apparaissent de plus en plus tôt au cours des générations. C'est ce qu'on appelle le [phénomène d'anticipation](https://fr.wikipedia.org/wiki/Anticipation_(g%C3%A9n%C3%A9tique)). À chaque génération, l'expansion des triplets CAG augmente. On note également que cette expansion est d'autant plus forte qu'elle est transmise par le père. Effectivement, il semblerait que l'instabilité des répétitions CAG survient préférentiellement lors de la spermatogenèse.
+[Plusieurs études](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048807/) ont montré que la longueur de la répétition est corrélé à l'âge où débute la maladie. Les longues répétitions sont responsables des formes juvéniles qui peuvent apparaître avant 20 ans. Par ailleurs, dans une lignée familiale, les symptômes apparaissent de plus en plus tôt au cours des générations. C'est ce qu'on appelle le [phénomène d'anticipation](https://fr.wikipedia.org/wiki/Anticipation_(g%C3%A9n%C3%A9tique)). À chaque génération, l'expansion des triplets CAG augmente. 
+Notons aussi que cette expansion est d'autant plus forte qu'elle est transmise par le père. Effectivement, il semblerait que l'instabilité des répétitions CAG survient préférentiellement lors de la spermatogenèse.
 
 # Diagnostic 
-De la même façon que la détection des [empreintes génétiques](empreinte_genetique.html), le diagnostic moléculaire repose sur une analyse de la taille des zones répétées par [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase). La visualisation des tailles peut se faire soit sur un gel soit en analyse de fragment ([Lire mon article pour comprendre cette technique](empreinte_genetique.html))
+De la même façon que la détection des [empreintes génétiques](empreinte_genetique.html), le diagnostic moléculaire repose sur une analyse de la taille des zones répétées par [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase). La visualisation des tailles peut se faire soit sur un gel soit en analyse de fragments ([Lire mon article pour comprendre cette technique](empreinte_genetique.html))
 
 <div class="figure">
     <img src="../images/post21/patient.jpeg" /> 
