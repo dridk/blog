@@ -8,7 +8,7 @@ SIDEBARIMAGE:../images/common/neuro_banner.jpg
 
 
 [Un grand nombre de maladies génétiques](https://fr.wikipedia.org/wiki/Liste_des_maladies_g%C3%A9n%C3%A9tiques_%C3%A0_g%C3%A8ne_non_identifi%C3%A9) sont causées par des [mutations ponctuelles](https://fr.wikipedia.org/wiki/Mutation_ponctuelle), c'est-à-dire à l'échelle du nucléotide. Les mécanismes sous-jacents,que vous devez certainement connaître, sont la substitution, la délétion ou l'insertion de nucléotides dans la séquence d'un gène.
-Les mutations dynamiques sont peut-être moins connues. Elles sont pourtant responsables de plusieurs maladies génétiques héréditaires. Notamment une [maladie neurodégénérative](https://fr.wikipedia.org/wiki/Maladie_neurod%C3%A9g%C3%A9n%C3%A9rative) incurable appelée la maladie de Huntigton.
+Les mutations dynamiques sont peut-être moins connues. Elles sont pourtant responsables de plusieurs maladies génétiques héréditaires. Notamment une [maladie neurodégénérative](https://fr.wikipedia.org/wiki/Maladie_neurod%C3%A9g%C3%A9n%C3%A9rative) appelée la maladie de Huntigton.
 
 ## Definition 
 La maladie de Huntigton est une maladie génétique autosomique dominante. Elle est causée par une anomalie du gène *[HTT](http://www.genecards.org/cgi-bin/carddisp.pl?gene=HTT)*  (Anciennement IT15) situé sur le chromosome 4 et codant pour la protéine [Huntigtine](https://fr.wikipedia.org/wiki/Huntingtine). La mutation d'un seul des deux allèles suffit pour provoquer la maladie. Un parent a donc une chance sur deux de la transmettre.  
@@ -42,7 +42,11 @@ De la même façon que la détection des [empreintes génétiques](empreinte_gen
 # Enjeux éthiques
 L'absence de traitement fait de cette maladie un cas d'école en éthique médicale. Effectivement, les premiers symptômes peuvent apparaître tardivement et donner le diagnostic ne conduirait à aucune action thérapeutique. C'est donc après discussion entre le patient et une équipe pluridisciplinaire ( Psychologue, généticien, neurologue ...) que le diagnostic pré-symptomatique peut être entrepris.  Dans tous les cas, il y aura un moment de réflexion donné au patient.    
 [Le diagnostic prénatal](https://fr.wikipedia.org/wiki/Diagnostic_pr%C3%A9natal) peut également être réalisé au cours de la grossesse en réalisant une [amniocentèse](https://fr.wikipedia.org/wiki/Amniocent%C3%A8se). La aussi la décision est prise à plusieurs lors du CPDPN (Centre pluridisciplinaire de diagnostic prénatal) et seulement si les parents sont favorables à une interruption de grossesse. On ne fera jamais de diagnostic chez le fœtus avant d'avoir fait celui des parents. Si aucun des deux parents n'est porteur de la mutation alors il n'y a aucun risque.   
-Ces enjeux éthiques sont spécifiques aux maladies génétiques qui se déclarent tardivement. Et lorsque l'on voit que la [FDA](https://fr.wikipedia.org/wiki/Food_and_Drug_Administration) a autorisé [23andMe](https://www.23andme.com/en-int/) (alias google) à dépister les gènes de susceptibilité à la maladie d'[Alzeimer](https://fr.wikipedia.org/wiki/Maladie_d%27Alzheimer), sans passer pas une équipe médicale, on a de quoi se poser des questions. 
+Ces enjeux éthiques sont spécifiques aux maladies génétiques qui se déclarent tardivement. Et lorsque l'on voit que la [FDA](https://fr.wikipedia.org/wiki/Food_and_Drug_Administration) a autorisé [23andMe](https://www.23andme.com/en-int/) (alias google) à dépister les gènes de susceptibilité à la maladie d'[Alzeimer](https://fr.wikipedia.org/wiki/Maladie_d%27Alzheimer), sans passer pas une équipe médicale, on a de quoi se poser des questions.  
+
+# Un futur traitement ? 
+
+Pourquoi pas avec l'outil magique dont tout le monde parle: CRISPR-CAS9. Allez jeter un œil sur cet article prometteur : ["Permanent inactivation of Huntington's disease mutation by personalized allele-specific CRISPR/Cas9"](Permanent inactivation of Huntington's disease mutation by personalized allele-specific CRISPR/Cas9
 
 
 ## Références
