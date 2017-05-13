@@ -19,7 +19,7 @@ La maladie survient généralement entre 40 et 50 ans, mais comme nous allons le
 
 # Mutation dynamique 
 Le mécanisme mutationnel de la maladie de Huntigton est lié à l'expansion d'un motif de nucléotides (CAG) dans la partie codante de l'exon 1 du  gène. Nous avons déjà discuté de ces répétitions dans l'article sur [les empreintes génétiques]( empreinte_genetique.html). Le triplet CAG code pour l'acide aminé [glutamine](https://fr.wikipedia.org/wiki/Glutamine). Son expansion se traduit donc par une augmentation d'homopolymère de glutamine dans la protéine qui lui confère un pouvoir toxique pour le cerveau. Plus précisément l'atteinte se situe au niveau des neurones [GABAergiques](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_GABAA) du [striatum](https://fr.wikipedia.org/wiki/Striatum). 
-Chez les sujets sains, la taille de la répétition varie entre 6 à 35. Entre 41 et 180 elle devient pathologique. La zone intermédiaire entre 35 et 41 défini une zone floue, parfois symptomatique, parfois asymptomatique, qu'on appelle zone de pénétrance réduite. 
+Chez les sujets sains, la taille de la répétition varie entre 6 à 35. Entre 41 et 180 elle est pathologique. La zone intermédiaire entre 35 et 41 défini une zone floue, parfois symptomatique, parfois asymptomatique, qu'on appelle zone de pénétrance réduite. 
 
 <div class="figure">
     <img src="../images/post21/cag.png" /> 
