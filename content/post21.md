@@ -47,7 +47,7 @@ Ces enjeux éthiques sont spécifiques aux maladies génétiques qui se déclare
 
 # Un futur traitement ? 
 
-Toujours pas de traitement à ce jour. Mais un espoir avec [CRISPR-CAS9](https://fr.wikipedia.org/wiki/Cas9). Allez jeter un œil sur cet article prometteur : ["Permanent inactivation of Huntington's disease mutation by personalized allele-specific CRISPR/Cas9"](https://academic.oup.com/hmg/article-abstract/25/20/4566/2525895/Permanent-inactivation-of-Huntington-s-disease?redirectedFrom=fulltext)
+Toujours pas de traitement à ce jour. Mais un espoir avec [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). Allez jeter un œil sur cet article prometteur : ["Permanent inactivation of Huntington's disease mutation by personalized allele-specific CRISPR/Cas9"](https://academic.oup.com/hmg/article-abstract/25/20/4566/2525895/Permanent-inactivation-of-Huntington-s-disease?redirectedFrom=fulltext)
 
 
 ## Références
