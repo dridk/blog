@@ -11,14 +11,14 @@ SIDEBARIMAGE:../images/common/neuro_banner.jpg
 Les mutations dynamiques sont peut-être moins connues. Elles sont pourtant responsables de plusieurs maladies génétiques héréditaires. Notamment une [maladie neurodégénérative](https://fr.wikipedia.org/wiki/Maladie_neurod%C3%A9g%C3%A9n%C3%A9rative) appelée la maladie de Huntigton.
 
 ## Définition 
-La maladie de Huntigton est une maladie génétique autosomique dominante. Elle est causée par une anomalie du gène *[HTT](http://www.genecards.org/cgi-bin/carddisp.pl?gene=HTT)*  (anciennement IT15) situé sur le chromosome 4 et codant pour la protéine [Huntigtine](https://fr.wikipedia.org/wiki/Huntingtine). La mutation d'un seul des deux allèles suffit pour provoquer la maladie. Un parent a donc une chance sur deux de la transmettre.  
+La maladie de Huntigton est une maladie génétique autosomique dominante touchant environ [1 personne sur 10 000](http://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=FR&Expert=399). Elle est causée par une anomalie du gène *[HTT](http://www.genecards.org/cgi-bin/carddisp.pl?gene=HTT)*  (anciennement IT15) situé sur le chromosome 4 et codant pour la protéine [Huntigtine](https://fr.wikipedia.org/wiki/Huntingtine). La mutation d'un seul des deux allèles suffit pour provoquer la maladie. Un parent a donc une chance sur deux de la transmettre.  
 Cliniquement, la maladie s'accompagne d'une altération de la fonction intellectuelle et du comportement. Les mouvements anormaux sont très caractéristiques. Ce sont des mouvements brusques incontrôlés de la face et des membres qu'on appelle chorée de Huntigton ( vidéo ci-dessous). 
-La maladie survient généralement entre 40 et 50 ans, mais comme nous allons le voir, peut survenir plus tôt en fonction de la mutation.
+La maladie survient généralement entre 30 et 50 ans, mais comme nous allons le voir, peut survenir plus tôt en fonction de la mutation.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8lItaU0ftK8" frameborder="0" allowfullscreen></iframe>
 
 # Mutation dynamique 
-Le mécanisme mutationnel de la maladie de Huntigton est lié à l'expansion d'un motif de nucléotides (CAG) dans la partie codante de l'exon 1 du  gène. Nous avons déjà discuté de ces répétitions dans l'article sur [les empreintes génétiques]( empreinte_genetique.html). Ce codon CAG code pour l'acide aminé [glutamine](https://fr.wikipedia.org/wiki/Glutamine). Son expansion se traduit donc par une augmentation d'homopolymère de glutamine dans la protéine qui lui confère un pouvoir toxique dans le cerveau. Plus précisément l'atteinte se situe au niveau des neurones [GABAergiques](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_GABAA) du [striatum](https://fr.wikipedia.org/wiki/Striatum). 
+Le mécanisme mutationnel de la maladie de Huntigton est lié à l'expansion d'un motif de nucléotides (CAG) dans la partie codante de l'exon 1 du  gène. Nous avons déjà discuté de ces répétitions dans l'article sur [les empreintes génétiques]( empreinte_genetique.html). Le codon CAG code pour l'acide aminé [glutamine](https://fr.wikipedia.org/wiki/Glutamine). Son expansion se traduit donc par une augmentation d'homopolymère de glutamine dans la protéine qui lui confère un pouvoir toxique dans le cerveau. Plus précisément l'atteinte se situe au niveau des neurones [GABAergiques](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_GABAA) du [striatum](https://fr.wikipedia.org/wiki/Striatum). 
 Chez les sujets sains, la taille de la répétition varie entre 6 et 35. Entre 41 et 180, elle est pathologique. La zone intermédiaire entre 35 et 41 définie une zone floue, parfois symptomatique, parfois asymptomatique, qu'on appelle zone de pénétrance réduite. 
 
 <div class="figure">
@@ -29,10 +29,10 @@ Chez les sujets sains, la taille de la répétition varie entre 6 et 35. Entre 4
 
 # Phénomène d'anticipation 
 [Plusieurs études](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048807/) ont montré que la longueur de la répétition est corrélé à l'âge où débute la maladie. Les longues répétitions sont responsables des formes juvéniles qui peuvent apparaître avant 20 ans. Par ailleurs, dans une lignée familiale, les symptômes apparaissent de plus en plus tôt au cours des générations. C'est ce qu'on appelle le [phénomène d'anticipation](https://fr.wikipedia.org/wiki/Anticipation_(g%C3%A9n%C3%A9tique)). À chaque génération, l'expansion des triplets CAG augmente. 
-Notons aussi que cette expansion est d'autant plus forte qu'elle est transmise par le père. Effectivement, il semblerait que l'instabilité des répétitions CAG survient préférentiellement lors de la spermatogenèse.
+Cette expansion est d'autant plus forte qu'elle est transmise par le père. Effectivement, il semblerait que l'instabilité des répétitions CAG survient préférentiellement lors de la spermatogenèse.
 
 # Diagnostic 
-De la même façon que la détection des [empreintes génétiques](empreinte_genetique.html), le diagnostic moléculaire repose sur une analyse de la taille des zones répétées par [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase). La visualisation des tailles peut se faire soit sur un gel soit en analyse de fragments ([lire mon article pour comprendre cette technique](empreinte_genetique.html))
+De la même façon que la détection des [empreintes génétiques](empreinte_genetique.html), le diagnostic moléculaire repose sur une analyse de la taille des zones répétées après amplification en [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase). La visualisation des tailles peut se faire soit sur gel soit en analyse de fragments ([lire mon article pour comprendre cette technique](empreinte_genetique.html))
 
 <div class="figure">
     <img src="../images/post21/patient.jpeg" /> 
