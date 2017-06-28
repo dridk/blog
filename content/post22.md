@@ -20,7 +20,7 @@ Cet article est un avant-gout très vulgarisé pour découvrir les bases du séq
 
 Imaginons que votre génome s'assimile à un gros livre de plus de 3 milliards de caractères écrit avec les lettres A,C,G et T. Séquencer votre génome, c'est connaitre l'ensemble du texte qu'il contient. Il est impossible avec les technologies actuelles de lire ce livre d'une seul traite, en partant du début jusqu'à la fin. Les séquenceurs se contentent de lire de courtes portions de texte dont la longueur varie suivant la technologie utilisé. 
 Par exemple, les anciens séquenceurs de type Sanger, fonctionnant avec un capillaire, sont capable de lire des fragments assez long d'environ 800 caractères en 1 heures. Si vous faites le calcul, vous verez rapidement que pour atteindre les 3 milliards de caractères, il vous faudra plus d'une vie pour reussir à séquencer votre génome (>400 ans). Pour allez plus vite, l'idée est de lire plusieurs fragments en même temps, c'est à dire paralléliser le séquençage. Les plus performant des séquenceurs Sanger, peuvent parallélisé jusqu'à 96 fois en utilisant 96 capillaires. On a donc 96 x 800 caracteres lu en 1 heures. C'est mieux, mais ce n'est pas encore ça.   
-Les séquenceurs de deuxième géneration lisent des fragments plus court, de l'ordre de 150 caractères pour les séquenceurs de type Illumina. En revanche, ils sont capable de lire jusqu'à 20 milliard de fragments à la fois !
+Les séquenceurs de nouvelle géneration lisent des fragments plus court, de l'ordre de 150 caractères pour les séquenceurs de type Illumina. En revanche, ils sont capable de lire jusqu'à 20 milliard de fragments à la fois !
 
 
 
@@ -74,11 +74,11 @@ Ils existent différentes méthode de séquençage
 * La ligation (SOLid Thermofisher).
 * La détéction des ion H+ (Proton Thermofisher).
 
-Dans l'ensemble, le principe reste le même. Tout d'abord chaque fragment est cloné plusieurs fois afin d'amplifier le signal. Puis les brins complémentaires sont synthétisé et chaque incorporation de nucléotides émet un signal detectable. Par exemple de la lumière sur Illumina ou le pH sur les Proton. 
+Dans l'ensemble, le principe reste le même. Tout d'abord chaque fragment est cloné plusieurs fois afin d'amplifier le signal. Puis les brins complémentaires de l'ensemble des fragments sont synthétisé en parallèle. A chaque incorporation d'un nucléotide un signal est émis. Par exemple de la lumière pour illumina ou une variation de pH pour le Proton. 
+A la fin du séquençage, chaque fragment a été séquencé. L'ensemble des données est enregistrer dans un fichier Fastq.
+
 
 ## Exemple Proton 
-### PCR emulsion 
-### Amplification 
 
 <div class="figure">
     <img src="../images/post22/ion.png" /> 
