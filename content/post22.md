@@ -74,8 +74,8 @@ Ils existent différentes méthode de séquençage
 * La ligation (SOLid Thermofisher).
 * La détéction des ion H+ (Proton Thermofisher).
 
-Dans l'ensemble, le principe reste le même. Tout d'abord chaque fragment est cloné plusieurs fois afin d'amplifier le signal. Puis les brins complémentaires de l'ensemble des fragments sont synthétisé en parallèle. A chaque incorporation d'un nucléotide un signal est émis. Par exemple de la lumière pour illumina ou une variation de pH pour le Proton. 
-A la fin du séquençage, chaque fragment a été séquencé. L'ensemble des données est enregistrer dans un fichier Fastq.
+Dans l'ensemble, le principe général reste le même. Chaque fragment est d'abord cloné plusieurs fois afin d'amplifier le signal. Puis le brin complémentaire de chaque fragment est synthétisé. A chaque incorporation d'un nucléotide un signal est détécté. De la lumière pour illumina ou une variation de pH sur du Proton. 
+A la fin du séquençage, chaque fragment a été séquencé en parallèle. L'ensemble des données est enregistrer dans un fichier Fastq.
 
 
 ## Exemple Proton 
@@ -87,22 +87,28 @@ A la fin du séquençage, chaque fragment a été séquencé. L'ensemble des don
 
 
 # Alignement des séquences
-A la fin du séquençage, la biologie fait place à la bioinformatique. Les séquences des fragments, que nous appelerons maintenant des "reads", sont sauvegarder dans un fichier fastq. Vous pouvez telecharger ce fichier pour voir à quoi cela ressemble. 
-Mais ce ne sont que des phrases de 150 caracteres. Ce que nous voulons c'est la séquence complète d'un chapitre ou du livre entier. Pour cela, nous devons aligner les séquences comme un puzzle pour reconstruire le texte d'origine. 
+A la fin du séquençage, la biologie fait place à la bioinformatique. Les séquences des fragments, que nous appelerons maintenant des "reads", sont sauvegarder dans un fichier fastq contenant les séquences et leurs qualité. Cette qualité est un score (Phred) évaluant à chaque nucléotide sa fidélité de séquençage.
+Vous pouvez télécharger ici un exemple pour voir à quoi cela ressemble.   
+Mais le travail est loin d'être fini. Ce que nous avons, ce sont uniquement des courtes séquences de 150 p. Ce que nous voulons c'est obtenir la séquence complète d'un gène ou d'un génome entier. Pour cela, nous devons reconstruire un puzzle en réalisant ce qu'on apelle de l'alignement:
 Deux méthodes d'alignement sont possible.
-- Alignement de novo : Il s'agit de résoudre un puzzle sans modèle. Les fragments d'ADN qui sont chevauchant permette petit à petit de reconstruire la séquence. Cette technique est très couteuse en calcul. 
-- Alignement avec reference: Il s'agit toujours de résoudre un puzzle. Mais cette fois, nous disposons d'un modèle. Par exemple une version du génome humain peut faire office de modèle. Le cout en calcul est netement moindre que la méthode d'alignement précédent . 
-Après l'alignement ne notre fichier fastq, nous obtenons un fichier BAM dont la representation visuel ressemble à ca : 
-On appelle la profondeur, le nombre moyen de reads qui se superpose . 
-On appelle recouvrement, l'etalement des reads sur la zone d'interet 
 
-# Qualification d'un séquenceur 
-Si jusqu'ici vous avez compris, alors vous êtes capable d'evaluer les capacités d'un séquenceur haut débit. Un séquenceur est défini : 
-- La longueur des reads 
-- Le nombre de reads 
-- Le nombre de nucléotides lu : longueur des reads * nombre de reads
-Les grandes marques des séquenceurs sont Illumina, ThermoFisher .
+- **Alignement de novo** : Il s'agit de résoudre un puzzle sans modèle. Les fragments d'ADN qui sont chevauchant permette petit à petit de reconstruire la séquence. Cette technique est très couteuse en terme de calcul. Des algorithmes bioinformatiques comme les graphe de Debruijn, permettent de résoudre ce problème. Cette méthode est principalement employé pour reconstruire des génomes non connus.
+- **Alignement avec reference**: Il s'agit toujours de résoudre un puzzle. Mais cette fois, en s'aidant d'un modèle. Par exemple une version du génome humain (hg19) servira de référence. 
+Chaque read est aligné sur cette référence. La complexité de calcul est netement plus simple qu'avec l'allignement de novo. On utilise en général l'algorithme de Burrows Wheeler permettant de rechercher de manière efficace une correspondance entre les reads et la référence. Après cette allignement, on obtient un fichier BAM associant à chaque reads des coordonnées génomique ( chromosome + position). La representation visuel d'un fichier bam ressemble à la figure ci dessous. On appelle la profondeur, le nombre moyen de reads qui se superpose et couverture, l'etalement des reads sur la zone d'interet.  
+
+# Conclusion
+
+Si vous avez tout compris, alors vous êtes capable d'evaluer les capacités d'un séquenceur haut débit. Un séquenceur est défini par :
+
+- La longueur des reads (L)
+- Le nombre de reads (n)
+- Le nombre de nucléotides lu: (L x n)
+- Le temps de séquençage 
+- La qualité du séquençage.
+
+Le leader du séquençage haut-débit est pour l'instant Illumina, qui propose une game de séquenceur complète. 
 
 
-# Conclusion vers la 3eme generation
-Je ne vous ai pas parler des séquenceurs de 3ème générations, qui feront surement l'objet d'un nouvel article. Ce sont des séquenceurs capable de générer de très long reads, et sans avoir besoin d'amplifier le signal en clonant les reads. Les deux leaders actuellent, qui se fond des procès sont Nanopore et PacBio Science. 
+Mais à peine sortie, ces technologies deviennent rapidement obsolète. En effet, je ne vous ai pas parlé des séquenceurs de 3ème générations, qui feront surement l'objet d'un nouvel article. Ce sont des séquenceurs capable de générer de très long reads (jusqu'a x) sans avoir besoin de cloner les reads qui peut être source une source de biais. En revanche, ces nouvelles techniques produisent encore beaucoup d'erreur de séquençage. Les deux leaders de ce Next Next generation sequencing sont Nanopore et PacBio Science qui termine le guerre de brevet. Et rien que voir la miniaturisation de leurs séquenceur, ça me plonge dans un monde futuriste
+
+photo nanopore 
