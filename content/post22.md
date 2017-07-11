@@ -15,19 +15,19 @@ Cet article est un avant-gout très vulgarisé pour découvrir les bases du séq
 
 # Un séquençage à haut-débit
 
-Imaginons que votre génome s'assimile à un gros livre de plus de 3 milliards de caractères écrit avec les lettres A,C,G et T. Séquencer, c'est lire le contenu de ce livre. Vous pouvez soit le lire entièrement, c'est-à-dire séquencer l'ensemble de votre génome, soit lire certaines pages, c'est-à-dire faire du séquençage ciblé.      
-Les séquenceurs de premières générations de type [Sanger](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#M.C3.A9thode_de_Sanger) sont capables de lire des fragments assez longs d'environ 800 paires de bases en 1 heure sur 1 capillaire. Si vous faites le calcul, vous verrez rapidement que pour atteindre les 3 milliards de nucléotides, il vous faudra plus d'une vie pour réussir à séquencer votre génome (>400 ans). Pour aller plus vite, l'idée est de lire plusieurs fragments en même temps, c'est-à-dire paralléliser le séquençage. Les plus performants des séquenceurs Sanger, peuvent paralléliser jusqu'à [96 fois](https://www.thermofisher.com/order/catalog/product/3730XL) en utilisant 96 capillaires. On a donc 96 x 800 nucléotides lus en 1 heure. Les séquenceurs NGS de deuxièmes générations sont capables de lire des fragments de 150 à 300 pb mais jusqu'à [20 milliards](https://www.illumina.com/systems/sequencing-platforms/novaseq.html) de fragments à la fois!!! 
+Imaginez que votre génome s'assimile à un gros livre de plus de 3 milliards de caractères (nucléotides) écrit avec les lettres A,C,G et T. Séquencer, c'est lire le contenu de ce livre. Vous pouvez soit le lire entièrement, c'est-à-dire séquencer l'ensemble de votre génome, soit lire certaines pages, c'est-à-dire faire du séquençage ciblé.      
+Les séquenceurs de premières générations de type [Sanger](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#M.C3.A9thode_de_Sanger) sont capables de lire des fragments d'environ 800 caractères en 1 heure sur 1 capillaire. Si vous faites le calcul, vous verrez rapidement que pour atteindre les 3 milliards de nucléotides, il vous faudra plus d'une vie pour réussir à séquencer votre génome (>400 ans). Pour aller plus vite, l'idée est de lire plusieurs fragments en même temps, c'est-à-dire paralléliser le séquençage. Les plus performants des séquenceurs Sanger, peuvent paralléliser jusqu'à [96 fois](https://www.thermofisher.com/order/catalog/product/3730XL) en utilisant 96 capillaires. On a donc 96 x 800 nucléotides lus en 1 heure. Les séquenceurs NGS de deuxièmes générations sont capables de lire des fragments de 150 à 300 pb mais jusqu'à [20 milliards](https://www.illumina.com/systems/sequencing-platforms/novaseq.html) de fragments à la fois!!! 
 
 # Librairie de séquençage
 Ce qu'on appelle une **librairie**, est l'ensemble des fragments d'ADN que l'on veut séquencer. Pour créer une librarie, deux méthodes sont à retenir selon que l'on veut séquencer l'ensemble du génome ou seulement des régions d'intérêts. 
 
 ### Méthode globale
 
-Lancez le livre en l'air et tirez dessus au shotgun pour faire une pluie de fragments d'ADN aléatoire. C'est ce qu'on appelle *stricto sensu*, la [stratégie shotgun](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#M.C3.A9thode_globale_ou_Shotgun). Cette méthode est utilisée pour séquencer des génomes entiers.
+Lancez le livre en l'air et tirez dessus au shotgun pour faire une pluie de fragments d'ADN aléatoire. C'est ce qu'on appelle *stricto sensu*, la [stratégie shotgun](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#M.C3.A9thode_globale_ou_Shotgun). Cette méthode est utilisée par exemple pour séquencer des génomes entiers.
 
 <div class="figure">     <img src="../images/post22/shotgun.png" />      <div class="legend">La stratégie shotgun consiste à fragmenter l'ADN en séquence aléatoire puis à les séquencer.</div> </div>   
 
-Méthode de fragmentation
+#### Fragmentation
 Plusieurs méthodes existent pour fragmenter l'ADN:
 
 * **Fragmentation par sonication** : En envoyant des ultra-sons à la bonne fréquence, on casse l'ADN en morceau de taille précise.
@@ -37,7 +37,7 @@ Plusieurs méthodes existent pour fragmenter l'ADN:
 On ne veut pas forcément lire l'ensemble du génome. On peut vouloir par exemple séquencer uniquement la partie codante ([exome](https://fr.wikipedia.org/wiki/Exome)), qui je le rappelle, représente [moins de 2%](http://dridk.me/genome_chiffre_1.html). Ou alors, simplement séquencer une liste de gènes ([panel de gènes](https://www.gatc-biotech.com/fr/expertise/sequencage-cible/panel-de-genes.html)) associée à une maladie.   
 Dans tous les cas, il faut enrichir la librairie en sélectionnant uniquement les fragments d'ADN désirés. Deux techniques sont à retenir:
 
-* **L'enrichissement [par capture](https://www.ncbi.nlm.nih.gov/pubmed/18330355)** : Après fragmentation, les fragments d'ADN sont filtrés en s'hybridant sur des séquences complémentaires disposées sur une plaque ou en milieu liquide. Les fragments d'ADN qui ne s'hybrident pas sont éliminés. 
+* **L'enrichissement [par capture](https://www.ncbi.nlm.nih.gov/pubmed/18330355)** : Après fragmentation, les fragments d'ADN sont filtrés en s'hybridant à des séquences complémentaires disposées sur une plaque ou en milieu liquide. Les fragments d'ADN qui ne s'hybrident pas sont éliminés. 
 
 <div class="figure">     <img src="../images/post22/capture.png" />      <div class="legend">Exemple d'enrichissement en phase liquide grâce à des billes magnétiques</div> </div>   
 
@@ -67,7 +67,7 @@ Pour plus de détail sur les techniques de séquençage, une vidéo commerciale 
 
 # Alignement des séquences
 À la fin du séquençage, la biologie fait place à la bioinformatique. Les séquences des fragments, qu'on appelle maintenant des "reads", sont sauvegardées dans un fichier [Fastq](https://fr.wikipedia.org/wiki/FASTQ) contenant les séquences et leurs qualités ([score Phred](https://fr.wikipedia.org/wiki/Score_de_qualit%C3%A9_phred)). La qualité est une estimation de l'erreur de séquençage par nucléotide.    
-Vous pouvez télécharger [ici](http://www.internationalgenome.org/data-portal/sample)un exemple pour voir à quoi ça ressemble. 
+Télécharger [ici](http://www.internationalgenome.org/data-portal/sample) un exemple pour voir à quoi ça ressemble. 
 
 <div class="figure">     <img src="../images/post22/fastq_fig.jpg" />      <div class="legend">Aperçu d'un read dans un fichier fastq. Le score de qualité associe à chaque nucléotide un caractère <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) correspondant à un score"> ASCII </a> </div> </div>   
 
@@ -96,7 +96,9 @@ Les capacités d'un séquenceur sont définies par :
 - Le temps de séquençage 
 - La qualité du séquençage
 
-# Pour finir, les séquenceur de 3ème génération
+Allez faire un tour sur [le site d'Illumina](https://www.illumina.com/systems/sequencing-platforms.html) pour comparer les modèles entre eux.
+
+# Pour finir, les séquenceurs de 3ème génération
 
 À peine sorties, ces technologies sont déjà devancées par les séquenceurs de 3ème générations, qui feront surement l'objet d'un nouvel article. Ce sont des séquenceurs capables de générer de très longs reads sans avoir besoin de cloner les fragments pour amplifier le signal. C'est pour cette raison qu'on les appelle aussi "Single molecule sequencing". En revanche, ces nouvelles techniques produisent encore beaucoup d'erreurs de séquençage. Les deux leaders de ce Next Next generation sequencing sont [Nanopore](https://nanoporetech.com/) et [PacBio Science](https://www.google.fr/search?q=Pacific+bioscience&oq=Pacific+bioscience&aqs=chrome..69i57j0l5.4887j0j4&sourceid=chrome&ie=UTF-8) qui termine une [guerre de brevet](http://www.frontlinegenomics.com/news/10714/pacbio-lawsuit-oxford-nanopore/).   
 La miniaturisation de ces séquenceurs sera peut être un jour disponible chez tout bon médecin généraliste qui vous diagnostiquera votre risque d'infarctus ou d'Alzheimer en quelques heures. Effrayant ou rassurant, à vous de choisir! 
