@@ -63,7 +63,7 @@ Dans l'ensemble, le principe général reste le même. Chaque fragment est d'abo
 Pour plus de détail sur les techniques de séquençage, une vidéo commerciale est toujours mieux qu'un grand discours : 
 
 - [Ion Torrent™ next-gen sequencing technology](https://www.youtube.com/watch?v=WYBzbxIfuKs)
-- [Illumina Sequencing by Synthesis](https://www.youtube.com/watch?v=fCd6B5HRaZ8&t=204s) 
+- [Illumina Sequencing by Synthesis](https://www.youtube.com/watch?v=fCd6B5HRaZ8) 
 
 # Alignement des séquences
 À la fin du séquençage, la biologie fait place à la bioinformatique. Les séquences des fragments, qu'on appelle maintenant des "reads", sont sauvegardées dans un fichier [Fastq](https://fr.wikipedia.org/wiki/FASTQ) contenant les séquences et leurs qualités ([score Phred](https://fr.wikipedia.org/wiki/Score_de_qualit%C3%A9_phred)). La qualité est une estimation de l'erreur de séquençage par nucléotide.    
