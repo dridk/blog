@@ -1,6 +1,6 @@
 Title: Le séquençage de nouvelle génération
 Slug: ngs
-Date: 2017-05-16 15:58:18
+Date: 2017-07-13 00:23:31
 Tags: génétique, bioinformatique
 Category: biologie
 Author: Sacha Schutz
