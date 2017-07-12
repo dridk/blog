@@ -5,6 +5,7 @@ Tags:informatique
 Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpg
+Status: Draft
 
 Vous l'avez surement remarquer, j'écris mon blog avec pelican. 
 Lorsque je suis prêt à publier je commit mon blog sur github, puis dans un second temps je synchronise le dossier html généré sur mon serveur. 
@@ -27,8 +28,9 @@ Par default, ça ne marche pas avec zsh. Il faut modifier le script ~/.zshrc et 
     plugins=(git ssh-agent)
 
 
+Voilà. Maintenant à chaque push et sans me demander de mot de passe, mon blog est envoyé sur github puis sur mon serveur web... 
 
-Voilà. Maintenant à chaque push et sans me demander de mot de passe, mon blog est envoyé sur github puis sur mon serveur web. 
+PS : Je vais essayer de publier plus de note de type. c'est pas long à faire, et c'est parfois plus interessant !  
 
 
 
