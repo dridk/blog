@@ -16,7 +16,7 @@ Dans mon cas, je veux uploader mon dossier html sur mon serveur web à chaque fo
 
     make rsync_upload 
 
-Pour exécuter cette commande à chaque *git push*, il me suffit d'écrire un script dans le dossier *.git/hooks* et de lui donner le bon nom de fichier. Tous les fichiers d'extensions **.sample* déjà présent sont des exemples avec les noms appropriés correspondant à l'étape d'exécution. Supprimer l'extension *.sample* pour que le script s’exécute. Dans mon cas, je veux lancer ma synchronisation avant chaque *push*. J'écris tout simplement la commande précédente dans le fichier *.git/hooks/pre-push*. 
+Pour exécuter cette commande à chaque *git push*, il me suffit d'écrire un script dans le dossier *.git/hooks* et de lui donner le bon nom de fichier. Tous les fichiers d'extensions *.sample* déjà présent sont des exemples avec les noms appropriés correspondant à l'étape d'exécution. Supprimer l'extension *.sample* pour que le script s’exécute. Dans mon cas, je veux lancer ma synchronisation avant chaque *push*. J'écris tout simplement la commande précédente dans le fichier *.git/hooks/pre-push*. 
 
     echo "make rsync_upload" > .git/hooks/pre-push
 
