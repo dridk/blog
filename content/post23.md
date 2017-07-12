@@ -1,6 +1,6 @@
 Title: Note sur les hook de git 
 Slug: git-hook
-Date: 2017-05-16 15:58:18
+Date: 2017-07-15 00:23:31
 Tags:informatique
 Category: informatique
 Author: Sacha Schutz
