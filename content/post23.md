@@ -22,7 +22,7 @@ Pour exécuter cette commande à chaque *git push*, il me suffit d'écrire un sc
 
 # zsh et ssh-agent 
 Afin d'éviter de retaper mes mots de passe plusieurs fois, aussi bien pour github que pour la synchro sur mon serveur web, j'utilise des clefs ssh. 
-Par default, ça ne marche pas avec [zsh](https://fr.wikipedia.org/wiki/Z_Shell). Il faut modifier le script ~/.zshrc et modifier la ligne plugin et relancer zsh:
+Par default, *ssh-agent* ne marche pas avec [zsh](https://fr.wikipedia.org/wiki/Z_Shell). Il faut modifier le script ~/.zshrc et modifier la ligne plugin et relancer zsh:
 
     vim ~/.zshrc
     plugins=(git ssh-agent)
