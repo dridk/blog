@@ -4,6 +4,7 @@ Date: 2017-07-13 00:23:31
 Tags: génétique, bioinformatique
 Category: biologie
 Author: Sacha Schutz
+Status: Draft
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 [Le séquençage de nouvelle génération ](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#S.C3.A9quen.C3.A7age_haut_d.C3.A9bit_.28HTS.29)(*NGS: Next Generation Sequencing*) est la révolution biotechnologique de ces dernières années, en permettant de séquencer de grandes quantités d'ADN en des temps records.
