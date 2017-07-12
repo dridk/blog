@@ -4,7 +4,6 @@ Date: 2017-05-16 15:58:18
 Tags: biologie
 Category: génétique
 Author: Sacha Schutz
-Status: Draft
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 [Le séquençage de nouvelle génération ](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#S.C3.A9quen.C3.A7age_haut_d.C3.A9bit_.28HTS.29)(*NGS: Next Generation Sequencing*) est la révolution biotechnologique de ces dernières années, en permettant de séquencer de grandes quantités d'ADN en des temps records.
@@ -15,8 +14,8 @@ Cet article est un avant-gout très vulgarisé pour découvrir les bases du séq
 
 # Un séquençage à haut-débit
 
-Imaginez que votre génome s'assimile à un gros livre de plus de 3 milliards de caractères (nucléotides) écrit avec les lettres A,C,G et T. Séquencer, c'est lire le contenu de ce livre. Vous pouvez soit le lire entièrement, c'est-à-dire séquencer l'ensemble de votre génome, soit lire certaines pages, c'est-à-dire faire du séquençage ciblé.      
-Les séquenceurs de premières générations de type [Sanger](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#M.C3.A9thode_de_Sanger) sont capables de lire des fragments d'environ 800 caractères en 1 heure sur 1 capillaire. Si vous faites le calcul, vous verrez rapidement que pour atteindre les 3 milliards de nucléotides, il vous faudra plus d'une vie pour réussir à séquencer votre génome (>400 ans). Pour aller plus vite, l'idée est de lire plusieurs fragments en même temps, c'est-à-dire paralléliser le séquençage. Les plus performants des séquenceurs Sanger, peuvent paralléliser jusqu'à [96 fois](https://www.thermofisher.com/order/catalog/product/3730XL) en utilisant 96 capillaires. On a donc 96 x 800 nucléotides lus en 1 heure. Les séquenceurs NGS de deuxièmes générations sont capables de lire des fragments de 150 à 300 pb mais jusqu'à [20 milliards](https://www.illumina.com/systems/sequencing-platforms/novaseq.html) de fragments à la fois!!! 
+Imaginez que votre génome s'assimile à un gros livre de plus de 3 milliards de caractères (nucléotides) écrit avec les lettres A,C,G et T. Séquencer, c'est lire le contenu de ce livre. Vous pouvez soit le lire entièrement, c'est-à-dire séquencer l'ensemble de votre génome. Soit lire certaines pages ou chapitre, c'est-à-dire faire du séquençage ciblé.
+Les séquenceurs actuels ne peuvent lire que des courts fragments d'ADN qu'il faut ensuite assembler pour reconstruire le texte d'origine. Par exemple, les séquenceurs de premières générations de type [Sanger](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#M.C3.A9thode_de_Sanger) sont capables de lire des fragments d'environ 800 caractères en 1 heure sur 1 capillaire. Si vous faites le calcul, vous verrez rapidement que pour atteindre les 3 milliards de nucléotides, il vous faudra plus d'une vie pour réussir à séquencer votre génome (>400 ans). Pour aller plus vite, l'idée est de lire plusieurs fragments en même temps, c'est-à-dire paralléliser le séquençage. Les plus performants des séquenceurs Sanger, peuvent paralléliser jusqu'à [96 fois](https://www.thermofisher.com/order/catalog/product/3730XL) en utilisant 96 capillaires. On a donc 96 x 800 nucléotides lus en 1 heure. Les séquenceurs NGS de deuxièmes générations sont capables de lire des fragments de 150 à 300 pb mais jusqu'à [20 milliards](https://www.illumina.com/systems/sequencing-platforms/novaseq.html) de fragments à la fois!!! 
 
 # Librairie de séquençage
 Ce qu'on appelle une **librairie**, est l'ensemble des fragments d'ADN que l'on veut séquencer. Pour créer une librairie, deux méthodes sont à retenir si l'on veut séquencer soit l'ensemble du génome, soit uniquement des régions d'intérêts. 
@@ -27,7 +26,6 @@ Lancez le livre en l'air et tirez dessus au shotgun pour faire une pluie de frag
 
 <div class="figure">     <img src="../images/post22/shotgun.png" />      <div class="legend">La stratégie shotgun consiste à fragmenter l'ADN en séquence aléatoire puis à les séquencer.</div> </div>   
 
-#### Fragmentation
 Plusieurs méthodes existent pour fragmenter l'ADN:
 
 * **Fragmentation par sonication** : En envoyant des ultra-sons à la bonne fréquence, on casse l'ADN en morceaux de tailles précises.
@@ -60,7 +58,7 @@ Dans l'ensemble, le principe général reste le même. Chaque fragment est d'abo
 
 <div class="figure">     <img src="../images/post22/ion.png" />      <div class="legend">Schéma simplifié d'un séquençage type Proton</div> </div>   
 
-Pour plus de détail sur les techniques de séquençage, une vidéo commerciale est toujours mieux qu'un grand discours : 
+Pour plus de détail sur les techniques de séquençage, jettez un oeil sur les belles vidéos commerciales ci-dessous : 
 
 - [Ion Torrent™ next-gen sequencing technology](https://www.youtube.com/watch?v=WYBzbxIfuKs)
 - [Illumina Sequencing by Synthesis](https://www.youtube.com/watch?v=fCd6B5HRaZ8) 
@@ -101,7 +99,7 @@ Allez faire un tour sur [le site d'Illumina](https://www.illumina.com/systems/se
 # Pour finir, les séquenceurs de 3ème génération
 
 À peine sortie, ces technologies sont déjà devancées par les séquenceurs de 3ème générations, qui feront surement l'objet d'un nouvel article. Ce sont des séquenceurs capables de générer de très longs reads sans avoir besoin de cloner les fragments pour amplifier le signal. C'est pour cette raison qu'on les appelle aussi "Single molecule sequencing". En revanche, ces nouvelles techniques produisent encore beaucoup d'erreurs de séquençage. Les deux leaders de ce Next Next Generation Sequencing sont [Nanopore](https://nanoporetech.com/) et [PacBio Science](https://www.google.fr/search?q=Pacific+bioscience&oq=Pacific+bioscience&aqs=chrome..69i57j0l5.4887j0j4&sourceid=chrome&ie=UTF-8) qui termine une [guerre de brevet](http://www.frontlinegenomics.com/news/10714/pacbio-lawsuit-oxford-nanopore/).   
-La miniaturisation de ces séquenceurs sera peut être un jour disponible chez tout bon médecin généraliste qui vous diagnostiquera votre risque d'infarctus ou d'Alzheimer en quelques heures. Effrayant ou rassurant, à vous de choisir! 
+La miniaturisation de ces séquenceurs sera peut être un jour disponible chez tout bon médecin généraliste qui vous diagnostiquera votre prédisposition d'infarctus ou d'Alzheimer en quelques heures. Effrayant ou rassurant, à vous de choisir! 
 
 - [Vidéo Pacific Biosciences Technologies](https://www.youtube.com/watch?v=v8p4ph2MAvI)
 - [Vidéo Oxford Nanopore Technologies](https://www.youtube.com/watch?v=3UHw22hBpAk)
@@ -111,5 +109,7 @@ La miniaturisation de ces séquenceurs sera peut être un jour disponible chez t
 ## Références
 * [ABMGOOD: tout comprendre sur le NGS](https://www.abmgood.com/marketing/knowledge_base/next_generation_sequencing_introduction.php#similarities)
 * [Coursera : cours NGS](https://fr.coursera.org/learn/bioinformatics-pku/lecture/Wu9kW/from-sequencing-to-ngs)
-* [Bioinformatics Algorithms: GÉNIAL ](http://bioinformaticsalgorithms.com/)
+* [Bioinformatics Algorithms ](http://bioinformaticsalgorithms.com/)
 
+## Remerciements 
+[@pausrrls](https://github.com/pausrrls) 
