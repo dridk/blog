@@ -11,7 +11,7 @@ Lorsque je suis prêt à publier, je commit mon blog sur [github](https://github
 Et comme je suis fainéant, je veux que ces deux étapes se fassent en même temps. Pour cela j'utilise les [hooks](https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks) de git coté client. 
 
 # Les hooks 
-Les hooks sont des scripts qui peuvent s’exécuter côté client (mais aussi côté serveur). 
+Les hooks sont des scripts qui peuvent s’exécuter côté client (mais aussi côté serveur) après un événement git. 
 Dans mon cas, je veux uploader mon dossier html sur mon serveur web à chaque fois que je fais un *git push*. La commande a exécuté et fourni dans le *Makefile* de pelican. Elle synchronise les fichiers html sur mon serveur web avec *rsync* et ma clef ssh. 
 
     make rsync_upload 
