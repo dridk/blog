@@ -1,37 +1,36 @@
-Title: Note sur les hook de git 
-Slug: git-hook
-Date: 2017-07-15 00:23:31
-Tags:informatique
+Title: Un hook git pour mon blog 
+Slug: un-hook-git-pour-mon-blog 
+Date: 2017-07-13 00:53:37
+Tags:informatique, linux, git
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpg
-Status: Draft
+SIDEBARIMAGE:../images/common/term_banner.jpeg
 
-Vous l'avez surement remarquer, j'écris mon blog avec pelican. 
-Lorsque je suis prêt à publier je commit mon blog sur github, puis dans un second temps je synchronise le dossier html généré sur mon serveur. 
-Et comme je suis fainéant, je veux que ces deux étapes se fassent en même temps. Pour cela j'utilise les hooks git. 
+Vous l'avez sûrement remarqué, j'écris mon blog avec [pelican](http://docs.getpelican.com/en/stable/). 
+Lorsque je suis prêt à publier, je commit mon blog sur [github](https://github.com/), puis dans un second temps je synchronise mon dossier html généré sur mon serveur web. 
+Et comme je suis fainéant, je veux que ces deux étapes se fassent en même temps. Pour cela j'utilise les [hooks](https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks) de git coté client. 
 
-# Les hooks git
-Pour synchroniser mon dossier html avec pelican, je dois taper la commande suivante, qui synchronise mon dossier html local sur mon serveur en utilisant rsync et ma clef ssh. 
+# Les hooks 
+Les hooks sont des scripts qui peuvent s’exécuter côté client (mais aussi côté serveur). 
+Dans mon cas, je veux uploader mon dossier html sur mon serveur web à chaque fois que je fais un *git push*. La commande a exécuté et fourni dans le *Makefile* de pelican. Elle synchronise les fichiers html sur mon serveur web avec *rsync* et ma clef ssh. 
 
     make rsync_upload 
 
-Pour executer cette commande à chaque git push, il me suffit d'écrire un script dans le dossiers .git/hooks et de lui donner le bon nom. Tous les fichiers d'extensions *.sample déjà présent sont des exemples. Dans mon cas, je veux lancer ma synchronisation pour avant chaque push. J'écris tout simplement la commande précédante dans le fichier pre-push. 
+Pour exécuter cette commande à chaque *git push*, il me suffit d'écrire un script dans le dossier *.git/hooks* et de lui donner le bon nom de fichier. Tous les fichiers d'extensions **.sample* déjà présent sont des exemples avec les noms appropriés correspondant à l'étape d'exécution. Supprimer l'extension *.sample* pour que le script s’exécute. Dans mon cas, je veux lancer ma synchronisation avant chaque *push*. J'écris tout simplement la commande précédente dans le fichier *.git/hooks/pre-push*. 
 
     echo "make rsync_upload" > .git/hooks/pre-push
 
-# zsh et ssh-agent 
-Afin d'éviter de retaper mes mots de passe plusieurs fois, aussi bien pour github que pour mon serveur, j'utilise des clefs ssh. 
-Par default, ça ne marche pas avec zsh. Il faut modifier le script ~/.zshrc et modifier la ligne plugin et relancer zsh:
+# zsh et ssh-agent 
+Afin d'éviter de retaper mes mots de passe plusieurs fois, aussi bien pour github que pour la synchro sur mon serveur web, j'utilise des clefs ssh. 
+Par default, ça ne marche pas avec [zsh](https://fr.wikipedia.org/wiki/Z_Shell). Il faut modifier le script ~/.zshrc et modifier la ligne plugin et relancer zsh:
 
     vim ~/.zshrc
     plugins=(git ssh-agent)
 
 
-Voilà. Maintenant à chaque push et sans me demander de mot de passe, mon blog est envoyé sur github puis sur mon serveur web... 
+Voilà. Maintenant à chaque *push* et sans me demander mon mot de passe, mon blog est envoyé sur github puis sur mon serveur web.
 
-PS : Je vais essayer de publier plus de note de type. c'est pas long à faire, et c'est parfois plus interessant !  
-
+PS : Je vais essayer de publier plus de notes courtes de ce type, si ça ne vous embête pas. C'est moins long à faire, et comme ça je peux partager ce que j'apprends plus rapidement. 
 
 
 
