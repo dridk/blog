@@ -1,8 +1,8 @@
 Title: Le séquençage de nouvelle génération
 Slug: ngs
 Date: 2017-05-16 15:58:18
-Tags: biologie
-Category: génétique
+Tags: génétique
+Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
