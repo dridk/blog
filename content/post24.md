@@ -4,6 +4,7 @@ Date: 2017-07-22 13:28:22
 Tags: git,zsh
 Category: informatique
 Author: Sacha schutz
+Summary: Raccourci pour utiliser git sous zsh 
 
 Si vous utilisez git sous [zsh](https://fr.wikipedia.org/wiki/Z_Shell) avec le plugin [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), avez vous notez l'ensemble des alias [git](https://fr.wikipedia.org/wiki/Git) disponible ? 
 Au lieu de taper mes commandes git en entier, par exemple : 
