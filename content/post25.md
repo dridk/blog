@@ -1,7 +1,7 @@
 Title: Fabrication des sondes de captures par technologie MAS
 Slug: puce-adn-mas
 Date: 2017-07-23 11:26:45
-Tags: puce,sonde,adn,
+Tags: puce,sonde,adn,exome,mas,dmd
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
