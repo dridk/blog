@@ -1,11 +1,10 @@
 Title: Le génome d'un embryon humain a été édité 
 Slug: edition-embryon-humain
-Date: 2017-07-23 11:26:45
+Date: 2017-08-06 22:49:20
 Tags: crispr-cas9,embryon, mutation, MYBPC3,cardiomyopathie
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/gatacca_banner.png
-Status: Draft
 
 Si vous êtes passé à côté de la news de la semaine, sachez qu'une équipe américaine a réussi à corriger une mutation génétique lors d'une [fécondation in vitro](https://fr.wikipedia.org/wiki/F%C3%A9condation_in_vitro) à l'aide du couteau suisse moléculaire [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). 
 Une grande étape a été franchie en thérapie génétique avec tous les problèmes éthiques qui en découlent comme l'eugénisme ou le transhumanisme. 
