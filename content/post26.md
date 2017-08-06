@@ -19,7 +19,8 @@ La mutation cible est une délétion de 4 nucléotides dans l'exon 16 du gène.
 # Édition avec CRISPR-cas9
 L'édition du gène a été réalisée  après fécondation in vitro entre le spermatozoïde d'un patient porteur de la mutation et un ovocyte sain. 
 Le complexe CRISPR-Cas9 a été injecté dans l'oeuf 18h après fécondation par [micro-injection (vidéo)](https://www.youtube.com/watch?v=_v9xckdeVhU). 
-CRISPR-Cas9 fait une coupure double brin pour retirer la région d'ADN contenant la mutation. Puis une [polymérase](https://fr.wikipedia.org/wiki/Polym%C3%A9rase) entre en action et corrige ce trou béant en utilisant l'allèle homologue non muté comme modèle. C'est ce qu'on appelle une [réparation par recombinaison homologue](https://fr.wikipedia.org/wiki/Recombinaison_homologue). Pour cette raison, seules les mutations hétérozygotes peuvent être corrigées avec ce protocole. 
+CRISPR-Cas9 fait une coupure double brin pour retirer la région d'ADN contenant la mutation. Puis une [polymérase](https://fr.wikipedia.org/wiki/Polym%C3%A9rase) entre en action et corrige ce trou béant en utilisant l'allèle homologue non muté comme modèle. C'est ce qu'on appelle une [réparation par recombinaison homologue](https://fr.wikipedia.org/wiki/Recombinaison_homologue) ou HDR (Homology Directed Repear). Pour cette raison, seules les mutations hétérozygotes peuvent être corrigées avec ce protocole. 
+Un autre mécanisme de réparation non conservatrice peut avoir lieu, la [Jonction d'extrémités non homologues](https://fr.wikipedia.org/wiki/Jonction_d%27extr%C3%A9mit%C3%A9s_non_homologues) ou NHEJ (Non-Homologous End-Joining). Cette dernière ne corrige rien, et l'on cherche à l'eviter autant que possible.
 
 <div class="figure">
     <img src="../images/post26/crispr-homolog.png" /> 
@@ -31,7 +32,7 @@ L'expérience a été répétée plusieurs fois. Au total dans l'étude il y a e
 
 <div class="figure">
     <img src="../images/post26/gene_correction.png" /> 
-    <div class="legend">1. Fécondation avec un spermatozoïde muté. 2. Injection de CRISPR-CAS9. 3. Plusieurs cas sont alors possibles. ça ne marche pas;ça marche à moitié ( mosaïque);ça marche; HDR (Homology directed repair), NHEJ (  Non-Homologous End-Joining) </div>
+    <div class="legend">1. Fécondation avec un spermatozoïde muté. 2. Injection de CRISPR-CAS9. 3. Plusieurs cas sont alors possibles. ça ne marche pas;ça marche à moitié (mosaïque);ça marche; HDR (Homology directed repair), NHEJ (Non-Homologous End-Joining) </div>
 </div>
 
 # bien, mais pas encore au point !
