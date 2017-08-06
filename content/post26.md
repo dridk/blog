@@ -36,7 +36,7 @@ L'expérience a été répétée plusieurs fois. Au total dans l'étude il y a e
 
 # bien, mais pas encore au point !
 Chez les témoins, comme on s'y attend, la moitié des embryons ont été fécondés par un spermatozoïde muté (hétérozygote: **10/19**) ou par un spermatozoïde non muté (homozygote: **9/19**). Je rappelle que le père est hétérozygote pour la mutation et donc que la moitié de ses spermatozoïdes porte la mutation. 
-En revanche, dans les embryons injectés **66.7% (36/54)** sont homozygotes et seulement **9.3% (13/54)** sont hétérozygotes mutés. Les **24% (5/54)** restant, corresponde à des embryons en [mosaiques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)). Ce sont des embryons où certaines cellules ont été corrigées et d'autre non.
+En revanche, dans les embryons injectés **66.7% (36/54)** sont homozygotes sains et seulement **9.3% (13/54)** sont hétérozygotes mutés. Les **24% (5/54)** restant, corresponde à des embryons en [mosaiques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)). Ce sont des embryons où certaines cellules ont été corrigées et d'autre non.
 En conclusion, ça marche, mais la technique n'est pas encore au point, car il reste pas mal de mosaïssisme. Pour y remédier, l'idée proposée est de faire l'injection CRISPR-cas9 au même moment que l'injection du spermatozoïde. 
 Il y a également le risque des mutations induit par CRISPR-Cas9. Les fameuses [mutations off-target](https://www.lequotidiendumedecin.fr/actualites/article/2017/05/29/crispr-des-mutations-targets-encore-plus-inattendues_847911). Aucune n'a été détectée dans cette étude. 
 
