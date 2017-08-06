@@ -43,7 +43,7 @@ Il y a également le risque des mutations induit par CRISPR-Cas9. Les fameuses [
 
 <div class="figure">
     <img src="../images/post26/results.png" /> 
-    <div class="legend">Gauche: Témoin sans injection CRISPR-Cas9. 50% des embryons sont muté. Droite: Avec injection CRISPR-Cas9. 66.7% des embryons sont sains. </div>
+    <div class="legend">Gauche: Témoin sans injection CRISPR-Cas9. 50% des embryons sont mutés. Droite: Avec injection CRISPR-Cas9. 66.7% des embryons sont sains. </div>
 </div>
 
 # Et l'éthique dans tout ça ? 
