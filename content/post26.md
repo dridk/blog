@@ -1,7 +1,7 @@
 Title: Le génome d'un embryon humain a été édité 
 Slug: edition-embryon-humain
 Date: 2017-08-06 22:49:20
-Tags: crispr-cas9,embryon, mutation, MYBPC3,cardiomyopathie
+Tags: crisprcas9,embryon, mutation, MYBPC3,cardiomyopathie
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/gatacca_banner.png
