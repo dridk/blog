@@ -43,7 +43,7 @@ Il y a également le risque des mutations induit par CRISPR-Cas9. Les fameuses [
 
 <div class="figure">
     <img src="../images/post26/results.png" /> 
-    <div class="legend">Gauche: Témoin sans injection CRISPR-Cas9. 50% des embryons sont mutés. Droite: Avec injection CRISPR-Cas9. 66.7% des embryons sont sains. </div>
+    <div class="legend">Gauche: Témoin sans injection CRISPR-Cas9. 50% des embryons sont mutés  . Droite: Avec injection CRISPR-Cas9. 66.7% des embryons sont sains. </div>
 </div>
 
 # Et l'éthique dans tout ça ? 
@@ -51,4 +51,8 @@ Pour l'heure, l'[ASHG a donné son autorisation](http://www.cell.com/ajhg/fullte
 Mais un pas a tout de même été franchi, et je pense que rapidement, l'édition des génomes deviendra aussi courante que le [diagnostic préimplantatoire](https://fr.wikipedia.org/wiki/Diagnostic_pr%C3%A9implantatoire). 
 Avec l'apparition croissante des sociétés en génomique comme [23andMe](https://www.23andme.com/) ou [Helix](https://www.helix.com/), qui s'affranchisse de la barrière médicale, les enjeux éthiques vont vite prendre de l'empereur. Et les bébés conçus à la carte sur internet seront peut-être monnaie courante.   
 D'autre part, l'éradication des maladies génétiques peut paraitre merveilleuse. Mais à l'échelle des populations cela implique la diminution de la diversité génétique et donc une diminution de notre capacité d'aptation dans l'évolution biologique.  
-Bienvenue à Gatacca est déjà bien loin derrière nous... 
+*[Bienvenue à GATTACCA](https://www.youtube.com/watch?v=7u3RrbNpRUQ)* n'a jamais été aussi proche.
+
+<div class="figure">
+    <img src="../images/post26/gattaca.gif" /> 
+</div>
