@@ -8,7 +8,7 @@ SIDEBARIMAGE:../images/common/gatacca_banner.png
 Status: Draft
 
 Si vous êtes passé à côté de la news de la semaine, sachez qu'une équipe américaine a réussi à corriger une mutation génétique lors d'une [fécondation in vitro](https://fr.wikipedia.org/wiki/F%C3%A9condation_in_vitro) à l'aide du couteau suisse moléculaire [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). 
-Une grande étape a été franchie en thérapie génétique avec tous les problèmes éthiques qui en découle comme l'eugénisme ou le transhumanisme. 
+Une grande étape a été franchie en thérapie génétique avec tous les problèmes éthiques qui en découlent comme l'eugénisme ou le transhumanisme. 
 Je me dois de vous faire un résumé rapide de cet article "*Correction of a pathogenic gene mutation in human embryos*" disponible [ici](http://www.nature.com/nature/journal/vaop/ncurrent/full/nature23305.html). 
 
 # Correction d'une maladie autosomique dominante 
@@ -37,7 +37,7 @@ L'expérience a été répétée plusieurs fois. Au total dans l'étude il y a e
 
 # bien, mais pas encore au point !
 Chez les témoins, comme on s'y attend, la moitié des embryons ont été fécondés par un spermatozoïde muté (hétérozygote: **10/19**) ou par un spermatozoïde non muté (homozygote: **9/19**). Je rappelle que le père est hétérozygote pour la mutation et donc que la moitié de ses spermatozoïdes porte la mutation. 
-En revanche, dans les embryons injectés **66.7% (36/54)** sont homozygote et seulement **9.3% (13/54)** sont hétérozygote muté. Les **24% (5/54)** restant, corresponde à des embryons en [mosaiques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)). Ce sont des embryons où certaines cellules ont été corrigées et d'autre non.
+En revanche, dans les embryons injectés **66.7% (36/54)** sont homozygotes et seulement **9.3% (13/54)** sont hétérozygotes mutés. Les **24% (5/54)** restant, corresponde à des embryons en [mosaiques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)). Ce sont des embryons où certaines cellules ont été corrigées et d'autre non.
 En conclusion, ça marche, mais la technique n'est pas encore au point, car il reste pas mal de mosaïssisme. Pour y remédier, l'idée proposée est de faire l'injection CRISPR-cas9 au même moment que l'injection du spermatozoïde. 
 Il y a également le risque des mutations induit par CRISPR-Cas9. Les fameuses [mutations off-target](https://www.lequotidiendumedecin.fr/actualites/article/2017/05/29/crispr-des-mutations-targets-encore-plus-inattendues_847911). Aucune n'a été détectée dans cette étude. 
 
@@ -47,7 +47,7 @@ Il y a également le risque des mutations induit par CRISPR-Cas9. Les fameuses [
 </div>
 
 # Et l'éthique dans tout ça ? 
-Pour l'heure, l'[ASHG a donné son autorisation](http://www.cell.com/ajhg/fulltext/S0002-9297(17)30247-1) sur l'édition des embryons tant que les recherches ne conduisent pas à une grossesse et qu'il y a un rational scientifique et éthique derrière.   
+Pour l'heure, l'[ASHG a donné son autorisation](http://www.cell.com/ajhg/fulltext/S0002-9297(17)30247-1) sur l'édition des embryons tant que les recherches ne conduisent pas à une grossesse et qu'il y a un rationnel scientifique et éthique derrière.   
 Mais un pas a tout de même été franchi, et je pense que rapidement, l'édition des génomes deviendra aussi courante que le [diagnostic préimplantatoire](https://fr.wikipedia.org/wiki/Diagnostic_pr%C3%A9implantatoire). 
 Avec l'apparition croissante des sociétés en génomique comme [23andMe](https://www.23andme.com/) ou [Helix](https://www.helix.com/), qui s'affranchisse de la barrière médicale, les enjeux éthiques vont vite prendre de l'empereur. Et les bébés conçus à la carte sur internet seront peut-être monnaie courante.   
 D'autre part, l'éradication des maladies génétiques peut paraitre merveilleuse. Mais à l'échelle des populations cela implique la diminution de la diversité génétique et donc une diminution de notre capacité d'aptation dans l'évolution biologique.  
