@@ -7,7 +7,7 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/gatacca_banner.png
 
 Si vous êtes passé à côté de la news de la semaine, sachez qu'une équipe américaine a réussi à corriger une mutation génétique lors d'une [fécondation in vitro](https://fr.wikipedia.org/wiki/F%C3%A9condation_in_vitro) à l'aide du couteau suisse moléculaire [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). 
-Une grande étape a été franchie en thérapie génétique avec tous les problèmes éthiques qui en découlent comme l'eugénisme ou le transhumanisme. 
+Une grande étape a été franchie en thérapie génique avec tous les problèmes éthiques qui en découlent comme l'eugénisme ou le transhumanisme. 
 Je me dois de vous faire un résumé rapide de cet article "*Correction of a pathogenic gene mutation in human embryos*" disponible [ici](http://www.nature.com/nature/journal/vaop/ncurrent/full/nature23305.html). 
 
 ## Correction d'une maladie autosomique dominante 
@@ -16,7 +16,7 @@ C'est une maladie [autosomique dominante](https://fr.wikipedia.org/wiki/Transmis
 La mutation cible est une délétion de 4 nucléotides dans l'exon 16 du gène.
 
 ## Édition avec CRISPR-cas9
-L'édition du gène a été réalisée  après fécondation in vitro entre le spermatozoïde d'un patient porteur de la mutation et un ovocyte sain. 
+L'édition du gène a été réalisée après fécondation in vitro entre le spermatozoïde d'un patient porteur de la mutation et un ovocyte sain. 
 Le complexe CRISPR-Cas9 a été injecté dans l'oeuf 18h après fécondation par [micro-injection (vidéo)](https://www.youtube.com/watch?v=_v9xckdeVhU). 
 CRISPR-Cas9 fait une coupure double brin pour retirer la région d'ADN contenant la mutation. Puis une [polymérase](https://fr.wikipedia.org/wiki/Polym%C3%A9rase) entre en action et corrige ce trou béant en utilisant l'allèle homologue non muté comme modèle. C'est ce qu'on appelle une [réparation par recombinaison homologue](https://fr.wikipedia.org/wiki/Recombinaison_homologue) ou HDR (Homology Directed Repear). Pour cette raison, seules les mutations hétérozygotes peuvent être corrigées avec ce protocole. 
 Un autre mécanisme de réparation non conservatrice peut avoir lieu, la [Jonction d'extrémités non homologues](https://fr.wikipedia.org/wiki/Jonction_d%27extr%C3%A9mit%C3%A9s_non_homologues) ou NHEJ (Non-Homologous End-Joining). Cette dernière ne corrige rien, et l'on cherche à l'eviter autant que possible.
