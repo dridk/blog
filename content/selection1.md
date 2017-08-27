@@ -1,6 +1,6 @@
 Title:La sélection génomique de la semaine (Numéro 1)
 Slug: selection-1
-Date: 2017-08-27 16:41:32
+Date: 2017-08-27 18:30:55
 Tags: génomique, actualité, bioinformatique
 Category: biologie
 Author: Sacha Schutz
@@ -20,7 +20,7 @@ Pour voir l'ensemble des changements:
 #### Human genom Project-write
 J'ai découvert le *Human Genom Project-write* ou GP-write annoncé il y a un peu plus d'un an. 
 À l'instar du projet visant à séquencer le génome humain (GP-read), celui-ci a comme objectif de synthétiser un génome complet.    
-Il s'agit peut être au Préquelle de Frankenstein ...      
+En résumé, c'est le Préquelle de Frankenstein ...      
 [http://engineeringbiologycenter.org/](http://engineeringbiologycenter.org/)
 
 #### Phenotate
