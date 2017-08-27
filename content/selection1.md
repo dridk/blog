@@ -35,7 +35,7 @@ D'ici 2 ans, il y a de grande chances que ces tests deviennent d'usage courant.
 [http://www.cell.com/ajhg/fulltext/S0002-9297(17)30290-2](http://www.cell.com/ajhg/fulltext/S0002-9297(17)30290-2)
 
 #### Stratos
-Statos est ma découverte de la semaine. C'est une technologie de séquençage haut débit permettant d'améliorer la détection du signal dans un [nanopore](https://fr.wikipedia.org/wiki/Nanopore). 
+Statos est ma découverte de la semaine. C'est une technologie de séquençage haut débit permettant d'améliorer la détection du signal sur [nanopore](https://fr.wikipedia.org/wiki/Nanopore). 
 Cette technologie clone la molécule d'ADN en remplaçant les nucléotides A,C,G,T par des grosses molécules appelées *xpandomer*. Cette nouvelle séquence de xpandomer qui contient l'information génétique peut alors être séquencée plus facilement.  
 [https://www.stratosgenomics.com/](https://www.stratosgenomics.com/)
 
