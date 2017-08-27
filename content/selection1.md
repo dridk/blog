@@ -23,8 +23,8 @@ J'ai découvert le *Human Genom Project-write* ou GP-write annoncé il y a un pe
 Il s'agit peut être au Préquelle de Frankenstein ...      
 [http://engineeringbiologycenter.org/](http://engineeringbiologycenter.org/)
 
-#### PhenoGate
-PhenoGate propose de créer une base de données collaborative de sémiologie clinique des maladies rares. Vous êtes médecins ou étudiants, vous devez compléter la liste des signes cliniques d'une maladie pour gagner des points. 
+#### Phenotate
+Phenotate propose de créer une base de données collaborative de sémiologie clinique des maladies rares. Vous êtes médecins ou étudiants, vous devez compléter la liste des signes cliniques d'une maladie pour gagner des points. 
 Cette base de données se veut plus précise que [HPO](http://human-phenotype-ontology.github.io/).       
 [http://phenotate.org/](http://phenotate.org/)
 
