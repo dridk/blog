@@ -6,7 +6,7 @@ Tags: bioinformatique, génétique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/caryotype.jpeg
 
-La trisomie 21 est un syndrome polymalformatif avec un retard mental, lié dans la majorité des cas à la présence d'un chromosome 21 surnuméraire. On a tous en mémoire l'image de l'acteur [Pascal Duquenne](https://fr.wikipedia.org/wiki/Pascal_Duquenne) atteint de ce syndrome et lauréat du prix d'interprétation au festival de Cannes pour le film le *[Huitème jour](https://fr.wikipedia.org/wiki/Le_Huiti%C3%A8me_Jour_(film,_1996))*.     
+La trisomie 21 est un syndrome polymalformatif avec un retard mental, lié dans la majorité des cas à la présence d'un chromosome 21 surnuméraire.   
 En France, le [dépistage de la trisomie 21](http://www.has-sante.fr/portail/jcms/c_1165790/fr/strategies-de-depistage-de-la-trisomie-21-impact-et-mise-en-oeuvre) est proposé à toutes les femmes enceintes au 1er trimestre de grossesse. Ce dépistage consiste à calculer un score en [fonction de marqueurs sanguins](http://acces.ens-lyon.fr/acces/ressources/sante/epidemiologie/depistage_trisomie21/Points/points_marqueurs_seriques) (AFP, Papp-A, beta HCG) et des signes d'appel échographique comme [la clarté nuccale](https://fr.wikipedia.org/wiki/Clart%C3%A9_nucale). Si ce score dépasse un certain seuil, un diagnostic cytogénétique est proposé pour confirmer la trisomie. Il consiste à prélever des cellules fœtales par des techniques invasives comme l'[amniocentèse](https://fr.wikipedia.org/wiki/Amniocent%C3%A8se) et de dénombrer le nombre de chromosomes sur un [caryotype](https://fr.wikipedia.org/wiki/Caryotype) comme illustré ci-dessous. 
 
 <div class="figure">
