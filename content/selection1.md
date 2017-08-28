@@ -1,4 +1,4 @@
-Title:La sélection génomique de la semaine (Numéro 1)
+Title:La sélection génomique de la semaine #1 
 Slug: selection-1
 Date: 2017-08-27 18:30:55
 Tags: génomique, actualité, bioinformatique
