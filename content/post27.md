@@ -1,4 +1,4 @@
-Title: Quantifier les ARNm d'une cellule
+Title: Quantifier le transcriptome à l'echelle cellulaire
 Slug: sc-rna-seq
 Date: 2017-08-28 16:23:49
 Tags: puce,sonde,adn,exome,mas,dmd
