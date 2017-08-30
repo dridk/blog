@@ -69,7 +69,7 @@ Pour finir, il ne reste plus qu'à créer la librarie pour le séquençage. Tous
 Après le séquençage et l'allignement, il suffira de regrouper les reads provenant d'une même cellule en comparant leurs barcodes.
 
 ## Des jolies graphiques comme résultat
-On obtient alors la matrice d'expression par gènes et par cellules:
+A la fin de l'analyse, on obtient la matrice d'expression par gènes et par cellules:
 
 <div class="figure">
     <img src="../images/post27/expression-matrix-cell.png" /> 
