@@ -55,7 +55,7 @@ Pour former cette gouttelette, ils font passer successivement les cellules, les 
 
 ## Chaque cellule a un barcode unique
 Chaque bille est recouverte de séquences adaptatrice uniques contenant un barcode, un UMI et la séquence complémentaire à la queue PolyA (PolyT) des ARN messagers.    
-- Le barcode est l'identifiant unique à la bille, et donc unique à la cellule. 10xGenomics propose dans ses kits des billes avec 750 000 barcodes environ.       
+- Le barcode est l'identifiant unique à la bille, et donc unique à la cellule. 10xGenomics propose 750 000 barcodes environ.       
 - [L'UMI (Unique Molecular Identifiers)](https://en.wikipedia.org/wiki/Unique_molecular_identifier)  est une courte séquence aléatoire unique  à chaque fragment entourant la bille. Il y a donc plusieurs UMI par bille. Cet identifiant est utilisé pour éviter les biais d'amplifications. Si une séquence est malencontreusement trop amplifiée dans une goutte, elle sera détectée, car le même UMI sera représenté plusieurs fois.    
 - La séquence polyT est l'extremité ou va venir se fixer les ARNs par complémentarité par leurs queues polyA.
 
