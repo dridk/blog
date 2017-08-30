@@ -15,7 +15,7 @@ Pour plus de détails sur l'analyse bio-informatique,  je vous invite à jeter u
 
 <div class="figure">
     <img src="../images/post27/rnaseq-overview.png" /> 
-    <div class="legend">Schéma général de la technologie RNAseq. Dans cet exemple, le séquençage est réalisé sur deux échantillons (tumeur et normal). Les ARNs sont capturés grâce leurs queues polyA, sont converti en ADNc puis séquencer. Les reads sont alignés sur un génome de référence afin de mesurer l'expression de chaque gène. Cette expression est proportionnelle aux nombres d'ARN s'alignant sur un gène donné </br>Source: Wikipedia</div>
+    <div class="legend">Schéma général de la technologie RNAseq. Dans cet exemple, le séquençage est réalisé sur deux échantillons (tumeur et normal). Les ARNs sont capturés grâce leurs queues polyA, sont converti en ADNc puis séquencer. Les reads sont alignés sur un génome de référence afin de mesurer l'expression de chaque gène. Cette expression est proportionnelle aux nombres d'ARN s'alignant sur un gène donné </br>Source: <a href="https://fr.wikipedia.org/wiki/RNA-Seq">Wikipedia</a></div>
 </div>
 
 </br>
