@@ -22,7 +22,7 @@ Pour plus de détails sur l'analyse bio-informatique,  je vous invite à jeter u
    
 <div class="figure">
     <img src="../images/post27/expression-matrix.png" /> 
-    <div class="legend">Exemple d'une matrice d'expression comparant deux tissues. L'expression des gènes dans le tissue normal est différent de celui du tissue cancéreux</div>
+    <div class="legend">Exemple d'une matrice d'expression comparant deux tissues. L'expression des gènes dans le tissue 1 est différent de celui du tissue 2</div>
 </div>
 
 
