@@ -85,7 +85,7 @@ Chaque point correspond à une cellule. Plus les cellules sont proches sur le gr
     <div class="legend">Profil d'expression obtenu à partir des cellules du sang (2,700 cellules mononuclées du sang périphérique <a href="https://fr.wikipedia.org/wiki/Cellule_mononucl%C3%A9%C3%A9e_sanguine_p%C3%A9riph%C3%A9rique)))">PBMC</a></br> Source: <a href="http://satijalab.org/seurat/get_started_v1_4.html">http://satijalab.org/seurat/get_started_v1_4.html</a></div>
 </div>
 
-Plus jolie, [cette vidéo ](https://www.10xgenomics.com/single-cell/?wvideo=z54e2lemhd) montre le profil d'expression des cellules du cerveau dans une repère à 3 axes.
+Encore mieux, [cette vidéo ](https://www.10xgenomics.com/single-cell/?wvideo=z54e2lemhd) montre le profil d'expression des cellules du cerveau dans une repère à 3 axes.
 
 
 
