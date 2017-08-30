@@ -1,4 +1,4 @@
-Title: Quantifier le transcriptome à l'echelle cellulaire
+Title: RNA-seq sur cellule unique 
 Slug: sc-rna-seq
 Date: 2017-08-28 16:23:49
 Tags: puce,sonde,adn,exome,mas,dmd
@@ -20,13 +20,13 @@ Pour plus de détails sur l'analyse bio-informatique,  je vous invite à jeter u
    
 <div class="figure">
     <img src="../images/post27/expression-matrix.png" /> 
-    <div class="legend">Exemple d'une matrice d'expression comparant deux tissues. L'expression des gènes dans le tissue 1 est différent de celui du tissue 2</div>
+    <div class="legend">Exemple d'une matrice d'expression comparant deux tissues. L'expression des gènes dans le tissue 1 est différent de celle du tissue 2</div>
 </div>
 
 
 ## ScRNA-seq: Nouvelle approche plus résolutive
 
-Le défaut du RNA-seq est qu'elle mesure l'expression d'un tissu et pas l'expression d'une cellule. En effet, dans un morceau de cerveau, il y aura différent type cellulaire (neurone, [astrocytes](https://fr.wikipedia.org/wiki/Astrocyte), [oligodendrocytes](https://fr.wikipedia.org/wiki/Oligodendrocyte) ...) avec des profils d'expression différente. La technique RNA-seq traditionnelle vous informera seulement du niveau d'expression de cet ensemble.   
+Le défaut du RNA-seq est qu'elle mesure l'expression d'un tissu et pas l'expression d'une cellule. En effet, dans un morceau de cerveau, il y aura différent type cellulaire (neurone, [astrocytes](https://fr.wikipedia.org/wiki/Astrocyte), [oligodendrocytes](https://fr.wikipedia.org/wiki/Oligodendrocyte) ...) avec des profils d'expression différente. Le  RNA-seq vous informera seulement du niveau d'expression de cet ensemble.   
 Aujourd'hui, une autre méthode permet de séquencer le transcriptome d'une seule cellule. C'est ce qu'on appelle du [Single Cell RNA Seq  (ScRNA-Seq)](https://en.wikipedia.org/wiki/Single-cell_transcriptomics). 
 L'idée est de créer une librarie (Ensemble des fragments d'ADN destiné au séquençage) ou chaque ARNm se voit greffer une séquence identifiant sa cellule d'origine ([barcode](https://fr.wikipedia.org/wiki/Barcoding_mol%C3%A9culaire)). On peut alors après séquençage, regrouper les reads entre eux grâce à leurs barcodes et obtenir une matrice d'expression par cellules et par gènes.   
 Comment étiqueter chaque fragment d'ADN à sa cellule d'origine ? C'est ce qu'on va voir tout de suite avec la méthode de [microfluidique](https://fr.wikipedia.org/wiki/Microfluidique) de [10xGenomics](https://www.10xgenomics.com/).
