@@ -1,4 +1,4 @@
-Title: RNA-seq sur cellule unique 
+Title: Séquençage des ARNs messagers sur cellule unique 
 Slug: sc-rna-seq
 Date: 2017-08-28 16:23:49
 Tags: puce,sonde,adn,exome,mas,dmd
