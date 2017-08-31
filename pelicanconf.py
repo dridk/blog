@@ -44,6 +44,8 @@ SOCIAL = (
     ('rss-square', 'http://dridk.me/feeds/all.atom.xml')
    )
 
+GITHUB_CONTENT="https://github.com/dridk/blog/tree/master/content"
+
 DEFAULT_PAGINATION = 10
 
 DISPLAY_PAGES_ON_MENU = True	

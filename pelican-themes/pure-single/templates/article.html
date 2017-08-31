@@ -35,11 +35,17 @@
                         </p>
                         <p class="post-meta">
                         // Par {{ article.author }}
+
+
                         </p>
 
                 </header>
             </section>
             {{ article.content }}
+            {% set list = article.filename.split('/') %}
+            <p>Ce site est versionné sur <a href="http://www.github.com/dridk/blog">github</a>. Vous pouvez corriger des erreurs en vous rendant à <a href="{{GITHUB_CONTENT}}/{{ list|last}}">cette adresse</a></p>
+
+
             <a href="#" class="go-top">Go Top</a>
             {% include 'disqus.html' %}
             {% include 'footer.html' %}
