@@ -1,4 +1,4 @@
-Title: Séquençage des ARNs messagers sur cellule unique 
+Title: Séquençage des ARNs messagers à partir de cellules uniques 
 Slug: sc-rna-seq
 Date: 2017-08-28 16:23:49
 Tags: rna-seq,single-cell,microfluidique
