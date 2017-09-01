@@ -4,7 +4,6 @@ Date: 2017-08-28 16:23:49
 Tags: rna-seq,single-cell,microfluidique
 Category: biologie
 Author: Sacha Schutz
-Status: Draft
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 Toutes les cellules de votre corps sont constituées du même génome. Vous obtiendrez toujours le même texte en séquençant l'ADN provenant d'un morceau d'estomac, de cerveau ou de peau (sauf cas très particuliers: [mosaïques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)) ).  
