@@ -7,7 +7,7 @@ Author: Sacha Schutz
 Status: Draft
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
-Toutes les cellules de votre corps sont constituées du même génome. Vous obtiendrez toujours le même texte en séquençant l'ADN provenant d'un morceau d'estomac, de cerveau ou de peau.  
+Toutes les cellules de votre corps sont constituées du même génome. Vous obtiendrez toujours le même texte en séquençant l'ADN provenant d'un morceau d'estomac, de cerveau ou de peau (sauf cas très particuliers: [mosaïques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique)) ).  
 Ce qui fait la différence, c'est l'expression des gènes ou « *[transcriptome](https://fr.wikipedia.org/wiki/Transcriptome)* ». C'est-à-dire l'ensemble des [ARNs messagers (ARNm)](https://fr.wikipedia.org/wiki/Acide_ribonucl%C3%A9ique_messager) transcrits dans la cellule dont la traduction est responsable du [phénotype cellulaire](https://fr.wikipedia.org/wiki/Ph%C3%A9notype_cellulaire). Par exemple, les cellules de votre rétine expriment d'autres gènes que votre estomac. Leurs transcriptomes sont différents.  
 Une des méthodes pour évaluer le transcriptome est le séquençage des [ARN messager](https://fr.wikipedia.org/wiki/Acide_ribonucl%C3%A9ique_messager) ou [RNA-seq](https://fr.wikipedia.org/wiki/RNA-Seq).    
 En résumant rapidement (figure ci-dessous) : 
