@@ -1,6 +1,6 @@
 Title: Séquençage des ARNs messagers à partir de cellules uniques 
 Slug: sc-rna-seq
-Date: 2017-08-28 16:23:49
+Date: 2017-09-01 21:36:32
 Tags: rna-seq,single-cell,microfluidique
 Category: biologie
 Author: Sacha Schutz
