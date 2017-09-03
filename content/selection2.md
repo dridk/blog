@@ -23,7 +23,7 @@ Elles sont alors réinjectées chez les patients pour la modique somme de 475 00
 ### Un kit pour séquencer votre génome sur Amazon.fr
 La société [Dante Labs](https://www.dantelabs.com/), propose depuis plusieurs mois déjà, un kit de prélèvement salivaire pour séquencer votre génome complet. Vous pouvez le commander tout de suite sur amazone pour 850 euros, sans passer pas un médecin ni un conseiller en génétique. 
 La pratique est en principe illégale en France... pour le moment.       
-L'info est d'ailleurs passé au JT de 20h sur france2.   
+L'info est d'ailleurs passé au JT de 20h sur France 2.   
 [https://www.amazon.fr/dp/B072BGP88H/ref=cm_sw_r_tw_dp_x_hx5Pzb9E0XREQ ](https://www.amazon.fr/dp/B072BGP88H/ref=cm_sw_r_tw_dp_x_hx5Pzb9E0XREQ )    
 [https://www.france.tv/france-2/journal-20h00/233891-edition-du-samedi-2-septembre-2017.html](https://www.france.tv/france-2/journal-20h00/233891-edition-du-samedi-2-septembre-2017.html) 
 
