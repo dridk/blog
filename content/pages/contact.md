@@ -8,6 +8,7 @@ Je me présente, sacha ou @dridk pour les intimes! Je suis médecin en génétiq
 Les articles traitant de la biologie sont [ici](/category/biologie.html) et sont automatiquement forwardés sur le [café des sciences](http://www.cafe-sciences.org/).    
 Les articles purement informatique sont [ici](/category/informatique.html).
 
+Je suis également co-fondateur de [labsquare](http://www.labsquare.org/). Une association à but non lucrative visant à créer des applications libres en génomique en utilisant la [technologie Qt](https://www.qt.io/). 
 
 Vous pouvez me contacter à l'adresse suivante: sacha AT labsquare POINT ORG , par [twitter](https://twitter.com/dridk) ou via les commentaires! 
 Si vous trouvez une erreur , des fautes sur ce blog, n'hesitez pas à proposer vos corrections directement sur github à cette [endroit](https://github.com/dridk/blog/tree/master/content)
