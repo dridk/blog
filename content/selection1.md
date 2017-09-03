@@ -2,7 +2,7 @@ Title:La sélection génomique de la semaine #1
 Slug: selection-1
 Date: 2017-08-27 18:30:55
 Tags: selection, génomique
-Category: selection
+Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/selection_banner.jpg
 

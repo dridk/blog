@@ -31,7 +31,9 @@ COVER_IMG_URL = "http://dridk.me/images/splash.svg"
 PROFILE_IMG_URL= "http://dridk.me/images/avatar.jpg"
 TAGLINE="bioinformatique génétique médecine"
 # Blogroll
-MENUITEMS = (('Archive', 'archives.html'),
+MENUITEMS = (
+         ('La sélection génomique',"tag/selection.html"),
+         ('Archive', 'archives.html'),
          ('A propos', 'pages/contact-Fr.html'),
          ('Applications', 'pages/application-Fr.html')
 
