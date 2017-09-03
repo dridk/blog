@@ -28,11 +28,11 @@ L'info est d'ailleurs passé au JT de 20h sur france2.
 [https://www.france.tv/france-2/journal-20h00/233891-edition-du-samedi-2-septembre-2017.html](https://www.france.tv/france-2/journal-20h00/233891-edition-du-samedi-2-septembre-2017.html) 
 
 ### Remise en cause du papier sur l'edition d'embryon 
-Je vous en parlais dans un [précédant l'article](edition-embryon-humain.html). Une équipe avait réussi à éditer le génome d'un embryon avec [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). Après le buzz médiatique, une autre équipe remet en cause les résultats.    
-En résumé, les arguments sont :      
+Je vous en parlais dans un [précédant l'article](edition-embryon-humain.html). Une équipe avait réussi à éditer le génome d'un embryon avec [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). Après le buzz médiatique, une autre équipe remet en cause ces résultats.    
+En résumé, leurs arguments sont :      
 
 - Au moment de l'injection de CRISPR-Cas9, les [nucleis](https://fr.wikipedia.org/wiki/Nucl%C3%A9us) mâles et femelles sont séparés physiquement empêchant la correction par recombinaison homologue.
-- Les mutations ne sont pas détectées tout simplement parce que CRISPR-Cas9 délète les cibles d'amorces de PCR.
+- Les mutations ne sont pas détectées tout simplement parce que CRISPR-Cas9 délète les cibles d'amorces de PCR nécessaire pour détecter la mutation.
 
 [https://ipscell.com/2017/08/doubts-raised-on-key-points-of-nature-paper-on-crispr-gene-editing-of-human-embryos/](https://ipscell.com/2017/08/doubts-raised-on-key-points-of-nature-paper-on-crispr-gene-editing-of-human-embryos/)
 
