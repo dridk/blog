@@ -37,17 +37,17 @@ En résumé, leurs arguments sont :
 [https://ipscell.com/2017/08/doubts-raised-on-key-points-of-nature-paper-on-crispr-gene-editing-of-human-embryos/](https://ipscell.com/2017/08/doubts-raised-on-key-points-of-nature-paper-on-crispr-gene-editing-of-human-embryos/)
 
 ### 23andme propose le dépistage de la DMLA et l'hémochromatose 
-Petit à petit, la société [23andme](https://www.23andme.com/en-int/) (alias google), fait son chemin dans le dépistage des maladies génétiques non médicalisé. Après l'autorisation par la [FDA](https://fr.wikipedia.org/wiki/Food_and_Drug_Administration) en avril dernier, de faire du dépistage sous certaines conditions, la société se dote cette semaine de 2 nouveaux tests génétiques: Pour la [DMLA](https://fr.wikipedia.org/wiki/D%C3%A9g%C3%A9n%C3%A9rescence_maculaire_li%C3%A9e_%C3%A0_l%27%C3%A2ge) et l'[hémochromatose](https://fr.wikipedia.org/wiki/H%C3%A9mochromatose).    
+Petit à petit, la société [23andme](https://www.23andme.com/en-int/) (alias google), fait son chemin dans le dépistage des maladies génétiques non médicalisé. Après l'autorisation, en avril dernier, par la [FDA](https://fr.wikipedia.org/wiki/Food_and_Drug_Administration) de faire du dépistage, la société se dote cette semaine de 2 nouveaux tests génétiques: Pour la [DMLA](https://fr.wikipedia.org/wiki/D%C3%A9g%C3%A9n%C3%A9rescence_maculaire_li%C3%A9e_%C3%A0_l%27%C3%A2ge) et l'[hémochromatose](https://fr.wikipedia.org/wiki/H%C3%A9mochromatose).    
 [https://blog.23andme.com/health-traits/23andme-adds-new-genetic-health-risk-reports/](https://blog.23andme.com/health-traits/23andme-adds-new-genetic-health-risk-reports/)
 
 ### DroNc-seq 
 Après le [RNA-seq](https://fr.wikipedia.org/wiki/RNA-Seq), après le [single cell RNA-seq](https://en.wikipedia.org/wiki/Single_cell_sequencing), voici le single-nucleus RNA seq. Une méthode permettant le séquençage du transcriptome sur noyaux unique.   
-Voir[ mon article](sc-rna-seq.html) sur le singlecell RNA-seq publié cette semaine.
+Voir[ mon article](sc-rna-seq.html) sur le single cell RNA-seq publié cette semaine.
 
 [http://www.genengnews.com/gen-news-highlights/single-nucleus-rna-seq-merges-with-microfluidics/81254868](http://www.genengnews.com/gen-news-highlights/single-nucleus-rna-seq-merges-with-microfluidics/81254868)
 
 ### Des tomates sous licence libre
-Une découverte de la semaine, c'est une licence libre, similaire aux licences en informatique (ex:[GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License)), mais appliquée aux semences de l'agriculture.  
+Une découverte cette semaine, c'est une licence libre, similaire aux licences en informatique (ex:[GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License)), mais appliquée aux semences de l'agriculture.  
 En gros, vous protégez vos créations génétiques avec une licence pour contrer les grosses boites comme [Monsanto](https://fr.wikipedia.org/wiki/Monsanto).
 
 [http://www.opensourceseeds.org/fr](http://www.opensourceseeds.org/fr)    
@@ -55,7 +55,7 @@ En gros, vous protégez vos créations génétiques avec une licence pour contre
 
 ### Comparaison des caryotypes de l'homme et du chimpanzé
 Je termine par le tweet de la semaine. J'avais publié une belle image montrant les événements génétiques différenciant l'homme et le singe. Je n'ai pas trouvé la source de l'image, certainement un livre scolaire. 
-Quoi qu'il en soit, on voit très bien, sur cette image, que le chromosome 2 humain est le résultat d'une fusion entre les deux chromosomes simiens. Encore une preuve de plus pour la théorie de l'évolution ! 
+Quoi qu'il en soit, on voit très bien, sur ce caryotype, que le chromosome 2 humain est le résultat d'une fusion entre les deux chromosomes simiens. Encore une preuve pour la théorie de l'évolution ! 
 
 <blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Comparaison des caryotypes de l&#39;homme et du chimpanzé <a href="https://t.co/JUdYzx1Xkp">pic.twitter.com/JUdYzx1Xkp</a></p>&mdash; Sacha schutz (@dridk) <a href="https://twitter.com/dridk/status/902653437728493576">29 août 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
