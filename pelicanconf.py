@@ -33,10 +33,11 @@ TAGLINE="bioinformatique génétique médecine"
 # Blogroll
 MENUITEMS = (
          ('La sélection génomique',"tag/selection.html"),
-         ('Archive', 'archives.html'),
+         ('Biologie','category/biologie.html'),
+         ('Informatique','category/informatique.html'),
+         ('Historique', 'archives.html'),
          ('A propos', 'pages/contact-Fr.html'),
          ('Applications', 'pages/application-Fr.html')
-
          )
 
 # Social widget
