@@ -42,8 +42,7 @@ Petit à petit, la société [23andme](https://www.23andme.com/en-int/) (alias g
 
 ### DroNc-seq 
 Après le [RNA-seq](https://fr.wikipedia.org/wiki/RNA-Seq), après le [single cell RNA-seq](https://en.wikipedia.org/wiki/Single_cell_sequencing), voici le single-nucleus RNA seq. Une méthode permettant le séquençage du transcriptome sur noyaux unique.   
-Voir[ mon article](sc-rna-seq.html) sur le single cell RNA-seq publié cette semaine.
-
+Voir[ mon article](sc-rna-seq.html) sur le single cell RNA-seq publié cette semaine.    
 [http://www.genengnews.com/gen-news-highlights/single-nucleus-rna-seq-merges-with-microfluidics/81254868](http://www.genengnews.com/gen-news-highlights/single-nucleus-rna-seq-merges-with-microfluidics/81254868)
 
 ### Des tomates sous licence libre
