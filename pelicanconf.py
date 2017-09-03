@@ -36,9 +36,8 @@ MENUITEMS = (
          ('Biologie','category/biologie.html'),
          ('Informatique','category/informatique.html'),
          ('Historique', 'archives.html'),
-         ('A propos', 'pages/contact-Fr.html'),
-         ('Applications', 'pages/application-Fr.html')
-         )
+         ('A propos', 'pages/contact-Fr.html')      
+        )
 
 # Social widget
 SOCIAL = (
