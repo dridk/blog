@@ -8,7 +8,7 @@ SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 Toutes les cellules de votre corps sont constituées du même génome. Vous obtiendrez toujours le même texte en séquençant l'ADN provenant d'un morceau d'estomac, de cerveau ou de peau (sauf cas très particuliers: [mosaïques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_(g%C3%A9n%C3%A9tique))).  
 Ce qui fait la différence, c'est l'expression des gènes ou « *[transcriptome](https://fr.wikipedia.org/wiki/Transcriptome)* ». C'est-à-dire l'ensemble des [ARNs messagers (ARNm)](https://fr.wikipedia.org/wiki/Acide_ribonucl%C3%A9ique_messager) transcrits dans la cellule dont la traduction est responsable du [phénotype cellulaire](https://fr.wikipedia.org/wiki/Ph%C3%A9notype_cellulaire). Par exemple, les cellules de votre rétine expriment d'autres gènes que votre estomac. Leurs transcriptomes sont différents.  
-Une des méthodes pour évaluer le transcriptome est le séquençage des [ARN messagers](https://fr.wikipedia.org/wiki/Acide_ribonucl%C3%A9ique_messager) ou [RNA-seq](https://fr.wikipedia.org/wiki/RNA-Seq).    
+Une des méthodes pour évaluer le transcriptome est le séquençage des [ARN messager](https://fr.wikipedia.org/wiki/Acide_ribonucl%C3%A9ique_messager) ou [RNA-seq](https://fr.wikipedia.org/wiki/RNA-Seq).    
 En résumant rapidement (figure ci-dessous) : 
 À partir d'un tissu, toutes les cellules sont lysées puis les ARNs messagers sont capturés (en général par leurs [queues polyadénylées](https://fr.wikipedia.org/wiki/Polyad%C3%A9nylation)). Ils sont ensuite convertis  en [ADN complémentaire](https://fr.wikipedia.org/wiki/ADN_compl%C3%A9mentaire) (ADNc) par une [rétrotranscriptase](https://fr.wikipedia.org/wiki/Transcriptase_inverse), amplifiés, puis séquencés. L'étape bio-informatique consiste à aligner les [reads](http://dridk.me/ngs.html) sur un génome de référence et faire des normalisations pour évaluer quels gènes sont exprimés. Le nombre d'ARNm séquencés d'un gène correspond à son niveau d'expression ou « *abondance »*.    
 Finalement, en analysant différents tissus, on obtient  une *matrice d'expression* (voir tableau ci-dessous).   
@@ -35,14 +35,14 @@ La microfluidique est une technologie manipulant des fluides dans des microcanau
 <div class="figure">     <img src="../images/post27/gem-formation2.gif" />      <div class="legend">Vidéo de microfluidique </br> Source : <a href="https://www.youtube.com/watch?v=zQoHc6PtIFk">Dolomite Microfluidics</a> </div> </div>
 
 ## Chaque cellule a son barcode unique
-Chaque bille (Gel bead) est recouverte  (figure ci-dessous) de séquences adaptatrices uniques contenant un **barcode**, un **[UMI](https://en.wikipedia.org/wiki/Unique_molecular_identifier)** et la **séquence PolyT** .          
+Chaque GEM est recouverte  (figure ci-dessous) de séquences adaptatrices uniques contenant un **barcode**, un **[UMI](https://en.wikipedia.org/wiki/Unique_molecular_identifier)** et la **séquence PolyT** .          
 - Le **barcode** est l'identifiant unique à la bille, et donc unique à la cellule. 10xGenomics propose 750 000 barcodes environ.       
 - L'**UMI** (Unique Molecular Identifiers)  est une courte séquence aléatoire unique  à chaque fragment entourant la bille. Il y a donc plusieurs UMI par bille. Cet identifiant est utilisé pour éviter les biais d'amplifications. Si une séquence est malencontreusement trop amplifiée dans une goutte, elle sera détectée, car le même UMI sera représenté plusieurs fois.    
 - **La séquence polyT** va permettre la fixation des ARNs messagers par complémentarité avec leurs queues polyA.
 
 <div class="figure">     <img src="../images/post27/gem-zoom.png" />      <div class="legend">Zoom sur une GEM et les séquences la recouvrant</br> Source : <a href="https://www.10xgenomics.com/single-cell/">10xGenomics</a> </div> </div>
 
-La réaction de RNA-seq peut alors se faire dans ce microréacteur. Après lyse de la cellule, les ARNs messagers sont capturés à la surface de la bille par leurs queues polyA ett les nouvelles séquences Barcode+UMI+ARNm sont converties en ADNc.
+La réaction de RNA-seq peut alors se faire dans ce microréacteur. Après lyse de la cellule, les ARNs messagers sont capturés à la surface de la GEM par leurs queues polyA. Et les nouvelles séquences Barcode+UMI+ARNm sont converties en ADNc.
 
 ## Création d'une librairie et séquençage 
 Il ne reste plus alors qu'à créer la librairie pour le séquençage. Tous les fragments d'ADNs identifiés par leurs barcodes sont poolés ensemble après avoir enlevé l'huile. Les adaptateurs de séquençage ([Illumina](https://www.youtube.com/watch?v=fCd6B5HRaZ8&t=3s)) sont ajoutés afin d'obtenir la librairie.   
@@ -57,7 +57,7 @@ Chaque point correspond à une cellule. Plus les cellules sont proches sur le gr
 
 <div class="figure">     <img src="../images/post27/blood_example.png" />      <div class="legend">Profil d'expression obtenu à partir des cellules du sang (2,700 cellules mononuclées du sang périphérique <a href="https://fr.wikipedia.org/wiki/Cellule_mononucl%C3%A9%C3%A9e_sanguine_p%C3%A9riph%C3%A9rique)))">PBMC</a>. On visualise après clusterisation les différentes familles.</br> Source : <a href="http://satijalab.org/seurat/get_started_v1_4.html">http://satijalab.org/seurat/get_started_v1_4.html</a></div> </div>
 
-Encore plus parlant, [cette vidéo ](https://www.10xgenomics.com/single-cell/?wvideo=z54e2lemhd) qui montre le profil d'expression des cellules du tissu cérébral dans un repère à 3 axes animés.
+Encore plus parlant, [cette vidéo ](https://www.10xgenomics.com/single-cell/?wvideo=z54e2lemhd) qui montre le profil d'expression des cellules du tissu cérébral dans un repère à 3 axes animé.
 
 ## What next ? 
 À l'heure où j'écrivais ce post, je suis tombé sur un article décrivant la technique [DropNc-Seq](http://www.genengnews.com/gen-news-highlights/single-nucleus-rna-seq-merges-with-microfluidics/81254868). Une méthode similaire à ce qui vient d'être décrit. Mais au lieu des cellules, ce sont les noyaux qui sont isolés pour le séquençage. On obtient alors le transcriptome nucléaire... Cool hein ?     
