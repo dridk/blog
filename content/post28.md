@@ -12,8 +12,6 @@ Ce traitement est une [immunothérapie](https://fr.wikipedia.org/wiki/Immunoth%C
 Elle repose sur ce qu'on appelle un « [transfert adoptif de cellules](https://fr.wikipedia.org/wiki/Transfert_adoptif_de_cellules) ». On prend les cellules immunitaires du patient ([lymphocyte T](https://fr.wikipedia.org/wiki/Lymphocyte_T)), on les modifie génétiquement pour qu'ils ciblent les cellules cancéreuses puis on les réinjecte au patient. Génial non ?     
 Alors, voyons de plus près comment fonctionne cette thérapie étape par étape.
 
-# Le transfert adoptif de cellules
-
 <div class="figure">     <img src="../images/post28/etapes.jpg" />      <div class="legend">Schéma résumant les étapes de la thérapies. Chaque étape est décrit dans le texte <br/> <a href='http://clincancerres.aacrjournals.org/content/22/8/1875'>source de l'image</a></div> </div>
 
 ## Étape 1 : Leucophérèse et enrichissement des lymphocytes
