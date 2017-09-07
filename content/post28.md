@@ -1,5 +1,5 @@
 Title: La thérapie cellulaire adoptive 
-Slug: transfert-adoptif
+Slug: therapie-cellulaire-adoptive
 Date: 2017-09-07 23:34:32
 Tags: thérapie génique,immunologie
 Category: biologie
