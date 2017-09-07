@@ -1,4 +1,4 @@
-Title: Le transfert adoptif de cellules immunitaires génétiquement modifié
+Title: Le transfert adoptif de cellules immunitaires génétiquement modifiées
 Slug: transfert-adoptif
 Date: 2017-09-07 23:34:32
 Tags: thérapie génique,immunologie
