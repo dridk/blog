@@ -33,7 +33,7 @@ C'est maintenant que la manipulation génétique commence. [Un virus ARN](https:
 
 <div class="figure">     <img src="../images/post28/biobiz.jpg" />      <div class="legend">Transfection virale de l'ADN du récepteur chimérique CAR<br/><a href='http://www.the-scientist.com/?articles.view/articleNo/42462/title/The-CAR-T-Cell-Race/'>source de l'image</a></div></div> 
 
-Les *CAR* ou *CAR-T* sont dit chimérique car ils sont constitués artificiellement d'un domaine extramembranaire similaire à la portion variable des anticorps. Et d'une partie intracytoplasmique similiaire aux [recepteurs des cellules T](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_des_cellules_T)  permettant de déclencher le signal d'activation du lymphocyte (un motif [ITAM](https://fr.wikipedia.org/wiki/Motif_d%E2%80%99activation_des_r%C3%A9cepteurs_immuns_bas%C3%A9_sur_la_tyrosine) pour les connaisseurs).   
+Les *CAR* ou *CAR-T* sont dits chimériques car ils sont constitués artificiellement d'un domaine extramembranaire similaire à la portion variable des anticorps. Et d'une partie intracytoplasmique similiaire aux [recepteurs des cellules T](https://fr.wikipedia.org/wiki/R%C3%A9cepteur_des_cellules_T)  permettant de déclencher le signal d'activation du lymphocyte (un motif [ITAM](https://fr.wikipedia.org/wiki/Motif_d%E2%80%99activation_des_r%C3%A9cepteurs_immuns_bas%C3%A9_sur_la_tyrosine) pour les connaisseurs).   
 
 
 <div class="figure">     <img src="../images/post28/CAR-t.jpg" />      <div class="legend">Representation d'un CAR (Chimeric antigen recepteur). En orange le domaine variable (scFC : single chain variable fragment) qui reconnait l'antigène tumoral. Et en bleu la partie intra-cellulaire qui déclenche l'activation du lymphocyte.<br/><a href='http://www.the-scientist.com/?articles.view/articleNo/42462/title/The-CAR-T-Cell-Race/'>source de l'image</a></div> </div>
@@ -41,14 +41,14 @@ Les *CAR* ou *CAR-T* sont dit chimérique car ils sont constitués artificiellem
 
 <div class="figure"> <img src="../images/post28/car.gif" />      <div class="legend"> Il existe différents types de CAR-t<br/><a href='https://jitc.biomedcentral.com/articles/10.1186/s40425-017-0230-9'>source de l'image</a></div></div>
 
-Dans le cas du **Kymriah™**, les *CAR-T* sont conçus pour qu'ils reconnaissent spécifiquement les antigènes [CD-19](https://en.wikipedia.org/wiki/CD19) présent à la surface des cellules cancéreuses (mais aussi des [lymphocytes B normaux](https://fr.wikipedia.org/wiki/Lymphocyte_B)). Lorsque ces nouveaux lymphocytes T génétiquements modifiés seront en contacte avec les cellules cancereuses, ils s'activerons et entrainerons une réponse immunitaire ciblée. 
+Dans le cas du **Kymriah™**, les *CAR-T* sont conçus pour qu'ils reconnaissent spécifiquement les antigènes [CD-19](https://en.wikipedia.org/wiki/CD19) présents à la surface des cellules cancéreuses (mais aussi des [lymphocytes B normaux](https://fr.wikipedia.org/wiki/Lymphocyte_B)). Lorsque ces nouveaux lymphocytes T génétiquements modifiés seront en contact avec les cellules cancereuses, ils s'activeront et entraîneront une réponse immunitaire ciblée. 
 
 ## Étape 4 : Préparation du produit  
 Il ne reste plus qu'à préparer nos cellules pour l'injection. Les billes magnétiques sont retirées. Les microbes éliminés en utilisant des rayons UV. Etape critique, car on s'apprete à réinjecter un produit dans la circulation du patient. 
 
 ## Étape 5 : Adminstration au patient
 Les lymphocytes T génétiquement modifiés sont administrés au patient. En général, le patient est préparé à recevoir le traitement avec une chimiothérapie lympho-déplétive. L'activation des cellules T est aussi soutenue par l'administration d'[interleukine-2](https://fr.wikipedia.org/wiki/Interleukine_2), une molécule stimulant les lymphocytes T.     
-Quant aux effets indésirables, ils existent. Le relargage excessif des cytokines par les lymphocytes T activés est responsable du [syndrome de relargage des cytokines](http://dictionnaire.doctissimo.fr/definition-syndrome-de-relargage-des-cytokines.htm). Et n'oublions pas que ces CAR-T anti-CD19 cible également les lymphocytes B avec le risque d'un déficit de.
+Quant aux effets indésirables, ils existent. Le relargage excessif des cytokines par les lymphocytes T activés est responsable du [syndrome de relargage des cytokines](http://dictionnaire.doctissimo.fr/definition-syndrome-de-relargage-des-cytokines.htm). Et n'oublions pas que ces CAR-T anti-CD19 ciblent également les lymphocytes B avec le risque d'un déficit de.
 
 
 <div class="figure">     <img src="../images/post28/juno-leukapherisis.jpg" />      <div class="legend">Résumé général</div> </div>
@@ -56,7 +56,7 @@ Quant aux effets indésirables, ils existent. Le relargage excessif des cytokine
 
 # Et l'efficacité du traitement ? 
 D'après [cette étude](, https://jhoonline.biomedcentral.com/articles/10.1186/s13045-017-0423-1, ), l'efficacité des *CAR-T* anti-CD19 est vraiment bonne avec **90%** de rémission complète dans la leucémie lymphoïde aiguë.     
-D'autres chercheurs ont déjà essayé la thérapie cellulaire adoptive sur d'autres cancers, notamment les cancers solides. Des résultats concluants ont déjà été obtenu dans le mélanome metastatique. Dans ce cas, les lymphocytes expriment un récepteur reconnaissant des antigènes spécifiques du mélanome ([MART-1](https://en.wikipedia.org/wiki/MLANA)).      
+D'autres chercheurs ont déjà essayé la thérapie cellulaire adoptive sur d'autres cancers, notamment les cancers solides. Des résultats concluants ont déjà été obtenus dans le mélanome metastatique. Dans ce cas, les lymphocytes expriment un récepteur reconnaissant des antigènes spécifiques du mélanome ([MART-1](https://en.wikipedia.org/wiki/MLANA)).      
 
 
 Malheureusement la complexité technique de ces thérapies personnalisées rend inaccessible le traitement. Le Kymiria couterait environ 475 000 dollars!!!
