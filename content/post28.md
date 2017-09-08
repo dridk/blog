@@ -5,7 +5,7 @@ Tags: thérapie génique,immunothérapie,cancer
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/editing_banner.jpg
-Status: Draft
+
 
 C'était [la news](https://www.novartis.com/news/media-releases/novartis-receives-first-ever-fda-approval-car-t-cell-therapy-kymriahtm-ctl019) de la semaine dernière. La première thérapie génique appelée **Kymriah™** a été autorisée aux États-Unis par la [FDA](https://fr.wikipedia.org/wiki/Food_and_Drug_Administration) dans le traitement d'un cancer, en l'occurrence la [leucémie aiguë lymphoblastique](https://fr.wikipedia.org/wiki/Leuc%C3%A9mie#Leuc.C3.A9mies_aigu.C3.ABs_lymphoblastiques). 
 Ce traitement est une [immunothérapie](https://fr.wikipedia.org/wiki/Immunoth%C3%A9rapie) et va plus loin que l'immunothérapie classique à base d'anticorps [anti-CTLA4](https://fr.wikipedia.org/wiki/Ipilimumab)/[anti-PD1](https://fr.wikipedia.org/wiki/Nivolumab) ([Voir la vidéo sur le cancer](https://www.youtube.com/watch?v=gxtqGhhomQE) de [@scienceEtonnante](https://www.youtube.com/user/ScienceEtonnante), il en parle dans sa conclusion).    
