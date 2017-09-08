@@ -25,7 +25,7 @@ On réalise pour cela une [leucophérèse](https://en.wikipedia.org/wiki/Leukaph
 De ces leucocytes, on récupère les lymphocytes T en utilisant [différentes techniques](http://e-sante.futura-sciences.com/_forum/separation-cellules-sang.html) de séparation comme la centrifugation ou encore des [billes magnétiques couplées à des anticorps spécifiques](https://www.ncbi.nlm.nih.gov/pubmed/17680228).
 
 ## Étape 2 : Culture cellulaire
-À partir de là, on a besoin que les cellules se divisent. Un pré-requis pour la [transfection virale](https://fr.wikipedia.org/wiki/Transfection) qui viendra ensuite.   
+À partir de là, on a besoin de mettre les cellules en culture pour qu'elles se divisent . Un pré-requis pour la [transfection virale](https://fr.wikipedia.org/wiki/Transfection) qui fera suite.   
 À l'état normal, les cellules T se divisent après activation par des [cellules présentatrices d'antigènes](https://fr.wikipedia.org/wiki/Cellule_pr%C3%A9sentatrice_d%27antig%C3%A8ne) ou [dendrocytes](https://fr.wikipedia.org/wiki/Cellule_dendritique) (voir [les supers vidéos de @unPeuPointu](https://www.youtube.com/watch?v=Mpn87TQbRJE)). On pourrait en ajouter, mais le risque c'est qu'au moment de la réinjection au patient, ces cellules étrangères déclenchent un rejet immunitaire. On préfère alors utiliser des billes magnétiques recouvertes d'anticorps qui se font passer pour des dendrocytes artificielles. Après l'activation, il suffira de les enlever avec un aimant. 
 
 ## Étape 3 : Transfection virale et récepteurs chimériques 
@@ -48,7 +48,7 @@ Il ne reste plus qu'à préparer nos cellules pour l'injection. Les billes magn�
 
 ## Étape 5 : Adminstration au patient
 Les lymphocytes T génétiquement modifiés sont administrés au patient. En général, le patient est préparé à recevoir le traitement avec une chimiothérapie lympho-déplétive. L'activation des cellules T est aussi soutenue par l'administration d'[interleukine-2](https://fr.wikipedia.org/wiki/Interleukine_2), une molécule stimulant les lymphocytes T.     
-Quant aux effets indésirables, ils existent. Le relargage excessif des cytokines par les lymphocytes T activés est responsable du [syndrome de relargage des cytokines](http://dictionnaire.doctissimo.fr/definition-syndrome-de-relargage-des-cytokines.htm). Et n'oublions pas que ces CAR-T anti-CD19 cible également les lymphocytes B avec le risque d'un déficit de.
+Quant aux effets indésirables, ils existent. Le relargage excessif des cytokines par les lymphocytes T activés est responsable du [syndrome de relargage des cytokines](http://dictionnaire.doctissimo.fr/definition-syndrome-de-relargage-des-cytokines.htm). Et n'oublions pas que ces CAR-T anti-CD19 cible également les lymphocytes B avec le risque d'un déficit de l'immunité.
 
 
 <div class="figure">     <img src="../images/post28/juno-leukapherisis.jpg" />      <div class="legend">Résumé général</div> </div>
