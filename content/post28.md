@@ -11,9 +11,9 @@ C'était [la news](https://www.novartis.com/news/media-releases/novartis-receive
 Ce traitement est une [immunothérapie](https://fr.wikipedia.org/wiki/Immunoth%C3%A9rapie) et va plus loin que l'immunothérapie classique à base d'anticorps [anti-CTLA4](https://fr.wikipedia.org/wiki/Ipilimumab)/[anti-PD1](https://fr.wikipedia.org/wiki/Nivolumab) ([Voir la vidéo sur le cancer](https://www.youtube.com/watch?v=gxtqGhhomQE) de [@scienceEtonnante](https://www.youtube.com/user/ScienceEtonnante), il en parle dans sa conclusion).    
 Elle repose sur ce qu'on appelle un « [transfert adoptif de cellules](https://fr.wikipedia.org/wiki/Transfert_adoptif_de_cellules) »: 
 
-- on prend les cellules immunitaires du patient ([lymphocyte T](https://fr.wikipedia.org/wiki/Lymphocyte_T))
-- on les modifie génétiquement pour qu'ils ciblent les cellules cancéreuses 
-- puis on les réinjecte au patient. 
+- on prend les cellules immunitaires du patient ([lymphocyte T](https://fr.wikipedia.org/wiki/Lymphocyte_T));
+- on les modifie génétiquement pour qu'ils ciblent les cellules cancéreuses; 
+- puis on les réinjecte au patient; 
 
 Génial non ? Alors, voyons de plus près comment fonctionne cette thérapie étape par étape.
 
