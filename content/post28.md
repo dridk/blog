@@ -53,7 +53,7 @@ Quant aux effets indésirables, ils existent. Le relargage excessif des cytokine
 D'après [cette étude](, https://jhoonline.biomedcentral.com/articles/10.1186/s13045-017-0423-1, ), l'efficacité des *CAR-T* anti-CD19 est vraiment bonne avec **90%** de rémission complète dans la leucémie lymphoïde aiguë.     
 D'autres chercheurs ont déjà essayé la thérapie cellulaire adoptive sur d'autres cancers, notamment les cancers solides. Des résultats concluants ont déjà été obtenus dans le mélanome métastatique. Dans ce cas, les lymphocytes expriment un récepteur reconnaissant des antigènes spécifiques du mélanome ([MART-1](https://en.wikipedia.org/wiki/MLANA)).      
 
-Malheureusement la complexité technique de ces thérapies personnalisées rend inaccessible le traitement. Le Kymiria couterait environ 475 000 dollars!!!
+Malheureusement la complexité technique de ces thérapies personnalisées rend inaccessible le traitement. Le **Kymriah™** couterait environ 475 000 dollars!!!
 Avec ce nouveau traitement sur le marché, il y a de quoi creuser les inégalités dans la santé... surtout aux États-Unis.
 
 # Reference
@@ -66,3 +66,4 @@ Avec ce nouveau traitement sur le marché, il y a de quoi creuser les inégalit�
 
 Merci aux relecteurs    
 @Jnsll
+@HervePerdry  
