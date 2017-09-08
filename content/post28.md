@@ -47,7 +47,7 @@ Les lymphocytes T génétiquement modifiés sont administrés au patient. En gé
 Quant aux effets indésirables, ils existent. Le relargage excessif des cytokines par les lymphocytes T activés est responsable du [syndrome de relargage des cytokines](http://dictionnaire.doctissimo.fr/definition-syndrome-de-relargage-des-cytokines.htm). Et n'oublions pas que ces CAR-T anti-CD19 cible également les lymphocytes B avec un risque d'un déficit immunitaire.
 
 
-# Et l'efficacité de traitement ? 
+# Et l'efficacité du traitement ? 
 D'après [cette étude](, https://jhoonline.biomedcentral.com/articles/10.1186/s13045-017-0423-1, ) l'efficacité des *CAR-T* anti-CD19 est vraiment bonne avec **90%** de rémission complète dans la leucémie lymphoïde aiguë.     
 D'autres chercheurs ont déjà essayé la thérapie cellulaire adoptive sur d'autres cancers, notamment les cancers solides. Des résultats concluants ont déjà été obtenu dans le mélanome metastatique. Dans ce cas, les lymphocytes expriment un récepteur reconnaissant des antigènes spécifique au mélanome ([MART-1](https://en.wikipedia.org/wiki/MLANA)).      
 
