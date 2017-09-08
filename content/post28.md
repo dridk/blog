@@ -58,7 +58,7 @@ D'après [cette étude](, https://jhoonline.biomedcentral.com/articles/10.1186/s
 D'autres chercheurs ont déjà essayé la thérapie cellulaire adoptive sur d'autres cancers, notamment les cancers solides. Des résultats concluants ont déjà été obtenus dans le mélanome metastatique. Dans ce cas, les lymphocytes expriment un récepteur reconnaissant des antigènes spécifiques du mélanome ([MART-1](https://en.wikipedia.org/wiki/MLANA)).      
 
 
-Malheureusement la complexité technique de ces thérapies personnalisées rend inaccessible le traitement. Le Kymiria couterait environ 475 000 dollars!!!
+Malheureusement la complexité technique de ces thérapies personnalisées rend inaccessible le traitement. Le Kymria couterait environ 475 000 dollars!!!
 Avec ce nouveau traitement sur le marché, il y a de quoi creuser les inégalités dans la santé... surtout aux Etats-unis.
 
 
