@@ -43,7 +43,7 @@ Il ne reste plus qu'à préparer nos cellules pour l'injection. Les billes magn�
 Le tout emballé pesé prêt pour la livraison...
 
 ## Étape 5 : Adminstration au patient
-Les lymphocytes T génétiquement modifiés sont administrés au patient. En général, le patient est préparé à recevoir le traitement avec une chimiothérapie lympho-déplétive. L'activation des cellules T est aussi soutenue par l'administration d'[interleukine-2](https://fr.wikipedia.org/wiki/Interleukine_2) une molécule stimulant les lymphocytes T.     
+Les lymphocytes T génétiquement modifiés sont administrés au patient. En général, le patient est préparé à recevoir le traitement avec une chimiothérapie lympho-déplétive. L'activation des cellules T est aussi soutenue par l'administration d'[interleukine-2](https://fr.wikipedia.org/wiki/Interleukine_2), une molécule stimulant les lymphocytes T.     
 Quant aux effets indésirables, ils existent. Le relargage excessif des cytokines par les lymphocytes T activés est responsable du [syndrome de relargage des cytokines](http://dictionnaire.doctissimo.fr/definition-syndrome-de-relargage-des-cytokines.htm). Et n'oublions pas que ces CAR-T anti-CD19 cible également les lymphocytes B avec un risque d'un déficit immunitaire.
 
 
