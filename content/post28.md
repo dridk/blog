@@ -1,7 +1,7 @@
 Title: La thérapie cellulaire adoptive 
 Slug: therapie-cellulaire-adoptive
 Date: 2017-09-07 23:34:32
-Tags: thérapie génique,immunologie,cancer
+Tags: thérapie génique,immunothérapie,cancer
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/editing_banner.jpg
