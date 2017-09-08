@@ -71,5 +71,5 @@ Avec ce nouveau traitement sur le marché, il y a de quoi creuser les inégalit�
 - [Safe engineering of CAR T cells for adoptive cell therapy of cancer using long‐term episomal gene transfer](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4931286/)
 - [Chimeric antigen receptor T cells: a novel therapy for solid tumors](https://jhoonline.biomedcentral.com/articles/10.1186/s13045-017-0444-9)
 
-@Merci aux relecteurs
+Merci aux relecteurs    
 @Jnsll
