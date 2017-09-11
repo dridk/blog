@@ -1,6 +1,6 @@
 Title:La sélection génomique de la semaine #3
 Slug: selection-3
-Date: 2017-09-10 23:15:46
+Date: 2017-09-11 12:22:09
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
