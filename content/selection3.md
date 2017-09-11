@@ -9,7 +9,7 @@ summary: Voici ma sélection de l'actualité en génétique/génomique de la sem
 
 Voici ma sélection de l'actualité en génétique/génomique de la semaine du 04/09/2017.
 
-## Craig Venter publie un article montrant qu'il est possible de reconstruire un portrait robot à partir d'un génome... Quelques heures après, le papier se prend une sévère critique.
+## Craig Venter publie un article montrant comment reconstruire un portrait robot à partir d'un génome... Quelques heures après, le papier se prend une sévère critique.
 
 <div class="figure"> <img src="../images/selection3/face.png" />  <div class="legend">SOURCE: PNAS</div>   </div>
 
