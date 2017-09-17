@@ -24,7 +24,7 @@ On réalise pour cela une [leucophérèse](https://en.wikipedia.org/wiki/Leukaph
 De ces leucocytes, on récupère les lymphocytes T en utilisant [différentes techniques](http://e-sante.futura-sciences.com/_forum/separation-cellules-sang.html) de séparation comme la centrifugation ou encore des [billes magnétiques couplées à des anticorps spécifiques](https://www.ncbi.nlm.nih.gov/pubmed/17680228).
 
 ## Étape 2 : Culture cellulaire
-À partir de là, on a besoin de mettre les cellules en culture pour qu'elles se divisent . Un prérequis pour la [transfection virale](https://fr.wikipedia.org/wiki/Transfection) qui fera suite.   
+À partir de là, on a besoin de mettre les cellules en culture pour qu'elles se divisent. Un prérequis pour la [transfection virale](https://fr.wikipedia.org/wiki/Transfection) qui fera suite.   
 À l'état normal, les cellules T se divisent après activation par des [cellules présentatrices d'antigènes](https://fr.wikipedia.org/wiki/Cellule_pr%C3%A9sentatrice_d%27antig%C3%A8ne) ou [dendrocytes](https://fr.wikipedia.org/wiki/Cellule_dendritique) (voir [les supers vidéos de @unPeuPointu](https://www.youtube.com/watch?v=Mpn87TQbRJE)). On pourrait en ajouter, mais le risque c'est qu'au moment de la réinjection au patient, ces cellules étrangères déclenchent un rejet immunitaire. On préfère alors utiliser des billes magnétiques recouvertes d'anticorps qui se font passer pour des dendrocytes artificielles. Après l'activation, il suffira de les enlever avec un aimant. 
 
 ## Étape 3 : Transfection virale et récepteurs chimériques 
@@ -36,7 +36,7 @@ Les *CAR* ou *CAR-T* sont dits chimériques, car ils sont constitués artificiel
 
 <div class="figure">     <img src="../images/post28/CAR-t.jpg" />      <div class="legend">Representation d'un CAR (Chimeric antigen recepteur). En orange le domaine variable (scFC : single chain variable fragment) qui reconnait l'antigène tumoral. Et en bleu la partie intra-cellulaire qui déclenche l'activation du lymphocyte.<br/><a href='http://www.the-scientist.com/?articles.view/articleNo/42462/title/The-CAR-T-Cell-Race/'>source de l'image</a></div> </div>
 
-<div class="figure"> <img src="../images/post28/car.gif" />      <div class="legend"> Il existe différents types de CAR-t<br/><a href='https://jitc.biomedcentral.com/articles/10.1186/s40425-017-0230-9'>source de l'image</a></div></div>
+<div class="figure"> <img src="../images/post28/car.gif" />      <div class="legend"> Il existe différents types de CAR-T<br/><a href='https://jitc.biomedcentral.com/articles/10.1186/s40425-017-0230-9'>source de l'image</a></div></div>
 
 Dans le cas du **Kymriah™**, les *CAR-T* sont conçus pour qu'ils reconnaissent spécifiquement les antigènes [CD-19](https://en.wikipedia.org/wiki/CD19) présents à la surface des cellules cancéreuses (mais aussi des [lymphocytes B normaux](https://fr.wikipedia.org/wiki/Lymphocyte_B)). Lorsque ces nouveaux lymphocytes T génétiquement modifiés seront en contact avec les cellules cancéreuses, ils s'activeront et entraîneront une réponse immunitaire ciblée. 
 
