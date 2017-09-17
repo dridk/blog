@@ -4,8 +4,9 @@ Date: 2017-09-17 12:22:09
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/selection_banner.jpg summary: Voici ma sélection de l'actualité en génétique/génomique de la semaine du 11/09/2017. 
+SIDEBARIMAGE:../images/common/selection_banner.jpg
 summary: Voici ma sélection de l'actualité en génétique/génomique de la semaine du 11/09/2017. 
+
 
 Voici ma sélection de l'actualité en génétique/génomique de la semaine du 11/09/2017.
 
