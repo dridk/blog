@@ -7,12 +7,13 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/editing_banner.jpg
 status:Draft
 
-C'est le 2 Août 1939 qu'Albert Einstein publie une lettre au Président Roosevelt pour le prevenir du risque de voir apparaitre une bombe atomique après la découverte de la réaction en chaine de l'uranium. 
+C'est le 2 Août 1939 qu'Albert Einstein publie une lettre au Président Roosevelt pour le prevenir du risque de voir apparaitre une bombe atomique après la découverte de la réaction en chaine. 
 6 ans plus tard, quasiement jour pour jour, la bombe atomique tombe sur iroshima.   
-Pourquoi je vous parle de ça ? C'est parce qu'aujourd'hui, il est possible de modifier génétiquement toute la population d'un espèces en quelque génération grâce à la technologie gene-drive, encore appellé "the mutagenic chain reaction".   
+Pourquoi je vous parle de ça ? C'est parce qu'aujourd'hui, une nouvelle technologie fait son apparition en biologie moléculaire. Elle permet de modifier génétiquement toute la population d'un espèces en quelque génération. Et ironie du sort, cette technologie s'appelle "the mutagenic chain reaction".
 
 
 # Le principe 
+La chaine de réaction mutagène ... 
 
 # Crispr-Cas9
 
