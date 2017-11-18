@@ -8,7 +8,7 @@ SIDEBARIMAGE:../images/common/editing_banner.jpg
 status:Draft
 
 C'est le 2 août 1939 qu'[Albert Einstein](https://fr.wikipedia.org/wiki/Albert_Einstein) publie [une lettre](http://www.deslettres.fr/lettre-dalbert-einstein-au-president-franklin-d-roosevelt-des-bombes-dun-genre-nouveau-et-dune-extreme-puissance-pourraient-etre-construites/) au [Président Roosevelt](https://fr.wikipedia.org/wiki/Franklin_Delano_Roosevelt) pour le prévenir du risque de voir apparaitre une bombe atomique après la découverte de [la réaction en chaine](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne). 
-6 ans plus tard, quasiment jour pour jour, la bombe atomique tombe sur Hiroshima. Et aujourd'hui l'énergie nucléaire...   
+6 ans plus tard, quasiment jour pour jour, la bombe atomique tombe sur Hiroshima.     
 Pourquoi je vous parle de ça ? C'est parce qu'aujourd'hui, une nouvelle technologie fait son apparition en biologie moléculaire. Elle est tout aussi fascinante qu'effarante, car elle permet de modifier génétiquement toute la population d'une espèce en quelque génération. Et ironie du sort, cette technologie s'appelle MCR: "[Mutagenic Chain Reaction](https://en.wikipedia.org/wiki/Gene_drive)" .
 
 # Le principe 
