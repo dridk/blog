@@ -8,7 +8,7 @@ SIDEBARIMAGE:../images/common/editing_banner.jpg
 status:Draft
 
 C'est le 2 août 1939 qu'[Albert Einstein](https://fr.wikipedia.org/wiki/Albert_Einstein) publie [une lettre](http://www.deslettres.fr/lettre-dalbert-einstein-au-president-franklin-d-roosevelt-des-bombes-dun-genre-nouveau-et-dune-extreme-puissance-pourraient-etre-construites/) au [Président Roosevelt](https://fr.wikipedia.org/wiki/Franklin_Delano_Roosevelt) pour le prévenir du risque de voir apparaitre une bombe atomique après la découverte de [la réaction en chaine](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne). 
-6 ans plus tard, quasiment jour pour jour, la bombe atomique tombe sur Hiroshima.   
+6 ans plus tard, quasiment jour pour jour, la bombe atomique tombe sur Hiroshima. Et aujourd'hui l'énergie nucléaire...   
 Pourquoi je vous parle de ça ? C'est parce qu'aujourd'hui, une nouvelle technologie fait son apparition en biologie moléculaire. Elle est tout aussi fascinante qu'effarante, car elle permet de modifier génétiquement toute la population d'une espèce en quelque génération. Et ironie du sort, cette technologie s'appelle MCR: "[Mutagenic Chain Reaction](https://en.wikipedia.org/wiki/Gene_drive)" .
 
 # Le principe 
@@ -30,8 +30,8 @@ Une des premières applications de cette technologie serait de lutter contre la 
 
 # Le danger ? 
 Les applications de la technologie gène-drive sont infini et nombreux sont ceux qui vont vouloir jouer avec. Que ce soit pour lutter contre des maladies ou pour l'amélioration de l'exploitation agricole. Et pourquoi pas plus tard, pour améliorer l'homme en le rendant plus plus fort et en meilleure santé ?   
-Derrière ces belles promesses, il y aura inévitablement des effets de bords et toutes les précautions devront être prises. Qu'adviendrait-il par exemple si un mauvais gène est introduit dans un gène drive ? Et si le gène passe d'une espèce à l'autre ? Quelles seront les répercussions sur l'écosystème ? Que se passerait-il si une mutation apparait dans une casette avec un effet non escompté ?         
-Bref, une technologie imprédictible à ne pas laisser entre de mauvaises mains ! 
+Derrière ces belles promesses, il y aura, je pense, inévitablement des effets de bords et toutes les précautions devront être prises. Qu'adviendrait-il par exemple si un mauvais gène est introduit dans un gène drive ? Et si le gène passe d'une espèce à l'autre ? Quelles seront les répercussions sur l'écosystème ? Que se passerait-il si une mutation apparait dans une casette avec un effet non escompté ?         
+Une technologie imprédictible dont [le moratoire mondiale a été rejeté](http://www.nature.com/news/gene-drive-moratorium-shot-down-at-un-biodiversity-meeting-1.21216) lors de la réunion de la biodiversité des nations unies en Décembre 2016. 
 
 ## Références
 * [he creation and selection of mutations resistant to a gene drive over multiple generations in the malaria mosquito](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007039)
