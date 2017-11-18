@@ -30,7 +30,7 @@ Une des premières applications de cette technologie serait de lutter contre la 
 
 # Le danger ? 
 Les applications de la technologie gène-drive sont infini et nombreux sont ceux qui vont vouloir jouer avec. Que ce soit pour lutter contre des maladies ou pour l'amélioration de l'exploitation agricole. Et pourquoi pas plus tard, pour améliorer l'homme en le rendant plus plus fort et en meilleure santé ?   
-Derrière ces belles promesses, il y aura inévitablement des effets de bords et toutes les précautions devront être prises. Qu'adviendrait-il par exemple si un mauvais gène est introduit dans un gène drive ? Et si le gène passe d'une espèce à l'autre ? Quelles seront les répercussions sur l'écosystème ? Que se passerait-il si une mutation apparait dans une casette avec un effet non escompté ?         
+Derrière ces belles promesses, il y aura inévitablement des effets de bords et toutes les précautions devront être prises. Qu'adviendrait-il par exemple si un mauvais gène est introduit dans un gène drive ? Et si le gène passe d'une espèce à l'autre ? Quelles seront les répercussions sur l'écosystème ? Que se passerait-il si une mutation apparait dans une cassette avec un effet non escompté ?         
 Bref, une technologie imprédictible à ne pas laisser entre de mauvaises mains ! 
 
 ## Références
