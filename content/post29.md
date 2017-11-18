@@ -7,34 +7,35 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/editing_banner.jpg
 status:Draft
 
-C'est le 2 août 1939 qu'Albert Einstein publie une lettre au Président Roosevelt pour le prévenir du risque de voir apparaitre une bombe atomique après la découverte de la réaction en chaine. 
+C'est le 2 août 1939 qu'[Albert Einstein](https://fr.wikipedia.org/wiki/Albert_Einstein) publie [une lettre](http://www.deslettres.fr/lettre-dalbert-einstein-au-president-franklin-d-roosevelt-des-bombes-dun-genre-nouveau-et-dune-extreme-puissance-pourraient-etre-construites/) au [Président Roosevelt](https://fr.wikipedia.org/wiki/Franklin_Delano_Roosevelt) pour le prévenir du risque de voir apparaitre une bombe atomique après la découverte de [la réaction en chaine](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne). 
 6 ans plus tard, quasiment jour pour jour, la bombe atomique tombe sur Hiroshima.   
-Pourquoi je vous parle de ça ? C'est parce qu'aujourd'hui, une nouvelle technologie fait son apparition en biologie moléculaire. Elle est tout aussi fascinante et effarante, car elle permet de modifier génétiquement toute la population d'une espèce en quelque génération. Et ironie du sort, cette technologie s'appelle "the mutagenic chain reaction" (MCR).
+Pourquoi je vous parle de ça ? C'est parce qu'aujourd'hui, une nouvelle technologie fait son apparition en biologie moléculaire. Elle est tout aussi fascinante qu'effarante, car elle permet de modifier génétiquement toute la population d'une espèce en quelque génération. Et ironie du sort, cette technologie s'appelle MCR: "[Mutagenic Chain Reaction](https://en.wikipedia.org/wiki/Gene_drive)" .
 
 # Le principe 
-Nous et d'autres espèces sexuées sommes diploïdes. C'est-à-dire que nous possédons chacun de nos gènes en deux exemplaires. Une version (allèle) provenant de la mère et l'autre provenant du père. Lors de la formation des gamètes, le mécanisme de méiose choisit aléatoire une version de ce gène pour fabriquer un spermatozoïde ou un ovocyte. Ainsi, lors de la  fécondation, chaque allèle a une chance sur deux de se transmettre à la descendance.      
+Nous et d'autres espèces sexuées sommes [diploïdes](https://fr.wikipedia.org/wiki/Diplo%C3%AFde). C'est-à-dire que nous possédons chacun de nos gènes en deux exemplaires. Une version ([allèle](https://fr.wikipedia.org/wiki/All%C3%A8le)) provenant de la mère et l'autre provenant du père. Lors de la formation des gamètes, le mécanisme de [méiose](https://fr.wikipedia.org/wiki/M%C3%A9iose) choisit aléatoire une version de ce gène pour fabriquer un spermatozoïde ou un ovocyte. Ainsi, lors de la  fécondation, chaque allèle a une chance sur deux de se transmettre à la descendance.      
 La technologie de "forçage génétique" ou "gène drive" biaise ce mécanisme de l'hérédité en rendant le gène souhaité héritable à presque 100%. En quelques générations seulement, un trait génétique peut alors se répandre dans toute la population.   
-Comment ça fonctionne ? Je vous le donne en mille. Encore un coup de ce CRISPR-Cas9 ...
+Comment ça fonctionne ? Je vous le donne en mille. Encore un coup de ce [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9) ...
 
 <div class="figure">     <img src="../images/post29/121215_CRISPR_mosquito_NEW.png" />      <div class="legend">Gauche: Hérérdité normal avec 50% de chance de transmettre un allèle à la prochaine génération. Droite: Hérédité biaisée. 100% de chance de transmettre l'allèle. <a href="https://www.sciencenews.org/">source</a> </div> </div>
 
 # Un gène vraiment égoïste 
 L'idée est de créer un gène artificiel de sorte qu'il puisse détruire son allèle homologue et de s'y copier à la place. 
 Pour cela, on associe au gène d'intérêt, une séquence codant pour l'endonucléase Cas9 ainsi que l'ARN guide qui cible ce même gène. Appelons cet ensemble une "cassette".
-Si dans une cellule, la copie naturelle du gène se retrouve avec cette cassette, il sera localisé et découpé par le complexe Cas9 via son ARN guide. Le trou béant qui en résulte est corrigé en recopiant la séquence homologue du gène disparu qui n'est autre que la séquence du gène artificiel (HDR). On passe d'un état hétérozygote à une cassette à un état homozygote à deux cassettes. Lors de la méiose, la probabilité de transférer ce gène passe ainsi de 50% à 100%.
+Si dans une cellule, la copie naturelle du gène se retrouve avec cette cassette, il sera localisé et découpé par le complexe Cas9 via son ARN guide. Le trou béant qui en résulte est [corrigé en recopiant la séquence homologue](https://fr.wikipedia.org/wiki/Recombinaison_homologue) du gène disparu qui n'est autre que la séquence du gène artificiel. On passe d'un état [hétérozygote](https://fr.wikipedia.org/wiki/H%C3%A9t%C3%A9rozygote) à une cassette à un état [homozygote](https://fr.wikipedia.org/wiki/Homozygote) à deux cassettes. Lors de la fécondation, la probabilité de transférer ce gène passe ainsi de 50% à 100%.
 
-<div class="figure">     <img src="../images/post29/Molecular_mechanism_of_gene_drive.svg.png" />      <div class="legend">Gauche: D'abord création d'un organisme génétiquement modifier. Par exemple, à l'aide d'un vecteur, on peut injecter la cassette dans un embryon qui deviendra homozygote pour la cassette. Droite: Fécondation entre un organisme sauvage et un organisme génétiquement modifié. Sans intervention humaine, l'embryon passe de l'état hétérozygote à homozygote. H1,H2 : site de reconnaissance de l'ARN guide. Payload gene: gène d'intérêt  <a href="https://en.wikipedia.org/wiki/Gene_drive">source</a> </div> </div>
+<div class="figure">     <img src="../images/post29/Molecular_mechanism_of_gene_drive.svg.png" />      <div class="legend">Gauche: D'abord création d'un organisme modifié. Par exemple, à l'aide d'un plasmide, on peut modifier un embryon pour qu'il soit homozygote pour le gène artificiel. Droite: Fécondation entre un organisme sauvage et l'organisme modifié. Sans intervention humaine, l'embryon passe de l'état hétérozygote à homozygote. <br/> H1,H2 : site de reconnaissance de l'ARN guide. Payload gene: gène que l'on désire voir se propager. gRNA: ARN guide. Cas9: endonucléase <a href="https://en.wikipedia.org/wiki/Gene_drive">source</a> </div> </div>
 
 # Un moyen de lutte contre le paludisme
-Une des premières applications de cette technologie serait de lutter contre la propagation du paludisme par les moustiques. Il suffirait d'introduire quelque moustique disposant d'un gène les empêchant de transmettre le parasite. En quelque génération, ce nouveau trait génétique se répandrait dans toute la population. Et cela même si le gène n'apporte aucun avantage au moustique, voire même s’il est délétère dans une moindre mesure.  
+Une des premières applications de cette technologie serait de lutter contre la propagation du [paludisme](https://fr.wikipedia.org/wiki/Paludisme) par les moustiques. Il suffirait d'introduire quelque moustique disposant d'un gène les empêchant de transmettre le parasite. En quelque génération, ce nouveau trait génétique se répandrait dans toute la population. Et cela même si le gène n'apporte aucun avantage au moustique, voire même s’il est délétère dans une moindre mesure.  
 
 # Le danger ? 
-Les applications de la technologie gène drive sont infini et nombreux sont ceux qui vont vouloir jouer avec. Que ce soit pour lutter contre des maladies ou pour l'amélioration de l'exploitation agricole. Et pourquoi pas plus tard, pour améliorer l'homme en le rendre plus plus fort et en meilleure santé.
-Mais derrière ces promesses, il y aura inévitablement des effets de bords et toutes les précautions devront être prises. Qu'adviendrait-il par exemple si un mauvais gène est introduit dans un gène drive ? Et les transferts horizontaux? 
-Bref, une technologie, qui contrairement à la physique, est imprédictible. À ne pas laisser entre de mauvaises mains ! 
+Les applications de la technologie gène-drive sont infini et nombreux sont ceux qui vont vouloir jouer avec. Que ce soit pour lutter contre des maladies ou pour l'amélioration de l'exploitation agricole. Et pourquoi pas plus tard, pour améliorer l'homme en le rendant plus plus fort et en meilleure santé.
+Derrière ces promesses, il y aura inévitablement des effets de bords et toutes les précautions devront être prises. Qu'adviendrait-il par exemple si un mauvais gène est introduit dans un gène drive ? Et les transferts horizontaux? Ou si une mutation apparait ?    
+Bref, une technologie imprédictible à ne pas laisser entre de mauvaises mains ! 
 
 ## Références
 * [he creation and selection of mutations resistant to a gene drive over multiple generations in the malaria mosquito](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007039)
 * [Site-specific selfish genes as tools for the control and genetic engineering of natural populations](http://rspb.royalsocietypublishing.org/content/270/1518/921)
 * [Faut-il relâcher le « gene drive » dans la nature ?](https://www.normalesup.org/~vorgogoz/gene-drive.html )
+* [Modeling the Manipulation of Natural Populations by the Mutagenic Chain Reaction](http://www.genetics.org/content/201/2/425)
 
