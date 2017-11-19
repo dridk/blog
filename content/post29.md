@@ -1,11 +1,10 @@
 Title: Changer l'humanité avec le « gene drive »
 Slug: gene-drive
-Date: 2017-11-18 11:34:32
+Date: 2017-11-19 16:20:32
 Tags: immunothérapie,cancer
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/editing_banner.jpg
-status:Draft
 
 C'est le 2 août 1939 qu'[Albert Einstein](https://fr.wikipedia.org/wiki/Albert_Einstein) publie [une lettre](http://www.deslettres.fr/lettre-dalbert-einstein-au-president-franklin-d-roosevelt-des-bombes-dun-genre-nouveau-et-dune-extreme-puissance-pourraient-etre-construites/) au [Président Roosevelt](https://fr.wikipedia.org/wiki/Franklin_Delano_Roosevelt) pour le prévenir du risque de voir apparaître une bombe atomique après la découverte de [la réaction en chaîne](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne). 
 Six ans plus tard, quasiment jour pour jour, la bombe atomique tombe sur Hiroshima.
@@ -16,14 +15,14 @@ Nous et d'autres espèces sexuées sommes [diploïdes](https://fr.wikipedia.org/
 La technologie de « forçage génétique » ou « *gene drive* » biaise ce mécanisme de l'hérédité en rendant le gène souhaité héritable à presque 100 %. En quelques générations seulement, un trait génétique peut alors se répandre dans toute la population.   
 Comment ça fonctionne ? Je vous le donne en mille. Encore un coup de ce [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9)...
 
-<div class="figure">     <img src="../images/post29/121215_CRISPR_mosquito_NEW.png" />      <div class="legend">À gauche : hérédité normale avec 50 % de chance de transmettre un allèle à la prochaine génération. À droite : hérédité biaisée avec 100 % de chance de transmettre l'allèle. <a href="https://www.sciencenews.org/">source</a> </div> </div>
+<div class="figure">     <img src="../images/post29/CRISP_mosquito_french.png" />      <div class="legend">À gauche : hérédité normale avec 50 % de chance de transmettre un allèle à la prochaine génération. À droite : hérédité biaisée avec 100 % de chance de transmettre l'allèle. <a href="https://www.sciencenews.org/"><br/>source de l'image</a> </div> </div>
 
 ## Un gène vraiment égoïste 
-L'idée est de créer un gène artificiel de sorte qu'il puisse détruire son allèle homologue et s'y copier à la place. 
-Pour cela, on associe au gène d'intérêt une séquence codant pour l'endonucléase [Cas9](https://fr.wikipedia.org/wiki/Cas9) ainsi que l'[ARN guide](https://en.wikipedia.org/wiki/Guide_RNA) qui cible ce même gène. Appelons cet ensemble une « cassette ».
-Si dans une cellule, la copie naturelle du gène se trouve avec cette cassette, elle est localisée et découpée par le complexe Cas9-ARN guide. Le trou béant qui en résulte est [corrigé en recopiant la séquence homologue](https://fr.wikipedia.org/wiki/Recombinaison_homologue) du gène disparu qui n'est autre que la séquence du gène artificiel. On passe d'un état [hétérozygote](https://fr.wikipedia.org/wiki/H%C3%A9t%C3%A9rozygote) à une cassette à un état [homozygote](https://fr.wikipedia.org/wiki/Homozygote) à deux cassettes. Lors de la fécondation, la probabilité de transférer ce gène passe ainsi de 50 % à 100 %.
+L'idée est de créer un gène artificiel de sorte qu'il puisse détruire son allèle homologue sauvage et s'y copier à la place. 
+Pour cela, on associe au gène d'intérêt une séquence codant pour l'endonucléase [Cas9](https://fr.wikipedia.org/wiki/Cas9) ainsi que l'[ARN guide](https://en.wikipedia.org/wiki/Guide_RNA) qui cible le même gène à l'état sauvage grâce à des séquences homologues (H1, et H2 sur le schéma). Cette ensemble s'apelle une « cassette ».
+Si dans une cellule, l'allèle sauvage se trouve avec cette cassette, il est localisé et découpé par le complexe Cas9-ARN guide. Le trou béant qui en résulte est [corrigé en prenant comme modèle la séquence homologue](https://fr.wikipedia.org/wiki/Recombinaison_homologue) de l'allèle disparu qui n'est autre que la séquence de la cassette. On passe d'un état [hétérozygote](https://fr.wikipedia.org/wiki/H%C3%A9t%C3%A9rozygote) à une cassette à un état [homozygote](https://fr.wikipedia.org/wiki/Homozygote) à deux cassettes. Lors de la fécondation, la probabilité de transférer ce nouveau gène passe ainsi de 50 % à 100 %.
 
-<div class="figure">     <img src="../images/post29/Molecular_mechanism_of_gene_drive.svg.png" />      <div class="legend">À gauche : création d'un organisme modifié, par exemple, on peut, à l'aide d'un plasmide, modifier un embryon pour qu'il soit homozygote pour le gène artificiel. À droite : fécondation entre un organisme sauvage et l'organisme modifié. Sans intervention humaine, l'embryon passe de l'état hétérozygote à homozygote. <br/> H1, H2 : site de reconnaissance de l'ARN guide. Payload gene : gène que l'on désire voir se propager. gRNA : ARN guide. Cas9 : endonucléase <a href="https://en.wikipedia.org/wiki/Gene_drive">source</a> </div> </div>
+<div class="figure">     <img src="../images/post29/Molecular_mechanism_of_gene_drive.svg.png" />      <div class="legend">À gauche : création d'un organisme modifié, par exemple, on peut, à l'aide d'un plasmide, modifier un embryon pour qu'il soit homozygote pour le gène artificiel. À droite : fécondation entre un organisme sauvage et l'organisme modifié. Sans intervention humaine, l'embryon passe de l'état hétérozygote à homozygote. <br/> H1, H2 : site de reconnaissance de l'ARN guide. Payload gene : gène que l'on désire voir se propager. gRNA : ARN guide. Cas9 : endonucléase <br/><a href="https://en.wikipedia.org/wiki/Gene_drive">source de l'image</a> </div> </div>
 
 ## Un moyen de lutte contre le paludisme
 Une des premières applications de cette technologie serait de lutter contre la propagation du [paludisme](https://fr.wikipedia.org/wiki/Paludisme) par les moustiques. Il suffirait d'introduire quelques moustiques disposant d'un gène les empêchant de transmettre le parasite. En quelques générations, ce nouveau trait génétique se répandrait dans toute la population. Et cela même si le gène n'apporte aucun avantage au moustique, voire même, si dans une moindre mesure, il est délétère. 
