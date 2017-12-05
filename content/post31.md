@@ -8,12 +8,12 @@ Author: sacha schutz
 Status: Draft 
 
 En médecine, un test est une mesure permettant de classer un patient dans deux groupes distinct. Ceux ayant un test positif et ceux ayant un test négatif. 
-On les trouve à toute les étapes de la démarche médicale. Il y a par exemple un test pour dépistage du cancer du colon ou encore un test pour le diagnostic des angines à streptocoques.
+On les trouve à toute les étapes de la démarche médicale. Il y a par exemple un test pour le dépistage du cancer du colon ou encore un test pour le diagnostic des angines à streptocoques.
 Deux indicateurs sont important afin d'évaluer un test : la sensibilité et la spécificté.    
 Au lieu de vous exposer les formules, je vous propose de vous les expliquer autrement pour en saisir le sens!
 
 
-##Pleurette la sensible 
+##Camille la sensible 
 
 
 <div class="figure">
@@ -22,12 +22,12 @@ Au lieu de vous exposer les formules, je vous propose de vous les expliquer autr
 </div>
 
 Pour attiré plus de client, un cinéma a étiquetté plusieurs des ses affiches comment étant des films tristes. 5 films sont à l'affiche dont 3 "Garantie larme" à 100%.    
-Pour tester ce classements ou (gold standard), nous faisons appel à Pleurette, une fille très sensible qui pleure pour un rien. Pendant le visionnage, Pleurette a pleuré à 4 films. Même à la séance de jurassic parc ou elle n'a pas pu retenir ses émotions en voyant un dinausaure sans défense se faire manger. 
-Pour mettre un indice sur la sensibilité de Pleurette, il suffit de compter à combien de film garantie "larme" elle s'est mise à pleuré. Sur les trois films garantie larme, elle a pleuré au 3. La sensibilité de lucille est de 3/3 = 100%. La formule de la sensibilité s'écris donc : 
-    
+Pour tester ce classements ou (gold standard), nous faisons appel à Camille, une personne très sensible qui pleure très facillement. Pendant le visionnage, Camille a pleuré à 4 films. Même en regardant jurassic park qui ne fait pourtant pas pleurer.
+Pour mettre un indice à la sensibilité de Camille, il suffit de compter à combien de film garantie "larme" elle s'est mise à pleuré. Sur les trois films garantie larme, elle a pleuré au 3. La sensibilité de Camille est de 3/3 = 100%. La formule de la sensibilité peut donc s'écrire: 
+
     Sensibilité = Vrai positif / Tous les Vrai 
 
-Utiliser lucille comme un test garanti que les films ou elle ne pleure pas, ne sont vraiment pas triste.
+Si vous voulez être sur de ne pas passer à cote d'un film triste, demandez à camille. En suivant ses conseils, vous êtes certain de voir tous les films triste. Même si parmis sa liste, certain ne vont feront pas pleurer.
 
 ## Brutus le spécifique   
 
