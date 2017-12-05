@@ -29,15 +29,15 @@ Pour mettre un indice à la sensibilité de Camille, il suffit de compter à com
 
 Si vous voulez être sur de ne pas passer à cote d'un film triste, demandez à camille. En suivant ses conseils, vous êtes certain de voir tous les films triste. Même si parmis sa liste, certain ne vont feront pas pleurer.
 
-## Brutus le spécifique   
+##Amélia le spécifique   
 
 <div class="figure">
     <img src="../images/post31/specificity_movies.png">
     <div class="legend">Schéma de toutes les substitutions possibles. En bleu les transitions , en rouge les transversions. Il y a 2 fois plus de transversions que de transitions</div>
 </div> 
-Un autre cinéma se décide de faire pareil. Mais cette fois en guarantissant des frayeurs à 100%. 4 films sont étiquetté "frisson garanti". Et cette fois-ci, nous faisons appel à Brutus pour le test. Un fan de film d'horreur, difficilement efrayable par quoique ce soit.   
-Après le visionnage, Brutus déclare avoir eu peur à seulement deux films. Le coup de la fille au plafond dans l'exorcisme, il s'en rappelera longtemps. 
-Pour mettre un indice sur la spécificité de Brutus, c'est l'inverse que pleurotte. il faut compter à combien de film non garanti frisson, brutus n'a pas eu peure. 
+Un autre cinéma se décide de faire pareil. Mais cette fois en guarantissant des frayeurs à 100%. 4 films sont étiquetté "frisson garanti". Et cette fois-ci, nous faisons appel à Amélia pour le test. Une fan de film d'horreur, qui aime spécifiquement les films d'épouvante.
+Après le visionnage, Amélia déclare avoir eu peur à seulement deux films. 
+Pour mettre un indice sur la spécificité d'Amélia, c'est l'inverse qu'olivier. il faut compter à combien de film non garanti frisson, brutus n'a pas eu peure. 
 
 
 
