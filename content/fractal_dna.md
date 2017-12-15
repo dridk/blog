@@ -42,7 +42,7 @@ pour comprendre ce graphique, garder à l'esprit qu'à chaque point correspond u
 
 
 
-## Une méthode de compression de l'ADN
+## Une méthode pour compresser l'ADN
 A part être joli, à quoi ça sert ? Et bien plusieurs chose. Cette representation apporte une information globale (sur toutes la séquence) et une information locale (sur le contenu de la séquence). Par exemple, sur la figure suivante, vous pouvez voir un "trou" dans le quart G (supérieur droite). Ce motif se répète à plusieurs échelles ( dans les sous-quarts) et correspond à une dispersion des répétitions CG. (A vrai dire, j'ai encore du mal à intérpréter ce phénomène).  
 
 <div class="figure">
