@@ -44,11 +44,11 @@ On pourrait alors très bien imaginer un algorithme, qui découpe une très long
     Ceci est une séquence de 3072 (1024*3) nucléotides écrit sur une ligne!!!  
     (52332,12313)(5744,14)(1242,75575)
 
-# Source  
+## Source  
 - [lifenscence](http://www.lifenscience.com/bioinformatics/chaos-game-representation)
 - [Chaos game representation of gene structure.(Jeffrey, H. J. 1990).](https://www.ncbi.nlm.nih.gov/pubmed/2336393)
 - [Additive methods for genomic signatures](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1157-8)
 - [Encoding DNA sequences by integer chaos game representation](https://arxiv.org/abs/1712.04546)
 
-# Remerciements
+## Remerciements
 Merci à @Natir pour cette découverte
