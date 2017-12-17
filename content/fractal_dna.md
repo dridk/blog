@@ -1,5 +1,5 @@
-Title: ADN et Jeu du chaos
-Slug: des-fractales-dans-ladn
+Title: ADN et leu du chaos
+Slug: adn-et-jeu-du-chaos
 Date: 2017-12-17 21:30:00
 Tags: algorithme
 Category: biologie, informatique
