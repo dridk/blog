@@ -1,4 +1,4 @@
-Title: ADN et leu du chaos
+Title: ADN et jeu du chaos
 Slug: adn-et-jeu-du-chaos
 Date: 2017-12-17 21:30:00
 Tags: algorithme
