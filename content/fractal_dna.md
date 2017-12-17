@@ -41,7 +41,7 @@ Avec l'algorithme que nous venons de voir et nos ordinateurs actuels nous pouvon
 N'importe quelle séquence de moins de 1024 nucléotides peut ainsi être écrite en utilisant 3 nombres : la longueur de la séquence, et les coordonnées x, y.  
 On pourrait alors très bien imaginer un algorithme, qui découpe une très longue séquence d'ADN en bloc de 1024 nucléotides et compresse chaque morceau mis bout à bout. Génial non ?  
 
-    Exemple d'une séquence de 3072 (1024*3) nucléotides :  
+    Ceci est une séquence de 3072 (1024*3) nucléotides écrit sur une ligne!!!  
     (52332,12313)(5744,14)(1242,75575)
 
 # Source  
