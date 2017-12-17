@@ -2,7 +2,7 @@ Title: ADN et jeu du chaos
 Slug: adn-et-jeu-du-chaos
 Date: 2017-12-17 21:30:00
 Tags: algorithme
-Category: biologie, informatique
+Category: biologie
 Author: Sacha schutz
 
 Vous connaissez le [jeu du chaos](https://fr.wikipedia.org/wiki/Jeu_du_chaos)? Il s'agit d'une construction géométrique très simple permettant de faire apparaitre des fractales. La construction la plus connu est le [triangle de Sierpinski](https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski) que vous pouvez dessiner vous-même avec un papier et un crayon:   
