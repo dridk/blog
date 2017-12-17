@@ -50,3 +50,5 @@ On pourrait alors très bien imaginer un algorithme, qui découpe une très long
 - [Additive methods for genomic signatures](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1157-8)
 - [Encoding DNA sequences by integer chaos game representation](https://arxiv.org/abs/1712.04546)
 
+# Remerciements
+Merci à @Natir pour cette découverte
