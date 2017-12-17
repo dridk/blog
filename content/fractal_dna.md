@@ -39,7 +39,7 @@ On peut s'en servir aussi [comme une signature](https://bmcbioinformatics.biomed
 Mais ce que je préfère c'est l'utilisation de cette algorithme pour compresser une séquence d'ADN. En effet, plus haut je vous ai dit qu'à chaque séquence il y a un unique point. Par exemple avec la séquence ACGT, les coordonnées du dernier point sont unique à la séquence. Il n'y a que la séquence ACGT qui permet de produire ce point. On peut donc représenter n'importe quelle séquence par un couple de coordonnées (x,y) !     
 Avec l'algorithme que nous venons de voir et nos ordinateurs actuels nous pouvons compresser 32 nucléotides en utilisant un couple de nombres à virgule (x,y). C'est pas mal, mais il y a mieux. Un [article récent](https://arxiv.org/abs/1712.04546) montre qu'il est possible de compresser 1024 nucléotides avec un couple d'entiers (x,y) en modifiant la méthode de calcul. Au lieu de calculer le milieu d'un segment, la somme entre les deux points est calculé en utilisant une puissance de 2 dans l'équation.   
 N'importe quelle séquence de moins de 1024 nucléotides peut ainsi être écrite en utilisant 3 nombres : la longueur de la séquence, et les coordonnées x, y.  
-On pourrait alors très bien imaginer un algorithme, qui découpe une très longue séquence d'ADN en bloc de 1024 nucléotides et compresse chaque morceau mis bout à bout. Génial non ?  
+On pourrait alors très bien imaginer un algorithme, qui découpe une très longue séquence d'ADN en bloc de 1024 nucléotides et compresse chaque morceau avec l'ensemble mis bout à bout. Génial non ?  
 
     Ceci est une séquence de 3072 (1024*3) nucléotides écrit sur une ligne!!!  
     (52332,12313)(5744,14)(1242,75575)
