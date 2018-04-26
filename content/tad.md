@@ -8,19 +8,35 @@ Author: Sacha schutz
 Summary: 
 Status: Draft
 
-Intro: 
+Pendant la mitose, le génome des cellules eucaryotes est organisé sous forme de chromosome. Alors que le reste du temps, pendant l'interphase, ce qu'on appelle la chromatine ressemble d'avantage à une sorte de boule de spagetti enchevetré et emmeler de façon aléatoire.    
+Aujourd'hui les technologies de "Chromosom Conformation Capture" nous révèle l'organisation spatiale du génome lors de l'interphase. Et celle-ci, semble loin d'etre aléatoire, mais plutot organiser de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les T.A.D (Topology Assocation Domain). 
 
-Dans le noyau des cellules eucaryotes, le génome à l'état de chromatine semble dépourvu de toute organisation. Même si pendant la mitose, ce génome est structuré rigoursement sous forme de chromosome, le reste du temps, pendant l'interphase, la chromatine ressemble plus à une sorte de boule de spagetti enchevetré et emmeler de façon aléatoire.   
-Aujourd'hui avec les nouvelles technologies de séquençage haut-débit, on arrive à voir l'organisation spatiale du génome . Et elle semble loin d'etre aléatoire, mais plutot organiser de façon fonctionnelle. Et c'est ce que nous allons voir aujourd'hui avec les T.A.D (Topology Assocation Domain). 
+# Chromosome Conformation Capture 
+Il existe aujourd'hui, tout une serie de nouvelle technologie permettant d'évaluer l'organisation spatiale du génome pendant l'interphase. C'est la Capture de Conformation des Chromosomes ( Chromosom Conformation Capture). Cette méthode se décline sous plusieurs forme (3C,4C,5C,HiC,ChiA-PET). Mais toutes, repose sur le même principe qui est d'identifier dans le génome, des régions de contact physique.   
+Imaginez la chromatine, comme un long ruban d'ADN, formant plein de boucle en se repliant sur elle même. Grâce à ces technologies, vous allez pouvoir savoir qu'une région **x** du génome est en contact physique avec une autre région **y**.  
 
-# Nouvelle technologie : Chromosome Conformation Capture 
-Il existe tout une serie de technologie permettant d'évaluer l'organisation spatiale du génome pendant l'interphase. Ce sont les technologies de Capture de Conformation des Chromosomes ( Chromosom Conformation Capture) . Elles sont appelé 3C,4C,5C,HiC,ChiA-PET, mais reposent toute sur le même principe. A savoir l'identification sur la chromatine, de régions en contact physique.    
-Imaginez la chromatine, comme un long ruban d'ADN, formant plein de boucle en se repliant sur elle même. Grâce à ces technologies, vous allez pouvoir savoir qu'une région A du génome est en contact physique avec une autre région B.  
 
-[Dessin] 
+<div class="figure">
+    <img src="../images/tad/principe.png" />
+    <div class="legend">A) Vision linéaire du génome. B) Vision spatiale du génome et identification d'une zone de contacte (orange)</div>
+</div>
 
-Comment ça foncionne ? Grossièrement en deux étapes.  
-Une première étape de capture,  commune aux différentes techniques, qui consiste à dégrader tout l'ADN sauf les régions de contact. Et une deuxième étape d'identification de ces régions qui varient selon les méthodes 3C,4C,5C .. 
+
+## Comment ça foncionne ?
+A partir d'un échantillon d'ADN, vous devez d'abord capturer les régions contact. C'est une étape commune aux differentes techniques. Puis dans un second temps, identifier ces régions selon differentes méthodes. Une simple PCR pour la 3C et un séquençage haut débit pou le Hi-C. C'est ce dernier que nous allons décrire. 
+
+- On "fige" les régions de contact avec du formaldehyde. (cross-linked)
+- On dégrade l'ADN avec des enzyme de restriction
+- On construit une sequence chimer par ligation 
+
+
+<div class="figure">
+    <img src="../images/tad/methode.png" />
+    <div class="legend">A) Vision linéaire du génome. B) Vision spatiale du génome et identification d'une zone de contacte (orange)</div>
+</div>
+
+
+ commune aux différentes méthodes, qui consiste à dégrader l'ADN sauf les régions de contact. Et une deuxième étape d'identification de ces régions qui varient selon les méthodes 3C,4C,5C .. 
 
 - Etape 1 : Capture 
 
@@ -35,8 +51,10 @@ Matrix de correlation
 Bon mais a quoi ca sert ? 
 
 # La formation des TADs
-
+Comment ces structures fonctionne ? 
 
 
 https://bioinfo-fr.net/hi-c-explication-des-bases
 http://atlasgeneticsoncology.org/Educ/ArchitectChromatinID30016FS.html
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874846/figure/F1/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874846/
