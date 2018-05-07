@@ -94,13 +94,6 @@ La formation des TADs a été récemment mise en évidence en validant le modèl
 ## Conclusion 
 La découverte d'une organisation spatiale de la chromatine a changé notre vision du génome. Les chromosomes étaient le support rigide de l'information génétique. Ils sont maintenant les acteurs d'une régulation fine contrôlé par l'épigénétique. L'exploration dans ce domaine nous permettra de mieux comprendre le fonctionnement du génome dans son intégralité, et justifiera certainement le séquençage complet des patients atteints de maladies génétiques.
 
-epigéniétuqe
-sequencage genome complet 
-genome dynamique
-organisation spatial du genome
-
-
-
 
 ## Références
 * [La thèse d'un collègue ](https://dumas.ccsd.cnrs.fr/dumas-01628629/document)
