@@ -8,11 +8,11 @@ Author: Sacha schutz
 Summary: 
 Status: Draft
 
-Pendant la mitose, le génome des cellules eucaryotes est organisé sous forme de chromosome. Alors que le reste du temps, pendant l'interphase, ce qu'on appelle la chromatine ressemble d'avantage à une sorte de boule de spagetti enchevetré et emmeler de façon aléatoire.    
-Aujourd'hui les technologies de "Chromosom Conformation Capture" nous révèle l'organisation spatiale du génome lors de l'interphase. Et celle-ci, semble loin d'etre aléatoire, mais plutot organiser de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les T.A.D (Topology Assocation Domain). 
+Pendant la mitose, le génome des cellules eucaryotes est organisé sous forme de chromosome. Mais le reste du temps, pendant l'interphase, ce qu'on appelle la chromatine ressemble d'avantage à une sorte de boule de spagetti désorganisée et emmelée de façon aléatoire.    
+Aujourd'hui, les technologies de "Chromosom Conformation Capture" nous révèle l'organisation spatiale de la chromatine qui semble loin d'etre aléatoire, mais plutot organiser de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les T.A.D (Topology Assocation Domain). 
 
 # Chromosome Conformation Capture 
-Il existe aujourd'hui, tout une serie de nouvelle technologie permettant d'évaluer l'organisation spatiale du génome pendant l'interphase. C'est la Capture de Conformation des Chromosomes ( Chromosom Conformation Capture). Cette méthode se décline sous plusieurs forme (3C,4C,5C,HiC,ChiA-PET). Mais toutes, repose sur le même principe qui est d'identifier dans le génome, des régions de contact physique.   
+Il existe tout une serie de nouvelle technologie permettant d'évaluer l'organisation spatiale du génome pendant l'interphase. C'est la Capture de Conformation des Chromosomes (Chromosom Conformation Capture). Cette méthode se décline sous plusieurs formes que vous trouverez sous le nom de (3C,4C,5C,HiC,ChiA-PET). Elle repose toutes sur le même principe qui est d'identifier dans le génome, des régions de contact physique.   
 Imaginez la chromatine, comme un long ruban d'ADN, formant plein de boucle en se repliant sur elle même. Grâce à ces technologies, vous allez pouvoir savoir qu'une région **x** du génome est en contact physique avec une autre région **y**.  
 
 
@@ -23,7 +23,10 @@ Imaginez la chromatine, comme un long ruban d'ADN, formant plein de boucle en se
 
 
 ## Comment ça foncionne ?
-A partir d'un échantillon d'ADN, vous devez d'abord capturer les régions contact. C'est une étape commune aux differentes techniques. Puis dans un second temps, identifier ces régions selon differentes méthodes. Une simple PCR pour la 3C et un séquençage haut débit pou le Hi-C. C'est ce dernier que nous allons décrire. 
+Une première étape, commune aux differentes techniques, consiste à figer les régions de ADN qui sont en contact avec du formaldehyde. Cela à pour effet de créer des liaison covalente entre les deux régions d'ADN. C'est le cross-linking.  
+Les 
+
+ Puis dans un second temps, identifier ces régions selon differentes méthodes. Une simple PCR pour la 3C et un séquençage haut débit pou le Hi-C. C'est ce dernier que nous allons décrire. 
 
 - On "fige" les régions de contact avec du formaldehyde. (cross-linked)
 - On dégrade l'ADN avec des enzyme de restriction
