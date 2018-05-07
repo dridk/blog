@@ -23,7 +23,7 @@ Imaginez la chromatine, comme un long ruban d'ADN, formant plein de boucles en s
 
 
 ### Comment ça fonctionne ? 
-L'idée générale consiste à capturer les deux régions d'ADN en contact (**x** et **y**) et construire un fragment d'ADN hybride contenant le fragment **x** à une extrémité et le fragment **y** de l'autre. Ce fragment hybride est alors identifié par différents techniques de biologie moléculaire.            
+L'idée générale consiste à capturer les deux régions d'ADN en contact (**x** et **y**) et construire un fragment d'ADN hybride contenant le fragment **x** à une extrémité et le fragment **y** de l'autre (Figure 2). Ce fragment hybride est alors identifié par différents techniques de biologie moléculaire.            
 Tout d'abord, les régions de contact sont figées en créant des liaisons covalentes grâce à du [formaldéhyde](https://en.wikipedia.org/wiki/Formaldehyde). C'est l'étape du *cross-linking*. L'ADN est ensuite digéré avec des [enzymes de restriction](https://fr.wikipedia.org/wiki/Enzyme_de_restriction) pour ne garder que les régions de contact. On réalise alors une [ligation](https://fr.wikipedia.org/wiki/Ligase) des extrémités du cross-link pour obtenir des fragments d'ADN hybrides.  
 Ces fragments sont identifiés par différentes méthodes de biologie moléculaire. C'est ce qui fait la spécifiée de la méthode. Par exemple, la méthode 3C est une simple [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase) tandis que la méthode [Hi-C](https://en.wikipedia.org/wiki/Chromosome_conformation_capture#Hi-C_(all-vs-all)) est un [séquençage haut débit (voir mon billet)](ngs.html) d'un ensemble de fragments obtenus à partir d'un génome. C'est cette dernière que je vais détailler.
 
@@ -38,9 +38,9 @@ Ces fragments sont identifiés par différentes méthodes de biologie moléculai
 Par exemple, si dans nos données, il existe un read **R1** s'alignant sur le gène *A* et un read **R2** s'alignant sur le gène *B*, nous pouvons "conclure" qu'il y a interaction entre le gène *A* et le gène *B*. 
 
 
-### Visualiser des données Hi-C
+### Visualiser les données Hi-C
 Pour représenter l'ensemble des régions de contact provenant d'une expérience Hi-C, on utilise une carte de chaleur ([heatmap](https://en.wikipedia.org/wiki/Heat_map)). Cette matrice a comme dimensions des régions chromosomiques de taille fixe et comme valeur le nombre de paires de reads observées entre deux régions. Plus la couleur d'une cellule est rouge, et plus il y a d'interaction entre les deux régions correspondant à cette cellule.   
-La figure 3 gauche, montre comment construire une *heatmap* entre deux chromosomes. La figure 3 droite,  montre une *heatmap* sur des données réelles Hi-C entre le chromosome 14 et lui-même. La diagonale rouge vif signifie que les régions très proches dans la séquence, sont en contact physique, ce qui semble logique. Notons par ailleurs que la matrice est symétrique. En effet, "**x**" interagit avec "**y**", c'est la même chose qu’"**y**" interagit avec "**x**". Pour cette raison, on préfère représenter la moitié de la matrice sous forme d'un triangle (figure 4).
+La figure 3 gauche, montre comment construire une *heatmap* pour un chromosome. La figure 3 droite,  montre une *heatmap* sur des données réelles Hi-C pour le chromosome 14. La diagonale rouge vif signifie que les régions très proches dans la séquence, sont en contact physique, ce qui semble logique. Notons par ailleurs que la matrice est symétrique. En effet, "**x**" interagit avec "**y**", c'est la même chose qu’"**y**" interagit avec "**x**". Pour cette raison, on préfère représenter la moitié de la matrice sous forme d'un triangle (figure 4).
 
 
 <div class="figure">
