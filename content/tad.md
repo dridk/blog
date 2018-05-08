@@ -9,16 +9,16 @@ Summary:
 Status: Draft
 
 Lors de la [mitose](https://fr.wikipedia.org/wiki/Mitose), l'ADN des cellules [eucaryotes](https://fr.wikipedia.org/wiki/Eukaryota) s'organise en [chromosomes](https://fr.wikipedia.org/wiki/Chromosome) condensés et bien délimités. C'est l'image que nous avons tous d'un chromosome. Mais le reste du temps, pendant l'[interphase](https://fr.wikipedia.org/wiki/Interphase), ces chromosomes ressemblent davantage à une boule de spaghetti emmêlée dans tous les sens: Ce qu'on appelle la [chromatine](https://fr.wikipedia.org/wiki/Chromatine).   
-Aujourd'hui, les technologies de [Capture de Conformation des Chromosomes](https://en.wikipedia.org/wiki/Chromosome_conformation_capture) nous révèlent l'organisation spatiale de cette chromatine, qui en réalité semble être loin de l'anarchie mais plutôt organisé de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les [TADs](https://en.wikipedia.org/wiki/Topologically_associating_domain) (Topology Assocation Domain).
+Aujourd'hui, les technologies de [Capture de Conformation des Chromosomes](https://en.wikipedia.org/wiki/Chromosome_conformation_capture) nous révèlent l'organisation spatiale de cette chromatine, qui en réalité semble être loin de l'anarchie mais plutôt organisée de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les [TADs](https://en.wikipedia.org/wiki/Topologically_associating_domain) (Topology Assocation Domain).
 
 ## Analyser l'organisation spatiale de la chromatine
 Il existe toute une famille de technologies permettant d'évaluer l'organisation spatiale des chromosomes au moment de l'interphase. C'est la [Capture de Conformation des chromosomes (Chromosom Conformation Capture)](https://en.wikipedia.org/wiki/Chromosome_conformation_capture). Cette méthode se décline sous plusieurs formes que vous trouverez sous le nom de [(3C,4C,5C,HiC,ChiA-PET)](https://en.wikipedia.org/wiki/Chromosome_conformation_capture#Original_methods). Elles reposent toutes sur le même principe qui est d'identifier sur la chromatine, des régions en contact physique. 
-Imaginez la chromatine, comme un long ruban d'ADN, formant plein de boucles en se repliant sur elle même. Par ces technologies, vous allez pouvoir savoir qu'une région **x** de ce ruban est en contact physique avec une autre région **y**.   
+Imaginez la chromatine comme un long ruban d'ADN, formant plein de boucles en se repliant sur elle-même. Par ces technologies, vous allez pouvoir savoir qu'une région **x** de ce ruban est en contact physique avec une autre région **y**.   
 
 
 <div class="figure">
     <img src="../images/tad/principe.png" />
-    <div class="legend">Figure 1. Haut. Vision linéaire du génome. Bas. Vision spatiale du génome et identification d'une zone de contacte (orange)</div>
+    <div class="legend">Figure 1. Haut. Vision linéaire du génome. Bas. Vision spatiale du génome et identification d'une zone de contact (orange)</div>
 </div>
 
 
@@ -29,24 +29,24 @@ Ces fragments peuvent alors être identifiés par les différentes méthodes de 
 
 <div class="figure">
     <img src="../images/tad/methode.png" />
-    <div class="legend">Figure 2. Fixation des régions de contact avec du formaldéhyde (crosslinking) puis digestion de l'ADN avec une enzyme de restriction. Grâce à une ligase, les deux extrémité du cross-link sont reliés. Après un reverse crosslinking, le fragment hybride est obtenue. Celui-ci va pouvoir être séquencé en paired-end sur de  <a href="https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html">l'Illumina</a>. Le read R1 correspondra à la région x et le read R2 à la région y.</div>
+    <div class="legend">Figure 2. Fixation des régions de contact avec du formaldéhyde (cross-linking) puis digestion de l'ADN avec une enzyme de restriction. Grâce à une ligase, les deux extrémités du cross-link sont reliées. Après un reverse cross-linking, le fragment hybride est obtenu. Celui-ci va pouvoir être séquencé en paired-end sur de  <a href="https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html">l'Illumina</a>. Le read R1 correspondra à la région x et le read R2 à la région y.</div>
 </div>
 
 
 ### Méthode Hi-C
-À partir de la méthode décrite ci-dessous, on va pouvoir créer une [libraire](ngs.html) de séquençage. C'est-à-dire générer un ensemble de fragments hybrides correspondant à l'ensemble des zones de contact de la chromatine. Cette librairie peut alors être lu sur un séquenceur [Illumina](https://fr.wikipedia.org/wiki/Illumina) qui a la particularité de faire du [séquençage en paire](https://www.france-genomique.org/spip/spip.php?article235) *(paired-end)*. C'est-à-dire pouvoir lire un fragment d'ADN dans les deux sens. Pour chaque fragment d'ADN lu, nous obtenons une paire de read **R1** et **R2** qui correspondent aux deux régions de contact **x** et **y** (Figure 2). On aligne alors ces reads sur [le génome de référence](naviguer-dans-votre-adn.html) afin de leurs attribuer des coordonnées génomique. Et connaissant les pairs de reads, nous pouvons enfin savoir si une région **x** et un contact avec une région **y**.   
+À partir de la méthode décrite ci-dessous, on va pouvoir créer une [libraire](ngs.html) de séquençage. C'est-à-dire générer un ensemble de fragments hybrides correspondant à l'ensemble des zones de contact de la chromatine. Cette librairie peut alors être lue sur un séquenceur [Illumina](https://fr.wikipedia.org/wiki/Illumina) qui a la particularité de faire du [séquençage en paire](https://www.france-genomique.org/spip/spip.php?article235) *(paired-end)*. C'est-à-dire pouvoir lire un fragment d'ADN dans les deux sens. Pour chaque fragment d'ADN lu, nous obtenons une paire de reads **R1** et **R2** qui correspondent aux deux régions de contact **x** et **y** (Figure 2). On aligne alors ces reads sur [le génome de référence](naviguer-dans-votre-adn.html) afin de leurs attribuer des coordonnées génomiques. Et connaissant les paires de reads, nous pouvons enfin savoir si une région **x** est en contact avec une région **y**.   
 Par exemple, si dans nos données, il existe un read **R1** s'alignant sur le gène *A* et un read **R2** s'alignant sur le gène *B*, nous pouvons "conclure" qu'il y a interaction entre le gène *A* et le gène *B*. 
 
 
 ### Visualiser les données Hi-C
-Pour représenter l'ensemble des régions de contact provenant d'une expérience Hi-C, on utilise une carte de chaleur ([heatmap](https://en.wikipedia.org/wiki/Heat_map)). Cette carte est une matrice n x n montrant le nombre d'interaction entre deux positions donnée du même chromosome. La technologie ne permettant pas d'avoir une résolution à la base exacte, les positions sont des intervalles de taille fixe. 
-La valeur de chaque cellule est le nombre de paires de reads entre deux positions données. Plus la couleur d'une cellule est rouge, et plus il y a d'interaction entre les deux positions correspondant à cette cellule.   
+Pour représenter l'ensemble des régions de contact provenant d'une expérience Hi-C, on utilise une carte de chaleur ([heatmap](https://en.wikipedia.org/wiki/Heat_map)). Cette carte est une matrice n x n montrant le nombre d'interactions entre deux positions données du même chromosome. La technologie ne permettant pas d'avoir une résolution à la base exacte, les positions sont des intervalles de taille fixe. 
+La valeur de chaque cellule est le nombre de paires de reads entre deux positions données. Plus la couleur d'une cellule est rouge, plus il y a d'interaction entre les deux positions correspondant à cette cellule.   
 La figure 3 gauche, montre comment construire une *heatmap* pour un chromosome. La figure 3 droite,  montre une *heatmap* sur des données réelles Hi-C pour le chromosome 14. La diagonale rouge vif signifie que les régions très proches dans la séquence, sont en contact physique, ce qui semble logique. Notons par ailleurs que la matrice est symétrique. En effet, "**x**" interagit avec "**y**", est équivalent à "**y**" interagit avec "**x**". Pour cette raison, on préfère représenter les données Hi-C par une demi *heatmap*, ce qui donne un triangle (figure 4).
 
 
 <div class="figure">
     <img src="../images/tad/tad_correlation_matrix.png" />
-    <div class="legend">Figure 3. Gauche: Le chromosome est découpé en intervalle de taille fixe. Après alignement, chaque read est associé à un intervalle. On comptabilise alors le nombre de paires existants pour deux intervalles données. Sur la figure de gauche, il y a 2 paires entre les deux extrémités "p" et une paire entre l'extrémité "p" et "q". Droite: Donnée réelle Hi-C sur le chromosome 14. Notez la symétrie de la matrice autour de la diagonale ainsi qu'une allure en damier. </div>
+    <div class="legend">Figure 3. Gauche: Le chromosome est découpé en intervalles de taille fixe. Après alignement, chaque read est associé à un intervalle. On comptabilise alors le nombre de paires existantes pour deux intervalles donnés. Sur la figure de gauche, il y a 2 paires entre les deux extrémités "p" et une paire entre l'extrémité "p" et "q". Droite: Donnée réelle Hi-C sur le chromosome 14. Notez la symétrie de la matrice autour de la diagonale ainsi qu'une allure en damier. </div>
 </div>
 
 ##  Les TADs
@@ -55,7 +55,7 @@ En regardant la matrice de plus près (Figure 4), des triangles d'allure fractal
 
 <div class="figure">
     <img src="../images/tad/tad_ex.png" />
-    <div class="legend">Figure 4. Visualisation d'une région du chromosome 3. Les TADs sont des domaines qui interagissent et sont observés ici par des triangles rouges. Sur cette figure, la région x,y et z sont à egal distance l'un de l'autre. Cependant x et y appartiennent au même TAD tandis que z appartient à un autre différent. </div>
+    <div class="legend">Figure 4. Visualisation d'une région du chromosome 3. Les TADs sont des domaines qui interagissent et sont observés ici par des triangles rouges. Sur cette figure, la région x,y et z sont à egale distance les unes des autres. Cependant x et y appartiennent au même TAD tandis que z appartient à un autre différent. </div>
 </div>
 
 
@@ -64,20 +64,20 @@ Aujourd'hui, la fonction des [TAD](https://en.wikipedia.org/wiki/Topologically_a
 
 <div class="figure">
     <img src="../images/tad/regulation.png" />
-    <div class="legend">Figure 5. Schéma de la régulation de la transcription via les amplificateurs. En se répliant, l'ADN met en contact l'amplificateur et le promoteur d'un gène</div>
+    <div class="legend">Figure 5. Schéma de la régulation de la transcription via les amplificateurs. En se répliant, l'ADN met en contact l'amplificateur et le promoteur d'un gène.</div>
 </div>
 
-Il est alors évident que pour agir, un amplificateur doit se situer dans le même TAD que ses gènes cibles. Plusieurs gènes au sein du même TAD peuvent ainsi être corrégulés par le même amplificateur.   
+Il est alors évident que pour agir, un amplificateur doit se situer dans le même TAD que ses gènes cibles. Plusieurs gènes au sein du même TAD peuvent ainsi être co-régulés par le même amplificateur.   
 
 <div class="figure">
     <img src="../images/tad/regulation_tad.png" />
     <div class="legend">Figure 6. Un amplificateur peut interagir avec les gènes de son TAD mais pas avec un autre. </div>
 </div>
 
-Une autre région importante dans la régulation est [l'isolateur (insulator)](https://fr.wikipedia.org/wiki/Isolateur_(biologie)) qui se situe entre deux TAD en empêchant leurs fusions. Une [étude](https://www.ncbi.nlm.nih.gov/pubmed/25701871) a par exemple montré qu'une délétion dans un isolateur est responsable de la fusion de deux TADs en un seul. Les deux noeuds bien distincts ne forment plus qu'un seul gros noeuds. Les enhancers du premier TAD sont alors capable d'interagir avec un gènes du deuxième TAD. Ce qui entraîne sa surexpression qui est délétère pour l'organisme. 
+Une autre région importante dans la régulation est [l'isolateur (insulator)](https://fr.wikipedia.org/wiki/Isolateur_(biologie)) qui se situe entre deux TAD en empêchant leur fusion. Une [étude](https://www.ncbi.nlm.nih.gov/pubmed/25701871) a par exemple montré qu'une délétion dans un isolateur est responsable de la fusion de deux TADs en un seul. Les deux noeuds bien distincts ne forment plus qu'un seul gros noeuds. Les enhancers du premier TAD sont alors capables d'interagir avec un gènes du deuxième TAD, entraînant sa surexpression, ce qui est délétère pour l'organisme. 
 
 ### Formation des TADs
-La formation des TADs a été récemment mise en évidence en validant le modèle de [Loop extrusion](https://www.sciencedirect.com/science/article/pii/S2211124716305307). Ce mécanisme fait intervenir la [cohésine](https://fr.wikipedia.org/wiki/Coh%C3%A9sine) et les protéines [CTCF](https://fr.wikipedia.org/wiki/CTCF) qui reconnaissent des motifs autour des TADs, et font glisser la chromatine au travers d'anneau. Les deux vidéos suivantes vous montrent clairement la formation de ces structures.
+La formation des TADs a été récemment mise en évidence en validant le modèle de [Loop extrusion](https://www.sciencedirect.com/science/article/pii/S2211124716305307). Ce mécanisme fait intervenir la [cohésine](https://fr.wikipedia.org/wiki/Coh%C3%A9sine) et les protéines [CTCF](https://fr.wikipedia.org/wiki/CTCF) qui reconnaissent des motifs autour des TADs, et font glisser la chromatine au travers d'anneaux. Les deux vidéos suivantes vous montrent clairement la formation de ces structures.
 
 <div class="figure">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Tn5qgEqWgW8?start=23" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -92,7 +92,7 @@ La formation des TADs a été récemment mise en évidence en validant le modèl
 
 
 ## Conclusion 
-La découverte d'une organisation spatiale de la chromatine a changé notre vision du génome. Les chromosomes étaient le support rigide de l'information génétique. Ils sont maintenant les acteurs d'une régulation fine contrôlé par l'épigénétique. L'exploration dans ce domaine nous permettra de mieux comprendre le fonctionnement du génome dans son intégralité, et justifiera certainement le séquençage complet des patients atteints de maladies génétiques.
+La découverte d'une organisation spatiale de la chromatine a changé notre vision du génome. Les chromosomes étaient le support rigide de l'information génétique. Ils sont maintenant les acteurs d'une régulation fine contrôlée par l'épigénétique. L'exploration dans ce domaine nous permettra de mieux comprendre le fonctionnement du génome dans son intégralité et justifiera certainement le séquençage complet des patients atteints de maladies génétiques.
 
 epigéniétuqe
 sequencage genome complet 
