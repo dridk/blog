@@ -11,7 +11,7 @@ Afin de réaliser cette transformation (en l'occurrence un fichier hpo.obo en fi
 
 
 ## Imbrication d'ensemble
-Les données dans HPO ressemblent à un arbre. Je me alors suis rappelé d'une méthode pour représenter des données hiérarchisées dans une base de données relationnelle qu'on appelle l'[imbrication d'ensemble](https://fr.wikipedia.org/wiki/Imbrication_d%27ensembles).    
+Les données dans HPO ressemblent à un arbre. Je me suis alors rappelé d'une méthode pour représenter des données hiérarchisées dans une base de données relationnelle qu'on appelle l'[imbrication d'ensemble](https://fr.wikipedia.org/wiki/Imbrication_d%27ensembles).    
 Naïvement, pour sauvegarder un arbre dans une base de donnée SQL on ferait un truc simple de ce genre:
 
     Table Node
