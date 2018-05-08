@@ -99,8 +99,8 @@ Pour sauvegarder cet arbre dans une base de donnée SQL, il faut dans un premier
             tree.node[node_name_2].update({"right": index})
         index+=1
 
-Il suffit alors de reparcourir l'abre et faire des injections SQL en utilisant les champs adequates.   
-Etant donné qu'il y a des noeuds dupliqués, il est plus interessant de créer 2 tables. L'une contenant les noeuds réels (Nodes) et l'autre contenant les noeuds dupliqués (Trees). On peut egalement rajouter comme information la profondeur du noeud dans l'arbre ainsi que son noeud parent.
+Il suffit alors de reparcourir l'arbre et faire des injections SQL en utilisant les champs adéquats.   
+Étant donné qu'il y a des noeuds dupliqués, il est plus intéressant de créer 2 tables. L'une contenant les noeuds réels (Nodes) et l'autre contenant les noeuds dupliqués (Trees). On peut également rajouter comme information la profondeur du noeud dans l'arbre ainsi que son noeud parent.
 
     Table Nodes
     - id        (primary key)
@@ -115,11 +115,13 @@ Etant donné qu'il y a des noeuds dupliqués, il est plus interessant de créer 
     - parent_id (foreign_key)
 
 
-## Hpo2Sqlite sur github
-Le code source pour convertir hpo.obo en hpo.sqlite, ainsi que la base de donnée sqlite sont dispo à ces adresses:
+## Hpo2Sqlite sur github  
+Le code source pour convertir hpo.obo en hpo.sqlite, ainsi que la base de données sqlite sont dispo à ces adresses:
 
 - [https://github.com/dridk/hpo2sqlite](https://github.com/dridk/hpo2sqlite)
 - [https://github.com/dridk/hpo2sqlite/releases](https://github.com/dridk/hpo2sqlite/releases)
+
+Cette méthode est compatible avec l'ontologie HPO parce que toutes les relations sont de type "is_a". Donc en théorie, pour n'importe quelle autre ontologie du même type, cet algorithme peut fonctionner. 
 
 PS: 
 Merci à mes profs Olivier Dameron (ontology) et Emmanuelle Becker (Graphe) de m'avoir appris toutes ces notions!
