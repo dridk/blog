@@ -1,14 +1,19 @@
 Title: Les TADs et l'organisation spatiale du génome
 Slug: tad
+<<<<<<< HEAD
 Date: 2018-05-08 10:00:00
 Modified: 2018-05-08 11:49:32
+=======
+Date: 2018-05-08 11:12:11
+Modified: 2018-05-08 12:32:09
+>>>>>>> ff1cfe57395ee8193a3ecbed4c849cf3578113dc
 Tags: tads,ngs,hi-c
 Category: biologie
 Author: Sacha schutz
 SIDEBARIMAGE:../images/common/tad_banner.png
 
 Lors de la [mitose](https://fr.wikipedia.org/wiki/Mitose), l'ADN des cellules [eucaryotes](https://fr.wikipedia.org/wiki/Eukaryota) s'organise en [chromosomes](https://fr.wikipedia.org/wiki/Chromosome) condensés et bien délimités. C'est l'image que nous avons tous d'un chromosome. Mais le reste du temps, pendant l'[interphase](https://fr.wikipedia.org/wiki/Interphase), ces chromosomes ressemblent davantage à une boule de spaghetti emmêlée dans tous les sens: Ce qu'on appelle la [chromatine](https://fr.wikipedia.org/wiki/Chromatine).   
-Aujourd'hui, les technologies de [Capture de Conformation des Chromosomes](https://en.wikipedia.org/wiki/Chromosome_conformation_capture) nous révèlent l'organisation spatiale de cette chromatine, qui en réalité semble être loin de l'anarchie mais plutôt organisée de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les [TADs](https://en.wikipedia.org/wiki/Topologically_associating_domain) (Topology Assocation Domain).
+Aujourd'hui, les technologies de [Capture de Conformation des Chromosomes](https://en.wikipedia.org/wiki/Chromosome_conformation_capture) nous révèlent l'organisation spatiale de cette chromatine, qui en réalité semble loin de l'anarchie mais plutôt organisée de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les [TADs](https://en.wikipedia.org/wiki/Topologically_associating_domain) (Topology Assocation Domain).
 
 ## Analyser l'organisation spatiale de la chromatine
 Il existe toute une famille de technologies permettant d'évaluer l'organisation spatiale des chromosomes au moment de l'interphase. C'est la [Capture de Conformation des chromosomes (Chromosom Conformation Capture)](https://en.wikipedia.org/wiki/Chromosome_conformation_capture). Cette méthode se décline sous plusieurs formes que vous trouverez sous le nom de [(3C,4C,5C,HiC,ChiA-PET)](https://en.wikipedia.org/wiki/Chromosome_conformation_capture#Original_methods). Elles reposent toutes sur le même principe qui est d'identifier sur la chromatine, des régions en contact physique. 
@@ -73,7 +78,7 @@ Il est alors évident que pour agir, un amplificateur doit se situer dans le mê
     <div class="legend">Figure 6. Un amplificateur peut interagir avec les gènes de son TAD mais pas avec un autre. </div>
 </div>
 
-Une autre région importante dans la régulation est [l'isolateur (insulator)](https://fr.wikipedia.org/wiki/Isolateur_(biologie)) qui se situe entre deux TAD en empêchant leur fusion. Une [étude](https://www.ncbi.nlm.nih.gov/pubmed/25701871) a par exemple montré qu'une délétion dans un isolateur est responsable de la fusion de deux TADs en un seul. Les deux noeuds bien distincts ne forment plus qu'un seul gros noeuds. Les enhancers du premier TAD sont alors capables d'interagir avec un gènes du deuxième TAD, entraînant sa surexpression, ce qui est délétère pour l'organisme. 
+Une autre région importante dans la régulation est [l'isolateur (insulator)](https://fr.wikipedia.org/wiki/Isolateur_(biologie)) qui se situe entre deux TAD en empêchant leur fusion. Une [étude](https://www.ncbi.nlm.nih.gov/pubmed/25701871) a par exemple montré qu'une délétion dans un isolateur est responsable de la fusion de deux TADs en un seul. Les deux noeuds bien distincts ne forment plus qu'un seul gros noeuds. Les enhancers du premier TAD sont alors capables d'interagir avec un gène du deuxième TAD, entraînant une sur-expression délétère pour l'organisme. 
 
 ### Formation des TADs
 La formation des TADs a été récemment mise en évidence en validant le modèle de [Loop extrusion](https://www.sciencedirect.com/science/article/pii/S2211124716305307). Ce mécanisme fait intervenir la [cohésine](https://fr.wikipedia.org/wiki/Coh%C3%A9sine) et les protéines [CTCF](https://fr.wikipedia.org/wiki/CTCF) qui reconnaissent des motifs autour des TADs, et font glisser la chromatine au travers d'anneaux. Les deux vidéos suivantes vous montrent clairement la formation de ces structures.
@@ -91,7 +96,8 @@ La formation des TADs a été récemment mise en évidence en validant le modèl
 
 
 ## Conclusion 
-La découverte d'une organisation spatiale de la chromatine a changé notre vision du génome. Les chromosomes étaient le support rigide de l'information génétique. Ils sont maintenant les acteurs d'une régulation fine contrôlée par l'épigénétique. L'exploration dans ce domaine nous permettra de mieux comprendre le fonctionnement du génome dans son intégralité et justifiera certainement le séquençage complet des patients atteints de maladies génétiques.
+La découverte d'une organisation spatiale de la chromatine a changé notre vision du génome. Les chromosomes étaient le support rigide de l'information génétique. Ils sont maintenant les acteurs d'une régulation fine contrôlé par l'épigénétique. L'exploration dans ce domaine nous permettra de mieux comprendre le fonctionnement du génome dans son intégralité, et justifiera certainement le séquençage complet des patients atteints de maladies génétiques.
+
 
 
 ## Références
