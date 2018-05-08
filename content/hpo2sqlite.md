@@ -98,7 +98,7 @@ Pour sauvegarder cet arbre dans une base de donnée SQL, il faut dans un premier
             tree.node[node_name_2].update({"right": index})
         index+=1
 
-Il suffit alors de reparcourir l'arbre et faire des injections SQL en utilisant les champs adéquats.   
+Au final, il suffit de reparcourir l'arbre et faire des INSERT SQL pour chaque noeud.   
 Étant donné qu'il y a des noeuds dupliqués, il est plus intéressant de créer 2 tables. L'une contenant les noeuds réels (Nodes) et l'autre contenant les noeuds dupliqués (Trees). On peut également rajouter comme information la profondeur du noeud dans l'arbre ainsi que son noeud parent.
 
     Table Nodes
