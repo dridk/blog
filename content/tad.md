@@ -1,12 +1,10 @@
 Title: Les TADs et l'organisation spatiale du génome
 Slug: tad
 Date: 2018-03-27 21:51:09
-Modified: 2018-05-07 19:32:01
+Modified: 2018-05-08 11:49:32
 Tags: tads,ngs,hi-c
 Category: biologie
 Author: Sacha schutz
-Summary: 
-Status: Draft
 SIDEBARIMAGE:../images/common/tad_banner.png
 
 Lors de la [mitose](https://fr.wikipedia.org/wiki/Mitose), l'ADN des cellules [eucaryotes](https://fr.wikipedia.org/wiki/Eukaryota) s'organise en [chromosomes](https://fr.wikipedia.org/wiki/Chromosome) condensés et bien délimités. C'est l'image que nous avons tous d'un chromosome. Mais le reste du temps, pendant l'[interphase](https://fr.wikipedia.org/wiki/Interphase), ces chromosomes ressemblent davantage à une boule de spaghetti emmêlée dans tous les sens: Ce qu'on appelle la [chromatine](https://fr.wikipedia.org/wiki/Chromatine).   
