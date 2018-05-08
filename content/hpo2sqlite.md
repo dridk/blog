@@ -123,4 +123,4 @@ Le code source pour convertir hpo.obo en hpo.sqlite, ainsi que la base de donné
 Cette méthode est compatible avec l'ontologie HPO parce que toutes les relations sont de type "is_a". Donc en théorie, pour n'importe quelle autre ontologie du même type, cet algorithme peut fonctionner. 
 
 PS: 
-Merci à mes profs Olivier Dameron (ontology) et Emmanuelle Becker (Graphe) de m'avoir appris toutes ces notions!
+Merci à mes profs Olivier Dameron (ontologie) et Emmanuelle Becker (Graphe) de m'avoir appris toutes ces notions!
