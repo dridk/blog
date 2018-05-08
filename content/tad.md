@@ -1,12 +1,7 @@
 Title: Les TADs et l'organisation spatiale du génome
 Slug: tad
-<<<<<<< HEAD
-Date: 2018-05-08 10:00:00
-Modified: 2018-05-08 11:49:32
-=======
 Date: 2018-05-08 11:12:11
 Modified: 2018-05-08 12:32:09
->>>>>>> ff1cfe57395ee8193a3ecbed4c849cf3578113dc
 Tags: tads,ngs,hi-c
 Category: biologie
 Author: Sacha schutz
