@@ -42,7 +42,7 @@ Grâce à ça, en une seul requête il est facile d'obtenir tous les enfants d'u
 
 
 ## Convertion d'un DAG en arbre 
-Le problème c'est que l'ontologie HPO n'est pas un arbre. C'est un [graphe orienté acyclique (DAG)](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9_acyclique). C'est-à-dire que certains noeuds peuvent avoir plusieurs parents. Par chance, la lib [graphviz](https://pypi.org/project/graphviz/) en python permet de convertir un DAG en arbre en dupliquant les noeuds qui pose problème.     
+Le problème c'est que l'ontologie HPO n'est pas un arbre. C'est un [graphe orienté acyclique (DAG)](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9_acyclique). C'est-à-dire que certains noeuds peuvent avoir plusieurs parents. Par chance, la lib [networkx](https://networkx.github.io/) en python permet de convertir un DAG en arbre en dupliquant les noeuds qui pose problème.     
 Prenons un graphe simple avec le noeud D ayant deux parents B et C. 
 
     :::python
