@@ -65,8 +65,8 @@ En testant avec différents degrés de liberté :
 
 <div class="figure">     <img src="../images/distribution-ki2/ki2_anim.gif" />      <div class="legend"> Différente distribution de ki2 </div> </div>
 
-Essayer pour voir avec un degré de libérté > 100. Vous constaterez qu'on se retrouve avec une distribution d'allure normale d'espérance k et de variance 2k. 
+Essayer pour voir avec un degré de liberté > 100. Vous constaterez qu'on se retrouve avec une distribution d'allure normale d'espérance k et de variance 2k. 
 
 ## Et donc ? 
-Et bien rien de plus ... En tout cas pour pour le moment. Je voulais surtout comprendre d'ou venait cette loi.   
+Et bien rien de plus ... En tout cas pour le moment. Je voulais surtout comprendre d'ou venait cette loi.   
 Le [test exact de Fisher](https://fr.wikipedia.org/wiki/Test_exact_de_Fisher) ( test de χ2 ) utilise cette distribution pour tester la différence entre des données catégorielles. Je n'ai pas eu le temps de me pencher sur la démonstration mathématique, car ça demande un peu plus de temps. Mais si j'ai la motivation, je compléterai ce billet.
