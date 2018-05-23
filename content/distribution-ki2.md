@@ -25,7 +25,7 @@ Si vous comptez la fréquence de chaque chiffre, c'est à dire combien de fois i
 
 ### La distribution normale 
 On peut très bien imaginer une autre loi aléatoire ou certains nombres sont choisi préférentiellement à d'autres. La [loi normale](https://fr.wikipedia.org/wiki/Loi_normale) en est une. Elle est définie par 2 valeurs ( l'[espérance](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_math%C3%A9matique) et la [variance](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s)) ). Les nombres sont choisis préférentiellement autour de l'espérance et s'écarte plus ou moins fortement avec la variance.  
-Par exemple, pour générer une distribution de 10000 valeurs avec une espérance de 0 et un écart-type de 1, on obtiendrait ça: 
+Par exemple, pour générer une distribution de 10000 valeurs avec une espérance de 0 et une variance de 1, on obtiendrait ça: 
 
     ::python
     import numpy as np
