@@ -53,7 +53,7 @@ Au niveau du code, on peut créer la fonction suivante :
     '''
         X = []
         x = np.random.normal(0,1,size)
-        for i in range(size):
+        for _ in range(size):
             X.append(sum([n*n for n in np.random.choice(x,ddl)]))
         return X
 
