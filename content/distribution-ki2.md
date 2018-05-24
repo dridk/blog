@@ -1,7 +1,7 @@
 Title: La distribution de χ2 
 Slug: la-distribution-de-ki2
 Date: 2018-05-23 22:50:33
-Modified: 2018-05-23 22:50:33
+Modified: 2018-05-25 00:42:07
 Tags: statistique,python
 Category: informatique
 Author: Sacha Schutz
@@ -47,7 +47,7 @@ Recommençons, en calculant X2 avex deux nouveaux tirages
     X2 = xa^2 + xb^2 = (0.45)^2 + (0.26)^2 = 0.27
 
 Puis X3,X4 et ainsi de suite ....     
-Cette nouvelle distribution (X1,X2,X3...) de valeur suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs (xa, xb, xc, xd et xe). C'est simple non ?    
+Cette nouvelle distribution (X1,X2,X3...) suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs (xa, xb, xc, xd et xe). C'est simple non ?    
 Au niveau du code, on peut créer la fonction suivante : 
 
     ::python
