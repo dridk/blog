@@ -43,7 +43,7 @@ Par exemple, tirons aux hasards 2 nombres (xa et xb) depuis la distribution norm
     X1 = x1^2 + x2^2 = (-1.15)^2 + (1.53)^2 = 3.66
 
 Recommençons, ainsi de suite en calculant X2,X3,X4.....   
-Cette nouvelle distribution de valeur suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs. C'est simple non ?    
+Cette nouvelle distribution de valeur suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs (xa, xb, xc, xd et xc). C'est simple non ?    
 Au niveau du code, on peut créer la fonction suivante : 
 
     ::python
