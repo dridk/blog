@@ -15,8 +15,8 @@ Une distribution aléatoire, c'est juste une liste de nombres obtenus par une lo
     import random
     x = []
     for i in range(10000):
-        x.append(random.randint(0,6))
-    #  [2, 1, 0, 3, 5, 0, 2, 3, 0, 3, 3, 1, 5, 1, 1, 5, 3, 4, 4, 1 ....]
+        x.append(random.randint(1,7))
+    #  [2, 1, 6, 3, 5, 6, 2, 3, 6, 3, 3, 1, 5, 1, 1, 5, 3, 4, 4, 1 ....]
 
 Si vous comptez la fréquence de chaque chiffre, c'est à dire combien de fois il y a de 2, de 3 etc ... Vous obtiendrez approximativement 1/6 qui correspond à la probabilité du dé pour chaque chiffre. Cette distribution suit une [loi de probabilité](https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9) dite "[uniforme](https://fr.wikipedia.org/wiki/Loi_uniforme_discr%C3%A8te)". Graphiquement, ça ressemble à ça :
 
@@ -43,7 +43,7 @@ Par exemple, tirons aux hasards 2 nombres (xa et xb) depuis la distribution norm
     X1 = x1^2 + x2^2 = (-1.15)^2 + (1.53)^2 = 3.66
 
 Recommençons, ainsi de suite en calculant X2,X3,X4.....   
-Cette nouvelle distribution de valeur suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs (xa, xb, xc, xd et xc). C'est simple non ?    
+Cette nouvelle distribution de valeur suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs (xa, xb, xc, xd et xe). C'est simple non ?    
 Au niveau du code, on peut créer la fonction suivante : 
 
     ::python
