@@ -40,11 +40,11 @@ Par exemple, pour générer une distribution de 10000 valeurs avec une espéranc
 La distribution de χ2 est obtenu en sommant les carrés de k nombres choisis au hasard dans une distribution normale d'espérance 0 et de variance 1.
 Par exemple, tirons aux hasards 2 nombres (xa et xb) depuis la distribution normale vu précédemment et calculons une nouvelle variable X1 comme étant la somme des carrés de xa et xb: Disons -1.15 et 1.53. 
 
-    X1 = x1^2 + x2^2 = (-1.15)^2 + (1.53)^2 = 3.66
+    X1 = xa^2 + xb^2 = (-1.15)^2 + (1.53)^2 = 3.66
 
 Recommençons, en calculant X2
 
-    X2 = x1^2 + x2^2 = (0.45)^2 + (0.26)^2 = 0.27
+    X2 = xa^2 + xb^2 = (0.45)^2 + (0.26)^2 = 0.27
 
 Puis X3,X4 et ainsi de suite ....     
 Cette nouvelle distribution (X1,X2,X3...) de valeur suit une loi de χ2 et de degré de liberté k=2. Avec un degré de liberté supérieur, disons 5, nous aurions des tirages de 5 valeurs (xa, xb, xc, xd et xe). C'est simple non ?    
