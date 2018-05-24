@@ -42,7 +42,7 @@ Par exemple, tirons aux hasards 2 nombres (xa et xb) depuis la distribution norm
 
     X1 = xa^2 + xb^2 = (-1.15)^2 + (1.53)^2 = 3.66
 
-Recommençons, en calculant X2
+Recommençons, en calculant X2 avex deux nouveaux tirages
 
     X2 = xa^2 + xb^2 = (0.45)^2 + (0.26)^2 = 0.27
 
