@@ -37,7 +37,7 @@ Par exemple, pour générer une distribution de 10000 valeurs avec une espéranc
 <div class="figure">     <img src="../images/distribution-ki2/normal.png" />      <div class="legend"> Distribution normale. La majorité des valeurs tourne autour de 0</div> </div>
 
 ### La distribution de χ2
-La distribution de χ2 est obtenu en sommant les carrés de k nombres choisis au hasard dans une distribution normale d'espérance 0 et de variance 1.
+La distribution de χ2 est obtenu en sommant les carrés de k nombres indépendants choisis au hasard dans une distribution normale d'espérance 0 et de variance 1.
 Par exemple, tirons aux hasards 2 nombres (xa et xb) depuis la distribution normale vu précédemment et calculons une nouvelle variable X1 comme étant la somme des carrés de xa et xb: Disons -1.15 et 1.53. 
 
     X1 = xa^2 + xb^2 = (-1.15)^2 + (1.53)^2 = 3.66
@@ -73,4 +73,4 @@ Essayer pour voir avec un degré de liberté > 100. Vous constaterez qu'on se re
 
 ## Et donc ? 
 Et bien rien de plus ... En tout cas pour le moment. Je voulais surtout comprendre d’où venait cette loi.   
-Le [test exact de Fisher](https://fr.wikipedia.org/wiki/Test_exact_de_Fisher) ( test de χ2 ) utilise cette distribution pour tester la différence entre des données catégorielles. Je n'ai pas eu le temps de me pencher sur la démonstration mathématique, car ça demande un peu plus de temps. Mais si j'ai la motivation, je compléterai ce billet.
+[Le test de χ2 ](https://fr.wikipedia.org/wiki/Test_du_%CF%87%C2%B2) utilise cette distribution pour tester la différence entre des données catégorielles. Je n'ai pas eu le temps de me pencher sur la démonstration mathématique, car ça demande un peu plus de temps. Mais si j'ai la motivation, je compléterai ce billet.
