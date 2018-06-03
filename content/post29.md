@@ -2,7 +2,7 @@ Title: Changer l'humanité avec le « gene drive »
 Slug: gene-drive
 Date: 2017-11-19 23:50:00
 Modified:  2017-11-19 23:50:00
-Tags: immunothérapie,cancer
+Tags: crispr-cas9
 Category: biologie
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/editing_banner.jpg
