@@ -126,7 +126,7 @@ En recherchant la valeur de sigma qui donne la plus grande vraisemblance, on tro
     #x       2.1
     #y   -2157.835771
 
-En traçant la fonction normale avec les paramètres mu=24 et sigma=2.1, on peut dessiner une courbe en cloche qui s'ajuste parfaitement. 
+En traçant la fonction normale avec les paramètres mu=24 et sigma=2.1, on peut alors dessiner une courbe en cloche qui s'ajuste parfaitement. 
 
 <div class="figure">
 <img src="../images/maximum_vraisemblance/adjusted.png" />
