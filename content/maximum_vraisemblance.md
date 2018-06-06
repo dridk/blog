@@ -88,7 +88,7 @@ On peut tout de suite confirmer cette intuition en testant différentes valeurs 
 x = np.arange(1,5,0.1)
 y = []
 for sigma in x:
-    y.append(vraisemblance(data,sigma))
+    y.append(log_vraissemblance(data,sigma))
 
 plt.plot(x,y)
 ```
