@@ -2,7 +2,7 @@ Title: Le maximum de vraisemblance
 Slug: maximum-de-vraissemblance
 Date: 2018-06-05 22:48:39
 Modified: 2018-06-06 23:48:33
-Tags: statistique
+Tags: statistique,python
 Category: informatique
 Author: Sacha schutz
 
