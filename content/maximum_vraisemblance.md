@@ -1,14 +1,13 @@
 Title: Le maximum de vraisemblance
 Slug: maximum-de-vraissemblance
 Date: 2018-06-05 22:48:39
-Modified: 2018-06-05 22:48:39
+Modified: 2018-06-06 23:48:33
 Tags: statistique
 Category: informatique
 Author: Sacha schutz
-Status: Draft
 
-Je continue ma lancée avec ce billet traitant d'un sujet important aussi bien en statistique qu'en intelligence artificielle: **[Le maximum de vraisemblance](https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance)**. Je rappelle que je ne suis ni statisticien ni mathématicien et que j'essaie d'expliquer ces concepts avec un simple regard naïf de programmeur.     
-Le maximum de vraisemblance est une méthode statistique permettant de trouver les paramètres d'un modèle les plus "*vraisemblables*" pour expliquer des données observées. On peut comparer cela avec une [régression linéaire](https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire) où l'objectif est d'identifier les paramètres a et b de l'équation y = ax+b. Dans la suite de ce billet, ce ne sera pas les paramètres d'une droite, mais les paramètres d'une [loi normale](https://fr.wikipedia.org/wiki/Loi_normale) que nous essayerons de déterminer.
+Je continue ma lancée avec ce billet traitant d'un sujet important aussi bien en statistique qu'en intelligence artificielle: **[Le maximum de vraisemblance](https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance)**. Je rappelle que je ne suis ni statisticien ni mathématicien et que j'essaie d'expliquer ces concepts avec un simple regard naïf de programmeur. (C'est à dire sans formule de math ;D).     
+Le maximum de vraisemblance est une méthode statistique permettant de trouver les paramètres d'un modèle de probabilité les plus "*vraisemblables*" pour expliquer des données observées. On peut comparer cela avec une [régression linéaire](https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire) où l'objectif est d'identifier les paramètres a et b de l'équation y = ax+b. Dans la suite de ce billet, ce ne sera pas les paramètres d'une droite, mais les paramètres d'une [loi normale](https://fr.wikipedia.org/wiki/Loi_normale) que nous essayerons de déterminer.
 
 ### Nos données observées
 
@@ -25,11 +24,11 @@ On peut voir ici que la distribution des valeurs suit approximativement une loi 
 
 ### La fonction de la loi normale
 
- La loi normale est une fonction de x à deux paramètres **mu** et **sigma** définissant respectivement le centre de la courbe ([l'espérance](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_math%C3%A9matique)) et sa largeur ([la variance](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s))). 
+ La loi normale a une fonction de densité de probabilité p paramétrée par  **mu** et **sigma** définissant respectivement le centre de la courbe ([l'espérance](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_math%C3%A9matique)) et sa largeur ([la variance](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s))). 
 
 <div class="figure">
 <img src="../images/maximum_vraisemblance/equation.png" />
-<div class="legend">fonction définissant une la loi normale</div>
+<div class="legend">fonction définissant une loi normale</div>
 </div>
 
 En python cette fonction est implémentée dans la librairie [scipy](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.stats.norm.html). Pour tracer cette fonction, il suffit de faire: 
@@ -49,15 +48,15 @@ plt.plot(x,y)
 
 <div class="figure">
 <img src="../images/maximum_vraisemblance/loi_normale.png" />
-<div class="legend">Exemple d'une loi normale d'espérance 0 et de variance 1</div>
+<div class="legend">Différentes lois normales d'espérance mu=0 et de variance sigma=2,3,4 et 5</div>
 </div>
 
 En faisant varier *mu* et *sigma*, vous verrez différentes formes de cloche. Le but est donc de trouver quelles sont les meilleures valeurs de ces deux paramètres pouvant expliquer la distribution de nos données.
 
 ### Calcul de la vraisemblance 
-Pour faire simple, nous allons uniquement évaluer le paramètre *sigma* et fixer *mu* à 24. Il faut d'abord attribuer à chaque valeur possible de *sigma* un indicateur appelé vraisemblance que l'on note *L(sigma)*. Il s'agit du produit de *f(x)* pour toute valeur *x* provenant de nos données observées.
+Pour faire simple, nous allons uniquement évaluer le paramètre *sigma* et fixer *mu* à 24. Pour cela, on va d'abord attribuer à chaque valeur possible de *sigma* un indicateur appelé **vraisemblance** que l'on note *L(sigma)*. Cette indicateur est la probabilité d'obtenir notre distribution des âges sous le paramètre *sigma*. Il s'obtient en faisant le produit de la fonction *p(x)* pour toute valeur *x* provenant de nos données observées.
 
-    L(sigma) = f(x1) * f(x2) * f(x3) * .... 
+    L(sigma) = p(x1) * p(x2) * p(x3) * .... 
 
 Son implémentation en python est la suivante : 
 
@@ -126,7 +125,7 @@ En recherchant la valeur de sigma qui donne la plus grande vraisemblance, on tro
     #x       2.1
     #y   -2157.835771
 
-En traçant la fonction normale avec les paramètres mu=24 et sigma=2.1, on peut alors dessiner une courbe en cloche qui s'ajuste parfaitement. 
+On peut alors traçer sur la distribution des âges, une fonction normale d'esperance *mu*=24 et de variance prédis *sigma*=2.1. Vous constaterez alors que la courbe en cloche s'ajuste parfaitement aux données. Et voilà ! 
 
 <div class="figure">
 <img src="../images/maximum_vraisemblance/adjusted.png" />
@@ -135,4 +134,8 @@ En traçant la fonction normale avec les paramètres mu=24 et sigma=2.1, on peut
 
 
 ### Conclusion
-Le maximum de vraisemblance permet de faire beaucoup plus de choses bien plus stylées. Il est par exemple impliqué dans [l'algorithme d'espérance-maximisation](https://fr.wikipedia.org/wiki/Algorithme_esp%C3%A9rance-maximisation) permettant par exemple d'extraire deux lois normales à partir d'un jeu de données mélangées. J'y reviendrai.. Quand j'aurais bien compris ! 
+L'utilisation dans ce billet d'un algorithme itératif, pour trouver sigma, n'a qu'un but pédagogique. En réalité, pour une loi normale, le maximum de vraisemblance se calcule de manière analytique. C'est à dire avec une formule mathématique. ( il suffit de calculer le point ou la dérivé de L(sigma) s'annule). Vous trouverez une démonstration [ici](http://www.jybaudot.fr/Inferentielle/exmaxvrais.html) pour la loi normale et la loi exponentielle .   
+En revanche pour des lois plus complexes, on peut être amené à utiliser [l'algorithme d'espérance-maximisation](https://fr.wikipedia.org/wiki/Algorithme_esp%C3%A9rance-maximisation) qui permet par exemple d'extraire deux lois normales à partir d'un jeu de données mélangées. J'y reviendrai.. Quand j'aurais bien compris ! 
+
+
+Merci à @andré pour la relecture ! 
