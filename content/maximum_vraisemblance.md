@@ -4,14 +4,14 @@ Date: 2018-06-05 22:48:39
 Modified: 2018-06-06 23:48:33
 Tags: statistique,python
 Category: informatique
-Author: Sacha schutz
+Author: Sacha Schutz
 
 Je continue ma lancée avec ce billet traitant d'un sujet important aussi bien en statistique qu'en intelligence artificielle: **[Le maximum de vraisemblance](https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance)**. Je rappelle que je ne suis ni statisticien ni mathématicien et que j'essaie d'expliquer ces concepts avec un simple regard naïf de programmeur. (C'est à dire sans formule de math ;D).     
 Le maximum de vraisemblance est une méthode statistique permettant de trouver les paramètres d'un modèle de probabilité les plus "*vraisemblables*" pour expliquer des données observées. On peut comparer cela avec une [régression linéaire](https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire) où l'objectif est d'identifier les paramètres a et b de l'équation y = ax+b. Dans la suite de ce billet, ce ne sera pas les paramètres d'une droite, mais les paramètres d'une [loi normale](https://fr.wikipedia.org/wiki/Loi_normale) que nous essayerons de déterminer.
 
 ### Nos données observées
 
-Imaginons une série de valeur, disons l'âge de 1000 étudiants pris au hasard dans une fac. En traçant l'histogramme de ces données, nous obtenons : 
+Imaginons une série de valeurs, disons l'âge de 1000 étudiants pris au hasard dans une fac. En traçant l'histogramme de ces données, nous obtenons : 
 
     data  = np.random.normal(24, MYSTERE ,1000)
 
@@ -20,18 +20,18 @@ Imaginons une série de valeur, disons l'âge de 1000 étudiants pris au hasard 
 <div class="legend">distribution des âges suivant une loi normale. Les données ont été générées avec np.random.normal. Le paramètre MYSTERE a volontairement été caché</div>
 </div>
 
-On peut voir ici que la distribution des valeurs suit approximativement une loi normale avec une moyenne aux alentours de 24 et un écart type difficile à évaluer au premier coup d'oeil. Ce dernier est le paramètre MYSTERE que nous allons découvrir en cherchant l'équation de la loi normale qui s'ajuste au mieux aux données.
+On peut voir ici que la distribution des valeurs suit approximativement une loi normale avec une moyenne aux alentours de 24 et un écart-type difficile à évaluer au premier coup d'œil. Ce dernier est le paramètre MYSTERE que nous allons découvrir en cherchant l'équation de la loi normale qui s'ajuste au mieux aux données.
 
 ### La fonction de la loi normale
 
- La loi normale a une fonction de densité de probabilité p paramétrée par  **mu** et **sigma** définissant respectivement le centre de la courbe ([l'espérance](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_math%C3%A9matique)) et sa largeur ([la variance](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s))). 
+La loi normale a une fonction de densité de probabilité p paramétrée par **mu** et **sigma** définissant respectivement le centre de la courbe ([l'espérance](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_math%C3%A9matique)) et sa largeur ([la variance](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s))). 
 
 <div class="figure">
 <img src="../images/maximum_vraisemblance/equation.png" />
 <div class="legend">fonction définissant une loi normale</div>
 </div>
 
-En python cette fonction est implémentée dans la librairie [scipy](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.stats.norm.html). Pour tracer cette fonction, il suffit de faire: 
+En python cette fonction est implémentée dans la librairie [scipy](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.stats.norm.html). Pour tracer cette fonction, il suffit de faire :
 
 ```python
 import scipy 
@@ -98,7 +98,7 @@ plt.plot(x,y)
 <div class="legend">Vraisemblance en fonction de sigma</div>
 </div>
 
-En recherchant la valeur de sigma qui donne la plus grande vraisemblance, on trouve sigma ~ 2.1
+En recherchant la valeur de sigma qui donne la plus grande vraisemblance, on trouve sigma ~ 2,1
 
     import pandas as pd
     df=  pd.DataFrame({"x":x,"y":y})
@@ -134,8 +134,8 @@ On peut alors traçer sur la distribution des âges, une fonction normale d'espe
 
 
 ### Conclusion
-L'utilisation dans ce billet d'un algorithme itératif, pour trouver sigma, n'a qu'un but pédagogique. En réalité, pour une loi normale, le maximum de vraisemblance se calcule de manière analytique. C'est à dire avec une formule mathématique. ( il suffit de calculer le point ou la dérivé de L(sigma) s'annule). Vous trouverez une démonstration [ici](http://www.jybaudot.fr/Inferentielle/exmaxvrais.html) pour la loi normale et la loi exponentielle .   
-En revanche pour des lois plus complexes, on peut être amené à utiliser [l'algorithme d'espérance-maximisation](https://fr.wikipedia.org/wiki/Algorithme_esp%C3%A9rance-maximisation) qui permet par exemple d'extraire deux lois normales à partir d'un jeu de données mélangées. J'y reviendrai.. Quand j'aurais bien compris ! 
+L'utilisation dans ce billet d'un algorithme itératif, pour trouver sigma, n'a qu'un but pédagogique. En réalité, pour une loi normale, le maximum de vraisemblance se calcule de manière analytique. C'est à dire avec une formule mathématique. (Il suffit de calculer le point ou la dérivé de L(sigma) s'annule.) Vous trouverez une démonstration [ici](http://www.jybaudot.fr/Inferentielle/exmaxvrais.html) pour la loi normale et la loi exponentielle.
+En revanche pour des lois plus complexes, on peut être amené à utiliser [l'algorithme d'espérance-maximisation](https://fr.wikipedia.org/wiki/Algorithme_esp%C3%A9rance-maximisation) qui permet par exemple d'extraire deux lois normales à partir d'un jeu de données mélangées. J'y reviendrai… Quand j'aurais bien compris !
 
 
-Merci à @andré pour la relecture ! 
+Merci à @andré pour la relecture !
