@@ -49,7 +49,7 @@ Revenons à nos 10 individus et mettons nous à compter.
 #### Combien de personne ont un test positif? 
 <div class="figure">
 <img src="../images/bayes/test_count.gif" width="250px" />
-<p>5 personnes sur 10 un un test postif. Soit p(T) = 5/10</p>
+<p>5 personnes sur 10 ont un test postif. Soit p(T) = 5/10</p>
 </div>
 
 
@@ -74,7 +74,7 @@ Soit p(M|T) = p(M et T) / p(T) = 4 / 5</p>
 <div class="figure">
 <img src="../images/bayes/test_in_sick.gif" width="250px" />
 <p>Parmi les 6 malades, 4 ont un test positif. <br/>
-Soit p(T|M) = p(M et T) / p(M) = 4 / 5</p>
+Soit p(T|M) = p(M et T) / p(M) = 4 / 5. Notez ici, qu'il s'agit de la même chose que la sensibilité </p>
 </div>
 
 ## Et la formule de Bayes surgit 
@@ -88,18 +88,23 @@ Soit p(M et T) = 4/10 </p>
 
 En remplacant ce terme, nous pouvons ainsi exprimer p(M|T) en fonction de p(T|M).
 
+    On a :
     p(T|M)    = p(M et T) / p(M)
+
+    et donc:
     p(M et T) = p(M) * p(T|M)
+
+    en remplacant :
     p(M|T)    = p(M) * p(T|M) / p(T)
 
-Et nous voilà avec l'équation du théorème de Bayes qui se généralise comme suite
+Et nous voilà alors avec la fameuse formule de Bayes qui se généralise comme suite
 
-<div class="figure">
-<img src="../images/bayes/bayes.jpg" />
+<center>
+<img src="../images/bayes/bayes.gif" />
 <p></p>
-</div>
+</center>
 
-On peut tester tout de suite sur nos 10 individus et voir que nous trouvons par le calcul ce que nous avions observé.
+On peut tout de suite verifier sur nos 10 individus que nous trouvons par le calcul la même chose que ce que nous avons observé.
 
     p(M)    = 6/10
     p(T)    = 5/10
@@ -107,8 +112,36 @@ On peut tester tout de suite sur nos 10 individus et voir que nous trouvons par 
     p(M/T)  = (p(T/M) * p(M)) / p(T) = 6/10 * 4/6 / 5/10 = 4/5
  
 
-## Le théoreme de Bayes
-Dans la mucovisidose, 
+## Application du théorème
+En pratique, on utilise le théorème de Bayes en médecine pour estimer le risque qu'un individu soit malade sachant que son test est positif.
+Malheuresement, nous n'avons pas toutes les informations pour appliquer la formule de Bayes aussi facilement que dans nos exemples.   
+Les informations que nous avons à disposition sont la prévalence de la maladie dans la population p(M) et la sensibilité du test qui n'est autre que p(T|M).
+Il reste juste à estimer p(T).
+
+<div class="figure">
+<img src="../images/bayes/final.png" />
+<p>p(T) est la somme de A et B sur les 10 individus</p>
+</div>
+
+p(T) se calcul en sommant p(M et T) et p (non M et T). Et comme vu précédement, nous pouvons expirmer chacun de ces termes par : 
+
+    p(M et T)     = p(M) * (T|M)
+    p(non M et T) = p(non M) * (T|non M)
+
+On peut alors formuler la loi total de Bayes :
+
+<center>
+<img src="../images/bayes/total_bayes.gif" />
+<p>p(T) est la somme de A et B sur les 10 individus</p>
+</center>
+
+Exemple dépistage de la muco : 
 
 
+## Conclusion 
+Après avoir enfin compris le théorème de Bayes en le visualisant, j'espère pouvoir bientôt entrer dans le cercle des Bayesiens. Et d'un coup de baguette, appliquer cette formule pour résoudre un tas de problème de bioinfo et peut être même changer mon raisonnement. Car en effet, je sais pas si vous connaissez le problème de Monty Hall, mais seul des bayesiens trouvent ça logique ! 
+
+
+
+ 
 http://folk.uio.no/jonmic/Statkurs/03%20-%20Bayes%20law.%20Sensitivity,%20specificity.pdf
