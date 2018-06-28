@@ -2,19 +2,16 @@ Title: Le théorème de Bayes en image
 Slug: le-théorème-de-bayes-en-image
 Date: 2018-06-26 23:18:50
 Modified: 2018-06-26 23:18:50
-Tags: 
-Category: 
-Author: 
-Lang: 
-Summary: 
+Tags: statistique, épidémiologie
+Category: informatique
+Author: Sacha schutz
 Status: Draft
 
-Je me rappel au lycée avoir beaucoup de mal avec les probabilités. C'était un concepte un peu abstrait et je preferai neterement l'aglèbre linéaire que je pouvais facilement visualisé. C'est plus tard lorsque j'ai compris que les probablités n'étaient qu'histoire de dénombrer tous les cas possibles d'un évenement que j'ai pu correctement visualisé et progressé. Par exemple, si vous voulez savoir la probabilité que la somme de deux dés lancé soit égal 6, il suffit de désinner une matrice avec tous les cas possibles et de compter les cases.    
-J'étais assez content de cette vision de pensé qui est une conception des probablités qu'on appelle "fréquentiste". Sauf que voilà, il y a une autre conception des probabilités que je vois apparaitre partout. Que ce soit en biologie (calcul de risque suite à un test biologique) ou en bioinformatique ( intelligence artificiel, analyse du language naturel, reconstruction phylogénétique ). Cette conception c'est le Bayésianisme, un raisonement basé sur le théorème de Bayes. Et en croire certain youtubeur (Lee & truc), cette vision des probablités à l'effet d'un shoot de drogue passé en intraveineuse directement dans le le lobe raison! Donc forcément, j'ai voulu comprendre. Et vous savez quoi ? J'ai rien compris en lisant les différentes démonstrations de la formule de Bayes. Etonnement, c'est seulement en reprennant ma casquette de fréquentiste et en faisant un joli dessin que tout c'est éclairé! Voici donc la démonstration de la formule de Bayes façon biologiste ! 
+J'ai longtemps galéré avec les probabilités. C'est assez tard que j'ai compris qu'il s'agissait juste d'un problème de dénombrement. Par exemple, si vous chercher à savoir la probabilité pour que la somme de deux dés lancé soit égal 8, il suffit de désiner une matrice 6x6 contenant toutes les combinaison possible et de compter les cases contenant un 8. J'étais assez content de cette conception des probabilités qu'on appelle "fréquentiste". Sauf que voilà, il y a une autre vision des probabilités que l'on trouve partout en informatique. En intelligence artificiel, dans la reconstruction des arbres phylogénétique, dans l'analyse naturel du language ou même dans la détection des mutations génétique sur des données de séquençage haut débit. Cette conception c'est le Bayésianisme, un raisonement basé sur le théorème de Bayes. Et en croire certain youtubeur (Lee & truc), cette vision des probablités à l'effet d'un shoot de cocaïne accompagné d'un massage taillandais! Donc forcément, j'ai voulu la comprendre. Et vous savez quoi ? J'ai rien compris en lisant les différentes démonstrations de la formule de Bayes. Etonnement, c'est seulement en reprennant ma casquette de fréquentiste et en faisant de joli dessin que tout c'est éclairé! C'est ce que je vais vous partager maintenant. 
 
 ## Des malades et un test biologique 
-Dans le livre de Lee et la vidéo de truc, la démonstration de la formule  s'aide d'un exemple avec des patients et un test biologique. On va reprendre cette exemple en faisant un schéma et en utilisant les bon mots.
-Voici 10 individus dont 4 sont malades. Sont entouré les individus dont le test grippal est positif. 
+Sur internet, les différentes démonstrations de la formule s'aide d'un exemple avec des patients et un test biologique. On va donc reprendre cette exemple en s'aidant d'un schéma et en utilisant les bons mots.
+Voici donc 10 individus dont 4 sont malades. Sont entouré les individus dont le test biologique ( par exemple un test grippal) est positif. 
 
 <div class="figure">
 <img src="../images/bayes/intro.png" />
@@ -23,20 +20,31 @@ Voici 10 individus dont 4 sont malades. Sont entouré les individus dont le test
 
 
 ### Sensibilité et Spécificité d'un test 
-Une petit apparté sur l'efficacité d'un test qui s'évalue à l'aide de deux grandeurs. La sensibilité et la spécificité. 
-un test sensible nous assure que que tous les malades sont détécté quite à avoir des faux positif. Sa formule s'écrit : Sens = VP / VP + FN
-Un test spécifique nous assure qu'aucun patient sain n'est détécté quite à avoir des faux négatif. Sa formule s'écrit : Spec = VN / VN + FP
+Commencons par une petite apparté sur l'efficacité d'un test qui s'évalue à l'aide de deux grandeurs. La sensibilité et la spécificité. 
+un test sensible nous assure que que tous les malades sont détécté quite à avoir des faux positif. Sa formule s'écrit:
+
+    Sensibilité = Vrai positif / Tous les malades 
+    Ou encore 
+    Sensibilité = Vrai positif / (Vrai positif + Faux négatif)
+
+Un test spécifique nous assure qu'aucun patient sain n'est détécté quite à avoir des faux négatif. Sa formule s'écrit: 
+
+    Specificité = Vrai négatif / Tous les sains 
+    Ou encore 
+    Spécificité = Vrai négatif / ( Vrai négatif + Faux positif)
+
+Une image vaut mieux que des formules ...
 
 <div class="figure">
 <img src="../images/bayes/sens_spec.png" />
-<div class="legend">Différentes lois normales d'espérance mu=0 et de variance sigma=2,3,4 et 5</div>
+<div class="legend">Sensibilité et spécificité d'un test biologique. Un test sensibilité détecte tous les malades. Un test spécifique ne se positive jamais chez des patients sains</div>
 </div>
 
-L'idéal serait d'avoir un test avec une sensibilité et une spécificité de 100% et dans la réalité c'est rarement le cas. 
-En pratique, les test sensible sont utilisé pour faire du dépistage ( un test de grossesse sur les urines ) sur une population, pour ensuite faire un diagnostic avec un test spécifique (beta hCG sur une prise de sang ). 
+L'idéal est d'avoir un test avec une sensibilité et une spécificité de 100%. Mais en pratique, c'est rarement le cas et le test est choisi en fonction de l'utilisation. Un test sensibile est utilisé pour faire du dépistage sur une population( un test de grossesse sur les urines ), tandis qu'un test spécifique est utilisé pour faire du diagnostique sur des patients ciblés (beta hCG sur une prise de sang ).    
+Gardons cela en tête, car çela servira pour la suite.
 
-## Il suffit de compter 
-Revenons à nos 10 individus et mettons nous à compter.
+## Il suffit de savoir compter 
+Revenons à nos 10 individus et posons nous les questions suivantes.
 
 #### Combien avons nous de malade ? 
 
@@ -52,41 +60,33 @@ Revenons à nos 10 individus et mettons nous à compter.
 <p>5 personnes sur 10 ont un test postif. Soit p(T) = 5/10</p>
 </div>
 
-
-Maintenant passons au probabilité conditionnelle. Et pour cela, voici une subtilité du language que je vous conseil d'utiliser dans ces exemples.
-
+#### Combien de personne sont malade ET avec un test positif? 
 <div class="figure">
-<quote><b>Ne dite pas</b> 
-<i>« La probablité de A sachant B »</i>
-<b>Mais</b>  
-<i>« La probabilité de A parmi B »</i>
-</quote>
+<img src="../images/bayes/inter_count.gif" width="250px" />
+<p>4 personnes sur 10 sont malade avec un test postif. Soit p(M et T) = 4/10</p>
 </div>
 
-#### Combien avons nous de malade parmi les testé positifs ? 
+Maintenant passons au probabilité conditionnelle. Et pour cela, voici une subtilité du language que je vous conseil d'utiliser dans notre exemple.
+Ne dite pas « *La probablité de A **sachant** B *» mais « *La probabilité de A **parmi** B* »
+
+#### Combien avons nous de malade parmi les patients testé positifs ? 
 <div class="figure">
 <img src="../images/bayes/sick_in_test.gif" width="250px" />
 <p>Parmi les 5 tests positifs il y a 4 malades. <br/>
 Soit p(M|T) = p(M et T) / p(T) = 4 / 5</p>
 </div>
 
-#### Combien avons nous de testé positif parmi les malades? 
+#### Combien avons nous de personne testé positif parmi les malades? 
 <div class="figure">
 <img src="../images/bayes/test_in_sick.gif" width="250px" />
 <p>Parmi les 6 malades, 4 ont un test positif. <br/>
-Soit p(T|M) = p(M et T) / p(M) = 4 / 5. Notez ici, qu'il s'agit de la même chose que la sensibilité </p>
+Soit p(T|M) = p(M et T) / p(M) = 4 / 5.    
+Très important à noter. Cette dernière question correspond à la sensibilité du test </p>
 </div>
 
 ## Et la formule de Bayes surgit 
-Vous constaterez que dans les 2 formules précédante, p(T|M) et p(M|T), il y a un terme en commun: p(M et T+) qui correspond au nombre d'indiviu à la fois malade et testé positivement. 
-
-<div class="figure">
-<img src="../images/bayes/sick_and_test.png" />
-<p>Les individus à la fois malade et avec un test positif.<br/>
-Soit p(M et T) = 4/10 </p>
-</div>
-
-En remplacant ce terme, nous pouvons ainsi exprimer p(M|T) en fonction de p(T|M).
+Vous constaterez que dans les 2 formules précédante, p(T|M) et p(M|T), il y a un terme en commun: p(M et T+) qui correspond au nombre d'indiviu à la fois malade et testé positivement.    
+En remplacant ce terme, nous pouvons alors exprimer p(M|T) en fonction de p(T|M).
 
     On a :
     p(T|M)    = p(M et T) / p(M)
@@ -97,7 +97,7 @@ En remplacant ce terme, nous pouvons ainsi exprimer p(M|T) en fonction de p(T|M)
     en remplacant :
     p(M|T)    = p(M) * p(T|M) / p(T)
 
-Et nous voilà alors avec la fameuse formule de Bayes qui se généralise comme suite
+Et nous voilà alors, avec la fameuse formule de Bayes : 
 
 <center>
 <img src="../images/bayes/bayes.gif" />
@@ -114,16 +114,16 @@ On peut tout de suite verifier sur nos 10 individus que nous trouvons par le cal
 
 ## Application du théorème
 En pratique, on utilise le théorème de Bayes en médecine pour estimer le risque qu'un individu soit malade sachant que son test est positif.
-Malheuresement, nous n'avons pas toutes les informations pour appliquer la formule de Bayes aussi facilement que dans nos exemples.   
-Les informations que nous avons à disposition sont la prévalence de la maladie dans la population p(M) et la sensibilité du test qui n'est autre que p(T|M).
-Il reste juste à estimer p(T).
+Malheuresement nous n'avons pas toutes les informations nécessaire pour appliquer la formule de Bayes aussi facilement que dans notre exemple.   
+Les seuls que nous ayons à disposition sont la prévalence de la maladie dans la population p(M) et la sensibilité du test qui n'est autre que p(T|M). 
+Il faut alors réussir à trouver p(T).
 
 <div class="figure">
 <img src="../images/bayes/final.png" />
-<p>p(T) est la somme de A et B sur les 10 individus</p>
+<p>p(T) est la somme de A=p(M et T) et B=p(non M et T) sur les 10 individus</p>
 </div>
 
-p(T) se calcul en sommant p(M et T) et p (non M et T). Et comme vu précédement, nous pouvons expirmer chacun de ces termes par : 
+p(T) se calcul en sommant <mark style="background-color:#F84AA9">le nombre de patient malade ET testé positif p(M et T)</mark> avec <mark style="background-color:#92D050">le nombre de patient sain ET testé positif p(non M et T)</mark>. Et comme vu précédement, nous pouvons expirmer chacun de ces termes par : 
 
     p(M et T)     = p(M) * (T|M)
     p(non M et T) = p(non M) * (T|non M)
@@ -132,15 +132,24 @@ On peut alors formuler la loi total de Bayes :
 
 <center>
 <img src="../images/bayes/total_bayes.gif" />
-<p>p(T) est la somme de A et B sur les 10 individus</p>
+<p>Loi total de Bayes</p>
 </center>
 
-Exemple dépistage de la muco : 
+## Un exemple avec la mucoviscidose
+On s'interesse ici au patient porteur d'une mutation dans le gène CFTR qui est impliqué dans la mucoviuscidose.   
+En france, 1 personne sur 34 [p(M)=1/34] est porteur de la mutation , la plus fréquente étant la deltaF508. ( cela n'implique pas d'être malade car il s'agit d'une maladie récessive). Il existe un test pouvant détecter ces mutations avec une sensibilité de 85% [p(T|M)=1/85] et une spécificité avoisinant les 100% [p(Tneg|non M)=1].    
+Après vous avoir fait le test qui s'est négativé, quel est la probabilité que vous soyez tout de même porteur ?    
+
+
+<center>
+<img src="../images/bayes/muco.gif" />
+<p>Attention: Ici p(Tneg|M) est égal à 1-sensibilité </p>
+</center>
 
 
 ## Conclusion 
-Après avoir enfin compris le théorème de Bayes en le visualisant, j'espère pouvoir bientôt entrer dans le cercle des Bayesiens. Et d'un coup de baguette, appliquer cette formule pour résoudre un tas de problème de bioinfo et peut être même changer mon raisonnement. Car en effet, je sais pas si vous connaissez le problème de Monty Hall, mais seul des bayesiens trouvent ça logique ! 
-
+J'espère à présent que vous visualiser aussi bien que moi la formule de Bayes. Personnellement, en faisant les dessins sur papiers, je retrouve très facilement les formules. Donc innutile de les apprendre par coeur.
+La prochaine étape c'est de devenir un vrai Bayesien pour que d'un coup de baguette, je puisse résoudre un tas de problème bioinformatique, voir même changer ma façon de penser. En effet, je sais pas si vous connaissez le problème de Monty Hall, mais parait que seul des bayesiens peuvent trouver ça logique.
 
 
  
