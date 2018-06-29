@@ -1,7 +1,7 @@
 Title: Le théorème de Bayes en image
 Slug: le-theoreme-de-bayes
 Date: 2018-06-26 23:18:50
-Modified: 2018-06-26 23:18:50
+Modified: 2018-06-29 02:38:02
 Tags: statistique, épidémiologie
 Category: biologie
 Author: Sacha schutz
