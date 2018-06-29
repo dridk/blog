@@ -118,7 +118,7 @@ Calculons p(M/T) et vérifions que c'est égal à 4/5:
 ## Application du théorème
 En pratique, on utilise le théorème de Bayes en médecine pour estimer le risque qu'un individu soit malade sachant que son test est positif.
 Malheureusement nous n'avons pas toutes les informations nécessaires pour appliquer la formule de Bayes aussi facilement que dans notre exemple.   
-Les seuls éléments que nous ayons à disposition sont la [prévalence](https://fr.wikipedia.org/wiki/Pr%C3%A9valence) de la maladie dans la population p(M) et la sensibilité/spécificité du test correspondant respectivement à p(T|M) et p(nonT|nonM)
+Les seuls éléments que nous ayons à disposition sont la [prévalence](https://fr.wikipedia.org/wiki/Pr%C3%A9valence) de la maladie dans la population p(M) et la sensibilité/spécificité du test correspondant respectivement à p(T|M) et p(nonT|nonM).    
 Il faut alors réussir à calculer p(T).
 
 <div class="figure">
@@ -152,7 +152,7 @@ Après vous avoir fait le test qui s'est négativé, quelle est la probabilité 
 
 ## Conclusion 
 J'espère à présent que vous visualisez aussi bien que moi la formule de Bayes. Personnellement, en faisant les dessins sur papiers, je retrouve très facilement les formules. Donc inutile de les apprendre par coeur.
-J'espère maintenant pouvoir bientôt devenir un vrai Bayesien pour pouvoir frimer en soirée et même changer ma façon de penser. En effet, je ne sais pas si vous connaissez le [problème de Monty Hall](https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Monty_Hall). C'est une experience complétement contre intuitif et parait que seul des bayésiens ont le pouvoir de trouver ça logique.
+J'espère maintenant pouvoir bientôt devenir un vrai Bayesien pour pouvoir frimer en soirée et même changer ma façon de penser. En effet, je ne sais pas si vous connaissez le [problème de Monty Hall](https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Monty_Hall). C'est une experience complétement contre intuitif et parait que seul des r̶e̶p̶t̶i̶l̶i̶e̶n̶s bayésiens ont le pouvoir de trouver ça logique.
 
 ### Réferences
 
