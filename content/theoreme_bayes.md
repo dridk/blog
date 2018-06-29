@@ -26,7 +26,7 @@ Commençons par un petit aparté sur l'efficacité d'un test qui s'évalue à l'
 
 <div class="figure">
 <img src="../images/bayes/sens_spec.png" />
-<div class="legend">Sensibilité et spécificité d'un test biologique. Un test sensibilité détecte tous les malades. Un test spécifique ne se positive jamais chez des patients sains</div>
+<div class="legend">Sensibilité et spécificité d'un test biologique. Un test sensible détecte tous les malades. Un test spécifique ne se positive jamais chez des patients sains</div>
 </div>
 
 Un test très sensible (droite de la figure) nous assure que tous les malades sont détectés quitte à avoir des faux positifs. Sa formule s'écrit:
