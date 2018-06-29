@@ -86,7 +86,7 @@ Très important à noter. Cette dernière question correspond à la sensibilité
 </div>
 
 ## Et la formule de Bayes surgit 
-Vous constaterez que dans les 2 formules précédentes, **p(T|M)** et **p(M|T)**, il y a un terme en commun: **p(M et T+)** qui correspond au nombre d'individus à la fois malades et testés positivement.    
+Vous constaterez que dans les 2 formules précédentes, **p(T|M)** et **p(M|T)**, il y a un terme en commun: **p(M et T)** qui correspond au nombre d'individus à la fois malades et testés positivement.    
 En remplaçant ce terme, nous pouvons alors exprimer **p(M|T)** en fonction de **p(T|M)**. 
 
     On a :
