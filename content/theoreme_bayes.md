@@ -115,7 +115,7 @@ Calculons p(M/T) et vérifions que c'est égal à 4/5:
     p(M/T)  = ( p(M) * p(T/M) ) / p(T) = 6/10 * 4/6 / 5/10 = 4/5
  
 
-## La loi total de Bayes
+## La loi totale de Bayes
 En pratique, on utilise le théorème de Bayes en médecine pour estimer le risque qu'un individu soit malade sachant que son test est positif.
 Malheureusement nous n'avons pas toutes les informations nécessaires pour appliquer la formule de Bayes aussi facilement que dans notre exemple.   
 Les seuls éléments que nous ayons à disposition sont la [prévalence](https://fr.wikipedia.org/wiki/Pr%C3%A9valence) de la maladie dans la population p(M) et la sensibilité/spécificité du test correspondant respectivement à p(T|M) et p(nonT|nonM).    
