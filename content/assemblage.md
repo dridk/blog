@@ -16,9 +16,9 @@ La même question se pose lorsque l'on désire reconstruire le génome d'un orga
 Nous allons donc voir dans ce billet, comment un mec du nom de Euler, en s'amusant à compter les ponts de sa ville, a décourt un algorithme permettant d'assembler efficacement des génomes.
 
 # K-mer 
-Les k-mers sont l'ensemble des mots de k lettres que l'on peut lire dans une séquence. Dans la suite de ce billet, nous chercherons à reconstruire la séquence S=**TAATGCCATGGGATGTT** à partir de l'ensemble des 3-mers qui la compose: 
+Les k-mers sont l'ensemble des mots de k lettres que l'on peut lire dans une séquence. Dans la suite de ce billet, nous chercherons à reconstruire la séquence S=**TAATGCCATGGGATGT** à partir de l'ensemble des 3-mers qui la compose: 
 
-    TAATGCCATGGGATGTT
+    TAATGCCATGGGATGT
     TAA
      AAT
       ATG
@@ -27,11 +27,13 @@ Les k-mers sont l'ensemble des mots de k lettres que l'on peut lire dans une sé
          CCA
           CAT
            ATG
-            GGG
-             GGA
-              ATG
-               TGT
-                GTT
+            TGG
+             GGG
+              GGA
+               GAT
+                ATG
+                 TGT
+                  
 
 Imaginez donc n'avoir que cette liste de 3-mers:
 TAA,AAT,ATG,TGC,GCC,CCA,CAT,GGG,GGA,TGT,GTT et essayons de trouver la séquence d'origine. Essayez tout seul déjà pour voir !  
@@ -60,6 +62,12 @@ En reprenant tous nos k-mers, nous pouvons alors construire un graphe en liant l
 </div>
 
 Dans ce graphe, il y a un chemin qui permet de retrouver votre séquence. Il s'agit de celui passant par tous les noeuds exactement une fois. C'est ce qu'on appelle un chemin Hamiltonien. 
+
+ <div class="figure">
+<img src="../images/assemblage/hamilton_graphe_path.gif" />
+<div class="legend"> Chemin dans un graphe </div>
+</div>
+
 
 ## Representer les k-mers par des arrêtes 
 Nous allons cette fois representer les k-mers par des arrêtes. Cette representation peut paraitre contre intuitive, mais elle va s'averer par la suite d'une extreme importance. 
