@@ -138,7 +138,7 @@ En résumé, pour reconstruire une séquence à partir de ses k-mers, nous pouvo
 
 # Conclusion 
 Dans ce billet, je me suis grandement inspiré du livre [Bioinformatics algoritmics](https://www.amazon.fr/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602) que je vous conseille fortement. C'est le même exemple détaillé sur plus de 20 pages.    
-Dans la réalité, la reconstruction d'un génome est plus complexe. En effet il existe plusieurs chemins eulérien dans un graphe et on ne sais pas lequel choisir. Il y a aussi une second étape d'assemblage en utilisant les notions des [contigs](https://fr.wikipedia.org/wiki/Contig) et des [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)) ou encore de [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524). 
+Dans la réalité, la reconstruction d'un génome est plus complexe. En effet il existe plusieurs chemins eulérien dans un graphe et on ne sais pas lequel choisir. Il y a aussi une second étape d'assemblage en utilisant les notions des [contigs](https://fr.wikipedia.org/wiki/Contig) et des [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)), de bulles, corrections des erreurs de séquençage ou encore de [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524). 
 Mais bon, je ne suis absolument pas expert dans le domaine et j'avais juste  envie de vous partager ce que j'avais compris. J'ai des copains experts du domaine comme [@Natir](https://twitter.com/natir_chan?lang=fr) si vous voulez plus de précision.
 De tout façon, tout cela va changer avec [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) qui permettent le séquençage de long fragments et rende ainsi ce billet déjà obsolète.  
 
@@ -147,7 +147,7 @@ De tout façon, tout cela va changer avec [les séquenceurs de 3e génération](
 - [BioinformaticsAlgorithms](http://bioinformaticsalgorithms.com/)
 - [A la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)
 - [cours: Assemblage de nobo](http://www.iro.umontreal.ca/~csuros/IFT6299/H2014/content/prez13-assembly.pdf)
-- Reference assembleur ==> Demander à NATIR 
+- [Outils d'assemblages](https://omictools.com/genome-assembly-category)
 
 ## Remerciements
 Merci à [@Natir](https://twitter.com/natir_chan?lang=fr) pour m'avoir fait comprendre que je comprend toujours rien !
