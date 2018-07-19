@@ -1,11 +1,10 @@
 Title: Euler et l'assemblage des génomes
 Slug: assemblage
 Date: 2018-07-04 18:45:20
-Modified: 2018-07-19 02:19:30
+Modified: 2018-07-19 18:22:14
 Tags: algorithme
 Category: biologie
 Author: Sacha Schutz
-Status: Draft
 
 Imaginez une pile de journaux identiques que vous faites sauter avec des pétards pour en faire une pluie de fragments de texte aléatoire. Comment feriez-vous, à partir de ces milliers de morceaux de papier, pour reconstruire un exemplaire complet du journal ? 
 La même question se pose lorsque l'on désire reconstruire le génome d'un organisme à partir des milliards de courtes séquences générées par un [séquenceur haut débit](http://dridk.me/ngs.html). Si vous pensez qu'il suffit de tester toutes les combinaisons en comparant les fragments deux à deux, sachez que même avec un ordinateur très puissant, cela prendrait beaucoup de temps.   
@@ -132,7 +131,7 @@ Plus simplement, si vous voulez comprendre cet algorithme, je vous conseille tr�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DH0Hxes2nOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-# En bref
+## En bref
 Pour reconstruire une séquence à partir de ses k-mers, nous pouvons chercher un parcours Hamiltonien dans un graphe de k-mer ou bien un parcours Eulérien dans un graphe de de Bruijn. Cette dernière méthode est préféré car il existe un algorithme efficace.
 
 # Conclusion 
