@@ -138,7 +138,7 @@ Pour reconstruire une séquence à partir de ses k-mers, nous pouvons chercher u
 Dans ce billet, je me suis grandement inspiré du livre [Bioinformatics algoritmics](https://www.amazon.fr/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602) que je vous conseille fortement. C'est le même exemple détaillé sur plus de 20 pages.    
 Dans la réalité, la reconstruction d'un génome est plus complexe.  Il y a par exemple les notions de [contigs](https://fr.wikipedia.org/wiki/Contig), de [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)), de bulles, de corrections d'erreurs de séquençage ou encore de [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524).  
 Mais bon, je ne suis absolument pas spécialiste du domaine et j'avais juste  envie de vous partager ce que j'ai compris. Pour plus de précision, J'ai un  copain expert  => [@Natir](https://twitter.com/natir_chan?lang=fr). 
-De tout façon, tout cela va changer avec [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) qui permettent le séquençage de long fragments et rende ainsi ce billet déjà obsolète...  
+De tout façon, tout cela va changer avec [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) qui permettent le séquençage de long fragments rendant ainsi ce billet déjà obsolète...  
 
 
 ## Références 
