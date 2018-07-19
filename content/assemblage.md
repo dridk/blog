@@ -56,14 +56,14 @@ Nous pouvons alors construire un graphe en reliant tous nos k-mers via leurs suf
 <div class="legend"> Graphe représentant chaque k-mer par un nœud. Serez-vous trouver le chemin passant par tous les nœuds une seul fois ? </div>
 </div>
 
-Pour reconstruire la séquence d'origine, il suffit de trouver un chemin passant par tous les nœuds une fois et une seul. On appelle ce chemin [un parcours Hamiltonien](https://fr.wikipedia.org/wiki/Graphe_hamiltonien). Vous pouvez vous amuser à le chercher vous-même ou juste en regarder l'animation ci-dessous:
+Pour reconstruire la séquence d'origine, il suffit de trouver un chemin passant par tous les nœuds une fois et une seul. On appelle ce chemin [un parcours Hamiltonien](https://fr.wikipedia.org/wiki/Graphe_hamiltonien). Vous pouvez vous amuser à le chercher vous-même ou juste en regardant l'animation ci-dessous:
 
  <div class="figure">
 <img src="../images/assemblage/hamilton_graphe_path.gif" />
 <div class="legend"> Parcours Hamiltonien dans le graphe. Chaque nœud est traversé une fois et une seul</div>
 </div>
 
-Cette méthode est simple à comprendre. Mais il y a un hic. La recherche du parcours Hamiltonien dans un graphe est un problème mathématique dit [NP-complet](https://fr.wikipedia.org/wiki/Probl%C3%A8me_NP-complet). Pour faire simple, il n'existe pas d'algorithme informatique rapide pour trouver ce chemin. Le temps de calcul augmente exponentiellement avec la taille du graphe. Pour un graphe plus complexe, tel que celui utilisé pour reconstruire la séquence d'un génome, il faudra toujours énormément de temps de calcul, même avec les plus super des super calculateurs.    
+Cette méthode est simple mais il y a un hic. La recherche du parcours Hamiltonien dans un graphe est un problème mathématique dit [NP-complet](https://fr.wikipedia.org/wiki/Probl%C3%A8me_NP-complet). Pour faire simple, il n'existe pas d'algorithme informatique rapide pour trouver ce chemin. Le temps de calcul augmente exponentiellement avec la taille du graphe. Pour un graphe plus complexe, tel que celui utilisé pour reconstruire la séquence d'un génome, il faudra toujours énormément de temps de calcul, même avec les plus super des super calculateurs.    
 Il nous faut une meilleur méthode ....
 
 ## Les k-mers sont des flèches  
@@ -81,9 +81,8 @@ En utilisant notre liste de k-mer, on peut alors construire le graphe suivant:
 <div class="legend">  Graphe représentant chaque k-mer par une flèches. Les nœuds sont les préfixes/suffixes. Certain nœuds en couleur sont présent plusieurs fois et peuvent être fusionnés</div>
 </div>
 
-Et cette fois, au lieu de chercher un chemin passant par tous les nœuds une seule fois, nous allons chercher un chemin passant par toutes les flèches une fois et une seul. Si vous essayez sur ce graphe, vous verrez tout de suite qu'un tel chemin n'existe pas. Par exemple, on ne peut pas passer par les deux chemins AT->TG.
-Nous allons donc modifier ce graphe en fusionnant les nœuds identiques.      
-Visualiser par exemple sur le graphe, les 3 nœuds violets <b style="color:#5C3566;">AT</b> et imaginez les se rapprocher pour former un seul nœud sans jamais toucher aux flèches. Vous obtenez alors un unique nœud AT relié par 3 flèches au nœud TG. Faite la même chose pour les autres nœuds identiques et vous obtiendrez alors ce qu'on appelle le [Graphe de de Bruijn](https://fr.wikipedia.org/wiki/Graphe_de_de_Bruijn).
+Cette fois, au lieu de chercher un chemin passant par tous les nœuds une seule fois, nous allons chercher un chemin passant par toutes les flèches une fois et une seul. Si vous essayez sur ce graphe, vous verrez tout de suite qu'un tel chemin n'existe pas. Par exemple, on ne peut pas passer par les deux chemins AT->TG. Pour y remédier, nous allons modifier ce graphe en fusionnant les nœuds identiques.      
+Visualiser par exemple les 3 nœuds violets <b style="color:#5C3566;">AT</b> et imaginez les se rapprocher pour former un seul nœud sans jamais toucher aux flèches. Vous obtenez alors un unique nœud AT relié par 3 flèches au nœud TG. Faite la même chose pour les autres nœuds identiques et vous obtiendrez alors ce qu'on appelle le [Graphe de de Bruijn](https://fr.wikipedia.org/wiki/Graphe_de_de_Bruijn).
 
  <div class="figure">
 <img src="../images/assemblage/debruijn_graphe.png" />
@@ -97,7 +96,7 @@ Maintenant vous pouvez vous amuser à chercher le chemin passant par toutes les 
 <div class="legend"> Parcours Eulérien dans un graphe de de Bruijn </div>
 </div>
 
-Contrairement au parcours Hamiltonien, le parcours Eulérien, si il existe, peut être trouvé rapidement par un algorithme informatique. Le temps de calcul augmente juste proportionnellement avec la taille du graphe ( [Complexité](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes) O(n)). Et on le doit à un certain [Leonhard Euler](https://fr.wikipedia.org/wiki/Leonhard_Euler) et à la ville de [Königsberg](https://fr.wikipedia.org/wiki/K%C3%B6nigsberg) en Pologne.
+Contrairement au parcours Hamiltonien, le parcours Eulérien, si il existe, peut être trouvé rapidement par un algorithme informatique. La [Complexité](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)  de l'algorithme est dit O(n). C'est à dire proportionnel à la taille du graphe. Cette algorithme, on le doit à un certain [Leonhard Euler](https://fr.wikipedia.org/wiki/Leonhard_Euler) et à la ville de [Königsberg](https://fr.wikipedia.org/wiki/K%C3%B6nigsberg) en Pologne.
 
 # Les  ponts de Königsberg 
 ## Le théorème de Euler
@@ -108,11 +107,11 @@ En 1873, un mathématicien du nom de Leonhard Euler s'est posé la question de s
 <div class="legend"> Gauche: Pont de Königsberg Droite: représentation des ponts par un graphe. Les chiffres indiquent le nombres d'arêtes relié au nœud. Existe-t-il un chemin passant par tous les ponts ? </div>
 </div>
 
-Euler démontre qu'un parcours Eulérien ( passant par toutes les arêtes une seul fois et une seul ) existe dans un graphe si et seulement chaque nœud est relié à un nombre pair d'arêtes. En effet, si l'on doit entrer dans un nœud par 1 arête, il faut forcément ressortir par 1 autre arête. Dans le cas des ponts de Königsberg, un tel chemin n'existe pas, car le nombre d'arêtes par nœud est respectivement de 5,3,3,3 (voir graphique). 
+Euler démontre qu'un parcours Eulérien ( passant par toutes les arêtes une seul fois et une seul ) existe dans un graphe si et seulement chaque nœud est relié à un nombre pair d'arêtes. En effet, si l'on doit entrer dans un nœud par 1 arête, il faut forcément ressortir par 1 autre arête. Dans le cas des ponts de Königsberg, un tel chemin n'existe pas, car le nombre d'arêtes par nœud est respectivement de 5,3,3,3 (voir image ci-dessus). 
 Dans un graphe dirigé comme le notre, c'est à dire lorsque les arrêtes sont des flèches, un chemin Eulérien existe si le nombre de flèches à l'entrée d'un nœud et le même qu'à la sortie. 
 
 ## Avons nous un chemin eulérien dans le graphe de de Bruijn ?   
-Pour que les conditions du théorème de Euler s'applique à notre graphe de de Bruijn, nous devons tricher en ajoutant une flèche entre le dernier nœud **TA** et le premier nœud **GT** pour former un cycle. Vous constaterez alors qu'il y a autant de flèche à l'entré de chaque nœud qu'à leurs sorties. Il existe donc un parcours Eulérien.
+Pour que les conditions du théorème de Euler s'applique à notre graphe de de Bruijn, nous devons tricher en ajoutant une flèche entre le dernier nœud **TA** et le premier nœud **GT** pour former un cycle. Vous constaterez alors qu'il y a autant de flèche à l'entré de chaque nœud qu'à leurs sorties. Un parcours Eulérien existe donc dans ce graphe.
 
  <div class="figure">
 <img src="../images/assemblage/euler_cycle.png"/>
@@ -120,7 +119,7 @@ Pour que les conditions du théorème de Euler s'applique à notre graphe de de 
 </div>
 
 ##  L'algorithme de Euler
-Euler propose une algorithme pour pouvoir trouver le chemin Eulérien de façon rapide ( Complexité O(n))
+Euler propose une algorithme pour pouvoir trouver le chemin Eulérien de façon rapide:
 
 -  Prendre un nœud V1 au hasard
 -  Parcourir le graphe au hasard jusqu'à retomber sur V1
@@ -133,14 +132,14 @@ Plus simplement, si vous voulez comprendre cet algorithme, je vous conseille tr�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DH0Hxes2nOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-
-En résumé, pour reconstruire une séquence à partir de ses k-mers, nous pouvons chercher un parcours Hamiltonien dans un graphe de k-mer ou un parcours Eulérien dans un graphe de de Bruijn. Cette dernière méthode est préféré car il existe un algorithme rapide pour trouver ce parcours.
+# En bref
+Pour reconstruire une séquence à partir de ses k-mers, nous pouvons chercher un parcours Hamiltonien dans un graphe de k-mer ou bien un parcours Eulérien dans un graphe de de Bruijn. Cette dernière méthode est préféré car il existe un algorithme efficace.
 
 # Conclusion 
 Dans ce billet, je me suis grandement inspiré du livre [Bioinformatics algoritmics](https://www.amazon.fr/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602) que je vous conseille fortement. C'est le même exemple détaillé sur plus de 20 pages.    
-Dans la réalité, la reconstruction d'un génome est plus complexe. En effet il existe plusieurs chemins eulérien dans un graphe et on ne sais pas lequel choisir. Il y a aussi une second étape d'assemblage en utilisant les notions des [contigs](https://fr.wikipedia.org/wiki/Contig) et des [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)), de bulles, corrections des erreurs de séquençage ou encore de [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524). 
-Mais bon, je ne suis absolument pas expert dans le domaine et j'avais juste  envie de vous partager ce que j'avais compris. J'ai des copains experts du domaine comme [@Natir](https://twitter.com/natir_chan?lang=fr) si vous voulez plus de précision.
-De tout façon, tout cela va changer avec [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) qui permettent le séquençage de long fragments et rende ainsi ce billet déjà obsolète.  
+Dans la réalité, la reconstruction d'un génome est plus complexe. En effet il existe plusieurs chemins Eulériens dans un graphe et on ne sais pas lequel choisir. Il y a également une second étape d'assemblage en utilisant les notions des [contigs](https://fr.wikipedia.org/wiki/Contig), de [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)), de bulles, de corrections d'erreurs de séquençage ou encore de [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524).  
+Mais bon, je ne suis absolument pas expert dans le domaine et j'avais juste  envie de vous partager ce que j'avais compris. J'ai des copains experts dans le domaine comme [@Natir](https://twitter.com/natir_chan?lang=fr) si vous voulez plus de précision.
+De tout façon, tout cela va changer avec [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) qui permettent le séquençage de long fragments et rende ainsi ce billet déjà obsolète...  
 
 
 ## Références 
