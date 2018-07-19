@@ -147,9 +147,9 @@ En résumé, pour reconstruire une séquence à partir de ses k-mers, nous pouvo
 
 
 # Conclusion 
-Dans ce billet, j'ai voulu être le plus pédagogique possible en simplifiant à l'extrême. Pour cela, je me suis inspiré grandement du livre [Bioinformatics algoritmics](https://www.amazon.fr/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602) que je vous conseille. 
-"Je n'est présenté que la première partie de l'assemblage, en effet il existe plusieurs chemins eulérien dans un graph"
-Dans la réalité, la reconstruction d'un génome est plus complexe en utilisant les notions des [contigs](https://fr.wikipedia.org/wiki/Contig)et des [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)) ou encore le [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524).
+Dans ce billet, j'ai voulu être le plus pédagogique possible en simplifiant à l'extrême. Pour cela, je me suis inspiré grandement du livre [Bioinformatics algoritmics](https://www.amazon.fr/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602) que je vous conseille.    
+Dans la réalité, la reconstruction d'un génome est plus complexe. En effet il existe plusieurs chemins eulérien dans un graphe, on ne sais pas lequel choisir. 
+Il y a ensuite une second étape d'assemblage en utilisant les notions des [contigs](https://fr.wikipedia.org/wiki/Contig)et des [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)) ou encore le [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524).
 Mais tout cela change déjà avec [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) permettant le séquençage de long fragments avec un tas de nouveaux problèmes algorithmiques rendant ce billet déjà obsolète.  
 
 
