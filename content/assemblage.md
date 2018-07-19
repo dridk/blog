@@ -7,9 +7,9 @@ Category: biologie
 Author: Sacha Schutz
 Status: Draft
 
-Imaginez une pile de journaux identiques que vous faites sauté avec des pétards pour en faire une pluie de fragments de texte aléatoire. Comment feriez-vous, à partir de ces milliers de morceaux de papier, pour reconstruire un exemplaire complet du journal ? 
-La même question se pose lorsque l'on désire reconstruire le génome d'un organisme à partir des milliards de courtes séquences générés par un [séquenceur haut débit](http://dridk.me/ngs.html). Si vous pensez qu'il suffit de tester toutes les combinaisons en comparant les fragments deux à deux, sachez que même avec un ordinateur très puissant, cela prendrait beaucoup de temps.   
-Nous allons donc voir dans ce billet, comment les programmes d'assemblage fonctionnent et comment un gars du nom de Euler, en s'amusant à compter les ponts de la ville de Königsberg, nous permet aujourd'hui d'assembler efficacement un génome.
+Imaginez une pile de journaux identiques que vous faites sauter avec des pétards pour en faire une pluie de fragments de texte aléatoire. Comment feriez-vous, à partir de ces milliers de morceaux de papier, pour reconstruire un exemplaire complet du journal ? 
+La même question se pose lorsque l'on désire reconstruire le génome d'un organisme à partir des milliards de courtes séquences générées par un [séquenceur haut débit](http://dridk.me/ngs.html). Si vous pensez qu'il suffit de tester toutes les combinaisons en comparant les fragments deux à deux, sachez que même avec un ordinateur très puissant, cela prendrait beaucoup de temps.   
+Nous allons donc voir dans ce billet, comment les programmes d'assemblages classiques fonctionnent et comment un gars du nom de Euler, en s'amusant à compter les ponts de la ville de Königsberg, nous permet aujourd'hui de faire de l'assemblage de génomes de façon efficace.
 
 # Les *k*-mers 
 Les [*k*-mers](https://en.wikipedia.org/wiki/K-mer) sont l'ensemble des mots de k lettres que l'on peut lire dans une séquence. Par exemple, la séquence suivante **TAATGCCATGGGATGT** peut se décomposer (avec des pétards ou non) en 14 mots de 3 lettres appelés 3-mers:
