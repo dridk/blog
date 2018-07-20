@@ -80,7 +80,7 @@ Nous pouvons alors construire le graphe suivant:
 <div class="legend">  Graphe représentant chaque k-mer par une flèches. Les nœuds sont les préfixes/suffixes. Certain nœuds en couleur sont présent plusieurs fois et peuvent être fusionnés</div>
 </div>
 
-Cette fois, au lieu de chercher un chemin passant par **tous les nœuds** une seule fois, nous allons chercher un chemin passant par **toutes les flèches** une fois et une seul. En le recherchant, vous verrez tout de suite qu'un tel chemin n'existe pas dans ce dernier graphe. Par exemple, on ne peut pas traverser tous les chemins **AT**->**TG** sans rebrousser chemin. Pour  remédier ce problème, nous allons fusionner tous les nœuds identiques.      
+Cette fois, au lieu de chercher un chemin passant par **tous les nœuds** une seule fois, nous allons chercher un chemin passant par **toutes les flèches** une fois et une seul. En le recherchant, vous verrez tout de suite qu'un tel chemin n'existe pas dans ce dernier graphe. Par exemple, on ne peut pas traverser tous les chemins **AT**->**TG** sans rebrousser chemin. Pour  remédier à ce problème, nous allons fusionner tous les nœuds identiques.      
 Visualiser par exemple les 3 nœuds violets <b style="color:#5C3566;">AT</b> et imaginez les se rapprocher pour former un seul nœud sans jamais toucher aux flèches. Vous obtenez alors un unique nœud **AT** relié par 3 flèches au nœud **TG**. Faite la même chose pour les autres nœuds identiques et vous obtiendrez le fameux [Graphe de de Bruijn](https://fr.wikipedia.org/wiki/Graphe_de_de_Bruijn).
 
  <div class="figure">
@@ -119,7 +119,7 @@ Pour que les conditions du théorème de Euler s'applique à notre graphe de de 
 </div>
 
 ##  L'algorithme de Euler
-Il existe une algorithme rapide pour pouvoir trouver le chemin Eulérien. Pour le comprendre ( c'est très simple, je vous rassure ), je vous conseille de voir cette courte vidéo sur la chaîne YouTube "[ à la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)". Personnellement, c'est la meilleure chaîne de vulgarisations sur la théorie des graphes. A garder en favoris. 
+Il existe une algorithme rapide pour pouvoir trouver le chemin Eulérien. Pour le comprendre ( c'est très simple, je vous rassure ), Regardez cette cette courte vidéo sur la chaîne YouTube "[ à la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)". Personnellement, c'est la meilleure chaîne de vulgarisations sur la théorie des graphes. A garder en favoris. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DH0Hxes2nOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
