@@ -55,7 +55,7 @@ Nous pouvons alors construire un graphe en reliant tous nos k-mers via leurs suf
 <div class="legend"> Graphe représentant chaque k-mer par un nœud. Serez-vous trouver le chemin passant par tous les nœuds une seul fois ? </div>
 </div>
 
-Pour reconstruire la séquence d'origine, il suffit de trouver un chemin passant par tous les nœuds une fois et une seul. On appelle ce chemin [un parcours Hamiltonien](https://fr.wikipedia.org/wiki/Graphe_hamiltonien). Essayez de le trouver par vous même avant de regarder l'animation ci-dessus:
+Pour reconstruire la séquence d'origine, il suffit de trouver un chemin passant par tous les nœuds une fois et une seul. On appelle ce chemin [un parcours Hamiltonien](https://fr.wikipedia.org/wiki/Graphe_hamiltonien). Essayez de le trouver par vous même avant de regarder l'animation ci-dessous:
 
  <div class="figure">
 <img src="../images/assemblage/hamilton_graphe_path.gif" />
