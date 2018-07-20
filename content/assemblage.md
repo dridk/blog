@@ -34,7 +34,7 @@ Ce que nous allons tenter dans la suite de ce billet, c'est de reconstruire la s
 
     AAT,ATG,ATG,ATG,CAT,CCA,GAT,GCC,GGA,GGG,TAA,TGC,TGG,TGT
 
-Attention, notez bien dans cette liste que le mot **ATG** est présent 3 fois. Il s'agit de l'abondance du k-mer qu'il faudra prendre en compte en raisonnant bien avec 3 mots **ATG** et non un seul.
+Attention, notez bien dans cette liste que le mot **ATG** est présent 3 fois. Il s'agit de l'abondance du k-mer qu'il faut prendre en compte en raisonnant bien avec 3 mots **ATG** et non un seul.
 
 # Construction d'un graphe
 À partir de cette liste de 3-mers, nous allons construire un [graphe](https://www.youtube.com/watch?v=YYv2R1cCTa0) dirigé. C'est-à-dire un ensemble de nœuds reliés par des flèches. Pour cela deux méthodes s'offrent à nous.
