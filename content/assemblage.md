@@ -119,7 +119,7 @@ Pour que les conditions du théorème de Euler s'applique à notre graphe de de 
 </div>
 
 ##  L'algorithme de Euler
-Il existe une algorithme rapide pour pouvoir trouver le chemin Eulérien. Pour le comprendre ( c'est très simple, je vous rassure ), Regardez cette cette courte vidéo sur la chaîne YouTube "[ à la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)". Personnellement, c'est la meilleure chaîne de vulgarisations sur la théorie des graphes. A garder en favoris. 
+Il existe une algorithme rapide pour pouvoir trouver le chemin Eulérien. Pour le comprendre ( c'est très simple, je vous rassure ). Regardez juste cette cette courte vidéo sur la chaîne YouTube "[ à la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)". Personnellement, c'est la meilleure chaîne de vulgarisations sur la théorie des graphes. A garder en favoris. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DH0Hxes2nOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
