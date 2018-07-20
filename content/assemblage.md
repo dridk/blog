@@ -80,7 +80,7 @@ Nous pouvons alors construire le graphe suivant:
 <div class="legend">  Graphe représentant chaque k-mer par une flèches. Les nœuds sont les préfixes/suffixes. Certain nœuds en couleur sont présent plusieurs fois et peuvent être fusionnés</div>
 </div>
 
-Cette fois, au lieu de chercher un chemin passant par **tous les nœuds** une seule fois, nous allons chercher un chemin passant par **toutes les flèches** une fois et une seul. En le recherchant, vous verrez tout de suite qu'un tel chemin n'existe pas dans ce dernier graphe. Par exemple, on ne peut pas traverser tous les chemins **AT**->**TG** sans rebrousser chemin. Pour  remédier à ce problème, nous allons fusionner tous les nœuds identiques.      
+Cette fois, au lieu de chercher un chemin passant par **tous les nœuds** une seule fois, nous allons chercher un chemin passant par **toutes les flèches** une fois et une seul. En le recherchant, vous verrez tout de suite qu'un tel chemin n'existe pas dans ce dernier graphe. Par exemple, on ne peut pas traverser tous les chemins **AT**->**TG** sans être bloqué. Pour  remédier à ce problème, nous allons fusionner tous les nœuds identiques.      
 Visualiser par exemple les 3 nœuds violets <b style="color:#5C3566;">AT</b> et imaginez les se rapprocher pour former un seul nœud sans jamais toucher aux flèches. Vous obtenez alors un unique nœud **AT** relié par 3 flèches au nœud **TG**. Faite la même chose pour les autres nœuds identiques et vous obtiendrez le fameux [Graphe de de Bruijn](https://fr.wikipedia.org/wiki/Graphe_de_de_Bruijn).
 
  <div class="figure">
