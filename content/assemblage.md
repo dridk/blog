@@ -111,7 +111,7 @@ Euler démontre qu'un parcours Eulérien ( passant par toutes les arêtes une se
 Dans un graphe dirigé comme le notre, c'est à dire lorsque les arrêtes sont des flèches, un chemin Eulérien existe si le nombre de flèches à l'entrée d'un nœud et le même qu'à la sortie. 
 
 ## Avons nous un chemin eulérien dans notre graphe de de Bruijn ?   
-Pour que les conditions du théorème de Euler s'applique à notre graphe de de Bruijn, nous devons tricher en ajoutant une flèche entre le dernier nœud **TA** et le premier nœud **GT**  et former ainsi un cycle. Vous constaterez alors qu'il y a autant de flèche à l'entré de chaque nœud qu'à leurs sorties. Un parcours Eulérien existe donc dans ce graphe.
+Pour que les conditions du théorème de Euler s'applique à notre graphe de de Bruijn, nous devons tricher en ajoutant une flèche entre le dernier nœud **TA** et le premier nœud **GT**  et former ainsi un cycle. Vous constaterez alors, que pour chaque nœud, il y a autant de flèches d'entrés que de flèches de sorties. Nous pouvons alors conclure, sans même le connaître, qu'un chemin Eulérien existe.
 
  <div class="figure">
 <img src="../images/assemblage/euler_cycle.png"/>
