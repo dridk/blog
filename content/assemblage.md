@@ -133,7 +133,7 @@ Enfin, tout ce que nous avons vu concerne l'assemblage de génome à partir de c
 ## Références 
 - [BioinformaticsAlgorithms](http://bioinformaticsalgorithms.com/)
 - [A la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)
-- [Sequence_assembly](https://en.wikipedia.org/wiki/Sequence_assembly)
+- [Assemblage wikipedia](https://fr.wikipedia.org/wiki/Assemblage_(bio-informatique))
 - [cours: Assemblage de novo](http://www.iro.umontreal.ca/~csuros/IFT6299/H2014/content/prez13-assembly.pdf)
 - [Outils d'assemblages](https://omictools.com/genome-assembly-category)
 
