@@ -62,7 +62,7 @@ Pour reconstruire la séquence d'origine, il suffit de trouver un chemin passant
 <div class="legend"> Parcours Hamiltonien dans le graphe. Chaque nœud est traversé une fois et une seul</div>
 </div>
 
-Cette méthode est simple mais il y a un hic. La recherche du parcours Hamiltonien dans un graphe est un problème mathématique dit [NP-complet](https://fr.wikipedia.org/wiki/Probl%C3%A8me_NP-complet). Pour faire simple, il n'existe pas d'algorithme informatique rapide pour trouver ce chemin. Le temps de calcul augmente exponentiellement avec la taille du graphe. Par exemple, pour un graphe plus complexe, tel que celui utilisé pour reconstruire la séquence d'un génome, il vous faudra toujours énormément de temps de calcul, même avec les plus super des super calculateurs.    
+Cette méthode est simple, mais il y a un hic. La recherche du parcours Hamiltonien dans un graphe est un problème mathématique dit [NP-complet](https://fr.wikipedia.org/wiki/Probl%C3%A8me_NP-complet). Pour faire simple, il n'existe pas d'algorithme informatique rapide pour trouver ce chemin. Le temps de calcul augmente exponentiellement avec la taille du graphe. Par exemple, pour un graphe plus complexe, tel que celui utilisé pour reconstruire la séquence d'un génome, il vous faudra toujours énormément de temps de calcul, même avec les plus super des super calculateurs.    
 Il nous faut une meilleur méthode ....
 
 ## Les k-mers sont des flèches  
@@ -126,14 +126,14 @@ Il existe une algorithme rapide pour pouvoir trouver le chemin Eulérien. Pour l
 # Conclusion 
 Nous avons vu deux méthodes pour reconstruire une séquence à partir de ses k-mers. Vous pouvons soit chercher un parcours Hamiltonien dans un graphe de k-mer ou alors chercher un parcours Eulérien dans un graphe de de Bruijn. Cette dernière méthode est préférée, car il existe un algorithme efficace.    
 Dans ce billet, je me suis grandement inspiré du livre [Bioinformatics Algorithms](https://www.amazon.fr/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602) que je vous conseille fortement. C'est le même exemple détaillé sur plus de 20 pages.    
-Sinon, dans la réalité, la reconstruction d'un génome est plus complexe faisant intervenir d'autres notions comme les [contigs](https://fr.wikipedia.org/wiki/Contig), les [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)), les bulles, la corrections d'erreurs de séquençage ou encore le [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524).  
-Je ne suis absolument pas spécialiste de ce domaine mais j'avais juste envie de vous partager ce que j'avais compris. Pour plus de précision, voir avec [@Natir](https://twitter.com/natir_chan?lang=fr), c'est un expert de l'assemblage.     
-Enfin, tout ce que nous avons vu concerne l'assemblage de génome à partir de courtes séquences d'ADN ou short reads. Cette méthode est aujourd'hui devancé par [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) capable de séquencer des longs fragments d'ADN rendant toutes les notions aborder dans ce billet.... complètement obsolète ! 
+Sinon, dans la réalité, la reconstruction d'un génome est plus complexe faisant intervenir d'autres notions comme les [contigs](https://fr.wikipedia.org/wiki/Contig), les [scaffolds](https://en.wikipedia.org/wiki/Scaffolding_(bioinformatics)), les bulles, la correction d'erreurs de séquençage ou encore le [gap filling](https://www.ncbi.nlm.nih.gov/pubmed/23095524).  
+Je ne suis absolument pas spécialiste de ce domaine, mais j'avais juste envie de vous partager ce que j'avais compris. Pour plus de précision, voir avec [@Natir](https://twitter.com/natir_chan?lang=fr), c'est un expert de l'assemblage.     
+Enfin, tout ce que nous avons vu concerne l'assemblage de génome à partir de courtes séquences d'ADN ou short reads. Cette méthode est aujourd'hui devancée par [les séquenceurs de 3e génération](http://www.biorigami.com/?tag=sequenceurs-3eme-generation) capable de séquencer des longs fragments d'ADN rendant toutes les notions aborder dans ce billet.... complètement obsolète ! 
 
 ## Références 
 - [BioinformaticsAlgorithms](http://bioinformaticsalgorithms.com/)
 - [A la découverte des graphes](https://www.youtube.com/channel/UCHtJVeNLyR1yuJ1_xCK1WRg)
-- [Assemblage wikipedia](https://fr.wikipedia.org/wiki/Assemblage_(bio-informatique))
+- [Assemblage Wikipédia](https://fr.wikipedia.org/wiki/Assemblage_(bio-informatique))
 - [cours: Assemblage de novo](http://www.iro.umontreal.ca/~csuros/IFT6299/H2014/content/prez13-assembly.pdf)
 - [Outils d'assemblages](https://omictools.com/genome-assembly-category)
 
