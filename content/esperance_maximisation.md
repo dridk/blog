@@ -1,11 +1,10 @@
 Title: Algorithme d'Espérance-Maximisation
 Slug: expectation-maximisation
 Date: 2018-08-06 18:13:58
-Modified: 2018-08-06 18:13:58
+Modified: 2018-08-06 18:41:28
 Tags: algorithme,mixture model, expectation-maximisation
 Category: informatique
 Author: Sacha Schutz
-Status: Draft
 SIDEBARIMAGE:../images/common/ia_banner.jpg
 
 Nous allons voir dans ce billet l'algorithme d'[espérance-maximisation](https://fr.wikipedia.org/wiki/Algorithme_esp%C3%A9rance-maximisation) ou algorithme EM (Expectation-maximisation) qui va nous permettre d'identifier les paramètres de deux [lois normales](https://fr.wikipedia.org/wiki/Loi_normale) depuis une seule distribution mixte ou [mélange gaussien](https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_m%C3%A9lange_gaussien) ou GMM (Gaussian Mixture model). 
