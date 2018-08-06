@@ -130,7 +130,7 @@ En d'autres termes, identifier à quelle distribution appartient un point dans u
 
 <div class="figure">
 <img src="../images/mixture_model/bivariate2.png" />
-<div class="legend"> Exemple: Gauche: Distribution de deux variables et identification de 2 clusters. Droite: Modèle normal bivarié montrant la densité sur son 3ème axe.  source: <br/><a href="https://www.sciencedirect.com/science/article/pii/S0167947315000171">Source</a>  </div>
+<div class="legend"> Exemple: Gauche: Distribution de deux variables et identification de 2 clusters. Droite: Modèle normal bivarié montrant la densité sur son 3ème axe. <br/><a href="https://www.sciencedirect.com/science/article/pii/S0167947315000171">Source</a>  </div>
 </div>
 
 # Hard et Soft clustering
