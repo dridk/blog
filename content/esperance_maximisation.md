@@ -112,19 +112,7 @@ Et voilà ce que l'on obtient en animant le tout à chaque itération:
 # Loi normale multivariée
 Dans cet exemple, nous avons étudié la distribution d'une seule variable (*la taille*) en utilisant une loi normale paramétrée par μ et σ. 
 Mais nous pouvons faire encore mieux en étudier la distribution de plusieurs variables simultanément (Par exemple la taille et le poids). On utilise pour cela une généralisation de la loi normale que l'on appelle [loi normale multidimensionnelle](https://fr.wikipedia.org/wiki/Loi_normale_multidimensionnelle) paramètré par un vecteur μ et une matrice de covariance σ.     
-En prenant 2 variables comme la Taille et le Poid, μ correspond à la liste des moyennes [μTaille, μPoid] et σ correspond à une matrice symétrique 2x2 contenant les [covariances](https://fr.wikipedia.org/wiki/Covariance) et [variances](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s)) de la taille et du poids. Exemple ci-dessous:
-
-
-<center>
-
-|               | Taille       | Poid        |
-|------------   |:------------:|:-----------:|
-| **Taille**    | vT           | cov(P,T)    |
-| **Poid**      | cov(P,T)     | vP          |
-
-<div class="legend"> Matrice de covariance d'une loi normale à deux dimensions. vT et vP sont les variances pour la Taille et le Poid. cov(P,T) est la covariance entre le poids et la taille</div>
-</center>
-
+En prenant 2 variables comme la Taille et le Poid, μ correspond à la liste des moyennes [μTaille, μPoid] et σ correspond à une matrice symétrique 2x2 contenant les [covariances](https://fr.wikipedia.org/wiki/Covariance) et [variances](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s)) de la taille et du poids.    
 Vous pouvez vous représenter une loi normale à deux variables comme un [Sombrero](https://fr.wikipedia.org/wiki/Sombrero) aplati et vu de haut ou chaque point est representé dans le plan par ses coordonnées (x=Taille et y=Poids).
 
 <div class="figure">
@@ -132,8 +120,13 @@ Vous pouvez vous représenter une loi normale à deux variables comme un [Sombre
 <div class="legend"> Exemple d'une distribution normale bivariée. Imaginez que la courbe rouge représente la taille et la bleu le poid </div>
 </div>
 
-Comme nous l'avons fait précédement avec **une variable**, nous pouvons identifier plusieurs gaussiennes multivariées dans un espace à **plusieurs variables** (figure ci-dessous).     
-En d'autres termes, identifier à quelle distribution appartient un point, c'est faire de la [clusterisation](https://fr.wikipedia.org/wiki/Partitionnement_de_donn%C3%A9es).
+<div class="figure">
+<img src="../images/mixture_model/bivariate_gaussian.png" />
+<div class="legend"> Representation en 3 dimensions d'une loi normale bivariée. La projection sur le plan des variables (Taille,Poids) permet d'identifier une région de densité de probabilité. </br><a href="https://scipython.com/blog/visualizing-the-bivariate-gaussian-distribution/"> Source </a> </div>
+</div>
+
+Et comme nous l'avons fait précédement avec **une variable**, nous pouvons identifier plusieurs gaussiennes multivariées dans un espace à **plusieurs variables** (figure ci-dessous).     
+En d'autres termes, identifier à quelle distribution appartient un point dans un espace à N dimension, c'est faire de la [clusterisation](https://fr.wikipedia.org/wiki/Partitionnement_de_donn%C3%A9es).
 
 
 <div class="figure">
@@ -142,7 +135,7 @@ En d'autres termes, identifier à quelle distribution appartient un point, c'est
 </div>
 
 # Hard et Soft clustering
-Il existe d'autres algorithmes pour détecter des clusters, notamment l'algorithme [k-means](https://fr.wikipedia.org/wiki/K-moyennes) ou encore les [k-plus proches voisins](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins). Ces méthodes de clustering sont dites "[Hard clustering](https://www.youtube.com/watch?v=xtDMHPVDDKk)". C'est-à-dire qu'il catégorise de façon précise un point (Homme ou Femme). Au contraire, l'algorithme EM basé sur les mixtures gaussiennes permet de faire du [soft clustering](https://www.youtube.com/watch?v=xtDMHPVDDKk). Au lieu d'attribué un groupe à un point, on lui attribue une probabilité d'appartenance à chacun de ces groupes (80% Hommes, 10% Femmes). 
+Il existe d'autres algorithmes pour détecter des clusters, notamment l'algorithme [k-means](https://fr.wikipedia.org/wiki/K-moyennes) ou encore les [k-plus proches voisins](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins). Ces méthodes de clustering sont dites "[Hard clustering](https://www.youtube.com/watch?v=xtDMHPVDDKk)" car ils atégorisent de façon précise un point (Soit c'est un homme, soit c'est une Femme). Au contraire, avec l'algorithme EM et les mixtures gaussiennes, nous pouvons faire du [soft clustering](https://www.youtube.com/watch?v=xtDMHPVDDKk). Au lieu de dire que tel point appartient soit au groupe A soit au groupe B, on lui donne une probabilité d'appartenance à chacun de ces groupes. (90% de chance que ce soit un homme, 1% que ce soit une femme). C'est ce qu'on appelle la [logique floue](https://fr.wikipedia.org/wiki/Logique_floue).
 
 <div class="figure">
 <img src="../images/mixture_model/clustering.png" />
@@ -150,9 +143,12 @@ Il existe d'autres algorithmes pour détecter des clusters, notamment l'algorith
 </div>
 
 # Conclusion 
-L'algorithme EM fait partie de la grande famille du [machine learning](https://fr.wikipedia.org/wiki/Apprentissage_automatique) et de [l'apprentissage non supervisé](https://fr.wikipedia.org/wiki/Apprentissage_non_supervis%C3%A9). C'est un avant goût des méthodes bayesiennes utilisées en intelligence artificielle. Si vous voulez approfondir le sujet (c'est à dire sans se faire chier à écrire du code), allez voir du côté de la libraire [scikit-learn](http://scikit-learn.org/stable/modules/mixture.html). 
+L'algorithme EM fait partie de la grande famille du [machine learning](https://fr.wikipedia.org/wiki/Apprentissage_automatique) et de [l'apprentissage non supervisé](https://fr.wikipedia.org/wiki/Apprentissage_non_supervis%C3%A9). C'est un avant goût des méthodes bayesiennes utilisées en intelligence artificielle. Si vous voulez approfondir le sujet, allez voir du côté de la libraire [scikit-learn](http://scikit-learn.org/stable/modules/mixture.html). 
 
 ## Références
 
-- [J'ai compris sur StackOverflow](https://stackoverflow.com/questions/11808074/what-is-an-intuitive-explanation-of-the-expectation-maximization-technique)
+- [StackOverflow](https://stackoverflow.com/questions/11808074/what-is-an-intuitive-explanation-of-the-expectation-maximization-technique)
 - [Coursera: Bayesian Methods for Machine Learning](https://www.coursera.org/learn/bayesian-methods-in-machine-learning)
+
+### Remerciements
+- Merci à André pour la relecture
