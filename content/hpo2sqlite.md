@@ -64,7 +64,7 @@ On peut alors transformer ce DAG en arbre avec :
 
     :::python
     tree  = nx.dag_to_branching(g)
-    nx.draw_networkx(g)
+    nx.draw_networkx(tree)
 
 <div class="figure">
     <img src="../images/hpo2sqlite/tree.png" />
