@@ -13,7 +13,7 @@ C'est assez tard que j'ai compris qu'il s'agissait juste d'un problème de déno
 
 ## Des malades et un test biologique 
 Sur internet, les démonstrations de la formule s'aident souvent d'un exemple avec des patients et un test biologique. On va reprendre cet exemple en s'aidant d'un schéma et en utilisant les bons mots.
-Voici 10 patients dont 6 sont malades. Sont entourés les individus dont le test biologique est positif (par exemple un test grippal). Voyez ça comme si tous les gens malades sont confinés dans une zone de quarantaine. 
+Voici 10 patients dont 6 sont malades. Sont entourés les individus dont le test biologique est positif (par exemple un test grippal). Voyez ça comme si tous les gens malades étaient confinés dans une zone de quarantaine. 
 
 <div class="figure">
 <img src="../images/bayes/intro.png" />
