@@ -1,11 +1,10 @@
 Title: L'énigme du Rusty Lake Hostel
 Slug: the-rusty-lake-hostel
-Date: 2018-09-30 00:34:27
-Modified: 2018-09-30 12:53:15
+Date: 2018-09-30 23:52:18
+Modified: 2018-09-30 23:52:18
 Tags: graphe
 Category: informatique
 Author: Sacha Schutz
-Status: Draft
 SIDEBARIMAGE:../images/common/graph_banner.png
 
 Cela fait plusieurs jours que je m'éclate sur un jeu [android](https://fr.wikipedia.org/wiki/Android) appelé « [The rusty lake hostel](https://store.steampowered.com/app/435120/Rusty_Lake_Hotel/) ». Il s'agit d'une sorte d'escape game en [point & click ](https://fr.wikipedia.org/wiki/Pointer-et-cliquer) ou vous devez résoudre des énigmes. Parmi celles-ci, il y en a une qui m'a donné du fil à retordre et qui m'a contraint à écrire du code pour la résoudre. 
@@ -28,7 +27,7 @@ Il n'y a pas d'autre possibilité, comme illustré ci-dessous :
 
 <div class="figure">     <img src="../images/rusty_lake/graphe_base.png" />      <div class="legend">À partir de l'état (10,1,0) il y a trois façons différentes de transvaser l'eau.</div> </div>   
 
-Nous pouvons alors recommencer ce processus à partir de chacun des nouveaux états et construire sur plusieurs itérations les autres états dans un [graphe orienté](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9).      
+Nous pouvons alors recommencer ce processus à partir de chacun des nouveaux états et construire successivement les autres états dans un [graphe orienté](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9).      
 Pour cela, j'ai utilisé [Python](https://www.python.org/download/releases/3.0/) et la librairie [networkx](https://networkx.github.io/) en représentant chaque état par un [tuple](http://apprendre-python.com/page-apprendre-tuples-tuple-python) de dimension 3.   
 la fonction suivante permet de passer d'un état à un autre : 
 
@@ -68,7 +67,7 @@ def change_state(x:int, y:int, state:tuple, vmax=(10,5,6)):
 print(change_state(0,1,(10,1,0)))
 ```
 
-En partant de l'état **(10,1,0)**, j'ai alors construit en 7 itérations le graphe de tous les états successifs possibles : 
+En partant de l'état **(10,1,0)**, j'ai alors construit un graphe montrant tous les états successifs possibles en 7 mouvements. J'ai choisi 7 itérations, car empiriquement je savais que cela suffirait pour trouver la solution. Dans l'idéal, j'aurais fais une boucle infinie qui s'arrête des qu'elle trouve 8 litres dans la première bouteille. Mais là il est minuit et j'ai la flemme de changer le code...
 
 ```python
 
@@ -99,7 +98,7 @@ nx.draw(graph, with_labels=True)
 
 ```
 
-Voilà ce qu'on obtient comme graphe. Et comme vous pouvez l'observer en jaune, il y a un état **(8,0,3)** contenant 8 L dans la première bouteille. C'est l'état que nous voulons atteindre.
+Voilà ce qu'on obtient comme graphe. Et comme vous pouvez l'observer en jaune, il y a l'état **(8,0,3)** avec les 8 litres dans la première bouteille. C'est l'état que nous cherchons à atteindre.
 
 <div class="figure">     <img src="../images/rusty_lake/graphe.png" />      <div class="legend">Graphe de l'ensemble des états possibles avec 7 mouvements.</div> </div> 
 
@@ -121,7 +120,7 @@ states = nx.shortest_path(graph,source=(10, 1, 0), target=(8, 0, 3))
 
 ```
 
-Sept transitions sont donc nécessaires pour passer de l'état **(10,1,0)** à l'état **(8,0,1)**. La solution de l'énigme est donc la suivante. Merci les graphes !!
+Sept transitions sont donc nécessaires pour passer de l'état **(10,1,0)** à l'état **(8,0,1)**. La solution de l'énigme est donc la suivante: 
 
 - State (10,1,0)
     + Vider la première bouteille dans la deuxième.
@@ -139,5 +138,12 @@ Sept transitions sont donc nécessaires pour passer de l'état **(10,1,0)** à l
     + Vider la deuxième bouteille dans la première.
 - State (8,0,3) 
 
+## Un mot pour la fin 
+Un bon samedi matin gaché à coder mais des nuits d'insomnies évitées à me ruiner les méninges sur ce problème. Vous me direz qu'il suffisait d'aller voir la solution en vidéo ci-dessous...
+Mais ça, c'est *tricher* avec beacoup, beaucoup moins de classe !
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AqylpTp1sNs?start=423" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Remerciements 
+- [@Aluriak](https://github.com/Aluriak) 
+- [@Oodnadatta](https://github.com/Oodnadatta)
