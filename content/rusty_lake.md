@@ -19,7 +19,7 @@ De mon côté, j'ai choisi une approche algorithmique en construisant un graphe 
 
 ## un graphe d'état
 
-On peut résumer ce problème comme une succession d'état relié par des transitions. Un état est défini par les 3 volumes dans chaque bouteille. Par exemple le premier état **(10,1,0)** correspond à la première bouteille remplie à 10L, la deuxième à 1L et la troisième à 0L. 
+On peut résumer ce problème comme une succession d'état reliés par des transitions. Un état est défini par les 3 volumes dans chaque bouteille. Par exemple le premier état **(10,1,0)** correspond à la première bouteille remplie à 10L, la deuxième à 1L et la troisième à 0L. 
 À partir de cet état, il existe 3 transitions possibles.   
 Si vous videz la première bouteille dans la seconde vous obtenez l'état **(6,5,1)**.   
 Si vous videz la deuxième bouteille dans la troisième, vous obtenez l'état **(10,0,1)**.   
@@ -29,19 +29,19 @@ Il n'y a pas d'autre possibilité comme illustrée ci-dessous:
 <div class="figure">     <img src="../images/rusty_lake/graphe_base.png" />      <div class="legend">à partir de l'état (10,1,0) il y a trois façons différentes de transvaser l'eau</div> </div>   
 
 Nous pouvons alors recommencer ce processus à partir de chacun des nouveaux états et construire sur plusieurs itérations les autres états dans un [graphe orienté](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9).      
-Pour cela, j'ai utilisé [Python](https://www.python.org/download/releases/3.0/) et la libraire [networkx](https://networkx.github.io/) en représentant chaque état par un [tuple](http://apprendre-python.com/page-apprendre-tuples-tuple-python) de dimension 3.   
+Pour cela, j'ai utilisé [Python](https://www.python.org/download/releases/3.0/) et la librairie [networkx](https://networkx.github.io/) en représentant chaque état par un [tuple](http://apprendre-python.com/page-apprendre-tuples-tuple-python) de dimension 3.   
 la fonction suivante permet de passer d'un état à un autre : 
 
 ```python
 # Vider la bouteille x dans la bouteille y connaissant l'état (state) et
 #le volume maximum pour chaque bouteille (vmax). Retourne None si impossible 
-def change_state(x:int, y:int, state:tuple, vmax=(10,5,6)):
+def change_state(x:int, y:int, state:tuple, vmax=(10,5,6)) -> (int, int, int) or None:
     
     new_state = list(state)
     
     # Calcul de e : le volume de liquide à déplacer
 
-    e_in= (vmax[y] - new_state[y])
+    e_in = (vmax[y] - new_state[y])
     e_out = state[x] 
     e = min(e_in, e_out)
     
@@ -76,25 +76,21 @@ graph = nx.DiGraph()
 
 # Liste de toutes les transitions possibles
 # Bouteilles 0 dans 1, Bouteille 1 dans 2 etc ...
-choices = list(itertools.permutations([0,1,2],2))
+choices = list(itertools.permutations([0, 1, 2], 2))
 
-# Creation du premier noeud avec l'état 10,1,0
-parent = (10,1,0)
+# Creation du premier noeud avec l'état 10, 1, 0
+parent = (10, 1, 0)
 graph.add_node(parent)
 
 # Construction du graphe sur 7 itérations 
-depth = 0
-while depth < 7:
-    # Pour 
+for depth in range(7):
     parents = list(graph.nodes())
     for parent in parents: 
-        for i in choices:
-            child = change_state(*i, parent)
+        for choice in choices:
+            child = change_state(*choice, parent)
             if child is not None:
                 graph.add_node(child)
-                graph.add_edges_from([(parent,child)], label=str(i))
-    
-    depth +=1
+                graph.add_edges_from([(parent, child)], label=str(i))
 
 nx.draw(graph, with_labels=True)
 
@@ -109,7 +105,7 @@ Voilà ce qu'on obtient comme graphe. Et comme vous pouvez l'observer en jaune, 
 Il suffit alors de trouver dans le graphe le chemin le plus court partant de l'état initial **(10,0,1)** vers l'état final **(8,0,3)** en utilisant [l'algorithme de Dijkstra](https://fr.wikipedia.org/wiki/Algorithme_de_Dijkstra). (Allez faire un tour sur la chaine YouTube « [A la découverte des graphe](https://www.youtube.com/watch?v=JPeCmKFrKio) » pour comprendre cet algorithme). Networkx nous fournit directement l'implémentation via la fonction [shortest_path](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.shortest_paths.generic.shortest_path.html#networkx.algorithms.shortest_paths.generic.shortest_path):
 
 ```python     
-states = nx.shortest_path(graph,source=(10,1,0),target=(8,0,3))
+states = nx.shortest_path(graph,source=(10, 1, 0), target=(8, 0, 3))
 
 #State 1 (10, 1, 0)
 #State 2 (4, 1, 6)
