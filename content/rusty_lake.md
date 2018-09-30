@@ -1,7 +1,7 @@
 Title: L'enigme du rusty lake hostel
 Slug: the-rusty-lake-hostel
 Date: 2018-09-30 00:34:27
-Modified: 2018-09-30 00:34:27
+Modified: 2018-09-30 12:53:15
 Tags: graphe
 Category: informatique
 Author: Sacha Schutz
@@ -9,7 +9,7 @@ Status: Draft
 SIDEBARIMAGE:../images/common/graph_banner.png
 
 Cela fait plusieurs jours que je m'éclate sur un jeu [android](https://fr.wikipedia.org/wiki/Android) appelé « [The rusty lake hostel](https://store.steampowered.com/app/435120/Rusty_Lake_Hotel/) ». Il s'agit d'une sorte d'escape game en [point & click ](https://fr.wikipedia.org/wiki/Pointer-et-cliquer) ou vous devez résoudre des énigmes. Parmi celles-ci, il y en a une qui m'a donné du fil à retordre et qui m'a contraint à écrire du code pour la résoudre. 
-Il s'agit d'une énigme composée de 3 bouteilles de volumes différents : la première de 10 litres , la deuxième de 5 litres et la troisième de 6 litres. En début de partie,  la première bouteille contient 10 litres d'eau sur les 10, la deuxième 1 litre sur les 5 et la troisième est vide.    
+Il s'agit d'une énigme composée de 3 bouteilles de volumes différents : la première de **10** litres , la deuxième de **5** litres et la troisième de **6** litres. En début de partie,  la première bouteille contient 10 litres d'eau sur les 10, la deuxième 1 litre sur les 5 et la troisième est vide.    
 Le but du jeu est de réussir à avoir 8 litres dans la première en vidant les bouteilles les unes dans les autres successivement. 
 
 <div class="figure">     <img src="../images/rusty_lake/base.jpg" />      <div class="legend">3 bouteilles ..</div> </div>   
@@ -102,7 +102,7 @@ nx.draw(graph, with_labels=True)
 
 Voilà ce qu'on obtient comme graphe. Et comme vous pouvez l'observer en jaune, il y a un état **(8,0,3)** contenant 8L dans la première bouteille. C'est l'état que nous voulons atteindre.
 
-<div class="figure">     <img src="../images/rusty_lake/graphe.png" />      <div class="legend">3 bouteilles ..</div> </div> 
+<div class="figure">     <img src="../images/rusty_lake/graphe.png" />      <div class="legend">Graphe de l'ensemble des états possibles avec 7 mouvements</div> </div> 
 
 ## La solution
 
