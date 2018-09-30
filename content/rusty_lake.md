@@ -14,7 +14,7 @@ Le but du jeu est de réussir à avoir 8 litres dans la première en vidant les 
 
 <div class="figure">     <img src="../images/rusty_lake/base.jpg" />      <div class="legend">3 bouteilles ..</div> </div>   
 
-En essayant à tâtons et en réfléchissant, vous trouverez surement la réponse en un temps raisonnable. Mais j'ai préféré écrire du code qui réfléchisse pour moi afin d'être plus systématique et parce que c'est plus rigolo. J'ai d'abord pensé à de la programmation logique avec [Prolog](https://fr.wikipedia.org/wiki/Prolog) ou [Answer Set Programming](https://fr.wikipedia.org/wiki/Answer_set_programming). Mais n'étant pas à l'aise dans ces langages, j'ai demandé à un copain, Aluriak, qui s'est fait une joie de résoudre ce problème en ASP et dont les résultats sont dispo sur son blog.       
+En essayant à tâtons et en réfléchissant, vous trouverez surement la réponse en un temps raisonnable. Mais j'ai préféré écrire du code qui réfléchisse pour moi afin d'être plus systématique et parce que c'est plus rigolo. J'ai d'abord pensé à de la programmation logique avec [Prolog](https://fr.wikipedia.org/wiki/Prolog) ou [Answer Set Programming](https://fr.wikipedia.org/wiki/Answer_set_programming). Mais n'étant pas à l'aise dans ces langages, j'ai demandé à un copain, Aluriak, qui s'est fait une joie de résoudre ce problème en ASP et dont les résultats [sont dispo sur son blog](https://lucas.bourneuf.net/blog/asp-temporal.html).       
 De mon côté, j'ai choisi une approche algorithmique en construisant un graphe résumant tous les états possibles associés à leurs transitions. Le notebook est disponible [ici](https://github.com/dridk/notebook/blob/master/rusty_lake/rusty_lake.ipynb) .
 
 ## un graphe d'état
