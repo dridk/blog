@@ -95,8 +95,6 @@ is less than `responsive_break` (see below) and if so, sets `align` to `left`, `
 when setting `responsive_align` to `True`. **Default Value**: 768
  * `process_summary`: [boolean] ensures math will render in summaries and fixes math in that were cut off.
 Requires [BeautifulSoup4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) be installed. **Default Value**: `True`
- * `force_tls`: [boolean] forces mathjax script to load from cdn using https. If set to false, will use document.location.protocol
-**Default Value**: `False`
  * `message_style`: [string] This value controls the verbosity of the messages in the lower left-hand corner. Set it to `None` to eliminate all messages.
 **Default Value**: normal
 
@@ -120,7 +118,7 @@ Markdown
 This plugin implements a custom extension for markdown resulting in math
 being a "first class citizen" for Pelican. 
 
-###Inlined Math
+### Inlined Math
 Math between `$`..`$`, for example, `$`x^2`$`, will be rendered inline
 with respect to the current html block. Note: To use inline math, there
 must *not* be any whitespace before the ending `$`. So for example:
@@ -128,32 +126,35 @@ must *not* be any whitespace before the ending `$`. So for example:
  * **Relevant inline math**: `$e=mc^2$`
  * **Will not render as inline math**: `$40 vs $50`
 
-###Displayed Math
-Math between `$$`..`$$`, for example, `$$`x^2`$$`, will be rendered centered in a
+### Displayed Math
+Math between `$$`..`$$` will be rendered "block style", for example, `$$`x^2`$$`, will be rendered centered in a
 new paragraph.
 
-###Latex Macros
-Latex macros are supported, and are automatically treated like displayed math 
-(i.e. it is wrapped in `div` tag). For example, `begin{equation}` x^2 `\end{equation}`,
+#### Other Latex  Display Math commands
+The other LaTeX commands which usually invoke display math mode from text mode
+are supported,
+and are automatically treated like `$$`-style displayed math 
+in that they are rendered "block" style on their own lines.
+For example, `\begin{equation}` x^2 `\end{equation}`,
 will be rendered in its own block with a right justified equation number
 at the top of the block. This equation number can be referenced in the document.
 To do this, use a `label` inside of the equation format and then refer to that label
-using `ref`. For example: `begin{equation}` `\label{eq}` X^2 `\end{equation}`. Now
-refer to that equation number by `$`\ref{eq}`$`.
+using `ref`. For example: `\begin{equation}` `\label{eq}` X^2 `\end{equation}`. 
+Now refer to that equation number by `$`\ref{eq}`$`.
 
 reStructuredText
 ----------------
 If there is math detected in reStructuredText document, the plugin will automatically
 set the [math_output](http://docutils.sourceforge.net/docs/user/config.html#math-output) configuration setting to `MathJax`.
 
-###Inlined Math
+### Inlined Math
 Inlined math needs to use the [math role](http://docutils.sourceforge.net/docs/ref/rst/roles.html#math):
 
 ```
 The area of a circle is :math:`A_\text{c} = (\pi/4) d^2`.
 ```
 
-###Displayed Math
+### Displayed Math
 Displayed math uses the [math block](http://docutils.sourceforge.net/docs/ref/rst/directives.html#math):
 
 ```

@@ -19,7 +19,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['gravatar','sitemap']
+PLUGINS = ['gravatar','sitemap','render_math']
 
 # #PLUGIN MATH 
 # MATH_JAX = {'auto_insert':False, 'responsive':False}
