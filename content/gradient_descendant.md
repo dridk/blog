@@ -22,7 +22,7 @@ Sauf que pour l'exemple et parce que la majorité des modèles statistiques ne d
 
 ## Une erreur à minimiser 
 
-La première étape consiste à définir une [fonction objectif](https://fr.wikipedia.org/wiki/Fonction_objectif) que l'on cherchera à minimiser. C'est à dire une fonction qui prend en paramètre «a» et qui retourne une erreur à minimiser. Dans notre cas, l'écart entre les points et la droite de regression sera notre fonction objective.
+La première étape consiste à définir une [fonction objectif](https://fr.wikipedia.org/wiki/Fonction_objectif) que l'on cherchera à minimiser. C'est à dire une fonction qui prend en paramètre «a» et qui retourne une erreur. Dans notre cas, l'écart entre les points et la droite de regression sera notre fonction objective.
 
 <div class="figure">
     <img src="../images/gradient_descendant/less_square.png" />      
