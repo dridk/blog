@@ -27,7 +27,7 @@ PLUGINS = ['gravatar','sitemap','render_math']
 # PURE THEME CONFIG
 THEME = "pelican-themes/pure-single"
 
-COVER_IMG_URL = "http://dridk.me/images/splash.svg"
+COVER_IMG_URL = "http://dridk.me/images/common/dnaquestion_banner.jpg"
 PROFILE_IMG_URL= "http://dridk.me/images/avatar.jpg"
 TAGLINE="bioinformatique génétique médecine"
 # Blogroll
