@@ -9,7 +9,7 @@ Status: Draft
 SIDEBARIMAGE:../images/common/ia_banner.jpg
 
 
-Si vous avez déjà commencer à étudier l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), vous avez certainement du entendre parler de la méthode de [descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). Il s'agit d'un algorithme permettant de trouver rapidement le minimum d'une fonction mathématique. Pour faire simple, trouver *x* tel que *f(x) = 0*. 
+Si vous avez déjà commencé à étudier l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), vous avez certainement du entendre parler de la méthode de [descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). Il s'agit d'un algorithme permettant de trouver rapidement le minimum d'une fonction mathématique. Pour faire simple, trouver *x* tel que *f(x) = 0*. 
 Cette méthode est très utilisée en [IA](https://fr.wikipedia.org/wiki/Intelligence_artificielle) avec les [réseaux de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels). Mais avant d'en arriver là, nous allons tenter de comprendre cet algorithme en estimant le paramètre «a» d'une simple régression linéaire d'équation y=ax.
 
 ## Une modèle linéaire 
@@ -63,7 +63,7 @@ De façon naïve, nous pouvons tester toutes les valeurs du paramètre «a» en 
 
 <div class="figure">
     <img src="../images/gradient_descendant/naif.png" />      
-    <div class="legend">Fonction objective: L'erreur en fonction du paramètre «a». L'erreur minimum se situe au alentour de 3</div> </div>   
+    <div class="legend">Fonction objective: L'erreur en fonction du paramètre «a». L'erreur minimum se situe aux alentours de 3</div> </div>   
 
 Dans la vraie vie, on ne va  pas pouvoir s'amuser à tester toutes les valeurs des paramètres possibles. Si vous êtes par exemple avec un modèle à 20 paramètres, il y aurait beaucoup, beaucoup trop de combinaison à tester. C'est là qu'intervient la méthode de descente en gradient en réduisant ces tests  grâce à des pas de tailles variables. 
 
@@ -71,7 +71,7 @@ Dans la vraie vie, on ne va  pas pouvoir s'amuser à tester toutes les valeurs d
 
  La méthode de descente en gradient consiste à prendre une valeur de «a» au hasard et la faire varier plus ou moins fortement par rapport à la pente de la fonction objective. Au lieu de tester toutes les valeurs de «a», vous faites varier «a» avec des pas variables qui deviennent de plus en plus petits au fur et à mesure que l'on se rapproche du minimum.
 
-En cherchant dans vos souvenirs du lycée, cette pente c'est la dérivé encore appelé dérivé partiel si vous travaillez sur plusieurs paramètres. Elle se calcule comme suite: 
+En cherchant dans vos souvenirs du lycée, cette pente c'est la dérivée encore appelé dérivée partielle si vous travaillez sur plusieurs paramètres. Elle se calcule comme suite: 
 
 $$f(a) = \frac{1}{n}\sum_{i=0}^{n}(y_{i}-ax_{i})^{2} $$ 
 
@@ -88,7 +88,7 @@ $$ f'(a) = \frac{1}{n}\sum_{i=0}^{n}(-2y_{i}ax_{i} + a^{2}x_{i}^{2} ) $$
 $$ f'(a) = \frac{-2}{n}\sum_{i=0}^{n}(x_{i}(y_{i} - ax_{i})  $$ 
 
 
-En reprenant cette équation, nous pouvons écrire le code de la fonction qui calcul la dérivé au point «a»: 
+En reprenant cette équation, nous pouvons écrire le code de la fonction qui calcul la dérivée au point «a»: 
 
 ```python
 def derror(a):
@@ -151,4 +151,4 @@ Le notebook contenant l'ensemble du code est disponible [ici](https://github.com
 - [Multivariable calculus](https://www.khanacademy.org/math/multivariable-calculus)
 - [Khan Academy](https://www.youtube.com/watch?v=TEB2z7ZlRAw)
 - [Siraj Raval](https://www.youtube.com/watch?v=nhqo0u1a6fw)
-- [Livre de aurelien Géron](https://www.dunod.com/livres-aurelien-geron)
+- [Livre de Aurélien Géron](https://www.dunod.com/livres-aurelien-geron)
