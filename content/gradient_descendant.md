@@ -116,7 +116,6 @@ def descent_gradient(a=-20, taux = 400000):
         
         a += -grad
         
-        print(a)
 ```
 
 L'animation ci-dessous illustre cette descente en gradient et montre qu'elle s'équilibre autour de a=3.8.     
