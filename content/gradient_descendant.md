@@ -14,7 +14,7 @@ Cette méthode est très utilisée en [IA](https://fr.wikipedia.org/wiki/Intelli
 ## Une modèle linéaire 
 
 J'ai généré pour ce billet 100 points aléatoires (figure ci-dessous). Disons que ces points représentent la taille en fonction du poids. Nous voulons trouver l'équation de la droite passant au mieux par tous les points. Simple vous me direz ? Effectivement, il existe une méthode analytique, c'est-à-dire une formule magique, permettant de trouver directement le paramètre «a» de l'équation *y = ax*. Il s'agit de la méthode des moindres carrée détaillé [ici](https://fr.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/proof-part-1-minimizing-squared-error-to-regression-line) pour les plus curieux.  
-Sauf que pour l'exemple et parce que la majorité des modèles statistiques ne disposent pas de solution analytique, nous allons estimer ces paramètres par une méthode algorithmique: [La descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). 
+Sauf que pour l'exemple et parce que la majorité des modèles statistiques ne disposent pas de solution analytique, nous allons estimer ce paramètre par une méthode algorithmique: [La descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). 
 
 <div class="figure">
     <img src="../images/gradient_descendant/observation.png" />      
