@@ -58,7 +58,7 @@ def error(a):
 
 ```
 
-De façon naïve, nous pouvons tester toutes les valeurs du paramètre «a» et tracer la fonction objective. Visuelement cela donne une parabole dont le minimum correspond à la meilleur valeur «a».
+De façon naïve, nous pouvons tester toutes les valeurs du paramètre «a» et tracer la fonction objective. Visuellement cela donne une parabole dont le minimum correspond à la meilleur valeur «a».
 
 <div class="figure">
     <img src="../images/gradient_descendant/naif.png" />      
