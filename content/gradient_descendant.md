@@ -6,6 +6,7 @@ Tags: algorithme, machine learning
 Category: informatique
 Author: Sacha Schutz
 Status: Draft
+SIDEBARIMAGE:../images/common/ia_banner.jpg
 
 
 Si vous avez déjà commencer à étudier l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), vous avez certainement du entendre parler de la méthode de [descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). Il s'agit d'un algorithme permettant de trouver rapidement le minimum d'une fonction mathématique. Pour faire simple, trouver *x* tel que *f(x) = 0*. 
