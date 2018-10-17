@@ -9,7 +9,7 @@ Status: Draft
 SIDEBARIMAGE:../images/common/ia_banner.jpg
 
 
-Si vous avez déjà commencé à étudier l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), vous avez certainement du entendre parler de la méthode de [descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). Il s'agit d'un algorithme permettant de trouver rapidement le minimum d'une fonction mathématique. Pour faire simple, trouver *x* tel que *f(x) = 0*. 
+Si vous avez déjà commencé à étudier l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), vous avez certainement du entendre parler de la méthode de [descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). Il s'agit d'un algorithme permettant de trouver rapidement le minimum d'une fonction mathématique. Pour faire simple, trouver *x* tel que *f(x)*  soit minimum. 
 Cette méthode est très utilisée en [IA](https://fr.wikipedia.org/wiki/Intelligence_artificielle) avec les [réseaux de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels). Mais avant d'en arriver là, nous allons tenter de comprendre cet algorithme en estimant le paramètre «a» d'une simple régression linéaire d'équation y=ax.
 
 ## Une modèle linéaire 
