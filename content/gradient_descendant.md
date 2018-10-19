@@ -28,7 +28,7 @@ La première étape consiste à définir une [fonction objectif](https://fr.wiki
     <img src="../images/gradient_descendant/less_square.png" />      
     <div class="legend">Nous voulons trouver le paramètre «a» qui minimise les distances ( en rouge ) entre les observations et la prédiction du modèle de régression linéaire. Nous pouvons trouver «a» de façon que la somme de ces écarts au carré soit minimum </div> </div>   
 
-Cette fonction objective se définit comme étant la somme des écarts au carré entre les valeurs observés (y<sub>i</sub>) et les valeurs calculées par la droite d'équation y=ax. 
+Cette fonction objective se définit comme étant la moyenne de la somme des écarts au carré entre les valeurs observés (y<sub>i</sub>) et les valeurs calculées par la droite d'équation y=ax. Le tout 
 Cette fonction s'écrit de la façon suivante:
 
 - «a», le paramètre à estimer de la droite de régression y=ax
@@ -111,7 +111,7 @@ def descent_gradient(a=-20, taux = 400000):
         grad = derror(a) 
         g = grad/ taux
         
-        if -0.5 <= e <= 0.5:
+        if -0.5 <= grad <= 0.5:
             return a
         
         a += -grad
