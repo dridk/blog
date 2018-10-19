@@ -114,7 +114,7 @@ def descent_gradient(a=-20, taux = 400000):
         if -0.5 <= grad <= 0.5:
             return a
         
-        a += -grad
+        a += -g
         
 ```
 
