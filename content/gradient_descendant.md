@@ -25,7 +25,7 @@ Sauf que pour l'exemple et parce que la majorité des modèles statistiques ne d
 La première étape consiste à définir une [fonction objectif](https://fr.wikipedia.org/wiki/Fonction_objectif) que l'on cherchera à minimiser. C'est à dire une fonction qui prend en paramètre «a» et qui retourne une erreur. Dans notre cas, l'écart entre les points et la droite de regression sera notre fonction objective.
 
 <div class="figure">
-    <img src="../images/gradient_descendant/less_square.png" />      
+    <img src="../images/gradient_descendant/Least_Squares.gif" />      
     <div class="legend">Nous voulons trouver le paramètre «a» qui minimise les distances ( en rouge ) entre les observations et la prédiction du modèle de régression linéaire. Nous pouvons trouver «a» de façon que la somme de ces écarts au carré soit minimum </div> </div>   
 
 Cette fonction objective se définit comme étant la moyenne de la somme des écarts au carré entre les valeurs observés (y<sub>i</sub>) et les valeurs calculées par la droite d'équation y=ax. Le tout 
