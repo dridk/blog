@@ -76,14 +76,13 @@ $$f(a) = \frac{1}{n}\sum_{i=0}^{n}(y_{i}-ax_{i})^{2} $$
 
 $$ f(a) = \frac{1}{n}\sum_{i=0}^{n}(y_{i}^{2}-2y_{i}ax_{i} + (ax_{i})^{2} ) $$ 
 
-<center> <em> En dérivant par rapport à «a» nous obtenons : </em> </center>
+<center> <em> Soit </em> </center>
 
 $$ f(a) = \frac{1}{n}\sum_{i=0}^{n}(-2y_{i}ax_{i} + a^{2}x_{i}^{2} ) $$ 
 
-<center> <em> Soit </em> </center>
+<center> <em> En dérivant par rapport à «a» nous obtenons : </em> </center>
 
 $$ f'(a) = \frac{-2}{n}\sum_{i=0}^{n}(x_{i}(y_{i} - ax_{i})  $$ 
-
 
 En reprenant cette équation et en la traduisant en python, nous obtenons: 
 
