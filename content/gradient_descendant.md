@@ -78,7 +78,7 @@ $$ f(a) = \frac{1}{n}\sum_{i=0}^{n}(y_{i}^{2}-2y_{i}ax_{i} + (ax_{i})^{2} ) $$
 
 <center> <em> En dérivant par rapport à «a» nous obtenons : </em> </center>
 
-$$ f'(a) = \frac{1}{n}\sum_{i=0}^{n}(-2y_{i}ax_{i} + a^{2}x_{i}^{2} ) $$ 
+$$ f(a) = \frac{1}{n}\sum_{i=0}^{n}(-2y_{i}ax_{i} + a^{2}x_{i}^{2} ) $$ 
 
 <center> <em> Soit </em> </center>
 
