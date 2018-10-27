@@ -63,6 +63,7 @@ $$f'(x) = 3x^2$$
 $$
 y=f'(a)(x-a) + f(a)\\
 y=3a^2(x-a) + a^3 + 3\\
+<center> <em> En remplaçant «a» par 2.5  </em> </center>
 y=18,75x - 28,25\\
 $$
 
