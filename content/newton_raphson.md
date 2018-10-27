@@ -138,7 +138,7 @@ En résumé, il faut chercher x tel que f'(x) = 0.  Et c'est exactement ce que l
 
 <div class="figure">
     <img src="../images/newton_raphson/newton_gradient.png" />      
-    <div class="legend">La tangente de la dérivé (orange) au point A' est cette même droite qui coupe ici l'axe des abscisse </div> </div>  
+    <div class="legend">En bleu la fonction objective. En orange la dérivé de la fonction objective. La tangente de la dérivé au point A' est cette même droite qui coupe ici l'axe des abscisse au point B </div> </div>  
 
 Appliquons alors l'algorithme de Newton-Raphson. Prenons au hasard un point A, trouvons le point A' sur la dérivé, et traçons la tangente. Étant donné que la tangente d'une droite est cette même droite, vous constaterez qu'il suffira d'une seule itération pour trouver une approximation du point B ou la fonction objective est minimale.
 
