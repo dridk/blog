@@ -61,8 +61,8 @@ $$f(x) = x^3 + 3$$
 $$f'(x) = 3x^2$$
 <center> <em> La tagente au point A' (a=2.5) a donc pour equation: </em> </center>
 $$
-y=f'(A)(x-A) + f(A)\\
-y=3A^2(x-A) + A^3 + 3\\
+y=f'(a)(x-a) + f(a)\\
+y=3A^2(x-a) + a^3 + 3\\
 y=18,75x - 28,25\\
 $$
 
