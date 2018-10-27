@@ -127,14 +127,14 @@ Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans [le préc�
     <img src="../images/gradient_descendant/observation.png" />      
     <div class="legend">Trouver une droite d'équation Taille = a*Poids ou y=a*x pouvant expliquer la distribution de ces points</div> </div> 
 
-Nous avions défini une fonction objective comme étant la somme des différentes entre les points observées et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. 
+Nous avions défini une fonction objective comme étant la somme des différentes entre les points observées et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. Dans notre cas, la dérivé de la fonction objective est une droite.
 
 <div class="figure">
     <img src="../images/gradient_descendant/derivate.png" />      
     <div class="legend">La pente de la fonction objective est nulle près de son minimum. Rechercher le minium revient à trouver la valeur ou la dérivée s'annule</div> </div>  
 
 #### Méthode géométrique
-En résumé, il faut chercher x tel que f'(x) = 0. Dans notre cas, la dérivé de la fonction objective est une droite. Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange), dont nous avions calculé les équations dans [le précédent billet](gradient_descendant.html). 
+En résumé, il faut chercher x tel que f'(x) = 0.  Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange), dont nous avions calculé les équations dans [le précédent billet](gradient_descendant.html). 
 
 <div class="figure">
     <img src="../images/newton_raphson/newton_gradient.png" />      
