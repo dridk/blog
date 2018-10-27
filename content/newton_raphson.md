@@ -195,7 +195,7 @@ print(a) # retourne 3.67955204188 le point ou la fonction objective est minimum
 
 # Conclusion
 
-Si vous aviez lu le [billet précédent](gradient_descendant.html), vous allez pouvoir comparer la méthode des gradients et celle de Newton. De manière générale la méthode de Newton est meilleure, car elle s'approche beaucoup plus rapidement du résultat. Cependant, calculer la dérivé seconde peut parfois être lent à calculer, surtout dans un espace multidimensionnel, et l'on préfère alors utiliser d'autres méthodes comme celle des gradients. La dernière image vous montre la direction que prendraient les valeurs dans un espace à deux dimensions en fonction des méthodes.
+Si vous avez lu le [billet précédent](gradient_descendant.html), vous allez pouvoir comparer la méthode des gradients et celle de Newton. De manière générale la méthode de Newton est meilleure, car elle s'approche beaucoup plus rapidement du résultat. Cependant, calculer la dérivé seconde peut parfois être lent à calculer, surtout dans un espace multidimensionnel, et l'on préfère alors utiliser d'autres méthodes comme celle des gradients. La dernière image vous montre la direction que prendraient les valeurs dans un espace à deux dimensions en fonction des méthodes.
 
 
 <div class="figure">
