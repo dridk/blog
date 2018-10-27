@@ -30,11 +30,11 @@ Par exemple A=(2.5, 0).
     <div class="legend">Prenons un point au hasard A</div> </div>   
 
 
-Puis trouvons le point A' comme étant la projection de A par la fonction cubique. C'est-à-dire le point A'=(2.5, f(2.5)).
+Puis trouvons le point A' l'image de A par la fonction cubique. C'est-à-dire le point A'=(2.5, f(2.5)).
 
 <div class="figure">
     <img src="../images/newton_raphson/test0-2.png" />      
-    <div class="legend">Le point A' est la projection de A sur la courbe</div> </div>   
+    <div class="legend">Le point A' est l'image de A par f</div> </div>   
 
 
 Enfin, traçons la [tangente](https://fr.wikipedia.org/wiki/Tangente_(g%C3%A9om%C3%A9trie)) de la courbe au point A'. Cette tangente est une droite qui couple l'axe des abscisses au point B.
@@ -53,7 +53,7 @@ A partir du point B, il suffit de recommencer les mêmes étapes qu'avec le poin
 Maintenant que vous visualisez comment trouver la racine d'une fonction en utilisant la méthode de Newton-Raphson, voyons comme la calculer. Quelques notions de math vues au lycée suffirons:
 
 #### Equation de la tangente au point A'
-[La tangente en un point](https://fr.wikipedia.org/wiki/Tangente_(g%C3%A9om%C3%A9trie)#Calculs_de_tangente) d'une fonction f(x) ayant pour dérivé f'(x) est une droite d'équation $y=f'(a)(x-a) + f(a)$ avec «a» les coordonnées de A sur l'axe des abscisses. Dans notre cas, l'équation de la tangente au point A' se calcul donc comme ceci:
+[La tangente en un point](https://fr.wikipedia.org/wiki/Tangente_(g%C3%A9om%C3%A9trie)#Calculs_de_tangente) d'une fonction f(x) ayant pour dérivée f'(x) est une droite d'équation $y=f'(a)(x-a) + f(a)$ avec «a» les coordonnées de A sur l'axe des abscisses. Dans notre cas, l'équation de la tangente au point A' se calcul donc comme ceci:
 
 <center> <em> Notre fonction a pour équation: </em> </center>
 $$f(x) = x^3 + 3$$
@@ -127,7 +127,7 @@ Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans [le préc�
     <img src="../images/gradient_descendant/observation.png" />      
     <div class="legend">Trouver une droite d'équation Taille = a*Poids ou y=a*x pouvant expliquer la distribution de ces points</div> </div> 
 
-Nous avions défini une fonction objective comme étant la somme des différences au carré entre les points observées et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. Dans notre cas, la dérivé de la fonction objective est une droite.
+Nous avions défini une fonction objective comme étant la somme des différences au carré entre les points observés et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. Dans notre cas, la fonction objectif est polynomiale de degré deux, sa dérivée est donc linéaire.
 
 <div class="figure">
     <img src="../images/gradient_descendant/derivate.png" />      
