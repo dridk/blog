@@ -134,7 +134,7 @@ Nous avions défini une fonction objective comme étant la somme des différente
     <div class="legend">La pente de la fonction objective est nulle près de son minimum. Rechercher le minium revient à trouver la valeur ou la dérivée s'annule</div> </div>  
 
 #### Méthode géométrique
-En résumé, il faut chercher x tel que f'(x) = 0. Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange), ici une droite, dont nous avions calculé les équations dans le précédent billet. 
+En résumé, il faut chercher x tel que f'(x) = 0. Dans notre cas, la dérivé de la fonction objective est une droite. Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange), dont nous avions calculé les équations dans le précédent billet. 
 
 <div class="figure">
     <img src="../images/newton_raphson/newton_gradient.png" />      
