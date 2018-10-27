@@ -134,19 +134,15 @@ Nous avions défini une fonction objective comme étant la somme des différente
     <div class="legend">La pente de la fonction objective est nulle près de son minimum. Rechercher le minium revient à trouver la valeur ou la dérivée s'annule</div> </div>  
 
 #### Méthode géométrique
-En résumé, il faut chercher x tel que f'(x) = 0. Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange) dont nous avions calculé les équations dans le précédent billet.
-
-<center> <em> La fonction objective a pour équation </em> </center>
-$$ f(a) = \frac{1}{n}\sum_{i=0}^{n}(-2y_{i}ax_{i} + a^{2}x_{i}^{2} ) $$ 
-
-<center> <em> Sa dérivé a pour équation </em> </center>
-$$ f'(a) = \frac{-2}{n}\sum_{i=0}^{n}(x_{i}(y_{i} - ax_{i})  $$ 
-
-Appliquons alors l'algorithme de Newton-Raphson. Prenons au hasard un point A, trouvons le point A' sur la dérivé, et traçons la tangente. Étant donné que la tangente d'une droite est cette même droite, vous constaterez qu'il suffira d'une seule itération pour trouver une approximation du point B ou la fonction objective est minimale.
+En résumé, il faut chercher x tel que f'(x) = 0. Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange), ici une droite, dont nous avions calculé les équations dans le précédent billet. 
 
 <div class="figure">
     <img src="../images/newton_raphson/newton_gradient.png" />      
     <div class="legend">La tangente de la dérivé (orange) au point A' est cette même droite qui coupe ici l'axe des abscisse </div> </div>  
+
+Appliquons alors l'algorithme de Newton-Raphson. Prenons au hasard un point A, trouvons le point A' sur la dérivé, et traçons la tangente. Étant donné que la tangente d'une droite est cette même droite, vous constaterez qu'il suffira d'une seule itération pour trouver une approximation du point B ou la fonction objective est minimale.
+
+
 
 #### Méthode algorithmique
 
