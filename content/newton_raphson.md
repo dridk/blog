@@ -4,7 +4,7 @@ Date: 2018-10-27 16:41:09
 Modified: 2018-10-27 16:41:09
 Tags: algorithme, machine learning
 Category: informatique
-Author: Sacha Schutz
+Author: Sacha Schutz 
 Status: Draft
 SIDEBARIMAGE:../images/common/ia_banner.jpg
 
@@ -95,17 +95,12 @@ def f(x):
 def df(x):
     return 3*x**2
 
-# Trouver la racine 
-def racine(fct, derivate, iteration):
-    a = 2.5 # On part d'un point aléatoire
-    # On applique la formule sur plusieurs itérations
-    for i in range(iteration):
-        a = a - fct(a)/derivate(a)
-        print(a)
+a = 2.5 # On part d'un point aléatoire
+# On applique la formule sur plusieurs itérations.. Disons 10
+for i in range(10):
+    a = a - fct(a)/derivate(a)
+    print(a)
 
-# Sur 10 itérations 
-racine(f,df,10)
-# output
 # 1.5066666666666668
 # 0.5639244350466844
 # -2.7685979807840897
@@ -119,7 +114,31 @@ racine(f,df,10)
 
 ```
 
-## Une régression linéaire 
+### En résumé 
+
+- La méthode de Newton-Raphson permet de trouver rapidement la racine d'une fonction.
+
+- La méthode de Newton permet de trouver la solution à f(x)=c où c est une constante. Il suffit de trouver une fonction g(x)=f(x)-c de telle sorte que la racine de g résoud l'équation qui nous intéresse.
+
+- La méthode de Newton permet de trouver les extrema (minimum et maximum) en recherchant les zéros de la fonction dérivée. En effet, trouver le minimum d'une fonction c'est trouver où la dérivé s'annule.
+
+- Si il y a plusieurs racines, on ne peux pas prédire vers quel racine l'algorithme va converger.
+
+- La méthode de Newton marche assez bien sur des [fonctions monotones](https://fr.wikipedia.org/wiki/Fonction_monotone) mais 
+peut ne pas converger avec d'autre fonction.
+
+- On ne peut pas garantir la convergence si la fonction n'est pas deux 
+fois dérivable à dérivée seconde continue.
+
+- On doit bien partir d'un point. Même si, dans les bonnes conditions, 
+le choix de ce point n'a pas grande importance, il peut en avoir avec 
+les fonctions non monotones.
+
+- Si les conditions sont respecté, cette algorithme est beaucoup plus performant que la [dichotomie](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_dichotomie).
+
+
+
+## Exemple avec une régression linéaire 
 
 Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans [le précédent billet](gradient_descendant.html). Nous avons le poids en fonction de la taille. L'objectif est de trouver le meilleur paramètre «a» de la droite d'équation y = ax pouvant expliquer la distribution de ces points.
 
@@ -203,3 +222,7 @@ Si vous avez lu le [billet précédent](gradient_descendant.html), vous allez po
 - [Wikipedia](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) 
 - [An intuitive and physical approach to Newton’s method](ttps://medium.com/@ruhayel/an-intuitive-and-physical-approach-to-newtons-method-86a0bd812ec3)
 - [Retrouver mon notebook sur github](https://github.com/dridk/notebook/blob/master/newton-raphson/)
+
+# Remerciements
+André Gilibert
+Olivier Dameron
