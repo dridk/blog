@@ -127,7 +127,7 @@ Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans [le préc�
     <img src="../images/gradient_descendant/observation.png" />      
     <div class="legend">Trouver une droite d'équation Taille = a*Poids ou y=a*x pouvant expliquer la distribution de ces points</div> </div> 
 
-Nous avions défini une fonction objective comme étant la somme des différentes entre les points observées et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. Dans notre cas, la dérivé de la fonction objective est une droite.
+Nous avions défini une fonction objective comme étant la somme des différences au carré entre les points observées et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. Dans notre cas, la dérivé de la fonction objective est une droite.
 
 <div class="figure">
     <img src="../images/gradient_descendant/derivate.png" />      
