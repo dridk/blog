@@ -1,25 +1,25 @@
 Title: L'algorithme de Newton-Raphson
 Slug: newton-raphson
-Date: 2018-10-21 12:32:39
-Modified: 2018-10-21 12:32:39
+Date: 2018-10-27 16:41:09
+Modified: 2018-10-27 16:41:09
 Tags: algorithme, machine learning
 Category: informatique
 Author: Sacha Schutz
 Status: Draft
 SIDEBARIMAGE:../images/common/ia_banner.jpg
 
-La méthode de Newton-Raphson est une méthode algorithmique pour trouver la racine d'une fonction. C'est-à-dire trouver x tel que f(x) = 0. Cette méthode est d'une simplicité déconcertante et n'importe qui à l'aide d'un crayon et d'une règle pourrait reproduire l'algorithme sur une feuille de papier. 
-Dans ce billet, nous verrons comment réaliser cet algorithme de façon géométrique puis algorithmique. Puis pour faire suite au billet précédent sur la descente en gradient, nous verrons comment utiliser la méthode de Newton-Raphson dans une régression linéaire.
+La méthode de [Newton-Raphson](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) est une méthode algorithmique pour trouver la racine d'une fonction. C'est-à-dire trouver x tel que f(x) = 0. Cette méthode est d'une simplicité déconcertante et n'importe qui à l'aide d'un crayon et d'une règle pourrait reproduire l'algorithme sur une feuille de papier. 
+Dans ce billet, nous verrons comment réaliser cet algorithme de façon géométrique puis algorithmique. Puis pour faire suite au [billet précédent sur la descente en gradient](gradient_descendant.html), nous verrons comment utiliser la méthode de Newton-Raphson dans une [régression linéaire](https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire).
 
 ## Trouver la racine d'une fonction cubique
 
-Prenons une fonction cubique, par exemple $f(x) = x^3  +3$  et traçons la courbe sur un repère cartésien.
+Prenons une [fonction cubique](https://fr.wikipedia.org/wiki/Fonction_cubique), par exemple $f(x) = x^3  +3$  et traçons la courbe sur un [repère cartésien](https://fr.wikipedia.org/wiki/Rep%C3%A8re_affine).
 
 <div class="figure">
     <img src="../images/newton_raphson/cubic.png" />      
     <div class="legend">La fonction cubique coupe l'axe des abscisses au point rouge. Nous voulons trouver les coordonnées de ce point par une méthode algorithmique</div> </div>   
 
-La méthode de Newton-Raphson nous permet de trouver le point x de la courbe tel que f(x) = 0. C'est-à-dire le point de la courbe qui coupe l'axe des abscisses. Bien sûr, nous pourrions simplement résoudre l'équation et trouver x. Mais parfois, les fonctions sont plus complexes et il n'existe aucune solution analytique. La méthode de Newton-Raphson nous permet d'y remédier par un algorithme itératif décrit ci-dessous:
+La méthode de Newton-Raphson nous permet de trouver le point x de la courbe tel que f(x) = 0. C'est-à-dire le point de la courbe qui coupe l'axe des abscisses. Bien sûr, nous pourrions simplement résoudre l'équation et trouver x. Mais parfois, les fonctions sont plus complexes et il n'existe aucune solution analytique. La méthode de Newton-Raphson nous permet d'y remédier par un [algorithme itératif](https://fr.wikipedia.org/wiki/M%C3%A9thode_it%C3%A9rative) décrit ci-dessous:
 
 ### Representation géométrique 
 Choisissons un point au hasard A sur l'axe des abscisses. 
@@ -37,7 +37,7 @@ Puis trouvons le point A' comme étant la projection de A par la fonction cubiqu
     <div class="legend">Le point A' est la projection de A sur la courbe</div> </div>   
 
 
-Enfin, traçons la tangente de la courbe au point A'. Cette tangente est une droite qui couple l'axe des abscisses au point B.
+Enfin, traçons la [tangente](https://fr.wikipedia.org/wiki/Tangente_(g%C3%A9om%C3%A9trie)) de la courbe au point A'. Cette tangente est une droite qui couple l'axe des abscisses au point B.
 
 <div class="figure">
     <img src="../images/newton_raphson/test0-3.png" />      
@@ -53,7 +53,7 @@ A partir du point B, il suffit de recommencer les mêmes étapes qu'avec le poin
 Maintenant que vous visualisez comment trouver la racine d'une fonction en utilisant la méthode de Newton-Raphson, voyons comme la calculer. Quelques notions de math vues au lycée suffirons:
 
 #### Equation de la tangente au point A'
-La tangente en un point d'une fonction f(x) ayant pour dérivé f'(x) est une droite d'équation $y=f'(a)(x-a) + f(a)$ avec «a» les coordonnées de A sur l'axe des abscisses. Dans notre cas, l'équation de la tangente au point A' se calcul donc comme ceci:
+[La tangente en un point](https://fr.wikipedia.org/wiki/Tangente_(g%C3%A9om%C3%A9trie)#Calculs_de_tangente) d'une fonction f(x) ayant pour dérivé f'(x) est une droite d'équation $y=f'(a)(x-a) + f(a)$ avec «a» les coordonnées de A sur l'axe des abscisses. Dans notre cas, l'équation de la tangente au point A' se calcul donc comme ceci:
 
 <center> <em> Notre fonction a pour équation: </em> </center>
 $$f(x) = x^3 + 3$$
@@ -118,7 +118,7 @@ racine(f,df,10)
 
 ## Une régression linéaire 
 
-Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans le précédent billet. Nous avons le poids en fonction de la taille. L'objectif est de trouver le meilleur paramètre «a» de la droite d'équation y = ax pouvant expliquer la distribution de ces points.
+Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans [le précédent billet](gradient_descendant.html). Nous avons le poids en fonction de la taille. L'objectif est de trouver le meilleur paramètre «a» de la droite d'équation y = ax pouvant expliquer la distribution de ces points.
 
 <div class="figure">
     <img src="../images/gradient_descendant/observation.png" />      
@@ -192,10 +192,14 @@ print(a) # retourne 3.67955204188 le point ou la fonction objective est minimum
 
 # Conclusion
 
-Si vous aviez lu le billet précédent, vous allez pouvoir comparer la méthode des gradients et celle de Newton. De manière générale la méthode de Newton est meilleure, car elle s'approche beaucoup plus rapidement du résultat. Cependant, calculer la dérivé seconde peut parfois être lent à calculer, surtout dans un espace multidimensionnel, et l'on préfère alors utiliser d'autres méthodes comme celle des gradients. La dernière image vous montre la direction que prendraient les valeurs dans un espace à deux dimensions en fonction des méthodes.
+Si vous aviez lu le [billet précédent](gradient_descendant.html), vous allez pouvoir comparer la méthode des gradients et celle de Newton. De manière générale la méthode de Newton est meilleure, car elle s'approche beaucoup plus rapidement du résultat. Cependant, calculer la dérivé seconde peut parfois être lent à calculer, surtout dans un espace multidimensionnel, et l'on préfère alors utiliser d'autres méthodes comme celle des gradients. La dernière image vous montre la direction que prendraient les valeurs dans un espace à deux dimensions en fonction des méthodes.
 
 
 <div class="figure">
     <img src="../images/newton_raphson/gradient_vs_newton.gif" />      
     <div class="legend">La fonction cubique coupe l'axe des abscisses en point que nous cherchons à trouver par une méthode algorithmique</div> </div>  
 
+# Référence 
+
+- [Wikipedia](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) 
+- [An intuitive and physical approach to Newton’s method](ttps://medium.com/@ruhayel/an-intuitive-and-physical-approach-to-newtons-method-86a0bd812ec3)
