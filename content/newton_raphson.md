@@ -202,3 +202,4 @@ Si vous avez lu le [billet précédent](gradient_descendant.html), vous allez po
 
 - [Wikipedia](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) 
 - [An intuitive and physical approach to Newton’s method](ttps://medium.com/@ruhayel/an-intuitive-and-physical-approach-to-newtons-method-86a0bd812ec3)
+- [Retrouver mon notebook sur github](https://github.com/dridk/notebook/blob/master/newton-raphson/)
