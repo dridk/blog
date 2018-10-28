@@ -99,7 +99,7 @@ def df(x):
 a = 2.5 # On part d'un point aléatoire
 # On applique la formule sur plusieurs itérations... Disons 10
 for i in range(10):
-    a = a - fct(a)/df(a)
+    a = a - f(a)/df(a)
     print(a)
 
 # 1.5066666666666668
