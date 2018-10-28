@@ -6,6 +6,7 @@ Tags: algorithme, machine learning
 Category: informatique
 Author: Sacha Schutz 
 SIDEBARIMAGE:../images/common/ia_banner.jpg
+Summary: La méthode de [Newton-Raphson](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) est une méthode algorithmique pour trouver la racine d'une fonction. C'est-à-dire trouver x tel que f(x) = 0. Cette méthode est d'une simplicité déconcertante que je vais détailler dans ce billet de façon géométrique puis algorithmique.
 
 La méthode de [Newton-Raphson](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) est une méthode algorithmique pour trouver la racine d'une fonction. C'est-à-dire trouver x tel que f(x) = 0. Cette méthode est d'une simplicité déconcertante que je vais détailler dans ce billet de façon géométrique puis algorithmique.
 
