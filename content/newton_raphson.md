@@ -8,8 +8,7 @@ Author: Sacha Schutz
 Status: Draft
 SIDEBARIMAGE:../images/common/ia_banner.jpg
 
-La méthode de [Newton-Raphson](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) est une méthode algorithmique pour trouver la racine d'une fonction. C'est-à-dire trouver x tel que f(x) = 0. Cette méthode est d'une simplicité déconcertante et n'importe qui à l'aide d'un crayon et d'une règle pourrait reproduire l'algorithme sur une feuille de papier. 
-Dans ce billet, nous verrons comment réaliser cet algorithme de façon géométrique puis algorithmique. Puis pour faire suite au [billet précédent sur la descente en gradient](gradient_descendant.html), nous verrons comment utiliser la méthode de Newton-Raphson dans une [régression linéaire](https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire).
+La méthode de [Newton-Raphson](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) est une méthode algorithmique pour trouver la racine d'une fonction. C'est-à-dire trouver x tel que f(x) = 0. Cette méthode est d'une simplicité déconcertante que je vais détaillé dans ce billet de façon géométrique puis algorithmique.
 
 ## Trouver la racine d'une fonction cubique
 
@@ -118,13 +117,13 @@ for i in range(10):
 
 - La méthode de Newton-Raphson permet de trouver rapidement la racine d'une fonction.
 
-- La méthode de Newton permet de trouver la solution à f(x)=c où c est une constante. Il suffit de trouver une fonction g(x)=f(x)-c de telle sorte que la racine de g résoud l'équation qui nous intéresse.
+- La méthode de Newton permet de trouver les extrêmes (minimum et maximum) d'une fonction. En effet, trouver le minimum ou le maximum d'une fonction c'est trouver où la dérivée s'annule. Par exemple dans [le billet précédent sur la descente en gradient](http://dridk.me/gradient_descendant.html) vous pouvez calculer le minimum de la fonction objective en connaissant sa dérivée et sa dérivée seconde. Vous verez que pour une régression linéaire il suffit d'une itération pour trouver le minimum.
 
-- La méthode de Newton permet de trouver les extrema (minimum et maximum) en recherchant les zéros de la fonction dérivée. En effet, trouver le minimum d'une fonction c'est trouver où la dérivé s'annule.
+- La méthode de Newton permet de trouver la solution à f(x)=c où «c» est une constante. Il suffit de trouver une fonction g(x)=f(x)-c de telle sorte que la racine de g résout l'équation qui nous intéresse.
 
-- Si il y a plusieurs racines, on ne peux pas prédire vers quel racine l'algorithme va converger.
+- S’il y a plusieurs racines, on ne peut pas prédire vers quelle racine l'algorithme va converger.
 
-- La méthode de Newton marche assez bien sur des [fonctions monotones](https://fr.wikipedia.org/wiki/Fonction_monotone) mais 
+- La méthode de Newton marche assez bien sûr des [fonctions monotones](https://fr.wikipedia.org/wiki/Fonction_monotone) mais 
 peut ne pas converger avec d'autre fonction.
 
 - On ne peut pas garantir la convergence si la fonction n'est pas deux 
@@ -134,88 +133,11 @@ fois dérivable à dérivée seconde continue.
 le choix de ce point n'a pas grande importance, il peut en avoir avec 
 les fonctions non monotones.
 
-- Si les conditions sont respecté, cette algorithme est beaucoup plus performant que la [dichotomie](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_dichotomie).
+- Si les conditions sont respectées, cet algorithme est beaucoup plus performant que la [dichotomie](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_dichotomie).
 
+- La méthode de Newton est utilisé dans [les modèles linéaires généralisés (MLG)](https://fr.wikipedia.org/wiki/Mod%C3%A8le_lin%C3%A9aire_g%C3%A9n%C3%A9ralis%C3%A9)
 
-
-## Exemple avec une régression linéaire 
-
-Reprenons l'exemple d'une régression linéaire dont j'ai parlé dans [le précédent billet](gradient_descendant.html). Nous avons le poids en fonction de la taille. L'objectif est de trouver le meilleur paramètre «a» de la droite d'équation y = ax pouvant expliquer la distribution de ces points.
-
-<div class="figure">
-    <img src="../images/gradient_descendant/observation.png" />      
-    <div class="legend">Trouver une droite d'équation Taille = a*Poids ou y=a*x pouvant expliquer la distribution de ces points</div> </div> 
-
-Nous avions défini une fonction objective comme étant la somme des différences au carré entre les points observés et les points prédits par la droite de régression y=ax. La meilleure valeur de «a» est celle où la fonction objective est minimum. Plus exactement, c'est la valeur pour laquelle la dérivée (ou la pente) de la fonction objective est nulle. Dans notre cas, la fonction objectif est polynomiale de degré deux, sa dérivée est donc linéaire.
-
-<div class="figure">
-    <img src="../images/gradient_descendant/derivate.png" />      
-    <div class="legend">La pente (rouge) de la fonction objective (bleu) est nulle près de son minimum. Rechercher le minium revient à trouver la valeur ou la dérivée s'annule</div> </div>  
-
-#### Méthode géométrique
-En résumé, il faut chercher x tel que f'(x) = 0.  Et c'est exactement ce que l'algorithme de Newton-Raphson sait faire. Traçons d'abord la fonction objective (bleue) et sa dérivée (orange), dont nous avions calculé les équations dans [le précédent billet](gradient_descendant.html). 
-
-<div class="figure">
-    <img src="../images/newton_raphson/newton_gradient.png" />      
-    <div class="legend">En bleu la fonction objective. En orange la dérivé de la fonction objective. La tangente de la dérivé au point A' est cette même droite qui coupe ici l'axe des abscisse au point B </div> </div>  
-
-Appliquons alors l'algorithme de Newton-Raphson. Prenons au hasard un point A, trouvons le point A' sur la dérivé, et traçons la tangente. Étant donné que la tangente d'une droite est cette même droite, vous constaterez qu'il suffira d'une seule itération pour trouver une approximation du point B ou la fonction objective est minimale.
-
-
-
-#### Méthode algorithmique
-
-D'une manière générale, si vous voulez faire une régression quelconque avec la méthode de Newton il vous faudra: 
-
-<center> <em> Une Fonction objective</em> </center>
-$$f(a) = \frac{1}{n}\sum_{i=0}^{n}(-2y_{i}ax_{i} + a^{2}x_{i}^{2})$$
-
-<center> <em> La dérivé de la fonction objective</em> </center>
-$$ f'(a) = \frac{-2}{n}\sum_{i=0}^{n}(x_{i}(y_{i} - ax_{i})  $$ 
-
-<center> <em> La Dérivé seconde de la fonction objective</em> </center>
-$$ f''(a) = \frac{-2}{n}\sum_{i=0}^{n}x_{i}^2$$ 
-
-
-En python, la régression linéaire revient donc à faire : 
-
-
-```python
-# Fonction objectif 
-def error(a):
-    yPred      = X * a 
-    yObserved  = Y 
-    size       = len(X)
-    diff = sum((yPred - yObserved)**2)/size
-    return diff
-
-# Dérivé de la fonction objective
-def derror(a):
-    size = len(X)
-    return -2/size * sum(X * (Y - a * X))
-
-# Dérivé second de la fonction objective
-def dderror(a):
-    size = len(X)
-    return 2/size * sum (X*X)
-
-# Pas besoin de faire d'itération dans le cas d'une régression linéaire,
-# on arrive direct au résultat en une itération.. Et ça, c'est magique ! 
-# for i in range(iteration) 
-
-a = 7.5   # points au hasard
-a -= derror(a) / dderror(a)
-print(a) # retourne 3.67955204188 le point ou la fonction objective est minimum 
-```
-
-# Conclusion
-
-Si vous avez lu le [billet précédent](gradient_descendant.html), vous allez pouvoir comparer la méthode des gradients et celle de Newton. Cette dernière est meilleure, car elle s'approche beaucoup plus rapidement du résultat. Cependant, calculer la dérivé seconde peut parfois être lent à calculer, surtout dans un espace multidimensionnel. Dans ce cas, on préfère utiliser d'autres méthodes comme celle des gradients. La dernière image vous montre la direction que prendraient les valeurs dans un espace à deux dimensions en fonction des méthodes.
-
-
-<div class="figure">
-    <img src="../images/newton_raphson/gradient_vs_newton.gif" />      
-    <div class="legend">La fonction cubique coupe l'axe des abscisses en point que nous cherchons à trouver par une méthode algorithmique</div> </div>  
+- La méthode de Newton a été utilisé pour calculer rapidement l'[inverse d'une racine carrée](https://fr.wikipedia.org/wiki/Racine_carr%C3%A9e_inverse_rapide) dans Quake3. 
 
 # Référence 
 
@@ -224,5 +146,6 @@ Si vous avez lu le [billet précédent](gradient_descendant.html), vous allez po
 - [Retrouver mon notebook sur github](https://github.com/dridk/notebook/blob/master/newton-raphson/)
 
 # Remerciements
-André Gilibert
-Olivier Dameron
+
+- André Gilibert
+- Olivier Dameron
