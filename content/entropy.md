@@ -1,74 +1,94 @@
 Title: L'entropie et la théorie de l'information
-Slug: entropy
+Slug: shannon-entropy
 Status: Draft 
 Date: 2019-02-01 22:24:08
 Modified: 2019-02-01 22:24:08
 Tags: statistique,information
 Category: biologie,informatique
 Author: Sacha Schutz
+SIDEBARIMAGE:../images/common/stat_banner.jpg
 
-J'ai plusieurs fois été confronté en informatique à la notion d'entropie sans vraiment la comprendre. 
-J'avais une vague idée, inspiré de mes cours de physiques, d'une sorte de "mesure" du "désordre" pour "quantifer" de l'information. 
-Il s'agit pourtant d'un concept fondamental en informatique que tout informaticien doit connaître et qu'on appelle : la théorie de l'information. 
 
-Cette théorie publié par Claude Shannon dans "A mathematical theory of communication" a permis l'essort de nos communications modernes, de la téléphonie jusqu'au transmission des données massives par internet. On la trouve égallement dans les algorithmes de compressions, les statistiques ou encore en intelligence artificielle. Sans oublié bien sûr en bioinformatique avec l'analyse de notre support d'information préféré : l'ADN. 
+L'etropie et plus généralement la théorie de l'information est un concepte essentiel en informatique. Publié par Claude Shannon en 1948 dans "A mathematical theory of communication", cette théorie a permis l'essort des communications modernes de la téléphonie jusqu'au transmission des données massives par internet. L'equaton de l'entropie est également utilisé dans les algorithmes de compressions, les statistiques ou encore en intelligence artificielle. Sans oublié bien sûr la bioinformatique avec l'analyse de notre support d'information préféré : l'ADN. 
+Ce billet a pour objectif de vous faire comprendre ce qu'est l'entropie au sens de Shannon.
 
 
 ## une mesure de l'incertitude
-L'entropie mesure l'incertiude d'un évenement en fonction de la connaissance que nous avons. Par exemple, depuis que je suis petit le soleil se lève tout les jours. Je suis certain qu'il se levera demain. En revanche, je ne suis pas certain de croisé un ami en ville aujourd'hui, car par experience cela ne m'arrive pas tous les jours. 
-Pour comprendre comment quantifer avec des chiffres cette incertitude, nous allons faire une experience de pensée. Imaginez vous êtes sur la plage d'une île deserte avec un téléphone qui vous permet de contacter le gardien du phare en face de vous. Chaque jour depuis un 1 mois, vous lui demandez la prévision météo que vous notez dans un carnet. 
-Un jour, le micro du gardien casse et impossible pour lui de vous répondre vocalement mais il vous entend très bien. Il choisi alors de vous répondre par oui ou par non en utilisant le signal lumineux de son phare. Lumière verte pour Oui, lumière rouge pour non. Sachant qu'allumer le phare coûte très cher au gardien, essayer de trouver, dans les cas suivants, combien de questions minimum vous allez poser au gardien pour lever votre incertitude sur la météo du jour.
+L'entropie peut être vue comme une mesure de l'incertiude d'un évenement en fonction de la connaissance que nous avons. Par exemple, depuis que je suis petit le soleil se lève tout les jours. Je suis donc certain qu'il se levera demain. En revanche, il est incertain que je croise aujourd'hui un chat noir dans la rue. Celà m'est déjà arrivé plusieurs, mais rien de garantie que cela arrive aujourd'hui. Pour lever cette incertitude, je dois récupérer une certaine quantité d'information...
 
-<div class="figure">     <img src="../images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez poser que des questions avec réponse par oui ou par non pour connaître la météo du jour. Utiliser votre carnet pour en poser un minimum </div> </div>
+<div class="figure">     <img src="../images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
 
 
+Pour comprendre comment quantifier cette incertitude avec des chiffres, faisons une experience de pensée:    
+Imaginer, vous êtes sur la plage d'une île deserte avec un téléphone qui vous permet de contacter le gardien du phare en face de vous. Chaque jour depuis un 1 mois, vous lui demandez la prévision météo que vous notez précieusement dans un carnet. 
+Un jour, le micro du gardien casse et impossible pour lui de vous répondre vocalement. Cependant il peut toujours vous entendre. Il choisi alors de répondre à vos questions par oui ou par non en utilisant le signal lumineux de son phare. Lumière verte pour Oui, lumière rouge pour non. 
+Sachant qu'allumer le phare est couteux, combien de questions allez-vous poser au gardien du phare ? 
 
-### Cas 1 
+
+
+### Cas n°1 
 En regardant votre carnet, vous constatez qu'il y a eu de la pluie 50% du temps et du soleil 50% du temps. 
 
 <center>
 <img src="../images/entropy/bar_plot_1.png" /> 
 </center>
 
-Aujourd'hui il y a donc 1 chance sur 2 pour qu'il pleuve. Pour avoir la réponse, vous appelez le phare et lui poser 1 seul question: 
+Il y a donc 1 chance sur 2 pour qu'il pleuve aujourd'hui. Pour connaître la réponse, vous appelez le phare et lui poser une seul et unique question: 
 
-- Est ce qu'il pleut aujourd'hui ? **OUI**
+<center>
+*Est ce qu'il va peuvoir aujourd'hui ?*
+</center>
 
- Il vous répond "oui" par un seul signal lumineux. Plus précisement, le phare vous a envoyé 1 bits ( oui / non) de donnée et cela a suffit pour lever votre incertitude.
+Il vous répond **oui** ou **non** en utilisant **1** seul signal lumineux. 
+Plus précisement, le phare vous a envoyé **1** bit de donnée et cela a suffit pour lever votre incertitude.
 
-### Cas 2 
-Cette fois vous lisez dans votre carnet 4 prévisions différentes. Pluie 25% du temps, Soleil 25% temps, Neige 25% du temps, orage 25% du temps. Donc une chance sur 4 pour chaque prévision.
+### Cas n°2
+Cette fois vous avez 4 prévisions différentes dans votre carnet. Pluie 25% du temps, Soleil 25% du temps, Neige 25% du temps, orage 25% du temps. C'est à dire 1 chance sur 4 pour chaque prévision.
 
 <center>
 <img src="../images/entropy/bar_plot_2.png" /> 
 </center>
 
-Combien de question au minimum allez vous poser au phare pour lever votre incertitude ? Réfléchissez .... 
+Combien de questions  allez vous poser au phare pour lever votre incertitude ? Réfléchissez bien ....    
+La réponse est de **2 questions**, et pas 3 ni 4. Par exemple : 
 
-La réponse est de 2 questions, par exemple :
+<center> Faire un arbre ? 
+*Il va neiger ou pleuvoir aujourd'hui?*   
+*Il y aura un orage aujourd'hui ?  *   
+</center>
 
-- Est ce que demain ce sera de la neige ou de la pluie ? ( NON )
-- Est ce que demain ce sera un orage ? ( NON)
-- Donc il y aura du soleil. 
+Il vous répond alors par 2 signaux rouges ( Non et Non ) . Vous en concluez qu'il y aura du soleil aujourd'hui.
+Le phare vous a donc transmis 2 bits d'information pour lever votre incertitude.      
+Une autre façon de faire est d'utiliser un code entre vous et le gardien du phare. Il suffit alors de demander *quel temps fera-t'il* et de décoder le message.
 
-Cette fois-ci, le phare vous a transmis 2 bits d'information pour lever votre incertitude. 
+	vert-vert   (11)  = Soleil
+	vert-rouge  (10)  = Pluie
+	rouge-vert  (01)  = Neige
+	rouge-rouge (00)  = Orage  
 
-### Cas 3
-Imaginez maintenant que les prévisions de votre carnet ne sont pas equiprobable. Pluie 80% du temps, Soleil 5% , orage 5%, Neige 5%.
+La encore, 2 bits sont nécessaire pour lever votre incertitude. 
+
+
+### Cas n°3
+Imaginez maintenant que les prévisions de votre carnet ne soient pas equiprobable.    
+Pluie 80% du temps, Soleil 5%, orage 5%, Neige 5%.
 
 <center>
 <img src="../images/entropy/bar_plot_3.png" /> 
 </center>
 
 
-Vous pouvez toujours lui poser 2 questions. Mais cette fois l'ordre va être important. En effet, si vous lui poser d'abord la question: 
+Vous pouvez toujours préparer 2 questions. Mais cette fois l'ordre va être important. En effet, si vous lui poser d'abord la question: 
 
-- "Est ce qu'il pleut ? ( OUI)
+<center>
+*Est ce qu'il va pleuvoir aujourd'hui?*
+</center>
 
-il y a de grande chance qu'il réponde oui et il ne sera plus nécessaire de lui poser la deuxième question. 
-En faisant ainsi chaque jour, dans 80%, un seul bit d'information suffira pour lever votre incertitude. Dans les 20% restant il faudra 2 bits. Soit en moyenne :80% * 1  + 20% * 2  = 1.2 bits. 
+il y a de grande chance qu'il réponde **oui** et il ne sera plus nécessaire de lui poser la deuxième question. 
+En faisant ainsi chaque jour, vous avez 80% de chance qu'un seul bit suffise pour lever votre incertitude. Dans les 20% restant il faudra 2 bits. 
+Il faut donc calculer le nombre de question **en moyenne** qui est nécessaire pour lever votre incertitude. Dans notre cas : 80% * 1  + 20% * 2 soit 1.2 bits.
 
-### Cas 4
+### Cas n°4
 Pour finir, imaginez cette fois avoir notez dans votre carnet : Pluie : 100% du temps , Soleil : 0%, orange : 0% , Neige : 0%. 
 
 <center>
@@ -76,21 +96,31 @@ Pour finir, imaginez cette fois avoir notez dans votre carnet : Pluie : 100% du 
 </center>
 
 
-Dans ce cas, vous ne poserez aucune question au phare. Vous êtes certain qu'il va pleuvoir. Le phare vous transmet donc 0 bits d'information. 
-
+Dans ce dernier cas, vous ne poserez aucune question au phare. Vous êtes certain qu'il va pleuvoir. Le phare vous transmet donc 0 bits d'information. 
 
 
 ## L'entropie de Shannon
-Le nombre de bit minimum transmis par le phare pour lever votre votre incertitude se calcul via l'entropie de Shannon : 
+Le nombre de bit moyen transmis par le phare pour lever votre votre incertitude se calcul via l'entropie de Shannon $H$ ou $p_i$ est la probabilité de l'évenement $i$.
 
-[ formule commenté]
+$$H =  -\sum_i p_i \log_2(p_i)$$ 
 
-Dans le cas 1, il y a 2 évenements avec des probabilités de 50%. Soit : 
-E = 1 
-Dans le cas 2, il y a 4 évenements avec des probablités de 25%. Soit : 
-E = 
-Dans le cas 3, il y a 4 évenments avec des probabilités respectives de 80%, 5%,5%,5% . Soit : 
-E = 1.2 bits 
+Testons pour voir ...     
+Dans le **cas n°1**, il y avait 2 évenements avec des probabilités de 50%. 
+Soit : 
+
+$$H = - 0.5 * log_2(0.5) + 0.5 * log_2(0.5) =  1 bit $$
+
+Dans le **cas n°2**, il y avait 4 évenements avec des probablités de 25%. Soit :   
+
+$$H = - (0.25 * log_2(0.25)) * 4  = 2 bit $$
+
+ 
+Dans le cas n°3, il y avaiat 4 évenments avec des probabilités respectives de 80%,5%,5%,5% . Soit : 
+
+$$H = - (0.8 * log_2(0.8)  + 0.05 * log_2(0.05))    = 2 bit $$
+
+
+
 Dans le cas 4 , il y a 4 évenements dont une a une probabilité de 100%. 
 E = 0 .
 
@@ -101,6 +131,7 @@ Pourquoi utiliser ce terme, qui en physique mesure le désordre? Tout simplement
 ## un exemple en génétique : Le logo plot 
 Si vous faite un peu de génétique, vous avez certainement déjà remarqué ce genre de graphique appelé logo plot. En y regardant de plus près, vous constaterez que l'axe des ordonnées est donnée en nombre de bits! 
 
+remplacer soleil, pluie, neige, orage par A,C,G,T .. 
 
 <div class="figure">     <img src="../images/entropy/logo_plot.png" />      <div class="legend"> Vous ne pouvez poser que des questions avec réponse par oui ou par non pour connaître la météo du jour. Utiliser votre carnet pour en poser un minimum </div> </div>
 
