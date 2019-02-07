@@ -13,16 +13,17 @@ L'entropie et plus généralement la théorie de l'information est un concepte e
 Ce billet a pour objectif de vous faire comprendre ce qu'est l'entropie au sens de Shannon.
 
 
-## une mesure de l'incertitude
+## Une mesure de l'incertitude
 L'entropie peut être vue comme une mesure de l'incertiude d'un évenement en fonction de la connaissance que nous avons. Par exemple, depuis que je suis petit le soleil se lève tout les jours. Je suis donc certain qu'il se levera demain. En revanche, il est incertain que je croise aujourd'hui un chat noir dans la rue. Celà m'est déjà arrivé plusieurs fois, mais rien ne garantie que cela arrive aujourd'hui. Pour lever cette incertitude, je dois récupérer une certaine quantité d'**information**...
 
 <div class="figure">     <img src="../images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
 
 
-Cette incertitude peut être quantifiée avec chiffres. Pour comprendre, faisons une experience de pensée:    
+Cette incertitude peut être quantifiée par une valeur H , appelé l'entropie de Shannon.
+Pour comprendre, faisons une experience de pensée:    
 Imaginer, vous êtes sur la plage d'une île deserte avec un téléphone qui vous permet de contacter le gardien d'un phare en face de vous. Tous les matins depuis un 1 mois, vous lui demandez la prévision météo du jour que vous notez précieusement dans un carnet. 
 un jour, le micro du gardien casse et impossible pour lui de vous répondre vocalement. Cependant il peut toujours vous entendre. Il choisi alors de répondre à vos questions par oui ou par non en utilisant le signal lumineux de son phare. Lumière verte pour Oui, lumière rouge pour non. 
-Combien de questions au minimum allez-vous poser au gardien du phare pour lever votre incertitude sur la météo du jour ?  
+Combien de questions au minimum allez-vous poser au gardien du phare pour lever l'incertitude sur la météo du jour ?  
 
 
 ### Cas n°1 
@@ -49,7 +50,7 @@ Imaginez cette fois avoir notez dans votre carnet : Pluie : 100% du temps , Sole
 <img src="../images/entropy/bar_plot_4.png" /> 
 </center>
 
-Dans ce cas, vous ne poserez aucune question au phare. Vous êtes certain qu'il va pleuvoir. Le phare vous transmet donc 0 bits d'information. 
+Dans ce cas, vous ne poserez aucune question au phare. Vous êtes certain qu'il va pleuvoir. Le phare vous transmet donc 0 bits d'information. L'incertitude est null.
 
 
 ### Cas n°3
@@ -129,9 +130,13 @@ $$H =  -\sum_i p_i \log_2(p_i)$$
 L'entropie est donc une mesure de l'incertitude calculé en bits. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement l'entropie est maximale lorsque tous les évenements possible ( pluie, neige ...) sont équiprobable. C'est d'ailleurs, pour cela que le mot a été repris de la thermodynamique ou l'entropie est une mesure du désordre et de l'imprédictibilité. 
 Autrement dit, l'entropie mesure la quantité d'information minimum nécessaire pour vous transmettre un message. D'ou l'utilisation massive de ce concepte dans les algorithmes de compression comme Huffman.    
 En statistique, on calcul l'entropie sur une distribution de probabilité. Comme dans ce billet ou les distributions étaient representé par des histogrammes. On peut calculer par exemple l'entropie d'une distribution observé et celle d'une une loi de probabilité. Puis quantifier leurs différences en calculant ce qu'on appelle la divergence de Kullback-Leibler ou encore l'entropie croisé. Cette dernièr est d'ailleurs largement utilisé en intelligence artificielle ou elle joue le rôle de fonction objective à minimiser.
-Je donnerai pour finir deux autres exemples d'applications : La décomposition par minimisation d'entropie bien illustré par ce schéma. Et le principe de maximisation d'entropie qui consiste à choisir comme meilleurs modèle expliquant des données, celui qui maximise l'entropie.
-j'essaiera de discuter tous ces conceptes dans des billets dédiés.  A+
+Il y a aussi la décomposition par minimisation d'entropie bien illustré par ce schéma. Et le principe de maximisation d'entropie qui consiste à choisir comme meilleurs modèle expliquant des données, celui qui maximise l'entropie.j'essaiera de discuter tous ces conceptes dans des billets dédiés.      
+Etant un blog de bioinfo, je n'oublierai quand même pas de conclure avec l'ADN, dont la séquence peut être vu comme une suite de 4 évenements aléatoire. On peut par exemple aligner plusieurs séquences d'ADN et calculer la fréquences des 4 nucléotides sur chaque position. En calculant l'entropie sur chaque colonnes, vous pouvez alors representer une mesure de la certitude (2-entropie) que tel base est constante dans un motif particulier. C'est ce qu'on appelle un logo-plot. Regardez la légende sur l'axe des ordonnées... Et oui, l'informatique est partout !
 
+
+<center>
+<img src="../images/entropy/logo_plot.png" /> 
+</center>
 
 
 ### Référénce 
