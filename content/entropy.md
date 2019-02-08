@@ -123,7 +123,8 @@ $$H(P) =  -\sum_i p_i \log_2(p_i)$$
 </center>
 
 Si vous appliquez cette formule sur les 4 distributions des cas vus précédements, vous devriez retrouver le nombre de question à poser (1 bits, 0 bits, 2 bits et 1.75 bits). 
-L'entropie est donc une mesure de l'incertitude calculée en bits. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles ( pluie, neige ...) sont équiprobables. L'entropie est ainsi une mesure permettant de caractériser une distribution statistique.
+L'entropie est donc une mesure de l'incertitude calculée en bits. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles ( pluie, neige ...) sont équiprobables.    
+L'entropie est ainsi une mesure permettant de caractériser [une distribution statistique](https://fr.wikipedia.org/wiki/Distribution_statistique).
 
 ## Entropie croisée et divergence de Kullback-Leibler
 L'[entropie croisée ](https://fr.wikipedia.org/wiki/Entropie_crois%C3%A9e)(cross entropy) permet de quantifier la dissimilarité entre deux distributions en comparant leurs entropies. Par exemple pour comparer une distribution observée P à une distribution théorique Q.
@@ -142,14 +143,13 @@ $$H(P,Q) =  H(p) + D_{KL}(P||Q) $$
 $$H(P,Q) = -\sum_i p_i \log_2(q_i)$$
 </center>
 
-L'entropie croisée est très utilisée en intelligence artificielle, dans les méthodes de classifications suppervisées. En effet, elle sert de [fonction objective](https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire) à minimiser. Par exemple, un [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) va être entrainé afin que la distribution prédite soit le plus proche possible de la distribution réelle observée.  
+L'entropie croisée est très utilisée en intelligence artificielle, dans les méthodes de [classifications suppervisées](https://fr.wikipedia.org/wiki/Classement_automatique). En effet, elle sert de [fonction objective](https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire) à minimiser. Par exemple, un [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) va être entrainé afin que la distribution prédite soit le plus proche possible de la distribution réelle observée.  
 
 ## Conclusion
 
 L'entropie mesure la quantité d'information minimum nécessaire pour vous transmettre un message.  Ce n'est donc pas étonnant qu'on retrouve ce concept dans les algorithmes de compression comme le [codage de Huffman](https://fr.wikipedia.org/wiki/Codage_de_Huffman) ou en [cryptographie](https://fr.wikipedia.org/wiki/Cryptographie).    
 Il y a aussi [le principe d'entropie maximale](https://fr.wikipedia.org/wiki/Principe_d%27entropie_maximale) qui consiste à choisir pour des données, le meilleur modèle qui maximise l'entropie. Ou encore la décomposition par minimisation de l'entropie, bien illustré sur [cette image](https://media.nature.com/m685/nature-assets/ismej/journal/v9/n4/images/ismej2014195f1.jpg). J'essaierai de discuter tous ces concepts dans des billets dédiés.      
-Je n'oublie quand même pas de conclure avec l'ADN, dont la séquence peut être vue comme une suite de 4 événements aléatoires (A,C,G,T) à l'instar de nos prévisions météorologiques. Par exemple, nous pouvons aligner plusieurs séquences d'ADN et calculer la fréquence des 4 nucléotides sur chaque position. En calculant l'entropie sur chaque colonne, vous pouvez quantifier une certitude (2-entropie) sur la présence d'un nucléotide dans un motif particulier. C'est ce qui est illustré dans le [logo-plot](https://en.wikipedia.org/wiki/Sequence_logo) ci-dessous. Regardez la légende sur l'axe des ordonnées, et crier avec moi : "La génétique c'est de l'informatique"!
-
+Je n'oublie quand même pas de conclure avec l'ADN, dont la séquence peut être vue comme une suite de 4 événements aléatoires (A,C,G,T) à l'instar de nos prévisions météorologiques. Par exemple, nous pouvons aligner plusieurs séquences d'ADN et calculer la fréquence des 4 nucléotides puis l'entropie sur chaque position. Vous pouvez alors quantifier une certitude (2-entropie) sur la présence d'un nucléotide dans un motif particulier. C'est ce qui est illustré dans le [logo-plot](https://en.wikipedia.org/wiki/Sequence_logo) ci-dessous. Regardez la légende sur l'axe des ordonnées qui vous donne une echelle en bits sur la certitude (2 - entropie ) quand à la présence d'un nucléotide dans un motif particulier.
 
 <center>
 <img src="../images/entropy/logo_plot.png" /> 
