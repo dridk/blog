@@ -1,6 +1,5 @@
 Title: L'entropie et la théorie de l'information
 Slug: shannon-entropy
-Status: Draft 
 Date: 2019-02-01 22:24:08
 Modified: 2019-02-01 22:24:08
 Tags: statistique,information
