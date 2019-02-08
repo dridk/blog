@@ -14,7 +14,7 @@ Ce billet a pour objectif de vous faire comprendre ce qu'est l'entropie au sens 
 
 
 ## Une mesure de l'incertitude
-L'entropie peut être vue comme une mesure de l'incertitude d'un événement en fonction de la connaissance que nous avons. Par exemple, depuis que je suis petit le soleil se lève tous les jours. Je suis donc certain qu'il se lèvera demain. En revanche, il est incertain que je croise aujourd'hui un chat noir dans la rue. Cela m'est déjà arrivé plusieurs fois, mais rien ne garantit que cela arrive aujourd'hui. Pour lever cette incertitude, je dois récupérer une certaine quantité d'**information**...
+L'entropie peut être vue comme une mesure de l'incertitude d'un événement en fonction de la connaissance que nous avons. Par exemple depuis que je suis petit, le soleil se lève tous les jours. Je suis donc certain qu'il se lèvera demain. En revanche, il est incertain que je croise aujourd'hui un chat noir dans la rue. Cela m'est déjà arrivé plusieurs fois, mais rien ne garantit que cela arrive aujourd'hui. Pour lever cette incertitude, je dois récupérer une certaine quantité d'**information**...
 
 <div class="figure">     <img src="../images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
 
@@ -99,7 +99,7 @@ Imaginez maintenant que les prévisions de votre carnet ne soient pas équiproba
 </center>
 
 
-Pour économiser l'énergie du phare à long terme, il vous faut une bonne stratégie pour poser les questions. En effet, si vous lui posez comme question "Va-t-il pleuvoir aujourd'hui?", il y a 1 chance sur 2 qu'il réponde  par **oui**. Et vous n'aurez plus à lui poser d'autre question. Super économique. En revanche, si il répond **non**, il faudra peut-être poser 2 questions supplémentaires, soit 3 questions en tout pour lever l'incertitude. Ce qui est plus que nos 2 bits vu précédemment. 
+Pour économiser l'énergie du phare à long terme, il vous faut poser vos questions de façon stratégique. En effet, si vous lui posez comme question "Va-t-il pleuvoir aujourd'hui?", il y a 1 chance sur 2 qu'il réponde  par **oui**. Et vous n'aurez plus à lui poser d'autre question. Super économique. En revanche, si il répond **non**, il faudra peut-être poser 2 questions supplémentaires, soit 3 questions en tout pour lever l'incertitude. Ce qui est plus que nos 2 bits vu précédemment. 
 Mais en raisonnant sur plusieurs jours, l'économie est évidente. Dans 50% des cas il faudra poser 1 question, dans 25% des cas 2 questions et 3 questions dans le dernier quart.
 Donc en moyenne, l'arbre décisionnel suivant est le plus économique sur le temps: 
 
@@ -126,8 +126,8 @@ $$H(P) =  -\sum_i p_i \log_2(p_i)$$
 Si vous appliquez cette formule sur les 4 distributions des cas vus précédements, vous devriez retrouver le nombre de question à poser (1 bits, 0 bits, 2 bits et 1.75 bits). 
 L'entropie est donc une mesure de l'incertitude calculée en bits. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles ( pluie, neige ...) sont équiprobables. L'entropie est ainsi une mesure permettant de caractériser une distribution statistique.
 
-## Entropie croisé et divergence de Kullback-Leibler
-L'[entropie croisé ](https://fr.wikipedia.org/wiki/Entropie_crois%C3%A9e)(cross entropy) permet de quantifier la dissimilarité entre deux distributions en comparant leurs entropies. Par exemple pour comparer une distribution observée P à une distribution théorique Q.
+## Entropie croisée et divergence de Kullback-Leibler
+L'[entropie croisée ](https://fr.wikipedia.org/wiki/Entropie_crois%C3%A9e)(cross entropy) permet de quantifier la dissimilarité entre deux distributions en comparant leurs entropies. Par exemple pour comparer une distribution observée P à une distribution théorique Q.
 En reprenant l'exemple précédant, imaginez que vous êtes sur une îles P avec un carnet P mais que vous posez vos questions au phare de l'îles Q qui avait donné d'autre prédictions inscrites sur le carnet Q. Combien de question supplémentaire allez vous poser au phare Q avec votre carnet P ?    
 Ce nombre s'obtient en calculant la [divergence de Kullback-Leibler](https://fr.wikipedia.org/wiki/Divergence_de_Kullback-Leibler) (ou divergence K-L ou  entropie relative):
 
@@ -143,13 +143,13 @@ $$H(P,Q) =  H(p) + D_{KL}(P||Q) $$
 $$H(P,Q) = -\sum_i p_i \log_2(q_i)$$
 </center>
 
-L'entropie croisé est très utilisé en intelligence artificielle, dans les méthode de classifications suppervisées. En effet, elle sert de [fonction objective](https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire) à minimiser. Par exemple, un [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) va être entrainer afin que sa distribution prédite soit le plus proche possible de la distribution réelle observée sur le jeux d'entrainement.  
+L'entropie croisée est très utilisée en intelligence artificielle, dans les méthodes de classifications suppervisées. En effet, elle sert de [fonction objective](https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire) à minimiser. Par exemple, un [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) va être entrainé afin que la distribution prédite soit le plus proche possible de la distribution réelle observée.  
 
 ## Conclusion
 
 L'entropie mesure la quantité d'information minimum nécessaire pour vous transmettre un message.  Ce n'est donc pas étonnant qu'on retrouve ce concept dans les algorithmes de compression comme le [codage de Huffman](https://fr.wikipedia.org/wiki/Codage_de_Huffman) ou en [cryptographie](https://fr.wikipedia.org/wiki/Cryptographie).    
-Il y a aussi [le principe d'entropie maximale](https://fr.wikipedia.org/wiki/Principe_d%27entropie_maximale) qui consiste à choisir pour des données, le meilleur modèle qui maximise l'entropie. En encore la décomposition par minimisation de l'entropie, bien illustré sur [cette image](https://media.nature.com/m685/nature-assets/ismej/journal/v9/n4/images/ismej2014195f1.jpg). J'essaierai de discuter tous ces concepts dans des billets dédiés.      
-Je n'oublie quand même pas de conclure avec l'ADN, dont la séquence peut être vue comme une suite de 4 événements aléatoires (A,C,G,T) à l'instar de nos prévisions météorologique. Par exemple, nous pouvons aligner plusieurs séquences d'ADN et calculer la fréquence des 4 nucléotides sur chaque position. En calculant l'entropie sur chaque colonne, vous pouvez quantifier une certitude (2-entropie) sur la présence d'un nucléotide dans un motif particulier. C'est ce qui est illustré dans le [logo-plot](https://en.wikipedia.org/wiki/Sequence_logo) ci-dessous. Regardez la légende sur l'axe des ordonnées, et crier avec moi : "La génétique c'est de l'informatique"!
+Il y a aussi [le principe d'entropie maximale](https://fr.wikipedia.org/wiki/Principe_d%27entropie_maximale) qui consiste à choisir pour des données, le meilleur modèle qui maximise l'entropie. Ou encore la décomposition par minimisation de l'entropie, bien illustré sur [cette image](https://media.nature.com/m685/nature-assets/ismej/journal/v9/n4/images/ismej2014195f1.jpg). J'essaierai de discuter tous ces concepts dans des billets dédiés.      
+Je n'oublie quand même pas de conclure avec l'ADN, dont la séquence peut être vue comme une suite de 4 événements aléatoires (A,C,G,T) à l'instar de nos prévisions météorologiques. Par exemple, nous pouvons aligner plusieurs séquences d'ADN et calculer la fréquence des 4 nucléotides sur chaque position. En calculant l'entropie sur chaque colonne, vous pouvez quantifier une certitude (2-entropie) sur la présence d'un nucléotide dans un motif particulier. C'est ce qui est illustré dans le [logo-plot](https://en.wikipedia.org/wiki/Sequence_logo) ci-dessous. Regardez la légende sur l'axe des ordonnées, et crier avec moi : "La génétique c'est de l'informatique"!
 
 
 <center>
