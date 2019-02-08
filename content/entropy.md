@@ -18,7 +18,7 @@ L'entropie peut être vue comme une mesure de l'incertitude d'un événement en 
 <div class="figure">     <img src="../images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
 
 
-Cette incertitude peut être quantifiée par une valeur H , appelée l'[entropie de Shannon](https://fr.wikipedia.org/wiki/Entropie_de_Shannon).
+L'entropie est une valeur qui quantifie cette incertitude.
 Pour comprendre, faisons une expérience de pensée:    
 Imaginez que vous êtes sur la plage d'une île déserte avec un téléphone qui vous permet de contacter le gardien d'un phare en face de vous. Tous les matins depuis un 1 mois, vous lui demandez la prévision météo du jour que vous notez précieusement dans un carnet. 
 Un jour, le micro du gardien casse et impossible pour lui de vous répondre vocalement. Cependant il peut toujours vous entendre. Il choisit alors de répondre à vos questions par oui ou par non en utilisant le signal lumineux de son phare. Lumière verte pour Oui, lumière rouge pour non. 
