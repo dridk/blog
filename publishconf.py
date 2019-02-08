@@ -14,8 +14,8 @@ SITEURL = 'http://dridk.me'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-TAG_FEED_ATOM = 'feeds/tag_%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+TAG_FEED_ATOM = 'feeds/tag_{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
