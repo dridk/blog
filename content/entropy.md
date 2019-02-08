@@ -2,8 +2,8 @@ Title: L'entropie et la théorie de l'information
 Slug: shannon-entropy
 Date: 2019-02-01 22:24:08
 Modified: 2019-02-01 22:24:08
-Tags: statistique,information
-Category: biologie,informatique
+Tags: statistique,vulgarisation
+Category:informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
