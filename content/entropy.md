@@ -2,7 +2,7 @@ Title: L'entropie et la théorie de l'information
 Slug: shannon-entropy
 Date: 2019-02-08 22:24:08
 Modified: 2019-02-09 11:56:40
-Tags: statistique,vulgarisation
+Tags: statistique,maths,café
 Category:informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/stat_banner.jpg
@@ -107,14 +107,14 @@ Donc en moyenne, l'arbre décisionnel suivant est le plus économique sur le tem
 </center>
 
 
-Ce code peut donc être utilisé par le phare pour vous transmettre la météo de façon optimale:
+Le code suivant peut être alors utilisé par le phare pour vous transmettre la météo de façon optimale:
 
 	vert              (1)   = pluie
 	rouge-vert        (10)  = soleil
 	rouge-rouge-vert  (001) = neige
 	rouge-rouge-rouge (000) = orange
 
-Vous utiliserez donc 1 bits dans 50% des cas, 2 bits dans 25% des cas, 3 bits dans 25% (12.5% * 2) des cas. Ce qui donne en moyenne 1.75 bits (1x0.5 + 2x0.25 + 3x0.125 + 3x0.125) .
+Vous utiliserez 1 bits dans 50% des cas, 2 bits dans 25% des cas, 3 bits dans 25% (12.5% * 2) des cas. Ce qui donne en moyenne 1.75 bits (1x0.5 + 2x0.25 + 3x0.125 + 3x0.125) .
 Cette valeur que nous venons de calculer, c'est **l'entropie de Shannon** notée *H*.     
 Son équation s'écrit comme ceci avec $p_i$ la probabilité de l'événement i pour la distribution P.
 
@@ -123,7 +123,7 @@ $$H(P) =  -\sum_i p_i \log_2(p_i)$$
 </center>
 
 Si vous appliquez cette formule sur les 4 distributions des cas vus précédements, vous devriez retrouver le nombre de question à poser (1 bits, 0 bits, 2 bits et 1.75 bits). 
-L'entropie est donc une mesure de l'incertitude calculée en bits. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles ( pluie, neige ...) sont équiprobables.    
+L'entropie est donc une mesure de l'incertitude calculée en bits. C'est la plus petite quantité d'information nécessaire pour lever votre incertitude. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles inscrits dans votre carnet ( pluie, neige ...) sont équiprobables.    
 L'entropie est ainsi une mesure permettant de caractériser [une distribution statistique](https://fr.wikipedia.org/wiki/Distribution_statistique).
 
 ## Entropie croisée et divergence de Kullback-Leibler
