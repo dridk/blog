@@ -143,7 +143,7 @@ $$H(P,Q) =  H(p) + D_{KL}(P||Q) $$
 $$H(P,Q) = -\sum_i p_i \log_2(q_i)$$
 </center>
 
-L'entropie croisée est très utilisée en intelligence artificielle, dans les méthodes de [classifications suppervisées](https://fr.wikipedia.org/wiki/Classement_automatique). En effet, elle sert de [fonction objective](https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire) à minimiser. Par exemple, un [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) va être entrainé afin que la distribution prédite soit le plus proche possible de la distribution réelle observée.  
+L'entropie croisée est très utilisée en intelligence artificielle, dans les méthodes de [classifications suppervisées](https://fr.wikipedia.org/wiki/Classement_automatique). En effet, elle sert de [fonction objective](https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire) à minimiser. Par exemple, pendant la phase d'entrainement d'un [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels), l'objectif est de minimiser l'entropie croisée afin que la distribution prédite soit le plus proche possible de la distribution réelle observée.  
 
 ## Conclusion
 
