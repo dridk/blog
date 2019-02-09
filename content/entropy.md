@@ -1,14 +1,14 @@
 Title: L'entropie et la théorie de l'information
 Slug: shannon-entropy
 Date: 2019-02-08 22:24:08
-Modified: 2019-02-08 22:24:08
+Modified: 2019-02-09 02:27:35
 Tags: statistique,vulgarisation
 Category:informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 
-L'entropie, et plus généralement la théorie de l'information, est un concept essentiel en informatique. Publié par [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) en 1948 dans "[A mathematical theory of communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)", cette théorie a permis l'essor des communications modernes en passant par la téléphonie jusqu'aux transmissions des données massives par internet. Mais on retrouve également cette théorie dans [les algorithmes de compression](https://fr.wikipedia.org/wiki/Compression_de_donn%C3%A9es), les statistiques ou encore en [intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle). Sans oublier bien-sûr la bio-informatique avec l'analyse de notre support d'information préféré : l'ADN. 
+L'entropie, et plus généralement la théorie de l'information, est un concept essentiel en informatique. Publié par [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) en 1948 dans "[A mathematical theory of communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)", cette théorie a permis l'essor des communications modernes en passant par la téléphonie jusqu'aux transmissions des données massives par internet. On l'a trouve également dans [les algorithmes de compression](https://fr.wikipedia.org/wiki/Compression_de_donn%C3%A9es), les statistiques ou encore en [intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle). Sans oublier bien-sûr la bio-informatique avec l'analyse de notre support d'information préféré : l'ADN. 
 Ce billet a pour objectif de vous faire comprendre ce qu'est l'entropie au sens de Shannon.
 
 
