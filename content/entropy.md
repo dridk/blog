@@ -123,7 +123,7 @@ $$H(P) =  -\sum_i p_i \log_2(p_i)$$
 </center>
 
 Si vous appliquez cette formule sur les 4 distributions des cas vus précédements, vous devriez retrouver le nombre de question à poser (1 bits, 0 bits, 2 bits et 1.75 bits). 
-L'entropie est donc une mesure de l'incertitude calculée en bits. C'est la plus petite quantité d'information nécessaire pour lever votre incertitude. Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles inscrits dans votre carnet ( pluie, neige ...) sont équiprobables.    
+L'entropie est donc une mesure de l'incertitude calculée en bits. C'est la plus petite quantité d'information nécessaire pour lever votre incertitude. On ne pourra jamais faire moins, c'est la théorie qui le dit! Elle est d'autant plus grande que l'incertitude est grande. Plus exactement, l'entropie est maximale lorsque tous les événements possibles inscrits dans votre carnet ( pluie, neige ...) sont équiprobables.    
 L'entropie est ainsi une mesure permettant de caractériser [une distribution statistique](https://fr.wikipedia.org/wiki/Distribution_statistique).
 
 ## Entropie croisée et divergence de Kullback-Leibler
