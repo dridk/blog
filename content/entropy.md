@@ -35,7 +35,7 @@ En regardant votre carnet, vous constatez qu'il y a eu de la pluie 50% du temps 
 Il y a donc 1 chance sur 2 pour qu'il pleuve aujourd'hui. Pour connaître la réponse, vous appelez le phare et lui posez une seule et unique question: 
 
 <center>
-*Est ce qu'il va pouvoir aujourd'hui ?*
+*Est ce qu'il va pleuvoir aujourd'hui ?*
 </center>
 
 Il vous répond **oui** ou **non** en utilisant **1** seul signal lumineux. 
