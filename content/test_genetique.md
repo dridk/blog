@@ -44,7 +44,7 @@ Quant au [génotype](https://fr.wikipedia.org/wiki/G%C3%A9notype) d'un snp, il i
 
 
 
-La technologie de Puce à ADN permet d'identifier les génotypes de milliers de snps préalablement choisis. Le fichier brut fourni par myheritage donne l'idenfiant du snp, sa localisation (chromosome, position) et le génotype pour le/la  p̶a̶t̶i̶e̶n̶t̶/e client/e. 
+La technologie de Puce à ADN permet d'identifier les génotypes de milliers de snps préalablement choisis. Le fichier brut fourni par myheritage donne l'idenfiant du snp, sa localisation (chromosome, position) et le génotype pour le p̶a̶t̶i̶e̶n̶t̶ client. 
 
     # Exemple fichier brut 
     rs28678693  1   838665  TT  
