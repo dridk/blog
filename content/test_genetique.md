@@ -8,10 +8,10 @@ Category: bioinformatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
-[Myheritage](https://www.myheritage.fr/), [23andme](https://www.23andme.com), [Ancestry](https://www.ancestry.fr/)... Vous en avez sûrement tous entendu parler. Bien qu'interdits france [(Article 16-10)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070721&idArticle=LEGIARTI000006419305&dateTexte=&categorieLien=cid), ces tests génétiques en libre accès, bénéficient pourtant d'une bonne publicité.
-Depuis peu, elle se fait par l'intermédiaire de youtube. [Amixem](https://www.youtube.com/watch?v=by168cgLmw0), [Squeezie](https://www.youtube.com/watch?v=xrkmdXyOaHg), et récemment [DrNormzan](https://www.youtube.com/watch?v=rEY-smTTLto) ont fait ces tests puis ont partagé leurs résultats en vidéo. Devant cet engouement, j'ai voulu savoir quelles informations étaient rendues à l'utilisateur et si des diagnostics médicaux pouvait être faits.   
+[Myheritage](https://www.myheritage.fr/), [23andme](https://www.23andme.com), [Ancestry](https://www.ancestry.fr/)... Vous en avez sûrement tous entendu parler. Bien qu'interdits en france [(Article 16-10)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070721&idArticle=LEGIARTI000006419305&dateTexte=&categorieLien=cid), ces tests génétiques en libre accès, bénéficient pourtant d'une bonne publicité.
+Depuis peu, elle se fait par l'intermédiaire de youtube. [Amixem](https://www.youtube.com/watch?v=by168cgLmw0), [Squeezie](https://www.youtube.com/watch?v=xrkmdXyOaHg), et récemment [DrNormzan](https://www.youtube.com/watch?v=rEY-smTTLto) ont fait ces tests puis ont partagé leurs résultats en vidéo. Devant cet engouement, j'ai voulu savoir quelles informations étaient rendues à l'utilisateur et si des diagnostics médicaux pouvait être faits avec.   
 
-<div class="figure">     <img src="../images/test_genetique/xkcd.png" />      <div class="legend">Source: xkcd</div> </div>
+<div class="figure">     <img src="../images/test_genetique/23andme.png" />      <div class="legend">Promotion 23andMe pour la fête des pères. "Des liens qui unissent vraiment"</div> </div>
 
 
 
@@ -74,8 +74,8 @@ Cette classification se fait à l'aide d'arguments scientifiques plus ou moins f
 Être porteur-se d'un variant classé pathogène ne suffit pas pour prédire ou diagnostiquer une maladie. Par exemple, dans les [maladies récessives](https://fr.wikipedia.org/wiki/Transmission_autosomique_r%C3%A9cessive), il faut être homozygote muté pour être atteint ([Mucoviscidose](https://fr.wikipedia.org/wiki/Mucoviscidose), [Drépnaocytose](https://fr.wikipedia.org/wiki/Dr%C3%A9panocytose) ... ). Dans les maladies [pénétrantes](https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9trance) incomplètes ([hémochromatose](https://fr.wikipedia.org/wiki/H%C3%A9mochromatose), vous pouvez être porteur-se de la mutation sans présenter un seul signe de la maladie. Et pour toutes les maladies non mendéliennes, c'est la combinaison de plusieurs variants qui indique un risque pour une maladie. 
 
 ## Y a-t-il des variants pathogène dans ces tests ?  
-Pour répondre à cette question, j'ai récupéré depuis la base de données [Clinvar](https://www.ncbi.nlm.nih.gov/clinvar/), tous les variants pathogène connus de classe 5 et j'ai fait l'intersection avec les 700 000 snps de la puce [illumina OmniExpress 24](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) utilisé par myheritage. Un notebook python est disponible ici. 
-Il en ressort 128 classés pathogènes:
+Pour répondre à cette question, j'ai récupéré depuis la base de données [Clinvar](https://www.ncbi.nlm.nih.gov/clinvar/), tous les variants pathogène connus de classe 5 et j'ai fait l'intersection avec les 700 000 snps de la puce [illumina OmniExpress 24](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) utilisé par myheritage. Un notebook python est [disponible ici](https://github.com/dridk/notebook/blob/master/myheritage/myheritage.ipynb).
+Il en ressort une centaine de SNP classés pathogènes:
 
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -93,7 +93,7 @@ Il en ressort 128 classés pathogènes:
 <script>
 $(document).ready(function() {
     $('#example').DataTable( {
-        "ajax": "../data/test.json"
+        "ajax": "https://raw.githubusercontent.com/dridk/notebook/master/myheritage/clinvar_omniexpress24.json"
     } );
 } );
 </script>
@@ -110,14 +110,20 @@ Elle fait partie des 30 mutations les plus fréquentes que l'on recherche systé
 ### Prédisposition au cancer 
 S’il y a bien des tests génétiques contrôlés plus que tous, ce sont les tests d'oncogénétique indiquant la prédisposition au cancer avec une forte pénétrante. C'est-à-dire qu'en étant porteur-se de ce type de variant, il y a une forte probabilité de développer un cancer. La liste de ces gènes est détaillée sur la [page de l'INCA ](https://www.e-cancer.fr/Professionnels-de-sante/L-organisation-de-l-offre-de-soins/Oncogenetique-et-plateformes-de-genetique-moleculaire/Les-predispositions-genetiques)que je vous conseille de lire.
 
-On y trouve le syndrome seins-ovaires médiatisé par l'actrice Angelina Jolie, porteuse probablement d'une mutation dans le gène BRCA1 et qui a eu recours à la chirurgie prophylactique.
+On y trouve le [Syndrome héréditaire de prédisposition au cancer du sein et de l'ovaire](https://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=FR&Expert=145) [médiatisé par l'actrice Angelina Jolie](https://fr.wikipedia.org/wiki/Angelina_Jolie#Cancer), porteuse probablement d'une mutation dans le gène BRCA1 et qui a eu recours à la chirurgie prophylactique.
 Sur la puce, j'ai aussi trouvé le snp [rs28897743 ou i5009343](https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=rs28897743) situé sur le gène BRCA2. Ce variant est identifié comme probablement pathogène. Je n'ai pas trouvé de papier sur cette mutation. 
 Il y a également le snp [rs721048](https://www.snpedia.com/index.php/Rs721048) associé au cancer de la prostate qui d'après [ce papier](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4500625/) est fortement impliqué.
 
 ## En conclusion
-À première vue, il n'y a pas vraiment de quoi s'alarmer. Parmi ces 700 000 snps, très peu sont répertoriés dans clinvar comme pathogènes. Cependant, gardez en tête que les bases de données de snps sont très loin d'être exhaustives. Chaque jour, de nouveaux variants sont découverts comme pouvant être impliqués dans une maladie. C'est pour ça d'ailleurs que ces puces sont très utiles à la recherche. Vous n'êtes donc pas à l'abri que, dans 10 ans, ces données révèleront une information importante sur votre santé. 
-Je pense en particulier au [score de risque polygénique](https://en.wikipedia.org/wiki/Polygenic_score) associant la présence de plusieurs SNPs à une maladie. On trouve déjà sur internet ce genre de test pour la maladie d'Alzheimer par exemple. Bref, tous ces tests sont, à mon sens, éthiquement borderline. Mais d'un côté, ils peuvent apporter beaucoup à la recherche en étudiant les populations. Bref, je vous conseille de réfléchir à deux fois avant de faire ce genre de test, de le faire de façon anonyme (mettre le nom de son chien) et de bien lire le consentement. Car vous n'êtes pas l'abri que ces données arriveront un jour entre de mauvaises mains. 
-Je tiens également signaler à toutes celles et ceux qui ont réalisé le test d'éviter de s'essayer à l'autodiagnostic. Si vous avez la moindre inquiétude quant à vos résultats, consulter un conseiller un génétique médicale en demandant à votre médecin généraliste. 
+À première vue, il n'y a pas vraiment de quoi s'alarmer. Parmi ces 700 000 snps, très peu sont répertoriés dans clinvar comme pathogènes. Cependant, gardez en tête que les bases de données de snps sont très loin d'être exhaustives. Chaque jour, de nouveaux variants sont découverts comme pouvant être impliqués dans une maladie. Pour cela d'ailleurs que ces puces sont très utiles à la recherche. Vous n'êtes donc pas à l'abri que, dans 10 ans, ces données révèleront une information importante sur votre santé. 
+Je pense en particulier au [score de risque polygénique](https://en.wikipedia.org/wiki/Polygenic_score) associant la présence de plusieurs SNPs à une maladie. On trouve déjà sur internet ce genre de test pour la maladie d'Alzheimer par exemple. Bref, tous ces tests sont, à mon sens, éthiquement borderline. Surtout quand de la publicité est faite sur Youtube dont la dirigente [Susan Wojcicki](https://fr.wikipedia.org/wiki/Susan_Wojcicki) est la soeur de [Anne Wojcicki](https://fr.wikipedia.org/wiki/Anne_Wojcicki), elle même dirigente de.... 23andMe. Imaginez les repas de famille!      
+Je vous conseille donc de réfléchir à deux fois avant de faire ce genre de test, de bien lire le consentement et de le faire de façon anonyme. J'en ai pas parlé, mais vous n'êtes pas l'abri que ces données arriveront un jour entre de mauvaises mains. L'argument *c'est ultra sécurisé* on l'a déjà entendu avec tous les services webs qui se sont fait piratés.       
+Je tiens enfin à signaler à toutes celles et ceux qui ont réalisé le test d'éviter de s'essayer à l'autodiagnostic. Si vous avez la moindre inquiétude quant à vos résultats, consulter un conseiller en génétique médicale en demandant à votre médecin généraliste. 
 
-Règles de bonne pratique: 
-https://www.has-sante.fr/portail/upload/docs/application/pdf/2013-02/regles_de_bonne_pratique_en_genetique_constitutionnelle_a_des_fins_medicales.pdf
+
+#Reference
+- [Règles de bonne pratique génétique](https://www.has-sante.fr/portail/upload/docs/application/pdf/2013-02/regles_de_bonne_pratique_en_genetique_constitutionnelle_a_des_fins_medicales.pdf
+)
+- [ACMG](https://www.acmg.net/ACMG/Medical-Genetics-Practice-Resources/Practice-Guidelines.aspx)
+- [Etats généraux de bioéthique](https://etatsgenerauxdelabioethique.fr/)
+- [Prédisposition oncogénétique - INCA](https://www.e-cancer.fr/Professionnels-de-sante/L-organisation-de-l-offre-de-soins/Oncogenetique-et-plateformes-de-genetique-moleculaire/Les-predispositions-genetiques)
