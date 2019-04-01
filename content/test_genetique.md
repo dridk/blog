@@ -77,10 +77,26 @@ Cette classification se fait à l'aide d'arguments scientifiques plus ou moins f
 Pour répondre à cette question, j'ai récupéré depuis la base de données [Clinvar](https://www.ncbi.nlm.nih.gov/clinvar/), tous les variants pathogène connus de classe 5 et j'ai fait l'intersection avec les 700 000 snps de la puce [illumina OmniExpress 24](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) utilisé par myheritage. Un notebook python est disponible ici. 
 Il en ressort 128 classés pathogènes:
 
--
--
--
--
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Pathologie</th>
+                <th>rsid</th>
+            </tr>
+        </thead>
+    </table>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": "../data/test.json"
+    } );
+} );
+</script>
 
 Parmi ces maladies génétiques, je me contenterai de commenter 2 d'entre elles.
 
