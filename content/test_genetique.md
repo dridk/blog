@@ -8,7 +8,7 @@ Category: bioinformatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
-[Myheritage](https://www.myheritage.fr/), [23andme](https://www.23andme.com), [Ancestry](https://www.ancestry.fr/)... Vous en avez sûrement tous entendu parler. Bien qu'interdits en france [(Article 16-10)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070721&idArticle=LEGIARTI000006419305&dateTexte=&categorieLien=cid), ces tests génétiques en libre accès, bénéficient pourtant d'une bonne publicité.
+[MyHeritage](https://www.myheritage.fr/), [23andme](https://www.23andme.com), [Ancestry](https://www.ancestry.fr/)... Vous en avez sûrement tous entendu parler. Bien qu'interdits en france [(Article 16-10)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070721&idArticle=LEGIARTI000006419305&dateTexte=&categorieLien=cid), ces tests génétiques en libre accès, bénéficient pourtant d'une bonne publicité.
 Depuis peu, elle se fait par l'intermédiaire de youtube. [Amixem](https://www.youtube.com/watch?v=by168cgLmw0), [Squeezie](https://www.youtube.com/watch?v=xrkmdXyOaHg), et récemment [DrNormzan](https://www.youtube.com/watch?v=rEY-smTTLto) ont fait ces tests puis ont partagé leurs résultats en vidéo. Devant cet engouement, j'ai voulu savoir quelles informations étaient rendues à l'utilisateur et si des diagnostics médicaux pouvait être faits avec.   
 
 <div class="figure">     <img src="../images/test_genetique/23andme.png" />      <div class="legend">Promotion 23andMe pour la fête des pères. "Des liens qui unissent vraiment"</div> </div>
@@ -24,7 +24,7 @@ D'abord à cause du caractère de la génétique à pouvoir prédire des maladie
 Ensuite il y a l'hérédité. Vos gènes ne vous appartiennent pas, vous les partagez avec votre famille et vos futurs enfants. Faire un diagnostic chez vous implique de le faire aussi chez les membres de votre famille, vos frères, vos soeurs, vos enfants. Si vous êtes porteur-se d'une mutation, elle n'impliquera donc pas que vous.
 
 ## Un test de généalogie qui en dit plus ?
-La plupart de ces tests sont vendus comme une analyse sur vos origines ethniques. La société myheritage utilise pour cela une [puce à ADN](https://fr.wikipedia.org/wiki/Puce_%C3%A0_ADN) permettant d'identifier [710 000](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) [SNPs](https://fr.wikipedia.org/wiki/Polymorphisme_nucl%C3%A9otidique) absents ou présents de votre génome qu'elle compare à des populations de référence. Une des méthodes est d'identifier des groupes de SNPs ([haplogroups](https://fr.wikipedia.org/wiki/Haplogroupe)) permettant d'associer un individu à sa population d'origine. 
+La plupart de ces tests sont vendus comme une analyse sur vos origines ethniques. La société MyHeritage utilise pour cela une [puce à ADN](https://fr.wikipedia.org/wiki/Puce_%C3%A0_ADN) permettant d'identifier [710 000](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) [SNPs](https://fr.wikipedia.org/wiki/Polymorphisme_nucl%C3%A9otidique) absents ou présents de votre génome qu'elle compare à des populations de référence. Une des méthodes est d'identifier des groupes de SNPs ([haplogroups](https://fr.wikipedia.org/wiki/Haplogroupe)) permettant d'associer un individu à sa population d'origine. 
 Mais, alors c'est quoi ces "SNPs" et que peuvent ils dire de plus ? 
 
 ###Single Nucleotide Polymorphism (SNP)
@@ -41,7 +41,7 @@ Quant au [génotype](https://fr.wikipedia.org/wiki/G%C3%A9notype) d'un snp, il i
 
 
 
-La technologie de Puce à ADN permet d'identifier les génotypes de milliers de snps préalablement choisis. Le fichier brut fourni par myheritage donne l'idenfiant du snp, sa localisation (chromosome, position) et le génotype pour le p̶a̶t̶i̶e̶n̶t̶ client. 
+La technologie de Puce à ADN permet d'identifier les génotypes de milliers de snps préalablement choisis. Le fichier brut fourni par MyHeritage donne l'idenfiant du snp, sa localisation (chromosome, position) et le génotype pour le p̶a̶t̶i̶e̶n̶t̶ client. 
 
     # Exemple fichier brut 
     rs28678693  1   838665  TT  
