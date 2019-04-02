@@ -24,6 +24,7 @@ DELETE_OUTPUT_DIRECTORY = True
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
 
-GOOGLE_ANALYTICS="UA-44929010-2"
+# Disable google analytics for now ( no cookie message)
+#GOOGLE_ANALYTICS="UA-44929010-2"
 DISQUS_SITENAME = "dridkme"
 DISQUS_ON_PAGES = True
