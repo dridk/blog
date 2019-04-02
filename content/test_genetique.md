@@ -47,7 +47,7 @@ La technologie de Puce à ADN permet d'identifier les génotypes de milliers de 
 
 
     # Exemple fichier brut 
-    rs28678693  1   838665  TT  
+    rs28678693  1   838665  CC  
     rs4475691   1   846808  CT
     rs72631889  1   851390  TT
 
@@ -68,7 +68,7 @@ Cette classification se fait à l'aide d'arguments scientifiques plus ou moins f
 * Le variant est-il rare ou fréquent dans la population? (est-ce que beaucoup d'autres personnes l'ont aussi)
 * Est-il situé dans un gène ou non? (situé dans les régions codantes du génome, ~1%)
 * Si oui, impacte-t'il la protéine codée par ce gène? 
-* Entraine l'apparition d'un codon stop dans la séquence protéique? (malformation de la protéine par exemple)
+* Entraine l'apparition d'un codon stop dans la séquence protéique? (protéine tronquée par exemple)
 * etc ...
 
 Être porteur-se d'un variant classé pathogène ne suffit pas pour prédire ou diagnostiquer une maladie. Par exemple, dans les [maladies récessives](https://fr.wikipedia.org/wiki/Transmission_autosomique_r%C3%A9cessive), il faut être homozygote muté pour être atteint-e ([Mucoviscidose](https://fr.wikipedia.org/wiki/Mucoviscidose), [Drépnaocytose](https://fr.wikipedia.org/wiki/Dr%C3%A9panocytose) ... ). Dans les maladies [pénétrantes](https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9trance) incomplètes ([hémochromatose](https://fr.wikipedia.org/wiki/H%C3%A9mochromatose), vous pouvez être porteur-se de la mutation sans présenter un seul signe de la maladie. Et pour toutes les maladies [non mendéliennes](https://fr.wikipedia.org/wiki/H%C3%A9r%C3%A9dit%C3%A9_non_mend%C3%A9lienne), c'est la combinaison de plusieurs variants qui indique un risque pour une maladie donnée. 
@@ -116,12 +116,12 @@ Pour les hommes, il y a aussi le snp [rs721048](https://www.snpedia.com/index.ph
 
 ## En conclusion
 À première vue, il n'y a pas vraiment de quoi s'alarmer. Parmi ces 700 000 snps, très peu sont répertoriés dans clinvar comme pathogènes. Cependant, gardez en tête que les bases de données de snps sont très loin d'être exhaustives. Chaque jour, de nouveaux variants sont découverts comme pouvant être impliqués dans une maladie. C'est d'ailleurs pour cela que ces puces sont très utiles à la recherche. Vous n'êtes donc pas à l'abri que, dans 10 ans, ces données révèleront une information importante sur votre santé. 
-Je pense en particulier au [score de risque polygénique](https://en.wikipedia.org/wiki/Polygenic_score) associant la présence de plusieurs SNPs à une maladie. On trouve déjà sur internet ce genre de test pour la maladie d'Alzheimer par exemple. Bref, tous ces tests sont, à mon sens, éthiquement borderline. Surtout quand de la publicité est faite sur Youtube sachant que la dirigente [Susan Wojcicki](https://fr.wikipedia.org/wiki/Susan_Wojcicki) est la soeur de [Anne Wojcicki](https://fr.wikipedia.org/wiki/Anne_Wojcicki), elle même dirigente de.... 23andMe.    
+Je pense en particulier au [score de risque polygénique](https://en.wikipedia.org/wiki/Polygenic_score) associant la présence de plusieurs SNPs à une maladie. On trouve déjà sur internet ce genre de test pour la maladie d'Alzheimer par exemple. Bref, tous ces tests sont, à mon sens, éthiquement borderline. Surtout quand de la publicité est faite sur Youtube sachant que la dirigeante [Susan Wojcicki](https://fr.wikipedia.org/wiki/Susan_Wojcicki) est la soeur de [Anne Wojcicki](https://fr.wikipedia.org/wiki/Anne_Wojcicki), elle même dirigeante de.... 23andMe.    
 Je vous conseille donc de réfléchir à deux fois avant de faire ce genre de test, de bien lire le consentement et de le faire de façon anonyme. Je n'en ai pas parlé, mais vous n'êtes pas l'abri que ces données arriveront un jour entre de mauvaises mains. L'argument *c'est ultra sécurisé* on l'a déjà entendu avec tous les services web qui se sont fait piratés.       
 Je tiens enfin à signaler à toutes celles et ceux qui ont réalisé le test d'éviter de s'essayer à l'autodiagnostic. Si vous avez la moindre inquiétude quant à vos résultats, consulter un conseiller en génétique médicale en demandant à votre médecin généraliste. 
 
 
-#Reference
+#References
 - [Règles de bonne pratique génétique](https://www.has-sante.fr/portail/upload/docs/application/pdf/2013-02/regles_de_bonne_pratique_en_genetique_constitutionnelle_a_des_fins_medicales.pdf
 )
 - [ACMG](https://www.acmg.net/ACMG/Medical-Genetics-Practice-Resources/Practice-Guidelines.aspx)
