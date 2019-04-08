@@ -2,7 +2,6 @@ Title: Ce que peut révéler un test génétique sur internet
 Slug: tests-genetiques
 Date: 2019-04-08 20:07:20
 Modified: 2019-04-08 20:07:20
-Status: Draft
 Tags: génétique,café
 Category: bioinformatique 
 Author: Sacha Schutz & Charlotte Andrieu
@@ -100,7 +99,7 @@ $(document).ready(function() {
 Parmi ces maladies génétiques, je me contenterai de commenter 2 d'entre elles.
 
 ### La mucoviscidose 
-22 snps présents sont identifiés comme pathogènes pour la mucoviscidose. Il s'agit d'une [maladie récessive](https://fr.wikipedia.org/wiki/Transmission_autosomique_r%C3%A9cessive) très fréquente impliquant le gène [CFTR](https://fr.wikipedia.org/wiki/G%C3%A8ne_et_prot%C3%A9ine_CFTR) situé sur le chromosome 7. C'est-à-dire que le snp doit être à l'état homozygote pour entrainer la maladie. Une personne hétérozygote est porteuse saine, et a un risque d'1 sur 2 de transmettre le snp à son enfant. 
+22 snps présents sont identifiés sur cette puce comme pathogènes pour la mucoviscidose. Il s'agit d'une [maladie récessive](https://fr.wikipedia.org/wiki/Transmission_autosomique_r%C3%A9cessive) très fréquente impliquant le gène [CFTR](https://fr.wikipedia.org/wiki/G%C3%A8ne_et_prot%C3%A9ine_CFTR) situé sur le chromosome 7. C'est-à-dire que le snp doit être à l'état homozygote pour entrainer la maladie. Une personne hétérozygote est porteuse saine, et a un risque d'1 sur 2 de transmettre le snp à son enfant. 
 On trouve dans la liste, le snp [rs75961395 ou VG07S29458](https://www.snpedia.com/index.php/Rs75961395) correspondant à la mutation [c.254G>A Gly85Glu](https://cftr.iurc.montp.inserm.fr/cgi-bin/affiche.cgi?variant=c.254G%3EA&provenance=0) décrit dans la base de donnée [CFTR-France](https://cftr.iurc.montp.inserm.fr/cgi-bin/home.cgi?).
 Elle fait partie des 30 mutations les plus fréquentes que l'on recherche systématiquement en routine (lors du diagnostic). Mais elle représente moins de 1% des mutations chez les patient-e-s, loin derrière la  mutation [DF508](https://fr.wikipedia.org/wiki/%CE%94F508), la plus connue et la plus fréquente.
 
@@ -114,7 +113,7 @@ Sur la puce, j'ai trouvé le snp [rs28897743 ou i5009343](https://www.ncbi.nlm.n
 Pour les hommes, il y a aussi le snp [rs721048](https://www.snpedia.com/index.php/Rs721048) associé au cancer de la prostate qui, d'après [ce papier](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4500625/), est fortement impliqué.
 
 ## En conclusion
-À première vue, il n'y a pas vraiment de quoi s'alarmer. Parmi ces 700 000 snps, très peu sont répertoriés dans Clinvar comme pathogènes. Cependant, gardez en tête que les bases de données de snps sont très loin d'être exhaustives. Chaque jour, de nouveaux variants sont découverts comme pouvant être impliqués dans une maladie. C'est d'ailleurs pour cela que ces puces sont très utiles à la recherche. Vous n'êtes donc pas à l'abri que, dans 10 ans, ces données révèleront une information importante sur votre santé. 
+Parmi ces 700 000 snps, très peu sont répertoriés dans Clinvar comme pathogènes. Il n'y a donc pas de quoi s'alarmer. Cependant, gardez en tête que les bases de données de snps sont très loin d'être exhaustives. Chaque jour, de nouveaux variants sont découverts comme pouvant être impliqués dans une maladie. C'est d'ailleurs pour cela que ces puces sont très utiles à la recherche. Vous n'êtes donc pas à l'abri que, dans 10 ans, ces données révèleront une information importante sur votre santé. 
 Je pense en particulier au [score de risque polygénique](https://en.wikipedia.org/wiki/Polygenic_score) associant la présence de plusieurs SNPs à une maladie. On trouve déjà sur internet ce genre de test pour la maladie d'Alzheimer par exemple. Bref, tous ces tests sont, à mon sens, éthiquement borderline. Surtout quand de la publicité est faite sur Youtube sachant que sa dirigeante [Susan Wojcicki](https://fr.wikipedia.org/wiki/Susan_Wojcicki) est la soeur de [Anne Wojcicki](https://fr.wikipedia.org/wiki/Anne_Wojcicki), elle-même dirigeante de... 23andMe.    
 Je vous conseille donc de réfléchir à deux fois avant de faire ce genre de test, de bien lire le consentement et de le faire de façon anonyme. Je n'en ai pas parlé, mais vous n'êtes pas l'abri que ces données arriveront un jour entre de mauvaises mains. L'argument *c'est ultra sécurisé* on l'a déjà entendu avec tous les services web qui se sont ensuite fait piratés.       
 Je tiens enfin à signaler à toutes celles et ceux qui ont réalisé le test d'éviter de s'essayer à l'autodiagnostic. Si vous avez la moindre inquiétude quant à vos résultats, consultez un conseiller ou une conseillère en génétique médicale en demandant à votre médecin généraliste. 
