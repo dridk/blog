@@ -1,9 +1,9 @@
 Title: Ce que peut révéler un test génétique sur internet
 Slug: tests-genetiques
-Date: 2019-03-22 11:35:45
-Modified: 2019-03-22 11:35:45
+Date: 2019-04-08 20:07:20
+Modified: 2019-04-08 20:07:20
 Status: Draft
-Tags: génétique
+Tags: génétique,café
 Category: bioinformatique 
 Author: Sacha Schutz & Charlotte Andrieu
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
@@ -26,12 +26,12 @@ D'abord, à cause du caractère de la génétique à pouvoir prédire des maladi
 Ensuite, il y a l'hérédité. Vos gènes ne vous appartiennent pas, vous les partagez avec votre famille. Faire votre propre diagnostic implique aussi de le faire chez les membres de votre famille. Et donc si vous réalisez ce type de test génétique, les résultats peuvent vous déclarer porteur-se d'une mutation, et indirectement suggérer que vos parents, vos frères, vos soeurs, vos enfants partagent également cette mutation. Cela n'impliquera donc pas que vous.
 
 ## Un test de généalogie qui en dit plus ?
-La plupart de ces tests sont vendus comme une analyse sur vos origines ethniques. La société MyHeritage utilise pour cela une [puce à ADN](https://fr.wikipedia.org/wiki/Puce_%C3%A0_ADN) permettant d'identifier environ [710 000](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) [SNPs](https://fr.wikipedia.org/wiki/Polymorphisme_nucl%C3%A9otidique) absents ou présents de votre génome, qu'elle compare à des populations de référence. Une des méthodes est d'identifier des groupes de SNPs ([haplogroups](https://fr.wikipedia.org/wiki/Haplogroupe)) permettant d'associer un individu à sa population d'origine. 
+La plupart de ces tests sont vendus comme une analyse sur vos origines ethniques. La société MyHeritage utilise pour cela une [puce à ADN](https://fr.wikipedia.org/wiki/Puce_%C3%A0_ADN) permettant d'identifier environ [700 000](https://www.illumina.com/products/by-type/microarray-kits/infinium-omni-express.html) [SNPs](https://fr.wikipedia.org/wiki/Polymorphisme_nucl%C3%A9otidique) absents ou présents de votre génome, qu'elle compare à des populations de référence. Une des méthodes est d'identifier des groupes de SNPs ([haplogroups](https://fr.wikipedia.org/wiki/Haplogroupe)) permettant d'associer un individu à sa population d'origine. 
 Mais alors c'est quoi ces "SNPs" et que peuvent-ils dire de plus ?  
 
 ###Single Nucleotide Polymorphism (SNP)
 Un génome humain est constitué de 3 milliards de bases, représentées par les lettres A,C,G,T. Elles sont réparties sur 24 chromosomes différents (1,2...X,Y). Chacune de vos cellules est constituée de 2 versions de ce génome, héritées de votre mère et de votre père. (22 paires de chromosomes + XX ou XY selon que vous êtes une femme ou un homme, respectivement).   
-Un **SNP** (prononcez-le "snip") est une modification d'une lettre d'un génome (le vôtre par exemple) par rapport à un génome de référence (séquence d'ADN assemblée par les scientifiques, représentative d'une espèce -ici l'humain, réalisée à partir de plusieurs personnes). Si par exemple, à la position 101594229 du chromosome 9 on identifie un A, mais sur le génome de référence c'est un G, alors vous avez un snp qui peut s'écrire : [chr9-101594229-G-A](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr9%3A101594229%2D101594229&hgsid=718306327_QCaQikXTcs5svbD4i9HYmPnkk40x). Toutes ces variations observées sont référencées dans la base de données [dbSNP](https://en.wikipedia.org/wiki/DbSNP) qui attribue à chacun de ces snps un identifiant unique ([rs145236923](https://www.ncbi.nlm.nih.gov/snp/rs145236923)).
+Un **SNP** (prononcez-le "snip") est une modification d'une lettre d'un génome (le vôtre par exemple) par rapport à un génome de référence (séquence d'ADN assemblée par les scientifiques, représentative d'une espèce -ici l'humain, réalisée à partir de plusieurs personnes). Si par exemple, à la position 101594229 du chromosome 9 on vous identifie un G, mais sur le génome de référence il y a un A, alors vous avez un snp qui peut s'écrire : [chr9:101594229A>G](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr9%3A101594229%2D101594229&hgsid=718306327_QCaQikXTcs5svbD4i9HYmPnkk40x). Toutes ces variations observées sont référencées dans la base de données [dbSNP](https://en.wikipedia.org/wiki/DbSNP) qui attribue à chacun de ces snps un identifiant unique ([rs145236923](https://www.ncbi.nlm.nih.gov/snp/rs145236923)).
 Quant au [génotype](https://fr.wikipedia.org/wiki/G%C3%A9notype) d'un snp, il indique si vous portez le variant sur un seul ou sur les deux chromosomes hérités de vos parents. Pour un variant donné, il y a donc 3 génotypes possibles. [Homozygote](https://fr.wikipedia.org/wiki/Homozygote) sauvage, [Hétérozygote](https://fr.wikipedia.org/wiki/H%C3%A9t%C3%A9rozygote) et Hétérozygote muté. 
 
 - AA: Vous n'êtes pas porteur-se du SNP (sur aucun chromosome)
@@ -43,8 +43,7 @@ Quant au [génotype](https://fr.wikipedia.org/wiki/G%C3%A9notype) d'un snp, il i
 
 
 
-La technologie de puce à ADN permet d'identifier les génotypes de milliers de snps préalablement choisis. Le fichier de résultat brut fourni par MyHeritage donne l'idenfiant du snp, sa localisation (chromosome, position) et le génotype pour le p̶a̶t̶i̶e̶n̶t̶ client. 
-
+Les puces à ADN permettent d'identifier les génotypes de milliers de snps préalablement choisis. Le fichier de résultat brut fourni par MyHeritage donne l'identifiant du snp, sa localisation (chromosome, position) et le génotype pour le p̶a̶t̶i̶e̶n̶t̶ client:
 
     # Exemple fichier brut 
     rs28678693  1   838665  CC  
