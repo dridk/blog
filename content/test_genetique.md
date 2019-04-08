@@ -51,7 +51,7 @@ Quant au [génotype](https://fr.wikipedia.org/wiki/G%C3%A9notype) d'un snp, il i
 
 
 ### Comment interpréter ces snps ? 
-Sur les 3 milliards du génome, il y a chez un individu environs 1 snp tous les 1000 bases qui vous distingue d'un autre individu. La majorité d'entre eux sont bénins (polymorphisme), mais certains peuvent être pathogènes. 
+Sur les 3 milliards de bases du génome, il y a chez un individu environs 1 snp tous les 1000 bases qui vous distingue d'un autre individu. La majorité d'entre eux sont bénins (polymorphisme), mais certains peuvent être pathogènes. 
 En génétique médicale on classe ces snps en 5 classes différentes:
 
 * Classe 1: Benin (benin)
