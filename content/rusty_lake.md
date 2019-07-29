@@ -123,7 +123,7 @@ states = nx.shortest_path(graph,source=(10, 1, 0), target=(8, 0, 3))
 Sept transitions sont donc nécessaires pour passer de l'état **(10,1,0)** à l'état **(8,0,1)**. La solution de l'énigme est donc la suivante: 
 
 - State (10,1,0)
-    + Vider la première bouteille dans la deuxième.
+    + Vider la première bouteille dans la troisième.
 - State (4,1,6)
     + Vider la troisième bouteille dans la deuxième.
 - State (4,5,2)
