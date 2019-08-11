@@ -8,14 +8,15 @@ Author: Sacha Schutz
 Status: Draft
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
-Les chaines de Markov sont très populaire en bioinformatique pour l'analyse de séquences d'ADN. Vous en avez peut être déjà entendu parlé dans une de ses formes particulières : Les chaines de Markov caché ou HMM. Ces chaines sont des algorithmes pouvant générer des séquences (par exemple: A,C,C,G,T...) dont la probabilité d'apparition de chaque symbole depend uniquement du symbole précédent. Je me represente souvent une chaine de Markov comme une machine générant des symboles aléatoires (variable aléatoire) que l'on peut régler avec differents boutons pour ajuster la fréquence d'apparition des différents symboles. 
-Dans ce billet, nous alons donc voir le fonctionnement des chaines de markov en utilisant l'ADN comme support et nous finirons par un exemple pratique en python. 
+Les chaines de Markov sont des algortihmes très populaire en bioinformatique pour analyser de séquences d'ADN. Elles sont utilisés dans de nombreux outils et vous avez peut-être déjà entendu parlé des chaines de markov caché ou HMM. 
+En une phrase, une chaine de Markov est un algorithme permettant de générer des séquences aléatoires (par exemple de l'ADN) dont la probabilité de chaque lettre depend uniquement de la lettre précédente. 
+Dans ce billet, nous alons donc voir ce qu'est une chaines de markov, ses propriétés et ses applications en utilisant l'ADN comme example.
 
 ## Un dé à 4 faces
 
 Imaginez un dé à 4 face sur lesquelles sont representé chaque base de l'ADN : A,C,G,T. Lancez ce dé plusieurs fois en notant chaque résultat.
-Par exemple, au premier lancé, vous obtenez un A, au deuxième un T, au troisème un A, et ainsi de suite pour générer une longue séquence.
-Si le dé n'est pas truqué, à chaque lancé, vous avez exactement une chance sur 4 d'obtenir chaques bases. Plus précisément, le résultat d'un lancé est indépendant des résultats précédants. La probabilité d'obtenir un A au 5ème lancé sera toujours de 1/4 peut importe les autres lancé.    
+Par exemple, au premier lancé, vous obtenez un A, au deuxième un T, au troisème un A, et ainsi de suite jusqu'à générér une longue séquence.
+Si le dé n'est pas truqué, à chaque lancé, vous avez exactement une chance sur 4 d'obtenir chaques bases.    
 Une façon de representer ce tirage aléatoire est d'utiliser un graphe ou chaque noeuds represente les symboles ou état et les arrêtes les probabilités de transitions. Dans la figure ci-dessous, il y a 4 états (A,C,G,T) et 16 transitions toutes égal à 1 chance sur 4. Par exemple la probabilité d'obtenir un A suivi d'un C est de 0.25. un T suivi d'un autre T est de 0.25.
 Pour générer une séquence, il suffit de partir d'un état au hasard, puis de faire une marche dans ce graphe en suivant les probabilité de transition et en notant les valeurs de chaques noeuds traversé. Le prochain noeuds à traverser dependra uniquement du noeud ou vous êtes. Vous lirez souvent que le futur depend uniquement du présent, jamais du passé. Une chaine de Markov ce n'est rien de plus que ça. 
 

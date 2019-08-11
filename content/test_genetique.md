@@ -4,7 +4,7 @@ Date: 2019-04-08 20:07:20
 Modified: 2019-04-08 20:07:20
 Tags: génétique,café
 Category: bioinformatique 
-Author: Sacha Schutz & Charlotte Andrieu
+Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
 
 
@@ -125,3 +125,7 @@ Je tiens enfin à recommander à toutes celles et ceux qui ont réalisé le test
 - [ACMG](https://www.acmg.net/ACMG/Medical-Genetics-Practice-Resources/Practice-Guidelines.aspx)
 - [États généraux de bioéthique](https://etatsgenerauxdelabioethique.fr/)
 - [Prédisposition oncogénétique - INCa](https://www.e-cancer.fr/Professionnels-de-sante/L-organisation-de-l-offre-de-soins/Oncogenetique-et-plateformes-de-genetique-moleculaire/Les-predispositions-genetiques)
+
+## Merci pour la relecture 
+- Charlotte Andrieu 
+- @Oodnadatta
