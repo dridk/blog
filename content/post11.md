@@ -6,7 +6,7 @@ Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg 
 
-Un filtre de bloom est un algorithme permettant de savoir si un élément est présent ou non dans une liste. C'est un algorithme très efficace d'un point de vue mémoire lorsque vous travaillez avec de grande liste. En python, l'utilisation d'un filtre de Bloom peut s'écrire : 
+Un filtre de bloom est une structure de donnée permettant de savoir si un élément est présent ou non dans une liste. Cette structure est très efficace d'un point de vue mémoire lorsque vous travaillez sur de grande liste. En python, l'utilisation d'un filtre de Bloom peut s'écrire : 
 
     :::python
     L = ["mario","zelda","daisy"]
