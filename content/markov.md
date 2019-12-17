@@ -8,24 +8,35 @@ Author: Sacha Schutz
 Status: Draft
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
-Les chaines de Markov sont des algortihmes très populaire en bioinformatique pour analyser de séquences d'ADN. Elles sont utilisés dans de nombreux outils et vous avez peut-être déjà entendu parlé des chaines de markov caché ou HMM. 
-En une phrase, une chaine de Markov est un algorithme permettant de générer des séquences aléatoires (par exemple de l'ADN) dont la probabilité de chaque lettre depend uniquement de la lettre précédente. 
-Dans ce billet, nous alons donc voir ce qu'est une chaines de markov, ses propriétés et ses applications en utilisant l'ADN comme example.
+
+Les chaines de Markov sont des algorithmes très populaire en bioinformatique, en particulier lorsqu'on s'interesse à des séquences d'ADN. 
+Je me les represente comme un des générateurs de séquences aléatoire (ou processus stochastique) dont la probabilité de chaque base depend de la précédente.
+Dans ce billet, nous alons les définir et voir une une application pratique en génétique.
 
 ## Un dé à 4 faces
 
 Imaginez un dé à 4 face sur lesquelles sont representé chaque base de l'ADN : A,C,G,T. Lancez ce dé plusieurs fois en notant chaque résultat.
-Par exemple, au premier lancé, vous obtenez un A, au deuxième un T, au troisème un A, et ainsi de suite jusqu'à générér une longue séquence.
+Par exemple, le premier lancé vous donne un A, le deuxième un T, le troisème un A, et ainsi de suite jusqu'à générér une longue séquence.
 Si le dé n'est pas truqué, à chaque lancé, vous avez exactement une chance sur 4 d'obtenir chaques bases.    
-Une façon de representer ce tirage aléatoire est d'utiliser un graphe ou chaque noeuds represente les symboles ou état et les arrêtes les probabilités de transitions. Dans la figure ci-dessous, il y a 4 états (A,C,G,T) et 16 transitions toutes égal à 1 chance sur 4. Par exemple la probabilité d'obtenir un A suivi d'un C est de 0.25. un T suivi d'un autre T est de 0.25.
-Pour générer une séquence, il suffit de partir d'un état au hasard, puis de faire une marche dans ce graphe en suivant les probabilité de transition et en notant les valeurs de chaques noeuds traversé. Le prochain noeuds à traverser dependra uniquement du noeud ou vous êtes. Vous lirez souvent que le futur depend uniquement du présent, jamais du passé. Une chaine de Markov ce n'est rien de plus que ça. 
+Une façon de representer ce tirage aléatoire est d'utiliser un graphe ou chaque noeuds represente les symboles ou état et les arrêtes les probabilités de transitions. Dans la figure ci-dessous, il y a 4 états (A,C,G,T) et 16 transitions toutes égal à 1/4. 
+Choissiez alors un état au hasard, puis faite une marche dans ce graphe en suivant les probabilité de transition et en notant les valeurs de chaques noeuds traversé. Bravo, vous venez de générer une séquence à l'aide une chaine de Markov. 
 
 <div class="figure">     <img src="../images/markov/markov1.png" />      <div class="legend">Chaine de Markov. Il y a 4 états (A,C,G,T) et 4x4=16 transitions possible toutes avec une probabilité de 1/4</div> </div>   
 
 
-
 ## Les paramètre chaine de Markov
-Une chaine de Markov se défini donc par un nombre d'état E et une matrice de Transition T. Dans notre example, il y a 4 états (A,C,G,T) et 16 transitions toutes égales à 0.25 que l'on peut representer par une matrice 4x4. 
+Une chaine de Markov se défini donc par un nombre d'état E et une matrice de Transition T. Dans notre example, il y a 4 états (A,C,G,T) et 16 transitions toutes égales à 1/4 que l'on represente par une matrice 4x4. 
+En changant les valeurs de transitions, nous pouvons alors générer différente famille de séquence. Par exemple en augmentant la probabilité de transition G vers C, nous pourrons générer des séquences riche en GC.
+
+## Distribution 
+En faisant tourner votre générateur assez longtemps et en comptant la fréquence d'apparition de chaque états, vous obtenez une distribution.
+
+
+
+## Un modèle d'apprentissage 
+A l'n
+
+
 L'implementation en python peut s'écrire facilement en python ave numpy: 
 
 ```python
@@ -83,7 +94,7 @@ transitions = np.array([
 # OUTPUT : GCATTCGCGCCTGCAAGCTCGCTCCGCCCATAGCGCGCCTATAGCCCAAG
 ```
 
-En utilisant la même probabilité de 0.25 partout, on peut générer des séquence qui s'approche d'une distribution uniforme. Mais rien ne vous empeche maintenant de générer des séquences avec des distributions différentes. Il vous suffit de changer les probabilités de transition. Si vous voulez par exemple un générateur de séquence riche en GC, il suffit de mettre une plus grande probabilité pour la transition G donne C. 
+
 
 
 ## Apprentissage 
