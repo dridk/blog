@@ -26,7 +26,7 @@ Dans notre cas, il y a 4 états possibles soit:
 
  $$E = \{A,C,G,T\}$$ 
 
- Et 16 probabilités de transition, noté $p(N_{1}|N)$ , que l'on représente par une [matrice](https://fr.wikipedia.org/wiki/Matrice_(math%C3%A9matiques)#Alg%C3%A8bre_des_matrices_carr%C3%A9es) carrée  avec dans l'ordre A,C,G,T pour les lignes et les colonnes. Par exemple la transition *p(A|A)* (A précédé de A)  se lis dans la matrice aux coordonnées (0,0). La transition p(A|C) ( A précédé de C), aux coordonnées (0,1) .
+ Et 16 probabilités de transition, noté $p(N_{t+1}|N)$ , que l'on représente par une [matrice](https://fr.wikipedia.org/wiki/Matrice_(math%C3%A9matiques)#Alg%C3%A8bre_des_matrices_carr%C3%A9es) carrée  avec dans l'ordre A,C,G,T pour les lignes et les colonnes. Par exemple la transition *p(A|A)* (A précédé de A)  se lis dans la matrice aux coordonnées (0,0). La transition p(A|C) ( A précédé de C), aux coordonnées (0,1) .
 
 $$
 T = \begin{bmatrix}
