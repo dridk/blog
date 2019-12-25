@@ -72,7 +72,7 @@ De façon beaucoup plus générale, utiliser les chaînes de Markov comme géné
 
 ## Un modèle d'apprentissage 
 Si maintenant, au lieu de générer des séquences à partir d'une chaîne de Markov nous faisions l'inverse. C'est-à-dire construire une chaîne de Markov après avoir observé une famille de séquence. Par exemple, les séquences de  différents [promoteurs](https://fr.wikipedia.org/wiki/Promoteur_(biologie)). Cette chaîne servirait alors de modèle pour représenter cette famille. Pour cela il suffit de comptabiliser toutes les transitions existantes dans un jeu de séquence pour déduire les probabilités de la matrice de transition.      
-Parmi les séquences suivantes, il y a 5 transitions T->A sur 32 transitions possibles. On note alors dans la matrice de transition que la probabilité p(T|A) est de 5/32. On fait de même pour les autres transitions pour obtenir une matrice complète.
+Parmi les séquences suivantes, il y a 5 transitions T->A sur 32 transitions possibles. On note alors dans la matrice de transition que la probabilité p(A|T) est de 5/32. On fait de même pour les autres transitions pour obtenir une matrice complète.
 
 <div class="figure"> <code> <b style="color:red">TA</b>CGC <br/>
 CCT<b style="color:red">TA</b> <br/>
