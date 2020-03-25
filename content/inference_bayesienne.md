@@ -27,7 +27,7 @@ Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vou
 
 **à priori** sans aucune autre information, vous allez me répondre 1 chance sur 2 pour les deux théories notées **p(Homme) = 0.5** et **p(Femme) = 0.5**.   
 Si maintenant, je vous apporte une **donnée** supplémentaire en vous disant que cette personne a des cheveux longs. Alors votre **croyance** devrait changer en attribuant une plus grande probabilité à la théorie:      « *Il y a une femme dans la boite* ». En effet, le nombre de personnes aux cheveux longs est plus fréquent (est plus vraisemblable) chez les femmes que chez les hommes. 
-En statistique, cette quantité est appelée la **vraisemblance**. C'est la probabilité d'observer des données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Dans notre cas, par exemple, nous pourrions dire que parmi toutes les femmes, 70% ont les cheveux longs **p(Donnée|Femme) = 70%** et chez les hommes, 10% seulement ont les cheveux longs **p(Donnée|Homme) = 10%**.     
+En statistique, cette quantité est appelée la **vraisemblance**. C'est la probabilité d'observer des données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Dans notre cas, par exemple, nous pourrions dire que parmi toutes les femmes, 70% ont les cheveux longs **(p(Donnée|Femme) = 70%)** et chez les hommes, 10% seulement ont les cheveux longs **(p(Donnée|Homme) = 10%)**.     
 Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.     
 Cette probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) :    
 
@@ -53,7 +53,7 @@ Essayons pour voir avec notre exemple et calculons les probabilités a posterior
 $$p(Homme) \times p(Cheveux|Homme) = 0.5 \times 0.1 = 0.05  $$
 $$p(Femme) \times p(Cheveux|Femme) = 0.5 \times 0.7 = 0.35   $$
 
-<center>Soit : </center>
+<center>Et donc: </center>
 
 $$p(Homme|Cheveux) = \frac{0.05} {(0.35 + 0.05)} = 12,5\%$$
 $$p(Femme|Cheveux) = \frac{0.35} {(0.35 + 0.05)} =  87,5\%$$
@@ -228,7 +228,7 @@ Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à re
 ## Référence 
 - [Blog de Sciencetonnante](https://sciencetonnante.wordpress.com/2012/10/15/linference-bayesienne-bayes-level-2/)
 - [chaine YouTube de Lee](https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A) 
-- [Introduction à statistique bayésienne](https://dun.unistra.fr/ipm/unit/bayesien/co/1a_1_1.html)
+- [Introduction aux statistiques bayésiennes](https://dun.unistra.fr/ipm/unit/bayesien/co/1a_1_1.html)
 - [Livre: Bayesian Analysis with Python](https://www.fnac.com/livre-numerique/a12861451/Osvaldo-Martin-Bayesian-Analysis-with-Python?Origin=fnac_google#FORMAT=ePub)
 
 
