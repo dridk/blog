@@ -11,12 +11,12 @@ SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 Cela fait un moment que j'avais envie de publier sur l'inférence bayésienne. Un sujet qui m'a particulièrement interpelé depuis la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
 En deux mots, l'inférence bayésienne est une méthode permettant de quantifier nos incertitudes à partir de nos a priori et de nos observations. 
-Et ce qui est assez troublant, c'est qu'elle décrit merveilleusement comment nous devons pensons !      
+Et ce qui est assez troublant, c'est qu'elle décrit merveilleusement comment nous devons penser !      
 Mais passons... Dans ce billet nous allons définir la méthode d'inférence bayésienne et son vocabulaire à partir d'exemples intuitifs. Puis, nous l'utiliserons à travers un exemple codé en python et avec la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
 
 ## L'inférence bayésienne selon Laplace
 
-Imaginez une boite où se cache à l'intérieur une personne inconnues. Selon vous, quelle probabilité accordez-vous aux **théories** suivantes:
+Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vous, quelle probabilité accordez-vous aux **théories** suivantes:
 
 - *« Il y a un homme dans la boite ? »*
 - *« Il y a une femme dans la boite ? »*
