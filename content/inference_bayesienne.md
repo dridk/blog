@@ -190,16 +190,16 @@ plt.plot(x,y)
     <div class="legend">Distribution a posteriori de θ montrant une forte probabilité autour de 0.8 </div>  
 </div>
 
-Pour bien comprendre comment les données influencent l'a priori, j'ai calculé l' a posteriori avec un nombre d'observations croissant : 
+Pour bien comprendre ce graphique, j'ai calculé l' a posteriori avec un nombre d'observations croissant : 
 
 <div class="figure">
     <img src="../images/inference_bayesienne/plot.svg" />      
     <div class="legend"> Distribution des probabilités θ en ajoutant successivement des observations. Plus les données s'accumulent, plus notre croyance pour θ = 0.8 augmente </div>   
 </div>
 
-Sur cette figure, sans observation, la distribution des probabilités de θ est centré sur 0.5. Il s'agit là de notre a priori. Ensuite, avec l'accumulation des observations, la distribution se rapproche de 0.8 et la variance s'amincit.    
+Sans observation, la distribution des probabilités de θ est centré sur 0.5. Il s'agit là de notre a priori. Ensuite, avec l'accumulation progressive des observations, la distribution se rapproche de 0.8 et la variance s'amincit.    
 Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truqué avec un θ probablement de 0.8. 
-Effectivement.. J'avais généré automatiquement ces observations avec une loi de Bernouilli paramétré par 0.8 et je vous ai caché volontairement le code pour éviter les confusions! 
+Effectivement.. J'avais généré automatiquement les observations avec une loi de Bernouilli paramétré par 0.8 et je vous ai caché volontairement le code pour éviter les confusions! 
 
 ## Utilisation de PyMC3 
 Pour finir, voici le même algorithme, mais écris cette fois en utilisant la librairie [PyMC3](https://docs.pymc.io/). Il s'agit d'une librairie puissante et très simple permettant de faire de la programmation probabiliste. La librarie fonctionne à l'aide d'[echantillonneur MCMC](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Monte-Carlo_par_cha%C3%AEnes_de_Markov). Pour faire simple, les échantillonneurs vont générer aléatoirement des valeurs de θ suivant la distribution a posteriori recherchée. 
@@ -233,8 +233,8 @@ az.plot_trace(trace)
     <div class="legend">Distribution des probabilités de θ avec <a href="https://en.wikipedia.org/wiki/Credible_interval)(Highest Posterior Density interval"> l'interval de crédibilité appelé HPD </a>  </div>  
 </div>
 
-Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à regarder les références plus bas. Et l'ensemble du code ayant servi à écrire ce billet est disponible et éditable sur [google colab](https://colab.research.google.com/drive/14RWMzPAfN6u-n0WrurPzjIbliv6ecHu9).    
-Je vous invite également à voir ce billet dans le contexte du Covid-19 qui fait des prédictions bayésienne sur la cinétique de l'épidémie.
+Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à regarder les références plus bas. L'ensemble du code ayant servi à écrire ce billet est disponible et éditable sur [google colab](https://colab.research.google.com/drive/14RWMzPAfN6u-n0WrurPzjIbliv6ecHu9).    
+Il y a également [ce billet](https://github.com/dridk/blog/blob/master/content/inference_bayesienne.md) pour anglophone dans le contexte du Covid-19 qui fait des prédictions bayésienne sur la cinétique de l'épidémie.
 
 
 
