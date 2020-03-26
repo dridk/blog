@@ -198,7 +198,7 @@ Pour bien comprendre ce graphique, j'ai calculé l' a posteriori avec un nombre 
 </div>
 
 Sans observation, la distribution des probabilités de θ est centré sur 0.5. Il s'agit là de notre a priori. Ensuite, avec l'accumulation progressive des observations, la distribution se rapproche de 0.8 et la variance s'amincit.    
-Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truqué avec un θ probablement de 0.8. 
+Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truquée avec un θ probablement de 0.8. 
 Effectivement.. J'avais généré automatiquement les observations avec une loi de Bernouilli paramétré par 0.8 et je vous ai caché volontairement le code pour éviter les confusions! 
 
 ## Utilisation de PyMC3 
