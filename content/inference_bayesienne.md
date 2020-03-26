@@ -2,7 +2,7 @@ Title: Inférence bayésienne et python
 Slug: inference_bayesienne
 Date: 2020-03-18 11:44:42
 Modified: 2020-03-25 19:43:23
-Tags: statistique
+Tags: statistique, machine learning, python
 Category: informatique
 Author: Sacha Schutz
 Status: Draft
