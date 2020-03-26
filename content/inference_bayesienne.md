@@ -10,9 +10,15 @@ SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 
 Cela fait un moment que j'avais envie de publier sur l'inférence bayésienne. Un sujet qui m'a particulièrement interpelé depuis la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
-En deux mots, l'inférence bayésienne est une méthode permettant de quantifier nos incertitudes à partir de nos a priori et de nos observations. 
-Et ce qui est assez troublant, c'est qu'elle décrit merveilleusement comment nous devons penser !      
-Mais passons... Dans ce billet nous allons définir la méthode d'inférence bayésienne et son vocabulaire à partir d'exemples intuitifs. Puis, nous l'utiliserons à travers un exemple codé en python et avec la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
+En deux mots, l'inférence bayésienne est une méthode permettant d'ajuster vos croyances par des observations.
+Dans ce billet nous allons définir l'inférence bayésienne et son vocabulaire à partir d'exemples intuitifs. Puis, nous l'appliquerons dans un programme écrits en python seul puis avec la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
+
+## prédiction et inférence
+Le principe de causalité nous dit qu'en connaissant les causes nous pouvons **prédire** ses effets. La théorie de la gravitation par exemple, permet de prédire la trajectoire d'un javelot. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.
+Mais l'inverse est possible. En observant des effets, nous pouvons **inférer** des causes. Par exemple en observant des traces de pas, nous pouvons supposer que le tueur était présent sur la scène de crime. Les astrophysiciens, en observant des effets gravitationnelles , peuvent supposer qu'une planète existe.       
+L'inférence bayesienne permet donner une probabilité aux causes à partir des leurs effets observés. Et chaque jour, sans le savoir, nous faisons de l'inférence, car les effets sont plus accessible que les causes. Selon les disciples, les causes sont appelés des théories, des modèles statistiques, des fonctions mathématique, des hypothèses ou n'importe quelle croyances capable de faire des prédictions. Les effets quand à eux seront toujours des données observés.         
+Dans la suite de billet, j'utiliserai les termes théories et données que vous pouvez à tout moment remplacer par cause et effet.
+
 
 ## L'inférence bayésienne selon Laplace
 
