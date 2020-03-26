@@ -13,7 +13,7 @@ Cela fait un moment que j'avais envie de publier sur l'inférence bayésienne. U
 En deux mots, l'inférence bayésienne est une méthode permettant d'ajuster vos croyances par des observations.
 Dans ce billet nous allons définir l'inférence bayésienne et son vocabulaire à partir d'exemples intuitifs. Puis, nous l'appliquerons dans un programme écrit en python seul puis avec la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
 
-## prédiction et inférence
+## Cause et effets
 Selon le principe de causalité, en connaissant les causes nous pouvons **prédire** ses effets. La théorie de la gravitation par exemple, permet de prédire la trajectoire d'un javelot. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.       
 Mais l'inverse est également possible. En observant les effets, nous pouvons **inférer** ses causes. Par exemple, en observant des traces de pas, nous pouvons supposer la présence du tueur sur la scène de crime. En observant les effets gravitationnels, les astrophysiciens peuvent supposer la présence d'une planète.        
 L'inférence bayésienne permet de donner ici une probabilité aux causes à partir des leurs effets observés. Et dans la plus part des cas, ce sont bien les observations auquelles nous avons accès et non les causes. Selon les disciplines, ces causes sont appelées des théories, des modèles statistiques, des fonctions mathématiques, des hypothèses ou n'importe quelles croyances capables de faire des prédictions. Les effets quant à eux seront toujours des données observés.         
