@@ -15,10 +15,9 @@ Dans ce billet nous allons définir l'inférence bayésienne et son vocabulaire 
 
 ## prédiction et inférence
 Le principe de causalité nous dit qu'en connaissant les causes nous pouvons **prédire** ses effets. La théorie de la gravitation par exemple, permet de prédire la trajectoire d'un javelot. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.
-Mais l'inverse est possible. En observant des effets, nous pouvons **inférer** des causes. Par exemple en observant des traces de pas, nous pouvons supposer que le tueur était présent sur la scène de crime. Les astrophysiciens, en observant des effets gravitationnelles , peuvent supposer qu'une planète existe.       
+Mais l'inverse est possible. En observant des effets, nous pouvons **inférer** des causes. Par exemple en observant des traces de pas, nous pouvons supposer que le tueur était présent sur la scène de crime. En observant des effets gravitationnelles , les astrophysiciens peuvent supposer qu'une planète existe.        
 L'inférence bayesienne permet donner une probabilité aux causes à partir des leurs effets observés. Et chaque jour, sans le savoir, nous faisons de l'inférence, car les effets sont souvent plus facile d'accès que les causes. Selon les disciples, les causes sont appelés des théories, des modèles statistiques, des fonctions mathématique, des hypothèses ou n'importe quelle croyances capable de faire des prédictions. Les effets quand à eux seront toujours des données observés.         
 Dans la suite de billet, j'utiliserai les termes «théories» et «données» que vous pouvez à tout moment remplacer par «cause» et «effet».
-
 
 ## Qui est dans la boite ? 
 
@@ -32,9 +31,9 @@ Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vou
 </center>
 
 A priori, sans aucune autre information, vous allez me répondre 1 chance sur 2 pour chaques théories. Statistiquement parlant, il s'agit des probabilités **a priori** noté **p(Théorie)**. Dans notre cas **p(Homme) = 0.5** et **p(Femme) = 0.5**.   
-Si maintenant, je vous apporte une **donnée** supplémentaire en affirmant que cette personne a des cheveux longs. Alors votre **croyance** devrait changer en attribuant une plus grande probabilité à la théorie d'une femme dans la boîte. En effet, le nombre de personnes aux cheveux longs est plus fréquent (est plus vraisemblable) chez les femmes que chez les hommes. 
+Si maintenant, je vous apporte une **donnée** supplémentaire en affirmant que cette personne a des cheveux longs. Alors votre **croyance** devrait changer en attribuant une plus grande probabilité à la théorie qu'il femme dans la boîte. En effet, le nombre de personnes aux cheveux longs est plus fréquent (est plus vraisemblable) chez les femmes que chez les hommes. 
 Cette grandeur en statistique est appelé la **vraisemblance des données**. C'est la probabilité d'observer les données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Posons pour l'exemple, que parmi toutes les femmes existente, 70% ont les cheveux longs alors que chez les hommes, 10% seulement. Nous noterons alors **p(Donnée|Femme) = 70%** et **p(Donnée|Homme) = 10%**.     
-Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.     
+Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)
 Cette probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) revisité:    
 
 $$posteriori \sim priori \times  vraisemblance $$ 
@@ -50,7 +49,6 @@ $$p(T|D) = \frac{p(T) \times p(D|T)}{\sum^{i} p(T_i) \times p(D|T_i) } $$
 <center>Ce qui équivaut à: </center>
 <br>
 $$p(T|D)= \frac{p(T) \times p(D|T)}{ p(D)}$$
-
 
 Essayons pour voir, dans notre exemple, de calculer les probabilités a posteriori de chaque théorie :
 
@@ -69,10 +67,10 @@ Cependant le bayésien préfère raisonner avec des paris plutôt qu'avec des pr
 Dans notre cas :
 $$ \frac{p(Femme|Cheveux)}{p(Homme|Cheveux)} = \frac{0.35}{0.05} = 7$$
 
-Je peux alors vous faire un pari 7 contre 1 qu'il s'agit d'une femme dans la boîte. Retenez de ceux-ci que le bayésien évalue toujours une théorie par rapport aux autres théories. Les probabilités perdent leurs caractères absolus pour devenir relatif. 
+Je peux alors vous faire un pari 7 contre 1 qu'il s'agit d'une femme dans la boîte. Retenez de cela que le bayésien évalue toujours une théorie par rapport aux autres théories. Les probabilités perdent leurs caractères absolus pour devenir relatif. 
 
-En résumé, l'inférence bayésienne consiste à ajuster une croyance a priori par la vraisemblance des données observées pour obtenir une nouvelle croyance a posteriori. Cette  croyance peut à son tour être considéré comme un priori et s'ajuster au regard de nouvelles données. En accumulant des données, nos croyances convergent ainsi vers la "vérité".          
-Un exercice, dans le contexte du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019) pendant votre confinement. Si je tousse là,  maintenant, quelle pari faite vous sur le fait que je sois contaminé ou pas ? 
+En résumé, l'inférence bayésienne consiste à ajuster une croyance a priori par la vraisemblance des données observées pour obtenir une nouvelle croyance a posteriori. Cette croyance peut à son tour être considéré comme un priori et s'ajuster au regard de nouvelles données. En les accumulants, nos croyances convergent alors vers la "vérité".          
+Un exercice, dans le contexte du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019) pendant votre confinement. Si je tousse là,  maintenant, quelle pari faite vous sur le fait que je sois contaminé ou pas ? C'est marrant, mais vous auriez certainement pas dit la même chose un an plutôt. Pourquoi à votre avis ? 
 
 ## Bayes pour les distributions continues
 
@@ -90,8 +88,8 @@ $$p(x|Donnee) = \frac{p(x) \times p(Donnee|x) }{\int p(x)p(Donnee|x) dx}$$
 ## Parier sur les paramètres d'une loi de probabilité
 
 Une loi de probabilité est une fonction mathématique décrivant la distribution d'une variable aléatoire. Elle est définie par ses paramètres. Par exemple la moyenne (µ) et l'écart type (σ) pour une [loi normale](https://fr.wikipedia.org/wiki/Loi_normale), le paramètre lambda (λ) pour une [loi de poisson](https://fr.wikipedia.org/wiki/Loi_de_poisson) ou encore les paramètres (n,p) pour une [loi binomiale](https://fr.wikipedia.org/wiki/Loi_binomiale). 
-En statistique bayésienne, on va être amené faire des paris sur les paramètres d'une loi après avoir observer des données. Supposons par exemple que la taille des individus dans la population suit une loi normale de moyenne µ. En observant les tailles de plusieurs individus dans un échantillon, nous pouvons chercher à deviner la valeur de µ. Plus exactement, nous allons chercher la distribution de probabilité des valeurs possible de µ.       
-Dits autrement, le paramètre θ d'une loi de probabilité A décrivant une variable aléatoire X peut lui même être décrits comme une variable aléatoire suivant une autre loi de probabilité B. C'est très «*[meta](https://fr.wikipedia.org/wiki/M%C3%A9ta_(pr%C3%A9fixe))*» non ? Allez, un exemple concrêt pour mieux comprendre. 
+En statistique bayésienne, on va être amené faire des paris sur les paramètres d'une loi après avoir observer des données. Supposons par exemple que la taille des individus dans la population suit une loi normale de moyenne µ. En observant les tailles de plusieurs individus dans un échantillon, nous pouvons essayer à deviner la valeur de µ. Plus exactement, nous allons chercher la distribution de probabilité des valeurs possible de µ.       
+Dits autrement, le paramètre θ d'une loi de probabilité A décrivant une variable aléatoire X peut lui même être décrits comme une variable aléatoire suivant une autre loi de probabilité B. C'est très «*[meta](https://fr.wikipedia.org/wiki/M%C3%A9ta_(pr%C3%A9fixe))*» je sais.. Allez, un exemple concrêt pour mieux comprendre. 
 
 
 ## Comment savoir si une pièce est truquée ?  
@@ -122,7 +120,7 @@ Nous allons donc choisir une [loi bêta](https://fr.wikipedia.org/wiki/Loi_b%C3%
 
 $$\theta \sim Beta(a, b)$$
 
-La forme de cette loi bêta dépend de deux paramètres a et b illustré dans la figure suivante. 
+La forme de cette loi bêta dépend de deux paramètres a et b illustrés dans la figure suivante. 
 
 <div class="figure">
     <img src="../images/inference_bayesienne/beta.png" />      
@@ -141,7 +139,7 @@ def prior(theta):
 
 ### Calcul de la vraisemblance 
 
-La vraisemblance est la probabilité d'observer des données en supposant vrai une loi de Bernoulli sous une valeur spécifique de θ.
+La vraisemblance est la probabilité d'observer des données en supposant vrai la loi de Bernoulli sous une valeur spécifique de θ.
 Etant donné qu'il y a plusieurs observations indépendantes (x1,x2,x3..) nous pouvons écrire : 
 
 $$p(x_1,x_2,...x_n | \theta ) = p(x_1|\theta) \times p(x_2|\theta) \times ... \times p(x_n|\theta) $$
@@ -194,7 +192,7 @@ Pour bien comprendre comment les données influencent l'a priori, j'ai calculé 
 </div>
 
 Sur cette figure, sans observation, la distribution des probabilités de θ est centré sur 0.5. Il s'agit là de notre a priori. Ensuite, avec l'accumulation des observations, la distribution se rapproche de 0.8 et la variance s'amincit.    
-Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truqué avec un θ autour de 0.8. 
+Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truqué avec un θ probablement de 0.8. 
 Effectivement.. J'avais généré automatiquement ces observations avec une loi de Bernouilli paramétré par 0.8 et je vous ai caché volontairement le code pour éviter les confusions! 
 
 ## Utilisation de PyMC3 
@@ -229,7 +227,10 @@ az.plot_trace(trace)
     <div class="legend">Distribution des probabilités de θ avec <a href="https://en.wikipedia.org/wiki/Credible_interval)(Highest Posterior Density interval"> l'interval de crédibilité appelé HPD </a>  </div>  
 </div>
 
-Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à regarder les références plus bas. Et l'ensemble du code ayant servi à écrire ce billet est disponible et éditable sur [google colab](https://colab.research.google.com/drive/14RWMzPAfN6u-n0WrurPzjIbliv6ecHu9)
+Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à regarder les références plus bas. Et l'ensemble du code ayant servi à écrire ce billet est disponible et éditable sur [google colab](https://colab.research.google.com/drive/14RWMzPAfN6u-n0WrurPzjIbliv6ecHu9).    
+Je vous invite également à voir ce billet dans le contexte du Covid-19 qui fait des prédictions bayésienne sur la cinétique de l'épidémie.
+
+
 
 ## Référence 
 - [Blog de Sciencetonnante](https://sciencetonnante.wordpress.com/2012/10/15/linference-bayesienne-bayes-level-2/)
