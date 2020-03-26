@@ -39,8 +39,8 @@ Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vou
 A priori, sans aucune autre information, vous allez me répondre 1 chance sur 2 pour chaques théories. Il s'agit ici des probabilités **a priori** notées **p(Théorie)**. Dans notre cas **p(Homme) = 0.5** et **p(Femme) = 0.5**.   
 Si maintenant, je vous apporte une **donnée** supplémentaire en affirmant que cette personne a des cheveux longs. Alors votre **croyance** devrait changer en attribuant une plus grande probabilité à la théorie d'une femme dans la boîte. En effet, le nombre de personnes aux cheveux longs est plus fréquent (est plus vraisemblable) chez les femmes que chez les hommes. 
 Cette grandeur en statistique est appelé la **vraisemblance des données**. C'est la probabilité d'observer les données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Posons pour l'exemple, que parmi toutes les femmes existantes, 70% ont les cheveux longs alors que chez les hommes, 10% seulement. Nous noterons alors **p(Donnée|Femme) = 70%** et **p(Donnée|Homme) = 10%**.     
-Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)
-Cette probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) revisité:    
+Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
+La probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes):    
 
 $$posteriori \sim priori \times  vraisemblance $$ 
 <center>Soit</center>
@@ -69,14 +69,14 @@ $$p(Femme|Cheveux) = \frac{0.35} {(0.35 + 0.05)} =  87,5\%$$
 
 Dans cette boite, il y a donc 87,5% de chance que ce soit une femme et 12.5% de chance que ce soit un homme.      
 
-Cependant le bayésien préfère raisonner avec des paris plutôt qu'avec des probabilités. En effet, le dénominateur de la formule de Bayes est parfois très compliqué à calculer. Il s'annule lorsque l'on fait le rapport entre les deux théories. 
+Cependant le bayésiens préfèrent raisonner avec des paris plutôt qu'avec des probabilités. En effet, le dénominateur de la formule de Bayes est parfois très compliqué à calculer. Il s'annule lorsque l'on fait le rapport entre les deux théories. 
 Dans notre cas :
 $$ \frac{p(Femme|Cheveux)}{p(Homme|Cheveux)} = \frac{0.35}{0.05} = 7$$
 
 Je peux alors vous faire un pari 7 contre 1 qu'il s'agit d'une femme dans la boîte. Retenez de cela que le bayésien évalue toujours une théorie par rapport aux autres théories. Les probabilités perdent leurs caractères absolus pour devenir relatif. 
 
 En résumé, l'inférence bayésienne consiste à ajuster une croyance a priori par la vraisemblance des données observées pour obtenir une nouvelle croyance a posteriori. Cette croyance peut à son tour être considéré comme un priori et s'ajuster au regard de nouvelles données. En les accumulants, nos croyances convergent alors vers la "vérité".          
-Un exercice, dans le contexte du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019) pendant votre confinement. Si je tousse là,  maintenant, quelle pari faite vous sur le fait que je sois contaminé ou pas ? C'est marrant, mais vous auriez certainement pas dit la même chose un an plutôt. Pourquoi à votre avis ? 
+Un exercice, dans le contexte du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019) pendant votre confinement. Si je tousse là,  maintenant, quelle pari faite vous sur le fait que je sois contaminé ou pas ? C'est marrant, mais vous auriez certainement pas dit la même chose un an plutôt. Pourquoi à votre avis ? A cause de vos a priori !
 
 ## Bayes pour les distributions continues
 
