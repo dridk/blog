@@ -19,6 +19,12 @@ Mais l'inverse est possible. En observant des effets, nous pouvons **inférer** 
 L'inférence bayésienne permet donner une probabilité aux causes à partir des leurs effets observés. Et chaque jour, sans le savoir, nous faisons de l'inférence, car les effets sont souvent plus faciles d'accès que les causes. Selon les disciples, les causes sont appelées des théories, des modèles statistiques, des fonctions mathématiques, des hypothèses ou n'importe quelles croyances capables de faire des prédictions. Les effets quant à eux seront toujours des données observés.         
 Dans la suite de billet, j'utiliserai les termes «théories» et «données» que vous pouvez à tout moment remplacer par «cause» et «effet».
 
+
+<center>
+<img src="../images/inference_bayesienne/predire_inferer.png" />      
+</center>
+
+
 ## Qui est dans la boite ? 
 
 Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vous, quelle probabilité accordez-vous aux **théories** suivantes:
