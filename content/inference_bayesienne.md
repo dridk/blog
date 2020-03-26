@@ -36,9 +36,9 @@ Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vou
 <img src="../images/inference_bayesienne/box.jpg" />      
 </center>
 
-A priori, sans aucune autre information, vous allez me répondre 1 chance sur 2 pour chaques théories. Il s'agit ici des probabilités **a priori** noté **p(Théorie)**. Dans notre cas **p(Homme) = 0.5** et **p(Femme) = 0.5**.   
+A priori, sans aucune autre information, vous allez me répondre 1 chance sur 2 pour chaques théories. Il s'agit ici des probabilités **a priori** notées **p(Théorie)**. Dans notre cas **p(Homme) = 0.5** et **p(Femme) = 0.5**.   
 Si maintenant, je vous apporte une **donnée** supplémentaire en affirmant que cette personne a des cheveux longs. Alors votre **croyance** devrait changer en attribuant une plus grande probabilité à la théorie d'une femme dans la boîte. En effet, le nombre de personnes aux cheveux longs est plus fréquent (est plus vraisemblable) chez les femmes que chez les hommes. 
-Cette grandeur en statistique est appelé la **vraisemblance des données**. C'est la probabilité d'observer les données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Posons pour l'exemple, que parmi toutes les femmes existente, 70% ont les cheveux longs alors que chez les hommes, 10% seulement. Nous noterons alors **p(Donnée|Femme) = 70%** et **p(Donnée|Homme) = 10%**.     
+Cette grandeur en statistique est appelé la **vraisemblance des données**. C'est la probabilité d'observer les données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Posons pour l'exemple, que parmi toutes les femmes existantes, 70% ont les cheveux longs alors que chez les hommes, 10% seulement. Nous noterons alors **p(Donnée|Femme) = 70%** et **p(Donnée|Homme) = 10%**.     
 Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)
 Cette probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) revisité:    
 
