@@ -33,12 +33,11 @@ A priori, sans autre information, la probabilité est 50-50, 'est-à-dire qu'il 
 Si maintenant, nous disposons d'une **donnée** supplémentaire, à savoir que la personne inconnue a les cheveux longs, la probabilité que l'inconnu soit un homme ou une femme change en augmentant **p(femme)** et en diminuant d'autant **p(homme)**. En effet, intuitivement, nous savons qu'il y a plus de femmes aux cheveux longs que d'homme.  
 Cette nouvelle grandeur est appelée, en statistique, **vraisemblance des données** : c'est la probabilité d'observer des données en supposant une hypothèse vrai. Elle est notée **p(donnée|hypothèse)**. Admettons, par exemple, que parmi toutes les femmes, 70% ont les cheveux longs et parmi tous les hommes, 10%  ont les cheveux longs. Dans ce cas **p(cheveux_longs|femme) = 70%** et **p(cheveux_longs|Homme) = 10%**.     
 Mais ce que nous cherchons est différents. Nous voulons connaître la probabilité que la personne dans la boîte soit une femme, sachant qu'elle porte les cheveux long. Nous appelons cette probabilité, probabilité **a-posteriori** notée **p(hypothèse|donnée)**. (Attention de ne pas confondre cette dernière probabilité avec la vraisemblance des données: la probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
-La probabilité a-posteriori est égale, selon la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes), au produit de la probabilité a-priori et de la vraisemblace des données normalisé par la somme des probabilités *a-posteriori* de toutes les autres hypothèses :    
+La probabilité a-posteriori est égale, selon la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes), au produit de la probabilité a-priori et de la vraisemblance des données, le tout normalisé par la somme des probabilités *a-posteriori* de toutes les autres hypothèses :    
 
 $$
 \begin{array}{lc}
 p(H|D) &=& \frac{p(H) \times p(D|H)}{\sum_{i} p(H_i) \times p(D|H_i) }\\[0.5cm]
-       &=& \frac{p(H) \times p(D|H)}{ p(D)}
 \end{array}\\[0.5cm]
 \text{$H$ : hypothèse et $D$ : données}
 $$
