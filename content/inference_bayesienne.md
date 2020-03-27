@@ -15,7 +15,7 @@ Dans ce billet je définirai, à partir d'exemples intuitifs, l'inférence bayé
 ## La probabilité des causes
 Selon le principe de causalité, la connaissance des *causes*, permet de **prédire**, ses *effets*. La mécanique newtonienne permet, par exemple, de prédire la trajectoire d'un javelot lancé par un athlète. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur. 
 On peut, cependant, être tenter de faire l'inverse. C'est à dire d'**inférer** les causes à partir des effets observés. Par exemple, en observant des traces de pas, nous pouvons supposer avec une probabilité plus ou moin forte que le tueur était sur la scène du crime.             
-En général, les observations peuvent être suffisemment décrites et mesurées alors que la connaissance des causes ou des théories sous jacente est la plupart du temps hors de portée. Grâce à l'inférence bayésienne il devient possible de mesurer, à partir de l'observation et d'un *a priori*, la crédibilité des causes.     
+En général, les observations peuvent être suffisemment décrites et mesurées alors que la connaissance des causes ou des théories sous jacente est la plupart du temps hors de portée. Grâce à l'inférence bayésienne il devient possible de mesurer, à partir de l'observation et d'un *a priori*, de la crédibilité des causes.     
 Dans la suite de ce billet, j'utiliserai les mots *hypothèses* et *donnée* que vous pouvez à tout moment remplacer par *cause* est *effets*.
 <center>
 <img src="../images/inference_bayesienne/predire_inferer.png" />      
