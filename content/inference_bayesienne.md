@@ -192,8 +192,7 @@ Pour mieux comprendre ce graphique, j'ai calculé l' *a-posteriori* avec un nomb
 </div>
 
 Sans observation, le maximum de la distribution des probabilités est en θ = 0,5. Il s'agit là de notre a-priori. Ensuite, avec l'accumulation progressive des observations, le maximum de la distribution se rapproche de 0,8 et la variance de la distribution diminue.    
-Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truquée avec un θ probablement de 0,8. 
-Effectivement, j'ai généré automatiquement les observations avec une loi de Bernouilli paramétré par 0,8 et je vous ai caché volontairement le code pour éviter les confusions! 
+Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truquée avec un θ probablement de 0,76. Effectivement, j'ai généré automatiquement les observations avec une loi de Bernouilli paramétré par 0,8 et je vous ai caché volontairement le code pour éviter les confusions! Notons dans l'exemple, que l'*a-priori* très faible pour la valeur de 0,8 nous empèche d'être parfaitement centré sur 0.8. Il nous faudrait plus de donnée. L'adage suivant illustre bien cette situation: « Une affirmation extraordinaire nécessite une preuve plus qu’ordinaire »
 
 ## Utilisation de PyMC3 
 Pour finir, voici le même algorithme, mais implémenté cette fois en utilisant la librairie [PyMC3](https://docs.pymc.io/). Il s'agit d'une librairie puissante et très simple permettant de faire de la programmation probabiliste. La librarie fonctionne à l'aide d'[echantillonneur MCMC](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Monte-Carlo_par_cha%C3%AEnes_de_Markov). Pour faire simple, les échantillonneurs vont générer aléatoirement des valeurs de θ suivant la distribution a-posteriori recherchée. 
