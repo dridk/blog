@@ -9,16 +9,14 @@ Status: Draft
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 
-Cela fait un moment que j'avais envie de publier sur l'inférence bayésienne. Un sujet qui m'a particulièrement interpelé depuis la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
+Cela fait un moment que j'avais envie de publier sur l'*inférence bayésienne*. Mon intérêt pour ce sujet a été éveillé par la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
 En deux mots, l'inférence bayésienne est une méthode permettant d'ajuster vos croyances par des observations.
-Dans ce billet nous allons définir l'inférence bayésienne et son vocabulaire à partir d'exemples intuitifs. Puis, nous l'appliquerons dans un programme écrit en python seul puis avec la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
+Dans ce billet je définirai l'inférence bayésienne ainsi que son vocabulaire, à partir d'exemples intuitifs. Puis, j'appliquerai la méthode à l'aide d'un programme informatique rédigé en langage *python*, d'abord sous forme d'un programme autonome et, ensuite, en m'appuyant sur la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
 
-## Cause et effets
-Selon le principe de causalité, en connaissant les causes nous pouvons **prédire** ses effets. La théorie de la gravitation par exemple, permet de prédire la trajectoire d'un javelot. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.       
+## Cause et effet
+Selon le principe de causalité, la connaissance exhaustive d'un phénomène, appelé *cause*, permet de **prédire** le phénomène résultant, appelé *effet*. La mécanique newtonienne permet, par exemple, de prédire la trajectoire d'un javelot lancé par un athlète. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.       
 Mais l'inverse est également possible. En observant les effets, nous pouvons **inférer** ses causes. Par exemple, en observant des traces de pas, nous pouvons supposer la présence du tueur sur la scène de crime. En observant les effets gravitationnels, les astrophysiciens peuvent supposer la présence d'une planète.        
-L'inférence bayésienne permet de donner ici une probabilité aux causes à partir des leurs effets observés. Et dans la plus part des cas, ce sont bien les observations auquelles nous avons accès et non les causes. Selon les disciplines, ces causes sont appelées des théories, des modèles statistiques, des fonctions mathématiques, des hypothèses ou n'importe quelles croyances capables de faire des prédictions. Les effets quant à eux seront toujours des données observés.         
-Dans la suite de billet, j'utiliserai les termes «théories» et «données» que vous pouvez à tout moment remplacer par «cause» et «effet».
-
+En général, l'effet observable peut être parfaitement décrite alors que la description exhaustive de la cause est la plupart du temps hors de portée. L'inférence bayésienne permet de calculer un poids pour l'ensemble des paramètres de la cause à partir de l'effet observé. Le processus qui fait évoluer un système de la cause (par exemple la gravitation) vers l'effet (par exemple chute de la pomme) est décrit par une théorie (par exemple théorie de la gravitation) formalisée par les mathématiques (par exemple mécanique newtonienne).         
 
 <center>
 <img src="../images/inference_bayesienne/predire_inferer.png" />      
@@ -27,18 +25,19 @@ Dans la suite de billet, j'utiliserai les termes «théories» et «données» q
 
 ## Qui est dans la boite ? 
 
-Imaginez une boite où se cache à l'intérieur une personne inconnue. Selon vous, quelle probabilité accordez-vous aux **théories** suivantes:
+Imaginez une boite dans laquelle se cache une personne inconnue. Selon vous, quelle probabilité accordez-vous aux **hypothèses** suivantes:
 
-- *« Il y a un homme dans la boite ? »*
-- *« Il y a une femme dans la boite ? »*
+- *la personne est un homme*
+- *la personne est une femme*
 
 <center>
 <img src="../images/inference_bayesienne/box.jpg" />      
 </center>
 
-A priori, sans aucune autre information, vous allez me répondre 1 chance sur 2 pour chaques théories. Il s'agit ici des probabilités **a priori** notées **p(Théorie)**. Dans notre cas **p(Homme) = 0.5** et **p(Femme) = 0.5**.   
-Si maintenant, je vous apporte une **donnée** supplémentaire en affirmant que cette personne a des cheveux longs. Alors votre **croyance** devrait changer en attribuant une plus grande probabilité à la théorie d'une femme dans la boîte. En effet, le nombre de personnes aux cheveux longs est plus fréquent (est plus vraisemblable) chez les femmes que chez les hommes. 
-Cette grandeur en statistique est appelé la **vraisemblance des données**. C'est la probabilité d'observer les données en supposant une théorie vraie que l'on note **p(Donnée|Théorie)**. Posons pour l'exemple, que parmi toutes les femmes existantes, 70% ont les cheveux longs alors que chez les hommes, 10% seulement. Nous noterons alors **p(Donnée|Femme) = 70%** et **p(Donnée|Homme) = 10%**.     
+A priori, sans aucune autre information, on serait tenter de répondre que la probabilité est 50-50. Appelons cette probabilité, probabilité **a priori** notée **p(hypothèse)**, soit dans notre exemple **p(homme) = p(femme) = 0.5**.
+Notons que la somme des probabilités doit être égale à 1. 
+Si maintenant, nous disposons d'une **donnée** supplémentaire, à savoir que la personne inconnue a les cheveux longs, la probabilité que l'inconnu soit un homme ou une femme change en augmentant **p(femme)** et en diminuant d'autant **p(homme)**. Nous avons supposé que statistiquement les femmes ont plus tendance à porter les cheveux longs que les hommes.  
+Cette nouvelle probabilité est appelée, en analyse statistique, **vraisemblance des données** : c'est la probabilité qu'une hypothèse est vraie en prenant une information donnée. Elle est notée **p(donnée|Hypothèse)**. Admettons, par l'exemple, que parmi toutes les personnes existantes, 70% des femmes et 10% des hommes ont les cheveux longs. Dans ce cas **p(cheveux_longs|femme) = 70%** et **p(cheveux_longs|Homme) = 10%**.     
 Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
 La probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes):    
 
