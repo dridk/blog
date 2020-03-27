@@ -15,7 +15,7 @@ Dans ce billet je définirai, à partir d'exemples intuitifs, l'inférence bayé
 ## La probabilité des causes
 Selon le principe de causalité, la connaissance des *causes*, permet de **prédire**, ses *effets*. La mécanique newtonienne permet, par exemple, de prédire la trajectoire d'un javelot lancé par un athlète. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur. 
 On peut, cependant, être tenter de faire l'inverse. C'est à dire d'**inférer** les causes à partir des effets observés. Par exemple, en observant des traces de pas, nous pouvons supposer avec une probabilité plus ou moin forte que le tueur était sur la scène du crime.             
-En général, les observations peuvent être suffisemment décrites et mesurées alors que la connaissance des causes ou des théories sous jacente est la plupart du temps hors de portée. Grâce à l'inférence bayésienne il devient possible de mesurer, à partir de l'observation des effets et d'un *a priori*, l'incertitude sur ces causes.     
+En général, les observations peuvent être suffisemment décrites et mesurées alors que la connaissance des causes ou des théories sous jacente est la plupart du temps hors de portée. Grâce à l'inférence bayésienne il devient possible de mesurer, à partir de l'observation des effets et d'un *a priori*, la crédibilité des causes.     
 Dans la suite de ce billet, j'utiliserai les mots *hypothèses* et *donnée* que vous pouvez à tout moment remplacer par *cause* est *effets*.
 <center>
 <img src="../images/inference_bayesienne/predire_inferer.png" />      
@@ -32,7 +32,7 @@ Imaginez une boite dans laquelle se cache une personne inconnue. Quelle probabil
 A priori, sans autre information, la probabilité est 50-50, 'est-à-dire qu'il y a autant de chance que ce soit une femme qu'une home. Appelons cette probabilité, probabilité **a-priori** notée **p(hypothèse)**, soit dans notre exemple **p(homme) = p(femme) = 0.5**. Notons que la somme des probabilités de l'ensemble des hypothèses doit être égale à 1 (la personne inconnue ne peut être autre chose qu'un homme ou une femme). 
 Si maintenant, nous disposons d'une **donnée** supplémentaire, à savoir que la personne inconnue a les cheveux longs, la probabilité que l'inconnu soit un homme ou une femme change en augmentant **p(femme)** et en diminuant d'autant **p(homme)**. En effet, intuitivement, nous savons qu'il y a plus de femmes aux cheveux longs que d'homme.  
 Cette nouvelle grandeur est appelée, en statistique, **vraisemblance des données** : c'est la probabilité d'observer des données en supposant une hypothèse vrai. Elle est notée **p(donnée|hypothèse)**. Admettons, par exemple, que parmi toutes les femmes, 70% ont les cheveux longs et parmi tous les hommes, 10%  ont les cheveux longs. Dans ce cas **p(cheveux_longs|femme) = 70%** et **p(cheveux_longs|Homme) = 10%**.     
-Mais ce que nous cherchons est différents. Nous voulons connaître la probabilité que la personne dans boîte soit une femme, sachant qu'elle porte les cheveux long. Nous appelons cette probabilité, probabilité **a-posteriori** notée **p(hypothèse|donnée)**. (Attention de ne pas confondre cette dernière probabilité avec la vraisemblance des données: la probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
+Mais ce que nous cherchons est différents. Nous voulons connaître la probabilité que la personne dans la boîte soit une femme, sachant qu'elle porte les cheveux long. Nous appelons cette probabilité, probabilité **a-posteriori** notée **p(hypothèse|donnée)**. (Attention de ne pas confondre cette dernière probabilité avec la vraisemblance des données: la probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
 La probabilité a-posteriori est égale, selon la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes), au produit de la probabilité a-priori et de la vraisemblace des données normalisé par la somme des probabilités de toutes les données :    
 
 $$
@@ -46,16 +46,16 @@ Calculons, dans notre exemple, la probabilité *a-posteriori* pour chaque hypoth
 
 $$
 \begin{array}{lcc}
-p(\text{homme}) \times p(\text{cheveux_longs}|\text{homme}) &=& 0,5 \times 0,1 = 0,05 \\[0.5cm]
-p(\text{femme}) \times p(\text{cheveux_longs}|\text{femme}) &=& 0,5 \times 0,7 = 0,35
+p(\text{homme}) \times p(\text{cheveux_longs}|\text{homme}) = 0,5 \times 0,1 = 0,05 \\[0.5cm]
+p(\text{femme}) \times p(\text{cheveux_longs}|\text{femme}) =0,5 \times 0,7 = 0,35
 \end{array}
 $$
 et donc :
 
 $$
 \begin{array}{ccl}
-p(\text{homme}|\text{cheveux_longs}) &=& \frac{0.05} {(0.35 + 0.05)} = 12,5\% \\[0.5cm]
-p(\text{femme}|\text{cheveux_longs}) &=& \frac{0.35} {(0.35 + 0.05)} =  87,5\%
+p(\text{homme}|\text{cheveux_longs}) = \frac{0.05} {(0.35 + 0.05)} = 12,5\% \\[0.5cm]
+p(\text{femme}|\text{cheveux_longs}) = \frac{0.35} {(0.35 + 0.05)} =  87,5\%
 \end{array}
 $$
 
