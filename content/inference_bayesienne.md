@@ -69,7 +69,7 @@ Ainsi, si il y avait une seul formule à retenir, ce serait la relation de propo
 
 $$ posteriori \sim priori \times vraisemblance $$
 
-En résumé, l'inférence bayésienne consiste à évaluer une probabilité *a-postiori* à partir d'une probabilité *a-priori* corrigée par la vraisemblance des données observées. La probabilité ainsi obtenue peut à son tour servir d'un *a-priori* que l'on corrigera si de nouvelles données sont disponibles. En procédant ainsi de façon itérative, la probalité des hypothèse convergera vers *«la vérité»* ...            
+En résumé, l'inférence bayésienne consiste à évaluer une probabilité *a-postiori* à partir d'une probabilité *a-priori* corrigée par la vraisemblance des données observées. La probabilité ainsi obtenue peut à son tour servir d'un *a-priori* que l'on corrigera si de nouvelles données sont disponibles. En procédant ainsi de façon itérative, la probabilité des hypothèses convergera vers *«la vérité»* ...            
 Je vous soumets à votre réflexion un exercice dans le contexte de la pandémie du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019), de quoi occuper votre temps de confinement. Si je me mets à tousser, quel pari faites-vous sur le fait que je sois contaminé ou non ? C'est marrant, mais vous auriez certainement pas dit la même chose quelque mois plutôt. Pourquoi à votre avis ? A cause de vos a-priori que vous ne devez jamais ignorer ! 
 
 ## Bayes pour les distributions continues
