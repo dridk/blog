@@ -8,8 +8,8 @@ Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 
-Cela fait un moment que j'avais envie de publier sur l'*inférence bayésienne*. Mon intérêt pour ce sujet a été éveillé par la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
-En deux mots, l'inférence bayésienne est une méthode qui permet de donner une probabilité à nos croyances en s'appuyant sur nos observations. 
+Cela fait un moment que j'avais envie de publier sur l'*inférence bayésienne*. Mon intérêt pour ce sujet a vraiment été éveillé par la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
+En deux mots, l'inférence bayésienne est une méthode qui permet de donner une crédibilité à nos croyances en s'appuyant sur nos observations et nos *a priori*. 
 Dans ce billet je définirai, à partir d'exemples intuitifs, l'inférence bayésienne et son vocabulaire. Puis, j'implémenterai la méthode avec un script rédigé en *python* seul et avec la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
 
 ## La probabilité des causes
