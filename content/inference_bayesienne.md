@@ -230,7 +230,7 @@ Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à re
 Il y a également [ce billet](https://covid19dashboards.com/growth-bayes/) pour anglophone dans le contexte du Covid-19 qui fait des prédictions bayésienne sur la cinétique de l'épidémie.
 
 ## Référence 
-- [Blog de Sciencetonnante](https://sciencetonnante.wordpress.com/2012/10/15/linference-bayesienne-bayes-level-2/)
+
 - [chaine YouTube de Le](https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A) 
 - [Introduction aux statistiques bayésiennes](https://dun.unistra.fr/ipm/unit/bayesien/co/1a_1_1.html)
 - [Livre: Bayesian Analysis with Python](https://www.fnac.com/livre-numerique/a12861451/Osvaldo-Martin-Bayesian-Analysis-with-Python?Origin=fnac_google#FORMAT=ePub)
