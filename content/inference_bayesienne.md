@@ -13,9 +13,9 @@ Cela fait un moment que j'avais envie de publier sur l'*inférence bayésienne*.
 En deux mots, l'inférence bayésienne est une méthode permettant d'ajuster vos croyances par des observations.
 Dans ce billet je définirai l'inférence bayésienne ainsi que son vocabulaire, à partir d'exemples intuitifs. Puis, j'appliquerai la méthode à l'aide d'un programme informatique rédigé en langage *python*, d'abord sous forme d'un programme autonome et, ensuite, en m'appuyant sur la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
 
-## Cause et effet
+## La probabilité des causes
 Selon le principe de causalité, la connaissance exhaustive d'un phénomène, appelé *cause*, permet de **prédire** le phénomène résultant, appelé *effet*. La mécanique newtonienne permet, par exemple, de prédire la trajectoire d'un javelot lancé par un athlète. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.       
-Mais l'inverse est également possible. En observant les effets, nous pouvons **inférer** ses causes. Par exemple, en observant des traces de pas, nous pouvons supposer la présence du tueur sur la scène de crime. En observant les effets gravitationnels, les astrophysiciens peuvent supposer la présence d'une planète.        
+Mais l'inverse est également possible. En observant les effets, nous pouvons **inférer** sur la probabilité des causes. Par exemple, en observant des traces de pas, nous pouvons supposer la présence du tueur sur la scène de crime. En observant les effets gravitationnels, les astrophysiciens peuvent supposer la présence d'une planète.        
 En général, l'effet observable peut être parfaitement décrite alors que la description exhaustive de la cause est la plupart du temps hors de portée. L'inférence bayésienne permet de calculer un poids pour l'ensemble des paramètres de la cause à partir de l'effet observé. Le processus qui fait évoluer un système de la cause (par exemple la gravitation) vers l'effet (par exemple chute de la pomme) est décrit par une théorie (par exemple théorie de la gravitation) formalisée par les mathématiques (par exemple mécanique newtonienne).         
 
 <center>
