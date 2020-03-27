@@ -231,7 +231,7 @@ Il y a également [ce billet](https://covid19dashboards.com/growth-bayes/) pour 
 
 ## Référence 
 
-- [chaine YouTube de Nguyên Hoang Lê](https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A) 
+- [chaine YouTube de Science4All](https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A) 
 - [Introduction aux statistiques bayésiennes](https://dun.unistra.fr/ipm/unit/bayesien/co/1a_1_1.html)
 - [Livre: Bayesian Analysis with Python](https://www.fnac.com/livre-numerique/a12861451/Osvaldo-Martin-Bayesian-Analysis-with-Python?Origin=fnac_google#FORMAT=ePub)
 
