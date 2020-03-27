@@ -74,7 +74,7 @@ Je vous soumets à votre réflexion un exercice dans le contexte de la pandémie
 
 ## Bayes pour les distributions continues
 
-Dans l'exemple précédent de la personne câchée dans une boite, la distribution des probabilités des deux hypotèses, femme ou homme, peut être représentée par une [distribution](https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9#Distributions_discr%C3%A8tes) discrète à deux événements. Nous pouvons généraliser le problème en augmentant le nombre d'hypothèses. Par exemple, chercher la probabilité que la personne dans la boite soit blond(e), brun(e), roux, châtain ou , pour allez encore plus loin, des hypothèses sur la taille. Dans ce cas, il y a une infinité d'hypothèses et la distribution discrète tend vers une [densité de probabilité ](https://fr.wikipedia.org/wiki/Variable_al%C3%A9atoire_%C3%A0_densit%C3%A9) d'une variable aléatoire continue.
+Dans l'exemple précédent de la personne câchée dans une boite, la distribution des probabilités des deux hypothèses, femme ou homme, peut être représentée par une [distribution](https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9#Distributions_discr%C3%A8tes) discrète à deux événements. Nous pouvons généraliser le problème en augmentant le nombre d'hypothèses. Par exemple, chercher la probabilité que la personne dans la boite soit blond(e), brun(e), roux, châtain ou , pour allez encore plus loin, des hypothèses sur la taille. Dans ce cas, il y a une infinité d'hypothèses et la distribution discrète tend vers une [densité de probabilité ](https://fr.wikipedia.org/wiki/Variable_al%C3%A9atoire_%C3%A0_densit%C3%A9) d'une variable aléatoire continue.
 
 <center>
 <img src="../images/inference_bayesienne/distr_continue.png" />      
