@@ -10,14 +10,13 @@ SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 
 Cela fait un moment que j'avais envie de publier sur l'*inférence bayésienne*. Mon intérêt pour ce sujet a été éveillé par la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang).     
-En deux mots, l'inférence bayésienne est une méthode permettant d'ajuster vos croyances par des observations.
-Dans ce billet je définirai l'inférence bayésienne ainsi que son vocabulaire, à partir d'exemples intuitifs. Puis, j'appliquerai la méthode à l'aide d'un programme informatique rédigé en langage *python*, d'abord sous forme d'un programme autonome et, ensuite, en m'appuyant sur la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
+En deux mots, l'inférence bayésienne est une méthode qui permet d'évaluer les connaissances sur un système en s'appuyant sur  l'observation de l'état de ce système.
+Dans ce billet je définirai, à partir d'exemples intuitifs, la méthode ainsi que le vocabulaire l'inférence bayésienne. Puis, j'implémenterai la méthode dans un programme informatique rédigé en langage *python*, d'abord sous forme d'un programme autonome et, ensuite, en m'appuyant sur la librairie de programmation probabiliste [PyMC3](https://docs.pymc.io/). 
 
 ## La probabilité des causes
-Selon le principe de causalité, la connaissance exhaustive d'un phénomène, appelé *cause*, permet de **prédire** le phénomène résultant, appelé *effet*. La mécanique newtonienne permet, par exemple, de prédire la trajectoire d'un javelot lancé par un athlète. Un modèle statistique permet de prédire la taille d'une population. Une fonction mathématique permet de calculer une valeur.       
-Mais l'inverse est également possible. En observant les effets, nous pouvons **inférer** sur la probabilité des causes. Par exemple, en observant des traces de pas, nous pouvons supposer la présence du tueur sur la scène de crime. En observant les effets gravitationnels, les astrophysiciens peuvent supposer la présence d'une planète.        
-En général, l'effet observable peut être parfaitement décrite alors que la description exhaustive de la cause est la plupart du temps hors de portée. L'inférence bayésienne permet de calculer un poids pour l'ensemble des paramètres de la cause à partir de l'effet observé. Le processus qui fait évoluer un système de la cause (par exemple la gravitation) vers l'effet (par exemple chute de la pomme) est décrit par une théorie (par exemple théorie de la gravitation) formalisée par les mathématiques (par exemple mécanique newtonienne).         
-
+Selon le principe de causalité, la connaissance exhaustive des conditions initiales d'un système, appelées *causes*, permet de **prédire**, à l'aide d'un modèle ou d'une théorie, l'évolution du système vers son état final, appelé *effet*. La théorie de l'attraction universelle de Newton permet, par exemple, de prédire la trajectoire de la chute chute d'une pomme de son arbre, connaissant la valeur de l'attraction gravitationnelle de la Terre, le poids et la forme de la pomme, la hauteur de l'arbre, la densité de l'air etc...        
+Est-ce-que l'inverse est possible, c'est-à-dire à partir de l'observation de l'évolution du système et de la mesure de l'état final, remonter aux conditions initiales à l'origine de l'état final ? En principe la réponse est non du fait de l'irréversibilité des processus physiques édictée par le deuxième principe de la thermodynamique. On peut, cependant, tenter d'**inférer** avec quel poids différentes causes interviennent dans la réalisation d'un état final observé.         
+En général, l'état final observable peut être suffisemment décrit et mesuré alors que la connaissance nécessairement exhaustive des conditions intiales est la plupart du temps hors de portée. Ainsi, par exemple, le jeu de dé ne serait plus un jeu de hasard si l'ensemble des conditions initiales au moment du lancement du dé était connu car les lois de la mécanique newtonienne me premettrait de prédire la face sur laquelle le dé va tomber. La connaissance imparfaite des conditions initiales font du lancement de dé un jeu de hasard. Grâce à l'inférence bayésienne il devient possible de décrire, à partir de l'observation de l'état final, l'état initial en assignant un poids à l'ensemble des conditions initiales. 
 <center>
 <img src="../images/inference_bayesienne/predire_inferer.png" />      
 </center>
@@ -25,7 +24,7 @@ En général, l'effet observable peut être parfaitement décrite alors que la d
 
 ## Qui est dans la boite ? 
 
-Imaginez une boite dans laquelle se cache une personne inconnue. Selon vous, quelle probabilité accordez-vous aux **hypothèses** suivantes:
+Imaginez une boite dans laquelle se cache une personne inconnue. Quelle probabilité peut-on accorder aux deux **hypothèses** suivantes :
 
 - *la personne est un homme*
 - *la personne est une femme*
@@ -34,98 +33,98 @@ Imaginez une boite dans laquelle se cache une personne inconnue. Selon vous, que
 <img src="../images/inference_bayesienne/box.jpg" />      
 </center>
 
-A priori, sans aucune autre information, on serait tenter de répondre que la probabilité est 50-50. Appelons cette probabilité, probabilité **a priori** notée **p(hypothèse)**, soit dans notre exemple **p(homme) = p(femme) = 0.5**.
-Notons que la somme des probabilités doit être égale à 1. 
+A priori, sans autre information, la probabilité est 50-50, 'est-à-dire qu'il y a autant de chance que ce soit une femme qu'une home. Appelons cette probabilité, probabilité **a-priori** notée **p(hypothèse)**, soit dans notre exemple **p(homme) = p(femme) = 0.5**. Notons que la somme des probabilités de l'ensemble des hypothèses doit être égale à 1 (la personne inconnue ne peut être autre chose qu'un homme ou une femme). 
 Si maintenant, nous disposons d'une **donnée** supplémentaire, à savoir que la personne inconnue a les cheveux longs, la probabilité que l'inconnu soit un homme ou une femme change en augmentant **p(femme)** et en diminuant d'autant **p(homme)**. Nous avons supposé que statistiquement les femmes ont plus tendance à porter les cheveux longs que les hommes.  
-Cette nouvelle probabilité est appelée, en analyse statistique, **vraisemblance des données** : c'est la probabilité d'observer des données en supposant l'hypothèse vrai. Elle est notée **p(donnée|Hypothèse)**. Admettons, par l'exemple, que parmi toutes les femmes, 70% ont les cheveux long. Alors que parmi les hommes, 10% seulement ont les cheveux longs. Dans ce cas **p(cheveux_longs|femme) = 70%** et **p(cheveux_longs|Homme) = 10%**.     
-Mais ce qui nous intéresse ici, ce n'est pas la vraisemblance des données. Nous voulons plutôt connaître la probabilité de la théorie sachant les données, appelée probabilité **a posteriori** et que l'on note **p(Théorie|Donnée)**. (Attention, ne confondez pas les deux. La probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
-La probabilité a posteriori se calcule grâce à la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes):    
+Cette nouvelle probabilité est appelée, en analyse statistique, **vraisemblance des données** : c'est la probabilité qu'une hypothèse soit en accord avec les données. Elle est notée **p(donnée|hypothèse)**. Admettons, par exemple, que 70% des femmes ont les cheveux longs et 10% des hommes ont les cheveux longs. Dans ce cas **p(cheveux_longs|femme) = 70%** et **p(cheveux_longs|Homme) = 10%**.     
+Nous pouvons maintenant définir la probabilité d'une hypothèse intégrant les données. Nous appelons cette probabilité, probabilité **a-posteriori** notée **p(hypothèse|donnée)**. (Attention de ne pas confondre cette dernière probabilité avec la vraisemblance des données, en effet la probabilité d'être argentin sachant qu'on est le pape n'est pas la même chose que la probabilité d'être le pape sachant qu'on est argentin.)        
+La probabilité a-posteriori est égale, selon la [formule de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes), au produit de la probabilité a-priori et de la vraisemblace des données normalisé par la somme des probabilités de toutes les données :    
 
-$$posteriori \sim priori \times  vraisemblance $$ 
-<center>Soit</center>
-$$p(T|D) \sim  p(T) * p(D|T) $$
-<center>Avec T: Théorie et D: Données</center>
+$$
+\begin{array}{lc}
+p(H|D) &=& \frac{p(H) \times p(D|H)}{\sum_{i} p(H_i) \times p(D|H_i) }\\[0.5cm]
+       &=& \frac{p(H) \times p(D|H)}{ p(D)}
+\end{array}\\[0.5cm]
+\text{$H$ : hypothèse et $D$ : données}
+$$
+Calculons, dans notre exemple, la probabilité a-posteriori pour chaque hypothèse :
 
-Ici le symbole ~ signifie proportionnel. Si nous voulions une égalité, il faudrait normaliser par une constante correspondant à la somme de toutes les autres théories. On retrouverait alors la formule classique de Bayes vu dans les livres d'école:
+$$
+\begin{array}{lcc}
+p(\text{homme}) \times p(\text{cheveux_longs}|\text{homme}) &=& 0,5 \times 0,1 = 0,05 \\[0.5cm]
+p(\text{femme}) \times p(\text{cheveux_longs}|\text{femme}) &=& 0,5 \times 0,7 = 0,35
+\end{array}
+$$
+et donc :
 
-$$p(T|D) = \frac{p(T) \times p(D|T)}{\sum^{i} p(T_i) \times p(D|T_i) } $$
+$$
+\begin{array}{ccl}
+p(\text{homme}|\text{cheveux_longs}) &=& \frac{0.05} {(0.35 + 0.05)} = 12,5\% \\[0.5cm]
+p(\text{femme}|\text{cheveux_longs}) &=& \frac{0.35} {(0.35 + 0.05)} =  87,5\%
+\end{array}
+$$
 
-<br>
-<center>Ce qui équivaut à: </center>
-<br>
-$$p(T|D)= \frac{p(T) \times p(D|T)}{ p(D)}$$
+La personne dans cette boite, a donc 87,5% de chance d'être une femme et 12.5% de chance d'être un homme.      
 
-Essayons pour voir, dans notre exemple, de calculer les probabilités a posteriori de chaque théorie :
-
-$$p(Homme) \times p(Cheveux|Homme) = 0.5 \times 0.1 = 0.05  $$
-$$p(Femme) \times p(Cheveux|Femme) = 0.5 \times 0.7 = 0.35   $$
-
-<center>Et donc: </center>
-
-$$p(Homme|Cheveux) = \frac{0.05} {(0.35 + 0.05)} = 12,5\%$$
-$$p(Femme|Cheveux) = \frac{0.35} {(0.35 + 0.05)} =  87,5\%$$
-
-
-Dans cette boite, il y a donc 87,5% de chance que ce soit une femme et 12.5% de chance que ce soit un homme.      
-
-Cependant le bayésiens préfèrent raisonner avec des paris plutôt qu'avec des probabilités. En effet, le dénominateur de la formule de Bayes est parfois très compliqué à calculer. Il s'annule lorsque l'on fait le rapport entre les deux théories. 
+Cependant, le bayésiens préfèrent raisonner en termes de paris plutôt qu'en thermes de probabilités. En effet, le dénominateur de la formule de Bayes est parfois très compliqué à calculer. Il s'annule lorsque l'on fait le rapport entre les deux hypothèses. 
 Dans notre cas :
-$$ \frac{p(Femme|Cheveux)}{p(Homme|Cheveux)} = \frac{0.35}{0.05} = 7$$
+$$ \frac{p(\text{femme}|\text{cheveux_longs})}{p(\text{homme}|\text{cheveux_longs})} = \frac{0.35}{0.05} = 7$$
 
-Je peux alors vous faire un pari 7 contre 1 qu'il s'agit d'une femme dans la boîte. Retenez de cela que le bayésien évalue toujours une théorie par rapport aux autres théories. Les probabilités perdent leurs caractères absolus pour devenir relatif. 
+Je peux ainsi parier à 7 contre 1 que la personne dans la boite est une femme. Remarquez que le bayésien évalue toujours une hypothèse par rapport à toutes les autres. Les probabilités perdent leurs caractères absolus pour devenir relatives. 
 
-En résumé, l'inférence bayésienne consiste à ajuster une croyance a priori par la vraisemblance des données observées pour obtenir une nouvelle croyance a posteriori. Cette croyance peut à son tour être considéré comme un priori et s'ajuster au regard de nouvelles données. En les accumulants, nos croyances convergent alors vers la "vérité".          
-Un exercice, dans le contexte du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019) pendant votre confinement. Si je tousse là,  maintenant, quelle pari faite vous sur le fait que je sois contaminé ou pas ? C'est marrant, mais vous auriez certainement pas dit la même chose un an plutôt. Pourquoi à votre avis ? A cause de vos a priori !
+En résumé, l'inférence bayésienne consiste à évaluer une probabilité a-postiori à partir d'une probabilité a-priori corrigée par la vraisemblance des données observées. La probabilité ainsi obtenue peut à son tour servir d'un a-priori que l'on corrigera si de nouvelles données sont disponibles. En procédant ainsi de façon itérative, la probalité des hypothèse convergera vers la distribution vraie des hypothèses.          
+
+Je vous soumets à votre réflexion un exercice dans le contexte de la pandémie du [Covid-19](https://fr.wikipedia.org/wiki/Maladie_%C3%A0_coronavirus_2019), de quoi occuper votre temps de confinement. Si je me mets à tousser, quel pari faites-vous sur le fait que je sois contaminé ou non ? C'est marrant, mais vous auriez certainement pas dit la même chose un an plutôt. Pourquoi à votre avis ? A cause de vos a-priori !
 
 ## Bayes pour les distributions continues
 
-Dans l'exemple précédent, les croyances pour les deux théories hommes et femmes pouvaient être représentées par une [distribution](https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9#Distributions_discr%C3%A8tes) discrète à deux événements. Mais nous pourrions très bien imaginer ce problème avec plus d'événements. Par exemple, chercher la probabilité que la personne dans la boite soit blond(e), brun(e), roux, châtain. Nous pourrions allez encore plus loin en pariant par exemple sur la taille de la personne dans la boite. Dans ce cas, il y a une infinité d'événements et la distribution discrète devient une [densité de probabilité ](https://fr.wikipedia.org/wiki/Variable_al%C3%A9atoire_%C3%A0_densit%C3%A9) d'une variable aléatoire continue.
+Dans l'exemple précédent de la personne câchée dans une boite, la distribution des probabilités des deux hypotèses, femme ou homme, peut être représentée par une [distribution](https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9#Distributions_discr%C3%A8tes) discrète à deux événements. Nous pouvons généraliser le problème en augmentant le nombre d'ypothèses. Par exemple, chercher la probabilité que la personne dans la boite soit blond(e), brun(e), roux, châtain ou en introsuisant des hypothèses sur la taille. Dans ce cas, il y a une infinité d'hypothèses et la distribution discrète tend vers une [densité de probabilité ](https://fr.wikipedia.org/wiki/Variable_al%C3%A9atoire_%C3%A0_densit%C3%A9) d'une variable aléatoire continue.
 
 <center>
 <img src="../images/inference_bayesienne/distr_continue.png" />      
 </center>
 
-Pour calculer la probabilité de cette variable aléatoire x sachant des données, la formule de Bayes s'applique de la même façon. Sauf que la somme au dénominateur devient une intégrale:
+Pour calculer la probabilité d'une variable (ou hypothèse) $x$ connaissant les probabilités des données, la formule de Bayes s'applique de la même façon, sauf que la somme au dénominateur devient une intégrale :
 
-$$p(x|Donnee) = \frac{p(x) \times p(Donnee|x) }{\int p(x)p(Donnee|x) dx}$$ 
+$$p(x|\text{donnée}) = \frac{p(x) \times p(\text{donnée}|x) }{\int p(x)p(\text{donnée}|x) dx}$$ 
 
 
 ## Parier sur les paramètres d'une loi de probabilité
 
-Une loi de probabilité est une fonction mathématique décrivant la distribution d'une variable aléatoire. Elle est définie par ses paramètres. Par exemple la moyenne (µ) et l'écart type (σ) pour une [loi normale](https://fr.wikipedia.org/wiki/Loi_normale), le paramètre lambda (λ) pour une [loi de poisson](https://fr.wikipedia.org/wiki/Loi_de_poisson) ou encore les paramètres (n,p) pour une [loi binomiale](https://fr.wikipedia.org/wiki/Loi_binomiale). 
-En statistique bayésienne, on va être amené faire des paris sur les paramètres d'une loi après avoir observer des données. Supposons par exemple que la taille des individus dans la population suit une loi normale de moyenne µ. En observant les tailles de plusieurs individus dans un échantillon, nous pouvons essayer de deviner la valeur de µ. Plus exactement, nous allons chercher la distribution de probabilité des valeurs possible de µ.       
-Dits autrement, le paramètre θ d'une loi de probabilité A décrivant une variable aléatoire X peut lui même être décrits comme une variable aléatoire suivant une autre loi de probabilité B. C'est très «*[meta](https://fr.wikipedia.org/wiki/M%C3%A9ta_(pr%C3%A9fixe))*» je sais.. Allez, un exemple concrêt pour mieux comprendre. 
+Une loi de probabilité est une fonction mathématique décrivant la distribution d'une variable aléatoire. Elle est définie, par exemple, par la moyenne (µ) et l'écart type (σ) pour une [loi normale](https://fr.wikipedia.org/wiki/Loi_normale), le paramètre lambda (λ) pour une [loi de poisson](https://fr.wikipedia.org/wiki/Loi_de_poisson) ou encore les paramètres (n,p) pour une [loi binomiale](https://fr.wikipedia.org/wiki/Loi_binomiale). 
+En statistique bayésienne, on calculera les paris sur ces paramètres après avoir observé des données. Supposons, par exemple, que la distribution des tailles de la population suit une loi normale de moyenne µ. En observant les tailles de plusieurs individus dans un échantillon, nous pouvons essayer de deviner la valeur de µ. Plus exactement, nous allons chercher la distribution de probabilités des valeurs possible de µ.       
+Dit autrement, le paramètre θ d'une loi de probabilité A décrivant une variable aléatoire $x$ peut lui même être décrit comme une variable aléatoire suivant une autre loi de probabilité B. C'est très «*[meta](https://fr.wikipedia.org/wiki/M%C3%A9ta_(pr%C3%A9fixe))*» je sais.. Allez, un exemple concrêt pour mieux comprendre. 
 
 
 ## Comment savoir si une pièce est truquée ?  
 
-Imaginez une pièce de monnaie que vous lancez et appelons thêta (θ) la probabilité de tomber sur face. Si la pièce n'est pas truquée alors la probabilité θ est de 1 chance sur 2. Dans le cas contraire, θ peut prendre n'importe quelle valeur comprise entre 0 et 1. 
-Statistiquement parlant nous dirons que la variable aléatoire x (face ou pile) suit une [loi discrète de Bernouilli](https://fr.wikipedia.org/wiki/Loi_de_Bernoulli) paramétré par θ. 
+Considérons le jeu de pile-ou-face avec une pièce de monnaie et appelons thêta (θ) la probabilité que la pièce tombe sur face. Si la pièce n'est pas truquée alors la probabilité θ est 0,5. Dans le cas contraire, θ peut prendre n'importe quelle valeur comprise entre 0 et 1. 
+Statistiquement parlant nous dirons que la variable aléatoire $x$
+(pile ou face) suit une [loi discrète de Bernouilli](https://fr.wikipedia.org/wiki/Loi_de_Bernoulli) paramétrée par θ. 
 
-$$x \sim Bern(p=\theta)$$
+$$x \sim \text{Bern}(p=\theta)$$
 
-Malheureusement je n'ai aucune idée de la valeur de θ. Pour l'estimer, il faut expérimenter en lançant plusieurs fois la pièce et comptabiliser les faces (1) et les piles (0).
-Voici par exemple ce que j'obtiens après 10 lancés : 
+Malheureusement je n'ai aucune idée de la valeur de θ. Pour l'estimer, il faut expérimenter en lançant plusieurs fois la pièce et comptabiliser les fois où elle tombe sur face (1) et les fois où elle tombe sur pile (0).
+Voici par exemple ce que j'obtiens après 10 lancers : 
 
 	Observation = [1,0,0,1,1,0,1,1,0,1]
 
 À partir de ces données, comment faites-vous pour estimer θ ?       
-Et bien grâce à l'inférence bayésienne, nous allons pouvoir calculer la distribution des valeurs possible de θ au regard de ces observations:   
+Et bien, grâce à l'inférence bayésienne, nous pouvons calculer la distribution des valeurs possible de θ au regard de notre observation:   
 
-$$p(θ|observations) \sim p(θ) * p(observations|θ)$$
+$$p(\theta|\text{observation}) \sim p(\theta) \times p(\text{observation}|\theta)$$
 
-Il nous faut donc un **a priori** et une **vraisemblance**.
+Il nous faut donc un **a-priori** et une **vraisemblance**.
 
 
-### Calcul de l'a priori
+### Calcul de l'a-priori
 θ est une probabilité. Sa valeur est comprise entre 0 et 1. Ils nous faut donc une loi définie sur cet intervalle.
-Nous pourrions par exemple choisir la [loi uniforme](https://fr.wikipedia.org/wiki/Loi_uniforme_continue) sur [0-1]. C'est à dire associer à chaque valeur possible de θ la même probabilité. Ça marcherait, mais dans ce cas, l'a priori ne nous apporterait aucune information. 
+Nous pourrions, par exemple, choisir la [loi uniforme](https://fr.wikipedia.org/wiki/Loi_uniforme_continue) sur [0-1], c'est-à-dire associer à chaque valeur possible de θ la même probabilité. Ça marcherait, mais dans ce cas, l'a-priori ne nous apporterait aucune information. 
 Personnellement, j'aurais tendance à dire qu'une pièce truquée est peu probable, car après tout.... je n’en ai jamais vu !  
-Nous allons donc choisir une [loi bêta](https://fr.wikipedia.org/wiki/Loi_b%C3%AAta), très souvent utilisé en inférence bayésienne pour définir l'a priori:
+Nous allons donc choisir une [loi bêta](https://fr.wikipedia.org/wiki/Loi_b%C3%AAta), très souvent utilisée en inférence bayésienne pour définir l'a-priori :
 
-$$\theta \sim Beta(a, b)$$
+$$\theta \sim \text{Beta}(a, b)$$
 
-La forme de cette loi bêta dépend de deux paramètres a et b illustrés dans la figure suivante. 
+La forme de cette loi bêta dépend de deux paramètres $a$ et $b$, comme cela est illustré dans la figure ci-dessous.  
 
 <div class="figure">
     <img src="../images/inference_bayesienne/beta.png" />      
@@ -133,8 +132,8 @@ La forme de cette loi bêta dépend de deux paramètres a et b illustrés dans l
     </div>
 </div>   
 
-Je vous propose d'utiliser la loi symétrique de paramètres a = 5, et b = 5, dont la probabilité est forte sur θ=0.5 et devient plus faible au fur et à mesure que l'on se rapproche des deux extrémités.           
-A l'aide du module stats de la librarie [scipy](https://www.scipy.org/), nous pouvons écrire en python: 
+Je vous propose d'utiliser la loi symétrique de paramètres $a = 5$, et $b = 5$, dont la probabilité est maximum pour $θ = 0.5$ et tend vers zéro lorsque $θ$ tend vers 0 ou 1.           
+A l'aide du module *stats* de la librarie [scipy](https://www.scipy.org/), nous pouvons implémenter cette fonction en langage python : 
 
 ```python
 def prior(theta):
@@ -145,11 +144,11 @@ def prior(theta):
 ### Calcul de la vraisemblance 
 
 La vraisemblance est la probabilité d'observer des données en supposant vrai la loi de Bernoulli sous une valeur spécifique de θ.
-Etant donné qu'il y a plusieurs observations indépendantes (x1,x2,x3..) nous pouvons écrire : 
+Etant donné qu'il y a plusieurs observations indépendantes ($x1, x2, x3, \cdots$) nous pouvons écrire : 
 
-$$p(x_1,x_2,...x_n | \theta ) = p(x_1|\theta) \times p(x_2|\theta) \times ... \times p(x_n|\theta) $$
+$$p(x_1,x_2,\cdots, x_n | \theta ) = p(x_1|\theta) \times p(x_2|\theta) \times \cdots \times p(x_n|\theta) $$
 
-En python :  
+Ce qui peut être implémenter en python comme suit :  
 
 ```python
 def vraissemblance(observations, theta):
@@ -164,8 +163,8 @@ def vraissemblance(observations, theta):
 > *En réalité, nous aurions pu utiliser la loi binomiale... Mais nous n'allons pas nous encombrer d'une autre loi*.
 
 
-### Calcul de l' a posteriori 
-Il suffit maintenant d'appliquer la formule de Bayes pour avoir la forme de la distribution des probabilités a posteriori de θ et l'afficher avec [matplotlib](https://matplotlib.org/):
+### Calcul de l' a-posteriori 
+Il suffit maintenant d'appliquer la formule de Bayes pour avoir la forme de la distribution des probabilités a-posteriori de θ et l'afficher avec [matplotlib](https://matplotlib.org/):
 
 ```python
 
@@ -186,22 +185,22 @@ plt.plot(x,y)
 
 <div class="figure">
     <img src="../images/inference_bayesienne/posteriori.png" />      
-    <div class="legend">Distribution a posteriori de θ montrant une forte probabilité autour de 0.8 </div>  
+    <div class="legend">Distribution a-posteriori de θ avec un maximum pour θ = 0,75 </div>  
 </div>
 
-Pour bien comprendre ce graphique, j'ai calculé l' a posteriori avec un nombre d'observations croissant : 
+Pour bien comprendre ce graphique, j'ai calculé l' a-posteriori avec un nombre croissant d'observations : 
 
 <div class="figure">
     <img src="../images/inference_bayesienne/plot.svg" />      
-    <div class="legend"> Distribution des probabilités θ en ajoutant successivement des observations. Plus les données s'accumulent, plus notre croyance pour θ = 0.8 augmente </div>   
+    <div class="legend"> Distribution des probabilités θ en augmentantle nombre d'observations. Plus les données s'accumulent, plus le maximum de la distribution se stabilise à θ = 0,75. </div>   
 </div>
 
-Sans observation, la distribution des probabilités de θ est centré sur 0.5. Il s'agit là de notre a priori. Ensuite, avec l'accumulation progressive des observations, la distribution se rapproche de 0.8 et la variance s'amincit.    
-Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truquée avec un θ probablement de 0.8. 
-Effectivement.. J'avais généré automatiquement les observations avec une loi de Bernouilli paramétré par 0.8 et je vous ai caché volontairement le code pour éviter les confusions! 
+Sans observation, le maximum de la distribution des probabilités est en θ = 0,5. Il s'agit là de notre a-priori. Ensuite, avec l'accumulation progressive des observations, le maximum de la distribution se rapproche de 0,8 et la variance de la distribution diminue.    
+Ainsi nous pouvons conclure, grâce à l'inférence bayésienne, que les observations sont en faveur d'une pièce truquée avec un θ probablement de 0,75. 
+Effectivement, j'ai généré automatiquement les observations avec une loi de Bernouilli paramétré par 0,75 et je vous ai caché volontairement le code pour éviter les confusions! 
 
 ## Utilisation de PyMC3 
-Pour finir, voici le même algorithme, mais écris cette fois en utilisant la librairie [PyMC3](https://docs.pymc.io/). Il s'agit d'une librairie puissante et très simple permettant de faire de la programmation probabiliste. La librarie fonctionne à l'aide d'[echantillonneur MCMC](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Monte-Carlo_par_cha%C3%AEnes_de_Markov). Pour faire simple, les échantillonneurs vont générer aléatoirement des valeurs de θ suivant la distribution a posteriori recherchée. 
+Pour finir, voici le même algorithme, mais implémenté cette fois en utilisant la librairie [PyMC3](https://docs.pymc.io/). Il s'agit d'une librairie puissante et très simple permettant de faire de la programmation probabiliste. La librarie fonctionne à l'aide d'[echantillonneur MCMC](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Monte-Carlo_par_cha%C3%AEnes_de_Markov). Pour faire simple, les échantillonneurs vont générer aléatoirement des valeurs de θ suivant la distribution a-posteriori recherchée. 
 Cela permet d'éviter le calcul fastidieux de l'intégrale vu plus haut, et construire des modèles bien plus complexes avec de nombreux paramètres. 
 
 ```python	
@@ -229,13 +228,11 @@ az.plot_trace(trace)
 
 <div class="figure">
     <img src="../images/inference_bayesienne/arviz.png" />      
-    <div class="legend">Distribution des probabilités de θ avec <a href="https://en.wikipedia.org/wiki/Credible_interval)(Highest Posterior Density interval"> l'interval de crédibilité appelé HPD </a>  </div>  
+    <div class="legend">Distribution des probabilités de θ avec <a href="https://en.wikipedia.org/wiki/Credible_interval)(Highest Posterior Density interval"> l'interval de crédibilité appelé HPD. </a>  </div>  
 </div>
 
-Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à regarder les références plus bas. L'ensemble du code ayant servi à écrire ce billet est disponible et éditable sur [google colab](https://colab.research.google.com/drive/14RWMzPAfN6u-n0WrurPzjIbliv6ecHu9).    
+Voilà pour ce billet qui est déjà assez long ! Je vous invite fortement à regarder les références ci-dessous. L'ensemble du code ayant servi à illustrer ce billet est disponible et éditable sur [google colab](https://colab.research.google.com/drive/14RWMzPAfN6u-n0WrurPzjIbliv6ecHu9).    
 Il y a également [ce billet](https://github.com/dridk/blog/blob/master/content/inference_bayesienne.md) pour anglophone dans le contexte du Covid-19 qui fait des prédictions bayésienne sur la cinétique de l'épidémie.
-
-
 
 ## Référence 
 - [Blog de Sciencetonnante](https://sciencetonnante.wordpress.com/2012/10/15/linference-bayesienne-bayes-level-2/)
