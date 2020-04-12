@@ -6,10 +6,11 @@ Tags: math, equation
 Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg
-
+summary:
 
 Dans ce billet nous allons définir et apprendre à résoudre [des équations différentielles ordinaires](https://fr.wikipedia.org/wiki/%C3%89quation_diff%C3%A9rentielle_ordinaire) à l'aide du langage Python.
-Nous traiterons ensuite un cas pratique en modélisant une épidémie avec un [modèle SIR](https://interstices.info/modeliser-la-propagation-dune-epidemie/) pour faire écho à la situation actuelle.
+Nous traiterons ensuite un cas pratique en modélisant une épidémie avec un [modèle SIR](https://interstices.info/modeliser-la-propagation-dune-epidemie/) pour faire écho à la situation actuelle.     
+PS: Je ne suis pas mathématicien, donc désolé pour mon vocabulaire et mon absence de rigueur.
 
 ## À quoi sert une équation différentielle ? 
 À l'instar d'une équation usuelle, comme $x+2=3$, où il faut trouver la valeur de $x$, une équation différentielle a pour inconnue une fonction. 
