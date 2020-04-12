@@ -219,10 +219,9 @@ plt.title(f"Proportion des individus durant une épidémie modélisé par MIR av
     <div class="legend">Evolution en pourcentage des 3 populations (saines, infectées, guéries) au cours du temps à l'aide d'un modèle SIR paramétré par  β=0.5 et γ=0.1 </div>
 </div>
 
-Je vous invite à jouer avec les paramètres de ce modèle afin de voir l'impact qu'ils ont sur l'épidémie. Vous pouvez le faire directement en ligne sur [la page suivante.]( https://interstices.info/modeliser-la-propagation-dune-epidemie/) 
+Je vous invite à jouer avec les paramètres de ce modèle afin de voir l'impact qu'ils ont sur l'épidémie. Vous pouvez le faire directement en ligne sur [la page suivante.]( https://interstices.info/modeliser-la-propagation-dune-epidemie/). Par ailleurs, le  notebook de ce billet est [disponible ici](https://colab.research.google.com/drive/1FySg6HwXhdXYDhD0c5z3orxjOve0pGi3) 
 
-## Référence 
-
+## Référence
 - [modeliser-la-propagation-dune-epidemie/](https://interstices.info/modeliser-la-propagation-dune-epidemie/) 
 - [Solve Differential Equations with ODEINT](https://apmonitor.com/pdc/index.php/Main/SolveDifferentialEquations)
 - [The SIR epidemic model](https://scipython.com/book/chapter-8-scipy/additional-examples/the-sir-epidemic-model/)
