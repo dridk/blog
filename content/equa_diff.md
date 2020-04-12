@@ -6,7 +6,6 @@ Tags: math, equation
 Category: informatique
 Author: Sacha Schutz
 SIDEBARIMAGE:../images/common/term_banner.jpeg
-summary:
 
 Dans ce billet nous allons définir et apprendre à résoudre [des équations différentielles ordinaires](https://fr.wikipedia.org/wiki/%C3%89quation_diff%C3%A9rentielle_ordinaire) à l'aide du langage Python.
 Nous traiterons ensuite un cas pratique en modélisant une épidémie avec un [modèle SIR](https://interstices.info/modeliser-la-propagation-dune-epidemie/) pour faire écho à la situation actuelle.     
