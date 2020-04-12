@@ -1,4 +1,4 @@
-Title: Équation différentielle en Python
+Title: Équation différentielle et python
 Slug: equation-differentielle
 Date: 2020-04-12 14:45:57
 Modified: 2020-04-12 14:45:57
