@@ -18,8 +18,9 @@ Les problèmes de satisfaction de contraintes ou [problème SAT](https://fr.wiki
 Prenons par exemple **2 dés** et lançons-les. Quelles sont les valeurs possibles des 2 dés tels que la somme soit égale à 7 ?         
 De façon générale, pour modéliser ce problème, vous devez d'abord définir les variables et leurs domaines, c'est-à-dire les valeurs qu'elles sont autorisées à prendre. Dans notre cas, nous avons 2 dés dont les valeurs vont de 1 à 6. Ensuite, définir leurs contraintes par des [expressions booléennes](https://fr.wikipedia.org/wiki/Expression_bool%C3%A9enne_(programmation_informatique)). Ici, la somme des 2 dés est égale à 7. 
 Et c'est tout.... Le solveur se chargera du reste.       
-la librarie [OR-tools](https://developers.google.com/optimization) est un ensemble d'outil permettant de modéliser ce genre de problèmes et dispose de différent solveur en fonction du problème. Dans notre cas, un solveur SAT.
-Rien ne vaut des lignes de code pour comprendre. 
+la librarie [OR-tools](https://developers.google.com/optimization) va nous permettre de modéliser ce problème et le résoudre via son solveur SAT.        
+Regardons le code: 
+ 
 Après avoir installer OR-tools:
 
 ```
