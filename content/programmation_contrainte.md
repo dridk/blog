@@ -20,7 +20,7 @@ De façon générale, pour modéliser ce problème, vous devez d'abord définir 
 Et c'est tout.... Le solveur se chargera du reste.       
 la librarie [OR-tools](https://developers.google.com/optimization) va nous permettre de modéliser ce problème et le résoudre via son solveur SAT.        
 Regardons le code: 
- 
+
 Après avoir installer OR-tools:
 
 ```
@@ -115,7 +115,7 @@ Posons **G**, un vecteur de taille **n** définit sur {0,1,2} pour representer l
 <div class="legend">Modélisation du problème d'inférence haplotypique. A partir d'un Matrix de 4 haplotypes connus sur 3 variations. L'objectif est de trouver les deux haplotypes pouvant expliquer le génotype.</div></div>   
 
 Le problème revient à trouver deux haplotypes (2 numéros de lignes de H) dont la somme de chaque colonne est égale à la valeur du génotype correspondant.
-Pour ce faire nous définissons dans notre modèle chaque élément de H comme une constante. Puis deux variables correspondant aux numéros de ligne de H dont le domaine varie entre 0 et m-1. Enfin, nous posons nos contraintes pour que la sommes des haplotypes choisis corresponde au génotype.
+Pour ce faire nous définissons dans notre modèle chaque élément de H comme une constante. Puis deux variables correspondant aux numéros de ligne de H dont le domaine varie entre 0 et m-1. Enfin, nous posons nos contraintes pour que la somme des haplotypes choisis corresponde au génotype.
 
 ```python
 
