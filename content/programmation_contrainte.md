@@ -14,11 +14,12 @@ Pour cela, nous utiliserons la libraire [OR-tools](https://developers.google.com
 > *Constraint programming represents one of the closest approachescomputer science has yet made to the Holy Grail of programming: theuser states the problem, the computer solves it.*  **Eugene C. Freude**
 
 ## Un simple problème pour comprendre
-Les problèmes de satisfaction de contraintes ou [problème SAT](https://fr.wikipedia.org/wiki/Probl%C3%A8me_SAT) sont des problèmes ou il faut trouver toutes les solutions satisfaisant un liste de contraintes.
-[OR-tools](https://developers.google.com/optimization) est un ensemble d'outil permettant de modéliser ces problèmes et les résoudres grâce à différents algorithmes.         
+Les problèmes de satisfaction de contraintes ou [problème SAT](https://fr.wikipedia.org/wiki/Probl%C3%A8me_SAT) sont des problèmes ou il faut trouver toutes les solutions satisfaisant un liste de contraintes.        
 Prenons par exemple **2 dés** et lançons-les. Quelles sont les valeurs possibles des 2 dés tels que la somme soit égale à 7 ?         
-De façon générale, pour modéliser ce problème, vous devez d'abord définir les variables et leurs domaines, c'est-à-dire les valeurs qu'elles sont autorisées à prendre. Dans notre cas, nous avons 2 dés dont les valeurs vont de 1 à 6. Ensuite, définir leurs contraintes par des [expressions booléennes](https://fr.wikipedia.org/wiki/Expression_bool%C3%A9enne_(programmation_informatique)). Ici, la somme des 2 dés est égale à 7. Le solveur se chargera du reste.       
-Mais rien de vaut des lignes de code pour comprendre. 
+De façon générale, pour modéliser ce problème, vous devez d'abord définir les variables et leurs domaines, c'est-à-dire les valeurs qu'elles sont autorisées à prendre. Dans notre cas, nous avons 2 dés dont les valeurs vont de 1 à 6. Ensuite, définir leurs contraintes par des [expressions booléennes](https://fr.wikipedia.org/wiki/Expression_bool%C3%A9enne_(programmation_informatique)). Ici, la somme des 2 dés est égale à 7. 
+Et c'est tout. Le solveur se chargera du reste.       
+la librarie [OR-tools](https://developers.google.com/optimization) est un ensemble d'outil permettant de modéliser ce genre de problèmes et dispose de différent solveur en fonction du problème. Dans notre cas, un solveur SAT.
+Rien ne vaut des lignes de code pour comprendre. 
 Après avoir installer OR-tools:
 
 ```
