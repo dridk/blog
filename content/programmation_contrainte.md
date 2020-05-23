@@ -1,11 +1,10 @@
 Title: Programmation par contrainte
 Slug: programmation-par-contrainte
-Date: 2020-01-05 18:01:09
-Modified: 2020-01-05 18:01:09
+Date: 2020-01-05 15:16:33
+Modified: 2020-05-23 15:16:33
 Tags: python,or-tools,sat,contrainte
 Category: informatique
 Author: Sacha Schutz
-Status: Draft 
 SIDEBARIMAGE:../images/common/term_banner.jpeg
 
 On dit souvent qu'être fainéant est gage de qualité chez un programmeur. Dans le sens où il cherchera à résoudre un problème en tapant un minimum de ligne de code et en déléguant au maximum à sa machine. C'est encore plus vrai avec la [programmation par contrainte](https://fr.wikipedia.org/wiki/Programmation_par_contraintes). Contrairement à la programmation classique dite [impérative](https://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative), où vous devez décrire comment résoudre un problème, la programmation par contrainte est un autre [paradigme](https://fr.wikipedia.org/wiki/Paradigme_(programmation)) qui vous demande de décrire le problème de façon formelle et c'est un solveur qui se débrouillera de le résoudre pour vous.
