@@ -1,7 +1,7 @@
 Title: Programmation par contrainte
 Slug: programmation-par-contrainte
-Date: 2020-01-05 15:16:33
-Modified: 2020-05-23 15:16:33
+Date: 2020-05-23 15:16:33
+Modified: 2020-05-23 15:17:34
 Tags: python,or-tools,sat,contrainte
 Category: informatique
 Author: Sacha Schutz
