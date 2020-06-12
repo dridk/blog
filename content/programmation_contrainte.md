@@ -11,7 +11,7 @@ On dit souvent qu'être fainéant est gage de qualité chez un programmeur. Dans
 Dans ce billet nous allons aborder la programmation par contrainte en solvant un problème combinatoire en génétique: [l'inférence haplotyique](https://csiflabs.cs.ucdavis.edu/~gusfield/gusfieldorzack.pdf). 
 Pour cela, nous utiliserons la libraire [OR-tools](https://developers.google.com/optimization) fournie par Google, simple d'utilisation et disposant d'une API en python. 
 
-> *Constraint programming represents one of the closest approachescomputer science has yet made to the Holy Grail of programming: theuser states the problem, the computer solves it.*  **Eugene C. Freude**
+> *Constraint programming represents one of the closest approaches computer science has yet made to the Holy Grail of programming: theuser states the problem, the computer solves it.*  **Eugene C. Freude**
 
 ## Un simple problème pour comprendre
 Les problèmes de satisfaction de contraintes ou [problème SAT](https://fr.wikipedia.org/wiki/Probl%C3%A8me_SAT) sont des problèmes qui demandent à trouver toutes les solutions satisfaisant un liste de contraintes booléennes.      
