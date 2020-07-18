@@ -31,7 +31,7 @@ Exécuter le code suivant:
 
 ```python
 # Import de la libraire 
-# Ortools tools dispose de différents soldeurs, notamment un solveur SAT. 
+# Ortools tools dispose de différents solveurs, notamment un solveur SAT. 
 from ortools.sat.python import cp_model
 
 # Création du modèle = Notre problème
