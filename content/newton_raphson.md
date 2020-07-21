@@ -119,7 +119,7 @@ for i in range(10):
 
 - La méthode de Newton-Raphson permet de trouver rapidement la racine d'une fonction et a beaucoup d'usage en informatique.
 
-- La méthode de Newton permet de trouver les extrêmes (minimum et maximum) d'une fonction. En effet, trouver le minimum ou le maximum d'une fonction c'est trouver où la dérivée s'annule. Par exemple dans [le billet précédent sur la descente en gradient](http://dridk.me/gradient_descendant.html) vous pouvez calculer le minimum de la fonction objective en connaissant sa dérivée et sa dérivée seconde. Vous verrez que pour une régression linéaire il suffit d'une seule itération pour trouver le minimum.
+- La méthode de Newton permet de trouver les extrêmes (minimum et maximum) d'une fonction. En effet, trouver le minimum ou le maximum d'une fonction c'est trouver où la dérivée s'annule. Par exemple dans [le billet précédent sur la descente en gradient](https://dridk.me/gradient_descendant.html) vous pouvez calculer le minimum de la fonction objective en connaissant sa dérivée et sa dérivée seconde. Vous verrez que pour une régression linéaire il suffit d'une seule itération pour trouver le minimum.
 
 - La méthode de Newton permet de trouver la solution à f(x)=c où «c» est une constante. Il suffit de trouver une fonction g(x)=f(x)-c de telle sorte que la racine de g résout l'équation qui nous intéresse.
 

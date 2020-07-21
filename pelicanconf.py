@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'sacha schutz'
 SITENAME = 'Sacha Schutz'
-# SITEURL = 'http://dridk.me'
+# SITEURL = 'https://dridk.me'
 AUTHOR_EMAIL ='sacha@labsquare.org'
 PATH = 'content'
 
@@ -27,8 +27,8 @@ PLUGINS = ['gravatar','sitemap','render_math']
 # PURE THEME CONFIG
 THEME = "pelican-themes/pure-single"
 
-COVER_IMG_URL = "http://dridk.me/images/common/dnaquestion_banner.jpg"
-PROFILE_IMG_URL= "http://dridk.me/images/avatar.jpg"
+COVER_IMG_URL = "https://dridk.me/images/common/dnaquestion_banner.jpg"
+PROFILE_IMG_URL= "https://dridk.me/images/avatar.jpg"
 TAGLINE="bioinformatique génétique médecine"
 # Blogroll
 MENUITEMS = (
@@ -40,9 +40,9 @@ MENUITEMS = (
 
 # Social widget
 SOCIAL = (
-    ('github', 'http://github.com/dridk'),
+    ('github', 'https://github.com/dridk'),
     ('twitter-square', 'https://twitter.com/dridk'),
-    ('rss-square', 'http://dridk.me/feeds/all.atom.xml')
+    ('rss-square', 'https://dridk.me/feeds/all.atom.xml')
    )
 
 GITHUB_CONTENT="https://github.com/dridk/blog/tree/master/content"

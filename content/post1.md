@@ -43,7 +43,7 @@ Suivez les indications. Voici ce que j'ai mis. Si comme moi, vous avez un serveu
 	Who will be the author of this web site? sacha schutz
 	What will be the default language of this web site? [en] fr
 	Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)         
-	What is your URL prefix? (see above example; no trailing slash) http://dridk.me    
+	What is your URL prefix? (see above example; no trailing slash) https://dridk.me    
 	Do you want to enable article pagination? (Y/n)                                         
 	How many articles per page do you want? [10]                                                  
 	Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n)       

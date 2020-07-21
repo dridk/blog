@@ -32,7 +32,7 @@ Plusieurs méthodes existent pour fragmenter l'ADN:
 * **Fragmentation enzymatique** : L'utilisation d'[enzymes de restriction](https://fr.wikipedia.org/wiki/Enzyme_de_restriction) permet de couper l'ADN au niveau de certains motifs. 
 
 ### Méthode ciblée 
-On ne veut pas forcément lire l'ensemble du génome. On peut vouloir par exemple séquencer uniquement la partie codante ([exome](https://fr.wikipedia.org/wiki/Exome)), qui je le rappelle, représente [moins de 2%](http://dridk.me/genome_chiffre_1.html) ; ou simplement séquencer une liste de gènes ([panel de gènes](https://www.gatc-biotech.com/fr/expertise/sequencage-cible/panel-de-genes.html)) associée à une maladie.   
+On ne veut pas forcément lire l'ensemble du génome. On peut vouloir par exemple séquencer uniquement la partie codante ([exome](https://fr.wikipedia.org/wiki/Exome)), qui je le rappelle, représente [moins de 2%](https://dridk.me/genome_chiffre_1.html) ; ou simplement séquencer une liste de gènes ([panel de gènes](https://www.gatc-biotech.com/fr/expertise/sequencage-cible/panel-de-genes.html)) associée à une maladie.   
 Dans tous les cas, il faut enrichir la librairie en sélectionnant uniquement les fragments d'ADN désirés. Deux techniques sont à retenir:
 
 * **L'enrichissement [par capture](https://www.ncbi.nlm.nih.gov/pubmed/18330355)** : Après fragmentation, les fragments d'ADN sont filtrés en s'hybridant à des séquences complémentaires disposées sur une plaque ou en milieu liquide. Les fragments d'ADN qui ne s'hybrident pas sont éliminés. 
@@ -76,7 +76,7 @@ Mais le travail est loin d'être fini. Ce que nous avons, ce sont uniquement des
 <div class="figure">     <img src="../images/post22/aligndenovo.png" />      <div class="legend">L'alignement de novo consiste à aligner les reads entre eux</div> </div>   
 
 - **Alignement avec référence**: Il s'agit toujours de résoudre un puzzle. Mais cette fois, en s'aidant d'un modèle. Par exemple, une version du génome humain ([hg19](https://en.wikipedia.org/wiki/Reference_genome#Human_reference_genome)).    
-Chaque read est aligné sur cette référence. La complexité de calcul est plus simple qu'avec l'alignement de novo. On utilise en général l'algorithme de [Burrows Wheeler](http://dridk.me/bwt.html) permettant de rechercher de manière efficace une correspondance entre les reads et la référence. Après cet alignement, on obtient un fichier [BAM](https://en.wikipedia.org/wiki/SAM_(file_format)) associant à chaque reads ses coordonnées génomiques. C'est à dire le chromosome et la position.    
+Chaque read est aligné sur cette référence. La complexité de calcul est plus simple qu'avec l'alignement de novo. On utilise en général l'algorithme de [Burrows Wheeler](https://dridk.me/bwt.html) permettant de rechercher de manière efficace une correspondance entre les reads et la référence. Après cet alignement, on obtient un fichier [BAM](https://en.wikipedia.org/wiki/SAM_(file_format)) associant à chaque reads ses coordonnées génomiques. C'est à dire le chromosome et la position.    
 On appelle la **profondeur**, le nombre moyen de reads qui se superpose et **recouvrement**, l'étalement des reads sur la zone d'intérêt.  
 
 <div class="figure">     <img src="../images/post22/alignref.png" />      <div class="legend">L'alignement avec référence consiste à aligner les reads sur une référence</div> </div>   

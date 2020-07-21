@@ -44,7 +44,7 @@ Et bien pour la première fois, un embryon humain a été knockout pour un gène
 )
 
 ## Pourquoi certaines mutations dynamiques ne sont pas stables ? 
-Les mutations dynamiques sont des séquences répétées du génome, qui augmente de taille au cours des générations. Elles sont responsables de différentes maladies. ([Voir mon billet sur la maladie d'Huntington](http://dridk.me/maladie-huntigton.html)). Pourquoi certaine et pas d'autre? Probablement la conformation 3D de la [chromatine](https://fr.wikipedia.org/wiki/Chromatine) d'après cette étude.
+Les mutations dynamiques sont des séquences répétées du génome, qui augmente de taille au cours des générations. Elles sont responsables de différentes maladies. ([Voir mon billet sur la maladie d'Huntington](https://dridk.me/maladie-huntigton.html)). Pourquoi certaine et pas d'autre? Probablement la conformation 3D de la [chromatine](https://fr.wikipedia.org/wiki/Chromatine) d'après cette étude.
 
 [https://www.biorxiv.org/content/early/2017/09/20/191213
 ](https://www.biorxiv.org/content/early/2017/09/20/191213
