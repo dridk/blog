@@ -154,7 +154,7 @@ Passons à la pratique pour voir, en réalisant toutes ces opérations en Python
 
 ## Analyse en composante principale en Python 
 
-Pour cela, nous allons tester à partir du [jeux de données iris](https://fr.wikipedia.org/wiki/Iris_de_Fisher) contenant 50 observations de fleurs et 4 variables (ou 4 dimensions) en réduisant ces données sur 2 dimensions. 
+Nous allons utiliser le [jeux de données iris](https://fr.wikipedia.org/wiki/Iris_de_Fisher) contenant 50 observations de fleurs et 4 variables (ou 4 dimensions) et les réduire sur une espace à deux dimensions. 
 
 ```python
 import numpy as np 
