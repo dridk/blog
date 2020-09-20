@@ -5,7 +5,6 @@ Modified: 2020-09-20 18:34:56
 Tags: statistique,machine learning,python
 Category: informatique
 Author: Sacha SCHUTZ
-Status: Draft
 SIDEBARIMAGE:../images/common/stat_banner.jpg
 
 [L'analyse en composante principale](https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales) ou PCA (Principal component analysis) est une méthode de [réduction de dimension,](https://fr.wikipedia.org/wiki/R%C3%A9duction_dimensionnelle) largement utilisée en [statistique descriptive](https://fr.wikipedia.org/wiki/Statistique_descriptive), pour visualiser sur un graphique à 2 ou 3 dimensions des données décrites sur plus de dimensions. 
