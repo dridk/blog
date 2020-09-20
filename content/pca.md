@@ -149,7 +149,7 @@ Les vecteurs propres sont toujours orthogonaux entre eux.
 </div> 
 </div>
 
-En généralisant, pour réduire un espace à N dimension vers un espace à K dimensions, il suffit de faire la projection des points de l'espace de départ sur les K premiers vecteurs propres qui récupère le maximum d'information. C'est à dire ceux qui ont les valeurs propres les plus grande. 
+En généralisant, pour réduire un espace à N dimensions vers un espace à K dimensions, il suffit de faire la projection des points de l'espace de départ sur les K premiers vecteurs propres qui récupère le maximum d'information. C'est à dire ceux qui ont les valeurs propres les plus grande. 
 Passons à la pratique pour voir, en réalisant toutes ces opérations en Python.
 
 ## Analyse en composante principale en Python 
