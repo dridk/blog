@@ -34,7 +34,7 @@ Tous les fichiers d'openstreetmap sont ainsi disponibles au format PBF sur le si
 ## Osmium-Tool: la boite à outils des fichiers OSM/PBF
 
 [Osmium-tool](https://osmcode.org/osmium-tool/) est un outil en ligne de commande écrit en C++ permettant de manipuler les fichiers OSM/PBF. Vous allez pouvoir extraire des données incluses dans un polygone défini, faire des conversions de format, filtrer les données par tag et bien plus.... 
-Je vous propose dans ce billet de juste extraire l'ensemble des commune d'Alasace. 
+Je vous propose dans ce billet de juste extraire l'ensemble des commune d'Alsace. 
 
 ### Installation 
 osmium-tool est disponible dans les dépots d'ubuntu: 
