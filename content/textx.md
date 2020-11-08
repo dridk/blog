@@ -5,7 +5,7 @@ Modified: 2020-11-08 15:32:40
 Tags: python, langage, parseur
 Category:informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/stat_banner.jpg
+SIDEBARIMAGE:../images/common/term_banner.jpeg
 
 Un [DSL](https://fr.wikipedia.org/wiki/Langage_d%C3%A9di%C3%A9) ( Domain Specific Language ) est un langage de programmation crée pour une tâche spécifique à l'inverse des langages de programmation usuels comme [Python](https://www.python.org/). On peut s'en servir par exemple pour créer des petits langages maisons utilisés au sein d'une application.     
 Dans ce billet, je vais vous montrer en Python, comment créer un langage pour contrôler le mouvement d'un robot fictif grâce à la librarie [textX](https://textx.github.io/textX/stable/). 
