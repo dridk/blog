@@ -95,7 +95,7 @@ D'une pierre deux coups, je trie le fichier par position et le converti en BAM a
 Pour visualiser cet alignement, vous pouvez utiliser le logiciel **IGV** disponible à [cette adresse](http://software.broadinstitute.org/software/igv/). Une fois lancé, charger d'abord le génome de Wuhan depuis le menu *Genomes > Load Genome From Server* en cherchant SARS-Cov-2. Puis charger le fichier *align.bam* précocement produit via *File > Load From File*. 
 Vous devriez pouvoir obtenir la vue suivante ou j'ai zoomé sur le gène S pour visualiser une mutation.  
 
-<div class="figure">     <img src="../images/covid_ngs/IGV.png" />      <div class="legend"> vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
+<div class="figure">     <img src="../images/covid_ngs/IGV.png" />      <div class="legend"> Visualisation des reads alignés sur le génome de référence avec le logiciel IGV</div> </div>
 
 ## Appel des variants et annotation 
 Vous pouvez très bien parcourir l'alignement visuellement et chercher toutes les mutations. Mais il est préférable de faire ça automatique grâce à un [variant caller](https://www.researchgate.net/figure/Commonly-used-NGS-variant-calling-software-Download-information-for-these-software-is_tbl1_232077026). Pour cela j'utilise [freebayes](https://github.com/freebayes/freebayes), qui à partir du fichier BAM, mee produit un [fichier VCF](https://en.wikipedia.org/wiki/Variant_Call_Format) contenant l'ensemble des variants détectés.
@@ -141,7 +141,7 @@ Au total, j'ai trouvé environ 630 variants répartis le long du génome dont 4 
 Il y a 4 mutations qui sortent du lot, probablement la conséquence d'un processus de sélection.      
 En googlant, je trouve [ce papier](https://www.biorxiv.org/content/10.1101/2020.05.12.092056v1) présentant les mutations Thr265Ile and Gln57His comme exclusif à la population Nord-Américaines. Ce qui correspond bien à l'origine américaine de nos données.   
 Le variant Pro4715Leu est également dominant et affecte [la polymérase RNA-dependent (RdRp)](https://fr.wikipedia.org/wiki/ARN_polym%C3%A9rase_ARN-d%C3%A9pendante) catalysant la réplication de l'ARN.
-Plus intéressant, est le variant Asp614Gly dans le gène (S) de la protéine Spike qui permet au virus de pénétrer plus facilement les cellules humaines et ou se trouve la mutation du variant anglais. Cette mutation Asp614Gly serait apparu en Europe début 2020 et serait maintenant la forme majoritaire ([source](https://www.news-medical.net/news/20200925/22705/French.aspx)). 
+Plus intéressant, est le variant Asp614Gly dans le gène (S) de la protéine Spike qui permet au virus de pénétrer plus facilement les cellules humaines et ou se trouve aussi la mutation du variant anglais. Cette mutation Asp614Gly serait apparu en Europe début 2020 et serait maintenant la forme majoritaire ([source](https://www.news-medical.net/news/20200925/22705/French.aspx)). 
 
 ## Conclusion 
 Un très bon exercice rapide qui en intéressera plus d'un! N'hésitez donc pas à reprendre mon pipeline si vous en avez besoin.
