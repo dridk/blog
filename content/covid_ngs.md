@@ -5,7 +5,6 @@ Modified: 2021-01-25 23:51:29
 Tags: virus,pipeline,sars-cov-2,covid
 Category: bioinformatique
 Author: Sacha SCHUTZ
-Status: Draft
 SIDEBARIMAGE:../images/common/virus_banner.jpeg
 
 
