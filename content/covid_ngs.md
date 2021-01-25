@@ -31,7 +31,7 @@ Nous pouvons télécharger les fichiers Fastq directement depuis le site de l'EN
 Pour l'installer, il suffit de suivre la [documentation](https://github.com/enasequence/enaBrowserTools/blob/master/README.md): 
 
 ```bash
-git clone git@github.com:enasequence/enaBrowserTools.git
+git clone https://github.com/enasequence/enaBrowserTools.git
 alias enaDataGet=$(pwd)/enaBrowserTools/python3/enaDataGet
 alias enaGroupGet=$(pwd)/enaBrowserTools/python3/enaGroupGet
 ```
