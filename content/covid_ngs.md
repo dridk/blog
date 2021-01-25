@@ -140,7 +140,7 @@ Au total, j'ai trouvé environ 630 variants répartis le long du génome dont 4 
 ## Résultats
 Il y a 4 mutations qui sortent du lot, probablement la conséquence d'un processus de sélection.      
 En googlant, je trouve [ce papier](https://www.biorxiv.org/content/10.1101/2020.05.12.092056v1) présentant les mutations Thr265Ile and Gln57His comme exclusif à la population Nord-Américaines. Ce qui correspond bien à l'origine américaine de nos données.   
-Le variant Pro4715Leu est également dominant et affecte [la polymérase RNA-dependent (RdRp)](https://fr.wikipedia.org/wiki/ARN_polym%C3%A9rase_ARN-d%C3%A9pendante) catalysant la réplication de l'ARN.
+Le variant Pro4715Leu est également dominant et affecte [la polymérase RNA-dependent (RdRp)](https://fr.wikipedia.org/wiki/ARN_polym%C3%A9rase_ARN-d%C3%A9pendante) catalysant la réplication de l'ARN. Peut-être que cette mutation modifie la fidélité de la réplication impactant ainsi son taux de mutation et donc son [evolvabilité](https://fr.wikipedia.org/wiki/%C3%89volvabilit%C3%A9), c'est à dire sa capacité à évoluer.    
 Plus intéressant, est le variant Asp614Gly dans le gène (S) de la protéine Spike qui permet au virus de pénétrer plus facilement les cellules humaines et ou se trouve aussi la mutation du variant anglais. Cette mutation Asp614Gly serait apparu en Europe début 2020 et serait maintenant la forme majoritaire ([source](https://www.news-medical.net/news/20200925/22705/French.aspx)). 
 
 ## Conclusion 
