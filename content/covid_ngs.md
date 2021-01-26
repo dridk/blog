@@ -71,7 +71,7 @@ Avant de procéder à l'alignement avec l'outil [bwa](http://bio-bwa.sourceforge
     bwa index wuhan.fasta
     samtools faidx wuhan.fasta
 
-L'alignement est réalisé à l'aide de la commande ci-dessous qui nous créera un nouveau fichier *SRR13182925.sam* contenant les reads associés à leur position d'alignement sur le génome.
+L'alignement est réalisé à l'aide de la commande ci-dessous qui nous créera un nouveau fichier *SRR13182925.sam* contenant les reads associés à leur position d'alignement sur le génome:
 
     bwa mem wuhan.fasta SRR13182925_1.fastq.gz  SRR13182925_2.fastq.gz > SRR13182925.sam 
 
@@ -90,7 +90,7 @@ Vous obtiendrez ainsi la vue suivante où j'ai zoomé sur le gène S pour visual
 <div class="figure">     <img src="../images/covid_ngs/IGV.png" />      <div class="legend"> Visualisation des reads alignés sur le génome de référence avec le logiciel IGV. La flèche montre une mutation située sur le gène S visible sur l'ensemble des reads </div> </div>
 
 ### Appel des variants et annotation 
-Vous pourriez parcourir l'alignement visuellement et chercher toutes les mutations. Mais il est préférable de procéder de façon automatique grâce à un [variant caller](https://www.researchgate.net/figure/Commonly-used-NGS-variant-calling-software-Download-information-for-these-software-is_tbl1_232077026). Pour cela j'utilise [freebayes](https://github.com/freebayes/freebayes), qui à partir du fichier BAM, crée un [fichier VCF](https://en.wikipedia.org/wiki/Variant_Call_Format) contenant l'ensemble des variants détectés. Avec [SnpSift](https://pcingola.github.io/SnpEff/), on garde uniquement les variants de bonne qualité avec un score superieur à 30 et on compresse avec [bgzip](http://www.htslib.org/doc/bgzip.html) le fichier pour pouvoir l'indexer avec [tabix](http://www.htslib.org/doc/tabix.html).
+Vous pourriez parcourir l'alignement visuellement et chercher toutes les mutations. Mais il est préférable de procéder de façon automatique grâce à un [variant caller](https://www.researchgate.net/figure/Commonly-used-NGS-variant-calling-software-Download-information-for-these-software-is_tbl1_232077026). Pour cela j'utilise [freebayes](https://github.com/freebayes/freebayes), qui à partir du fichier BAM, crée un [fichier VCF](https://en.wikipedia.org/wiki/Variant_Call_Format) contenant l'ensemble des variants détectés. Avec [SnpSift](https://pcingola.github.io/SnpEff/), on garde uniquement les variants de bonne qualité avec un score superieur à 30 et on compresse avec [bgzip](http://www.htslib.org/doc/bgzip.html) le fichier pour pouvoir l'indexer avec [tabix](http://www.htslib.org/doc/tabix.html):
 
 ```bash
 freebayes -f wuhan.fasta -p1 -C10 SRR13182925.bam|SnpSift filter "QUAL > 30" - > SRR13182925.vcf 
@@ -98,11 +98,11 @@ bgzip SRR13182925.vcf
 tabix -p vcf SRR13182925.vcf.gz
 ```
     
-Le fichier VCF obtenu contient uniquement les positions et les bases mutées. Pour avoir plus d'information, j'annote ce fichier avec [SnpEff](https://pcingola.github.io/SnpEff/) qui me donnera entre autres le nom de la mutation en [nomenclature HGVS](https://varnomen.hgvs.org/) ainsi que le gène où il se situe.
+Le fichier VCF obtenu contient uniquement les positions et les bases mutées. Pour avoir plus d'information, j'annote ce fichier avec [SnpEff](https://pcingola.github.io/SnpEff/) qui me donnera entre autres le nom de la mutation en [nomenclature HGVS](https://varnomen.hgvs.org/) ainsi que le gène où il se situe:
 
     snpEff -Xmx10G -v NC_045512.2 SRR13182925.vcf.gz > SRR13182925.ann.vcf
 
-Il me suffit maintenant d'extraire de ce fichier les informations pertinantes. Pour cela, j'utilise [SnpSift filter](https://pcingola.github.io/SnpEff/ss_filter/) associé à [SnpSift extracFields](https://pcingola.github.io/SnpEff/ss_extractfields/) pour afficher les mutations dans un tableau à deux colonnes avec le nom de la mutation et le nom du gène ou elle se situe.
+Il me suffit maintenant d'extraire de ce fichier les informations pertinantes. Pour cela, j'utilise [SnpSift filter](https://pcingola.github.io/SnpEff/ss_filter/) associé à [SnpSift extracFields](https://pcingola.github.io/SnpEff/ss_extractfields/) pour afficher les mutations dans un tableau à deux colonnes avec le nom de la mutation et le nom du gène ou elle se situe:
 
     SnpSift filter "(exists ANN[0].HGVS_P)" > SRR13182925.ann.vcf
     |SnpSift extractFields - "ANN[0].HGVS_P" "ANN[0].GENE"
@@ -125,7 +125,7 @@ Pour reconstruire la séquence du génome de l'échantillon à partir du fichier
 ```bash
 bcftools consensus SRR13182910.vcf.gz  -f genome/whuan.fasta --sample unknown > SRR13182910.fa
 ```
-Nous pouvons alors utiliser l'outil [pangolin](https://github.com/cov-lineages/pangolin) pour asigner le nom de la ligné à ce génome. La nomenclature est défini [dans ce papier](https://www.nature.com/articles/s41564-020-0770-5).
+Nous pouvons alors utiliser l'outil [pangolin](https://github.com/cov-lineages/pangolin) pour asigner le nom de la ligné à ce génome. La nomenclature est défini [dans ce papier](https://www.nature.com/articles/s41564-020-0770-5):
 
 ```
 pangolin SRR13182910.fa 
