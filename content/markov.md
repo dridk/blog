@@ -88,7 +88,7 @@ En génétique, on va plutôt tester si une nouvelle séquence a le même profil
 Étant donné que la probabilité d'apparition d'une base dépend uniquement de la précédemment, la probabilité de ATTCG peut s'écrire comme le produit de chaque transition: 
 
 $$
-p(ATTCG|\theta) = p(A) * p(T|A) * p(T|A) * p(T|T) * p(C|T) * p(G|C)
+p(ATTCG|\theta) = p(A) * p(T|A) * p(T|T) * p(C|T) * p(G|C)
 $$
 
 Ou plus généralement : 
