@@ -17,9 +17,18 @@ Dans ce billet, je vous propose d'explorer l'ontologie de [Wikipedia](https://fr
 Une ontologie est une façon d'organiser le savoir en reliant de nombreux concepts entre eux. Plus exactement, c'est un [graphe](https://fr.wikipedia.org/wiki/Graphe) construit à partir d'un ensemble de [triplets](https://fr.wikipedia.org/wiki/Triplet_RDF) composé chacun  d'un *sujet*, d'un *prédicat* et d'un *objet*.     
 Par exemple, les 3 triplets suivant permettent de relier les [Rolling Stones](https://www.wikidata.org/wiki/Q11036) au [Fish and Chips](https://www.wikidata.org/wiki/Q203925). 
 
-	<The Rolling Stones>   <est d'origine du>   <Royaume uni>
-	<The Rolling Stones>   <est un groupe de>   <Rock>
-	<Le Fish and Chips>    <est d'origine du>   <Royaume uni>
+```
+# SUJET                 PREDICAT             OBJET
+<The Rolling Stones>   <est d'origine du>   <Royaume uni>
+<The Rolling Stones>   <est un groupe de>   <Rock>
+<Le Fish and Chips>    <est d'origine du>   <Royaume uni>
+```
+
+<div class="figure">
+<img src="../images/wikidata/graphe.png" />
+<div class="legend"> Exemple d'ontologie </div>
+</div>
+
 
 Dans une ontologie, les concepts sont définis par un identifiant unique.       
 Sur wikidata, Le concept "*Rolling Stones*" porte l'identifiant [Q11036](https://www.wikidata.org/wiki/Q11036) et le concept "*Fish and Chips*" porte l'identifiant [Q203925](https://www.wikidata.org/wiki/Q203925). Il en est de même pour les prédicats et les objets. Ainsi, les triplets précédents peuvent s'écrire de la manière suivante:
