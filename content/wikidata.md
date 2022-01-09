@@ -132,7 +132,7 @@ df.columns = ["groupe","pays","population"]
 ```
 ## La carte ! 
 
-J'ai juste mouliné le tout avec [geopandas](https://geopandas.org/en/stable/) sur un notebook jupyter disponible [ici](https://colab.research.google.com/drive/1PzdvHAeCxed9FtrAzpCRF5lKSmKGnfnQ?usp=sharing), et le tour est jouer.
+J'ai juste mouliné le tout avec [geopandas](https://geopandas.org/en/stable/) sur un notebook jupyter disponible [ici](https://colab.research.google.com/drive/1PzdvHAeCxed9FtrAzpCRF5lKSmKGnfnQ?usp=sharing), et le tour est joué.
 
 <div class="figure">
 <img src="../images/wikidata/map.png" />
