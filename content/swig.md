@@ -8,7 +8,7 @@ Author: Sacha Schutz
 
 
 [Python](https://fr.wikipedia.org/wiki/Python_(langage)) n'étant pas connu pour sa rapidité, il existe plusieurs solutions pour exécuter du code compilé. Je citerai par exemple [numba](https://numba.pydata.org/) qui utilise des décorateurs dédiés ou encore [cython](https://cython.org/) qui permet d'écrire un module avec un langage mélangeant du python et du [C](https://fr.wikipedia.org/wiki/C_(langage)).   
-Mais mon regard s'est porté récemment vers la librairie [SWIG](http://www.swig.org/Doc1.3/Python.html) qui permet facilement d'encapsuler du code [C++](https://fr.wikipedia.org/wiki/C%2B%2B) dans un module Python. Je vous propose donc dans ce billet, d'écrire à l'aide de *SWIG*, un module C++ permettant de compter le nombre de base A,C,G,T présent dans un fichier [Fasta](https://fr.wikipedia.org/wiki/FASTA_(format_de_fichier)). 
+Mais mon regard s'est porté récemment vers la librairie [SWIG](http://www.swig.org/Doc1.3/Python.html) qui permet facilement d'encapsuler du code [C++](https://fr.wikipedia.org/wiki/C%2B%2B) dans un module Python. Je vous propose donc dans ce billet, d'écrire à l'aide de *SWIG*, un module en C++ permettant de compter le nombre de base A,C,G,T présent dans un fichier [Fasta](https://fr.wikipedia.org/wiki/FASTA_(format_de_fichier)). 
 
 ## Objectif
 
