@@ -5,7 +5,7 @@ Modified: 2022-01-17 15:31:33
 Tags: python 
 Category: informatique
 Author: Sacha schutz
-Status: Drafts
+Status: Draft
 
 
 Python n'étant pas connu pour sa rapidité, Il existe plusieurs solutions pour executer du code compiler. Je citerai par exemple [numba](https://numba.pydata.org/) qui utilise des decorateurs python ou encore [cython](https://cython.org/) qui utilise un language dédié appelé [PyRex](https://www.csse.canterbury.ac.nz/greg.ewing/python/Pyrex/).
