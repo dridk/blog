@@ -189,7 +189,7 @@ python setup.py install # Installation
 
 Si tout c'est bien passé, vous devriez pouvoir executer le code suivant:
 
-### test_cpp.py
+### benchmark C++
 
 ```python
 from fastareader import FastaReader
@@ -205,19 +205,19 @@ print(reader["T"])
 Sur mon PC portable ( intel I7 ), Je met 73 secondes pour compter l'ensemble des bases du chromosome 22.
 
 ```bash
-(venv) ➜  fastacounter time python test.py 
+(venv) ➜ time python test.py
 9094775
 8375985
 8369235
 9054551
-python test.py  0,73s user 0,01s system 99% cpu 0,747 total
-
+python test.py  0,63s user 0,02s system 99% cpu 0,645 total
 
 ```
 
-### test_python.py
 
-Le même code écrit uniquement en python, met comme vous pouvez le voir, beaucoup... beaucoup plus de temps. 
+### benchmark Python
+
+Le même code écrit uniquement en python met 12,67s. Soit 20 fois plus long. Et encore, le code C++ n'est pas optimisé. 
 
 ```python
 with open("chr22.fasta") as file:
@@ -231,14 +231,25 @@ with open("chr22.fasta") as file:
 
     byte = file.read(1)
     while byte:
+        byte = str.upper(byte)
         if byte in ("A", "C", "G", "T"):
             counter[byte] += 1
-            print(counter[byte])
-            byte = file.read(1)
+
+        byte = file.read(1)
+
 
 print(counter["A"])
 print(counter["C"])
 print(counter["G"])
 print(counter["T"])
 
+```
+
+```bash
+(venv) ➜ time python bench_python.py
+9094775
+8375985
+8369235
+9054551
+python test_py.py  12,67s user 0,02s system 99% cpu 12,791 total
 ```
