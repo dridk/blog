@@ -1,4 +1,4 @@
-Title: Créer un module C++ pour python avec SWIG
+Title: Créer un module python en C++ avec SWIG
 Slug: swig
 Date: 2022-01-17 23:18:57
 Modified: 2022-01-17 23:18:57
