@@ -1,54 +1,51 @@
-Title: Créer un module C++ pour python
+Title: Créer un module C++ pour python avec SWIG
 Slug: swig
-Date: 2022-01-17 15:31:33
-Modified: 2022-01-17 15:31:33
-Tags: python 
+Date: 2022-01-17 23:18:57
+Modified: 2022-01-17 23:18:57
+Tags: python,C++
 Category: informatique
-Author: Sacha schutz
-Status: Draft
+Author: Sacha Schutz
 
 
-Python n'étant pas connu pour sa rapidité, Il existe plusieurs solutions pour executer du code compiler. Je citerai par exemple [numba](https://numba.pydata.org/) qui utilise des decorateurs python ou encore [cython](https://cython.org/) qui utilise un language dédié appelé [PyRex](https://www.csse.canterbury.ac.nz/greg.ewing/python/Pyrex/).
-Mais mon regard s'est porté vers la librairie [Swig](http://www.swig.org/Doc1.3/Python.html) permettant facillement d'encapsuler du code C ou C++ en Python.    
-Je vous propose dans ce billet, d'écrire à l'aide de Swig, un code permettant de compter le nombre de base A,C,G,T depuis en fichier Fasta.
+[Python](https://fr.wikipedia.org/wiki/Python_(langage)) n'étant pas connu pour sa rapidité, il existe plusieurs solutions pour exécuter du code compilé. Je citerai par exemple [numba](https://numba.pydata.org/) qui utilise des décorateurs dédiés ou encore [cython](https://cython.org/) qui permet d'écrire un module avec un langage mélangeant du python et du [C](https://fr.wikipedia.org/wiki/C_(langage)).   
+Mais mon regard s'est porté récemment vers la librairie [SWIG](http://www.swig.org/Doc1.3/Python.html) qui permet facilement d'encapsuler du code [C++](https://fr.wikipedia.org/wiki/C%2B%2B) dans un module Python. Je vous propose donc dans ce billet, d'écrire à l'aide de *SWIG*, un module C++ permettant de compter le nombre de base A,C,G,T présent dans un fichier [Fasta](https://fr.wikipedia.org/wiki/FASTA_(format_de_fichier)). 
 
 ## Objectif
 
-L'objectif est d'écrire un module python appelé *fastareader* qui nous permettra de compter 
-le nombre de base avec le code suivant :
+L'objectif est d'écrire un module python appelé *fastareader* qui s’exécute de la façon suivante : 
 
 ```python
 from fastareader import FastaReader
-reader = FastaReader("hg19.fa")
+
+# Instanciation : Compte le nombre de base A,C,G,T dans le fichier chr22.fa
+reader = FastaReader("chr22.fa")
+
+# Affiche le nombre de chaque base
 print(reader["A"])
 print(reader["C"])
 print(reader["G"])
 print(reader["T"])
 ```
 
-## Swig
+## Installation de SWIG
 
-Swig est un programme qui va générer à notre place le code C d'une extension python à partir de notre code c++ (fastareader.cpp fastareader.h) et d'un fichier annexe ( fastreader.i).
+Swig est un programme en ligne de commande qui permet de générer automatiquement le code d'un module python à partir de notre code C++.    
+Pour installer Swig dans sa version (4.0):
 
-### Installation
-La version Swig à ce jour est la (4.0) .
-
-- ubuntu 
+- **ubuntu**  
 ```sudo apt-get install swig ```
 
-- Arch  
-```sudo pacman -S swig ```
 
-- Windows
-un binaire est disponible [ici](http://www.swig.org/Doc1.3/Windows.html)
+- **Windows**      
+Télécharger le binaire [ici](http://www.swig.org/Doc1.3/Windows.html)
 
 
-## Code C++
+## Création du module en C++
 
-Je crée d'abord 2 fichiers (fastareader.h et fastareader.cpp) ou je défini ma classe C++ avec un algortihme minimaliste pour compter le nombre de chaque base avec la librarie standard.    
-J'ajoute egalement la methode magique __getitem__ qui sera interprété par python comme une surcharge d'operateur permettant d'accéder aux résultats via la syntaxe ```reader[base]```.
+Je crée d'abord 2 fichiers (*fastareader.h* et *fastareader.cpp*) contenant la classe C++ qui nous calculera le nombre de base après avoir parcouru le fichier.    
+Je lui ajoute la [méthode magique](https://www.geeksforgeeks.org/dunder-magic-methods-python/) **```__getitem__```** qui sera interprétée par python comme  surcharge d’opérateur pour accéder aux résultats via la syntaxe **```reader['A']```**.
 
-### Fastareader.h
+#### Fastareader.h
 
 ```cpp
 #include <iostream>
@@ -64,10 +61,14 @@ using CountMap = map<char,int> ;
 class FastaReader
 {
 public:
+    // Constructeur 
     FastaReader(const string& filename);
+    
+    // Fonction magique pour pouvoir faire reader['A']
     int __getitem__(char base);
 
 protected:
+    // Lis le fichier lors de la construction
     void read_file();
 
 private:
@@ -78,7 +79,7 @@ private:
 
 ```
 
-### Fastareader.cpp
+#### Fastareader.cpp
 
 ```cpp 
 #include "fastareader.h"
@@ -97,6 +98,7 @@ int FastaReader::__getitem__(char base)
 
 void FastaReader::read_file()
 {
+    // Nous parcourons le fichier et nous comptons les bases A,C,G,T
     ifstream infile(mFilename);
     string line;
 
@@ -115,30 +117,30 @@ void FastaReader::read_file()
 ```
 
 
-Verifions rapidement que le code compile avec la commande suivante:
+Vous pouvez vérifier rapidement que le code compile avec le commande suivante. Mais par la suite, nous utiliserons [setuptools](https://setuptools.pypa.io/en/latest/) pour la compilation et l'installation du module.
 
 ```bash
 g++ -c fastareader.cpp 
 ```
 
-Par la suite, nous utiliserons setuptools pour la compilation. 
 
-## Fichier SWIG
+## Le fichier d'interface SWIG
 
-le fichier swig d'extension *\*.i* contient les informations utile à swig pour produire le code C du module python. Dans ce fichier vous pourez detailler comment les objects C++ sont converti en object Python. Il existe par default plusieurs convertisseur. Par exemple, ici j'utiliser *std_string.i* qui prend en charge la conversion de std::string vers python string.
+L'interfaçage entre python et le C++ est paramétrée depuis le fichier *fastareader.i*. C'est ce fichier qu'il faudra modifier si vous voulez détailler comment convertir des objets C++ en objets Python. Cette conversion existe déjà pour la plus part des types. Par exemple, ici j'importe **```std_string.i ```** afin de mapper les strings C++ en string Python. Allez voir la documentation sur les *[typemaps](http://www.swig.org/Doc1.3/Typemaps.html)* pour plus de détails.
 
-### Fastareader.i
+#### Fastareader.i
 
 ```cpp
-%module fastareader   // Nom du module
-%include "std_string.i" // permet de convertir les std:::string en Python str
+%module fastareader   // Nom du module python généré
+%include "std_string.i" // permet de convertir les std:::string en Python string
 
 %{
-#include "fastareader.h" // Partie qui sera intégré aux fichier de sortie
+// Le code de cette section sera intégré au fichier produit
+#include "fastareader.h" 
  %}
 
-
- %include "fastareader.h" // interface à encapusler pour Python
+ // Cette section contient la liste des interfaces C++ à encapsuler
+ %include "fastareader.h"
 
 ```
 
@@ -148,21 +150,28 @@ Vous pouvez à présent générer le code de l'extension python avec la commande
 swig -c++ -python fastareader.i
 ```
 
-Si tout ce passe bien, vous devez obtenir un fichier *fastareader.py* et un fichier *fastareader_wrap.cxx*.
+Si tout se passe bien, vous devez obtenir 2 fichiers:
 
-### Compilation
+- un fichier **fastareader.py** contenant le module python à importer.
+- un fichier **fastareader_wrap.cxx** contenant l'encapsulation de votre code C++.
 
-La meilleurs façon de compiler notre extension python est d'utiliser setuptools. 
-Pour cela, je crée un fichier setup.py avec le code suivant :
-Notez bien le nom nom de l'extension prefixé par le caractère (\_) 
+## Compilation avec setuptools
 
+Une fois le code de l'extension généré, il faut le compiler et l'installer. 
+Pour cela, vous pouvez utiliser [setuptools](https://setuptools.pypa.io/en/latest/) disponible dans la librairie standard de python.    
+Créer le fichier *setup.py* avec le code suivant:
 
 ```python
 from distutils.core import setup, Extension
 
+# Description de l'extension et du code à compiler.
+# Notez bien le nom de l'extension `_fastareader` préfixé par le caractère `_` 
+
 fastareader_module = Extension(
     "_fastareader", sources=["fastareader.cpp", "fastareader_wrap.cxx"]
 )
+
+
 setup(
     name="fastareader",
     version="0.1",
@@ -173,7 +182,7 @@ setup(
 
 ```
 
-Une fois crée, vous pouvez compiler et installer votre extension. Je vous conseil de créer d'abord un environement virtuel. 
+Compiler et installer maintenant votre module avec les commandes suivantes:       
 
 ```bash
 python -m virtualenv venv 
@@ -184,13 +193,21 @@ python setup.py install # Installation
 
 ```
 
+Si tout c'est bien passé, vous devriez pouvoir lancer le code python vu au début de ce billet.
 
-## C++ versus Python
+>**Note**: Sous windows, vous aurez besoin d'installer [Visual studio](https://docs.microsoft.com/fr-fr/visualstudio/install/install-visual-studio?view=vs-2022) pour compiler une extension Python. Attention, à bien vérifier les architectures (x64, x86) et quel versions de python vous utilisez.      
 
-Si tout c'est bien passé, vous devriez pouvoir executer le code suivant:
 
-### benchmark C++
 
+
+
+
+
+## Le benchmark
+
+Sur mon PC portable, Je met **0.63 secondes** pour compter l'ensemble des bases du chromosome 22 avec la module C++. Et encore, le code n'est pas optimisé.
+
+#### bench_cpp.py
 ```python
 from fastareader import FastaReader
 
@@ -202,10 +219,8 @@ print(reader["G"])
 print(reader["T"])
 ```
 
-Sur mon PC portable ( intel I7 ), Je met 73 secondes pour compter l'ensemble des bases du chromosome 22.
-
 ```bash
-(venv) ➜ time python test.py
+(venv) ➜ time python bench_cpp.py
 9094775
 8375985
 8369235
@@ -215,10 +230,9 @@ python test.py  0,63s user 0,02s system 99% cpu 0,645 total
 ```
 
 
-### benchmark Python
+Le même code écrit uniquement avec python prend **12 secondes**. Soit 20 fois plus longtemps.  
 
-Le même code écrit uniquement en python met 12,67s. Soit 20 fois plus long. Et encore, le code C++ n'est pas optimisé. 
-
+#### bench_python.py
 ```python
 with open("chr22.fasta") as file:
 
@@ -253,3 +267,8 @@ print(counter["T"])
 9054551
 python test_py.py  12,67s user 0,02s system 99% cpu 12,791 total
 ```
+
+
+## Référence 
+
+- [Documentation de SWIG](http://www.swig.org/doc.html)
