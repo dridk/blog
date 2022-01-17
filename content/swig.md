@@ -268,6 +268,11 @@ print(counter["T"])
 python test_py.py  12,67s user 0,02s system 99% cpu 12,791 total
 ```
 
+## Si vous voulez m'aider !
+
+J'ai commencé à écrire un simple parseur de fichier VCF, qui contrairement à [cyvcf2](https://github.com/brentp/cyvcf2), ne dépend pas de htslib et compile facilement sous windows. 
+https://github.com/dridk/vcfreader
+
 
 ## Référence 
 
