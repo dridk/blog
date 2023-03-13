@@ -23,7 +23,7 @@ Dans ce billet de blog, je vous propose d'utiliser [pola.rs](https://www.pola.rs
 ### Base de données orientée colonnes 
 Les bases de données classiques ( [MYSQL](https://fr.wikipedia.org/wiki/MySQL), [SQLite](https://fr.wikipedia.org/wiki/SQLite), [Oracle](https://fr.wikipedia.org/wiki/Oracle_Database)... ) sont des architectures [orientées en ligne](https://en.wikipedia.org/wiki/Column-oriented_DBMS#Row-oriented_systems). C'est-à-dire que les lignes d'une table sont sauvegardées de manière contiguë en mémoire. Cela permet d'insérer ou de supprimer facilement des enregistrements. Revers de la médaille, il est plus coûteux de faire du calcul sur une colonne entière, car cela nécessite de parcourir l'ensemble des lignes. Ces bases de données sont optimisées pour le transactionnel et sont utilisées pour des [système OLTP ](https://fr.wikipedia.org/wiki/Traitement_transactionnel_en_ligne)(OnLine Transactional Processing), par exemple une base de données de production gérant des utilisateurs.     
 Dans un fichier parquet, ce sont les colonnes qui sont sauvegardées de manière contiguë en mémoire. Ceci permet de faire
-des opérations de façon très efficace sur les colonnes au détriment des opérations transactionnelles. Cette architecture est très performante pour des système OLAP (OnLine Analytical Processing). Par exemple un entrepôt de données destinés à être lu uniquement. 
+des opérations de façon très efficace sur les colonnes au détriment des opérations transactionnelles. Cette architecture est très performante pour des [systèmes OLAP ](https://fr.wikipedia.org/wiki/Traitement_analytique_en_ligne)(OnLine Analytical Processing). Par exemple un entrepôt de données destinés à être lu uniquement. 
 
 
 <div class="figure">
