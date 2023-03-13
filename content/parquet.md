@@ -9,7 +9,7 @@ SIDEBARIMAGE:../images/common/data_banner.jpeg
 
 
 Cela fait un bon moment que j'entends parler des [fichiers Parquet](https://fr.wikipedia.org/wiki/Apache_Parquet). Un format binaire beaucoup plus léger
-que [les fichiers CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) pour le stockage des tableaux de données en Science des données.      
+que [les fichiers CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) pour le stockage des tableaux de données.      
 Lorsque j'ai vu pour la première fois un collègue faire une requête SQL quasi instantanée sur des millions des lignes répartis sur différents fichiers parquets, je me suis dit les yeux grands écarquillés, que c'était peut être un peu plus que ça.
 En effet, aujourd'hui le format parquet est utilisé en [big data](https://www.cetic.be/Apache-Parquet-pour-le-stockage-de-donnees-volumineuses) pour stocker et interroger de façon efficace des données
 volumineuses grâce à [un modèle orienté colonne](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_orient%C3%A9e_colonnes) basée sur [Apache Arrow](https://en.wikipedia.org/wiki/Apache_Arrow) que je décrirai juste après.
