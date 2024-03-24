@@ -179,7 +179,8 @@ Mais les expressions régulières, c'est surtout l'apanage des ninja sous linux.
 #### Référence
 [openclassrooms.com](http://fr.openclassrooms.com/informatique/cours/concevez-votre-site-web-avec-php-et-mysql/memento-des-expressions-regulieres)   
 [wikipedia](http://fr.wikipedia.org/wiki/Expression_rationnelle)   
-[http://www.expreg.com/](http://www.expreg.com/)   
+[cyrilex](https://extendsclass.com/regex-tester.html)   
+[pyrexp](https://pythonium.net/regex)   
 
 
 
