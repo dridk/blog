@@ -12,8 +12,8 @@ Cela fait un bon moment que j'entends parler des [fichiers Parquet](https://fr.w
 que [les fichiers CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) pour le stockage des tableaux de données.      
 Lorsque j'ai vu pour la première fois un collègue faire une requête SQL quasi instantanée sur des millions des lignes répartis sur différents fichiers parquets, je me suis dit les yeux grands écarquillés, que c'était peut être un peu plus que ça.
 En effet, aujourd'hui le format parquet est utilisé en [big data](https://www.cetic.be/Apache-Parquet-pour-le-stockage-de-donnees-volumineuses) pour stocker et interroger de façon efficace des données
-volumineuses grâce à [un modèle orienté colonne](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_orient%C3%A9e_colonnes) basée sur [Apache Arrow](https://en.wikipedia.org/wiki/Apache_Arrow) que je décrirai juste après.
-À cela, s'ajoute de nouveaux outils en Python pour pouvoir manipuler et interroger ces fichiers.      
+volumineuses grâce à [un modèle orienté colonne](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_orient%C3%A9e_colonnes) basé sur [Apache Arrow](https://en.wikipedia.org/wiki/Apache_Arrow) que je décrirai juste après.
+À cela, s'ajoutent de nouveaux outils en Python pour pouvoir manipuler et interroger ces fichiers.      
 
 
 Dans ce billet de blog, je vous propose d'utiliser [pola.rs](https://www.pola.rs/) et [duckDB](https://duckdb.org/), pour explorer les données d'un [fichier VCF](https://fr.wikipedia.org/wiki/Variant_Call_Format) volumineux provenant de [1000genomes](https://www.internationalgenome.org/data-portal/sample). 
@@ -21,9 +21,9 @@ Dans ce billet de blog, je vous propose d'utiliser [pola.rs](https://www.pola.rs
 
 ## Architecture d'un fichier parquet 
 ### Base de données orientée colonnes 
-Les bases de données classiques ( [MYSQL](https://fr.wikipedia.org/wiki/MySQL), [SQLite](https://fr.wikipedia.org/wiki/SQLite), [Oracle](https://fr.wikipedia.org/wiki/Oracle_Database)... ) sont des architectures [orientées en ligne](https://en.wikipedia.org/wiki/Column-oriented_DBMS#Row-oriented_systems). C'est-à-dire que les lignes d'une table sont sauvegardées de manière contiguë en mémoire. Cela permet d'insérer ou de supprimer facilement des enregistrements. Revers de la médaille, il est plus coûteux de faire du calcul sur une colonne entière, car cela nécessite de parcourir l'ensemble des lignes. Ces bases de données sont optimisées pour le transactionnel et sont utilisées pour des [système OLTP ](https://fr.wikipedia.org/wiki/Traitement_transactionnel_en_ligne)(OnLine Transactional Processing), par exemple une base de données de production gérant des utilisateurs.     
+Les bases de données classiques ( [MYSQL](https://fr.wikipedia.org/wiki/MySQL), [SQLite](https://fr.wikipedia.org/wiki/SQLite), [Oracle](https://fr.wikipedia.org/wiki/Oracle_Database)... ) sont des architectures [orientées en ligne](https://en.wikipedia.org/wiki/Column-oriented_DBMS#Row-oriented_systems). C'est-à-dire que les lignes d'une table sont sauvegardées de manière contiguë en mémoire. Cela permet d'insérer ou de supprimer facilement des enregistrements. Revers de la médaille, il est plus coûteux de faire du calcul sur une colonne entière, car cela nécessite de parcourir l'ensemble des lignes. Ces bases de données sont optimisées pour le transactionnel et sont utilisées pour des [systèmes OLTP ](https://fr.wikipedia.org/wiki/Traitement_transactionnel_en_ligne)(OnLine Transactional Processing), par exemple une base de données de production gérant des utilisateurs.     
 Dans un fichier parquet, ce sont les colonnes qui sont sauvegardées de manière contiguë en mémoire. Ceci permet de faire
-des opérations de façon très efficace sur les colonnes au détriment des opérations transactionnelles. Cette architecture est très performante pour des [systèmes OLAP ](https://fr.wikipedia.org/wiki/Traitement_analytique_en_ligne)(OnLine Analytical Processing). Par exemple un entrepôt de données destinés à être lu uniquement. 
+des opérations de façon très efficace sur les colonnes au détriment des opérations transactionnelles. Cette architecture est très performante pour des [systèmes OLAP ](https://fr.wikipedia.org/wiki/Traitement_analytique_en_ligne)(OnLine Analytical Processing). Par exemple un entrepôt de données destiné à être lu uniquement. 
 
 
 <div class="figure">
@@ -35,8 +35,8 @@ colonne. <a href="https://datacadamia.com/data/type/relation/structure/column_st
 
 
 ### Apache Arrow
-[Apache Arrow](https://en.wikipedia.org/wiki/Apache_Arrow) est un format standard de donnée orienté colonne pour la **[mémoire vive](https://fr.wikipedia.org/wiki/M%C3%A9moire_vive)**. C'est-à-dire qu'il décrit, indépendamment du langage de programmation,comment représenter un tableau dans votre RAM. Par exemple, si vous manipulez les mêmes données stockées dans un [DataFrame](https://en.wikipedia.org/wiki/Pandas_(software)#DataFrames) Python ou un DataFrame R, la structure mémoire sous-jacent sera la même. Autrement dit, vous allez pouvoir transférer un DataFrame Python vers un DataFrame R, sans faire la moindre copie ou transformation. Et lorsque l'on travaille avec beaucoup de données, cela est loin d'être négligeable.    
-Le format parquet, développé par Apache, est entièrement compatible avec Arrow. La [sérialisation](https://fr.wikipedia.org/wiki/S%C3%A9rialisation) et la [déserialisation](https://fr.wikipedia.org/wiki/S%C3%A9rialisation#D%C3%A9s%C3%A9rialisation) d'un DataFrame,
+[Apache Arrow](https://en.wikipedia.org/wiki/Apache_Arrow) est un format standard de donnée orienté colonne pour la **[mémoire vive](https://fr.wikipedia.org/wiki/M%C3%A9moire_vive)**. C'est-à-dire qu'il décrit, indépendamment du langage de programmation,comment représenter un tableau dans votre RAM. Par exemple, si vous manipulez les mêmes données stockées dans un [DataFrame](https://en.wikipedia.org/wiki/Pandas_(software)#DataFrames) Python ou un DataFrame R, la structure mémoire sous-jacente sera la même. Autrement dit, vous allez pouvoir transférer un DataFrame Python vers un DataFrame R, sans faire la moindre copie ou transformation. Et lorsque l'on travaille avec beaucoup de données, cela est loin d'être négligeable.    
+Le format parquet développé par Apache, est entièrement compatible avec Arrow. La [sérialisation](https://fr.wikipedia.org/wiki/S%C3%A9rialisation) et la [déserialisation](https://fr.wikipedia.org/wiki/S%C3%A9rialisation#D%C3%A9s%C3%A9rialisation) d'un DataFrame,
 c'est à dire l'écriture et la lecture d'un fichier parquet sera très performante avec un minimum de transformation. 
 
 
@@ -50,9 +50,9 @@ d'éviter toutes ces opérations coûteuses<a href="https://datacadamia.com/data
 ## Du VCF au parquet avec polars
 
 Pour lire et écrire des fichiers parquet avec Python, vous pouvez utiliser la libraire [pandas](https://fr.wikipedia.org/wiki/Pandas). Cependant, pandas n'est pas basée sur Arrow et reste très lente pour manipuler de gros volumes de données. 
-Nous utiliserons ici les performances quasi *magique* de la libraire [pola.rs](https://www.pola.rs/) pour transformer un fichier VCF en fichier parquet.      
+Nous utiliserons ici les performances quasi *magiques* de la libraire [pola.rs](https://www.pola.rs/) pour transformer un fichier VCF en fichier parquet.      
 
-Pola.rs est écrit en Rust, est compatible avec Arrow, support nativement le multithreading et propose une *[Lazy évaluation](https://fr.wikipedia.org/wiki/%C3%89valuation_paresseuse)* des transformations.
+Pola.rs est écrit en Rust, est compatible avec Arrow, supporte nativement le multithreading et propose une *[Lazy évaluation](https://fr.wikipedia.org/wiki/%C3%89valuation_paresseuse)* des transformations.
 Je vous invite à jeter un œil sur la [documentation Python](https://pola-rs.github.io/polars/py-polars/html/reference/) pour vous familiariser avec l'API qui diffère de celle de pandas. 
 
 ### Téléchargement du fichier VCF
@@ -92,28 +92,28 @@ import pola.rs
 pl.scan_csv(
     "ALL.wgs.shapeit2_integrated_snvindels_v2a.GRCh38.27022019.sites.vcf",
     skip_rows=40,                       # Je saute les 40 premieres lignes de commentaires
-    sep="\t",                           # separateur TSV
-    dtypes={"#CHROM": pl.Utf8},         # Je précise le type, sinon la colonne est considéré comme un int
-).select([                              # Je Selection les colonnes souhaitées
+    sep="\t",                           # Séparateur TSV
+    dtypes={"#CHROM": pl.Utf8},         # Je précise le type, sinon la colonne est considérée comme un int
+).select([                              # Je sélectionne les colonnes souhaitées
     pl.col("#CHROM").alias("CHROM"),    # Je renomme ici la colonne avec alias
     pl.col("POS"),
     pl.col("REF"),
     pl.col("ALT")]
-).sink_parquet(                         # Ecriture du fichier parquet 
+).sink_parquet(                         # Écriture du fichier parquet 
     "variants.parquet"
 )
 
 ```
 
 Je vous conseille de regarder le temps d'exécution et faire un [htop](https://fr.wikipedia.org/wiki/Htop ) pour voir la parallélisation opérée
-ainsi que la consommation mémoire. C'est assez bluffant. Je met **moins de 5 secondes** sur mon ordinateurs perso (*AMD Ryzen 9 5900X*) pour traiter **78'229'218** variants.
+ainsi que la consommation mémoire. C'est assez bluffant. Je mets **moins de 5 secondes** sur mon ordinateurs perso (*AMD Ryzen 9 5900X*) pour traiter **78'229'218** variants.
 Et pour la consommation mémoire, Les fonctions *scan_csv* et *sink_csv* permettent de faire la transformation du VCF sans le charger en mémoire. Regardez aussi les  tailles du fichier. **225Mo** pour le fichier parquet et **1.3Go** pour son équivalent en CSV. En effet, les fichiers parquets sont compressés naturellement du fait du modèle orienté colonne.
 
 ### Requête SQL avec DuckDB
 
-À présent essayer de requêtes sur ce fichier. Nous pourrions le faire avec pola.rs, mais nous allons
+À présent essayez de requêter sur ce fichier. Nous pourrions le faire avec pola.rs, mais nous allons
 plutôt faire une requête SQL en utilisant [duckDB](https://duckdb.org/) qui s'installe tout aussi facilement avec la
-commande suivante: 
+commande suivante : 
 
 ```bash
 pip install duckdb
@@ -141,12 +141,12 @@ duckdb.sql("SELECT * FROM 'variants.parquet'")
 
 ```
 
-À présent, essayons de faire plus compliquer en comptant le nombre de [transitions](https://dridk.me/transition_transversion.html) et de [transversions](https://dridk.me/transition_transversion.html). C'est à dire, le nombre de combinaisons A>T, C>G etc ... 
+À présent, essayons de faire plus compliqué en comptant le nombre de [transitions](https://dridk.me/transition_transversion.html) et de [transversions](https://dridk.me/transition_transversion.html). C'est à dire, le nombre de combinaisons A>T, C>G etc ... 
 
 ```python
 
 # A partir des SNPS len(ref)=1 et len(alt)=1
-# Je construit une liste [ref, alt] que je trie 
+# Je construis une liste [ref, alt] que je trie 
 # Je fait un groupby et un comptage
 
 q = """
@@ -176,7 +176,7 @@ Vous devriez retrouver après quelques secondes les mêmes proportions que j'ai 
 ### Le partitionnement 
 
 Niveau performance, c'est déjà bluffant. Mais il existe différentes [méthodes d'optimisation](https://duckdb.org/docs/sql/indexes.html) pour être plus performant suivant l'usage des données. 
-Le partitionnement consiste à découper votre fichier parquet en plusieurs fichiers parquets depuis une ou plusieurs colonnes. Par exemple, je peut partitionner le fichier parquet *variants.parquet* par chromosomes. Si je dois chercher un variant sur le chromosome 8, je peux regarder uniquement dans le fichier correspondant. Inutile de parcourir les variants du chromosomes 2.       
+Le partitionnement consiste à découper votre fichier parquet en plusieurs fichiers parquet depuis une ou plusieurs colonnes. Par exemple, je peux partitionner le fichier parquet *variants.parquet* par chromosomes. Si je dois chercher un variant sur le chromosome 8, je peux regarder uniquement dans le fichier correspondant. Inutile de parcourir les variants du chromosomes 2.       
 
 Construisons une partition sur la colonne chromosome avec duckDB : 
 
@@ -190,7 +190,7 @@ duckdb.sql(
 
 Après avoir exécuté cette requête, vous devriez avoir un dossier *chromosomes* contenant de
 nombreux fichiers triés par chromosomes.       
-Pour sélectionner vos variants depuis ce dossier, il suffit d'utiliser le caractère étoile ou des expressions régulières pour sélectionner la source de données souhaitées. 
+Pour sélectionner vos variants depuis ce dossier, il suffit d'utiliser le caractère étoile ou des expressions régulières pour sélectionner les sources de données souhaitées. 
 
 Dans l'exemple suivant, je sélectionne tous les variants à partir de tous les fichiers :
 
@@ -203,7 +203,7 @@ duckdb.sql("SELECT * FROM 'chromosomes/*/*.parquet'")
 
 ### Combiner Pola.rs et duckdb
 
-Une dernière astuce pour la fin.  Pola.rs et duckdb sont de très bon amies et sont interchangeable. Vous pouvez switcher de l'un à l'autre très facilement ( Merci Arrow ). 
+Une dernière astuce pour la fin.  Pola.rs et duckdb sont de très bon amies et sont interchangeables. Vous pouvez switcher de l'un à l'autre très facilement ( Merci Arrow ). 
 
 ```python
 # Passer de duckdb à pola.rs
@@ -218,7 +218,7 @@ duckdb.sql("SELECT * FROM df")
 
 ## Conclusion
 
-Pola.rs et Duckdb sont des technologies née du **big data** qui, je vous parie, vont devenir des références pour la manipulation des données volumineuses et remplacer leurs prédécesseurs comme Pandas. 
+Pola.rs et Duckdb sont des technologies nées du **big data** qui, je vous parie, vont devenir des références pour la manipulation des données volumineuses et remplacer leurs prédécesseurs comme Pandas. 
 
 
 ## Références
