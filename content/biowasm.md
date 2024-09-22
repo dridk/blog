@@ -42,7 +42,7 @@ Eh bien, c’est possible ! Le système de fichiers virtuel ne fait que pointer 
 
 ## Bioweb : Fastq sampling
 
-J'ai donc mis tout cela en pratique en créant une page web statique permettant de réaliser le downsampling d'un fichier FASTQ. Je l'ai publié sur une page github [**disponnible ici**](https://dridk.github.io/bioweb/sampling_fastq.html) Cet exemple est particulièrement intéressant car il implique la gestion du chargement d'un fichier FASTQ ainsi que la sauvegarde du fichier généré.
+J'ai donc mis tout cela en pratique en créant une page web statique permettant de réaliser le downsampling d'un fichier FASTQ avec [seqtk](https://github.com/lh3/seqtk) et sa commande ```seqtk sample```. Je l'ai publié sur une page github [**disponnible ici**](https://dridk.github.io/bioweb/sampling_fastq.html) Cet exemple est particulièrement intéressant car il implique la gestion du chargement d'un fichier FASTQ ainsi que la sauvegarde du fichier généré.
 Le processus fonctionne plutôt bien. J'ai testé avec un fichier FASTQ de 5 Go : c'était un peu long, mais j'ai obtenu le résultat en moins d'une minute.
 
 ## Conclusion 
