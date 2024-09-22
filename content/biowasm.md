@@ -10,7 +10,7 @@ SIDEBARIMAGE:../images/common/term_banner.jpeg
 
 Récemment, une collègue m'a fait découvrir [Biowasm](https://biowasm.com/). C'est une collection d'outils bioinformatiques bien connus, compilés en [WebAssembly](https://fr.wikipedia.org/wiki/WebAssembly). Concrètement, cela signifie que nous pouvons créer des interfaces graphiques pour nos collègues non-spécialistes en bioinformatique, directement sur une simple page web statique, sans avoir besoin de serveur. Et Justement, un biologiste m'a demandé s'il était possible de générer un fichier [FASTQ](https://fr.wikipedia.org/wiki/FASTQ) réduit, autrement dit de faire un échantillonnage aléatoire (downsampling). C'était donc une excellente occasion de tester Biowasm en construisant une page web qui fait le travail.
 
-## Crér la page web static 
+## Créer la page web static 
 
 L'interface graphique se résume à l'essentiel : un bouton pour charger le fichier FASTQ, un champ pour saisir le nombre de reads souhaités, et un gros bouton pour lancer la transformation. Impossible de faire plus simple !
 J'ai construit cette interface en HTML pur, en utilisant la bibliothèque CSS [PicoCSS](https://picocss.com/). Pour être honnête, je n'ai pas trop aimé coder tout ça à la main. Après avoir gouté à plusieurs frameworks web, et à [TailwindCSS](https://tailwindcss.com/), c'était laborieux. Mais pour ce projet simple, ça faisait largement l'affaire.
