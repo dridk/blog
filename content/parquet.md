@@ -27,7 +27,7 @@ des opérations de façon très efficace sur les colonnes au détriment des opé
 
 
 <div class="figure">
-<img src="../images/parquet/row_vs_col.png" />
+<img src="images/parquet/row_vs_col.png" />
 <div class="legend"> À gauche, un tableau de donnée. En haut à droite, la représentation en
 mémoire du tableau orienté ligne. En bas à droite, la représentation orientée
 colonne. <a href="https://datacadamia.com/data/type/relation/structure/column_store"> source </a>
