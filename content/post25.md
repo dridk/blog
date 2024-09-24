@@ -4,7 +4,7 @@ Date: 2017-07-23 11:26:45
 Tags: puce,sonde,adn,exome,mas,dmd
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
+SIDEBARIMAGE:images/common/dnaquestion_banner.jpg
 
 Pour séquencer un [exome](https://fr.wikipedia.org/wiki/Exome), il faut d'abord capturer toutes les séquences exoniques. Une méthode est d'utiliser des sondes [oligonucléotidiques](https://fr.wikipedia.org/wiki/Oligonucl%C3%A9otide) qui s'hybrident spécifiquement sur les [exons](https://fr.wikipedia.org/wiki/Exon). Ce qui demande une connaissance préalable des séquences codantes, mais aussi une technologie capable de fabriquer des millions de sondes avec leurs séquences déterminées.  
 Comment ces sondes sont produites ? 
@@ -23,12 +23,12 @@ Recommencer la procédure, mais cette fois en inondant avec que du C, et ainsi d
 La vidéo ci-dessous résume bien ce cycle de synthèse. 
 
 <div class="figure">
-    <img src="../images/post25/MAS1.png" /> 
+    <img src="images/post25/MAS1.png" /> 
     <div class="legend">Illustration de la technologie MAS</div>
 </div>
 
 <div class="figure">
-<video controls src="../images/post25/media2.webm"> Synthèse des oligonucléotides</video>
+<video controls src="images/post25/media2.webm"> Synthèse des oligonucléotides</video>
 </div>
 
 ## Digital Micromirror Device (DMD)
@@ -37,7 +37,7 @@ Ils utilisent pour cela, des matrices de micro-miroirs de 16µm chacun. Il s'agi
 Jetez un oeil sur cette dernière vidéo résumant mes propos.
 
 <div class="figure">
-<video controls src="../images/post25/media1.webm"> Matrices de micro-miroirs</video>
+<video controls src="images/post25/media1.webm"> Matrices de micro-miroirs</video>
 </div>
 
 ## Références

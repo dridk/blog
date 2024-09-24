@@ -5,7 +5,7 @@ Modified: 2020-11-08 15:32:40
 Tags: python, langage, parseur
 Category:informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 Un [DSL](https://fr.wikipedia.org/wiki/Langage_d%C3%A9di%C3%A9) ( Domain Specific Language ) est un langage de programmation créé pour une tâche spécifique à l'inverse des langages de programmation usuels comme [Python](https://www.python.org/). On peut s'en servir par exemple pour créer des petits langages maison utilisés au sein d'une application.     
 Dans ce billet, je vais vous montrer en Python, comment créer un langage pour contrôler le mouvement d'un robot fictif grâce à la librarie [textX](https://textx.github.io/textX/stable/). 
@@ -143,7 +143,7 @@ dot -Tpng -O robot.txt.dot
 display robot.txt.dot.png
 ```
 
-<div class="figure">     <img src="../images/textx/robot.txt.dot.png" />      <div class="legend"> Arbre syntaxique des 3 commandes du fichier robot.txt</div> </div>
+<div class="figure">     <img src="images/textx/robot.txt.dot.png" />      <div class="legend"> Arbre syntaxique des 3 commandes du fichier robot.txt</div> </div>
 
 ## Conclusion 
 Dans ce billet, j'ai présenté un cas très simple à visée pédagogique. Mais vous pouvez aller plus loin en créant des parseurs aussi complexes que des parseurs SQL ou JSON. Après, attention, n'utilisez pas ce genre d'outil pour réinventer la roue. Il existe déjà des langages (comme Python) qui font très bien les choses. Personnellement, j'ai créée un DSL dans mon logiciel cutevariant pour pouvoir facilement créer des filtres en ligne de commande sans avoir à passer par les contrôleurs d'une interface graphique. Vous pouvez jeter un oeil sur ma grammaire [ici](https://github.com/labsquare/cutevariant/blob/master/cutevariant/core/vql.tx).    

@@ -5,13 +5,13 @@ Modified: 2018-09-30 23:52:18
 Tags: graphe
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/graph_banner.png
+SIDEBARIMAGE:images/common/graph_banner.png
 
 Cela fait plusieurs jours que je m'éclate sur un jeu [android](https://fr.wikipedia.org/wiki/Android) appelé « [The rusty lake hostel](https://store.steampowered.com/app/435120/Rusty_Lake_Hotel/) ». Il s'agit d'une sorte d'escape game en [point & click ](https://fr.wikipedia.org/wiki/Pointer-et-cliquer) ou vous devez résoudre des énigmes. Parmi celles-ci, il y en a une qui m'a donné du fil à retordre et qui m'a contraint à écrire du code pour la résoudre. 
 Il s'agit d'une énigme composée de 3 bouteilles de volumes différents : la première de **10** litres , la deuxième de **5** litres et la troisième de **6** litres. En début de partie,  la première bouteille contient 10 litres d'eau sur les 10, la deuxième 1 litre sur les 5 et la troisième est vide.    
 Le but du jeu est de réussir à avoir 8 litres dans la première en vidant les bouteilles les unes dans les autres successivement. 
 
-<div class="figure">     <img src="../images/rusty_lake/base.jpg" />      <div class="legend">Trois bouteilles.</div> </div>   
+<div class="figure">     <img src="images/rusty_lake/base.jpg" />      <div class="legend">Trois bouteilles.</div> </div>   
 
 En essayant à tâtons et en réfléchissant, vous trouverez surement la réponse en un temps raisonnable. Mais j'ai préféré écrire du code qui réfléchisse pour moi afin d'être plus systématique et parce que c'est plus rigolo. J'ai d'abord pensé à de la programmation logique avec [Prolog](https://fr.wikipedia.org/wiki/Prolog) ou [Answer Set Programming](https://fr.wikipedia.org/wiki/Answer_set_programming). Mais n'étant pas à l'aise dans ces langages, j'ai demandé à un copain, Aluriak, qui s'est fait une joie de résoudre ce problème en ASP et dont les résultats [sont dispo sur son blog](https://lucas.bourneuf.net/blog/asp-temporal.html).       
 De mon côté, j'ai choisi une approche algorithmique en construisant un graphe résumant tous les états possibles associés à leurs transitions. Le notebook est disponible [ici](https://github.com/dridk/notebook/blob/master/rusty_lake/rusty_lake.ipynb) .
@@ -25,7 +25,7 @@ Si vous videz la deuxième bouteille dans la troisième, vous obtenez l'état **
 Si vous videz la première bouteille dans la troisième vous obtenez l'état **(4,1,6)**.    
 Il n'y a pas d'autre possibilité, comme illustré ci-dessous :
 
-<div class="figure">     <img src="../images/rusty_lake/graphe_base.png" />      <div class="legend">À partir de l'état (10,1,0) il y a trois façons différentes de transvaser l'eau.</div> </div>   
+<div class="figure">     <img src="images/rusty_lake/graphe_base.png" />      <div class="legend">À partir de l'état (10,1,0) il y a trois façons différentes de transvaser l'eau.</div> </div>   
 
 Nous pouvons alors recommencer ce processus à partir de chacun des nouveaux états et construire successivement les autres états dans un [graphe orienté](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9).      
 Pour cela, j'ai utilisé [Python](https://www.python.org/download/releases/3.0/) et la librairie [networkx](https://networkx.github.io/) en représentant chaque état par un [tuple](http://apprendre-python.com/page-apprendre-tuples-tuple-python) de dimension 3.   
@@ -100,7 +100,7 @@ nx.draw(graph, with_labels=True)
 
 Voilà ce qu'on obtient comme graphe. Et comme vous pouvez l'observer en jaune, il y a l'état **(8,0,3)** avec les 8 litres dans la première bouteille. C'est l'état que nous cherchons à atteindre.
 
-<div class="figure">     <img src="../images/rusty_lake/graphe.png" />      <div class="legend">Graphe de l'ensemble des états possibles avec 7 mouvements.</div> </div> 
+<div class="figure">     <img src="images/rusty_lake/graphe.png" />      <div class="legend">Graphe de l'ensemble des états possibles avec 7 mouvements.</div> </div> 
 
 ## La solution
 

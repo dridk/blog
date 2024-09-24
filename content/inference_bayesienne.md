@@ -5,7 +5,7 @@ Modified: 2020-03-27 19:40:47
 Tags: statistique, machine learning, python
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/stat_banner.jpg
+SIDEBARIMAGE:images/common/stat_banner.jpg
 
 
 Cela fait un moment que j'avais envie de publier sur l'*inférence bayésienne*. Mon intérêt pour ce sujet a été éveillé par la lecture du livre [La formule du savoir](https://laboutique.edpsciences.fr/produit/1035/9782759822614/La%20formule%20du%20savoir) par [Nguyên Hoang Lê](https://fr.wikipedia.org/wiki/L%C3%AA_Nguy%C3%AAn_Hoang). En deux mots, l'inférence bayésienne est une méthode qui permet de donner une crédibilité à nos croyances en s'appuyant sur nos observations et nos *a priori*. 
@@ -17,7 +17,7 @@ On peut, cependant, être tenter de faire l'inverse. C'est à dire d'**inférer*
 En général, les observations peuvent être suffisemment décrites et mesurées alors que la connaissance des causes ou des théories sous-jacentes est la plupart du temps hors de portée. Grâce à l'inférence bayésienne il devient possible de mesurer, à partir de l'observation et d'un *a priori*, la crédibilité d'une cause.     
 Dans la suite de ce billet, j'utiliserai les mots *hypothèses* et *donnée* que vous pouvez à tout moment remplacer par *cause* est *effets*.
 <center>
-<img src="../images/inference_bayesienne/predire_inferer.png" />      
+<img src="images/inference_bayesienne/predire_inferer.png" />      
 </center>
 
 
@@ -77,7 +77,7 @@ Je vous soumets à votre réflexion un exercice dans le contexte de la pandémie
 Dans l'exemple précédent de la personne câchée dans une boite, la distribution des probabilités des deux hypothèses, femme ou homme, peut être représentée par une [distribution](https://fr.wikipedia.org/wiki/Liste_de_lois_de_probabilit%C3%A9#Distributions_discr%C3%A8tes) discrète à deux événements. Nous pouvons généraliser le problème en augmentant le nombre d'hypothèses. Par exemple, chercher la probabilité que la personne dans la boite soit blond(e), brun(e), roux, châtain ou , pour allez encore plus loin, des hypothèses sur la taille. Dans ce cas, il y a une infinité d'hypothèses et la distribution discrète tend vers une [densité de probabilité ](https://fr.wikipedia.org/wiki/Variable_al%C3%A9atoire_%C3%A0_densit%C3%A9) d'une variable aléatoire continue.
 
 <center>
-<img src="../images/inference_bayesienne/distr_continue.png" />      
+<img src="images/inference_bayesienne/distr_continue.png" />      
 </center>
 
 Pour calculer la probabilité d'une variable (ou hypothèse) $x$ connaissant les probabilités des données, la formule de Bayes s'applique de la même façon, sauf que la somme au dénominateur devient une intégrale :
@@ -123,7 +123,7 @@ $$\theta \sim \text{Beta}(a, b)$$
 La forme de cette loi bêta dépend de deux paramètres $a$ et $b$, comme cela est illustré dans la figure ci-dessous.  
 
 <div class="figure">
-    <img src="../images/inference_bayesienne/beta.png" />      
+    <img src="images/inference_bayesienne/beta.png" />      
     <div class="legend">différentes formes de la loi bêta selon les paramètres a et b 
     </div>
 </div>   
@@ -180,14 +180,14 @@ plt.plot(x,y)
 ```
 
 <div class="figure">
-    <img src="../images/inference_bayesienne/posteriori.png" />      
+    <img src="images/inference_bayesienne/posteriori.png" />      
     <div class="legend">Distribution a-posteriori de θ avec un maximum autour de θ = 0,8. L'axe des absisses correspond aux valeurs possible de θ, l'axe des ordonnées à leurs probabilités </div>  
 </div>
 
 Pour mieux comprendre ce graphique, j'ai calculé l' *a-posteriori* avec un nombre croissant d'observations : 
 
 <div class="figure">
-    <img src="../images/inference_bayesienne/plot.svg" />      
+    <img src="images/inference_bayesienne/plot.svg" />      
     <div class="legend"> Distribution des probabilités θ en augmentantle nombre d'observations. Plus les données s'accumulent, plus le maximum de la distribution se stabilise autour de θ = 0,8. </div>   
 </div>
 
@@ -222,7 +222,7 @@ az.plot_trace(trace)
 ```
 
 <div class="figure">
-    <img src="../images/inference_bayesienne/arviz.png" />      
+    <img src="images/inference_bayesienne/arviz.png" />      
     <div class="legend">Distribution des probabilités de θ avec <a href="https://en.wikipedia.org/wiki/Credible_interval)(Highest Posterior Density interval"> l'interval de crédibilité appelé HPD. </a>  </div>  
 </div>
 

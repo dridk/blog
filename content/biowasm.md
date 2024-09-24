@@ -5,7 +5,7 @@ Modified: 2024-09-22 19:30:31
 Tags: web
 Category: informatique
 Author: Sacha schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 
 Récemment, une collègue m'a fait découvrir [Biowasm](https://biowasm.com/). C'est une collection d'outils bioinformatiques bien connus, compilés en [WebAssembly](https://fr.wikipedia.org/wiki/WebAssembly). Concrètement, cela signifie que nous pouvons créer des interfaces graphiques pour nos collègues non-spécialistes en bioinformatique, directement sur une simple page web statique, sans avoir besoin de serveur. Et Justement, un biologiste m'a demandé s'il était possible de générer un fichier [FASTQ](https://fr.wikipedia.org/wiki/FASTQ) réduit, autrement dit de faire un échantillonnage aléatoire (downsampling). C'était donc une excellente occasion de tester Biowasm en construisant une page web qui fait le travail.

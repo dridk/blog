@@ -5,7 +5,7 @@ Modified: 2020-04-12 14:45:57
 Tags: math, equation
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 Dans ce billet nous allons définir et apprendre à résoudre [des équations différentielles ordinaires](https://fr.wikipedia.org/wiki/%C3%89quation_diff%C3%A9rentielle_ordinaire) à l'aide du langage Python.
 Nous traiterons ensuite un cas pratique en modélisant une épidémie avec un [modèle SIR](https://interstices.info/modeliser-la-propagation-dune-epidemie/) pour faire écho à la situation actuelle.     
@@ -56,7 +56,7 @@ plt.ylabel("Nombre de bactérie")
 ```
 
 <div class="figure">
-    <img src="../images/equa_diff/bact_1.png" /> 
+    <img src="images/equa_diff/bact_1.png" /> 
     <div class="legend"> </div>
 </div>
 
@@ -102,7 +102,7 @@ plt.plot(t, y, "bo", color="#a81b22")
 ```
 
 <div class="figure">
-    <img src="../images/equa_diff/bact_2.png" /> 
+    <img src="images/equa_diff/bact_2.png" /> 
     <div class="legend"> </div>
 </div>
 
@@ -141,7 +141,7 @@ plt.ylabel("Nombre de bactérie")
 plt.plot(t, y, "bo", color="#a81b22")
 ```
 <div class="figure">
-    <img src="../images/equa_diff/bact_3.png" /> 
+    <img src="images/equa_diff/bact_3.png" /> 
     <div class="legend"> </div>
 </div>
 
@@ -153,7 +153,7 @@ Dans ce modèle à trois compartiments, la population est constante. Le nombre d
 De même, le nombre de patients rétabli dépend du nombre d'infecté et d'un paramètre γ. À chaque instant t, le nombre de patients rétablis augmente donc de $\gamma \times I(t)$. 
 
 <div class="figure">
-    <img src="../images/equa_diff/schema_sir.png" /> 
+    <img src="images/equa_diff/schema_sir.png" /> 
     <div class="legend"> Modèle à trois compartiments avec deux constantes de transfert décrivant l'évolution de la population durant une épidémie. </div>
 </div>
 
@@ -215,7 +215,7 @@ plt.title(f"Proportion des individus durant une épidémie modélisé par MIR av
 
 
 <div class="figure">
-    <img src="../images/equa_diff/MIR.png" /> 
+    <img src="images/equa_diff/MIR.png" /> 
     <div class="legend">Evolution en pourcentage des 3 populations (saines, infectées, guéries) au cours du temps à l'aide d'un modèle SIR paramétré par  β=0.5 et γ=0.1 </div>
 </div>
 

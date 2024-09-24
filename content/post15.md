@@ -4,7 +4,7 @@ Date: 2016-04-29 12:55:48
 Tags: parasitologie,paludisme
 Category: biologie
 Author: Thibaud Guillaud-Saumur
-SIDEBARIMAGE:../images/common/plasmodium_banner.jpg
+SIDEBARIMAGE:images/common/plasmodium_banner.jpg
 
 « *Quel est l’animal le plus meurtrier au monde ?* » On entend souvent cette question, et une fois passés les requins blancs, serpents et autres méduse-boîtes vient toujours un petit malin pour répondre « *Le moustique !* ».
 Bon ok il n’a pas tort le petit malin. Mais pour être plus précis le moustique n’est qu’un taxi pour le vrai tueur numéro 1 sur cette planète. On l’appelle la **Malaria**, le « mauvais air » mais la maladie est plus connue sous le nom de **Paludisme** et cause [500 000 morts par an dans le monde](http://www.who.int/mediacentre/factsheets/fs094/fr/). Le parasite en cause est un protozoaire appelé *Plasmodium* qui regroupe plusieurs espèces (*P. falciparum*, *P. malariae*, *P. vivax*, etc).
@@ -18,7 +18,7 @@ Plus de fromage rapé dans le frigo ? C’est le parasite.
 Il est important de préciser que ce n’est qu’un mode de vie parmi d’autre. Un moyen pour un organisme de trouver l’énergie suffisante pour se reproduire. Nous, humains, avons trouvé une autre méthode commune à de nombreux autres animaux sur cette planète : la prédation. Le prédateur va chasser et tuer sa proie. La relation entre le prédateur et la proie est courte et sanglante, l’un imposant une pression de sélection sur l’autre. Les proies plus adaptées à échapper à leur prédateur vont survivre, se reproduire, et transmettre ce caractère à leur descendance perpétuant leurs gènes. Tandis que l'information génétique des proies tuées est perdu.
 
 <p align="center">
-    <img src="../images/post15/predationproie.png">
+    <img src="images/post15/predationproie.png">
 </p>
 
 Dans le cas du parasitisme si le bilan est le même, un transfert d'énergie entre deux organismes, la relation différente. Notre parasite vit au contact de son hôte, parfois pendant une courte période de sa vie, mais parfois pendant des années comme le ver solitaire ou  [Ténia](https://fr.wikipedia.org/wiki/Taenia_saginata). Les deux organismes se côtoient de manière très étroite et le système immunitaire de l’hôte joue un peu le rôle du prédateur qui cherche à éliminer le parasite. Et comme la gazelle qui a évolué pour fuir plus rapidement les lions, les parasites évoluent également pour échapper à notre système immunitaire… Et pour cela ils redoublent d’ingéniosité !
@@ -30,7 +30,7 @@ Ce n’est pas un problème contre les [virus](https://fr.wikipedia.org/wiki/Vir
 Pourtant c’est la cachette qu’a choisi le paludisme ! Il n’a pas choisi la facilité, mais une fois à l’intérieur il passe totalement incognito... ou presque.
 
 <p align="center">
-    <img src="../images/post15/blood.jpg">
+    <img src="images/post15/blood.jpg">
 </p>
 
 
@@ -39,7 +39,7 @@ Mais le paludisme aurait-il fait l’erreur de trahir sa présence ? Voilà des 
 
 
 <p align="center">
-    <img src="../images/post15/redcell.png">
+    <img src="images/post15/redcell.png">
 </p>
 
 C’est la force du paludisme, comme de beaucoup d’autres parasites, d’être variable pour lutter contre la pression que leur impose notre immunité. C’est cette même variabilité antigénique qui rend si difficile l’élaboration d’un vaccin contre le fléau du paludisme !
@@ -48,7 +48,7 @@ Mais leur variabilité s’étend encore au-delà… Puisque les parasites doive
 ##Le cycle du paludisme
 
 <p align="center">
-    <img src="../images/post15/cycle.png">
+    <img src="images/post15/cycle.png">
 </p>
 
 Puisqu’il faut prendre un point de départ dans un cycle, prenons la piqure du moustique.
@@ -65,7 +65,7 @@ Un des exemples les plus frappants concerne la [drépanocytose](https://fr.wikip
 Un autre exemple concerne les groupes sanguins. Nos groupes sanguins sont des antigènes (faits de protéines, glucides et lipides) à la surface de nos globules rouges. Les groupes A, B, O sont les plus connus, mais il en existe d'autres et un des groupes sanguins mineurs, le [groupe Duffy](https://fr.wikipedia.org/wiki/Syst%C3%A8me_Duffy), est nécessaire à l'entrée de l'espèce *Plasmodium vivax* dans le globule rouge... On observe que cette espèce est absente de toute l'Afrique de l'ouest où la grande majorité de la [population est Duffy Négative!](http://www.ncbi.nlm.nih.gov/pubmed/17607593) Malheureusement, *Plasmodium vivax* a été remplacée dans ces régions par d'autres espèces de *Plasmodium* qui n'ont pas besoin de Duffy pour rentrer dans nos globules rouges (cartes du milieu et de droite).
 
 <p align="center">
-    <img src="../images/post15/carte.png">
+    <img src="images/post15/carte.png">
 </p>
 
 A quoi servent ces groupes sanguins d'ailleurs ?... Voilà une question qui sera traitée dans un prochain article sur ce blog !

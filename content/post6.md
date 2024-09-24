@@ -6,7 +6,7 @@ Category: informatique
 Author: Sacha Schutz
 
 <!-- <p align="center">
-    <img src="../images/post6/regular_expression.png">
+    <img src="images/post6/regular_expression.png">
 </p> -->
 Les expressions régulières, c'est super simple... Il suffit que quelqu'un les écrivent pour vous !  
 En effet, j'ai longtemps galéré avec les expressions régulières.. En fait, dès que j'avais affaire à elles, je demandais à quelqu'un de me l'écrire. C’était beaucoup plus rapide que de réfléchir par moi même! ( technique souvent employée en programmation). Mais voilà, ça c'était avant !

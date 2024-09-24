@@ -4,7 +4,7 @@ Date: 2016-08-02 21:42:51
 Category: informatique
 Tags: bioinformatique, génétique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
+SIDEBARIMAGE:images/common/dnaquestion_banner.jpg
 
 Nous avions vu dans un [précédent post](https://dridk.me/genome_chiffre_1.html) que le génome de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson) comptait un peu plus de 2 millions de variants par rapport au génome de référence; et qu'environ la moitié de ces variants étaient partagés avec [Craig Venter](https://fr.wikipedia.org/wiki/Craig_Venter).  
 Aujourd'hui, j'ai cherché à savoir si les densités des mutations à travers leurs génomes étaient semblables. Pour cela, j'ai fragmenté le génome en intervalles réguliers que j'appelle *bins*. J'ai ensuite compté pour chaque *bin* le nombre de variants chez Watson puis chez Venter. J'ai alors calculé la différence entre Watson et Venter pour chaque *bin* à l'aide d'un z-score.  
@@ -28,7 +28,7 @@ La commande que j'utilise est la suivante :
 Le schéma suivant représente les différentes étapes du pipeline.  
 
 <div class="figure">
-    <img src="../images/post19/pipeline.png" />
+    <img src="images/post19/pipeline.png" />
     <div class="legend">Graph du pipeline snakemake</div>
 </div>
 
@@ -36,7 +36,7 @@ Le schéma suivant représente les différentes étapes du pipeline.
 Si tout se passe bien vous devriez obtenir 3 images : *correlation.png*, *both.png* et *ideogram.png*  que vous pouvez voir ci-dessous.
 
 <div class="figure">
-    <img src="../images/post19/correlation.png" />
+    <img src="images/post19/correlation.png" />
     <div class="legend">Corrélation du nombre de SNP par bin entre Watson et Venter avec des bins de 1 Mpb</div>
 </div>
 
@@ -44,7 +44,7 @@ Le graphique *correlation.png* représente le nombre de SNP par *bin* entre Wats
 La corrélation est nette. Les régions riches en SNP chez Watson le sont également chez Venter.
 
 <div class="figure">
-    <img src="../images/post19/both.png" />
+    <img src="images/post19/both.png" />
     <div class="legend">Densités en variants par bin pour Watson (orange) et Venter (bleue)</div>
 </div>
 
@@ -52,7 +52,7 @@ Le graphique *both.png* montre les densités des variants par *bin* pour Watson 
 Les tendances générales des courbes semblent similaires.  
 
 <div class="figure">
-    <img src="../images/post19/ideogram.png" />
+    <img src="images/post19/ideogram.png" />
     <div class="legend">Différence des SNPs par bin entre Watson et Venter sur tout le génome.</div>
 </div>
 

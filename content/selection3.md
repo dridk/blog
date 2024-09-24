@@ -4,14 +4,14 @@ Date: 2017-09-11 12:22:09
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/selection_banner.jpg
+SIDEBARIMAGE:images/common/selection_banner.jpg
 summary: Voici ma sélection de l'actualité en génétique/génomique de la semaine du 04/09/2017. 
 
 Voici ma sélection de l'actualité en génétique/génomique de la semaine du 04/09/2017.
 
 ## Craig Venter publie un article montrant comment reconstruire un portrait robot à partir d'un génome... Quelques heures après, le papier se prend une sévère critique.
 
-<div class="figure"> <img src="../images/selection3/face.png" />  <div class="legend">SOURCE: PNAS</div>   </div>
+<div class="figure"> <img src="images/selection3/face.png" />  <div class="legend">SOURCE: PNAS</div>   </div>
 
 C'était l'ambiance sur twitter jeudi dernier, suite à [la dernière publication](http://www.pnas.org/content/early/2017/08/29/1711125114.abstract) de [Craig Venter](https://fr.wikipedia.org/wiki/Craig_Venter) et de son équipe [Human Longevity](http://www.humanlongevity.com/). Le papier sorti le 5 septembre dans [PNAS](http://www.pnas.org/) propose de reconstruire numériquement le visage, la voix, la couleur de la peau, l'âge et la taille d'un individu simplement à partir de son ADN. Pour cela, ils ont entrainé un algorithme sur 1061 patients en recherchant une corrélation entre les [SNPs](https://fr.wikipedia.org/wiki/Polymorphisme_nucl%C3%A9otidique) de leurs génomes et leurs valeurs biométriques. Puis ils ont testé leur intelligence artificielle avec une série de génomes anonymisés pour reconstruire leurs visages avec 74% de réussite!         
 Quelques heures après, c'est un déluge de critique qui tombe sur twitter. Et notamment [une review salée](http://www.biorxiv.org/content/early/2017/09/06/185330) de [Yaniv Erlich](https://twitter.com/erlichya?lang=fr) dans [biorxiv](http://www.biorxiv.org/content/early/2017/09/06/185330) publiée en des temps records. En résumé, les visages reconstruits ne sont pas assez précis pour reconnaitre un individu. À part si vous devez trouver un individu noir parmi 999 individus blancs.    
@@ -49,7 +49,7 @@ AddGene est une base de données de plasmide à but non lucratif. Mais le site c
 ## Single base editing avec CRISPR
 Encore un autre variant de CRISPR-CAS9. En l'associant à la protéine [APOBEC](https://en.wikipedia.org/wiki/APOBEC), on peut switcher [une Cytosine en Uracile](https://fr.wikipedia.org/wiki/%C3%89dition_(biologie)#Cytidine_en_Uridine) sans faire de coupure. 
 
-<div class="figure"> <img src="../images/selection3/singleBaseEditing_MG_2016_8_12-01.png" />  </div>
+<div class="figure"> <img src="images/selection3/singleBaseEditing_MG_2016_8_12-01.png" />  </div>
 
 [ http://blog.addgene.org/single-base-editing-with-crispr ](http://blog.addgene.org/single-base-editing-with-crispr)
 

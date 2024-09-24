@@ -4,7 +4,7 @@ Date: 2017-09-17 12:22:09
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/selection_banner.jpg
+SIDEBARIMAGE:images/common/selection_banner.jpg
 summary: Voici ma sélection de l'actualité en génétique/génomique de la semaine du 11/09/2017. 
 
 
@@ -42,7 +42,7 @@ Je rappelle qu'une explication génétique ne veut pas forcément dire hérédit
 
 ### Des Nano-bras robot fait avec de l'ADN 
 
-<div class="figure"> <img src="../images/selection4/nanorobot.gif" />  <div class="legend">SOURCE: PNAS</div>   </div>
+<div class="figure"> <img src="images/selection4/nanorobot.gif" />  <div class="legend">SOURCE: PNAS</div>   </div>
 
 [http://mobile.the-scientist.com/article/50325/cargo-sorting-dna-robots](http://mobile.the-scientist.com/article/50325/cargo-sorting-dna-robots)
 

@@ -5,7 +5,7 @@ Modified: 2021-01-25 23:51:29
 Tags: virus,pipeline,sars-cov-2,covid
 Category: bioinformatique
 Author: Sacha SCHUTZ
-SIDEBARIMAGE:../images/common/virus_banner.jpeg
+SIDEBARIMAGE:images/common/virus_banner.jpeg
 
 
 La [pandémie mondiale de Covid-19](https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19) a créé un élan sans précédent dans la production scientifique de données. Notamment, les données sur les génomes du virus produites par [séquençage haut débit](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l%27ADN#S%C3%A9quen%C3%A7age_haut_d%C3%A9bit_(HTS)) qui permettent aujourd'hui d'identifier de nouvelles mutations comme la [N501Y](https://fr.wikipedia.org/wiki/Variant_501.V2#Mutations) du variant anglais [B.1.1.7](https://fr.wikipedia.org/wiki/VOC-202012/01) où une [Asparagine](https://fr.wikipedia.org/wiki/Asparagine) (N) est remplacée par une [Tyrosine](https://fr.wikipedia.org/wiki/Tyrosine) (Y) à la position 501 de la [protéine S](https://fr.wikipedia.org/wiki/P%C3%A9plom%C3%A8re).     
@@ -87,7 +87,7 @@ Faisant d'une pierre deux coups, je trie le fichier par position, le convertit a
 Pour visualiser cet alignement, vous pouvez utiliser le logiciel **IGV** disponible à [cette adresse](http://software.broadinstitute.org/software/igv/). Une fois lancé, chargez d'abord le génome de Wuhan depuis le menu *Genomes > Load Genome From Server* en cherchant SARS-Cov-2. Puis chargez le fichier *SRR13182925.bam* précédemment créé via *File > Load From File*. 
 Vous obtiendrez ainsi la vue suivante où j'ai zoomé sur le gène S pour visualiser une mutation.  
 
-<div class="figure">     <img src="../images/covid_ngs/IGV.png" />      <div class="legend"> Visualisation des reads alignés sur le génome de référence avec le logiciel IGV. La flèche montre une mutation située sur le gène S visible sur l'ensemble des reads </div> </div>
+<div class="figure">     <img src="images/covid_ngs/IGV.png" />      <div class="legend"> Visualisation des reads alignés sur le génome de référence avec le logiciel IGV. La flèche montre une mutation située sur le gène S visible sur l'ensemble des reads </div> </div>
 
 ### Appel des variants et annotation 
 Vous pourriez parcourir l'alignement visuellement et chercher toutes les mutations. Mais il est préférable de procéder de façon automatique grâce à un [variant caller](https://www.researchgate.net/figure/Commonly-used-NGS-variant-calling-software-Download-information-for-these-software-is_tbl1_232077026). Pour cela j'utilise [freebayes](https://github.com/freebayes/freebayes), qui à partir du fichier BAM, crée un [fichier VCF](https://en.wikipedia.org/wiki/Variant_Call_Format) contenant l'ensemble des variants détectés. Avec [SnpSift](https://pcingola.github.io/SnpEff/), on garde uniquement les variants de bonne qualité avec un score superieur à 30 et on compresse avec [bgzip](http://www.htslib.org/doc/bgzip.html) le fichier pour pouvoir l'indexer avec [tabix](http://www.htslib.org/doc/tabix.html):
@@ -146,7 +146,7 @@ Puis j'ai réalisé un pipeline avec [Snakemake](https://snakemake.readthedocs.i
 Après quelques heures de calcul, j'ai finalement obtenu ce fichier VCF qui m'a permis d'analyser la fréquence des variants le long du génome que j'ai reporté dans le graphique suivant.       
 Au total, j'ai trouvé environ 630 variants répartis le long du génome dont 4 mutations particulièrement fréquentes.
 
-<div class="figure">     <img src="../images/covid_ngs/lollipop.png" />      <div class="legend"> Repartition des variants trouvés parmi les 245 génomes avec leurs fréquences </div> </div>
+<div class="figure">     <img src="images/covid_ngs/lollipop.png" />      <div class="legend"> Repartition des variants trouvés parmi les 245 génomes avec leurs fréquences </div> </div>
 
 Ces 4 mutations sont probablement la conséquence d'un processus de sélection.  
 En googlant, je trouve [ce papier](https://www.biorxiv.org/content/10.1101/2020.05.12.092056v1) présentant les mutations Thr265Ile and Gln57His comme exclusif à la population Nord-Américaines. Ce qui colle bien avec l'origine de nos données.   
@@ -157,7 +157,7 @@ Plus intéressant, est le variant Asp614Gly situé sur le gène (S) de la [prot�
 
 J'ai également reconstruit chaque génome que j'ai assigné à sa ligné avec l'outil [pangolin](https://github.com/cov-lineages/pangolin). J'obtient la distribution suivant: 
 
-<div class="figure">     <img src="../images/covid_ngs/lineage.png" />      <div class="legend"> Distribution des lignées de virus </div> </div>
+<div class="figure">     <img src="images/covid_ngs/lineage.png" />      <div class="legend"> Distribution des lignées de virus </div> </div>
 
 Nous pouvons voir ici la présence de ligné [B.1.2](https://cov-lineages.org/lineages/lineage_B.1.2.html) en grand nombre. D'après [le site cov-lineages](https://cov-lineages.org/), elle est exclusivement Nord-américaine est descend de la ligné [B.1](https://cov-lineages.org/lineages/lineage_B.1.html) apparu précocement et que l'on trouve partout dans le monde.
 Quand à la ligné [B.1.369](https://cov-lineages.org/lineages/lineage_B.1.369.html), elle a d'abord été vu en Océanie puis aux Etats-Unis à partir de Juin 2020.       

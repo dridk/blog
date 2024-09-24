@@ -5,7 +5,7 @@ Modified: 2018-10-17 20:43:30
 Tags: algorithme, machine learning
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/ia_banner.jpg
+SIDEBARIMAGE:images/common/ia_banner.jpg
 
 
 Si vous vous êtes déjà pencher sur l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), vous avez certainement du entendre parler de la méthode de [descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). Il s'agit d'un algorithme permettant de trouver rapidement le minimum d'une fonction mathématique. Pour faire simple, trouver *x* tel que *f(x)*  soit le plus petit possible. 
@@ -17,7 +17,7 @@ J'ai généré pour ce billet 100 points aléatoires (figure ci-dessous). Disons
 Sauf que pour l'exemple et parce que la majorité des modèles statistiques ne disposent pas de solution analytique, nous allons estimer ce paramètre par une méthode algorithmique: [La descente en gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient). 
 
 <div class="figure">
-    <img src="../images/gradient_descendant/observation.png" />      
+    <img src="images/gradient_descendant/observation.png" />      
     <div class="legend">Taille en fonction du poids pour 100 observations</div> </div>   
 
 ## Une erreur à minimiser 
@@ -56,7 +56,7 @@ def error(a):
 De façon naïve, nous pouvons tester toutes les valeurs du paramètre «a» et tracer la fonction objective. Visuellement cela donne une parabole dont le minimum correspond à la meilleur valeur «a».
 
 <div class="figure">
-    <img src="../images/gradient_descendant/naif.png" />      
+    <img src="images/gradient_descendant/naif.png" />      
     <div class="legend">Fonction objective: L'erreur en fonction du paramètre «a». L'erreur minimum se situe aux alentours de 3</div> </div>   
 
 Dans la vraie vie, on ne va  pas pouvoir s'amuser à tester toutes les valeurs des paramètres possibles. Si vous êtes par exemple avec un modèle à 20 paramètres, il y aurait beaucoup, beaucoup trop de combinaison à tester. C'est là qu'intervient la méthode de descente de gradient en faisant varier les paramètres d'un modèle de façon graduelle.
@@ -90,7 +90,7 @@ def derror(a):
 La figure ci-dessous montre les valeurs des pentes pour différentes valeurs de «a» allant de -10 à 10. Comme vous pouvez le constater, plus nous nous rapprochons du minimum et plus la pente diminue. Elle est négative à gauche et positive à droite. Pour trouver la bonne valeur de «a», il suffit de faire varier «a» proportionnellement à ce gradient. Si la pente diminue, on augmente «a», si elle augmente on diminue «a».
 
 <div class="figure">
-    <img src="../images/gradient_descendant/derivate.png" />      
+    <img src="images/gradient_descendant/derivate.png" />      
     <div class="legend">différente pente pour différente valeur de a</div> </div>   
 
 L'implémentation en python est alors triviale (ci-dessous). En partant de a=-20, je fais une boucle qui incrémente «a» d'une certaine valeur «g» égale au gradient divisé par la variable «taux». Cette variable, appelé taux d'apprentissage, permet d'ajuster la taille du pas. Si le taux d'apprentissage est grand, alors les pas seront plus petits, la précision du résultat sera bonne, mais mettra plus de temps à être atteint. À l'inverse, un taux d'apprentissage petit sera moins précis, mais plus rapide.     
@@ -118,7 +118,7 @@ Taille = Poid * 3.8.
 
 <center>
 <video controls>
-  <source src="../images/gradient_descendant/gradient.mp4" type="video/mp4">
+  <source src="images/gradient_descendant/gradient.mp4" type="video/mp4">
 
 Your browser does not support the video tag.
 </video>
@@ -130,7 +130,7 @@ Your browser does not support the video tag.
 Nous avons vu un exemple de descente en gradient pour évaluer un seul paramètre dans un modèle de régression linéaire. Dans d'autre modèle à plusieurs paramètres comme «a» et «b» de l'équation y = ax + b, la fonction d'erreur est une [équation multiparamètrique](https://www.khanacademy.org/math/multivariable-calculus) de la forme f(a,b).  Visuellement, il s'agit d'un surface en 3D ou vous allez faire varier les paramètres à l'aide de leurs dérivées partielles pour trouver le minimum. Il s'agit souvent d'un minimum local et différentes solutions existent pour pallier à ce problème ([Algorithme de gradient stochastique](https://fr.wikipedia.org/wiki/Algorithme_du_gradient_stochastique)). Un [bonne vidéo Youtube](https://www.youtube.com/watch?v=Q9-vDFvDdfg&t=612s) par [Science4All](https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A) explique cette méthode.
 
 <div class="figure">
-    <img src="../images/gradient_descendant/gradientDescent.jpg" />      
+    <img src="images/gradient_descendant/gradientDescent.jpg" />      
     <div class="legend">Descent en gradient pour 2 paramètres θ<sub>1</sub> et θ<sub>2</sub>. J(θ<sub>1</sub>,θ<sub>2</sub>) est la fonction objective </div> </div>   
 
 

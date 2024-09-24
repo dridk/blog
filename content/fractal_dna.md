@@ -20,20 +20,20 @@ Si tout se passe bien, et avec beaucoup de temps, vous devrez voir apparaitre le
 ## Le jeu du chaos appliqué à l'ADN  
 Au lieu d'utiliser un dé, nous pouvons utiliser une séquence d'ADN pour choisir les sommets avec cette fois un carré ou chaque sommet correspond aux nucléotides A,C,G,T. Pour chaque base lue dans la séquence, dessiner le point correspondant au centre du segment [P-nucléotide] puis continuer comme vu précédement jusqu'au dernier nucléotide. 
 
-<div class="figure">     <img src="../images/fractal_dna/CGR_DNA.png" />      <div class="legend">Construction d'une CGR pour la séquence CGT. A partir du centre, trouver le point P2 centre du segment [P1-C]. Puis P3 centre du segment [P2-G] et enfin P4 centre de [P3-T].</div> </div>
+<div class="figure">     <img src="images/fractal_dna/CGR_DNA.png" />      <div class="legend">Construction d'une CGR pour la séquence CGT. A partir du centre, trouver le point P2 centre du segment [P1-C]. Puis P3 centre du segment [P2-G] et enfin P4 centre de [P3-T].</div> </div>
 
 Avec un programme informatique c'est plus rapide. On peut alors executer l'algorithme sur de très longues séquences comme des génomes entiers. Et ça donne de très jolies images:
 
-<div class="figure">     <img src="../images/fractal_dna/CGR_exemple.png" />      <div class="legend">Exemple de CGR obtenu à partir de plusieurs espèces. <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1157-8">source</a></div> </div>
+<div class="figure">     <img src="images/fractal_dna/CGR_exemple.png" />      <div class="legend">Exemple de CGR obtenu à partir de plusieurs espèces. <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1157-8">source</a></div> </div>
 
 Pour comprendre ces graphiques appelés [CGR](https://www.ncbi.nlm.nih.gov/pubmed/2336393) (Chaos Game Representation), garder à l'esprit qu'à chaque point correspond une partie de la séquence lue. Par exemple il y a un point correspondant aux 4 premiers nucléotides et un autre point correspondant aux 20 premiers nucléotides. Si vous réfléchissez un peu, vous devinerez que toutes séquences commençant par un A dessine un point dans le quart inférieur gauche, celles commençant par un G dans le quart supérieur droit, ainsi de suite. Mais nous pouvons aller encore plus loin. Toutes les séquences commençant par CG, se trouvent dans le quart supérieur gauche du quart droit. Toutes les séquences commençant par TAG, dans le quart inférieur droit, du quart inférieur gauche, du quart supérieur droit. Cette dichotomie illustrée sur la figure ci-dessous permet d'associer à chaque séquence une coordonnée unique. Et si vous n'avez pas compris, allez faire un tour sur [cette page](http://ws.g-language.org/db/cgr/NT_011512/) et tapper n'importe quel séquence dans la barre de recherche.
 
-<div class="figure">     <img src="../images/fractal_dna/CGR_zoom.png" />      <div class="legend">Dichotomie de la CGR. Par exemple, toutes les séquences commencant par TAG se trouve dans une zone précise.</div> </div>
+<div class="figure">     <img src="images/fractal_dna/CGR_zoom.png" />      <div class="legend">Dichotomie de la CGR. Par exemple, toutes les séquences commencant par TAG se trouve dans une zone précise.</div> </div>
 
 ## Une méthode pour compresser l'ADN
 À part être jolie, à quoi ça sert ? Et bien plusieurs choses. Cette représentation apporte une information globale (sur toute la séquence) et une information locale (sur le contenu de la séquence). Par exemple, sur la figure suivante, vous pouvez voir un "trou" dans le quart G (supérieure droite). Ce motif se répète à plusieurs échelles ( dans les sous-quarts) et correspond à une dispersion des répétitions CG. ( [Ce pattern serait observé uniquement chez les vertébrés](https://www.ncbi.nlm.nih.gov/pubmed/2336393) ).      
 
-<div class="figure">     <img src="../images/fractal_dna/game7.png" />      <div class="legend">CGR d'une région contenant le gène de la beta globuline sur le chromosome 11. <a href="https://www.ncbi.nlm.nih.gov/pubmed/2336393"> source </a> </div> </div>
+<div class="figure">     <img src="images/fractal_dna/game7.png" />      <div class="legend">CGR d'une région contenant le gène de la beta globuline sur le chromosome 11. <a href="https://www.ncbi.nlm.nih.gov/pubmed/2336393"> source </a> </div> </div>
 
 On peut s'en servir aussi [comme une signature](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1157-8). Ou encore pour visualiser des réarrangements...     
 Mais ce que je préfère c'est l'utilisation de cet algorithme pour compresser une séquence d'ADN. En effet, plus haut je vous ai dit qu'à chaque séquence il y a un unique point. Par exemple avec la séquence ACGT, les coordonnées du dernier point sont unique à la séquence. Il n'y a que la séquence ACGT qui permet de produire ce point. On peut donc représenter n'importe quelle séquence par un couple de coordonnées (x,y) !     

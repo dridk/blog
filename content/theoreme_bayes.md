@@ -5,7 +5,7 @@ Modified: 2018-06-29 02:38:02
 Tags: statistique, épidémiologie
 Category: biologie
 Author: Sacha schutz
-SIDEBARIMAGE:../images/common/stat_banner.jpg
+SIDEBARIMAGE:images/common/stat_banner.jpg
 
 
 J'ai longtemps galéré avec les probabilités...     
@@ -16,7 +16,7 @@ Sur internet, les démonstrations de la formule s'aident souvent d'un exemple av
 Voici 10 patients dont 6 sont malades. Sont entourés les individus dont le test biologique est positif (par exemple un test grippal). Voyez ça comme si tous les gens testés positifs étaient confinés dans une zone de quarantaine. 
 
 <div class="figure">
-<img src="../images/bayes/intro.png" />
+<img src="images/bayes/intro.png" />
 <div class="legend"> En vert les patients sains, en rouge les patients malades. </div>
 </div>
 
@@ -25,7 +25,7 @@ Voici 10 patients dont 6 sont malades. Sont entourés les individus dont le test
 Commençons par un petit aparté sur l'efficacité d'un test qui s'évalue à l'aide de deux grandeurs. [La sensibilité et la spécificité](https://fr.wikipedia.org/wiki/Sensibilit%C3%A9_et_sp%C3%A9cificit%C3%A9). 
 
 <div class="figure">
-<img src="../images/bayes/sens_spec.png" />
+<img src="images/bayes/sens_spec.png" />
 <div class="legend">Sensibilité et spécificité d'un test biologique. Un test sensible détecte tous les malades. Un test spécifique ne se positive jamais chez des patients sains</div>
 </div>
 
@@ -51,20 +51,20 @@ Revenons à nos 10 individus et posons-nous les questions suivantes.
 #### Combien avons-nous de malades ? 
 
 <div class="figure">
-<img src="../images/bayes/sick_count.gif" width="250px" />
+<img src="images/bayes/sick_count.gif" width="250px" />
 <p>6 personnes sur 10 sont malades. Soit p(M) = 6/10</p>
 </div>
 
 
 #### Combien de personnes ont un test positif? 
 <div class="figure">
-<img src="../images/bayes/test_count.gif" width="250px" />
+<img src="images/bayes/test_count.gif" width="250px" />
 <p>5 personnes sur 10 ont un test postif. Soit p(T) = 5/10</p>
 </div>
 
 #### Combien de personnes sont malades ET avec un test positif? 
 <div class="figure">
-<img src="../images/bayes/inter_count.gif" width="250px" />
+<img src="images/bayes/inter_count.gif" width="250px" />
 <p>4 personnes sur 10 sont malade avec un test postif. Soit p(M et T) = 4/10</p>
 </div>
 
@@ -73,14 +73,14 @@ Ne dites pas « *La probabilité de A **sachant** B *» mais « *La probabilité
 
 #### Combien avons-nous de malades parmi les patients testés positifs ? 
 <div class="figure">
-<img src="../images/bayes/sick_in_test.gif" width="250px" />
+<img src="images/bayes/sick_in_test.gif" width="250px" />
 <p>Parmi les 5 tests positifs il y a 4 malades. <br/>
 Soit p(M|T) = p(M et T) / p(T) = 4 / 5</p>
 </div>
 
 #### Combien avons-nous de personnes testées positive parmi les malades? 
 <div class="figure">
-<img src="../images/bayes/test_in_sick.gif" width="250px" />
+<img src="images/bayes/test_in_sick.gif" width="250px" />
 <p>Parmi les 6 malades, 4 ont un test positif. <br/>
 Soit p(T|M) = p(M et T) / p(M) = 4 / 6.    
 Cette dernière formule correspond à la sensibilité du test </p>
@@ -102,7 +102,7 @@ En remplaçant ce terme, nous pouvons alors exprimer **p(M|T)** en fonction de *
 Et nous voilà alors, avec la fameuse formule de Bayes : 
 
 <center>
-<img src="../images/bayes/bayes.gif" />
+<img src="images/bayes/bayes.gif" />
 <p></p>
 </center>
 
@@ -122,7 +122,7 @@ Les seuls éléments que nous ayons à disposition sont la [prévalence](https:/
 Il faut alors réussir à calculer p(T).
 
 <div class="figure">
-<img src="../images/bayes/final.png" />
+<img src="images/bayes/final.png" />
 <p>p(T) est la somme de A=p(M et T) et B=p(non M et T) sur les 10 individus</p>
 </div>
 
@@ -134,7 +134,7 @@ p(T) se calcul en sommant <mark style="background-color:#F84AA9">le nombre de pa
 On peut alors écrire la loi totale de Bayes :
 
 <center>
-<img src="../images/bayes/total_bayes.gif" />
+<img src="images/bayes/total_bayes.gif" />
 <p>Loi totale de Bayes</p>
 </center>
 
@@ -145,7 +145,7 @@ Après vous avoir fait le test qui s'est négativé, quelle est la probabilité 
 
 
 <center>
-<img src="../images/bayes/muco.gif" />
+<img src="images/bayes/muco.gif" />
 <p>Attention subtilité: Ici p(Tneg|M) est égal à 1-sensibilité.<br/>La probabilité d'être porteur malgré la négativité du test est d'environ 1 chance sur 220 </p>
 </center>
 

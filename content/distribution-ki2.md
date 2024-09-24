@@ -20,7 +20,7 @@ Une distribution aléatoire, c'est juste une liste de nombres obtenus par une lo
 
 Si vous comptez la fréquence de chaque chiffre, c'est à dire combien de fois il y a de 2, de 3 etc ... Vous obtiendrez approximativement 1/6 qui correspond à la probabilité du dé pour chaque chiffre. Cette distribution suit une [loi de probabilité](https://fr.wikipedia.org/wiki/Loi_de_probabilit%C3%A9) dite "[uniforme](https://fr.wikipedia.org/wiki/Loi_uniforme_discr%C3%A8te)". Graphiquement, ça ressemble à ça :
 
-<div class="figure">     <img src="../images/distribution-ki2/uniform.png" />      <div class="legend"> Distribution uniforme. L'axe des abscisses représente le chiffre et l'axe des ordonnées le nombre de fois que ce chiffre est obtenu </div> </div>
+<div class="figure">     <img src="images/distribution-ki2/uniform.png" />      <div class="legend"> Distribution uniforme. L'axe des abscisses représente le chiffre et l'axe des ordonnées le nombre de fois que ce chiffre est obtenu </div> </div>
 
 
 ### La distribution normale 
@@ -34,7 +34,7 @@ Par exemple, pour générer une distribution de 10000 valeurs avec une espéranc
     #0.26 -0.38 -1.15 -0.81 1.53 1.11 0.45 -1.09 -0.15 ....
     sns.distplot(x)
 
-<div class="figure">     <img src="../images/distribution-ki2/normal.png" />      <div class="legend"> Distribution normale. La majorité des valeurs tourne autour de 0</div> </div>
+<div class="figure">     <img src="images/distribution-ki2/normal.png" />      <div class="legend"> Distribution normale. La majorité des valeurs tourne autour de 0</div> </div>
 
 ### La distribution de χ2
 La distribution de χ2 est obtenu en sommant les carrés de k nombres indépendants choisis au hasard dans une distribution normale d'espérance 0 et de variance 1.
@@ -67,7 +67,7 @@ En testant avec différents degrés de liberté :
     for ddl in range(1,10):
         sns.distplot(dist_ki2(ddl, 1000))
 
-<div class="figure">     <img src="../images/distribution-ki2/ki2_anim.gif" />      <div class="legend"> Différente distribution de ki2 </div> </div>
+<div class="figure">     <img src="images/distribution-ki2/ki2_anim.gif" />      <div class="legend"> Différente distribution de ki2 </div> </div>
 
 Essayer pour voir avec un degré de liberté > 100. Vous constaterez qu'on se retrouve avec une distribution d'allure normale d'espérance k et de variance 2k. 
 

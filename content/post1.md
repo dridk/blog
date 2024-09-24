@@ -6,7 +6,7 @@ Slug: first-post
 Author: Sacha Schutz
 
 <!-- <p class="img-header">
-    <img src="../images/post1/header.jpg">
+    <img src="images/post1/header.jpg">
 </p> -->
 
 Hello, à tous ! 

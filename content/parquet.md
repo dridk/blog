@@ -5,7 +5,7 @@ Modified: 2023-3-12 19:30:31
 Tags: datascience,python
 Category: informatique
 Author: Sacha schutz
-SIDEBARIMAGE:../images/common/data_banner.jpeg
+SIDEBARIMAGE:images/common/data_banner.jpeg
 
 
 Cela fait un bon moment que j'entends parler des [fichiers Parquet](https://fr.wikipedia.org/wiki/Apache_Parquet). Un format binaire beaucoup plus léger
@@ -41,7 +41,7 @@ c'est à dire l'écriture et la lecture d'un fichier parquet sera très performa
 
 
 <div class="figure">
-<img src="../images/parquet/arrow.png" />
+<img src="images/parquet/arrow.png" />
 <div class="legend"> Sans Arrow, il est nécessaire de faire des conversions et des copies coûteuses entre les 
 différentes sources de données. Le format mémoire agnostique d'Apache Arrow permet
 d'éviter toutes ces opérations coûteuses<a href="https://datacadamia.com/data/type/relation/structure/column_store"> sources. </a>

@@ -5,7 +5,7 @@ Modified: 2022-01-10 00:25:17
 Tags: datascience,graphe
 Category:informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/graph_banner.png
+SIDEBARIMAGE:images/common/graph_banner.png
 
 Pouvez vous me citer toutes les personnes ayant eu un Oscar et le prix Nobel ? Quelles sont les lieux de naissance de toutes les célébrités se prénommant Antoine ? Trouvez moi tous les médicaments qui cible des gènes liés à la prolifération cellulaire ?    
 Ce genre de question peut être difficile à répondre si vous utiliser seulement un moteur de recherche comme [Google](https://www.google.com/). Mais en utilisant une [ontologie](https://fr.wikipedia.org/wiki/Ontologie_(informatique)) et un langage dédié appelé [SPARQL
@@ -25,7 +25,7 @@ Par exemple, les 3 triplets suivant permettent de relier les [Rolling Stones](ht
 ```
 
 <div class="figure">
-<img src="../images/wikidata/graphe.png" />
+<img src="images/wikidata/graphe.png" />
 <div class="legend"> Exemple d'ontologie </div>
 </div>
 
@@ -95,7 +95,7 @@ Je vous invite à lire [ce tutoriel](https://www.wikidata.org/wiki/Wikidata:SPAR
 L’éditeur SPARQL de wikidata propose un bouton magique pour générer du code dans différents langages.
 
 <div class="figure">
-<img src="../images/wikidata/editor.png" />
+<img src="images/wikidata/editor.png" />
 <div class="legend"> Editeur SPARQL de wikidata </div>
 </div>
 
@@ -144,7 +144,7 @@ df.columns = ["groupe","pays","population"]
 J'ai juste mouliné le tout avec [geopandas](https://geopandas.org/en/stable/) sur un notebook jupyter disponible [ici](https://colab.research.google.com/drive/1PzdvHAeCxed9FtrAzpCRF5lKSmKGnfnQ?usp=sharing), et le tour est joué.
 
 <div class="figure">
-<img src="../images/wikidata/map.png" />
+<img src="images/wikidata/map.png" />
 <div class="legend"> Nombre de groupes de rock par pays</div>
 </div>
 

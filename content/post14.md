@@ -4,7 +4,7 @@ Date: 2016-02-27 10:57:22
 Tags: génétique, immunologie
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/immuno_banner.jpg
+SIDEBARIMAGE:images/common/immuno_banner.jpg
 
 Si vous lisez mon blog, vous avez sûrement constaté ma tendance à tracer des parallèles entre l'informatique et la génétique, notamment entre séquence d'ADN et séquence binaire. Dans cet article, nous allons à nouveau faire un parallèle qui peut paraître tout aussi surprenant : **La reconnaissance du soi**.   
 Du point de vue de l'informatique, il s'agit de vérifier si un fichier est bien le votre et qu'il n'a pas été modifié par un virus.   
@@ -37,7 +37,7 @@ Une cellule est définie par ses constituants. Dans notre cas, l'ensemble des pr
 La combinaison des peptides présentée à la surface est la signature ou l'empreinte de la cellule.  
 
 <p align="center">
-    <img src="../images/post14/cell_hla.png">
+    <img src="images/post14/cell_hla.png">
 </p>
 
 ### La reconnaissance du CMH
@@ -47,7 +47,7 @@ Plus tard, lors d'une infection par un virus, celui-ci génère de nouvelles pro
 
 
 <p align="center">
-    <img src="../images/post14/lymphoT.png">
+    <img src="images/post14/lymphoT.png">
 </p>
 
 
@@ -57,14 +57,14 @@ La variation allélique du CMH dans la population est la plus grande du génome.
 Telle une armée de soldats possédant chacun une arme différente, chaque individu possède une combinaison unique capable potentiellement de reconnaître les protéines virales. Ça passe ou ça casse ! Les individus qui réussissent à reconnaître le virus sont sélectionnés avec leurs allèles et vont à leur tour enrichir le patrimoine des gènes du CMH.  
 
 <p align="center">
-    <img src="../images/post14/frequence.jpg">
+    <img src="images/post14/frequence.jpg">
 </p>
 
 ### Greffe et rejet 
 La variation allélique des gènes du CMH permet à une population de lutter contre un virus. En revanche, cela pose problème lors des greffes d'organes. Nous l'avons vu plus haut, les lymphocytes T reconnaissent aussi bien le peptide que la molécule du CMH. Un organe d'un donneur, ne possède pas les mêmes molécules HLA que le receveur. Cette greffe sera donc reconnue comme étrangère par les lymphocytes T du receveur. Pour y remédier, on peut utiliser des immunosuppresseurs qui musèlent le système immunitaire. Mais c'est surtout la recherche d'une [compatibilité HLA](http://biblio.hmr.qc.ca/ciup/Publications_pdf/T/typage_hla_onc011.pdf) qui est systématiquement recherchée lors d'une greffe. Plus les allèles sont proches et moins le rejet sera sévère. On cherche donc à typer le profil HLA du donneur et du greffé. On fait appel à une nomenclature internationale définie sur [hla.alleles.org](http://hla.alleles.org/) et qui donne un identifiant pour chaque gène HLA. La figure suivante identifie un allèle pour le gène HLA-A. 
 
 <p align="center">
-    <img src="../images/post14/nomenclature.png">
+    <img src="images/post14/nomenclature.png">
 </p>
 
 ## Conclusion 

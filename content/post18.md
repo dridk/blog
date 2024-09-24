@@ -4,13 +4,13 @@ Date: 2016-07-12 18:59:16
 Category: biologie
 Tags: bioinformatique, génétique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/caryotype.jpeg
+SIDEBARIMAGE:images/common/caryotype.jpeg
 
 La trisomie 21 est un syndrome polymalformatif avec un retard mental, lié dans la majorité des cas à la présence d'un chromosome 21 surnuméraire.   
 En France, le [dépistage de la trisomie 21](http://www.has-sante.fr/portail/jcms/c_1165790/fr/strategies-de-depistage-de-la-trisomie-21-impact-et-mise-en-oeuvre) est proposé à toutes les femmes enceintes au 1er trimestre de grossesse. Ce dépistage consiste à calculer un score en [fonction de marqueurs sanguins](http://acces.ens-lyon.fr/acces/ressources/sante/epidemiologie/depistage_trisomie21/Points/points_marqueurs_seriques) (AFP, Papp-A, beta HCG) et des signes d'appel échographique comme [la clarté nuccale](https://fr.wikipedia.org/wiki/Clart%C3%A9_nucale). Si ce score dépasse un certain seuil, un diagnostic cytogénétique est proposé pour confirmer la trisomie. Il consiste à prélever des cellules fœtales par des techniques invasives comme l'[amniocentèse](https://fr.wikipedia.org/wiki/Amniocent%C3%A8se) et de dénombrer le nombre de chromosomes sur un [caryotype](https://fr.wikipedia.org/wiki/Caryotype) comme illustré ci-dessous. 
 
 <div class="figure">
-    <img src="../images/post18/caryotype.jpg" />
+    <img src="images/post18/caryotype.jpg" />
     <div class="legend">Caryotype présentant 3 chromosomes 21 au lieu de 2</div>
 </div>
 
@@ -25,7 +25,7 @@ L'idée derrière le DPNI c'est de quantifier l' excès d'ADN circulant provenan
 La figure ci-dessous illustre la quantification d'ADN circulant chez une mère sans et avec fœtus trisomique. En mesurant une différence significative entre une patient et des témoins sains, il est possible de conclure à un excès de d'ADN circulant provenant du chromosome 21.
 
 <div class="figure">
-    <img src="../images/post18/chromosomes.png" />
+    <img src="images/post18/chromosomes.png" />
     <div class="legend">On considère que 90% de l'ADN circulant provient de la mère et 10% du foetus. L'excès du chromosome 21 chez le foetus est caractérisé par une différence significatif entre 2.1 et 2.0</div>
 </div>
 
@@ -35,7 +35,7 @@ On obtient alors un fichier contenant la liste des reads associés à leurs posi
 La figure ci-dessous résume les étapes du séquençage ainsi que les différents formats de fichier. 
 
 <div class="figure">
-    <img src="../images/post18/ngs.png" />
+    <img src="images/post18/ngs.png" />
     <div class="legend">Les reads sont séquencés et sauvegardés dans un fichier fastQ. Les reads sont ensuite alignés sur le génome de référence hg19. En vert les reads provenant du foetus. En violet les reads maternels</div>
 </div>
 
@@ -47,7 +47,7 @@ Pour savoir si une patiente présente trop de reads, il suffit de rechercher une
 Le logiciel [RapidR](http://www.ncbi.nlm.nih.gov/pubmed/24990604) créé par le NHS utilise cette approche. Un exemple de résultats est présenté dans la figure suivante. 
 
 <div class="figure">
-    <img src="../images/post18/rapidR.png" />
+    <img src="images/post18/rapidR.png" />
     <div class="legend">En ordonnée le Z-score, en abscisse les chromosomes. Sur ce graphique, la patiente présente un excès significatif en read s’alignant sur le chromosome 21</div>
 </div>
 
@@ -55,7 +55,7 @@ Un autre logiciel, [Wisecondor](http://www.ncbi.nlm.nih.gov/pubmed/?term=wisecon
 Tout d'abord, le génome est segmenté en régions de 10 kilobases appelé *bin*. Le nombre de reads est comptabilisé par bin au lieu d'être comptabilisé par chromosome comme précédemment.       
 A partir des mesures chez les témoins sains, les bins du chromosome 21 sont associés aux autres bins du génome lorsqu'ils contiennent plus ou moins le même nombre de reads. La figure suivante est une représentation de ces associations.  
 <div class="figure">
-    <img src="../images/post18/wisecondor.png" />
+    <img src="images/post18/wisecondor.png" />
     <div class="legend">Chaque chromosome est représenté avec leurs bins sur la circonférence du disque. Tous les bins du chromosome 21 sont associés aux bins des autres chromosomes. Ces relations sont utilisées comme référence témoins au sein du même échantillon. </div>
 </div>
 

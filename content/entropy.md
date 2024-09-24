@@ -5,7 +5,7 @@ Modified: 2019-02-09 11:56:40
 Tags: statistique,maths,café
 Category:informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/stat_banner.jpg
+SIDEBARIMAGE:images/common/stat_banner.jpg
 
 
 L'entropie, et plus généralement la théorie de l'information, est un concept essentiel en informatique. Publié par [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) en 1948 dans "[A mathematical theory of communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)", cette théorie a permis l'essor des communications modernes en passant par la téléphonie jusqu'aux transmissions des données massives par internet. On trouve également cette théorie dans [les algorithmes de compression](https://fr.wikipedia.org/wiki/Compression_de_donn%C3%A9es), les statistiques ou encore en [intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle). Sans oublier bien-sûr la bio-informatique avec l'analyse de notre support d'information préféré : l'ADN. 
@@ -15,7 +15,7 @@ Ce billet a pour objectif de vous faire comprendre ce qu'est l'entropie au sens 
 ## Une mesure de l'incertitude
 L'entropie peut être vue comme une mesure de l'incertitude d'un événement en fonction de la connaissance que nous avons. Par exemple depuis que je suis petit, le soleil se lève tous les jours. Je suis donc certain qu'il se lèvera demain. En revanche, il est incertain que je croise aujourd'hui un chat noir dans la rue. Cela m'est déjà arrivé plusieurs fois, mais rien ne garantit que cela arrive aujourd'hui. Pour lever cette incertitude, je dois récupérer une certaine quantité d'**information**...
 
-<div class="figure">     <img src="../images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
+<div class="figure">     <img src="images/entropy/draw.png" />      <div class="legend"> Vous ne pouvez recevoir qu'une réponse par oui ou par non. Utiliser votre carnet pour poser le minimum de question </div> </div>
 
 
 L'entropie est une valeur qui quantifie cette incertitude.
@@ -29,7 +29,7 @@ Combien de questions au minimum allez-vous poser au gardien du phare pour lever 
 En regardant votre carnet, vous constatez qu'il y a eu de la pluie 50% du temps et du soleil 50% du temps. 
 
 <center>
-<img src="../images/entropy/bar_plot_1.png" /> 
+<img src="images/entropy/bar_plot_1.png" /> 
 </center>
 
 Il y a donc 1 chance sur 2 pour qu'il pleuve aujourd'hui. Pour connaître la réponse, vous appelez le phare et lui posez une seule et unique question: 
@@ -46,7 +46,7 @@ Plus précisément, le phare vous a envoyé **1** [bit](https://fr.wikipedia.org
 Imaginez cette fois avoir noté dans votre carnet : Pluie : 100% du temps , Soleil : 0%, Orage : 0% , Neige : 0%. 
 
 <center>
-<img src="../images/entropy/bar_plot_4.png" /> 
+<img src="images/entropy/bar_plot_4.png" /> 
 </center>
 
 Dans ce cas, vous ne poserez aucune question au phare. Vous êtes certain qu'il va pleuvoir. Le phare vous transmet donc 0 bit d'information. L'incertitude est nulle.
@@ -56,13 +56,13 @@ Dans ce cas, vous ne poserez aucune question au phare. Vous êtes certain qu'il 
 Cette fois vous avez 4 prévisions différentes notées dans votre carnet. Pluie 25% du temps, Soleil 25% du temps, Neige 25% du temps, Orage 25% du temps. C'est-à-dire 1 chance sur 4 pour chaque prévision.
 
 <center>
-<img src="../images/entropy/bar_plot_2.png" /> 
+<img src="images/entropy/bar_plot_2.png" /> 
 </center>
 
 En réflechissant, vous trouverez qu'il faut suivre un arbre décisionnel en posant 2 questions au minimum pour lever votre incertitude.
 
 <center>
-<img src="../images/entropy/decision.png" /> 
+<img src="images/entropy/decision.png" /> 
 </center>
 
 Le phare vous envoie par exemple 2 signaux rouges ( non et non ). Vous en concluez qu'il y aura un orage aujourd'hui.
@@ -94,7 +94,7 @@ Imaginez maintenant que les prévisions de votre carnet ne soient pas équiproba
 50% de pluie, 25% de soleil, 12.5% neige et 12.5% orage.
 
 <center>
-<img src="../images/entropy/bar_plot_3.png" /> 
+<img src="images/entropy/bar_plot_3.png" /> 
 </center>
 
 
@@ -103,7 +103,7 @@ Mais en raisonnant sur plusieurs jours, l'économie est évidente. Dans 50% des 
 Donc en moyenne, l'arbre décisionnel suivant est le plus économique sur le temps: 
 
 <center>
-<img src="../images/entropy/decision2.png" /> 
+<img src="images/entropy/decision2.png" /> 
 </center>
 
 
@@ -152,7 +152,7 @@ Il y a aussi [le principe d'entropie maximale](https://fr.wikipedia.org/wiki/Pri
 Je n'oublie quand même pas de conclure avec l'ADN, dont la séquence peut être vue comme une suite de 4 événements aléatoires (A,C,G,T) à l'instar de nos prévisions météorologiques. Par exemple, nous pouvons aligner plusieurs séquences d'ADN et calculer la fréquence des 4 nucléotides puis l'entropie sur chaque position. Vous pouvez alors quantifier une certitude (2-entropie) sur la présence d'un nucléotide dans un motif particulier. C'est ce qui est illustré dans le [logo-plot](https://en.wikipedia.org/wiki/Sequence_logo) ci-dessous. Regardez la légende sur l'axe des ordonnées qui vous donne une echelle en bits sur la certitude (2 - entropie ) quand à la présence d'un nucléotide dans le motif.
 
 <center>
-<img src="../images/entropy/logo_plot.png" /> 
+<img src="images/entropy/logo_plot.png" /> 
 </center>
 
 

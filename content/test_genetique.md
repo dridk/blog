@@ -5,14 +5,14 @@ Modified: 2019-04-08 20:07:20
 Tags: génétique,café
 Category: bioinformatique 
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
+SIDEBARIMAGE:images/common/dnaquestion_banner.jpg
 
 
 [MyHeritage](https://www.myheritage.fr/), [23andMe](https://www.23andme.com), [Ancestry](https://www.ancestry.fr/)… Vous en avez sûrement entendu parler. Bien qu'interdits en France [(article 16-10)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070721&idArticle=LEGIARTI000006419305&dateTexte=&categorieLien=cid), ces tests génétiques en libre accès bénéficient pourtant d'une bonne publicité.
 Depuis peu, elle se fait par l'intermédiaire de YouTube. [Amixem](https://www.youtube.com/watch?v=by168cgLmw0), [Squeezie](https://www.youtube.com/watch?v=xrkmdXyOaHg) et plus récemment [Dr Nozman](https://www.youtube.com/watch?v=rEY-smTTLto) ont fait ces tests, puis ont partagé leurs résultats en vidéo. Devant cet engouement, j'ai voulu savoir quelles informations étaient rendues à l'utilisateur et si des diagnostics médicaux pouvait être établis d'après les résultats.   
 
 
-<div class="figure">     <img src="../images/test_genetique/23andme.png" />      <div class="legend">Promotion 23andMe pour la fête des pères. « Des liens qui unissent vraiment. »</div> </div>
+<div class="figure">     <img src="images/test_genetique/23andme.png" />      <div class="legend">Promotion 23andMe pour la fête des pères. « Des liens qui unissent vraiment. »</div> </div>
 
 
 
@@ -38,7 +38,7 @@ Quant au [génotype](https://fr.wikipedia.org/wiki/G%C3%A9notype) d'un SNV, il i
 - AA : vous portez le SNV à l'état homozygote (sur deux chromosomes), vous êtes homozygote muté.
 
 
-<div class="figure">     <img src="../images/test_genetique/genotype.png" />      <div class="legend">Source : <a href="https://en.wikipedia.org/wiki/Zygosity">Wikipedia, Zygosity</a></div> </div>
+<div class="figure">     <img src="images/test_genetique/genotype.png" />      <div class="legend">Source : <a href="https://en.wikipedia.org/wiki/Zygosity">Wikipedia, Zygosity</a></div> </div>
 
 
 
@@ -103,7 +103,7 @@ Parmi ces maladies génétiques, je me contenterai de commenter deux d'entre ell
 On trouve dans la liste la variation [rs75961395 ou VG07S29458](https://www.snpedia.com/index.php/Rs75961395), correspondant à la mutation [c.254G>A Gly85Glu](https://cftr.iurc.montp.inserm.fr/cgi-bin/affiche.cgi?variant=c.254G%3EA&provenance=0) décrite dans la base de donnée [CFTR-France](https://cftr.iurc.montp.inserm.fr/cgi-bin/home.cgi?).
 Elle fait partie des 30 mutations les plus fréquentes que l'on recherche systématiquement en routine (lors du diagnostic). Mais elle représente moins de 1 % des mutations chez les patients, loin derrière la mutation [DF508](https://fr.wikipedia.org/wiki/%CE%94F508), la plus connue et la plus fréquente.
 
-<div class="figure">     <img src="../images/test_genetique/cftr_pie.png" />      <div class="legend">La G85E represence 0,6 % des causes de mucoviscidoses. <br/>Source: Cystic Fibrosis Foundation Patient Registry 2014.</div> </div>
+<div class="figure">     <img src="images/test_genetique/cftr_pie.png" />      <div class="legend">La G85E represence 0,6 % des causes de mucoviscidoses. <br/>Source: Cystic Fibrosis Foundation Patient Registry 2014.</div> </div>
 
 ### Prédisposition au cancer 
 S’il y a bien des tests génétiques extrêmement contrôlés, ce sont les tests d'oncogénétique indiquant la prédisposition au cancer avec une forte pénétrance. En étant porteur de ce type de variation pathogène, il y a une forte probabilité de développer un cancer. La liste de ces gènes est détaillée sur la [page de l'INCa](https://www.e-cancer.fr/Professionnels-de-sante/L-organisation-de-l-offre-de-soins/Oncogenetique-et-plateformes-de-genetique-moleculaire/Les-predispositions-genetiques) que je vous conseille de lire.    

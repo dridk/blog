@@ -4,7 +4,7 @@ Date: 2017-09-03 20:59:15
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/selection_banner.jpg
+SIDEBARIMAGE:images/common/selection_banner.jpg
 summary: Voici ma sélection de l'actualité en génétique/génomique de la semaine du 28/08/2017. 
 
 Voici ma sélection de l'actualité en génétique/génomique de la semaine du 28/08/2017.
@@ -18,7 +18,7 @@ Elles sont alors réinjectées chez les patients pour la modique somme de 475 00
 [https://www.multivu.com/players/English/8163751-novartis-kymriah-fda-approval/docs/kymriahfactsheet-1503105905473-697015272.pdf](https://www.multivu.com/players/English/8163751-novartis-kymriah-fda-approval/docs/kymriahfactsheet-1503105905473-697015272.pdf)    
 [http://labiotech.eu/car-t-approval-fda-novartis-kymriah/](http://labiotech.eu/car-t-approval-fda-novartis-kymriah/)
 
-<div class="figure"><a href="../images/selection2/car-t.png"><img src="../images/selection2/car-t.png" width="20%" height="20%" /></a> <div class="legend">cliquer pour agrandir </div> </div>   
+<div class="figure"><a href="images/selection2/car-t.png"><img src="images/selection2/car-t.png" width="20%" height="20%" /></a> <div class="legend">cliquer pour agrandir </div> </div>   
 
 ### Un kit pour séquencer votre génome sur Amazon.fr
 La société [Dante Labs](https://www.dantelabs.com/), propose depuis plusieurs mois déjà, un kit de prélèvement salivaire pour séquencer votre génome complet. Vous pouvez le commander tout de suite sur amazone pour 850 euros, sans passer pas un médecin ni un conseiller en génétique. 

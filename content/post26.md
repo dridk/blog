@@ -4,7 +4,7 @@ Date: 2017-08-06 22:49:20
 Tags: crisprcas9,embryon, mutation, MYBPC3,cardiomyopathie
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/gatacca_banner.png
+SIDEBARIMAGE:images/common/gatacca_banner.png
 
 Si vous êtes passé à côté de la news de la semaine, sachez qu'une équipe américaine a réussi à corriger une mutation génétique lors d'une [fécondation in vitro](https://fr.wikipedia.org/wiki/F%C3%A9condation_in_vitro) à l'aide du couteau suisse moléculaire [CRISPR-Cas9](https://fr.wikipedia.org/wiki/Cas9). 
 Une grande étape a été franchie en thérapie génique avec tous les problèmes éthiques qui en découlent comme l'eugénisme ou le transhumanisme. 
@@ -22,7 +22,7 @@ CRISPR-Cas9 fait une coupure double brin pour retirer la région d'ADN contenant
 Un autre mécanisme de réparation non conservatrice peut avoir lieu, la [Jonction d'extrémités non homologues](https://fr.wikipedia.org/wiki/Jonction_d%27extr%C3%A9mit%C3%A9s_non_homologues) ou NHEJ (Non-Homologous End-Joining). Cette dernière ne corrige rien, et l'on cherche à l'eviter autant que possible.
 
 <div class="figure">
-    <img src="../images/post26/crispr-homolog.png" /> 
+    <img src="images/post26/crispr-homolog.png" /> 
     <div class="legend">réparation par recombinaison homologue</div>
 </div>
 
@@ -30,7 +30,7 @@ Un autre mécanisme de réparation non conservatrice peut avoir lieu, la [Joncti
 L'expérience a été répétée plusieurs fois. Au total dans l'étude il y a eu **19** embryons témoins non injectés et **54** embryons injectés. L'ensemble des embryons ont ensuite été séquencés au stade 4-8 cellules pour voir si l'édition a réussi.
 
 <div class="figure">
-    <img src="../images/post26/gene_correction.png" /> 
+    <img src="images/post26/gene_correction.png" /> 
     <div class="legend">1. Fécondation avec un spermatozoïde muté. 2. Injection de CRISPR-CAS9. 3. Plusieurs cas sont alors possibles. ça ne marche pas;ça marche à moitié (mosaïque);ça marche; HDR (Homology directed repair), NHEJ (Non-Homologous End-Joining) </div>
 </div>
 
@@ -41,7 +41,7 @@ En conclusion, ça marche, mais la technique n'est pas encore au point, car il r
 Il y a également le risque des mutations induit par CRISPR-Cas9. Les fameuses [mutations off-target](https://www.lequotidiendumedecin.fr/actualites/article/2017/05/29/crispr-des-mutations-targets-encore-plus-inattendues_847911). Aucune n'a été détectée dans cette étude. 
 
 <div class="figure">
-    <img src="../images/post26/results.png" /> 
+    <img src="images/post26/results.png" /> 
     <div class="legend">Gauche: Témoin sans injection CRISPR-Cas9. 50% des embryons sont mutés  . Droite: Avec injection CRISPR-Cas9. 66.7% des embryons sont sains. </div>
 </div>
 
@@ -53,5 +53,5 @@ D'autre part, l'éradication des maladies génétiques peut paraitre merveilleus
 *[Bienvenue à GATTACCA](https://www.youtube.com/watch?v=7u3RrbNpRUQ)* n'a jamais été aussi proche.
 
 <div class="figure">
-    <img src="../images/post26/gattaca.gif" /> 
+    <img src="images/post26/gattaca.gif" /> 
 </div>

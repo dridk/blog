@@ -5,7 +5,7 @@ Modified: 2019-12-24 12:44:30
 Tags: statistique,maths,machine learning
 Category:informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/stat_banner.jpg
+SIDEBARIMAGE:images/common/stat_banner.jpg
 
 Les [chaînes de Markov ](https://fr.wikipedia.org/wiki/Cha%C3%AEne_de_Markov)sont très populaires en bioinformatique, en particulier lorsque l'on travaille avec des séquences biologiques. 
 J'aime bien me les représenter comme des machines générant des symboles aléatoires (ou [processus stochastique](https://fr.wikipedia.org/wiki/Processus_stochastique))  dont la probabilité d'apparition de chacun dépend du précédent.    
@@ -18,7 +18,7 @@ Si le dé n'est pas truqué, à chaque lancée, vous avez exactement une chance 
 Une façon de représenter ce tirage aléatoire est d'utiliser un [graphe](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_graphes), appelé diagramme de transition, ou chaque nœud représente les bases ou **états** et les arrêtes les probabilités de **transitions**. Dans la figure ci-dessous, il y a 4 états (A,C,G,T) et 16 transitions avec leurs probabilités toutes égales à 1/4. Par exemple, la probabilité d'obtenir un C après en A est de 1/4 et de même pour les autres transitions.
 Pour générer une séquence aléatoire, choisissiez un nœud au hasard, puis faite une marche dans ce graphe en suivant les probabilités de transition. Notez la valeur de chaque nœud traversé. Bravo, vous venez de générer une séquence à l'aide une chaîne de Markov. 
 
-<div class="figure">     <img src="../images/markov/animation.gif" />      <div class="legend">Génération d'une séquence avec une chaîne de Markov. <br/>Il y a 4 états (A,C,G,T) et 4x4=16 transitions possibles toutes avec une probabilité de 1/4</div> </div>   
+<div class="figure">     <img src="images/markov/animation.gif" />      <div class="legend">Génération d'une séquence avec une chaîne de Markov. <br/>Il y a 4 états (A,C,G,T) et 4x4=16 transitions possibles toutes avec une probabilité de 1/4</div> </div>   
 
 ## Définition d'une chaîne de Markov
 Une chaîne de Markov se définit donc par un vecteur d'état **E** et une matrice de transition **T**.    
@@ -39,13 +39,13 @@ $$
 
 En changeant les probabilités de transition, nous pouvons alors paramétrer notre générateur pour qu'il produise des séquences avec des profils particuliers. Dans la figure suivante, j'ai donné une probabilité de 0.7 aux transitions p(G|C) et p(C|G). Avec cette nouvelle table de transition, je peux alors générer des séquences riches en GC comme l'illustre l'animation suivante.
 
-<div class="figure">     <img src="../images/markov/animation2.gif" />      <div class="legend"> Les probabilités de transitons ont changé en faveur de G->C et C->G. <br/> La séquence générée est riche en GC </div> </div>   
+<div class="figure">     <img src="images/markov/animation2.gif" />      <div class="legend"> Les probabilités de transitons ont changé en faveur de G->C et C->G. <br/> La séquence générée est riche en GC </div> </div>   
 
 ## Distribution stationnaire
 En faisant tourner votre générateur assez longtemps et en comptant la fréquence d'apparition de chaque base, vous obtiendrez une [distribution](https://fr.wikipedia.org/wiki/Distribution_statistique) [stationnaire](https://fr.wikipedia.org/wiki/Probabilit%C3%A9_stationnaire_d%27une_cha%C3%AEne_de_Markov) au bout d'un certain temps. C'est-à-dire que peut importe la longueur de la séquence, la probabilité d'avoir une certaine base dans la séquence sera toujours la même. 
 Les histogrammes ci-dessous montrent la fréquence des bases obtenues parmi les N premiers nucléotides générées par une chaîne de Markov en utilisant la matrice de transition du dé à 4 faces équiprobables. Comme on peut s'y attendre, cette distribution converge pour devenir uniforme.  
 
-<div class="figure">     <img src="../images/markov/distribution1.png" />      <div class="legend"> Distributions des bases sur un génération de N bases. <br/> La distribution converge pour devenir uniforme</div> </div>   
+<div class="figure">     <img src="images/markov/distribution1.png" />      <div class="legend"> Distributions des bases sur un génération de N bases. <br/> La distribution converge pour devenir uniforme</div> </div>   
 
 Ces distributions se calculent en faisant un peu d'algèbre linéaire. 
 On choisi de représenter la distribution des 4 bases par un vecteur $\pi_{t} = [pA, pC, pG, pT]$ à un temps donné t . Par exemple, si nous choisissons une séquence commençant par un A, alors la distribution au temps $t0$ est = [1,0,0,0].
@@ -108,12 +108,12 @@ En lisant les probabilités de la table de transition, on peut alors calculer ce
 ## Les chaînes de Markov cachées 
 Une [chaîne de Markov cachée](https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Markov_cach%C3%A9) ou HMM ( Hidden Markov Model) est simplement une chaîne de Markov dont certains des états sont cachés. Plus précisément ce sont des états qui ne font pas partie de la séquence générée. Reprenons notre dé et appelons le **X**. Ajoutons un deuxième dé truqué appelé **Y** contenant uniquement des G sur ces 4 faces. On lance toujours un seul dé pour générer une séquence. Sauf que cette fois, à chaque lancée, il y a une chance sur 2 que nous changions de dé en cachette.  On dit que **X** et **Y** sont les états cachés avec 4 probabilités d’émissions chacun. Cette chaîne de Markov peut être représentée par le graphe suivant:
 
-<div class="figure">     <img src="../images/markov/hmm.png" />      <div class="legend">Chaîne de Markov caché avec 2 états cachés X et Y et 4 émissions</div> </div>   
+<div class="figure">     <img src="images/markov/hmm.png" />      <div class="legend">Chaîne de Markov caché avec 2 états cachés X et Y et 4 émissions</div> </div>   
 
 Ces 2 états cachés peuvent représenter par exemple les introns et les exons. Les probabilités d’émissions seront différentes selon l'état caché en cours. 
 Il est peut être plus rare par exemple d'avoir du GC dans un exon que dans un intron. 
 On utilise également les chaînes de Markov caché pour modéliser les insertions et les délétions. Le graphe ci-dessous vous montre une chaîne de Markov particulière prenant en compte les positions comme états cachés avec leurs 4 émissions possibles A,C,G,T. En lisant de gauche à droite, ce générateur est capable de produire la séquence ACAATC ou ACACCCCCATC grâce à plusieurs insertions en position 3.
-<div class="figure">     <img src="../images/markov/hmm2.png" />      <div class="legend">Dans cette chaîne de Markov, les positions sont prises en compte. En position 3, il y a 60% de chance d'avoir une insertion</div> </div>   
+<div class="figure">     <img src="images/markov/hmm2.png" />      <div class="legend">Dans cette chaîne de Markov, les positions sont prises en compte. En position 3, il y a 60% de chance d'avoir une insertion</div> </div>   
 
 Comme vu plus haut, il est possible de construire une chaîne de Markov caché en apprenant depuis un corpus de séquence. Mais cette fois, les probabilités de transitions cachées sont beaucoup plus difficiles à calculer, car on ne les observe pas. 
 On peut les estimer en cherchant les valeurs les plus vraisemblance avec par exemple l'[algorithme de Baum-Welch](https://fr.wikipedia.org/wiki/Algorithme_de_Baum-Welch). Il s'agit d'un algorithme d'espérance maximisation que nous avons déjà vue dans un [autre billet](expectation-maximisation.html). Notez aussi l'algorithme de [Viterbi](https://fr.wikipedia.org/wiki/Algorithme_de_Viterbi) qui permet d'identifier le chemin le plus probable, lorsqu'on désire aligner une séquence sur un profil HMM. 

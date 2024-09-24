@@ -16,7 +16,7 @@ Imaginons une série de valeurs, disons l'âge de 1000 étudiants pris au hasard
     data  = np.random.normal(24, MYSTERE ,1000)
 
 <div class="figure">
-<img src="../images/maximum_vraisemblance/normal_dist.png" />
+<img src="images/maximum_vraisemblance/normal_dist.png" />
 <div class="legend">distribution des âges suivant une loi normale. Les données ont été générées avec np.random.normal. Le paramètre MYSTERE a volontairement été caché</div>
 </div>
 
@@ -27,7 +27,7 @@ On peut voir ici que la distribution des valeurs suit approximativement une loi 
 La loi normale a une fonction de densité de probabilité p paramétrée par **mu** et **sigma** définissant respectivement le centre de la courbe ([l'espérance](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_math%C3%A9matique)) et sa largeur ([la variance](https://fr.wikipedia.org/wiki/Variance_(statistiques_et_probabilit%C3%A9s))). 
 
 <div class="figure">
-<img src="../images/maximum_vraisemblance/equation.png" />
+<img src="images/maximum_vraisemblance/equation.png" />
 <div class="legend">fonction définissant une loi normale</div>
 </div>
 
@@ -47,7 +47,7 @@ plt.plot(x,y)
 ```
 
 <div class="figure">
-<img src="../images/maximum_vraisemblance/loi_normale.png" />
+<img src="images/maximum_vraisemblance/loi_normale.png" />
 <div class="legend">Différentes lois normales d'espérance mu=0 et de variance sigma=2,3,4 et 5</div>
 </div>
 
@@ -94,7 +94,7 @@ plt.plot(x,y)
 ```
 
 <div class="figure">
-<img src="../images/maximum_vraisemblance/vraisemblance_test.png" />
+<img src="images/maximum_vraisemblance/vraisemblance_test.png" />
 <div class="legend">Vraisemblance en fonction de sigma</div>
 </div>
 
@@ -128,7 +128,7 @@ En recherchant la valeur de sigma qui donne la plus grande vraisemblance, on tro
 On peut alors traçer sur la distribution des âges, une fonction normale d'esperance *mu*=24 et de variance prédis *sigma*=2.1. Vous constaterez alors que la courbe en cloche s'ajuste parfaitement aux données. Et voilà ! 
 
 <div class="figure">
-<img src="../images/maximum_vraisemblance/adjusted.png" />
+<img src="images/maximum_vraisemblance/adjusted.png" />
 <div class="legend">Modèle ajusté à nos données</div>
 </div>
 

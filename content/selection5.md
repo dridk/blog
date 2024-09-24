@@ -4,7 +4,7 @@ Date: 2017-09-25 11:17:50
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/selection_banner.jpg
+SIDEBARIMAGE:images/common/selection_banner.jpg
 summary: Voici ma sélection de l'actualité en génétique/génomique de la semaine du 18/09/2017. 
 
 Voici ma sélection de l'actualité en génétique/génomique de la semaine du 18/09/2017.
@@ -18,7 +18,7 @@ Les effets de cette *[thérapie tolérogène](https://en.wikipedia.org/wiki/Tole
 [http://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(17)30413-6](http://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(17)30413-6)
 
 
-<center> <video width="512" height="288" controls>   <source src="../images/selection5/mmc2.mp4" type="video/mp4">
+<center> <video width="512" height="288" controls>   <source src="images/selection5/mmc2.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> </center>
 
@@ -55,5 +55,5 @@ Un anticorps trispécifique est un [anticorps](https://fr.wikipedia.org/wiki/Ant
 [http://science.sciencemag.org/content/early/2017/09/19/science.aan8630/tab-pdf
 ](http://science.sciencemag.org/content/early/2017/09/19/science.aan8630/tab-pdf
 )
-<div class="figure"> <img src="../images/selection5/anticorps-tri.png" />  <div class="legend">Exemple d'un anticorps tri-specifique</div></div>
+<div class="figure"> <img src="images/selection5/anticorps-tri.png" />  <div class="legend">Exemple d'un anticorps tri-specifique</div></div>
 

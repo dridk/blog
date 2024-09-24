@@ -5,7 +5,7 @@ Modified: 2018-08-06 18:41:28
 Tags: algorithme,mixture model, expectation-maximisation
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/ia_banner.jpg
+SIDEBARIMAGE:images/common/ia_banner.jpg
 
 Nous allons voir dans ce billet l'algorithme d'[espérance-maximisation](https://fr.wikipedia.org/wiki/Algorithme_esp%C3%A9rance-maximisation) ou algorithme EM (Expectation-maximisation) qui va nous permettre d'identifier les paramètres de deux [lois normales](https://fr.wikipedia.org/wiki/Loi_normale) depuis une seule distribution mixte ou [mélange gaussien](https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_m%C3%A9lange_gaussien) ou GMM (Gaussian Mixture model). 
 Comme d'habitude, je vais faire au plus simple. Ce billet fait directement suite à celui sur [le maximum de vraisemblance](maximum-de-vraissemblance.html) mais vous n'êtes pas obligé de le lire.
@@ -28,7 +28,7 @@ sns.distplot(hommes, label="Hommes")
 ```
 
 <div class="figure">
-<img src="../images/mixture_model/hommes_femmes.png" />
+<img src="images/mixture_model/hommes_femmes.png" />
 <div class="legend"> Distribution des tailles chez les femmes (roses) et les hommes (bleus) </div>
 </div>
 
@@ -41,7 +41,7 @@ plt.legend()
 ```
 
 <div class="figure">
-<img src="../images/mixture_model/mixture.png" />
+<img src="images/mixture_model/mixture.png" />
 <div class="legend"> Distribution des Tailles sans connaissance du sexe. </div>
 </div>
 
@@ -103,7 +103,7 @@ En Python cela donne :
 Et voilà ce que l'on obtient en animant le tout à chaque itération:    
     
 <div class="figure">
-<img src="../images/mixture_model/em_algo.gif" />
+<img src="images/mixture_model/em_algo.gif" />
 <div class="legend"> Ajustement de deux lois normales (orange et bleu) à la distribution X (vert) selon l'algorithme EM </div>
 </div>
 
@@ -115,12 +115,12 @@ En prenant 2 variables comme la Taille et le Poid, μ correspond à la liste des
 Vous pouvez vous représenter une loi normale à deux variables comme un [Sombrero](https://fr.wikipedia.org/wiki/Sombrero) aplati et vu de haut ou chaque point est representé dans le plan par ses coordonnées (x=Taille et y=Poids).
 
 <div class="figure">
-<img src="../images/mixture_model/bivariate.png" />
+<img src="images/mixture_model/bivariate.png" />
 <div class="legend"> Exemple d'une distribution normale bivariée. Imaginez que la courbe rouge représente la taille et la bleu le poid </div>
 </div>
 
 <div class="figure">
-<img src="../images/mixture_model/bivariate_gaussian.png" />
+<img src="images/mixture_model/bivariate_gaussian.png" />
 <div class="legend"> Representation en 3 dimensions d'une loi normale bivariée. La projection sur le plan des variables (Taille,Poids) permet d'identifier une région de densité de probabilité. </br><a href="https://scipython.com/blog/visualizing-the-bivariate-gaussian-distribution/"> Source </a> </div>
 </div>
 
@@ -129,7 +129,7 @@ En d'autres termes, identifier à quelle distribution appartient un point dans u
 
 
 <div class="figure">
-<img src="../images/mixture_model/bivariate2.png" />
+<img src="images/mixture_model/bivariate2.png" />
 <div class="legend"> Exemple: Gauche: Distribution de deux variables et identification de 2 clusters. Droite: Modèle normal bivarié montrant la densité sur son 3ème axe. <br/><a href="https://www.sciencedirect.com/science/article/pii/S0167947315000171">Source</a>  </div>
 </div>
 
@@ -137,7 +137,7 @@ En d'autres termes, identifier à quelle distribution appartient un point dans u
 Il existe d'autres algorithmes pour détecter des clusters, notamment l'algorithme [k-means](https://fr.wikipedia.org/wiki/K-moyennes) ou encore les [k-plus proches voisins](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins). Ces méthodes de clustering sont dites "[Hard clustering](https://www.youtube.com/watch?v=xtDMHPVDDKk)" car ils atégorisent de façon précise un point (Soit c'est un homme, soit c'est une Femme). Au contraire, avec l'algorithme EM et les mixtures gaussiennes, nous pouvons faire du [soft clustering](https://www.youtube.com/watch?v=xtDMHPVDDKk). Au lieu de dire que tel point appartient soit au groupe A soit au groupe B, on lui donne une probabilité d'appartenance à chacun de ces groupes. (90% de chance que ce soit un homme, 1% que ce soit une femme). C'est ce qu'on appelle la [logique floue](https://fr.wikipedia.org/wiki/Logique_floue).
 
 <div class="figure">
-<img src="../images/mixture_model/clustering.png" />
+<img src="images/mixture_model/clustering.png" />
 <div class="legend"> Différence entre le soft et du hard clustering en utilisant un gradient de couleur. En rouge les femmes, en bleu les hommes </div>
 </div>
 

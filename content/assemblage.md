@@ -44,21 +44,21 @@ Si nous représentons chaque k-mer par un nœud, alors deux nœuds consécutifs 
 Par exemple le k-mer T**GC** précède le k-mer **GC**C car le suffixe du premier (-GC) correspond au préfixe du second (GC-). Cette relation se représente avec deux nœuds et une flèche :
 
 <div class="figure">
-<img src="../images/assemblage/hamilton_node.png" />
+<img src="images/assemblage/hamilton_node.png" />
 <div class="legend"> Relation entre deux k-mers dans un graphe. Le suffixe (k-1) du premier correspond au préfixe (k-1) du second</div>
 </div>
 
 Nous pouvons alors construire un graphe en reliant tous nos k-mers via leurs suffixes/préfixes et obtenir la figure suivante :
 
  <div class="figure">
-<img src="../images/assemblage/hamilton_graphe.png" />
+<img src="images/assemblage/hamilton_graphe.png" />
 <div class="legend"> Graphe représentant chaque k-mer par un nœud. Saurez-vous trouver le chemin passant par tous les nœuds une seule fois ?</div>
 </div>
 
 Pour reconstruire la séquence d'origine, il suffit de trouver un chemin passant par tous les nœuds une fois et une seule. On appelle ce chemin [un parcours Hamiltonien](https://fr.wikipedia.org/wiki/Graphe_hamiltonien). Essayez de le trouver par vous même avant de regarder l'animation ci-dessous :
 
  <div class="figure">
-<img src="../images/assemblage/hamilton_graphe_path.gif" />
+<img src="images/assemblage/hamilton_graphe_path.gif" />
 <div class="legend"> Parcours Hamiltonien dans le graphe. Chaque nœud est traversé une fois et une seule</div>
 </div>
 
@@ -69,14 +69,14 @@ Il nous faut une meilleure méthode…
 Nous allons cette fois construire un graphe en représentant les k-mers par des flèches. Les nœuds contiendront le préfixe et le suffixe du k-mer. Par exemple si une flèches représente le k-mer **TGC** alors les deux nœuds autour de la flèche sont **TG** et **GC**.
 
 <div class="figure">
-<img src="../images/assemblage/euler_node.png" />
+<img src="images/assemblage/euler_node.png" />
 <div class="legend"> Représentation d'un k-mer par une flèches. Les nœuds contiennent les suffixes et préfixes des k-mers</div>
 </div>
 
 Nous pouvons alors construire le graphe suivant :
 
 <div class="figure">
-<img src="../images/assemblage/not_fusion_graphe.png" />
+<img src="images/assemblage/not_fusion_graphe.png" />
 <div class="legend">  Graphe représentant chaque k-mer par une flèches. Les nœuds sont les préfixes/suffixes. Certain nœuds en couleur sont présent plusieurs fois et peuvent être fusionnés</div>
 </div>
 
@@ -84,14 +84,14 @@ Cette fois, au lieu de chercher un chemin passant par **tous les nœuds** une se
 Pour  remédier à ce problème, nous allons fusionner tous les nœuds identiques. Visualisez par exemple les 3 nœuds violets <b style="color:#5C3566;">AT</b> et imaginez-les se rapprocher pour former un seul nœud sans jamais toucher aux flèches. Vous obtenez alors un unique nœud **AT** relié par 3 flèches au nœud **TG**. Faites la même chose pour les autres nœuds identiques et vous obtiendrez le fameux [graphe de de Bruijn](https://fr.wikipedia.org/wiki/Graphe_de_de_Bruijn).
 
  <div class="figure">
-<img src="../images/assemblage/debruijn_graphe.png" />
+<img src="images/assemblage/debruijn_graphe.png" />
 <div class="legend"> Graphe de de Bruijn </div>
 </div>
 
 Vous pouvez maintenant chercher le chemin passant par toutes les flèches une fois et une seule. C'est ce qu'on appelle un parcours [Eulérien](https://fr.wikipedia.org/wiki/Graphe_eul%C3%A9rien). Essayer de le trouver par vous même, ce n'est pas très difficile.
 
  <div class="figure">
-<img src="../images/assemblage/euler_path.gif" />
+<img src="images/assemblage/euler_path.gif" />
 <div class="legend"> Parcours Eulérien dans un graphe de de Bruijn </div>
 </div>
 
@@ -103,7 +103,7 @@ Voyons maintenant la théorie mathématique derrière ce parcours que l'on doit 
 En 1873, un mathématicien du nom de Leonhard Euler s'est posé la question de savoir si il existait une promenade dans la ville de Königsberg passant par tous les ponts une fois et une seule. C'est [le problème des 7 ponts de Königsberg](https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_sept_ponts_de_K%C3%B6nigsberg) qui peut être modélisé sous la forme d'un graphe :
 
  <div class="figure">
-<img src="../images/assemblage/Konigsberg_bridges.png" />
+<img src="images/assemblage/Konigsberg_bridges.png" />
 <div class="legend"> Gauche : Pont de Königsberg Droite : représentation des ponts par un graphe. Les chiffres indiquent le nombres d'arêtes relié au nœud. Existe-t-il un chemin passant par tous les ponts ?</div>
 </div>
 
@@ -114,7 +114,7 @@ Dans un graphe orienté comme le notre, c'est à dire lorsque les arrêtes sont 
 Pour que les conditions du théorème de Euler s'appliquent à notre graphe de de Bruijn, nous devons tricher en ajoutant une flèche entre le dernier nœud **TA** et le premier nœud **GT**  et former ainsi un cycle. Vous constaterez alors, que pour chaque nœud, il y a autant de flèches d'entrée que de flèches de sortie. Nous pouvons alors conclure, sans même le connaître, qu'un chemin Eulérien existe.
 
  <div class="figure">
-<img src="../images/assemblage/euler_cycle.png"/>
+<img src="images/assemblage/euler_cycle.png"/>
 <div class="legend"> Graphe de de Bruijn modifié pour pouvoir avoir un cycle de Euler. En rouge le nombre de flèches à l'entré d'un nœud, en vert le nombre de flèches à la sortie d'un nœud. Le [degré](https://fr.wikipedia.org/wiki/Degr%C3%A9_(th%C3%A9orie_des_graphes)) d'entré et de sortie pour chaque nœud sont identique. D'après le théorème, il existe donc un chemin Eulérien passant par toutes les flèches une fois et une seule</div>
 </div>
 

@@ -4,7 +4,7 @@ Date: 2016-12-06 22:00:00
 Category: biologie
 Tags: bioinformatique, génétique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/metagenomics.jpg
+SIDEBARIMAGE:images/common/metagenomics.jpg
 
 Le [microbiote](https://fr.wikipedia.org/wiki/Microbiote) et la [métagénomique](https://fr.wikipedia.org/wiki/M%C3%A9tag%C3%A9nomique) sont les deux mots tendances de ces dernières années dans les laboratoires de microbiologie. Derrière eux se cacherait les réponses à de nombreuses maladies comme le [diabète](https://fr.wikipedia.org/wiki/Diab%C3%A8te), la [maladie de Crohn](https://fr.wikipedia.org/wiki/Maladie_de_Crohn) et même l'[autisme](https://fr.wikipedia.org/wiki/Autisme) ou la [schizophrénie](https://fr.wikipedia.org/wiki/Schizophr%C3%A9nie).       
 Commençons donc par définir ces deux termes:    
@@ -20,14 +20,14 @@ Il existe deux grandes stratégies de séquençage en métagénomique : la strat
 - **La métagénomique globale** consiste à fragmenter **tous** les ADNs présents dans un échantillon en courts fragments et les séquencer à l'aide d'un [séquenceur haut débit](https://fr.wikipedia.org/wiki/S%C3%A9quen%C3%A7age_de_l'ADN). D’où le nom de *[Shotgun sequencing](https://en.wikipedia.org/wiki/Shotgun_sequencing)*. Les séquences (ou *reads*) obtenues sont ré-assemblées bioinformatiquement afin de reconstruire les génomes bactériens d'origine.   
 
 <div class="figure">
-    <img src="../images/post20/shotgun_sequencing.png" /> 
+    <img src="images/post20/shotgun_sequencing.png" /> 
     <div class="legend">Stratégie globale : L'ensemble des ADNs présents dans un échantillon de microbiote sont séquencés.</div>
 </div>
 
 - **La métagénomique ciblée** n'est pas de la métagénomique à proprement parler, mais de la *métagénétique*. Cette stratégie consiste à séquencer un unique gène au lieu d'un génome complet. Cependant le terme de *métagénomique* étant plus régulièrement employé pour décrire cette stratégie, je continuerai ainsi. Ce gène doit être commun à plusieurs espèces tout en présentant des régions suffisamment variables afin de discriminer une espèce. En bactériologie, le gène utilisé est celui de l'ARN 16S. Il s'agit d'un gène présent uniquement chez les bactéries.    
 
 <div class="figure">
-    <img src="../images/post20/target_sequencing.png" /> 
+    <img src="images/post20/target_sequencing.png" /> 
     <div class="legend">Stratégie ciblé : Seuls les ADNs du gène cible sont séquencés. En bactériologie, le gène cible est l'ARN 16S. </div>
 </div>
 
@@ -42,7 +42,7 @@ On ne s’intéressera ici qu'à la stratégie 16S, utilisée en bactériologie.
 Vous connaissez les [ribosomes](https://fr.wikipedia.org/wiki/Ribosome) ? Ces petits organelles dans la cellule formés de deux sous-unités permettant la traduction de l'ARN en protéine. Et bien chez la bactérie, et uniquement chez elle, la petite sous unité est formée de l'ARN 16S. 
 
 <div class="figure">
-    <a href="../images/post20/ARN16s.jpg"><img src="../images/post20/ARN16s_thumb.jpg" /> </a>
+    <a href="images/post20/ARN16s.jpg"><img src="images/post20/ARN16s_thumb.jpg" /> </a>
     <div class="legend">Structure secondaire de l'ARN 16S avec ses différentes boucles.</div>
 </div>
 
@@ -50,7 +50,7 @@ Il s'agit d'un [ARN non codant](https://fr.wikipedia.org/wiki/ARN_non_codant) co
 
 
 <div class="figure">
-    <img src="../images/post20/alignment.png" /> 
+    <img src="images/post20/alignment.png" /> 
     <div class="legend">Similarités des séquences d'ARN 16S entre plusieurs bactéries. Sous le graphique figurent les différents couples d'amorces utilisables.</div>
 </div>
 
@@ -68,14 +68,14 @@ Une fois le séquençage réalisé, c'est au tour des bioinformaticiens de prend
 
 
 <div class="figure">
-    <img src="../images/post20/close_reference.png" /> 
+    <img src="images/post20/close_reference.png" /> 
     <div class="legend">Stratégie 1. Chaque séquence est recherchée dans une base de données et assignée à son taxon.</div>
 </div>
 
 - La stratégie appelée *[de novo](http://qiime.org/tutorials/otu_picking.html#open-reference-otu-picking)*, n'utilise pas de base données mais consiste à comparer les séquences entre elles puis les regrouper par similarité. Les [clusters](https://fr.wikipedia.org/wiki/Partitionnement_de_donn%C3%A9es) ainsi formés élisent une [séquence consensus](https://fr.wikipedia.org/wiki/S%C3%A9quence_consensus) qui peut à son tour être annotée par une base de données ou rester comme telle définissant alors une espèce inconnue.   
 
 <div class="figure">
-    <img src="../images/post20/de_novo.png" /> 
+    <img src="images/post20/de_novo.png" /> 
     <div class="legend">Stratégie 2. Les séquences sont comparées entre elles pour former des groupes similaires ou clusters.</div>
 </div>
 
@@ -86,7 +86,7 @@ Le point de départ de toutes analyses en métagénomique est la construction de
 La table des OTUs est un tableau à double entrées contenant le nombre de séquences par OTU et par échantillon. On parle d'*abondance*. Ces abondances absolues sont normalisées afin de rendre les échantillons comparables. Plusieurs méthodes de normalisation existent, mais la plus courante est d'utiliser les pourcentages. Sur la figure ci-dessous, les échantillons 1 et 3 ont tous les deux une abondance absolue de 3 en bactéries rouges. En pourcentage, leurs abondances relatives deviennent 42,8 % et 75 % respectivement. 
 
 <div class="figure">
-    <img src="../images/post20/otu_table2.png" /> 
+    <img src="images/post20/otu_table2.png" /> 
     <div class="legend">Tables des OTUs obtenues à partir de plusieurs échantillons</div>
 </div>
 
@@ -97,34 +97,34 @@ La [diversité alpha](https://fr.wikipedia.org/wiki/Richesse_sp%C3%A9cifique) es
 Le nombre d'espèce est par exemple un indicateur d'alpha diversité.
 
 <div class="figure">
-    <img src="../images/post20/alpha1.png" /> 
+    <img src="images/post20/alpha1.png" /> 
     <div class="legend">B est plus diversifié que A car il contient deux fois plus d'espèces</div>
 </div>
 
  Mais comme vous pouvez le voir dans la figure ci-dessous, Le nombre d'espèce n'est pas toujours adapté. C'est pour cette raison que d'autres indicateurs existent.
 
 <div class="figure">
-    <img src="../images/post20/alpha2.png" /> 
+    <img src="images/post20/alpha2.png" /> 
     <div class="legend">B contient plus d'espèce mais semble moins diversifié</div>
 </div>
 
 L'indice de Shannon ou entropie de Shannon est un exemple d'alpha diversité répondant à ce problème.  Cette indice reflète aussi bien le nombre d'espèce que leurs abondances. Sa formule est la suivante : 
 
 <div class="figure">
-    <img src="../images/post20/shannon.svg" /> 
+    <img src="images/post20/shannon.svg" /> 
     <div class="legend">Indice de Shannon. Pour chaque espèce faire la somme des fréquences multiplié par le log des fréquences </div>
 </div>
 
 La figure A précédente contient 13 espèces, dont 4 vertes, 5 rouges et 4 bleues. La diversité de shannon pour A est donc : 
 
 <div class="figure">
-    <img src="../images/post20/eq1.gif" /> 
+    <img src="images/post20/eq1.gif" /> 
 </div>
 
 En faisant de même pour B, on retrouve alors une diversité plus faible de 0.72.
 
 <div class="figure">
-    <img src="../images/post20/alpha3.png" /> 
+    <img src="images/post20/alpha3.png" /> 
     <div class="legend">L'entropie de A est supérieur à celle de B</div>
 </div>
 
@@ -132,7 +132,7 @@ Les autres indicateurs répondent chacun à des problèmes différents. L'indice
 Le graphique ci-dessous montre les différences de diversité alpha du microbiote intestinal en fonction du régime alimentaire.  
 
 <div class="figure">
-    <img src="../images/post20/alpha_diversity.jpg" /> 
+    <img src="images/post20/alpha_diversity.jpg" /> 
     <div class="legend">Diversité alpha du microbiote intestinal en fonction du régime alimentaire. <br/><i> <a href="https://peerj.com/articles/659/">Source </a></i></div>
 </div>
 
@@ -141,7 +141,7 @@ Le graphique ci-dessous montre les différences de diversité alpha du microbiot
 La [diversité bêta](https://fr.wikipedia.org/wiki/Diversit%C3%A9_b%C3%AAta) consiste à mesurer la diversité des espèces entre les échantillons. On procède le plus souvent à l'[analyse multivariée](https://fr.wikipedia.org/wiki/Statistique_multivari%C3%A9e) de la matrice des OTUs en ayant recours aux méthodes d'[ordinations](https://en.wikipedia.org/wiki/Ordinate) comme l'[analyse en composantes principales](https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales). Pour faire simple, imaginons que notre table des OTUs soit composée de 2 bactéries et 6 échantillons. La représentation sur un graphique serait facile en utilisant 2 axes (1 par bactérie). Chaque point de ce graphique serait un échantillon dont les coordonnées représentent l'abondance pour chaque bactérie. La figure de gauche ci-dessous illustre cet exemple. En colorant ces points sur une variable attachée aux échantillons, comme le site de prélèvement, on pourrait découvrir des groupes distincts, comme l'illustre la figure de droite.
 
 <div class="figure">
-    <img src="../images/post20/2dplot.png" /> 
+    <img src="images/post20/2dplot.png" /> 
     <div class="legend">Chaque point représente un échantillon réparti sur les deux axes en fonction de leurs abondances. Certains échantillons semblent associées entre eux. </div>
 </div>
 
@@ -150,7 +150,7 @@ L'analyse en composantes principales (ACP) est un exemple d'ordination. Il en ex
 Une fois la représentation réalisée, on cherche alors des groupes de points et la variable explicative que l'on visualise à l'aide d'une couleur. Sur la figure ci-dessous, l'analyse de plusieurs échantillons provenant de différents sites anatomiques révèle les compositions propres à chaque site.
 
 <div class="figure">
-    <img src="../images/post20/beta_diversity.png" /> 
+    <img src="images/post20/beta_diversity.png" /> 
     <div class="legend">Analyse en composantes principales de différents échantillons microbiens provenant de différents sites anatomiques. <br/><i><a href="http://www.nature.com/nature/journal/v486/n7402/full/nature11234.html"> Source </a> </i></div>
 </div>
 

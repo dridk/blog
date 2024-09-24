@@ -17,7 +17,7 @@ Au lieu de vous exposer les formules, je vous propose de vous les expliquer autr
 
 
 <div class="figure">
-    <img src="../images/post31/sensibility_movies.png">
+    <img src="images/post31/sensibility_movies.png">
     <div class="legend">Schéma de toutes les substitutions possibles. En bleu les transitions , en rouge les transversions. Il y a 2 fois plus de transversions que de transitions</div>
 </div>
 
@@ -32,7 +32,7 @@ Si vous voulez être sur de ne pas passer à cote d'un film triste, demandez à 
 ##Amélia le spécifique   
 
 <div class="figure">
-    <img src="../images/post31/specificity_movies.png">
+    <img src="images/post31/specificity_movies.png">
     <div class="legend">Schéma de toutes les substitutions possibles. En bleu les transitions , en rouge les transversions. Il y a 2 fois plus de transversions que de transitions</div>
 </div> 
 Un autre cinéma se décide de faire pareil. Mais cette fois en guarantissant des frayeurs à 100%. 4 films sont étiquetté "frisson garanti". Et cette fois-ci, nous faisons appel à Amélia pour le test. Une fan de film d'horreur, qui aime spécifiquement les films d'épouvante.

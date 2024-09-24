@@ -4,7 +4,7 @@ Date: 2017-08-27 18:30:55
 Tags: selection, génomique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/selection_banner.jpg
+SIDEBARIMAGE:images/common/selection_banner.jpg
 
 Pour ceux qui ne me suivent pas sur [twitter](https://twitter.com/dridk), je vais maintenant publier sur le blog une fois par semaine, l'actualité en génomique et bioinformatique que j'ai dénichée sur le net. 
 Si jamais je passe à côté de la news, n'hésitez pas à me le faire savoir pour que je l'ajoute à ce fil hebdomadaire. 

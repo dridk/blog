@@ -4,7 +4,7 @@ Date: 2015-10-24 15:37:04
 Tags: python,algorithmes
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg 
+SIDEBARIMAGE:images/common/term_banner.jpeg 
 
 Au temps ou le téléphone portable était un objet de luxe et de démesure, la seule façon d'envoyer un message pendant un cours de philosophie, était d'utiliser un petit bout de papier que l'on faisait passer d'élève à élève. Il fallait écrire en petit pour maximiser la quantité d'information transmis lors d'un envoi. De plus, pour éviter toute interception du message par le professeur certains avaient recours à des cryptages plus ou moins efficaces. A cette époque, ou je programmais sur calculette [Ti-82](https://fr.wikipedia.org/wiki/TI-82) pendant mes cours de philo, j'aurais aimé connaître l'algorithme de la transformation de **Burrows-Wheeler**. J'aurai pu économiser encre et papier en compressant l'information de mes messages, mais surtout je me serais éclaté à coder un encodeur/décodeur de petits mots sur ma calculette.   
 En effet, cette algorithme est utilisé dans 2 cas particuliers. La compression que nous allons aborder dans cette article, mais aussi l'indexation utilisée dans la recherche de motif textuel. Ce dernier point fera l'objet d'un prochain article. 
@@ -31,14 +31,14 @@ Tout d'abord, rajoutons le caractère "**$**" à la fin du mot: *banane$*. Lorsq
 Puis, nous allons créer la matrice suivante en décalant chaque ligne d'une lettre, en faisant une sorte de rotation (Figure ci dessous). La matrice obtenue est de taille L x L ou L est la longueur du mot. 
 
 <p align="center">
-    <img src="../images/post10/matrix.png">
+    <img src="images/post10/matrix.png">
 </p>
 
 Une fois la matrice construite, nous ordonnons les lignes dans l'ordre lexicographique. Les lignes commençant par un "**A**" sont en haut, et ainsi de suite. Nous obtenous alors la matrice ci-dessous. La transformation de **Burrows-Wheeler** correspond à la dernière colonne. C'est aussi simple que ça.
 
 
 <p align="center">
-    <img src="../images/post10/matrix2.png">
+    <img src="images/post10/matrix2.png">
 </p>
 
 La transformation du mot "*banane*", donne "*ebn$naa*". Et comme vous pouvez le constater, certaines lettres identiques sont réunies.  
@@ -65,13 +65,13 @@ La **suffix array**, d'un mot, est l'ensemble des suffixes de ce mot.
 Par exemple, le mot *banane$* , possède les suffixes suivant avec leurs rangs correspondants :   
 
 <p align="center">
-    <img src="../images/post10/sa.png">
+    <img src="images/post10/sa.png">
 </p>
 
 Si nous ordonnons cette liste de suffixe dans l'ordre lexicographique, et que nous la comparons avec la matrice précédente, vous pouvez trouver une relation en faisant marcher vos méninges.
 
 <p align="center">
-    <img src="../images/post10/sa2.png">
+    <img src="images/post10/sa2.png">
 </p>
 
 En effet, on observe que la nième lettre de la transformation de **Burrow-Wheeler** correspond dans le mot *banane*, au rang du suffix soustrait de 1... Rien compris? C'est normal. Lisez la suite, pour comprendre.    
@@ -103,7 +103,7 @@ C'est bien gentil tout ça, mais comment fait on marche arrière ? Comment à pa
 Tout d'abord, nous allons créer la première ( LC: Left Column ) et la dernière colonne (RC Right Column) de la matrice. La dernière colonne, c'est le texte transformé que nous avons en entrée. La première se calcule facilement, il suffit d'ordonner lexicographiquement les lettres de la dernière colonne. 
 
 <p align="center">
-    <img src="../images/post10/reverse.png">
+    <img src="images/post10/reverse.png">
 </p>
 
 Je ne vais pas vous le détailler ici, mais sachez que le rang des lettres dans la colonne de gauche correspond au même dans la colonne de droite. C'est à dire que le premier "**A**" de la colonne de gauche correspond au premier "**A**" de la colonne de droite. De même le deuxième "**N**" de la colonne de gauche est le même que le deuxième "**N**" de la colonne de droite.  
@@ -111,7 +111,7 @@ D'autre part, en se rappelant comment est construite la matrice, chaque lettre d
 Sachant tout cela, on va pouvoir récrire le mot original en l'écrivant de droite à gauche. 
 
 <p align="center">
-    <img src="../images/post10/reverse2.png">
+    <img src="images/post10/reverse2.png">
 </p>
 
 On part de la première ligne, et on lit toujours dans la colonne de droite. La première lettre correspond a "**E1**", c'est la dernière lettre du mot *banane*. On recherche ce même "**E1**" dans la colonne de gauche. La lettre qui précède ce E est le "**N2**". C'est l'avant dernière lettre du mot banane. On recherche de la même façon ce "**N2**" dans la colonne de gauche. La lettre qui le précède est "**A2**", c'est l'avant avant dernière lettre du mot banane etc....  

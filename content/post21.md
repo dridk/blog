@@ -4,7 +4,7 @@ Date: 2017-05-13 15:07:59
 Tags: génétique
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/neuro_banner.jpg
+SIDEBARIMAGE:images/common/neuro_banner.jpg
 
 
 [Un nombre important de maladies génétiques](https://fr.wikipedia.org/wiki/Liste_des_maladies_g%C3%A9n%C3%A9tiques_%C3%A0_g%C3%A8ne_non_identifi%C3%A9) sont causées par des [mutations ponctuelles](https://fr.wikipedia.org/wiki/Mutation_ponctuelle), c'est-à-dire des mutations à l'échelle du nucléotide. Les mécanismes sous-jacents, que vous devez certainement connaître, sont la substitution, la délétion ou l'insertion de nucléotides dans la séquence d'un gène.
@@ -22,7 +22,7 @@ Le mécanisme mutationnel de la maladie de Huntigton est lié à l'expansion d'u
 Chez les sujets sains, la taille de la répétition varie entre 6 et 35. Entre 41 et 180, elle est pathologique. La zone intermédiaire entre 35 et 41 définit une zone floue, parfois symptomatique, parfois asymptomatique, qu'on appelle zone de pénétrance réduite. 
 
 <div class="figure">
-    <img src="../images/post21/cag.png" /> 
+    <img src="images/post21/cag.png" /> 
     <div class="legend">Expansion des triplets CAG dans la maladie de Huntigton. Sur cette figure, il y a 9 répétitions</div>
 </div>   
 
@@ -35,7 +35,7 @@ Cette expansion est d'autant plus forte qu'elle est transmise par le père. Effe
 De la même façon que la détection des [empreintes génétiques](empreinte_genetique.html), le diagnostic moléculaire repose sur une analyse de la taille des zones répétées après amplification en [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase). La visualisation des tailles peut se faire soit sur gel soit en analyse de fragments ([lire mon article pour comprendre cette technique](empreinte_genetique.html)).
 
 <div class="figure">
-    <img src="../images/post21/patient.jpeg" /> 
+    <img src="images/post21/patient.jpeg" /> 
     <div class="legend">Analyse en fragment chez un sujet sain (a) et un patient atteint de la maladie de Huntigton (b). Le gène du patient (a) présente un allèle à 17 répétitions et un autre à 18 répétitions. Le patient (b) présente un allèle avec une répétition de 40. 
      </div>
 </div>   

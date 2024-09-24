@@ -4,7 +4,7 @@ Date: 2015-04-06 16:25:55
 Tags: ab1,fsa,sanger
 Category: biologie, bioinformatique,Qt
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/post8/cover.jpg
+SIDEBARIMAGE:images/post8/cover.jpg
 Status:draft
 
 
@@ -19,7 +19,7 @@ Lorsque que vous ouvrez un fichier binaire, comme une image png, avec votre edit
 
 
 <p align="center">
-    <img src="../images/raw_data.jpg">
+    <img src="images/raw_data.jpg">
 </p>
 
 
@@ -34,7 +34,7 @@ Essayons maintenant avec un caractère en considérant qu'il y a 256 caractères
 
 
 <p align="center">
-    <img src="../images/1octet.png">
+    <img src="images/1octet.png">
 </p>
 
 ### L'octet ou le byte
@@ -45,19 +45,19 @@ L'octet peut être écris sous sa représentation binaire en utisant les symbole
 
 
 <p align="center">
-    <img src="../images/4octet.png">
+    <img src="images/4octet.png">
 </p>
 
 ### Le boutisme ou byte order
 Le boutisme indique le sens de lecture d'un type de donnée. En fonction de l'architecture de l'ordinateur, de type de fichier binaire, les informations peuvent être lu de droite à gauche ou inversement. Imaginez que vous lisez une page d'un livre. Chaques mot représente un type de donné de taille différente. On appelle grand-boutiste (big-endian) lorsque le mot est lu normalement de gauche à droite. Par exemple si nous voulions encoder le mot Leo et l'entier 42, l'organisation des octets seraient le suivant:
 <p align="center">
-    <img src="../images/bigendian.png">
+    <img src="images/bigendian.png">
 </p>
 
 A l'inverse, on appelle petit-boutiste (little-endian) lorsque les mots sont lu de droite à gauche. On voit bien dans l'exemple ci dessous, que pour récupéré l'information 42, il est nécessaire de lire l'entier de droite à gauche. Notez également que la notion de byte order n'a de sens que pour les types de donné codé sur plus de 1 octet. Un mot d'une lettre se lit pareil des deux sens, de même qu'avec un type d'un octet comme le char.
 
 <p align="center">
-    <img src="../images/littleendian.png">
+    <img src="images/littleendian.png">
 </p>
 
 
@@ -67,7 +67,7 @@ Ci dessous un tableau montrant les principaux types utilisés en C++ avec leurs 
 Si vous êtes curieux, je vous invite à regarder comment un nombre à virgule (float) est stocké sur 32 bit en suivant la norme ISO IEEE754.
 
 <p align="center">
-    <img src="../images/typecpp.png">
+    <img src="images/typecpp.png">
 </p>
 
 
@@ -86,7 +86,7 @@ Pour ma part j'utilise le module hexviewer de sublime text. Mais il existe un pl
 
 
 <p align="center">
-    <img src="../images/hexviewer.png">
+    <img src="images/hexviewer.png">
 </p>
 
 
@@ -97,7 +97,7 @@ Avant de se jeter dans les entrailles de notre fichier ABIF, il nous faut le doc
 En résumé, les fichier abif sont composé de 3 blocks **HEADER** , **DIRECTORIES** et **DATA** contenant des données binaires avec un sens de lecture de type gros-boutiste. 
 
 <p align="center">
-    <img src="../images/abif_spec.png">
+    <img src="images/abif_spec.png">
 </p>
 
 ### Header

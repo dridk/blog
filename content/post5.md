@@ -6,7 +6,7 @@ Category: informatique
 Author: Sacha Schutz
 
 <!-- <p class="img-header">
-    <img src="../images/post5/header.png">
+    <img src="images/post5/header.png">
 </p>
  -->
 

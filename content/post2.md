@@ -6,7 +6,7 @@ Category: informatique
 Author: Sacha Schutz
 
 <!-- <p class="img-header">
-    <img src="../images/post2/header.jpg">
+    <img src="images/post2/header.jpg">
 </p> -->
 
 L'**Open Data**, comme son nom l'indique, est un ensemble de données ouvertes sous [licence libre ](http://fr.wikipedia.org/wiki/Open_Database_License), fournit par des organismes publiques ou privés. En d'autres mots, vous allez pouvoir utiliser gratuitement un tas de données, directement ou via une api, pour faire de la Recherche, des études statistiques et surtout... **Des applications**! 

@@ -4,7 +4,7 @@ Date: 2016-07-24 18:39:23
 Category: informatique
 Tags: bioinformatique, génétique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/dnaquestion_banner.jpg
+SIDEBARIMAGE:images/common/dnaquestion_banner.jpg
 
 
 Aujourd'hui, J'ai eu une soudaine envie de calculer les fréquences des différents types de substitutions dans le génome de [James Watson](https://fr.wikipedia.org/wiki/James_Dewey_Watson).    
@@ -21,7 +21,7 @@ Une [transversion](https://fr.wikipedia.org/wiki/Transversion) est associée à 
 L'image ci-dessous résume tous les cas possibles. 
 
 <div class="figure">
-    <img src="../images/post17/transition_transversion.png">
+    <img src="images/post17/transition_transversion.png">
     <div class="legend">Schéma de toutes les substitutions possibles. En bleu les transitions , en rouge les transversions. Il y a 2 fois plus de transversions que de transitions</div>
 </div>
 
@@ -124,7 +124,7 @@ Il ne reste plus qu'à faire un jolie graphique!
 ## Resultats
 
 <div class="figure">
-    <img src="../images/post17/chart.jpg">
+    <img src="images/post17/chart.jpg">
     <div class="legend">Représentation des différentes substitutions retrouvées dans le génome de James Watson.</div>
 </div>
 

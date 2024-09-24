@@ -5,7 +5,7 @@ Modified: 2020-05-23 15:17:34
 Tags: python,or-tools,sat,contrainte
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 On dit souvent qu'être fainéant est gage de qualité chez un programmeur. Dans le sens où il cherchera à résoudre un problème en tapant un minimum de ligne de code et en déléguant au maximum à sa machine. C'est encore plus vrai avec la [programmation par contrainte](https://fr.wikipedia.org/wiki/Programmation_par_contraintes). Contrairement à la programmation classique dite [impérative](https://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative), où vous devez décrire comment résoudre un problème, la programmation par contrainte est un autre [paradigme](https://fr.wikipedia.org/wiki/Paradigme_(programmation)) qui vous demande de décrire le problème de façon formelle et c'est un solveur qui se débrouillera de le résoudre pour vous.
 Dans ce billet nous allons aborder la programmation par contrainte en solvant un problème combinatoire en génétique: [l'inférence haplotyique](https://csiflabs.cs.ucdavis.edu/~gusfield/gusfieldorzack.pdf). 
@@ -100,7 +100,7 @@ Si vous héritez d'une [mutation génétique](https://fr.wikipedia.org/wiki/Muta
 Lorsque l'on séquence l'ADN d'un individu, nous lisons les mutations génétiques sans savoir si elles sont portées sur le chromosome paternel ou maternel. Pour une mutation donnée, nous pouvons juste dire si le patient est [homozygote](https://fr.wikipedia.org/wiki/Homozygote) (même mutation sur les deux chromosomes homologues ) ou [hétérozygote](https://fr.wikipedia.org/wiki/H%C3%A9t%C3%A9rozygote) (mutation différente).   
 Tout le problème est de pouvoir inférer les haplotypes à partir du génotype. 
 
-<div class="figure"><img src="../images/programmation_contrainte/inference_haplotypique.png" /><div class="legend"> A gauche: Génotype obtenu à partir des deux haplotypes parentaux.
+<div class="figure"><img src="images/programmation_contrainte/inference_haplotypique.png" /><div class="legend"> A gauche: Génotype obtenu à partir des deux haplotypes parentaux.
     A droite: Illustration d'un problème d'inférence haplotypique. </div> 
 </div>
 
@@ -111,7 +111,7 @@ Supposons que nous connaissons l'existence de **m** haplotypes pour **n** variat
 Posons **H**, une matrice binaire **m** x **n** définissant la présence ou non de chaque variation sur chaque haplotype. 
 Posons **G**, un vecteur de taille **n** définit sur {0,1,2} pour representer le génotype d'un individu avec 0 pour homozygote non muté, 1 pour hétérozygote et 2 pour homozygote muté . 
 <div class="figure">
-<img src="../images/programmation_contrainte/probleme_sat.png" />
+<img src="images/programmation_contrainte/probleme_sat.png" />
 <div class="legend">Modélisation du problème d'inférence haplotypique. A partir d'un Matrix de 4 haplotypes connus sur 3 variations. L'objectif est de trouver les deux haplotypes pouvant expliquer le génotype.</div></div>   
 
 Le problème revient à trouver deux haplotypes (2 numéros de lignes de H) dont la somme de chaque colonne est égale à la valeur du génotype correspondant.

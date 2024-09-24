@@ -4,7 +4,7 @@ Date: 2017-07-13 00:53:37
 Tags:informatique, linux, git
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 Vous l'avez sûrement remarqué, j'écris mon blog avec [pelican](http://docs.getpelican.com/en/stable/). 
 Lorsque je suis prêt à publier, je commit mon blog sur [github](https://github.com/), puis dans un second temps je synchronise mon dossier html généré sur mon serveur web. 

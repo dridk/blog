@@ -4,7 +4,7 @@ Date: 2015-07-23 22:55:29
 Tags: linux
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 Cela vous est forcément déjà arrivé de devoir renommer une longue liste de fichiers. Pour les plus fainéant d'entre vous, vous allez cliquer sur un fichier, un par un , puis faire "F2" pour renommer. Bon, ça passe, avec 10 fichiers, mais pour certaine personne, renommer plus de 3 fichiers de cette manière c'est déjà trop! Imaginez que vous voulez renommer toutes votre bibliothèque de série légale sous une forme *serie01e04.avi*, vous risquez de passer un bon bout de temps pour un résultat pas garantie. Heureusement, il existe plein de logiciels graphiques gratuits comme [Rename-it](http://sourceforge.net/projects/renameit/) ou [Bulk Rename](http://www.bulkrenameutility.co.uk/Main_Intro.php) pour vous aidez. Mais voilà, nous, on préfère les techniques de Jedi avec notre console Linux pour en mettre plein les yeux à nos copains. 
 

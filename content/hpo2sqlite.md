@@ -31,7 +31,7 @@ La méthode d'imbrication consiste à associer à chaque noeud des bornes droite
 Par exemple dans l'arbre suivant, on part de la borne gauche (1) de la racine **Food** et on descend l'arbre jusqu'aux feuilles et ainsi de suite, jusqu'à revenir sur la borne droite (18) de la racine.   
 
 <div class="figure">
-    <img src="../images/hpo2sqlite/imbrication.png" />
+    <img src="images/hpo2sqlite/imbrication.png" />
     <div class="legend"> </div>
 </div>
 
@@ -56,7 +56,7 @@ Prenons un graphe simple avec le noeud D ayant deux parents B et C.
     nx.draw_networkx(g)
 
 <div class="figure">
-    <img src="../images/hpo2sqlite/dag.png" />
+    <img src="images/hpo2sqlite/dag.png" />
     <div class="legend"> </div>
 </div>
 
@@ -67,7 +67,7 @@ On peut alors transformer ce DAG en arbre avec :
     nx.draw_networkx(tree)
 
 <div class="figure">
-    <img src="../images/hpo2sqlite/tree.png" />
+    <img src="images/hpo2sqlite/tree.png" />
     <div class="legend"> </div>
 </div>
 

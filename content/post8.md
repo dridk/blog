@@ -4,7 +4,7 @@ Date: 2015-04-06 16:25:55
 Tags: bioinformatique, biologie
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/post8/cover.jpg
+SIDEBARIMAGE:images/post8/cover.jpg
 
 
 Dans ce post, nous allons voir comment naviguer dans le génome humain. Celui ci a été entièrement séquencé grâce à un consortium international de chercheurs au sein du *[Human Genom Project](https://fr.wikipedia.org/wiki/Projet_g%C3%A9nome_humain)* entre 1990 et 2003. Ce génome fait environ 3 milliards de bases, soit un fichier texte d'environ 3 GigaOctets que vous pouvez télécharger [ici](http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz). Aujourd'hui, le génome accompagné de ses annotations est disponible intégralement sur internet par l’intermédiaire de bases de données publiques.   
@@ -14,7 +14,7 @@ Pour se repérer dans ces méandres de données, il nous faut comprendre l'organ
 L'ADN est une longue molécule localisée dans les noyaux de nos cellules qui constitue un support biologique d'information. Au même titre qu'un fichier binaire, l'information est stocké numériquement. C'est à dire qu'au lieu d'utiliser 2 symboles comme un fichier binaire (1 et 0), l'ADN utilise 4 symboles matérialisés par les 4 bases azotées Adénine(A), Cytosine(C), Guanine(G), Tymine(T). D'ailleurs il est tout à fait possible de stocker des données informatiques dans un brin d'ADN comme le suggère [ce post ](http://www.ibtimes.com.au/worlds-first-biological-computer-decrypts-images-stored-dna-1293424). 
 
 <p align="center">
-    <img src="../images/post8/dna.png">
+    <img src="images/post8/dna.png">
 </p>
 
 Ces bases sont agencées linéairement sur un brin par l’intermédiaire d'un sucre (le désoxyribose) qui se lie à ses voisins par un liaison phosphodiester, soit par son carbone en 5' soit par son carbone en 3'(Voir schéma ci dessus). 
@@ -26,7 +26,7 @@ La séquence complémentaire étant anti-parallèle, elle se lit du bas vers le 
 Le génome humain est constitué d'une longue séquence de 3,2 milliards de bases réparties sur 24 chromosomes. Chaque chromosome est constitué d'une molécule d'ADN double brin.
 
 <p align="center">
-    <img src="../images/post8/caryotype.gif">
+    <img src="images/post8/caryotype.gif">
 </p>
 
 Il ne faut pas confondre le génome humain avec le genotype d'une personne. En effet, chaque individu est l'expression de deux génomes combinés: Le génome maternel et le génome paternel. Chacune de nos cellules possède ainsi  22 **paires** de chromosomes et une paire de chromosome sexuelle XX ou XY.    
@@ -50,7 +50,7 @@ Depuis ce fichier, vous pouvez localiser n'importe quel gène... Mais avant ça,
 ##Les coordonnées chromosomiques
 
 <p align="center">
-    <img src="../images/post8/band.png">
+    <img src="images/post8/band.png">
 </p>
 
 
@@ -84,7 +84,7 @@ Observer le schéma ci dessous, pour bien vous familiariser avec cette nomenclat
 
 
 <p align="center">
-    <img src="../images/post8/strand.png">
+    <img src="images/post8/strand.png">
 </p>
 
 
@@ -94,7 +94,7 @@ Les coordonnées génomiques sont utilisées en génétique pour localiser des z
 ##Les coordonnées exoniques
 
 <p align="center">
-    <img src="../images/post8/exon.png">
+    <img src="images/post8/exon.png">
 </p>
 
 
@@ -116,7 +116,7 @@ Pour cela, allez sur le site [ensembl](http://www.ensembl.org/Homo_sapiens/Info/
 Vous retrouverez alors toutes les informations utiles à propos de ce gène sur cette [page](http://www.ensembl.org/Homo_sapiens/Gene/Summary?db=core;g=ENSG00000151067;r=12:1970786-2697950). 
 
 <p align="center">
-    <img src="../images/post8/ensembl.png">
+    <img src="images/post8/ensembl.png">
 </p>
 
 Il s'agit d'un gène situé sur le chromosome 12, en position génomique 1970786-2697950 orienté sur le brin forward. Ce gène se trouve en position p13.33, soit une région du bras court du chromosome 12. 

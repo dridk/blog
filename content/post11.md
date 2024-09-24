@@ -4,7 +4,7 @@ Date: 2016-01-16 17:00:00
 Tags: python,algorithmes
 Category: informatique
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg 
+SIDEBARIMAGE:images/common/term_banner.jpeg 
 
 Un filtre de bloom est une structure de donnée permettant de savoir si un élément est présent ou non dans une liste. Cette structure est très efficace d'un point de vue mémoire lorsque vous travaillez sur de grande liste. En python, l'utilisation d'un filtre de Bloom peut s'écrire : 
 
@@ -42,19 +42,19 @@ La deuxième, teste la présence d'un élément en recherchant son hash dans ce 
 Choisissons pour l'exemple, un vecteur de taille **n=10**, et initialisons le avec des zéros. Puis choissons **k=3** fonctions de hachages différentes, que nous notons **h0**,**h1** et **h2**. Les hashs obtenus correspondent à une position dans le vecteur. Les valeurs possibles des hashs doivent être alors comprises entre **0** et **9**.   
 
 <p align="center">
-    <img src="../images/post11/empty_hash.png">
+    <img src="images/post11/empty_hash.png">
 </p>
 
 Enfin, commençons par *installer* notre liste, avec le première élément "*mario*", comme l'illustre la figure suivante : 
 
 <p align="center">
-    <img src="../images/post11/mario_hash.png">
+    <img src="images/post11/mario_hash.png">
 </p>
 
 Ajoutons maintenant le mot "*zelda*" : 
 
 <p align="center">
-    <img src="../images/post11/zelda_hash.png">
+    <img src="images/post11/zelda_hash.png">
 </p>
 
 Avec le mot "*zelda*", il y a eu collision avec la fonction de hashage **h2**. C'est ce qui est l'origine des faux positifs.   
@@ -63,7 +63,7 @@ Avec le mot "*zelda*", il y a eu collision avec la fonction de hashage **h2**. C
 Si vous avez compris jusque là, vous devriez comprendre comment tester la présence du mot "*sonic*". Si le mot a été "*installé*" , alors nous devrions retrouver tous les hashs obtenus par les 3 fonctions de hachages sur le mot "*sonic*". Ce qui n'est pas le cas ici, comme l'illustre la figure suivante. Le mot *sonic* n'est pas présent dans la liste.
 
 <p align="center">
-    <img src="../images/post11/sonic_hash.png">
+    <img src="images/post11/sonic_hash.png">
 </p>
 
 # Estimation des faux positifs

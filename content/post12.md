@@ -4,7 +4,7 @@ Date: 2016-01-25 17:00:00
 Tags: génétique,fun
 Category: biologie
 Author: Sacha Schutz
-SIDEBARIMAGE:../images/common/backfutur_banner.jpg
+SIDEBARIMAGE:images/common/backfutur_banner.jpg
 
 Imaginez que vous vouliez transmettre un message à votre arrière arrière arrière petit-fils, à l'instar du Professeur Brown dans [Retour vers le futur 2](https://fr.wikipedia.org/wiki/Retour_vers_le_futur_2). Quelles solutions envisagez-vous ? Une enveloppe en papier? Aucune chance, risque de perte ou de dégradation, ça ne marche que dans les films.
 Un Fichier numérique ? Vous voulez dire comme les photos numériques que nous avons tous perdu? C'est malheureusement encore moins fiable qu'une enveloppe.    

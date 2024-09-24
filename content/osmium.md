@@ -5,7 +5,7 @@ Modified: 2020-11-01 19:30:31
 Tags: cartographie, bash
 Category: informatique
 Author: Sacha schutz
-SIDEBARIMAGE:../images/common/term_banner.jpeg
+SIDEBARIMAGE:images/common/term_banner.jpeg
 
 Récemment j'ai été amené à devoir extraire toutes les cités en France ( que ce soit des villes, des villages ou des hameaux). j'ai d'abord cherché sur internet un dataset prémâché, mais j'ai vite constaté que ces données étaient souvent incomplètes par rapport aux cartes d'[OpenStreetMap](https://www.openstreetmap.fr/). 
 J'ai donc voulu directement récupérer les données utilisées par ce site et c'est là que je découvert [osmium-tools](https://osmcode.org/osmium-tool/). Un outil en ligne de commande pour manipuler les fichiers [OSM](https://wiki.openstreetmap.org/wiki/OSM_file_formats) d'Open Street Map.

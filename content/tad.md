@@ -5,7 +5,7 @@ Modified: 2018-05-08 12:32:09
 Tags: tads,ngs,hi-c
 Category: biologie
 Author: Sacha schutz
-SIDEBARIMAGE:../images/common/tad_banner.png
+SIDEBARIMAGE:images/common/tad_banner.png
 
 Lors de la [mitose](https://fr.wikipedia.org/wiki/Mitose), l'ADN des cellules [eucaryotes](https://fr.wikipedia.org/wiki/Eukaryota) s'organise en [chromosomes](https://fr.wikipedia.org/wiki/Chromosome) condensés et bien délimités. C'est l'image que nous avons tous d'un chromosome. Mais le reste du temps, pendant l'[interphase](https://fr.wikipedia.org/wiki/Interphase), ces chromosomes ressemblent davantage à une boule de spaghetti emmêlée dans tous les sens : ce que l'on appelle la [chromatine](https://fr.wikipedia.org/wiki/Chromatine).   
 Aujourd'hui, les technologies de [Capture de Conformation des Chromosomes](https://en.wikipedia.org/wiki/Chromosome_conformation_capture) nous révèlent l'organisation spatiale de cette chromatine, qui en réalité semble loin de l'anarchie mais plutôt organisée de façon fonctionnelle. C'est ce que nous allons découvrir tout de suite avec les [TADs](https://en.wikipedia.org/wiki/Topologically_associating_domain) (Topologically Associated Domain).
@@ -16,7 +16,7 @@ Imaginez la chromatine comme un long ruban d'ADN, formant plein de boucles en se
 
 
 <div class="figure">
-    <img src="../images/tad/principe.png" />
+    <img src="images/tad/principe.png" />
     <div class="legend">Figure 1. Haut. Vision linéaire du génome. Bas. Vision spatiale du génome et identification d'une zone de contact (orange)</div>
 </div>
 
@@ -27,7 +27,7 @@ Tout d'abord, les régions de contact sont figées en créant des liaisons coval
 Ces fragments peuvent alors être identifiés par les différentes méthodes de biologie moléculaire. Par exemple, la méthode 3C est une simple [PCR](https://fr.wikipedia.org/wiki/R%C3%A9action_en_cha%C3%AEne_par_polym%C3%A9rase) tandis que la méthode [Hi-C](https://en.wikipedia.org/wiki/Chromosome_conformation_capture#Hi-C_(all-vs-all)) est un [séquençage haut débit](ngs.html) de l' ensemble de fragments hybrides obtenus à partir d'un génome. C'est cette dernière que je vais détailler.
 
 <div class="figure">
-    <img src="../images/tad/methode.png" />
+    <img src="images/tad/methode.png" />
     <div class="legend">Figure 2. Fixation des régions de contact avec du formaldéhyde (cross-linking) puis digestion de l'ADN avec une enzyme de restriction. Grâce à une ligase, les deux extrémités du cross-link sont reliées. Après un reverse cross-linking, le fragment hybride est obtenu. Celui-ci va pouvoir être séquencé en paired-end sur de  <a href="https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html">l'Illumina</a>. Le read R1 correspondra à la région x et le read R2 à la région y.</div>
 </div>
 
@@ -44,7 +44,7 @@ La figure 3 gauche, montre comment construire une *heatmap* pour un chromosome. 
 
 
 <div class="figure">
-    <img src="../images/tad/tad_correlation_matrix.png" />
+    <img src="images/tad/tad_correlation_matrix.png" />
     <div class="legend">Figure 3. Gauche : le chromosome est découpé en intervalles de taille fixe. Après alignement, chaque read est associé à un intervalle. On comptabilise alors le nombre de paires existantes pour deux intervalles donnés. Sur la figure de gauche, il y a 2 paires entre les deux extrémités "p" et une paire entre l'extrémité "p" et "q". Droite : données réelles Hi-C sur le chromosome 14. Notez la symétrie de la matrice autour de la diagonale ainsi qu'une allure en damier. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858594/">source</a> </div>
 </div>
 
@@ -53,7 +53,7 @@ La figure 3 gauche, montre comment construire une *heatmap* pour un chromosome. 
 En observant la heatmap de plus près (Figure 4), vous distinguerez des triangles rouges d'allure fractale qui ressortent clairement. Ces triangles correspondent à un ensemble de régions qui interagissent toutes ensemble mais qui sont isolées du reste. Ces domaines, ce sont nos fameux TAD. Imaginez-les comme des boules de noeud sur notre ruban D'ADN. Chaque noeud contient des régions qui interagissent avec les autres régions de ce même noeud mais jamais avec d'autres. Pour vous faire une idée, deux TADs sont magnifiquement illustrés par mes soins en bas de la figure 4.
 
 <div class="figure">
-    <img src="../images/tad/tad_ex.png" />
+    <img src="images/tad/tad_ex.png" />
     <div class="legend">Figure 4. Visualisation d'une région du chromosome 3. Les TADs sont des domaines qui interagissent et sont observés ici par des triangles rouges. Sur cette figure, la région x,y et z sont à egale distance les unes des autres. Cependant x et y appartiennent au même TAD tandis que z appartient à un autre différent. <a href="http://promoter.bx.psu.edu/hi-c/">source</a> </div>
 </div>
 
@@ -62,14 +62,14 @@ En observant la heatmap de plus près (Figure 4), vous distinguerez des triangle
 Aujourd'hui, la fonction des TAD n'est pas totalement élucidée. Mais il est clair qu'ils jouent un rôle important dans la [régulation de l'expression des gènes](https://fr.wikipedia.org/wiki/R%C3%A9gulation_de_l%27expression_des_g%C3%A8nes). Nous savons depuis longtemps que les gènes sont régulés par des séquences [promotrices](https://fr.wikipedia.org/wiki/Promoteur_(biologie)) situées en amont des gènes. Mais il existe aussi des régions très éloignées du gène qui peuvent moduler la transcription. Ce sont les [amplificateurs (enhancers)](https://fr.wikipedia.org/wiki/Amplificateur_(biologie)) et les [inactivateurs (silencers)](https://fr.wikipedia.org/wiki/Inactivateur) qui respectivement activent ou répriment la [transcription](https://fr.wikipedia.org/wiki/Transcription_(biologie)). Par exemple, en repliant l'ADN dans l'espace, l'enhancer et le promoteur vont pouvoir interagir et moduler la transcription (Figure 5).   
 
 <div class="figure">
-    <img src="../images/tad/regulation.png" />
+    <img src="images/tad/regulation.png" />
     <div class="legend">Figure 5. Schéma de la régulation de la transcription via les amplificateurs. En se répliant, l'ADN met en contact l'amplificateur et le promoteur d'un gène.</div>
 </div>
 
 Il est alors évident que pour agir, un amplificateur doit se situer dans le même TAD que ses gènes cibles. Plusieurs gènes au sein du même TAD peuvent ainsi être co-régulés par le même amplificateur.   
 
 <div class="figure">
-    <img src="../images/tad/regulation_tad.png" />
+    <img src="images/tad/regulation_tad.png" />
     <div class="legend">Figure 6. Un amplificateur peut interagir avec les gènes de son TAD mais pas avec un autre. </div>
 </div>
 
