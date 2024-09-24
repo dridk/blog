@@ -1,4 +1,4 @@
 markdown 
 gravatar
 pelican
-simple_footnotes
+pelican-simple-footnotes
