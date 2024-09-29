@@ -6,7 +6,7 @@ Tags: algorithme
 Category: informatique
 Author: Sacha schutz
 SIDEBARIMAGE:images/common/term_banner.jpeg
-
+Status: draft 
 
 Le code de Reed-Solomon est un algorithme qui va vous permettre de corriger des erreurs dans 
 une séquence en utilisant des symboles surnuméraires. C'est un système de correction 
