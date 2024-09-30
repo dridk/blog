@@ -68,7 +68,7 @@ quel point manquant. C'est sur ce principe que se base la correction d'erreur de
 ## Ajout du symbole de correction
 
 Pour déterminer le symbole de correction à utiliser à la cinquième position du mot, il suffit de calculer 
-**polynome(5) = 102**. Ainsi, le symbole de de correction à utilisé est la 102ème lettre de l'alphabet. Mais attendez, il n'y a que 26 lettres dans l'alphabet ! En effet, ce que je vous ai dit n'est pas tout à fait exact. En réalité, le polynôme de Lagrange est recherché dans un [espace de Galois](https://fr.wikipedia.org/wiki/Groupe_de_Galois) où l'arithmétique modulaire s'applique. Imaginez que l'alphabet est disposé en cercle : après la lettre Z, vous revenez à la lettre A et recommencer le comptage. Dans cette espace tous les opérateurs mathématiques sont respectés. Z + 3 = C par exemple. Ainsi, la 102ème lettre de l'alphabet est la lettre Y.    
+**polynome(4) = 102**. Ainsi, le symbole de de correction à utilisé est la 102ème lettre de l'alphabet. Mais attendez, il n'y a que 26 lettres dans l'alphabet ! En effet, ce que je vous ai dit n'est pas tout à fait exact. En réalité, le polynôme de Lagrange est recherché dans un [espace de Galois](https://fr.wikipedia.org/wiki/Groupe_de_Galois) où l'arithmétique modulaire s'applique. Imaginez que l'alphabet est disposé en cercle : après la lettre Z, vous revenez à la lettre A et recommencer le comptage. Dans cette espace tous les opérateurs mathématiques sont respectés. Z + 3 = C par exemple. Ainsi, la 102ème lettre de l'alphabet est la lettre Y.    
 
 
 <div class="figure">
