@@ -104,6 +104,8 @@ print(correction) # bytearray(b(hello))
 ## Conclusion 
 Le code de correction d'erreur Reed-Solomon est remarquable pour sa capacité à corriger et à identifier des erreurs, peu importe leurs positions dans le message. Vous trouverez également d'autres codes correcteurs, tels que le [code de Hamming](https://fr.wikipedia.org/wiki/Code_de_Hamming) et le [code de Golay](https://fr.wikipedia.org/wiki/Code_de_Golay), chacun ayant ses propres avantages et inconvénients.
 
+PS : J'ai changé le backend de mon blog. Je vais essayer de publier plus court mais beaucoup plus chaque semaine dans des domaines plus datascience/info et moins bioinfo. Donc lachez des commentaires pour me motiver. 
+
 
 ## Références  
 - [ Vidéo youtube ](https://www.youtube.com/watch?v=1pQJkt7-R4Q&themeRefresh=1)
