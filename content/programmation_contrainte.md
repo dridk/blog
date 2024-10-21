@@ -49,7 +49,7 @@ solver = cp_model.CpSolver()
 status = solver.Solve(model)
 
 # Le solveur peut nous dire si le modèle admet des solutions ou non 
-if status == cp_model.FEASIBLE:
+if status != cp_model.INFEASIBLE:
     # Afficher toutes les solutions 
     solver.SearchForAllSolutions(model, cp_model.VarArraySolutionPrinter([x,y]))
 ```
@@ -169,7 +169,7 @@ solver = cp_model.CpSolver()
 
 status = solver.Solve(model)
 
-if status == cp_model.FEASIBLE:
+if status != cp_model.INFEASIBLE:
     solver.SearchForAllSolutions(model, cp_model.VarArraySolutionPrinter([index_a,index_b]))
 else:
     print("pas de solution ")
