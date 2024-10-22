@@ -1,4 +1,4 @@
-Title: Transférer des données avec un code fontaine
+Title: Transférer des données avec des captures d'ecrans
 Slug: code-fontain
 Date: 2024-09-30 19:30:31
 Modified: 2024-09-30 19:30:31
@@ -11,77 +11,122 @@ SIDEBARIMAGE:images/common/term_banner.jpeg
 Avec toutes les attaques informatiques que l'on connait aujourd'hui, 
 les environnements de travail pour accéder à des données sensible sont devenu très restreint.
 Un datascientist qui doit manipuler ce genre de données aura par exemple accès uniquement à un bureau 
-virtuel disposant d'une instance de Jupyter. Il ne pourra travailler que dans cette environement 
-sans pouvoir télécharger ces données sur sa machine. 
-Du coup, je me suis posé la question suivante : Est ce qu'un hacker pourrait récupérer
-l'intégralité d'un gros fichier CSV depuis un bureau virtuel uniquement en faisant des captures
-d'ecran ? La réponse est bien sur oui, et nous allons voir comment faire cela en utilisant 
-des QR codes animées et un code fontaine.
+virtuel munis d'une instance de Jupyter lab pour réaliser ses analyses.  Dans cette bulle, ll 
+lui sera impossible de télécharger des données sur son PC. 
+Mais en verité, les données qui s'affiche sur nos écrans transitent forcement par votre carte graphique.
+Un hacker pourrait très probablement récupérer l'intégralité d'un gros fichier en faisant 
+juste des captures d'écran. J'ai donc voulu tester cette théorie en essayant de récupérer un fichier de 10 Mo
+disponible depuis un notebook Jupyter en utilisant des QR codes couplé à un algorithme fontaine.  
+Voyons voir tout cela de plus près.
+
+
 
 ## Encoder des données dans un QR Code
 
-J'ai d'abord essayer de voir si il était possible d'encoder de l'information dans une grosse 
-image avec plein de couleur que l'on récupererait avec un screenshot. Mais ce n'est pas possible,
-ou difficilement, car les données derrière l'image s'affichant sur votre écran sont différentes 
-des données de l'image original. En effet, votre moteur de rendu va changer la valeurs des pixels 
-en rajoutant par exemple de l'anti-aliasing ou en utilisant une autre palette de couleur.     
-Du coup, je me suis tourner vers les QR-codes plus simple à mettre en place.   
-Au maximum, il est possible de stocker 2853 octets dans un QR Code en version 40, c'est à dire avec une 
-résolution de 177x177 modules carrés et un faible niveau de correction d'erreur.
-Pour encoder un fichier de 10 Mo, ça va être difficile. Sauf, si on crée une animation de QR-code. 
-C'est ce que vous pouvez voir dans l'animation suivante : 
+J'ai d'abord pensé à encoder l'information dans une image en utilisant tous les pixels et les couleurs 
+à disposition. Mais c'est difficilement faisable car les pixels qui s'affichent sur votre écran sont 
+différents des pixels encoder dans votre image. En effet, votre moteur de rendu va par exemple ajouter de
+l'anti-aliasing qui va modifier la valeur des pixels pour adoucir les contours. 
+Du coup, je me suis tourner vers les QR-codes plus simple à mettre en place grâce à un eventail de librarie python.
+
+### Capacité d'un QR Code 
+La capacité de stockage d'un QR code varie en fonction de sa version et de son niveau de code d'erreur. 
+Dans le meilleurs des cas, nous allons pouvoir stocker 2953 octects en version 40 ( 177 x 177 ) 
+en utilisant un niveau de correction d'erreur Low ( 7% ).      
+Sauf que moi, j'aimerai bien transférér un fichier de 10 Mo voir plus. Il faut donc généré plein de QR code
+et pour cela j'ai fait une animation. Supposions que je génère 30 QR code par secondes, je pourrais récupérér
+des données à une vitesse de 720 Kbits/s  (3000 * 30 * 8 * 10**-3) de quoi faire pallir mon bon view modem 56K.
+Et voilà ce que ça donne : 
+
+<image> 
 
 
+## Utilisation du code fontaine
+Placons nous maintenant du coté du recepteur. Il suffirait en principe de faire des capture d'ecran toutes 
+les 4 ms et décoder chaque QR-Code dans le bon ordre. Mais en réalité, il y a de forte chance d'en rater certain.
+Dans des protocoles classiques de communication réseau bi-directionnel comme TCP/IP, chaque capture ou paquet doit 
+être confirmer avant de recevoir le prochain. Dans notre cas, ce n'est pas possible 
+car la communication est unidirectionnel, nous ne faisons qu'écouter. 
+Une solution serait donc de demander à l'emetteur de répéter en boucle son message. Mais attendre un tour complet 
+pour récupérer un seul paquet risque d'être long.
+Une meilleur idée est d'utiliser un code fontaine, qui consiste à générer aléatoirement des paquets de données labelisé 
+et les emettre constamment comme une "fontaine de donnée". Le recepteur aura juste à collecter les paquets 
+dans le desordre puis à les réassembler dans l'ordre en utilisant leurs labels.
 
-## Transférer des données de manière unidirectionnelle avec  un code fontaine
-Placons nous maintenant du coté du recepteur. Il suffirait en principe de faire des capture d'ecran toutes les 0.01 ms , de décoder 
-chaque QR-Code et de reconstruire le fichier. Sauf que ça, c'est dans un monde idéal ou aucun QR code n'est perdu et arrivent tous
-dans le bon ordre. Dans des protocoles classiques de communication réseau comme TCP/IP, pour éviter cela, 
-le recepteur envoie une confirmation à l'emetteur qui lui retransmettra les paquet perdu si besoin. Dans notre cas, ce n'est pas 
-possible car le signal est unidirectionnel. Une solution serait de demander à l'emetteur de répéter sans arret tout en labelisant 
-ses paquets pour que le recepteur puisse tous les récupérer dans le bon ordre. Mais ca risque d'être long. En perdant le paquet 
-numéro 2200 , il faudra attendre que l'emetteur rejoue toute la serie pour le récupérer. 
-C'est la qu'intervienne les codes fontaines et notamment le code LT ( Luby Transform codes ) que nous allons utilisé. 
+### Transformation de Luby ou code LT 
 
-### Fonctionnement de l'algorithme 
-- Le fichier binaire que vous souhaitez transférére est divisé en bloc de N bytes.
-- Pusieurs blocs sont ensuite choisi aléatoirement. Le nombre de bloc (d) est défini par une distribution de probabilité ( Soliton distribution)
-- Les blocs sont combiné ensemble par un operateur XOR. SI le recepteur possède assez de bloc, il peut reconstruire les blocs manquants.
+Un code LT fonctionne de la façon suivante: 
 
-Je ne me suis pas embeter à réimplementer l'algorithme. Il est disponnible dans va la librarie rt. Le code pour encoder 
-et decoder  une chaine chaine de bytes est le suivant : 
+#### Emetteur 
+- Le message à transmettre est d'abord découpé en plusieurs bloc source de la même taille.
+- Un tirage aléatoire est ensuite réalisé pour selectionné N bloc source.
+- Ce tirage aléatoire suit une distribution de Soliton. ( Voir image )
+- Ces N blocs sources sont combiné ensemble avec un operateur XOR pour former un seul bloc . 
+- Ce bloc encodé est alors transféré au recepteur en précisant le nombre de bloc source qu'il contient dans un identifiant.
+- Dans notre cas, ce bloc est transféré via un QR code en reservant les 12 premiers bytes pour l'identifiant. 
 
-/decoder/encoder
+{ Distribution de Solition }
 
+
+#### Recepteur 
+- Le recepteur collecte les paquet encodé en scannant les QR code
+- Si le paquet est composé d'un bloc source il le met de coté
+- Si le paquet est composé de 2 bloc source, il fera un XOR avec un des paquet déjà recu pour reconstruire le second paquet source.
+- Il procède ainsi de suite avec des paquets composés de 3,4..N bloc sources.  
+- Lorsqu'il a reçu tout les paquets, il les remet dans l'ordre pour reconstruire le message original.
+
+En combinant les blocs avec un XOR, cela nous permet d'envoyer statistiquement beaucoup moins de bloc que la méthode naïves
+qui consisterai à les envoyer un par un.  
 
 ## Mise en place 
 
-Nous avons tous les ingrédients pour réaliser une exfiltration de données depuis un notebook Jupyter avec des captures d'ecran ;
+Nous avons maintenant tous les ingrédients pour construire un canal de communication entre un notebook Jupyter
+et mon système de fichier. Nous allons tenter d'exfilter un fichier parquet de N lignes pour un total de 10 Mo. 
 
 ### Emetteur 
 
-Je souhaite transférér un fichier de 10 Mo. Je le lis par block de N bytes que je vais donner à manger à mon encodeur
-LT. Ce dernier me restitue des nouveaux blocs que je peux alors encoder dans un QR Code.
+J'utilise la librarie qrcode pour générer mes QR-code et la librarie lt-code pour le code fontaine. 
+Pour l'animation, je fais une boucle for avec une pause de 0.01 secondes.
 
+
+```python
+def send_file(filename:str):
+  chunk_size = 2200
+
+  with open(filename , "rb") as file:
+
+      for block in encode.encoder(file, chunk_size):
+          qr = qrcode.QRCode(version=40, box_size=3, error_correction=qrcode.ERROR_CORRECT_L, )
+          encoded_data = base64.b64encode(block).decode('utf-8')
+
+          
+          qr.add_data(encoded_data)
+          img = qr.make_image()
+          display.clear_output(wait=True)
+          display.display(img)
+          time.sleep(0.001)
+        
+```
 
 
 ### Recepteur 
-Pour cela, j'ai crée une petite application Qt, qui me permet de capturer une region spécifique de mon ecrant 
-pour détécter le QRCode, le décoder avec le code LT et me sauvegarder le tout dans un fichier. 
+Pour cela, j'ai crée une petite application graphique avec Qt via le la librarie PySide6.
+J'utilise QScreen.grabWindow pour faire des screenshots et zbarlight pour la capture des qrcode.
+Voici ce que ça donne : 
 
-screenshot 
-
-
+{ Video }
 
 ### Resultats 
 
+Sur mon PC : 
+500 ko
 1 Mo
-10 mo
-100 Mo 
-
+10 Mo
 
 ### Conclusion 
-Bien que les débits sont faibles, c'est tout à fait correct pour des petits fichiers. Je pense qu'il serait possible d'augmenter 
+
+
+c'est tout à fait correct pour des petits fichiers. Je pense qu'il serait possible d'augmenter 
 le debit en utilisant tout l'espace de l'ecran avec plusieurs QR code en parallele.
 Mais on sera toujours limite par la fréquence de rafraichissement et de lecture du QR Code. 
 
