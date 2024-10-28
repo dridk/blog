@@ -133,15 +133,15 @@ Après nous serons toujours limités par la bande passante et le taux de rafraic
 J'avais au début envisagé de transmettre les données en utilisant les pixels et les couleurs d'une image. 
 Cependant, il est très difficile de récupérer les informations de manière fiable à partir d'une capture d'écran.
 L'antialiasing et les transformations de rendu déforment les données encodées, rendant leur décodage impraticable.
-Si vous avez des idées, je suis preneur ! N’hésitez pas à les partager dans les commentaires !
+Si vous avez d'autres idées, n’hésitez pas à les partager dans les commentaires !
 
 ## Reference 
 
 - [qrfontain](https://github.com/dridk/qrfontain/tree/main?tab=readme-ov-file): Ma petite librarie python
 - [divan.dev](https://divan.dev/posts/fountaincodes) : blog de de Divan que j'ai découvert après !
 - [Nick's Blog](http://blog.notdot.net/2012/01/Damn-Cool-Algorithms-Fountain-Codes) : Damn Cool Algorithms: Fontain Codes
-- [qram](https://github.com/digitalbazaar/qram) : Implementation en Javascript
-
+- [qram](https://github.com/digitalbazaar/qram) : Autre implementation Javascript
+- [txqr](https://github.com/divan/txqr): Autre implementation en Go
 
 
 
