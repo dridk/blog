@@ -138,7 +138,7 @@ Si vous avez d'autres idées, n’hésitez pas à les partager dans les commenta
 ## Reference 
 
 - [qrfontain](https://github.com/dridk/qrfontain/tree/main?tab=readme-ov-file): Ma petite librarie python
-- [divan.dev](https://divan.dev/posts/fountaincodes) : blog de de Divan que j'ai découvert après !
+- [divan.dev](https://divan.dev/posts/fountaincodes) : Fountain codes and animated QR
 - [Nick's Blog](http://blog.notdot.net/2012/01/Damn-Cool-Algorithms-Fountain-Codes) : Damn Cool Algorithms: Fontain Codes
 - [qram](https://github.com/digitalbazaar/qram) : Autre implementation Javascript
 - [txqr](https://github.com/divan/txqr): Autre implementation en Go
